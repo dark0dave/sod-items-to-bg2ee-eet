@@ -246,7 +246,7 @@ Requires:
 
 Weight: 3~
 @20032 = ~Throwing Club~
-@20033 = ~A throwing club differs from a normal club in that they are a bit smaller and lighter, and capped on either end by a spherical knot of wood, naturally occuring in the trees they are hewn from.
+@20033 = ~A throwing club differs from a normal club in that they are a bit smaller and lighter, and capped on either end by a spherical knot of wood, naturally occurring in the trees they are hewn from.
 
 STATISTICS:
 
@@ -325,7 +325,7 @@ Requires:
 
 Weight: 5~
 @20043 = ~Throwing Spear~
-@20044 = ~Throwing spears are lighter, slender, and carefully balanced to allow for accuracy distance over a spear meant for melee combat.  While still primitive in nature, and not as effecient as more modern missile weapons, they are nevertheless, still quite deadly in skilled hands.
+@20044 = ~Throwing spears are lighter, slender, and carefully balanced to allow for accuracy distance over a spear meant for melee combat.  While still primitive in nature, and not as efficient as more modern missile weapons, they are nevertheless, still quite deadly in skilled hands.
 
 STATISTICS:
 
@@ -1058,7 +1058,7 @@ Weight: 3~
 
 I write to rectify the confusion in which your last missive was apparently sent. Your reply in regards to my next manuscript, "Adventuring With All Your Limbs Attached: Both There And Back Again" is my latest treatsie on the adventuring mage's life. As the greatest first-level mage who has ever lived (so far), my musings and experiences are of considerable value to both the novice and seasoned adventurer. Not only is my writing style light and entertaining to read, but the contents of my manuscript could save many lives.
 
-You understand my confusion, then, when I recieved your reply that your line of comedic tomes was full for this year and to try again in future seasons. Please check your informative travelogue lineup and respond at your earliest convenience.
+You understand my confusion, then, when I received your reply that your line of comedic tomes was full for this year and to try again in future seasons. Please check your informative travelogue lineup and respond at your earliest convenience.
 
 Sincerely,
 
@@ -1394,7 +1394,7 @@ Charge abilities:
 – Draw Upon Holy Might once per day
 
 Weight: 1~
-@20241 = ~Wizzard Hat~
+@20241 = ~Wizard Hat~
 @20242 = ~This classic pointed wizard's hat has the wearer's title emblazoned across it in rather gaudy sequins. The wizzard's hat makes the wearer much faster, both in casting and on foot. A wizard who runs away from combat lives to run away another day, after all.
 
 STATISTICS:
@@ -2498,7 +2498,7 @@ Requires:
 
 Weight: 3~
 @20399 = ~The Dire Old Lute of Pellon Kay~
-@20400 = ~Pellon Kay would never appear in history books for his musical talents. If it wasn't for his famous lute, no one would have remembered him at all. Born in Sembia and raised in a musical family, Pellon Kay never took his performances seriously. Kay made dozens of enemies everywhere he went because of his acidic wit and appetite for confrontation. Sages believe that Milil frowned upon Pellon's antics, but that Talos found Pellon's attitude to be quite amusing. The avatar of Talos watched Pellon start a fight with over twenty men in a bar one night. As a gift for such destructive entertainment, Talos touched the lute that was laying next to Pellon's unconscious body. After that night, Pellon discovered that he could make men go berserk just by playing his lute in their direction. He took great delight in setting mercenaries and sailors against each other for several weeks. Eventually, Pellon Kay was laid low by a grim-featured warrior with a crossbow who didn't let Pellon get close enough to employ his magical lute. The unknown warrior threw the lute into the Sea of Fallen Stars.
+@20400 = ~Pellon Kay would never appear in history books for his musical talents. If it wasn't for his famous lute, no one would have remembered him at all. Born in Sembia and raised in a musical family, Pellon Kay never took his performances seriously. Kay made dozens of enemies everywhere he went because of his acidic with and appetite for confrontation. Sages believe that Milil frowned upon Pellon's antics, but that Talos found Pellon's attitude to be quite amusing. The avatar of Talos watched Pellon start a fight with over twenty men in a bar one night. As a gift for such destructive entertainment, Talos touched the lute that was laying next to Pellon's unconscious body. After that night, Pellon discovered that he could make men go berserk just by playing his lute in their direction. He took great delight in setting mercenaries and sailors against each other for several weeks. Eventually, Pellon Kay was laid low by a grim-featured warrior with a crossbow who didn't let Pellon get close enough to employ his magical lute. The unknown warrior threw the lute into the Sea of Fallen Stars.
 
 STATISTICS:
 
@@ -2635,12 +2635,12 @@ Weight: 2~
 ////////////////////////////////
 //////NEW ITEM DESCRIPTIONS/////
 ////////////////////////////////
-@20419 = ~Fiery Vengance +3~
-@20420 = ~Im 1208DR, Blasille Ikretti, a paladin squire in the service of Mystra, had returned to her homestead after months-long training in the frozen north.  Shortly after her arrival, an insidious Ogre Magi that had been conducting surreptitous raids on the local towns targetted Blasille's home as his next conquest.  Under the cover of night, he struck.  Blasille fought as hard as she could, but was no match for the Ogre's magery.  She was captured, and forced to watch as one, by one, her friends and family were slaughtered.  The saddistic ogre took great pleasure in killing each of them slowly, while Blasille could do nothing.  For three days and nights, she was forced to witness this horror, pleading with her Goddess for help... but none came.
+@20419 = ~Fiery Vengeance +3~
+@20420 = ~Im 1208DR, Blasille Ikretti, a paladin squire in the service of Mystra, had returned to her homestead after months-long training in the frozen north.  Shortly after her arrival, an insidious Ogre Magi that had been conducting surreptitous raids on the local towns targeted Blasille's home as his next conquest.  Under the cover of night, he struck.  Blasille fought as hard as she could, but was no match for the Ogre's magery.  She was captured, and forced to watch as one, by one, her friends and family were slaughtered.  The saddistic ogre took great pleasure in killing each of them slowly, while Blasille could do nothing.  For three days and nights, she was forced to witness this horror, pleading with her Goddess for help... but none came.
 
 on the fourth night, utterly broken, consumed by sorrow and rage, she made one final plea:  "Gods!  To any who would listen, hear me!  I will pay any price, bear any burden, suffer any curse, serve any master, if you will but grant me the power to destroy this fiend and avenge my fallen!".  Her cry was heard.  In her hands, where once was held a fragment of a shattered holy symbol, was now the hilt of a weapon unlike anything she had ever seen.  Blasille then heard what sounded like a faint whisper: "It's strength, from yours".  Paying the cryptic message no heed, she gripped it tightly, as a blazing blue blade sprang from it.  It sliced through her iron shackles as if they were no more than parchment paper.  With a soul-shattering cry, she charged at the Ogre Magi whom had decimated her home and family.  The Ogre's haughty scowl soon gave way to a look of panic, as Blasille swatted each of his spells back at him as she approached.  With two swift strokes, Blasille bi-sected and be-headed the Ogre, spitting on his carcass before leaving it for the crows to feast on.
 
-Blasille then collapsed.  As she lay, utterly spent, her skin pale,she understood.  Her life-force is what had given the weapon it's power, and as she drew her last breath, the blade retreated back into the hilt and went dark.  Vengance had been granted, and the price for it, paid.
+Blasille then collapsed.  As she lay, utterly spent, her skin pale,she understood.  Her life-force is what had given the weapon it's power, and as she drew her last breath, the blade retreated back into the hilt and went dark.  Vengeance had been granted, and the price for it, paid.
 
 STATISTICS:
 
@@ -2659,7 +2659,7 @@ Requires:
 
 Weight: 3~
 @20421 = ~Greasy Bastard Sword +2~
-@20422 = ~Gorcul the Foul, a smarmy pit fighter who eked out a living by fighting for the entertainment of others, commissioned a Thayvian wizard to enchant his favorite sword to give him an edge in combat.  By all appearances, the sword doesnt look like anything special, but when opponents are struck, they are occasioanlly splattered with a viscous, slippery grease that affects their footing and ability to strike back, resulting in many easy wins for Kilgore.  His winning streak wouldn't last long, however.  During a scheduled fight with a elderly gladiator that Kilgore had assumed he'd have an easy victory over, he was brought low in short order.  As it turns out, the old gladiator was well aware of Kilgore's "trick blade", and had prepared accordingly by drinking a potion of freedom before the fight.
+@20422 = ~Gorcul the Foul, a smarmy pit fighter who eked out a living by fighting for the entertainment of others, commissioned a Thayvian wizard to enchant his favorite sword to give him an edge in combat.  By all appearances, the sword doesnt look like anything special, but when opponents are struck, they are occasionally splattered with a viscous, slippery grease that affects their footing and ability to strike back, resulting in many easy wins for Kilgore.  His winning streak wouldn't last long, however.  During a scheduled fight with a elderly gladiator that Kilgore had assumed he'd have an easy victory over, he was brought low in short order.  As it turns out, the old gladiator was well aware of Kilgore's "trick blade", and had prepared accordingly by drinking a potion of freedom before the fight.
 
 STATISTICS:
 
@@ -2726,7 +2726,7 @@ Requires:
 
 Weight: 1~
 @20429 = ~Orchid +2~
-@20430 = ~A Kara-Turan assassin, known only as "Deep Sleep", was the original owner of this ninjatō, and put it to great use during her career.  Due to it's ability to knock foes unconscious in battle with but a small nick from the blade, Deep Sleep was able to easily slay marks far stronger than one would think capable of a woman with her small, unassuming frame.  The two were seperated when she was forcefully retired by one of her employers for refusing a job which would have involed the assassination of a small child.  Since then, it has passed through many hands, and now finds itself in yours.
+@20430 = ~A Kara-Turan assassin, known only as "Deep Sleep", was the original owner of this ninjatō, and put it to great use during her career.  Due to it's ability to knock foes unconscious in battle with but a small nick from the blade, Deep Sleep was able to easily slay marks far stronger than one would think capable of a woman with her small, unassuming frame.  The two were separated when she was forcefully retired by one of her employers for refusing a job which would have involved the assassination of a small child.  Since then, it has passed through many hands, and now finds itself in yours.
 
 STATISTICS:
 
@@ -2742,13 +2742,13 @@ Requires:
  6 Strength
 
 Weight: 3~
-@20431 = ~Falchion of Rime +3~
+@20431 = ~Falchion of Rhyme +3~
 @20432 = ~Forged in antiquity of the purest cold iron, and imbued with the very breath of Auril herself, this sword was carried by only her most devoted champions in several campaigns across the frozen north of Faerûn to extinguish all whom dared to bring warmth and light to her realm.  During the Time of Troubles, when the Faerûnian pantheon were made to walk Toril as mortals, Auril's avatar form, the Frostmaiden, kept the blade by her side at all times and used it to great effect to keep control over her icy realm, while also placing a curse on it to ensure only she, or her chosen could wield it without meeting a terrible fate.
 
 STATISTICS:
 
 Combat abilities:
-– 12% chance target is afflicted by Wasting Rime for two rounds when hit (One level drained, movement and attack speed reduced to 75%, Save vs. Breath at -4 negates, does not affect undead or creatures immune to cold)  There is 9% chance the wielder's party is afflicted instead
+– 12% chance target is afflicted by Wasting Rhyme for two rounds when hit (One level drained, movement and attack speed reduced to 75%, Save vs. Breath at -4 negates, does not affect undead or creatures immune to cold)  There is 9% chance the wielder's party is afflicted instead
 
 Equipped abilities:
 – May only be removed with a Remove Curse spell
@@ -2764,7 +2764,7 @@ Requires:
 
 Weight: 4~
 @20433 = ~Bellowing War Axe +3~
-@20434 = ~Kurg the Bellower, a dwarf whom lived Dorn's Deep during the golden era during the alliance with the elves of the Seldarine, was enamoured with both song and music that were part of the elves's culture.  He wanted to share his enthusiam with his fellow dwarves, and set about learning to sing and play from elf musicians.  The elves were a bit apprehensive at first, as they'd never heard of a dwarven bard, but nevertheless they took him under their tutelage.  Unfortunately, despite his best efforts, whenever he would perform what he had learned, the dwarves of the deep would only laugh and likened his song to that of a bleating goat.  Others would disparage his efforts by shouting: "Ye cannae even carry an axe, much less a tune!"
+@20434 = ~Kurg the Bellower, a dwarf whom lived Dorn's Deep during the golden era during the alliance with the elves of the Seldarine, was enamoured with both song and music that were part of the elves's culture.  He wanted to share his enthusiasm with his fellow dwarves, and set about learning to sing and play from elf musicians.  The elves were a bit apprehensive at first, as they'd never heard of a dwarven bard, but nevertheless they took him under their tutelage.  Unfortunately, despite his best efforts, whenever he would perform what he had learned, the dwarves of the deep would only laugh and likened his song to that of a bleating goat.  Others would disparage his efforts by shouting: "Ye cannae even carry an axe, much less a tune!"
 
 Undeterred, Kurg sought help from one of his elven tutors, and the two set about forging an enchanted hand axe that would reverberate with Kurg's voice when he sang into it, resulting in the most unique and melodic tone.  At his next performance, the dwarves were both shocked and utterly delighted, marvelling at how such a wondeful sound could be produced with an axe as an instrument.  During the last days of the Deep, as the dwarves struggled against the invading orcish hordes, Kurg's song enfused them with courage and strength, allowing them to fight longer and harder than they would have been otherwise.
 
@@ -2831,7 +2831,7 @@ For a time, the ruse worked well and the village prospered.  This would not last
 
 Of the golem itself, found within the heap of it's body was an extremely dense, softly glowing golden orb that had served as it's power core.  It was far too dense and hard to be real gold, yet seemed to have all of it's properties, alongside the latent enchantments it possessed.  Being the only thing of value found by the expedition, it was brought back to Waterdeep and presented to the Lords of the city.  After puzzling over what to do with it, one of the Lords requesitioned it to be used in the crafting of an exquisite mace.  The mace was then presented to a high priestess of Waukeen as a gift in return for her god's favor and blessing over the entire city.
 
-Decades later, after the mace had changed many hands within the church, it was carried into it's first real battle by a cleric named Dunhaven Winterborne.  Dunhaven noticed that when he would bash in the heads of his foes with the mace, a number of gold coins would fall out to the ground, seemingly from nowhere.  Dunhaven, both bewildered and amazed by this, quickly scooped them up and moved onto his next opponent.  It wasnt long before the greed that tends to follow large amounts of gold consumed him, and others took notice.  The next day, Dunhaven, along with many of his comrades were found slain in their tents, and the mace nowhere to be found.  In the years since, it has passed through many hands, and now finds itself in yours....but for how long?
+Decades later, after the mace had changed many hands within the church, it was carried into it's first real battle by a cleric named Dunhaven Winterborne.  Dunhaven noticed that when he would bash in the heads of his foes with the mace, a number of gold coins would fall out to the ground, seemingly from nowhere.  Dunhaven, both bewildered and amazed by this, quickly scooped them up and moved onto his next opponent.  It wasn't long before the greed that tends to follow large amounts of gold consumed him, and others took notice.  The next day, Dunhaven, along with many of his comrades were found slain in their tents, and the mace nowhere to be found.  In the years since, it has passed through many hands, and now finds itself in yours....but for how long?
 
 STATISTICS:
 
@@ -2884,7 +2884,7 @@ Requires:
 
 Weight: 6~
 @20445 = ~Howling Moon +4~
-@20446 = ~This ancient elven scimitar was forged by a devout follower of Fenmarel Mestarine, the diety of feral elves.  Rough, archaic runes and enchantments placed on the blade channel the raw, natural energies of the land and life itself, empowering the wielder and creating a link between <PRO_HESHE> and the land.  When in combat, wild creatures may heed the call and come to assist the wielder in their struggle.
+@20446 = ~This ancient elven scimitar was forged by a devout follower of Fenmarel Mestarine, the deity of feral elves.  Rough, archaic runes and enchantments placed on the blade channel the raw, natural energies of the land and life itself, empowering the wielder and creating a link between <PRO_HESHE> and the land.  When in combat, wild creatures may heed the call and come to assist the wielder in their struggle.
 
 STATISTICS:
 
@@ -3005,8 +3005,8 @@ Casting Time: 4
 Area of Effect: 7-ft. radius
 Saving Throw: 1/2
 
-This spell draws forth a massive bolt of electrical energy from the plane of air into the prime, striking the caster's target and nearby foes with a surge of eletricity. Each bolt causes 12d8 points of electrical damage, plus an additional 1d8 points per level of the caster, up to a maximum of 21d8. Any creatures within a 7 foot radius are also caught in the blast and take 4d8 of electrical damage, plus 1d8 per two levels up to a maximum of 8d8.  The force of the blast knocks affected targets back and unconscious for one round.  Creatures may make a reflex save to evade the blast, or successfully Save vs. Spell to halve the damage.~
-@3007 = ~This scroll is sealed by some magical encryption that defies all attempts to understand it's contents.  Just when it appears that a word or symbol is discernable, it shifts into another form.  It would take far more knowledge than most mortals possess to decipher this enigma.~
+This spell draws forth a massive bolt of electrical energy from the plane of air into the prime, striking the caster's target and nearby foes with a surge of electricity. Each bolt causes 12d8 points of electrical damage, plus an additional 1d8 points per level of the caster, up to a maximum of 21d8. Any creatures within a 7 foot radius are also caught in the blast and take 4d8 of electrical damage, plus 1d8 per two levels up to a maximum of 8d8.  The force of the blast knocks affected targets back and unconscious for one round.  Creatures may make a reflex save to evade the blast, or successfully Save vs. Spell to halve the damage.~
+@3007 = ~This scroll is sealed by some magical encryption that defies all attempts to understand it's contents.  Just when it appears that a word or symbol is discernible, it shifts into another form.  It would take far more knowledge than most mortals possess to decipher this enigma.~
 @3008 = ~Trollkiller's Fireball~
 @3009 = ~Trollkiller's Fireball
 (Evocation)
@@ -3018,7 +3018,7 @@ Casting Time: 3
 Area of Effect: 15-ft. radius
 Saving Throw: 1/2
 
-Trollkiller's Fireball is a more powerful version of the level 3 wizard spell, Fireball.  It's namesake, Durlag Trollkiller, commissioned an exiled elven mage of considerable skill to create this spell for use in eradicating trolls from his homeland.  Much to his delight, the creation of the spell was successful and put to great use during his troll-cleansing campaign.  In the years following, as Durlag's madness took hold of him, he kept all of his most prized possessions, including this spell, under lock, key, and devious trap inside his tower.  How it came to be in your possession is a mystery.   When cast, a raging ball of flame flies forth from the caster's hand, striking the target point and exploding in a horrific display of hellfire, doing 1d6 points of damage for each level of the spellcaster (up to a maximum of 16d6) to targets caught in the blast.  The searing heat is so intense that it can ignite clothing, armor, and even flesh, causing an additional 1d4 fire damage per round and sending the afflicted into a state of panic until they successfully roll a Save vs. Spell to extinguish the flames.  Those who roll successful a Save vs. Spell manage to dodge, fall flat, or roll aside, taking only half damage from the inital blast, and evade the ongoing fire damage and panic.  All saving throws must be made at -2.~
+Trollkiller's Fireball is a more powerful version of the level 3 wizard spell, Fireball.  It's namesake, Durlag Trollkiller, commissioned an exiled elven mage of considerable skill to create this spell for use in eradicating trolls from his homeland.  Much to his delight, the creation of the spell was successful and put to great use during his troll-cleansing campaign.  In the years following, as Durlag's madness took hold of him, he kept all of his most prized possessions, including this spell, under lock, key, and devious trap inside his tower.  How it came to be in your possession is a mystery.   When cast, a raging ball of flame flies forth from the caster's hand, striking the target point and exploding in a horrific display of hellfire, doing 1d6 points of damage for each level of the spellcaster (up to a maximum of 16d6) to targets caught in the blast.  The searing heat is so intense that it can ignite clothing, armor, and even flesh, causing an additional 1d4 fire damage per round and sending the afflicted into a state of panic until they successfully roll a Save vs. Spell to extinguish the flames.  Those who roll successful a Save vs. Spell manage to dodge, fall flat, or roll aside, taking only half damage from the initial blast, and evade the ongoing fire damage and panic.  All saving throws must be made at -2.~
 @3010 = ~Hoar of Frost~
 @3011 = ~Hoar of Frost
 (Evocation)
@@ -3031,7 +3031,7 @@ Casting Time: 3
 Area of Effect: 18-ft. cone with 90-deg. arc
 Saving Throw: 1/2
 
-The chosen of Auril speak of this spell as legend, a power that the Ice Maiden bestows only upon her most favored, and is a closely guarded secret.  It is said this spell conjures forth the very breath of Auril herself.  Cold as the hearts of Auril's followers may be, there are beings far, far more cruel than they in the realms, and it is rumored that one such being, known as "The Shattered One", caputured a high priestess of Auril and performed torturous experiments on her to "extract" this magic for his own use.  Unfortunately for the mage, he was unable to channel the divine energies required for the spell to work properly.  However, the damage was done and the secrets of this magic were shared across the realms, much to Auril's displeasure.  This spell brings forth a gale of icy, frozen wind from the caster's hands, feezing all in it's path with 1d5+1 of cold damage per level, up to a maximum of 20d5+20.   Those afflicted by the blistering cold are frozen in their tracks, hindering their ability to fight unless a saving throw is made.   Those who roll a successful Save vs. Spell will shrug off a portion of the cold, taking half damage and avoid being frozen in place.  All saving throws must be made at -2.  The use of this spell by non-aurilites angers the Ice Maiden greatly and there is a small chance that an enraged golem of ice will form from the gale and attack the party.~
+The chosen of Auril speak of this spell as legend, a power that the Ice Maiden bestows only upon her most favored, and is a closely guarded secret.  It is said this spell conjures forth the very breath of Auril herself.  Cold as the hearts of Auril's followers may be, there are beings far, far more cruel than they in the realms, and it is rumored that one such being, known as "The Shattered One", captured a high priestess of Auril and performed torturous experiments on her to "extract" this magic for his own use.  Unfortunately for the mage, he was unable to channel the divine energies required for the spell to work properly.  However, the damage was done and the secrets of this magic were shared across the realms, much to Auril's displeasure.  This spell brings forth a gale of icy, frozen wind from the caster's hands, freezing all in it's path with 1d5+1 of cold damage per level, up to a maximum of 20d5+20.   Those afflicted by the blistering cold are frozen in their tracks, hindering their ability to fight unless a saving throw is made.   Those who roll a successful Save vs. Spell will shrug off a portion of the cold, taking half damage and avoid being frozen in place.  All saving throws must be made at -2.  The use of this spell by non-aurilites angers the Ice Maiden greatly and there is a small chance that an enraged golem of ice will form from the gale and attack the party.~
 @3012 = ~Corrosion~
 @3013 = ~Corrosion
 (Conjuration)
@@ -3149,7 +3149,7 @@ Casting Time: 4
 Area of Effect: 5-ft. radius
 Saving Throw: Special
 
-This spell conjures forth shadowy orbs of dark energy from the shadow plane that bolt forward from the caster's hand to strike <PRO_HISHER> target with unerring precision. The priest creates one bolt at 9th level and an additional bolt at every third level after 9th—in other words, two bolts at 12th level, three at 15th, four at 18th, to a maximum of five bolts at 21st level. Each bolt inflicts 1d5 points of cold damage and 1d5 points of magic damage to the target and then bursts in a 5-ft. radius concussive blast that inflicts 6 points of cold damage and 6 points of magic damage, increasing by two points each per every 3 levels of the caster, up to a maximum of 14 per each at level 21.  Addtionally, creatures caught in the dark energy blast suffer a 20% chance of being blinded for one turn or being drained of one level permanently. Creatures can attempt a Save vs. Spell at -4 to negate the concussion damage and effects, but the impact of the bolts themselves allow no Saving Throw.  Undead creatures are immune to the effects of this spell.  Priests of good alignment may not cast this spell.~
+This spell conjures forth shadowy orbs of dark energy from the shadow plane that bolt forward from the caster's hand to strike <PRO_HISHER> target with unerring precision. The priest creates one bolt at 9th level and an additional bolt at every third level after 9th—in other words, two bolts at 12th level, three at 15th, four at 18th, to a maximum of five bolts at 21st level. Each bolt inflicts 1d5 points of cold damage and 1d5 points of magic damage to the target and then bursts in a 5-ft. radius concussive blast that inflicts 6 points of cold damage and 6 points of magic damage, increasing by two points each per every 3 levels of the caster, up to a maximum of 14 per each at level 21.  Additionally, creatures caught in the dark energy blast suffer a 20% chance of being blinded for one turn or being drained of one level permanently. Creatures can attempt a Save vs. Spell at -4 to negate the concussion damage and effects, but the impact of the bolts themselves allow no Saving Throw.  Undead creatures are immune to the effects of this spell.  Priests of good alignment may not cast this spell.~
 @3035 = ~Demi-Shadow Monsters~
 @3036 = ~Demi-Shadow Monsters
 (Illusion/Phantasm)
@@ -3186,7 +3186,7 @@ Casting Time: 4
 Area of Effect: 15-ft. radius
 Saving Throw: 1/2
 
-Ko'Dezza was an eccentric half-drow mage who lived before the time of troubles.  She attempted to create new spells by modifying and enhancing existing spells.  While her experiements met with failure more often than not, this spell was on her more successful efforts.  For all intents and purposes, this spell functions very similar to the level 3 spell, Fireball, except that two or more fireballs are launched simultaneously, and home in on a targetted creature with unerring accuracy.  When this spell is cast, two fireballs are launched at a target, and upon impact, explode in a horrific display of flames, doing 6d6 damage to the target and all creatures within a 15 foot radius of the impact.  For every two levels of the caster, damage is increased by 1d6 up to a maximum of 10d6 at level 22, and for every four levels an additional fireball is launched, up to a maximum of four at level 22.  Thus, a level 22 wizard can fire four fireballs each doing 10d6 fire damage at level 22. As with the level 3 spell, Fireball, creatures who make a Saving Throw per fireball may reduce their damage taken from it by half.  Creatures weak against fire would do well to steer clear of a mage with this spell in <PRO_HISHER> repetoire.~
+Ko'Dezza was an eccentric half-drow mage who lived before the time of troubles.  She attempted to create new spells by modifying and enhancing existing spells.  While her experiments met with failure more often than not, this spell was on her more successful efforts.  For all intents and purposes, this spell functions very similar to the level 3 spell, Fireball, except that two or more fireballs are launched simultaneously, and home in on a targeted creature with unerring accuracy.  When this spell is cast, two fireballs are launched at a target, and upon impact, explode in a horrific display of flames, doing 6d6 damage to the target and all creatures within a 15 foot radius of the impact.  For every two levels of the caster, damage is increased by 1d6 up to a maximum of 10d6 at level 22, and for every four levels an additional fireball is launched, up to a maximum of four at level 22.  Thus, a level 22 wizard can fire four fireballs each doing 10d6 fire damage at level 22. As with the level 3 spell, Fireball, creatures who make a Saving Throw per fireball may reduce their damage taken from it by half.  Creatures weak against fire would do well to steer clear of a mage with this spell in <PRO_HISHER> repertoire.~
 @3042 = ~Caustic Quagmire~
 @3043 = ~Caustic Quagmire
 (Conjuration)
@@ -3199,7 +3199,7 @@ Casting Time: 4
 Area of Effect: 10-ft. radius
 Saving Throw: Special
 
-When this spell is cast, acrid pools of thick, corrosive ichor rise from the earth and cover the ground.  Any creatures entering the area or caught in it when the spell is cast are mired in the sticky substance, which severly hinders their movement while corroding their flesh and armor, doing 1d4 damage(acid) per round, and reducing their physical resistances by 5%, making them more susceptible to melee and ranged attacks.  For every three levels of the caster, damage is increased by one point, and physical resistance is reduced by an additional percentage point, up to a maximum of 1d4+5 and 10%, respectively.  A successful Save vs. Spell at -2 negates the slowed movement and reduced defenses, while halving damage for that round.~
+When this spell is cast, acrid pools of thick, corrosive ichor rise from the earth and cover the ground.  Any creatures entering the area or caught in it when the spell is cast are mired in the sticky substance, which severely hinders their movement while corroding their flesh and armor, doing 1d4 damage(acid) per round, and reducing their physical resistances by 5%, making them more susceptible to melee and ranged attacks.  For every three levels of the caster, damage is increased by one point, and physical resistance is reduced by an additional percentage point, up to a maximum of 1d4+5 and 10%, respectively.  A successful Save vs. Spell at -2 negates the slowed movement and reduced defenses, while halving damage for that round.~
 @3044 = ~Grasping Shadows~
 @3045 = ~Grasping Shadows
 (Conjuration)
@@ -3237,7 +3237,7 @@ Casting Time: 9
 Area of Effect: 15-ft. radius
 Saving Throw: Special
 
-When this spell is cast, the very earth shakes and is torn asunder sending gouts of flame up from the cracks. The cataclysm affects all creatures in its area of effect, occuring in three waves:
+When this spell is cast, the very earth shakes and is torn asunder sending gouts of flame up from the cracks. The cataclysm affects all creatures in its area of effect, occurring in three waves:
 
  1st: All creatures affected take 3d6 points of crushing damage, and 3d6 points of fire damage.  Affected creatures are also knocked to the ground, panicked, or go berserk for four rounds.  A successful Saving Throw vs. Spell with a -6 penalty halves the damage and negates the adverse effects.
  2nd: All creatures affected take 1d9 points of crushing damage, and 1d9 points of fire damage.  A successful Saving Throw vs. Spell with a -2 penalty halves the damage.
@@ -3306,7 +3306,7 @@ Casting Time: 6
 Area of Effect: 15-ft. radius
 Saving Throw: Special
 
-This spell is a more powerful version of the level 5 mage spell, Cloudkill.  When cast, it creates plumes of venemous gas of such toxicity as to immediately sear the flesh of creatures it comes in contact with, entering their bloodstream.  So deadly is this poison as to instantly slay creatures of 8 or fewer Hit Dice, and creatures with 9 or 10 Hit Dice must roll a Saving Throw vs. Poison at -8 for each round they remain in the area of effect, lest they be slain instantly as well.  Those above 10th level (or 10 Hit Dice) must leave the cloud immediately or suffer 1d12 + 1 Hit Points of poison damage per level per round that they remain in the affected area, up to a maximum of 1d12 + 15 Hit Points at level 30.  While remaining in the area of effect, there is a 25% chance per round that creatures will also be systemically poisoned, suffering an additional 2 Hit Points of poison damage per second for 2 rounds, unless they make a Saving Throw vs. poison at -8.  This affliction will persist even after leaving the area of effect.~
+This spell is a more powerful version of the level 5 mage spell, Cloudkill.  When cast, it creates plumes of venomous gas of such toxicity as to immediately sear the flesh of creatures it comes in contact with, entering their bloodstream.  So deadly is this poison as to instantly slay creatures of 8 or fewer Hit Dice, and creatures with 9 or 10 Hit Dice must roll a Saving Throw vs. Poison at -8 for each round they remain in the area of effect, lest they be slain instantly as well.  Those above 10th level (or 10 Hit Dice) must leave the cloud immediately or suffer 1d12 + 1 Hit Points of poison damage per level per round that they remain in the affected area, up to a maximum of 1d12 + 15 Hit Points at level 30.  While remaining in the area of effect, there is a 25% chance per round that creatures will also be systemically poisoned, suffering an additional 2 Hit Points of poison damage per second for 2 rounds, unless they make a Saving Throw vs. poison at -8.  This affliction will persist even after leaving the area of effect.~
 @3060 = ~Ent Summoning~
 @3061 = ~Ent Summoning
 (Conjuration/Summoning)
@@ -3352,7 +3352,7 @@ Casting Time: 5
 Area of Effect: The caster
 Saving Throw: None
 
-Ko'Dezza, a half-drow mage who lived in an age past had a natural talent for magic, and attempted to eke out a living by experimenting on existing spells to create new spells and sold scrolls of her creations across the breadth of Faerûn.  This spell in particular was a great success, though it came at the cost of three fingers on her left hand.  When cast, the spell conjures forth a mass of living slime that encapsulates the caster in a protective bubble.  The slime-shell is highly corrosive, and thwarts acidic and physical attacks.  The caster's resistance to acid is increased by 50% for the duration of the spell, and attackers in melee range who successfully strike <PRO_HIMHER> through the shell are checmically burned by it, causing 1d6+2 Hit Points of acid damage, and suffering a penalty of 1 to their THACO score for one round unless a successfull Save vs. Spell at -2 is made.~
+Ko'Dezza, a half-drow mage who lived in an age past had a natural talent for magic, and attempted to eke out a living by experimenting on existing spells to create new spells and sold scrolls of her creations across the breadth of Faerûn.  This spell in particular was a great success, though it came at the cost of three fingers on her left hand.  When cast, the spell conjures forth a mass of living slime that encapsulates the caster in a protective bubble.  The slime-shell is highly corrosive, and thwarts acidic and physical attacks.  The caster's resistance to acid is increased by 50% for the duration of the spell, and attackers in melee range who successfully strike <PRO_HIMHER> through the shell are checmically burned by it, causing 1d6+2 Hit Points of acid damage, and suffering a penalty of 1 to their THACO score for one round unless a successful Save vs. Spell at -2 is made.~
 @3066 = ~Antipode~
 @3067 = ~Antipode
 (Evocation)
@@ -3402,7 +3402,7 @@ Casting Time: 9
 Area of Effect: 10-ft. radius
 Saving Throw: None
 
-When the priest chants this spell, a swirling misama of living shadow blankets an area of the caster's choosing.  Creatures caught in the maw of this hungering mass suffer 2d4 Hit Points of cold and 2d4 Hit Points of magic damage per round while they are in the area of effect, their level of fatigue increased by one, and must make a Saving Throw or also be held for one round and drained of two levels permanently.  The Saving throw against being held must be made at a penatly of -8, and -2 for being drained.  The caster and undead creatures are immune to the effects of this spell.  This spell may not be cast by clerics of good alignment.~
+When the priest chants this spell, a swirling misama of living shadow blankets an area of the caster's choosing.  Creatures caught in the maw of this hungering mass suffer 2d4 Hit Points of cold and 2d4 Hit Points of magic damage per round while they are in the area of effect, their level of fatigue increased by one, and must make a Saving Throw or also be held for one round and drained of two levels permanently.  The Saving throw against being held must be made at a penalty of -8, and -2 for being drained.  The caster and undead creatures are immune to the effects of this spell.  This spell may not be cast by clerics of good alignment.~
 @3074 = ~Ko'Dezza's Frozen Death~
 @3075 = ~Ko'Dezza's Frozen Death
 (Evocation)
@@ -3483,7 +3483,7 @@ Upon casting a Conjure Shadow Elemental spell, the caster opens a special gate t
 @40045 = ~Berserk Warrior~
 @40046 = ~Chicken~
 @40047 = ~Unconscious~
-@40048 = ~Wasting Rime~
+@40048 = ~Wasting Rhyme~
 @40049 = ~Kurg's Bold Bellows~
 @40050 = ~Petrified~
 @40051 = ~Viconia~
@@ -3567,7 +3567,7 @@ Upon casting a Conjure Shadow Elemental spell, the caster opens a special gate t
 @5057 = ~Arctic Breath~
 @5058 = ~Shocking Breath~
 @5059 = ~Shadow Breath~
-@5060 = ~Venemous Breath~
+@5060 = ~Venomous Breath~
 @5061 = ~Caustic Breath~
 @5062 = ~Shadow Images~
 @5063 = ~Shadow Imaged~
