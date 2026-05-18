@@ -1,0 +1,10 @@
+IF
+    Global("BD_HAVE_SOD","GLOBAL",1)
+    Global("K0_SOD_IMPORT_25","GLOBAL",1)
+THEN
+    RESPONSE #100
+        SetInterrupt(FALSE)
+        SetGlobal("K0_SOD_IMPORT_25","GLOBAL",2)
+        ActionOverride("TORGAL",CreateItem("bdsper01",0,0,0)) // Shadowed Spear +2
+        SetInterrupt(FALSE)
+END

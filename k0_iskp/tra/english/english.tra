@@ -1,0 +1,3620 @@
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////                                                  \\\\\
+///// Setup dialogues                                  \\\\\
+/////                                                  \\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+@10000 = ~Item-Spell-Kit Pack by Daeros Trollkiller (Formerly SoD to BG2 Item Upgrade)~
+@10001 = ~This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate, Baldur's Gate 2, Baldur's Gate Trilogy, and Icewind Dale.~
+@10002 = ~Installing...~
+@10003 = ~Items and Item Upgrades~
+@10004 = ~Add more importable Siege of Dragonspear items to Baldur's Gate 2~
+@10005 = ~Force-import standard importable Siege of Dragonspear items into Baldur's Gate 2 (Requires starting a new game)~
+@10006 = ~Standard SoD items with Voidsword +3~
+@10007 = ~Standard SoD items with Voidhammer +3~
+@10008 = ~Standard SoD items with Voidsword +3 and Voidhammer +3~
+@10009 = ~This component requires the "Add more importable Siege of Dragonspear items to Baldur's Gate 2" component to be installed~
+@10010 = ~Force-import new importable Siege of Dragonspear items into Baldur's Gate 2 (Requires starting a new game)~
+@10011 = ~New SoD items with Rhino Beetle Plate & Tongue of Acid +3~
+@10012 = ~New SoD items with Rhino Beetle Plate & The Guardian Devil~
+@10013 = ~New SoD items with Rhino Beetle Plate & Echo of the Fiend +3~
+@10014 = ~New SoD items with Rhino Beetle Shield +2 & Tongue of Acid +3~
+@10015 = ~New SoD items with Rhino Beetle Shield +2 & The Guardian Devil~
+@10016 = ~New SoD items with Rhino Beetle Shield +2 & Echo of the Fiend +3~
+@10017 = ~All new SoD items~
+@10018 = ~Add bard instruments from IWD into Baldur's Gate EE, Baldur's Gate 2 EE, EE Trilogy~
+@10019 = ~Add cursed items from IWD into Baldur's Gate EE, Baldur's Gate 2 EE, EE Trilogy~
+@10020 = ~Add new items to BG1:EE, BG2:EE, EE:Trilogy, and IWD:EE~
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////                                                  \\\\\
+///// Item Descriptions                                \\\\\
+/////                                                  \\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+@20000 = ~Long Sword~
+@20001 = ~These swords are usually referred to as double-edged swords, war swords, or military swords. In many cases, the long sword has a single-edged blade. There is no single version of the long sword; the design and length vary from culture to culture and may vary within the same culture depending on the era. Among the most common characteristics of all long swords is their length, which ranges from thirty-five inches to forty-seven inches. In the latter case, the blade is known to take up forty inches of the total length. Most long swords have a double-edged blade and a sharp point at the tip. Despite the tip, the long sword is designed for slashing, not thrusting.
+
+STATISTICS:
+
+Damage: 1d8 (slashing)
+Speed Factor: 5
+Proficiency Type: Long Sword
+Type: One-handed
+Requires:
+ 6 Strength
+
+Weight: 4~
+@20002 = ~Short Sword~
+@20003 = ~The short sword is the first type of sword to come into existence. In the simplest of terms, a short sword can be considered a dagger with a blade so long that it can no longer be called a dagger. The term short sword does not exist in sword classifications. However, it has come to be used to describe a double-edged blade about two feet in length. The sword tip is usually pointed, ideal for thrusting.
+
+STATISTICS:
+
+Damage: 1d6 (piercing)
+Speed Factor: 3
+Proficiency Type: Short Sword
+Type: One-handed
+Requires:
+ 5 Strength
+
+Weight: 3~
+@20004 = ~Bastard Sword~
+@20005 = ~Also known as the hand-and-a-half sword, the bastard sword derives its name from the fact that it is halfway between the two-handed sword and the long sword. The bastard sword has a double-edged blade and a long grip, which can accommodate both hands if preferred. The overall length of the bastard sword ranges between four feet and four feet ten inches.
+
+STATISTICS:
+
+Damage: 2d4 (slashing)
+Speed Factor: 8
+Proficiency Type: Bastard Sword
+Type: One-handed
+Requires:
+ 11 Strength
+
+Weight: 10~
+@20006 = ~Scimitar~
+@20007 = ~The long, curved, single-edged blade is characteristic of both the saber and the scimitar, even though their origins lie in different parts of Faerûn. Whereas the saber was intended chiefly for horsemen, mainly due to its versatility, the scimitar has a heavier oriental influence. The "shamshir," as it was originally called, is larger, more highly curved, and tapered to an elongated, sharp point. This makes the weapon slightly slower but more effective and deadly in combat.
+
+STATISTICS:
+
+Damage: 1d8 (slashing)
+Speed Factor: 5
+Proficiency Type: Scimitar/Wakizashi/Ninjatō
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 4~
+@20008 = ~Katana~
+@20009 = ~The katana is a single-edged, slightly curved sword that ends with a chisel point. The katana is perhaps one of the finest swords ever made, the steps to its creation a long and secret process that is more art form than anything else. This blade is an important facet of Kara-Turan culture. To touch or wield a samurai's katana is to insult the samurai and to incite his wrath. For a gaijin, or foreigner, to own such a blade is a rare occurrence. Either the gaijin is a greatly honored friend of an important minister, or the gaijin has murdered a samurai.
+
+STATISTICS:
+
+Damage: 1d10 (slashing)
+Speed Factor: 4
+Proficiency Type: Katana
+Type: One-handed
+Requires:
+ 6 Strength
+
+Weight: 6~
+@20010 = ~Wakizashi~
+@20011 = ~The wakizashi, or companion sword, is extremely important to samurai. It is worn at all times, even indoors, and is near the samurai when he sleeps at night. As finely made as the katana, the wakizashi, a shorter sword with a length between twelve and twenty-four inches, is a dangerous weapon in the hands of a skilled user.
+
+STATISTICS:
+
+Damage: 1d8 (piercing)
+Speed Factor: 3
+Proficiency Type: Scimitar/Wakizashi/Ninjatō
+Type: One-handed
+Requires:
+ 5 Strength
+
+Weight: 3~
+@20012 = ~Ninjatō~
+@20013 = ~The sword of the ninja, the ninjatō, is of lower quality than other Kara-Turan blades such as the katana. The ninjatō is short with a straight blade, making it ideal for subterfuge. The ninjatō is also more suited to fighting in closed places, sometimes giving the ninja an advantage over the longer blades that the samurai use.
+
+STATISTICS:
+
+Damage: 1d8 (slashing)
+Speed Factor: 4
+Proficiency Type: Scimitar/Wakizashi/Ninjatō
+Type: One-handed
+Requires:
+ 6 Strength
+
+Weight: 5~
+@20014 = ~Two-handed Sword~
+@20015 = ~The two-handed sword is a derivative of the long sword. Weaponsmiths have always looked for ways to improve existing weapons. In an effort to improve the long sword, the blade was lengthened. Eventually, the handle had to be extended and two hands became necessary to properly swing the sword. The primary function of two-handed swords is cleaving mounted knights and breaking up pike formations.
+
+STATISTICS:
+
+Damage: 1d10 (slashing)
+Speed Factor: 10
+Proficiency Type: Two-handed Sword
+Type: Two-handed
+Requires:
+ 14 Strength
+
+Weight: 15~
+@20016 = ~Dagger~
+@20017 = ~The typical dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter.
+
+STATISTICS:
+
+Damage: 1d4 (piercing)
+Speed Factor: 2
+Proficiency Type: Dagger
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 1~
+@20018 = ~Throwing Dagger~
+@20019 = ~The typical throwing dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter than the dagger. Unlike a dagger, this one has a smaller handle and is balanced perfectly. A thin coating of poison has been applied to each poisoned throwing dagger, making it a lethal tool in the hands of trained assassins.
+
+STATISTICS:
+
+Combat abilities:
+– Hit target takes 2 points of poison damage per second for 10 seconds (Save vs. Death negates)
+
+Damage: 1d4 (missile)
+Speed Factor: 2
+Proficiency Type: Dagger
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 0~
+@20020 = ~Dart~
+@20021 = ~The dart is a small, easily concealable missile weapon that is thrown rather than fired from a bow or other launcher.
+
+STATISTICS:
+
+Damage: 1d3 (missile)
+Speed Factor: 2
+Proficiency Type: Dart
+Type: One-handed
+
+Weight: 0~
+@20022 = ~Battle Axe~
+@20023 = ~The most common version of the battle axe is a stout pole about four feet in length with a single-edged, trumpet-shaped blade mounted on one end. Battle axes are also called broad axes.
+
+STATISTICS:
+
+Damage: 1d8 (slashing)
+Speed Factor: 7
+Proficiency Type: Axe
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 7~
+@20024 = ~Throwing Axe~
+@20025 = ~The hand axe or throwing axe is also known as a hatchet. The axe blade has a sharp steel tip counterbalanced by a pointed fluke. The short handle has a point on the bottom, and the head may have a spike on the top.
+
+STATISTICS:
+
+Damage: 1d6+1
+Damage type (melee): Slashing
+Damage type (thrown): Missile
+Speed Factor: 4
+Proficiency Type: Axe
+Type: One-handed
+Requires:
+ 4 Strength
+
+Weight: 1~
+@20026 = ~War Hammer~
+@20027 = ~Mounted knights cannot effectively use long pole weapons while on horseback and, as a result, many weapons have been fitted with shorter shafts so they may be wielded with just one hand. Maces and flails are two examples of this—the war hammer is another. The horseman's war hammer is the descendent of the Lucerne hammer. It is made entirely of steel, with rondels protecting and strengthening the grip. (Rondels are small disks of metal, often shaped into decorative designs.) The shaft is about eighteen inches long.
+
+STATISTICS:
+
+Damage: 1d4+1 (crushing)
+Speed Factor: 4
+Proficiency Type: War Hammer
+Type: One-handed
+Requires:
+ 9 Strength
+
+Weight: 6~
+@20028 = ~Throwing Hammer~
+@20029 = ~A throwing hammer is both smaller and lighter than a typical war hammer, and has a counterweight at the bottom of the hilt, usually in the shape of a smooth, rounded sphere.  This allows for better accuracy without interfering with the wielder's grip.
+
+STATISTICS:
+
+Damage: 1d4+1 (1d3+1 melee)
+Damage type: missile (crushing)
+Speed Factor: 3
+Proficiency Type: War Hammer
+Type: One-handed
+Requires:
+ 6 Strength
+
+Weight: 2~
+@20030 = ~Club~
+@20031 = ~Most clubs are stout, hardwood sticks, narrow at the grip and wider at the end. This simple weapon has been used since people first began using tools. Anyone can find a good stout piece of wood and swing it; hence the club's widespread use.
+
+STATISTICS:
+
+Damage: 1d6 (crushing)
+Speed Factor: 4
+Proficiency Type: Club
+Type: One-handed
+Requires:
+ 5 Strength
+
+Weight: 3~
+@20032 = ~Throwing Club~
+@20033 = ~A throwing club differs from a normal club in that they are a bit smaller and lighter, and capped on either end by a spherical knot of wood, naturally occuring in the trees they are hewn from.
+
+STATISTICS:
+
+Damage: 1d5+1 (1d5 melee)
+Damage type: missile (crushing)
+Speed Factor: 2
+Proficiency Type: Club
+Type: One-handed
+Requires:
+ 5 Strength
+
+Weight: 1~
+@20033 = ~Mace~
+@20034 = ~The mace is a direct descendant of the basic club, being nothing more than a wooden shaft with a stone or iron head mounted on the end. The head design varies: Some are spiked, others flanged, and still others have pyramidal knobs.
+
+STATISTICS:
+
+Damage: 1d6+1 (crushing)
+Speed Factor: 7
+Proficiency Type: Mace
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 10~
+@20035 = ~Morning Star~
+@20036 = ~The morning star is a wooden shaft topped with a metal head covered by a spiked iron sheath. Morning stars have an overall length of about four feet. Some have a round, oval, or cylindrical shaped head studded with spikes. Extending from most morning star heads, regardless of design, is a long point for thrusting.
+
+STATISTICS:
+
+Damage: 2d4 (crushing)
+Speed Factor: 7
+Proficiency Type: Flail/Morning Star
+Type: One-handed
+Requires:
+ 11 Strength
+
+Weight: 12~
+@20037 = ~Flail~
+@20038 = ~The flail is a sturdy wooden handle attached to an iron rod, a wooden rod with spikes, or a spiked iron ball. Between the handle and its implement is either a hinge or chain link. The weapon was originally used as a tool for threshing grain.
+
+STATISTICS:
+
+Damage: 1d6+1 (crushing)
+Speed Factor: 7
+Proficiency Type: Flail/Morning Star
+Type: One-handed
+Requires:
+ 13 Strength
+
+Weight: 15~
+@20039 = ~Quarterstaff~
+@20040 = ~The simplest and humblest of staff weapons, the quarterstaff is a length of wood ranging six to nine feet in length. High-quality quarterstaves are made of stout oak and are shod with metal at both ends. The quarterstaff must be wielded with both hands.
+
+STATISTICS:
+
+Damage: 1d6 (crushing)
+Speed Factor: 4
+Proficiency Type: Quarterstaff
+Type: Two-handed
+Requires:
+ 5 Strength
+
+Weight: 4~
+@20041 = ~Spear~
+@20042 = ~One of the earliest weapons, dating back to the most primitive of times, the first spears were simply wooden poles or sticks sharpened at one end. When the civilized races mastered metals, spearheads were made from iron and steel. Having reached this end, weaponsmiths began experimenting with different types of spearheads, thus leading to the development of certain polearm types.
+
+STATISTICS:
+
+Damage: 1d6 (piercing)
+Speed Factor: 6
+Proficiency Type: Spear
+Type: Two-handed
+Requires:
+ 5 Strength
+
+Weight: 5~
+@20043 = ~Throwing Spear~
+@20044 = ~Throwing spears are lighter, slender, and carefully balanced to allow for accuracy distance over a spear meant for melee combat.  While still primitive in nature, and not as effecient as more modern missile weapons, they are nevertheless, still quite deadly in skilled hands.
+
+STATISTICS:
+
+Damage: 1d5+1 (1d5 melee)
+Damage type: missile (piercing)
+Speed Factor: 4
+Proficiency Type: Spear
+Type: Two-handed
+Requires:
+ 4 Strength
+
+Weight: 3~
+@20045 = ~Naginata~
+@20046 = ~A Naginata is a bladed weapon with a long shaft (wooden handle). The weapon looks like a pole and is often mistaken for one. The word "naginata" means "mowing down sword" or "reaping sword". The length of the blade can be anywhere from 1 to 3 feet. The blade's shape looks like a leaf being more curved to the point. The naginata's blade is attached to a long wooden shaft. The shaft itself is between 6 and 9 feet. The part that goes inside the handle (tang) is almost as long as the blade itself. This makes sure the blade is attached tightly onto the shaft. The shaft has a sharp end-cap, or ishizuki, which is made for piercing between plates of armor.
+
+STATISTICS:
+
+Damage: 1d8 (slashing)
+Speed Factor: 7
+Proficiency Type: Spear
+Type: Two-handed
+Requires:
+ 9 Strength
+
+Weight: 12~
+@20047 = ~Halberd~
+@20048 = ~By far the oldest and most often used polearm, the halberd consists of a cleaver-like axe blade mounted on a staff averaging six feet in length. The axe blade is balanced at the rear with a fluke and surmounted by a sharp spike, usually of quadrangular design. The fluke is sometimes replaced by a hook used to dismount cavalry. A halberd can be best described as a cross between a spear and an axe.
+
+STATISTICS:
+
+Damage: 1d10 (slashing or piercing, whichever is better)
+Speed Factor: 9
+Proficiency Type: Halberd
+Type: Two-handed
+Requires:
+ 13 Strength
+
+Weight: 15~
+@20049 = ~Sling~
+@20050 = ~Slings have existed since the beginning of recorded history. The basic sling consists of a leather or fabric strap with a pouch for holding the missile. The weapon is held by both ends of the strap and twirled around the wielder's head. When top speed is attained, the missile is launched by releasing one of the strap's ends.
+
+STATISTICS:
+
+Speed Factor: 6
+Proficiency Type: Sling
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 0~
+@20051 = ~Shortbow~
+@20052 = ~Shortbows were the first bows to be developed, although they were not called such. This is more of a default term that refers to anything which is not a longbow. Shortbow staves are about five feet long on the average. As the years passed, attempts were made to increase bow ranges. Bows were either given longer staves or flexibility was increased with no change to the length. The former resulted in what is now called the longbow.
+
+STATISTICS:
+
+Speed Factor: 6
+Proficiency Type: Shortbow
+Type: Two-handed
+Requires:
+ 6 Strength
+
+Weight: 2~
+@20053 = ~Longbow~
+@20054 = ~The longbow is similar to the shortbow, except that the staff is about as tall as the archer is—usually six to six-and-a-half feet. It has better range and accuracy than the shortbow, but a slower Speed Factor.
+
+STATISTICS:
+
+THAC0: +1
+Speed Factor: 7
+Proficiency Type: Longbow
+Type: Two-handed
+Requires:
+ 6 Strength
+
+Weight: 3~
+@20055 = ~Composite Longbow~
+@20056 = ~Composite bows are longbows or shortbows whose staves are made from more than one type of material. This gives greater flexibility and makes arrows fired from this bow deliver more damage. These were developed after the normal longbow.
+
+STATISTICS:
+
+THAC0: +1
+Damage: +2
+Speed Factor: 7
+Proficiency Type: Longbow
+Type: Two-handed
+Requires:
+ 18 Strength
+
+Weight: 10~
+@20057 = ~Composite Shortbow~
+@20058 = ~Composite bows are longbows or shortbows whose staves are made from more than one type of material. This gives greater flexibility and makes arrows fired from this bow deliver more damage. These were developed after the normal longbow.
+
+STATISTICS:
+
+THAC0: +1
+Damage: +2
+Speed Factor: 7
+Proficiency Type: Longbow
+Type: Two-handed
+Requires:
+ 18 Strength
+
+Weight: 10~
+@20059 = ~Light Crossbow~
+@20060 = ~A crossbow is a bow mounted crosswise on a wooden or metal shaft, the latter called a tiller. The bow is usually made of ash or yew. The crossbow fires a quarrel (also called a bolt).
+
+STATISTICS:
+
+Speed Factor: 5
+Proficiency Type: Crossbow
+Type: Two-handed
+Requires:
+ 8 Strength
+
+Weight: 7~
+@20061 = ~Heavy Crossbow~
+@20062 = ~A crossbow is a bow mounted crosswise on a wooden or metal shaft, the latter called a tiller. The bow is usually made of ash or yew. The crossbow fires a quarrel (also called a bolt).
+
+STATISTICS:
+
+Damage: +2
+Speed Factor: 10
+Proficiency Type: Crossbow
+Type: Two-handed
+Requires:
+ 12 Strength
+
+Weight: 14~
+@20063 = ~Repeating Crossbow~
+@20064 = ~A repeating crossbow has the addition of a bolt cartridge, eiher on top of, or below the shaft, which allows for more rapidity in firing.  The added weight of the bolt cartridge and reloading mechanism require a great deal of strength from the wielder to be able to manipulate in this fashion, however.
+
+STATISTICS:
+
+Combat abilities:
+– 1/2 extra attack per round
+
+Speed Factor: 3
+Proficiency Type: Crossbow
+Type: Two-handed
+Requires:
+ 16 Strength
+
+Weight: 15~
+@20065 = ~Leather Armor~
+@20066 = ~Leather armor, despite the popular misconception, is not soft and supple like the leather used to make a Ranger's boots or a Druid's robe. That kind of leather offers no better protection than common clothing.
+
+STATISTICS:
+
+Armor Class: 8 (10 vs. piercing and missile)
+Requires:
+ 4 Strength
+
+Weight: 15~
+@20067 = ~Studded Leather Armor~
+@20068 = ~Studded leather armor has little in common with normal leather armor. While leather armor is a hardened shell, studded leather armor is soft and supple with hundreds of metal rivets affixed. The rivets are so close together that they form a flexible coating of hard metal that turns aside slashing and cutting attacks. The soft leather backing is little more than a means of securing the rivets in place.
+
+STATISTICS:
+
+Armor Class: 7 (5 vs. slashing, 6 vs. piercing and missile)
+Requires:
+ 6 Strength
+
+Weight: 25~
+@20069 = ~Chain Mail~
+@20070 = ~Chain mail is made of interlocking metal rings. It is always worn over a layer of padded fabric or soft leather to prevent chafing and lessen the impact of blows.
+
+STATISTICS:
+
+Armor Class: 5 (3 vs. slashing, 7 vs. crushing)
+Requires:
+ 8 Strength
+
+Weight: 40~
+@20071 = ~Splint Mail~
+@20072 = ~Splint mail is a variant of banded mail in which the metal strips are applied vertically to the backing of chain, leather, or cloth rather than horizontally as in banded mail. Since the body does not swivel in mid-torso as much as it flexes back to front, splint mail is more restrictive in battle.
+
+STATISTICS:
+
+Armor Class: 4 (3 vs. piercing and missile, 2 vs. crushing)
+Requires:
+ 8 Strength
+
+Weight: 40~
+@20073 = ~Scale Armor~
+@20074 = ~Scale armor consists of hardened scales, layered on top of each other over leather backing or linen padding and fastened securely in place.  The construction allows for greater flexibility than plate, while offering better protection than chainmail.  The scales themselves can either be forged, or harvested from various creatures.
+
+STATISTICS:
+
+Armor Class: 4 (3 vs. piercing, missile, and slashing, 1 vs. crushing)
+Requires:
+ 10 Strength
+
+Weight: 45~
+@20075 = ~Plate Mail~
+@20076 = ~Plate mail is a combination of chain armor with metal plates covering the vital areas such as the chest, abdomen, and groin. Similar in construction to bronze plate mail, true plate mail comprises chain and leather.
+
+STATISTICS:
+
+Armor Class: 3 (0 vs. slashing)
+Requires:
+ 12 Strength
+
+Weight: 50~
+@20077 = ~Full Plate Armor~
+@20078 = ~Full plate armor is the best armor a warrior can buy, both in appearance and protection. The perfectly fitted, interlocking plates are specially angled to deflect arrows and blows, and the entire suit is carefully adorned with rich engraving and embossed detail.
+
+STATISTICS:
+
+Armor Class: 1 (-3 vs. slashing, -2 vs. piercing and missile)
+Requires:
+ 15 Strength
+
+Weight: 70~
+@20079 = ~Mage Robe~
+@20080 = ~Since the age of Netheril, mages have learned to bestow a wide variety of magical properties upon the everyday objects that surround them. A favorite item of such enchantment is the common robe. It is lightweight, affordable, and holds its enchantment well, thereby making it ideal equipment for a mage. Due to their magical heritage, however, only single-, dual-, and multi-class Mages may wear these enchanted robes.
+
+STATISTICS:
+
+Weight: 3~
+@20081 = ~Gi~
+@20082 = ~Favored by monks and fighters who prefer unrestricted, quick movements in combat, Gis are a lightweight fighting garb, similar in construction to mage robes, though more practical in their design for their intended purpose.  While a well-made Gi can provide some protections, esepcially when enchanted, they are primarily worn as clothing moreso than armor.
+
+STATISTICS:
+
+Weight: 3~
+@20083 = ~Helmet~
+@20084 = ~This class of decorative helmet, made of reinforced leather or metal, covers the face and head. Eye slits and breathing holes come highly recommended.
+
+STATISTICS:
+
+Equipped abilities:
+– Protects against critical hits
+
+Weight: 2~
+@20085 = ~Hat~
+@20086 = ~This soft cap looks neither durable nor practical. Its stylish appearance marks it as strictly decorative.~
+@20087 = ~Circlet~
+@20088 = ~A circlet is a circular band, typically made of precious metal, worn on the head as an ornament or symbol of status. Circlets carrying low-level enchantments are commonly worn by mages across Faerûn.
+
+Weight: 1~
+@20089 = ~Ioun Stone~
+@20090 = ~This is a small stone that floats in an orbit around the owner's head. Simply equip the stone to set it in its orbit. These obviously magical stones have different properties depending on their color.
+
+STATISTICS:
+
+Weight: 0~
+@20091 = ~Necklace~
+@20092 = ~A necklace is a piece of ornamental metal jewelry usually made of silver, gold, platinum, or other precious metal, and adorned with gems. A necklace is always worn on the neck and can be of any length.
+
+STATISTICS:
+
+Weight: 1~
+@20093 = ~Amulet~
+@20094 = ~Amulets are usually magical devices that are commonly worn around the neck, suspended from a chain. The type of chain that comes with an amulet generally increases the item's aesthetic value, not its magical properties. Only one amulet can be dangled from the neck at a time.
+
+STATISTICS:
+
+Weight: 1~
+@20095 = ~Scarf~
+@20096 = ~Scarves are clothing worn around the neck.  Mostly constructed of lightweight, comfortable materials to allow for ease of movement while protecting the neck area from the elements, or simply to look fashionable.
+
+STATISTICS:
+
+Weight: 1~
+@20097 = ~Gorget~
+@20098 = ~Gorgets are bands worn about the neck as a means of protection for this vital area of the body.  They can be made from any number of materials, similar to armor, with the amount of protection varying depending on the type and skill of the craftsmen who make them.
+
+STATISTICS:
+
+Weight: 2~
+@20099 = ~Gauntlets~
+@20100 = ~Gauntlets are armored gloves. They can be made of leather, metal plates, or chain mail. Every suit of armor is assumed to include gauntlets of an appropriate type. Magical gauntlets tend to be finer, lighter, and more easily worn than normal varieties.~
+@20101 = ~Bracers~
+@20102 = ~Bracers are thick bands of metal or leather that are strapped, belted, or tied to a character's forearm. Generally, the magic that is instilled in bracers is good only during combat, since most bracers help protect the wearer from injury or improve their chances to strike an opponent. Exceptions do exist, though such specialized items are rare at best.
+
+STATISTICS:
+
+Weight: 2~
+@20103 = ~Gloves~
+@20104 = ~Gloves are clothing worn on the hands to protect them from the elements, work hazards, or simply a fashion item.  Gloves are usually made from linens or soft, supple hides.
+
+STATISTICS:
+
+Weight: 1~
+@20105 = ~Ring~
+@20106 = ~A ring is a small band of precious metal that is used as jewelry. Some rare rings have had enchantments placed upon them that confer various magical abilities. These rings are highly sought after, especially by those of the adventuring profession.
+
+STATISTICS:
+
+Weight: 0~
+@20107 = ~Cloak~
+@20108 = ~The cloak can be made in every possible shape with just about every type of fabric. The most common forms are a circular piece of fabric with a hole in the center for the head, and fabric draped from neck, connected by a chain, brooch, cord, or pins.
+
+STATISTICS:
+
+Weight: 3~
+@20109 = ~Belt~
+@20110 = ~Girdles are generally similar to belts. Unlike belts, girdles are not used to hold up pants and dungarees, but to carry pouches, scabbards, and the like.
+
+STATISTICS:
+
+Weight: 2~
+@20111 = ~Boots~
+@20112 = ~Boots are normally handmade by cobblers. Common boots are made by using a form, but good boots are designed for the foot of an individual.
+
+STATISTICS:
+
+Weight: 4~
+@20113 = ~Arrow~
+@20114 = ~The flight arrow, as its name implies, is built for distance. These are lightweight arrows and are often used for hunting. Most of these arrows are made of ash or birch and are thirty to forty inches long.
+
+STATISTICS:
+
+Damage: 1d6 (missile)
+Launcher: Bow
+
+Weight: 0~
+@20115 = ~Bolt~
+@20116 = ~Quarrels or bolts are the ammunition fired by crossbows regardless of the weapon's size.
+
+STATISTICS:
+
+Damage: 1d8 (missile)
+Launcher: Crossbow
+
+Weight: 0~
+@20117 = ~Bullet~
+@20118 = ~A bullet is simply a rounded, well-balanced stone.
+
+STATISTICS:
+
+Damage: 1d4+1 (missile)
+Launcher: Sling
+
+Weight: 0~
+@20119 = ~Potion~
+@20120 = ~Potions are typically found in ceramic, crystal, glass, or metal flasks or vials. Flasks or other containers generally contain enough fluid to provide one person with one complete dose to achieve the effects of the potion.
+
+STATISTICS:
+
+Weight: 1~
+@20121 = ~Wand~
+@20122 = ~Wands are 1 1/4 ft. long and slender. They are made of ivory, bone, or wood and are usually tipped with something—metal, crystal, stone, and so on. They are fragile and tend to break easily. Because of this, they are often kept in cases.
+
+Wands are powered by charges, each use costing one or more charges (depending on the item). When a wand runs out of charges, it is consumed and destroyed.
+
+STATISTICS:
+
+Weight: 1~
+@20123 = ~Scroll~
+@20124 = ~A protection scroll is a set of magical runes imprinted on enchanted parchment. These scrolls are unique in that any class of character can read them, whether adept in magic or not. When the runes are read aloud, the protective magic is released upon the target of the reader's choice. These scrolls can have a wide variety of beneficial effects, though care should be taken with scrolls gained from suspicious sources.~
+@20125 = ~Horn~
+@20126 = ~This is a small horn. Horns are typically made of bone or metal and can produce a large variety of sounds.
+
+STATISTICS:
+
+Weight: 1~
+@20127 = ~Flute~
+@20128 = ~A flute is a long, hollow instrument with holes along its length. A bard can coax a pleasing, piping tune from a flute, which is also easy to carry on the road.
+
+STATISTICS:
+
+Weight: 3~
+@20129 = ~Bagpipes~
+@20130 = ~Though bagpipes may look strange to those who have never seen them before, they produce a pleasant buzzing sound. The musician blows through the mouthpiece into the bag while holding a pipe, or "chanter," carved with finger-holes used to create the notes.
+
+STATISTICS:
+
+Weight: 3~
+@20131 = ~Harp~
+@20132 = ~Harps are stringed instruments often used by bards. This small harp is ideal for the traveling warbler of tales and ballads.
+
+STATISTICS:
+
+Weight: 3~
+@20133 = ~Lyre~
+@20134 = ~Lyres are small, stringed harps of ancient design. Square in shape and easily transportable, they are popular instruments in many cultures.
+
+STATISTICS:
+
+Weight: 2~
+@20135 = ~Cittern~
+@20136 = ~These pear-shaped variations on the common yarting have four sets of paired strings that produce rich tones. They are popular peasant instruments.
+
+STATISTICS:
+
+Weight: 3~
+@20137 = ~Lute~
+@20138 = ~A lute is any plucked string instrument with a neck and a deep round back enclosing a hollow cavity, usually with a sound hole or opening in the body. It may be either fretted or unfretted.  Lutes are by far, the favored instrument of bards.
+
+STATISTICS:
+
+Weight: 3~
+@20139 = ~Green Dragon Scales~
+@20140 = ~These green dragon scales are hard as rock, yet flexible as leather. They would make an excellent piece of armor or perhaps a defensive pleated skirt.
+
+STATISTICS:
+
+Weight: 10~
+@20141 = ~Vexation +2~
+@20142 = ~This blade appears smooth and whole at first glance, but on closer examination, its surface is made of thousands of tiny overlapping scales. When the sword is used to stab a target unawares, scales break off and lodge in the wound, irritating the victim and draining their strength.
+
+STATISTICS:
+
+Combat abilities:
+– Inflicts 2 points of bleeding damage per hit (one point per round)
+– Drains 2 points of Strength from the target and transfers them to the weilder for 5 rounds when a successful backstab is performed (non-cumulative)
+
+STATISTICS:
+
+THAC0: +2
+Damage: 1d6+2 (piercing)
+Speed Factor: 1
+Proficiency Type: Short Sword
+Type: One-handed
+Requires:
+ 4 Strength
+
+Weight: 2~
+@20143 = ~Martyr's Morningstar +2~
+@20144 = ~Forged by Ilusarian Roan, a priest of Ilmater, this morning star sacrifices the weilder's strength in order to destroy the enemies of the faith. Roan used the morning star when he joined a company of knights and priests fighting against a cabal of Cyricists. He took down six cultists before he died, and the morning star was returned to the temple with his remains.
+
+STATISTICS:
+
+Equipped abilities:
+– Hit Points: -10
+
+Combat abilities:
+– On a critical hit, target loses 15% of their maximum Hit Points
+
+THAC0: +2
+Damage: 2d4+2 (crushing)
+Speed Factor: 5
+Proficiency Type: Flail/Morning Star
+Type: One-handed
+Requires:
+ 11 Strength
+
+Weight: 9~
+@20145 = ~Bolt of Ice +1~
+@20146 = ~This bolt is magically enhanced so as to burst into a rolling ball of ice when it is fired. When the bolt strikes its victim, a shock of cold will travel through its body, both burning and numbing to the very core.
+
+STATISTICS:
+
+THAC0: +1
+Damage: 1d8+1, +1d3 (cold)
+Damage type: Missile
+Launcher: Crossbow
+
+Weight: 0~
+@20147 = ~Bolt of Fire +1~
+@20148 = ~This bolt is magically enhanced so as to burst into flames when it is fired. The effect is similar to a bolt doused in oil and set to flame.
+
+STATISTICS:
+
+THAC0: +1
+Damage: 1d8+1, +1d3 (fire)
+Damage Type: Missile
+Launcher: Crossbow
+
+Weight: 0~
+@20149 = ~Bullet of Electricity +1~
+@20150 = ~Each of these copper bullets is molded around the vertebrae of an electric eel. Upon impact, they release a powerful jolt to the target.
+
+STATISTICS:
+
+Damage: 1d4+1, +1d6 electrical damage (Save vs. Spell for none)
+Damage type: Missile
+Launcher: Sling
+
+Weight: 0~
+@20151 = ~Bullet of Ice +1~
+@20152 = ~Chipped from the corpse of an ice elemental, these sharp projectiles shatter upon impact to chill the target with unnatural cold.
+
+STATISTICS:
+
+Damage: 1d4+1, +1d6 cold damage (Save vs. Spell for none)
+Damage type: Missile
+Launcher: Sling
+
+Weight: 0~
+@20153 = ~Bullet of Fire +1~
+@20154 = ~Carved from the knucklebones of slain salamanders, these incendiary missiles burst into flames once they are hurled from a sling.
+
+STATISTICS:
+
+Damage: 1d4+1, +1d6 fire damage (Save vs. Spell for none)
+Damage type: Missile
+Launcher: Sling
+
+Weight: 0~
+@20155 = ~Severance +2~
+@20156 = ~Anyone who draws this well-balanced blade feels a surge of vitality in their body. The sword was originally wielded by a fighter who found the bloody business of war exhausting. He hated to make his enemies suffer and trained to be a better warrior solely so he could end battles quickly. With this enchanted blade, he destroyed his enemies with speedy precision, not leaving them to linger on the battlefield. When death finally came for him in a duel, he was reported to have said, "At last," with a sigh of relief before he expired.
+
+STATISTICS:
+
+Equipped abilities:
+– Hit Points: +5
+
+Combat abilities:
+– 15% chance per hit of draining 1d4 Hit Points from the target and transferring them to the weilder. This will not heal beyond the weilder's maximum. Does not affect undead, constructs, and extraplanar creatures.
+
+THAC0: +2
+Damage: 2d4+2 (slashing)
+Speed Factor: 6
+Proficiency Type: Bastard Sword
+Type: One-handed
+Requires:
+ 11 Strength
+
+Weight: 7~
+@20157 = ~Crimson Dawn +2~
+@20158 = ~Legend tells that this elegant blade appeared at the moment the sun rose over the eastern horizon. As the dawn's rosy light flooded the forest, the blade shimmered into being atop a flat stone. Local foresters, even warriors, were afraid to touch the weapon lest it was cursed. Finally, a brave old man who had been a fighter in his youth grasped the hilt and claimed the blade as its own. Terrifying beasts sprang at him a moment later, creatures of red mist and fangs and claws. The old man clung to his courage and lay about him with the sword. He grew faster with every monster he killed until finally the clearing was empty. The old man was feasted in the village for days and then set off to live his final years seeking adventure on the road.
+
+STATISTICS:
+
+Equipped abilities:
+– Critical Hit Chance: +5% (with this weapon only)
+
+Combat abilities:
+– 15% chance per kill of hasting the weilder for 3 rounds
+
+THAC0: +2
+Damage: 1d10+2 (slashing)
+Speed Factor: 2
+Proficiency Type: Katana
+Type: One-handed
+Requires:
+ 6 Strength
+
+Weight: 4~
+@20159 = ~Tongue of Acid +3~
+@20160 = ~This infernal longsword, forged to resemble a devil's tongue, has a blade "sharper than any scream" according to the writing on the hilt. Its edge cuts easily through armor and bone and leaves acid sizzling in the wounds it inflicts. The pain its wounds inflict is so severe that its victims have difficulty functioning, even walking, due to the agony.
+
+STATISTICS:
+
+Combat abilities:
+– 10% chance per hit of slowing the target for 3 rounds (Save vs. Spell negates)
+
+THAC0: +3
+Damage: 1d8+3, +1d3 (acid)
+Damage Type: Slashing
+Speed Factor: 2
+Proficiency Type: Long Sword
+Type: One-handed
+Requires:
+ 6 Strength
+
+Weight: 2~
+@20161 = ~Rhino Beetle Plate~
+@20162 = ~Constructed from a rhino beetle's sturdy shell, this armor offers its wearer excellent protection without impeding their motion to the same extent as traditional metal plate mail. The unusual material makes this suit of armor particularly effective against missile weapons.
+
+STATISTICS:
+
+Equipped abilities:
+– Missile Damage Resistance: +25%
+
+Armor Class: 1 (-2 vs. slashing, 0 vs. piercing and missile)
+Requires:
+ 8 Strength
+
+Weight: 25~
+@20163 = ~Soft Feet~
+@20164 = ~These boots were crafted by a young mage who wished to be trained as a shadowdancer, but was turned away for being too loud when he walked. "A shadowdancer weaves between the shadows and makes no sound," they said. "You move like an elephant climbing a tree."
+
+Undeterred, the mage crafted a set of boots that caused his feet to become insubstantial, allowing him to walk with quiet confidence and avoid stepping on nasty substances.
+
+STATISTICS:
+
+Equipped abilities:
+– Move Silently: +25%
+– Immunity to Grease, Entangle, and Web
+
+Weight: 1~
+@20165 = ~Crown~
+@20166 = ~A crown can be made of any precious metal and is usually decorated with gemstones. Heavy crowns can be worn for ceremonial purposes, with lighter diadems or circlets crafted for everyday use.
+
+STATISTICS:
+
+Weight: 1~
+@20167 = ~Crown of Lies~
+@20168 = ~This glittering golden crown looks impressive, but its substance is base fool's gold and the "gems" set around it are bits of colored glass. Placing the crown on one's head allows the wearer to prepare extra spells but fills the head with false knowledge.
+
+STATISTICS:
+
+Equipped abilities:
+– Can memorize 2 extra 3rd-level, 1 extra 4th-level, and 1 extra 5th-level wizard spell
+– Lore: -30
+
+Weight: 1~
+@20169 = ~Sundermaul +3~
+@20170 = ~Legends speak of a hammer with the power of the gods themselves called Crom Faeyr. A smith once forged an inferior hammer and claimed it Crom Faeyr. Such was the retribution of the gods that ever since, when the name "Crom Faeyr" is uttered, the very earth beneath the weilder's feet may rip and tear asunder, threatening to bury the blasphemer and any who happen to be standing nearby.
+
+STATISTICS:
+
+Combat abilities:
+– 15% chance per hit of inflicting a -1 penalty to Armor Class for 1 turn (Save vs. Spell negates)
+– 2% chance per hit that an earthquake is triggered, centered on the weilder
+
+THAC0: +3
+Damage: 1d4+4 (crushing)
+Speed Factor: 1
+Proficiency Type: War Hammer
+Type: One-handed
+Requires:
+ 9 Strength
+
+Weight: 4~
+@20171 = ~Star-Strewn Boots~
+@20172 = ~These boots belonged to Crommus the Minstrel many centuries ago. When Artipheon the mage slew Crommus and severed the bard's voice, some of Artipheon's power infused Crommus's boots. The once ordinary midnight-blue leather boots now glitter as if hundreds of twinkling stars were embedded in the material.
+
+STATISTICS:
+
+Equipped abilities:
+– Magic Resistance: +7%, +15% (Wizard Slayers)
+
+Weight: 4~
+@20173 = ~Stalker's Gauntlets~
+@20174 = ~These gauntlets assist in the stalking and killing of prey. Favored by hunters and rogues of all kinds, they display their full power when donned by a Stalker. Made of supple leather with brass-buckled straps along the side, these gauntlets are often decorated with embroidered figures of stags, foxes, or, as is the case with this pair, wolves.
+
+STATISTICS:
+
+Equipped abilities:
+– Dexterity: +1
+– Hide in Shadows: +15% (+30% for Stalkers)
+– Backstab Multiplier: +1 (Stalkers only)
+
+Weight: 2~
+@20175 = ~Cloverleaf~
+@20176 = ~The halfling Tip Eldermaple was noted in his town for never losing at cards. The halfling attributed his good fortune to the blessings of Tyche and lived a long, quiet, and very prosperous life.
+
+When Tip finally died at the age of one hundred and three, he left his favorite belt to his son, who discovered that the belt buckle had caught a four-leaf clover in the clasp. Whether Tip had placed the clover there himself, or whether it had simply been stuck there after a tumble down a hill in his youth, no one will ever know. What is known is that Tip’s fortune passed down to his son, until the belt was stolen from him by an ogre while he was traveling along the Sword Coast.
+
+STATISTICS:
+
+Equipped abilities:
+– Luck
+
+Weight: 2~
+@20177 = ~The Uncursed Staff +1~
+@20178 = ~Decades ago, an adventuring priest of Gond discovered a cursed staff in a dungeon. Despite its curse, the staff was a well-crafted and fine-looking weapon, and the priest sought a way to lift the curse. Though he was never able to do so, he was able to add an enchantment to the staff, mostly negating its cursed properties and allowing him to carry it and put it away as desired. Though the staff was little better than a regular weapon, the priest carried it the rest of his days, as it boosted his ability to carry treasure out of subsequent dungeons.
+
+STATISTICS:
+
+Equipped abilities:
+– Strength: 18
+
+THAC0: -2
+Damage: 1d6-2 (crushing)
+Speed Factor: 3
+Proficiency Type: Quarterstaff
+Type: Two-handed
+Requires:
+ 5 Strength
+
+Weight: 4~
+@20179 = ~Backwhacker +2~
+@20180 = ~Most thieves favor bladed weapons when striking from the shadows, but not all. Whether due to religious convictions, personal preference, or anti-establishment tendencies, some thieves prefer to backstab their enemies with a blunt instrument.
+
+STATISTICS:
+
+Combat abilities:
+– Renders the target unconscious for 2 rounds when a backstab is performed (Save vs. Death negates)
+
+THAC0: +2
+Damage: 1d6+2 (crushing)
+Speed Factor: 2
+Proficiency Type: Club
+Type: One-handed
+Requires:
+ 5 Strength
+
+Weight: 3~
+@20181 = ~Bow of the Banshee +2~
+@20182 = ~A wooden face carved mid-scream stares out from the shaft of this hardwood bow. It's whispered that the half-orc archer Zavruk had an elven soul bound into the bow, but the bow's lack of a necromantic aura casts doubt on the story. What's certain is that the bowstring makes a horrible screeching noise whenever fired, instilling fear in the weilder's enemies.
+
+STATISTICS:
+
+Combat abilities:
+– 10% chance per hit of casting Cloak of Fear centered on the weilder
+– Deals 1 extra point of magic damage to panicked targets
+
+THAC0: +3
+Damage: +2
+Speed Factor: 5
+Proficiency Type: Longbow
+Type: Two-handed
+Requires:
+ 6 Strength
+
+Weight: 3~
+@20183 = ~Nimblefinger Gloves~
+@20184 = ~Fashioned from the finest doeskin available, this pair of gloves was obviously designed for gnomish hands (though dwarves and other shorter races might also be able to use them). For the right wearer, the gloves offer protection and comfort in equal proportion. Fitting like a second skin, the user becomes more sensitive to what their hands are doing; this added focus increases the wearer's nimbleness and dexterity.
+
+STATISTICS:
+
+Equipped abilities:
+– Dexterity: +2 (gnomes), +1 (halflings, dwarves, and goblins)
+– Pick Pockets: +25%
+– Set Traps: +25%
+
+Weight: 2~
+@20185 = ~Screaming Bagpipes~
+@20186 = ~This deep purple set of bagpipes has an odd, furry texture to it. On closer inspection, the bagpipes appear to have been made of the hide of some tentacled creature, with each of its furry purple tentacles becoming one of the instrument's pipes. When played, the bagpipe growls and screeches like a creature in pain.
+
+STATISTICS:
+
+Charge abilities:
+– Sound Burst twice per day
+  Damage: 4d8 sonic (Jester), 2d8 (others) (Save vs. Breath halves)
+  Special: Deafens for 3 rounds (Save vs. Breath negates)
+  Area of Effect: 15-ft. radius around the Bard
+
+Weight: 3~
+@20187 = ~Cloak of Minor Arcana~
+@20188 = ~Embroidered silver stars hide within the folds of this shimmering blue cloak. Wizards, especially those just beginning careers as adventureres, wear such items to aid them in their travels. As wizards grow in power and begin crafting their own equipment, they often gift these cloaks to apprentices.
+
+STATISTICS:
+
+Equipped abilities:
+– Caster Level: +1 (Mages, Sorcerers, and Bards)
+– Lore: +10
+
+Charge abilities:
+– Generates a random arcane scroll of level 3 or below
+
+Weight: 3~
+@20189 = ~Alveus Note 01~
+@20190 = ~Dear Greenbough Publishing,
+
+I write to rectify the confusion in which your last missive was apparently sent. Your reply in regards to my next manuscript, "Adventuring With All Your Limbs Attached: Both There And Back Again" is my latest treatsie on the adventuring mage's life. As the greatest first-level mage who has ever lived (so far), my musings and experiences are of considerable value to both the novice and seasoned adventurer. Not only is my writing style light and entertaining to read, but the contents of my manuscript could save many lives.
+
+You understand my confusion, then, when I recieved your reply that your line of comedic tomes was full for this year and to try again in future seasons. Please check your informative travelogue lineup and respond at your earliest convenience.
+
+Sincerely,
+
+Alveus Malcanter~
+@20191 = ~Alveus Note 02~
+@20192 = ~(This parchment has been torn at the top. It seems to have been ripped from a larger piece.)
+
+Rule Three: Taverns can be of great use for surviving an adventure. Before venturing into that dank tomb or bleak dungeon, visit the local tavern. Buy lots of drinks. Soon your party will be merrily singing and drinking the night away. While they sleep off their excesses the next morning, you can quietly leave town.
+
+Rule Four: Some will tell you that second-level spells are necessary for a successful career. Don't believe them! With great power comes great responsibility, so if you stick to first-level spells, no one will expect you to stick your neck out into a dangerous situation.
+
+Rule Five: A mage is only as good as their robe. Though you may never rival my exquisite collection of Faerûn's finest robes (may? I am too humble. None could rival that collection of finery), you would do well to obtain a quality tailor at the first opportunity.
+
+Remember, with intelligence, discretion, and an overwhelming, shrieking, constant fear of death, you too can be a successful adventuring mage!~
+@20193 = ~Alveus Note 03~
+@20194 = ~Potential Aphorisms
+
+A green slime in the hand is worth nothing, and also you now have no hand. Wear gloves at all times.
+
+A statue is just a potential gargoyle. Carry a statue-poking stick and give it to someone in heavy armor.
+
+A pocketful of gold is good; a sackful of gold is better. But carrying a huge sack of gold makes it hard to run away, so a bag of holding is a good investment.
+
+Something about bacon? "Your bacon's in the fire" is bad, but bacon is also delicious...
+
+(The writing trails off, and doodles fill the rest of the page.)~
+@20195 = ~Alveus Note 04~
+@20196 = ~(This note is titled "Advice to a Novice Mage.")
+
+If you are reading this, then you are, perhaps, a young mage just starting out on your career. You might aspire to the heights of some of the greatest wizards in Faerûn. "Elminster," you think to yourself. "Blackstaff. Malcanter."
+
+NO, not Malcanter! You chuckle at your foolishness. Who could ever compete with the greatest first-level mage to have ever lived (so far)?
+
+I am here to tell you that while, in truth, you cannot hope to ever acquire the seasoned and respected name I have made for myself, you can at least hope to reach the plateau from which my shadow seems just slightly less long and chilly as it envelops you. If you follow my advice, you will be well on your way to becoming a second-rate imitation of myself.
+
+Rule One: There are some that believe taking credit for a job well done is the easiest way to build a reputation. But taking credit for a job someone ELSE did well and is now dead so they can't contradict you anyway is, in fact, more effic—
+
+(The scroll has been torn off here, and the rest is missing.)~
+@20197 = ~Alveus Note 05~
+@20198 = ~This crumpled piece of parchment has been signed over and over again with the name "Alveus Malcanter" in increasingly flourishing style. Interspersed among the signatures are sentence fragments, including, "I hope this book saves your life!" and "May you never need the advice contained herein because you listened to me and decided to become a cobbler instead!"~
+@20199 = ~Alveus Note 06~
+@20200 = ~Ideas for Next Book
+
+(The following notes are written in meticulous point-form.)
+
+– Always stay at the back of the party. Monsters rarely attack from the rear.
+
+– Middle, Middle is good too. Surround yourself with hulking companions in full plate armor.
+
+(Here follows a doodle of a stick figure in a pointy hat surrounded by armored individuals carrying enormous swords.)
+
+– Can also follow way behind group. Say one hundred yards. Cast spells from a distance and join in when the looting begins.
+
+– Perhaps one mile behind party? They can scream if they need help.
+
+(The next few points are scratched out.)
+
+– Could just stay home.~
+@20201 = ~Alveus Note 07~
+@20202 = ~My Dearest Agythi,
+
+It was with no little joy that I received your missive. Corresponding with those who have read my books and learning how my advice has positively affected their lives is a source of great pleasure for me. That you were able to write such a letter without the use of your arms makes the feat even more impressive—I suspect in the future you will take my oft-repeated mantra "Do not wrestle an angry ogre, or indeed any ogre, if it can be avoided" to heart.
+
+I gather from your note that you found my words less useful than one might have hoped when it came to the matter of the ogre wrestling. I have some questions regarding the events that led to such an unfortunate happenstance:
+
+1) How did you come to find yourself in amongst a pack of savage, bloodthirsty ogres? Over the years, I have offered many suggestions and strategies designed to help the prudent adventurer avoid just such a situation as this. If nothing else, my advice regarding the fortifying of one's home and the frequency with which one leaves it (my advice being "never"), if followed, should have prevented such a circumstance as this from ever occurring.
+
+2) Who challenged whom to the wrestling match? I do hope that it was the ogre's idea, as I'm quite certain the flaws in such a scheme originating from your side of the equation have become painfully self-evident.
+
+3) Had you ever considered a profession that carries with it slightly less risk of having one's arms torn off by a redblooding great ogre? Those who aren't cut out for adventure will often find themselves torn from it if they fail to act with the appropriate level of caution. Though they lack the potential glory a lucky few are able to wrest from a life of exploration and action, there is no shame whatsoever in fulfilling the role of a farmer, a courtesan, a tailor, or any number of other, more banal occupations. Someone has to shine my boots, after all.
+
+However you came to this regrettable state, I hope you will take some solace in the enclosed copy of my latest book. As you are a reader of my work, I have signed the volume and shall have the messenger take ten percent off the price I generally charge. May you find some enlightenment or entertainment in its pages during your period of convalescence.
+
+Yours very truly,
+Alveus Malcanter~
+@20203 = ~Element's Fury +2~
+@20204 = ~The mage who crafted this strange dagger was obsessed with the four elemental planes and sought to create a means to join them together. Opening portals to all of them at once, he managed to join their energies together to enchant this relic, giving it properties of each plane.
+
+Unfortunately, he happened to be standing between the portals, holding the dagger in his hand; when the energies converged, they converged on him. It was the mage’s apprentice who discovered the dagger, clutched in his master’s charred and frozen hands.
+
+STATISTICS:
+
+Combat abilities:
+– Deals an extra 1d4 cold damage to fire elementals
+– Deals an extra 1d4 fire damage to water elementals
+– Deals an extra 1d4 acid damage to earth elementals
+– Deals an extra 1d4 electrical damage to air elementals
+
+THAC0: +2
+Damage: 1d4+2, +1 fire, cold, electrical, or acid damage (random)
+Damage type: Piercing
+Speed Factor: 0
+Proficiency Type: Dagger
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 1~
+@20205 = ~Storm Pike +2~
+@20206 = ~Storm giants seldom do favors for humans, but when Threk Boltweilder was saved by the wizard Alimor, Threk offered his services as a conduit for the wizard's enchanting spells. Alimor borrowed a lightning bolt from the storm giant to craft this halberd for his companion, Haldus, who had often complained about how the party never found any magic halberds despite it being his chosen weapon. Haldus was so excited by the storm giant's gift that he wielded it immediately, striking a boulder that happened to be nearby, and was promptly struck dead by the captured lightning's power.
+
+STATISTICS:
+
+Combat abilities:
+– 15% chance per hit of stunning the target for 1 round (Save vs. Spell negates)
+– On a critical miss, the halberd deals 1d4 electrical damage to the weilder
+
+THAC0: +2
+Damage: 1d10+2 (slashing or piercing, whichever is better), +1 electrical
+Speed Factor: 7
+Proficiency Type: Halberd
+Type: Two-handed
+Requires:
+ 11 Strength
+
+Weight: 12~
+@20207 = ~Trollblood Ioun Stone~
+@20208 = ~This ioun stone gleams dark green, like a hardened globe of troll blood. Legend tells of its creation from the blood of seven different trolls, each one captured and then subjected to magical experiments for seven nights. The resulting ioun stone both grants its user a weaker form a troll's healing ability and increases their martial prowess against trolls.
+
+STATISTICS:
+
+Equipped abilities:
+– THAC0: +3 vs. trolls
+– Regenerate 1 Hit Point per round
+
+Weight: 0~
+@20209 = ~Buckler~
+@20210 = ~A buckler, also known as a target shield, is a small round shield of wood or metal that fastens to the forearm. Because of its size, it is light and can be worn with very little restriction to movement.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +1
+– No protection against missile and piercing attacks
+
+Requires:
+ 4 Strength
+
+Weight: 2~
+@20211 = ~Small Shield~
+@20212 = ~A small shield is usually round and is carried on the forearm, gripped with the shield hand. Its light weight as compared to a medium shield permits the user to carry other items in that hand, although <PRO_HESHE> cannot wield or carry another weapon.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +1
+– No protection against missile attacks
+
+Requires:
+ 4 Strength
+
+Weight: 3~
+@20213 = ~Medium Shield~
+@20214 = ~A medium shield is carried in the same manner as a small shield. Unlike the small shield, however, its weight prevents the character from using <PRO_HISHER> shield hand for anything other than carrying the medium shield. Medium shields are usually made of metal, range from three to four feet in diameter, and can be of any shape, from round to square to a dragon's spread wings. A typical medieval shield resembles a triangle with one point facing downward.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +1
+
+Requires:
+ 12 Strength
+
+Weight: 8~
+@20215 = ~Large Shield~
+@20216 = ~The body shield, also known as the kite or tower shield, is a massive metal or wooden shield reaching nearly from the chin to the toe of the user. It must be firmly fastened to the forearm, and the shield hand must firmly grip it at all times. Naturally, this precludes use of the shield hand for anything but holding the body shield in place.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +1, an extra +1 vs. missile attacks
+
+Requires:
+ 15 Strength
+
+Weight: 15~
+@20217 = ~Rhino Beetle Shield +2~
+@20218 = ~The rhino beetle's carapace makes a most effective shield provided one can survive long enough to pry a piece off the creature. Lightweight but sturdy, this item makes a powerful argument for the premise that the best shields are found in nature, not the forge. The unusual material makes the shield particularly effective against missile weapons.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +3, an extra +2 vs. missile attacks
+– Missile Damage Resistance: +15%
+
+Requires:
+ 10 Strength
+
+Weight: 6~
+@20219 = ~Key Ring~
+@20220 = ~A latch on this heavy steel ring allows it to open on a hinge. Dozens of keys may be threaded on the ring to keep them organized.
+
+STATISTICS:
+
+Weight: 0~
+@20221 = ~Astral Crossbow +2~
+@20222 = ~The silvery string of this elegant weapon gleams like the silver strings connecting Astral Travelers to their bodies. Legends speak of a deva who crafted this weapon out of bits of soul from astral travelers, willingly given to the deva to forge a weapon of good. The deva passed the crossbow down to a champion of good on the mortal Plane, who wielded it for many years before falling under a glabrezu's claws.
+
+STATISTICS:
+
+Combat abilities:
+– On a critical hit, the target falls to the ground rendered unconscious for 1 round (no save) as they are stricken with a vision of their soul leaving their body.
+
+THAC0: +2, +4 vs. evil creatures
+Damage: +2 (missile), +4 vs. evil creatures
+Speed Factor: 3
+Proficiency Type: Crossbow
+Type: Two-handed
+Requires:
+ 8 Strength
+
+Weight: 5~
+@20223 = ~Shadowed Spear +2~
+@20224 = ~Rumor has it that a cult of Shar crafted this spear for blackguards in their service, but the spear was liberated during an attack by knights of Lathander. The Temple of Lathander in Athkatla hid the spear away for many years before it was stolen one night by burglars in service to Mask. Since then multiple copies of the spear have been spotted, presumably duplicated by the clergy of Mask. Shadows cling to the black shaft of the spear and the weilder seems to flicker in and out of reality.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +2
+
+Combat abilities:
+– 20% chance per hit to teleport to a random enemy and receive a +4 THAC0 bonus for 1 round
+– 5% chance per hit to teleport to a random enemy and become ethereal for 1 round
+
+Charge abilities:
+– Etherealness
+  Special: Wearer is immune to normal weapons. Spells may still be cast, and weapons may still be used.
+  Duration: 1 round
+
+THAC0: +2
+Damage: 1d6+2 (piercing)
+Speed Factor: 4
+Proficiency Type: Spear
+Type: Two-handed
+Requires:
+ 5 Strength
+
+Weight: 3~
+@20225 = ~Cornetto~
+@20226 = ~A cornetto is a slender horn, usually carved from wood. Finger holes bored along its length allow a musician to create a variety of notes. A mouthpiece crafted of ivory or horn is attached to the tapered end.
+
+STATISTICS:
+
+Weight: 3~
+@20227 = ~The Forest Queen's Benediction~
+@20228 = ~Mielikki, the Forest Queen, bestows her gifts only on those who show kindness and compassion to all living creatures. Legend tells that a bard once came upon a pack of hunters running a unicorn to ground. The bard, despite being outnumbered, threw herself at the hunters and fought them valiantly while the unicorn escaped. The hunters beat the bard near to death and left her broken body on the ground. Moments after they left, the unicorn stepped softly to the bard and extended its horn. The bard grasped the horn weakly and, to her astonishment, it came away in her hand. The bard sat up, healed of all wounds and bestowed with a valuable gift. The unicorn vanished into the trees, and the bard found the horn bestowed healing powers whenever she played it.
+
+The cornetto can only be played by a bard of exceptional virtue and wisdom.
+
+STATISTICS:
+
+Charge abilities:
+– Mass Cure once per day
+
+Requires:
+ 13 Wisdom
+
+Weight: 3~
+@20229 = ~Jester's Bracers~
+@20230 = ~These bracers once belonged to a traveling bard famed for his sharp tongue and quick retorts. One rainy night, the bard took refuge in a rickety inn on the road to Shadowdale. There he performed for his supper, sprinkling his routine with caustic jibes as was his custom. One of the drinkers in the tavern, an old woman, stood up midway through the performance and snapped, "You think it clever to insult and belittle others? Do so, then, for as long as you live!" The bard found himself unable to remove his now-cursed protective bracers and was forced to spout corny jokes until he could pay a wizard to remove them.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: 5
+– Charisma: -1 (except for Jesters)
+– Wearer is forced to tell corny jokes
+– May only be removed with a Remove Curse spell
+
+Weight: 2~
+@20231 = ~The Night's Embrace +3~
+@20232 = ~A thief from Iriaebor who feared being captured by the city guard was known to have favored this armor. She designed the suit so that if she were ever incapacitated in any way, she would be rendered temporarily invisible. The armor did its job, and the thief had a long and successful career in the city. When she retired, she gifted the armor to her younger brother, and it has changed hands many times since then.
+
+STATISTICS:
+
+Equipped abilities:
+– If the wearer is rendered helpless (e.g. by a Hold Person spell), <PRO_HESHE> becomes invisible for 1 turn
+– Hide In Shadows: +20%
+
+Armor Class: 5 (7 vs. piercing and missile)
+Requires:
+ 3 Strength
+
+Weight: 5~
+@20233 = ~Ring of Purity~
+@20234 = ~This ring, designed for the hero Zachiira, is engraved with holy symbols. When Zachiira requested aid from King Strohm III, it was the king’s royal advisor, the great and powerful Theurgist Karlash Arnostognas, who made this item, in the hope that it would aid the hero in her battle against a demon vampire. Zachiira survived the encounter, but sadly her triumphal return was met with rather less celebration and rather more grief, as the good king was already dead when she arrived. Zachiira laid the holy artifact at the entrance to the king’s tomb, and it was there the relic was discovered by wandering thrill-seekers.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +2 vs. evil creatures
+– Hit Points: +10
+– Chant
+
+Weight: 0~
+@20235 = ~Dervish Crescent +2~
+@20236 = ~The length of this blade is etched with flames, genies, and whirlwinds. Small glittering particles along its length evoke a sandstorm. The style and quality of the blade indicates it was made in Calimshan.
+
+STATISTICS:
+
+Equipped abilities:
+– Movement Speed: +1
+
+Combat abilities:
+– 10% chance per kill that the weilder will be affected by Fireshield (Red)
+
+THAC0: +2
+Damage: 1d8+2, +1 fire
+Damage Type: Slashing
+Speed Factor: 3
+Proficiency Type: Scimitar/Wakizashi/Ninjatō
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 3~
+@20237 = ~Headband~
+@20238 = ~A ribbon or band worn around the head.
+
+STATISTICS:
+
+Weight: 1~
+@20239 = ~Headband of Focus~
+@20240 = ~A worshipper of Nobanion crafted this gold silk headband, embroidered with abstract running lions along its length, while meditating on the teachings of Lord Firemane. When the headband was complete, the worshipper found that Nobanion had rewarded his fealty by granting the headband the ability to conjure a surge of might within the wearer.
+
+STATISTICS:
+
+Equipped abilities:
+– THAC0: +2 (unarmed attacks)
+– Critical Hit Chance: +5% (unarmed attacks)
+
+Charge abilities:
+– Draw Upon Holy Might once per day
+
+Weight: 1~
+@20241 = ~Wizzard Hat~
+@20242 = ~This classic pointed wizard's hat has the wearer's title emblazoned across it in rather gaudy sequins. The wizzard's hat makes the wearer much faster, both in casting and on foot. A wizard who runs away from combat lives to run away another day, after all.
+
+STATISTICS:
+
+Equipped abilities:
+– Casting Speed: +1
+– Movement Speed: +2
+
+Weight: 0~
+@20243 = ~Acid-Etched Dagger +2~
+@20244 = ~This dagger, though old, was obviously crafted well and enchanted carefully. An ordinary dagger would have long ago dissolved in the juices of the albino wyrmling's stomach. Though the dagger is still intact and boasts a sharp edge, its time in the wyrmling's stomach has left swirling patterns of acid etching along the blade and hilt.
+
+STATISTICS:
+
+Combat abilities:
+– 15% chance per hit that the target takes 1 extra point of acid damage per round during the next 3 rounds
+
+THAC0: +2
+Damage: 1d4+2, +1 (acid)
+Damage Type: Piercing
+Speed Factor: 0
+Proficiency Type: Dagger
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 1~
+@20245 = ~The Suncatcher +2~
+@20246 = ~Shield of Barnassus: The Suncatcher
+Barnassus, a cleric of Lathander, created a polished bronze shield hundreds of years ago in order to battle a medusa rumored to be lurking in the catacombs beneath his city. Barnassus tracked the medusa to her lair and realized, almost too late, that what he faced was no ordinary medusa but one that had also succumbed to the curse of vampirism.
+
+Barnassus closed his eyes and charged forward, ready to take down his enemy or die trying. Lathander rewarded Barnassus's bravery by filling the room with sunlight while the priest slew the medusa.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +3
+– 15% chance that anyone attacking the weilder in melee takes 1d4 points of fire damage and becomes blinded for 2 rounds (Save vs. Spell halves damage and negates blindness)
+– No protection against missile attacks
+
+Charge abilities:
+– Sunfire once per day
+
+Requires:
+ 4 Strength
+
+Weight: 2~
+@20247 = ~The Guardian Devil~
+@20248 = ~This black iron helm has a rough, spiked texture on the outside and a fanged devil's head engraved above the brow. Despite its uncomfortable appearance, its padded interior comfortably fits its wearer's head as though it was designed for it. Not only does the helm protect the wearer from critical hits, but it extends its protection to the rest of the wearer's body.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +1
+– Slashing Damage Resistance: +15%
+– Piercing Damage Resistance: +15%
+– Missile Damage Resistance: +15%
+– Protects against critical hits
+
+Weight: 2~
+@20249 = ~Reed of Echoes~
+@20250 = ~A Harper bard crafted this item, intending it to be a gift for Storm Silverhand. Once completed, however, its maker decided that the reed was simply too plain. He gave it instead to a fellow Harper, the bard who carried it on missions for many years. The reed has changed hands many times since, and though it still serves its original purpose—allowing its bearer to prepare additional spells—when played as an instrument, it emits a mournful tone no musician, however skilled, can vitiate.
+
+STATISTICS:
+
+Equipped abilities:
+– Can memorize 2 extra 1st-level, 1 extra 2nd-level, and 1 extra 3rd-level wizard spell
+
+Weight: 1~
+@20251 = ~Echo of the Fiend +3~
+@20252 = ~A devil of Avernus once possessed this gnarled wooden staff. Though the devil long since escaped from the staff, a residue of its essence permeated the weapon and lingers still. When a command word is spoken, an aura of fire springs up around anyone wielding the staff; though the flames leave the weilder untouched, they sear others with devastating heat.
+
+STATISTICS:
+
+Combat abilities:
+– 5% chance per hit of triggering a Sunfire spell centered on the weilder
+
+Charge abilities:
+– Fireshield (Red) twice per day
+
+THAC0: +3
+Damage: 1d6+3 (crushing)
+Speed Factor: 1
+Proficiency Type: Quarterstaff
+Type: Two-handed
+Requires:
+ 5 Strength
+
+Weight: 2~
+@20253 = ~Amulet of Whispers~
+@20254 = ~The archmage Ulcaster enjoyed making long speeches in front of his students, filibustering on any number of subjects from arcane theory to the ethics of conjuration. Most of his students enjoyed the lectures, but one of his pupils decided that he would personally stand up to interrupt the stream of words from Ulcaster's mouth.
+
+At the next lecture, the pupil stood up and shouted, "I won't listen to you any longer!" To his horror, no sound issued from his throat. Ulcaster had twisted the chain of an amulet he wore, which rendered every student in the lecture hall utterly silent. The archmage was unaffected, and so carried on his lecture uninhibited.
+
+STATISTICS:
+
+Equipped abilities:
+– Vocalize
+
+Charge abilities:
+– Silence, 15' Radius once per day
+
+Weight: 1~
+@20255 = ~Amulet of Abnormally Awesome Ankheg Summoning~
+@20256 = ~Crafted by the dark druid Ferrusk, this amulet resembles the curved pincers of an ankheg hanging from an iron chain. The pincers' polished green carapace catches the light, gleaming with an emerald sheen. Ferrusk created this amulet to summon a passel of ankhegs to fight at its wearer's command.
+
+STATISTICS:
+
+Equipped abilities:
+– Acid Resistance: +15%
+
+Charge abilities:
+– Summons two ankhegs
+  Range: 30 ft.
+  Duration: 2 turns
+
+Weight: 0~
+@20257 = ~Locket of Embracing~
+@20258 = ~Esthia and Ambrose both served as Knights of the Mystic Fire, paladins dedicated to Mystra, goddess of magic. Esthia had this necklace commissioned for Ambrose, telling him it would ensure his safety when she could not hold him in her arms.
+
+On his last mission, Ambrose sent the necklace back to Esthia with a note telling her he had met another woman and would never return to the chapterhouse. Heartbroken, Esthia threw the necklace into a ditch, where it was later found by a peddler.
+
+STATISTICS:
+
+Equipped abilities:
+– Caster Level: +1 (Clerics and Paladins)
+– Can memorize two extra 1st-level divine spells
+
+Weight: 0~
+@20259 = ~Modron Heart~
+@20260 = ~Modrons are mechanical creatures of utter law and efficiency that make their home on Mechanus. Many think of modrons as soulless, emotionless beings without a heart to speak of, but this item proves those beliefs false. The Modron Heart is a core of pure law that strengthens its wearer in battle against chaotic creatures.
+
+STATISTICS:
+
+Equipped abilities:
+– THAC0: +2 vs. chaotic
+– Damage: +2 vs. chaotic
+– Armor Class: +2 vs. chaotic
+
+Weight: 1~
+@20261 = ~Chill Axe +2~
+@20262 = ~This finely crafted axe bears the sigil of the Ice Dragon Berserker Lodge. Glowing white runes edge its cold silver blade, and a cloud of chill air trails behind the axe whenever it is swung. The most powerful rangers of the Ice Dragon Berserker Lodge carry these axes with them on their dejemmas, as protection from southern threats.
+
+STATISTICS:
+
+Equipped abilities:
+– Strength: +1
+
+Combat abilities:
+– 2% chance per hit that the weilder will become berserk, losing control of <PRO_HISHER> actions for 3 rounds
+
+THAC0: +2
+Damage: 1d8+2, +1 cold
+Damage Type: Slashing
+Speed Factor: 5
+Proficiency Type: Axe
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 5~
+@20263 = ~Belt of the Cunning Rogue~
+@20264 = ~This wide leather belt has been dyed a deep magenta. The belt was created over a decade ago by a human thief who saw his larcenous activities as a means of worshiping Mask. All his burglaries were undertaken with prayers to Mask, and he hoarded his stolen goods at a hidden altar to the god of thieves. He favored purple clothing, believing it was a color the god preferred, and he crafted this belt to match his ensemble. The thief was eventually caught and killed on one of his missions and the belt confiscated by the city guard. The next night, the belt vanished from a locked chest in the guardhouse, though, whisked away by Mask so that it could continue to serve the god's ends. Even today, the belt often finds its way into the path of those who will put it to good use.
+
+The pouches attached to the belt contain a number of small tools, wires, picks, and blades that can be used to pick locks and disable traps.
+
+STATISTICS:
+
+Equipped abilities:
+– Open Locks: +15%
+– Find Traps: +15%
+
+Weight: 2~
+@20265 = ~Mosela's Cudgel +2~
+@20266 = ~Mosela was disappointed when she learned that she would be finishing her apprenticeship under the tutelage of a sorcerer—sorcerers were not known for their instructional genius—but the opportunity to work with golems was one that no enterprising young mage could reasonably pass up, and that happened to be Listrom’s specialty.
+
+Unfortunately—and it took Mosela only a few short days to discover this—Listrom knew more about making the golems than he did about controlling them, and by the end of Mosela’s first week she realized that she would need some means of protecting herself. Thus was created this cudgel that, she hoped, would keep the misbehaving constructs at bay. When Listrom lost what little sanity he had, Mosela discovered that her invention worked just as well on raving lunatics.
+
+STATISTICS:
+
+Equipped abilities:
+– Save vs. Alteration spells: +2
+
+THAC0: +2, +3 vs. constructs
+Damage: 1d6+2, +3 vs. constructs
+Damage type: Crushing
+Speed Factor: 2
+Proficiency Type: Club
+Type: One-handed
+Requires:
+ 5 Strength
+
+Weight: 3~
+@20267 = ~The Hydra +2~
+@20268 = ~The three heads of this flail look like dragon heads, giving the weapon its fearsome name. As the weilder swings the weapon, its heads seem to blur and divide until a mass of hydra heads whips from the end of the chain. When the weilder ceases attacking, the weapon reverts to its original appearance.
+
+STATISTICS:
+
+Combat abilities:
+– 33% chance per hit of dealing +1d4, +2d4, or +3d4 points of piercing damage
+
+THAC0: +2
+Damage: 1d6+3 (crushing)
+Speed Factor: 5
+Proficiency Type: Flail/Morning Star
+Type: One-handed
+Requires:
+ 13 Strength
+
+Weight: 12~
+@20269 = ~Blazing Glory +3~
+@20270 = ~This glittering morningstar was crafted by weaponsmiths in the Temple of Tempus in Waterdeep. Fashioned as a weapon for Tempus's priests, who cannot use their deity's favored weapon due to its bladed edge, Blazing Glory has a black iron tip studded with points of alternating gold and ruby. Enchantments harden these points and add a flash of fire with every blow. The weilder of Blazing Glory never tires in battle, fortified by the will of the Lord of Battles himself.
+
+STATISTICS:
+
+Equipped abilities:
+– Immunity to fatigue
+
+Combat abilities:
+– 10% chance of casting Chant centered on the weilder on each hit
+
+THAC0: +3
+Damage: 2d4+3 (crushing) +1 (fire)
+Speed Factor: 4
+Proficiency Type: Flail/Morning Star
+Type: One-handed
+Requires:
+ 11 Strength
+
+Weight: 8~
+@20271 = ~Sidestep Slippers~
+@20272 = ~These soft leather slippers are favored by monks, who benefit from their enchanted traction when executing their specialized fighting style. The grip and control provided by the slippers allow a monk to dodge all but the most deadly attacks.
+
+STATISTICS:
+
+Equipped abilities:
+– Dexterity: +1
+– Armor Class: +1
+– Save vs. Invocation spells: +2
+
+Weight: 3~
+@20273 = ~Savage Shortbow +2~
+@20274 = ~This bow appears crudely made. The knotty length of wood has numerous stumps where twigs were pruned away, and living leaves still spring from it. In spite of its apparent poor quality, the bow has clearly been enhanced with nature magic. It is rumored the wild elves of the Chondalwood make good use of such weapons, especially against invading orcs and ogres.
+
+STATISTICS:
+
+Equipped abilities:
+– Constitution: +1 (elves and half-elves)
+
+THAC0: +2
+Damage: +2, +3 extra vs. orcs, half-orcs, and ogres
+Speed Factor: 4
+Proficiency Type: Shortbow
+Type: Two-handed
+Requires:
+ 6 Strength
+
+Weight: 2~
+@20275 = ~Bracers of the Shuttered Lid~
+@20276 = ~Rumor tells that a remote sect of monks, living in deep caverns beneath the Spine of the World, learned to fight in absolute darkness. The sound of their enemy's movement and breathing were enough for them to accurately target their blows. These bracers put their enemy on an even footing.
+
+STATISTICS:
+
+Equipped abilities:
+– THAC0: +2 (unarmed attacks)
+– Immunity to blindness
+
+Combat abilities:
+– On a critical hit, the target is blinded for 2 rounds (no save)
+
+Weight: 2~
+@20277 = ~Bracers of Perseverance~
+@20278 = ~Each of these soft leather bracers, dyed gray, displays the embroidered figure of a boar in shimmering red thread. The bracers were crafted by a monk of the Black Raven Monastery who took longer to achieve mastery of her art than her peers, but reached her goals eventually.
+
+STATISTICS:
+
+Equipped abilities:
+– Hit Points: +10
+
+Combat abilities:
+– When the wearer suffers a critical miss, <PRO_HESHE> is affected by the Aid spell
+
+Weight: 2~
+@20279 = ~Flute of the Immaculate Breeze~
+@20280 = ~Originally crafted by gnomes, this flute appears diminutive at first but when picked up, it assumes the proper size for the bard who wields it. Tiny engravings of flowers, winding vines, and wispy clouds cover the length of the flute. When played, the scent of flowers fill the air and nearby spectators sometimes feel the sensation of a gentle rain on their face.
+
+STATISTICS:
+
+Charge abilities:
+– Zone of Sweet Air twice per day
+
+Weight: 3~
+@20281 = ~Stalwart Scales +2~
+@20282 = ~Noted dwarven smith Hedda Perigot crafted this suit of armor in response to a challenge. Fellow smiths discussed their disdain of working with non-metal or stone materials at the tavern one night, and Hedda bragged that she had no such difficulties. The smiths challenged her to create a hybrid suit of half-metal, half-armor. Hedda set to work making the lightest, most flexible steel plates she could and affixing them to a well-made leather breastplate. The result was a shimmering suit of splint mail that weighed less than a normal suit and proved most useful against slashing attacks. Hedda won the bet, and free drinks for a month.
+
+STATISTICS:
+
+Equipped abilities:
+– Slashing Resistance: +10%
+
+Armor Class: 2 (1 vs. piercing and missile, 0 vs. crushing)
+Requires:
+ 8 Strength
+
+Weight: 15~
+@20283 = ~Sable Cloak~
+@20284 = ~An explorer traveling to the Spine of the World commissioned this cloak when she heard a white dragon had been spotted in the area. After she safely returned to the warmth of the south, she sold the elegant sable cloak.
+
+STATISTICS:
+
+Equipped abilities:
+– Cold Resistance: +40%
+– Immunity to slow
+
+Weight: 3~
+@20285 = ~Crommus's Capelet~
+@20286 = ~This homespun capelet appears to have been hand-embroidered. The delicate scrollwork around its edges shows how much time and care went into the garment's creation. Crommus, the cloak's original owner, was a ghost for many years, and some of his incorporeal essence seems to have seeped into the fabric of the capelet.
+
+STATISTICS:
+
+Equipped abilities:
+– Each time the wearer is hit, there is a 5% chance that <PRO_HESHE> will be affected by the Blur spell
+– Save vs. Enchantment spells: +2
+
+Weight: 3~
+@20287 = ~Festering Spear +1~
+@20288 = ~The razor-sharp tip of this spear easily cuts through armor and down to the bone. Victims of its devastating attacks bleed heavily as their wounds instantly fester and weep, dazing them with pain and making it difficult to continue the battle.
+
+STATISTICS:
+
+Combat abilities:
+– Inflicts 2 points of bleeding damage per hit (1 point per round)
+– On a critical hit, the target is infected by disease (-2 penalty to Strength and Dexterity for 1 turn, non-cumulative)
+
+THAC0: +1
+Damage: 1d6+1 (piercing)
+Speed Factor: 5
+Proficiency Type: Spear
+Type: Two-handed
+Requires:
+ 5 Strength
+
+Weight: 5~
+@20289 = ~Arrow of Antimagic +1~
+@20290 = ~This is an arrow whose head has been enchanted with the same energy used in an Antimagic Field spell. It is said that the wizard who perfected the creation of these arrows was later hunted down and murdered by his own peers. Very few wizards in Faerûn know how to create these arrows, and they seldom reveal this knowledge for fear of retribution from other wizards.
+
+STATISTICS:
+
+Combat abilities:
+– The target suffers a (non-cumulative) 50% chance of spellcasting failure for the next 5 rounds (Save vs. Spell negates)
+
+THAC0: +1
+Damage: 1d2
+Launcher: Bow
+
+Weight: 0~
+@20291 = ~Dread Hammer +2~
+@20292 = ~A Cold, Dread Hammer from a Cold, Dead Hand
+Once the property of dwarven cleric of Abbathor, Gurn Coldhearth, this mighty war hammer was infused with dark magics soon after Coldhearth's transformation into a lich. The brown leather of the handle and gray metal of the head are purest black now, seemingly forged of a darkness so deep no light can escape it. Any hand that holds it soon grows cold and numb, but those strong enough to endure the discomfort will wield a weapon of formidable power.
+
+STATISTICS:
+
+Equipped abilities:
+– On a critical miss, the weilder takes 1d4 points of cold damage
+
+Combat abilities:
+– Deals an extra 2d4 points of cold damage vs. good-aligned Clerics
+
+THAC0: +2
+Damage: 1d4+3, +1 cold
+Damage Type: Crushing
+Speed Factor: 2
+Proficiency Type: War Hammer
+Type: One-handed
+Requires:
+ 9 Strength
+
+Weight: 5~
+@20293 = ~Battle Tankard~
+@20294 = ~This enormous tankard seems sized for a giant. Indeed, a rune on the tankard's base indicates it may come from the halls of Gerti Orelsdottr far to the north. Someone has carved eye and mouth holes in the tankard's side so it can be used as a helmet. Wine stains and the pervasive smell of stale beer indicate that the wearer of this "helmet" is used to reveling late into the night (or perhaps early into the morning).
+
+STATISTICS:
+
+Equipped abilities:
+– Immunity to fatigue
+– Protects against critical hits
+
+Weight: 2~
+@20295 = ~Peacock Cap~
+@20296 = ~Decades ago, Yeren the bard traveled the jungles of Chult to learn the stories and songs of those who lived within them. Though the trip was fraught with danger, Yeren's bravery was rewarded when he discovered a Chultan village. The villagers welcomed him. Over the next month, he learned of their history and art while telling them stories of life in Waterdeep. When Yeren departed, the villagers gifted him a headdress trimmed with peacock feathers. Too distinctive to wear on the streets of Waterdeep, Yeren selected one feather to sew into his cap, which he later enchanted.
+
+STATISTICS:
+
+Equipped abilities:
+– Charisma: +2 (Bards), +1 (others)
+
+Weight: 0~
+@20297 = ~Helm of Equus~
+@20298 = ~This finely crafted helm, with intricate gold designs set in black metal and attractive horse hair plumage, lends its wearer an air of authority and gravitas. This effect is only mildly impaired by the distinct odor of horse manure that lingers in the air around it.
+
+STATISTICS:
+
+Equipped abilities:
+– Charisma: +2
+– Protects against critical hits
+
+Weight: 2~
+@20299 = ~Helm of Unwavering Purpose~
+@20300 = ~This pitted bronze helmet boasts a dark crest that stretches laterally across the crown. Three silver coins, blackened with tarnish, are set in a line over the brow. The helm carries a sense of ancient resolve, of a purpose not yet fulfilled but never abandoned.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +1
+– Immunity to confusion
+– Protects against critical hits
+
+Weight: 2~
+@20301 = ~Blood Red Ioun Stone~
+@20302 = ~This spherical stone gleams crimson, like a hardened globe of blood. Once activated, it can enhance the wearer's hand-eye coordination, reflexes, and balance, which makes it a highly prized accessory among rogues.
+
+STATISTICS:
+
+Equipped abilities:
+– Dexterity: +1
+– Weapon Speed Factor: +2
+
+Weight: 0~
+@20303 = ~Raconteur's Regalia +2~
+@20304 = ~When the half-elven bard Beleress left his home in Evereska, his musical tutor gave him this suit of armor as a parting gift. The brightly colored armor looks stylish as it protects, though it wasn't able to keep its original owner from falling prey to hill giants on his travels. On the breastplate of the armor appears a stylized golden heart, a mark of respect to Hanali Celanil. When Beleress died, a scar appeared on the golden heart that persists to this day.
+
+STATISTICS:
+
+Equipped abilities:
+– Pick Pockets: +10%
+– Spellcasting is not disabled
+
+Armor Class: 5 (3 vs. slashing, 4 vs. piercing and missile)
+Requires:
+ 6 Strength
+
+Weight: 8~
+@20305 = ~Purification Stone~
+@20306 = ~This smooth silvery-gray stone floats in the air around its user's head, untethered by gravity or other earthly concerns. Protecting its user from poison and disease, it can be used once a day to cleanse mortal bodies of unnatural contamination.
+
+STATISTICS:
+
+Equipped abilities:
+– Immunity to poison and disease
+
+Charge abilities:
+– Neutralize Poison once per day
+
+Weight: 0~
+@20307 = ~Daeros's Full Plate +1~
+@20308 = ~This heavy steel breastplate bears the image of a soaring copper dragon on the front. The lightness of the breastplate and the fine detail on the dragon's image suggest dwarven craftsmanship.
+
+STATISTICS:
+
+Equipped abilities:
+– Fire Resistance: +40%
+– Save vs. Breath: +2
+
+Armor Class: 0 (-4 vs. slashing, -3 vs. piercing and missile)
+Requires:
+ 15 Strength
+
+Weight: 30~
+@20309 = ~Bloody Bone Plate +2~
+@20310 = ~The warrior who once wore this armor died at the hands of a friend she trusted. The mark of her betrayal remains in the bloodstains that have darkened to brown on the gleaming bone-white armor. The armor functions properly, though it makes the wearer unappealing to look at.
+
+STATISTICS:
+
+Equipped abilities:
+– Immunity to backstab
+– Charisma: -1
+
+Armor Class: 1 (-2 vs. slashing)
+Requires:
+ 8 Strength
+
+Weight: 20~
+@20311 = ~Robe of Arcane Aptitude~
+@20312 = ~The provenance of this dark purple robe has been lost in the mists of history, but a faint odor of stale magic lingers in the air around the threadbare garment. The one who wore it was clearly no stranger to the Weave. Closely examining the robe, you are able to pick out a stylized flame design woven into the fabric. It seems likely the intricate pattern was always subtle, but even were that not true, countless years of wear have rendered the flames all but invisible.
+
+STATISTICS:
+
+Equipped abilities:
+– Intelligence: +1
+– Armor Class: 5
+
+Charge abilities:
+– Spell Sequencer once per day
+
+Weight: 3~
+@20313 = ~Firefly +2~
+@20314 = ~This sling, carefully carved from yew wood, has tiny fireflies engraved along its length. When a slingstone is fired, the fireflies glow with a soft golden light. The sling was crafted and blessed by a priestess of Yondalla and so grants its full abilities only to halfling weilders.
+
+STATISTICS:
+
+Equipped abilities:
+– Saving Throws: +2 (halflings)
+
+THAC0: +2
+Damage: +2, +1 (fire)
+Damage Type: Missile
+Speed Factor: 4
+Proficiency Type: Sling
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 0~
+@20315 = ~Eadro's Blade +1~
+@20316 = ~Legend has it that this elegant curving blade was forged deep beneath the sea by merfolk and its hilt bound in enchanted eelskin. The truth of the matter is more mundane. The blade was crafted in Iriaebor and given to a mercenary commander who protected cargo barges moving up and down the river Chionthar. Still, it is a finely made and serviceable weapon.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +2 vs. elementals and mephits
+
+Combat abilities:
+– A critical hit against an elemental or mephit will instantly banish the creature to its home plane
+
+THAC0: +1, +2 vs. elementals and mephits
+Damage: 1d8+1, +2 vs. elementals and mephits
+Damage Type: Slashing
+Speed Factor: 4
+Proficiency Type: Scimitar/Wakizashi/Ninjatō
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 3~
+@20317 = ~Fractal Blade +3~
+@20318 = ~A line of diamond-shaped mirrors run up the center of this short sword's blade. The smallest bit of light catches the mirrors, flashing and flickering as the weilder fights. Rumor has it that the blade was constructed by a particularly vain fighter from Sembia who later lost it in a duel. The fighter became distracted by his own reflection in a nearby shop window and failed to parry his opponent's blow.
+
+STATISTICS:
+
+Equipped abilities:
+– Whenever the weilder is hit, there is a 10% chance <PRO_HESHE> is surrounded by 3 mirror images for 3 rounds
+
+Combat abilities:
+– 50% chance per hit of dispelling all illusionary spells (e.g. Mirror Image or Improved Invisibility) affecting the target
+
+THAC0: +3
+Damage: 1d6+3 (piercing)
+Speed Factor: 0
+Proficiency Type: Short Sword
+Type: One-handed
+Requires:
+ 5 Strength
+
+Weight: 2~
+@20319 = ~Spell Breaker +2~
+@20320 = ~Power can corrupt even the noblest of mages, and the long-lived elves of Faerûn have seen what devastating consequences can occur when a mage loses control. This elegant longsword, its silver hilt decorated with clear blue gems, was crafted to deal with arcane spellcasters who have abused their gift. The sword assists any hunter who tracks down out-of-control mages, and has particular potency in the hands of wizard slayers or inquisitors.
+
+STATISTICS:
+
+Equipped abilities:
+– Save vs. Spell: +4 (Wizard Slayers and Inquisitors), +2 (others)
+
+Combat abilities:
+– On a critical hit, the target is affected by Dispel Magic
+
+THAC0: +2
+Damage: 1d8+2 (slashing)
+Speed Factor: 3
+Proficiency Type: Long Sword
+Type: One-handed
+Requires:
+ 6 Strength
+
+Weight: 3~
+@20321 = ~Gift of the Demon +1~
+@20322 = ~This onyx blade pulses with a sickly green light. The hilt is carved of bone and the pommel resembles the grinning skull of a gelugon. The blade has snapped in half, leaving the sword disappointingly less powerful than it was before. Demonic gifts come with a catch, and this one has just revealed itself.
+
+STATISTICS:
+
+Equipped abilities:
+– May only be removed with a Remove Curse spell
+
+THAC0: +1
+Damage: 1d8+1 (slashing)
+Speed Factor: 4
+Proficiency Type: Long Sword
+Type: One-handed
+Requires:
+ 6 Strength
+
+Weight: 2~
+@20323 = ~Sword of Troll Decapitation +1~
+@20324= ~Runes along the length of this powerful blade spell ""death to trolls"" in multiple languages. A green gem set in the weapon's hilt glows with a pale green light. Legend tells that the famous dwarf Durlag Trollkiller used this sword in his adventuring days, but lost it during a particularly brutal fight in the Troll Hills.
+
+Despite the item's name, it does not actually decapitate trolls. A rumor sprung up regarding its powers and despite evidence to the contrary, the sword has never shaken the nickname.
+
+STATISTICS:
+
+Combat abilities:
+– On a critical hit against a troll, the wearer gains +1 to Strength for 1 turn (non-cumulative)
+
+THAC0: +1, +3 vs. trolls
+Damage: 1d10+1, +2 fire vs. trolls
+Damage Type: Slashing
+Speed Factor: 9
+Proficiency Type: Two-handed Sword
+Type: Two-handed
+Requires:
+ 14 Strength
+
+Weight: 12~
+@20325 = ~Sword of Ruin +2~
+@20326 = ~This wide, heavy blade gives way to jagged teeth near its tip, a serrated edge designed to rip and tear flesh. Little is known of the blade's origin, but the elaborate grip marked with worn runes hints that it may have been crafted in ancient Unther.
+
+STATISTICS:
+
+Equipped abilities:
+– Critical Hit Chance: +5%
+
+Combat abilities:
+– Deals an extra 2d4 points of slashing damage on a critical hit
+
+STATISTICS:
+
+THAC0: +2
+Damage: 1d10+2 (slashing)
+Speed Factor: 8
+Proficiency Type: Two-handed Sword
+Type: Two-handed
+Requires:
+ 14 Strength
+
+Weight: 10~
+@20327 = ~Harold +2~
+@20328 = ~When Fitzallus the Footpad, a Sembian bard, had this heavy crossbow commissioned, he talked endlessly about how incredible the weapon would be. His friends teased him that the crossbow was his new "best friend" and that he should name it. Finally, the crossbow was ready, and Fitzallus strode into the tavern with the gleaming weapon and proudly introduced it as "Harold." Fitzallus died during a burglary several months later, and though his will specified he be buried with Harold, the crossbow vanished before the ceremony.
+
+STATISTICS:
+
+Combat abilities:
+– 15% chance per hit of casting Doom on the target
+
+THAC0: +2
+Damage: +4 (missile)
+Speed Factor: 8
+Proficiency Type: Crossbow
+Type: Two-handed
+Requires:
+ 12 Strength
+
+Weight: 11~
+@20329 = ~Cloak of the Gargoyle~
+@20340 = ~Though this dark gray cloak appears to be made of stone, it is soft and flexible as cloth. When donned, it allows its wearer to assume a statue-like form once per day. These cloaks are often found among the duergar, who first designed them, but occasionally one winds up on the surface.
+
+STATISTICS:
+
+Equipped abilities:
+– Physical Damage Resistance: +5%
+– Protects against critical hits
+
+Charge abilities:
+– Stone Form once per day
+  Armor Class: 0
+  Saving Throws: +3
+  Dexterity: -3
+  Duration: 5 turns
+
+Weight: 2~
+@20341 = ~Shield of Egons +2~
+@20342 = ~The Egons were a family of well-respected Lathander worshippers that earned their fortune protecting those weaker than themselves. Though the Egon line has ended, its influence is still felt in the form of this shield, which is imbued with some of the power of the Morninglord himself.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +3
+– Turn Undead Level: +2 (Priests of Lathander and Undead Hunters), +1 (others)
+
+Requires:
+ 12 Strength
+
+Weight: 6~
+@20343 = ~Rhyte's Last Arrow +2~
+@20344 = ~The tale of this weapon lost its significance in the sea of great stories that are told about the High Forest, but some bards still sing the song of the skilled archer Adaniss Rhyte.
+
+"Oh, shocked from the strike of his powerful bow,
+The slain game sought by Adaniss falls.
+Long ago in the time of the Quiet Earth,
+The hunt from the famed High Forest calls.
+
+"The Duke of Everlund known for his boast
+Of the trophies held in his pride as dear.
+Intensely enraged at his rival hunter
+Whose bounty by far surpassed his one year.
+
+"One morn tragedy befell the land
+With the misconceived death of the Duke's prized hound.
+Fallen at the base of a great elm tree
+A bow's shot death in its heart was found.
+
+"With skill so great targets in his eyes were at the mercy of his arrow's flight.
+His hands sure and still,
+Never missing a kill,
+None could match the marksmanship of Adaniss Rhyte.
+
+"The same eve Adaniss called on the Duke,
+His solemn mistake he wished to repay.
+But the noble's rage claimed ten pounds of flesh
+And an archer's arm hit the ground that day.
+
+"The evil lord demanded justice unjust
+The most vile curse on his arm to be cast.
+Vengeance he sought for the price he had paid
+Rhyte vowed the hound's arrow not to be his last.
+
+"In sorrow the town helped him forge an axe
+Blessed to honor his most glorious day.
+With the mark of Rhyte's arrow to guide its strike
+And reputed to kill in the very same way.
+
+"With skill so great targets in his eyes were at the mercy of his arrow's flight.
+His hands sure and still,
+Never missing a kill,
+None could match the marksmanship of Adaniss Rhyte.
+
+"Again called the forest with its precious game,
+And a prize Adaniss with thrill did he seek.
+But none could be finer than the great clawed falcon
+Sought by all amidst the forest's Lost Peaks.
+
+"Once more the rivalry of the Duke did stir,
+For he thought of his skills with Rhyte's bow to be best.
+And set his sights on the glorious bird
+To emerge as the holder of its sainted crest.
+
+"The two climbed the peaks and searched days on end,
+Each of their wills set as strong as the stone.
+They found each other at a cliff by chance;
+Both of their hatreds ran as deep as the bone.
+
+"With skill so great targets in his eyes were at the mercy of his arrow's flight.
+His hands sure and still,
+Never missing a kill,
+None could match the marksmanship of Adaniss Rhyte.
+
+"The Duke drew the bow and pulled the string taut,
+But first flew Adaniss's axe with its blow.
+Cleaved, the lord stumbled to cliff's edge and off,
+Defeated by Rhyte's last arrow...
+
+"With skill so great targets in his eyes were at the mercy of his arrow's flight.
+His hands sure and still,
+Never missing a kill,
+None could match the marksmanship of Adaniss Rhyte.
+None could match the marksmanship of Adaniss Rhyte."
+
+STATISTICS:
+
+Equipped abilities:
+– Chance to score a critical hit: +5% (with this weapon only)
+
+Combat abilities:
+– On a critical hit, the wielder gains +5 THAC0 for 3 rounds (non-cumulative)
+– Returns to the wielder's hand when thrown
+
+THAC0: +2
+Damage: 1d6+3
+Damage type (melee): Slashing
+Damage type (thrown): Missile
+Speed Factor: 2
+Proficiency Type: Axe
+Type: One-handed
+Requires:
+ 4 Strength
+
+Weight: 3~
+@20345 = ~Hand Mirror~
+@20346 = ~A simple gilt hand mirror.
+
+STATISTICS:
+
+Weight: 1~
+@20347 = ~Gentrus's Hand Mirror~
+@20348 = ~The town of Soubar has earned its reputation as a lawless and dangerous place. The rampant brigandry in the area means a great many stolen goods are funneled through Soubar's back rooms and inns. One of the town's residents, the halfling Gentrus, crafted this mirror to help him divine the true nature of items he wished to buy. After a close call with a wererat, Gentrus decided to leave Soubar for the safety of Baldur's Gate, joining a caravan traveling north. The halfling died on the road during a bandit attack, but the caravan's survivors drove off the bandits. They ensured Gentrus's body and possessions made it to his relatives.
+
+STATISTICS:
+
+Charge abilities:
+– Identify three times per day
+
+Weight: 1~
+@20349 = ~Glowing Gemstone~
+@20350 = ~This gemstone glows with an inner light.
+
+STATISTICS:
+
+Weight: 0~
+@20351 = ~The Secret Revealed~
+@20352 = ~This green gemstone glows with the power of Dumathoin, the Keeper of Secrets beneath the Mountain. Its divine power exacts a heavy price on the undead, especially liches.
+
+STATISTICS:
+
+Charge abilities:
+– The Secret Revealed
+  Damage: 4d8 magic vs. undead (Save vs. Wand for half)
+  Special: Weakens liches, leaving them more susceptible to attack
+
+Weight: 1~
+@20353 = ~Lon's Amulet~
+@20354 = ~This silver holy symbol of Selûne features a pair of feminine eyes surrounded by seven stars.
+
+STATISTICS:
+
+Equipped abilities:
+– Wisdom: +1 (Shapeshifters)
+– Bless
+
+Weight: 1~
+@20355 = ~Glimmer of Hope +2~
+@20356 = ~A pacifist priest of Ilmater carried this mace to warn off would-be evildoers, but never lifted the weapon in battle. He preached that all thinking creatures had the capacity for good in them, and that to destroy another life was to rob it of its potential. His fellow priests, though respectful of his views, did not take their philosophy to such an extreme. Few were surprised when the priest was waylaid by bandits and killed one day. His mace was recovered and brought back to the temple, and the other priests were amazed to find a small diamond embedded in the tip. The diamond flashes with brilliance from time to time, blessing its wielder and filling them with a sense of hope.
+
+STATISTICS:
+
+Equipped abilities:
+– Wisdom: +1
+
+Combat abilities:
+– 10% chance per hit of casting Bless centered on the wielder
+
+STATISTICS:
+
+THAC0: +2
+Damage: 1d6+3 (crushing)
+Speed Factor: 5
+Proficiency Type: Mace
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 7~
+@20357 = ~Cold Fury +2~
+@20358 = ~Chilly blue frost trails like fog off the blade of this halberd. A palpable aura of cold surrounds the weapon, dealing frost damage to most enemies but wounding those that dwell in flame most severely.
+
+STATISTICS:
+
+Combat abilities:
+– Each hit slows fire-dwelling and fire-using creatures for 3 rounds (Save vs. Spell negates)
+
+THAC0: +2
+Damage: 1d10+2, +1d2 cold
+Damage Type: Slashing or piercing, whichever is better
+Speed Factor: 7
+Proficiency Type: Halberd
+Type: Two-handed
+Requires:
+ 13 Strength
+
+Weight: 12~
+@20359 = ~The Bloodied Guardian +2~
+@20360 = ~This shield was carried by a mercenary working with the Order of the Steel Fang. The warriors of the order were impressed with the mercenary's tenacity and courage. She charged into battle without hesitation and seemed to fight all the harder when she was wounded. When their quest was completed, the Order of the Steel Fang gifted a battleaxe to the mercenary as thanks for her service. In turn she gave the order her shield as a sign of respect. The shield stayed in the order for years until it was lost on a battlefield.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +3, an extra +1 vs. missile attacks
+– Fire Resistance: +25%
+
+Combat abilities:
+– When the wielder's Hit Points drop below 50%, <PRO_HESHE> gains +1 to Strength for 5 rounds
+
+Requires:
+ 10 Strength
+
+Weight: 4~
+@20361 = ~Medal of Valor~
+@20362 = ~A Waterdhavian medal awarded for bravery in combat. Its silver shine has dulled over the years.
+
+STATISTICS:
+
+Equipped abilities:
+– THAC0: +2
+
+Weight: 0~
+@20363 = ~Ring of the Crusade~
+@20364 = ~Two small round topazes flank the symbol of Caelar Argent engraved on this ring's silver band. Such rings testify to the high status of crusaders who have shown their prowess in battle or in some way demonstrated unwavering commitment to the Shining Lady's cause.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +1, +3 vs. demons and devils
+– Saving Throws: +1, +3 vs. demons and devils
+
+Weight: 0~
+@20365 = ~Corinth's Bow +2~
+@20366 = ~Though obviously well-used, someone has taken excellent care of this finely crafted bow. A small golden seal on one side appears to be a family crest.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +1
+
+Combat abilities:
+– After scoring a critical hit, the wielder is affected by the Luck spell
+
+THAC0: +3
+Damage: +4
+Speed Factor: 5
+Proficiency Type: Longbow
+Type: Two-handed
+Requires:
+ 18 Strength
+
+Weight: 8~
+@20367 = ~Wand of Water Elemental Summoning~
+@20368 = ~Seaweed strands wrap around this coral-encrusted wand. When a charge is expended, a water elemental appears to do its summoner's bidding.
+
+STATISTICS:
+
+Charge abilities:
+– Summon lesser water elemental
+  Range: 20 ft.
+  Duration: 1 turn
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+@20369 = ~Protector of the Unworthy~
+@20370 = ~Girdle of Blades: The Protector of the Unworthy
+The most infamous owner of this item forever tainted its reputation, though it is still a truly useful item. Morinden of the Wicked Heart made his living looting the bodies of those he slew. He would goad true warriors into duels of honor—though he had little knowledge of the subject—and laugh as their blades glanced off him. Eventually he met his end at the hands of a frustrated woodsman, who had wisely cast his sword aside in favor of a tree stump.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +4 bonus vs. slashing attacks
+– Armor Class: -4 penalty vs. crushing attacks
+– May only be removed by a Remove Curse spell
+
+Weight: 2~
+@20371 = ~Commander's Chain Mail +2~
+@20372 = ~Though the dents and dull spots of this chain mail show its use, someone has taken good care of the armor. Patches of bright new links show where the armor has been carefully mended. The lack of ornamentation or gilded patterns on the suit give it an honest look, as if this were the armor of a soldier who served well and honorably.
+
+STATISTICS:
+
+Equipped abilities:
+– Charisma: +1
+– The wearer and any allies within <PRO_HISHER> visual radius are immune to fear and morale failure
+
+Armor Class: 2 (0 vs. slashing, 4 vs. crushing)
+Requires:
+ 8 Strength
+
+Weight: 9~
+@20373 = ~The Gift~
+@20374 = ~Crafted from the most delicate spider silk, an unblemished aquamarine gem its centerpiece, this necklace represents its creator's undying devotion for his beloved. It does more than accentuate its wearer's beauty, though it certainly does that as well. It also seemingly rejuvenates her, leaving her practically glowing with youth and vitality. Were arcane energies involved in its creation, or does it merely reflect the deeply-held feelings of the necklace's maker for its intended recipient? It is impossible to say; such is the magic of love.
+
+STATISTICS:
+
+Equipped abilities:
+– Hit Points: +10
+– Charisma: +1
+– Immunity to fatigue
+
+Weight: 2~
+@20375 = ~Hide Armor~
+@20376 = ~Hide armor is made from the thick hide of a very large animal (an elephant for example) or from many layers of normal leather from common animals, like cows. Hide armor is far too bulky, inflexible and heavy to be used much in advanced human cultures. However, among the barbaric humanoid masses throughout the dark forests and misty jungles of the world, hide armor is common. Even though it does offer more protection than leather armor, one must get by the offensive odor and shoddy appearance in order to wear it effectively. Even though Thieves can wear this armor, it has a negative effect on their abilities.
+
+STATISTICS:
+
+Equipped abilities:
+– Open Locks: -10%
+– Find Traps: -10%
+– Pick Pockets: -10%
+– Move Silently: -20%
+
+Armor Class: 6 (8 vs. piercing and missile)
+Requires:
+ 6 Strength
+
+Weight: 40~
+@20377 = ~Cornugon's Revenge +2~
+@20378 = ~The devil Thel’blax was a scourge against the armies of the Abyss until he was assassinated by the servants of his own master, Dispater. With his final breath, Thel’blax cursed his own body to never lie still even in death. When his body was carried to the Iron Tower, Thel’blax’s horns and barbs continued to thrash about as though alive.
+
+The cursed cornugon’s body was dismantled by his peers, in the hopes that destroying him would end the curse; but the disparate pieces of Thel’blax’s body continued to prick and tear at any who approached. At last, Dispater ordered his ironsmiths to forge the pieces into a suit of armor, intending to use it as a means of torturing insubordinates. Inevitably, the armor fell into the hands of intrepid (if foolhardy) adventurers, who then brought the piece to Faerûn.
+
+Even now, the curse of Thel’blax affects the armor, causing its barbs to sink painfully into the flesh of anyone wearing it. It provides a measure of protection, behaving like hide armor, and even allows the wearer to benefit from Thel’blax’s resilience; but the constant stinging and flaying from the cornugon’s still-living barbs make this armor unsuitable for the faint of heart or the weak of stomach.
+
+STATISTICS:
+
+Equipped abilities:
+– Open Locks: -10%
+– Find Traps: -10%
+– Pick Pockets: -10%
+– Move Silently: -20%
+– Regenerate 2 Hit Points every round
+– Constitution: -2
+– Wearer cannot be protected from evil
+– May only be removed with a Remove Curse spell
+
+Armor Class: 4 (6 vs. piercing and missile)
+Requires:
+ 6 Strength
+
+Weight: 35~
+@20379 = ~Myconid Pod~
+@20380 = ~This bulbous organic pod detached from the myconid when it died.
+
+STATISTICS:
+
+Weight: 1~
+@20381 = ~Myconid Bloom-Sac~
+@20382 = ~This bulbous organic pod apparently holds the key to myconid reproduction.
+
+STATISTICS:
+
+Charge abilities:
+– Summon 1d4 myconids
+  Duration: 2 turns
+
+Weight: 1~
+
+/////////////////////////////////////
+///////IWD BARD INSTRUMENTS//////////
+/////////////////////////////////////
+@20383 = ~Hunting Horn~
+@20384 = ~These small, curved horns produce a loud clarion call that can carry as far as two miles. They are favored by many of the northern barbarian tribes.~
+@20385 = ~Bardic Horn of Valhallah~
+@20386 = ~This horn was created by the respected bard of a now-dead Reghed barbarian tribe. The bard was called Beogin, and his songs are sung by many of the northern tribes. He carried this horn with him when he observed many titanic battles. The chief of his tribe gave him the instrument with instructions to blow it if he was ever in mortal danger. Beogin, too proud to ever call on his tribesmen for help, was killed in battle, the horn hidden under his cloak.
+
+STATISTICS:
+
+Charge abilities:
+– Summon 2-4 berserkers once per day
+  Range: 20 ft.
+  Duration: 1 hour
+
+Weight: 1~
+@20387 = ~Wooden Shawm~
+@20388 = ~This double-reed instrument creates and exotically textured sound. When played poorly, the instrument buzzes like a large insect, but in the hands of a master, the shawm has the clear, melancholic voice of migrating geese.
+
+STATISTICS:
+
+Weight: 2~
+@20389 = ~Owain's Lullabye~
+@20390 = ~Owain's Lullabye was created by a disturbed bard named Owain Piper. Piper was a worshipper of Auril, born in the town of Silverymoon and raised to embrace the frigid environment of his homeland. He traveled extensively in the Moonsea, where he met a mage named Pelham of the Moor. Owain and Pelham became good friends and stayed in contact for over a decade. Pelham eventually enchanted Owain's Lullabye for the bard in exchange for a small sum of money. Owain rarely used the instrument in battle, typically employing it when he found late-migrating geese lounging on a lake. He would blow the horn in such a way that the geese heard it as the sound of their cousins heading south for the winter. As the geese would attempt to take flight, Owain's horn would freeze them in mid-stroke, where he would leave them to die.
+
+STATISTICS:
+
+Charge abilities:
+– Cone of Cold
+  Damage: 10d4+10 cold (Save vs. Spell for half)
+  Range: 0
+  Area of Effect: 20-ft. cone with 60-deg. arc
+
+Weight: 2~
+@20391 = ~Cittern of War~
+@20392 = ~One of the only musical instruments actively approved of by the church of Tempus, the Cittern of War was constructed by a halfling instrument maker named Relias Blackseed. Priests of Arvoreen the Defender blessed the cittern with its impressive power. Relias never intended to play his magnificent creation. He eventually sold the ruddy instrument to a bard named Gallow Deely. Gallow was a lanky, slender man often found in the company of adventurers. Though ill-suited for battle, Gallow was exceptionally gifted at putting tales of heroism to music. With the aid of the cittern, he helped the Company of Frozen Trees defeat a young green dragon in 1013 DR. His song, commemorating the occasion, was a rollicking tune called "The Fight of Green Thirteen." It is played in central and western taverns to this day.
+
+STATISTICS:
+
+Charge abilities:
+– Emotion, Courage twice per day
+  Allies receive +1 to hit, +3 to damage, +5 to temporary HP, and immunity to fear
+  Range: 0
+  Duration: 1 hour
+  Area of Effect: 7-ft. radius
+
+Weight: 3~
+@20393 = ~Wooden Shorthorn~
+@20394 = ~A smaller version of the longhorn, the shorthorn can achieve high and piercing tones of remarkable clarity. Though the range of this instrument is limited, it is sure to be heard in any ensemble due to its birdlike voice. The shorthorn is an easy instrument to learn for those proficient on the longhorn.
+
+STATISTICS:
+
+Weight: 1~
+@20395 = ~Merry Shorthorn~
+@20396 = ~The Merry Shorthorn was once owned by the half-elven bard Prophia Copperfire. She took the small instrument everywhere. Despite its rather meager powers, the Merry Shorthorn is among the most well-traveled magic items in Faerûn. It is believed that Prophia took it with her to a number of elemental planes, to Elysium and Baator, and from the Spine of the World to the distant reaches of Wa. It entertained pashas in Calimshan, quelled the anger of holy slayers in Zakhara, and bolstered a crew of sailors in the Sea of Fallen Stars. The Merry Shorthorn was lost when Prophia accidentally dropped it somewhere in the great desert Anauroch.
+
+STATISTICS:
+
+Charge abilities:
+– Bless once per day
+  Allies receive +1 to hit, +1 to saves vs. fear effects, and increased morale
+  Range: 0
+  Duration: 6 rounds
+  Area of Effect: 15-ft. radius
+
+Weight: 1~
+@20397 = ~The Unstrung Harp~
+@20398 = ~The instrument of a beatified saint of the church of Ilmater, this harp once belonged to Sephica of Ordulin. Sephica was a bard, but she did not worship the lord of songs, Milil. Instead, she devoted herself to performing ballads to the suffering throngs of Ilmatari everywhere. She was traveling with a group of Ilmatari pilgrims when they were attacked by bandits. The bandits killed and severely injured many of the pilgrims, and they cut the strings of Sephica's harp when she tried to soothe the injured travelers. After the bandits had left, Sephica prayed to Ilmater for help in a time of crisis. When she plucked at her harp strings with her eyes closed in prayer, music miraculously poured forth and healed every person who heard it. The next day, the bandits arrived and killed Sephica for healing the pilgrims. Though she was killed, the pilgrims kept the memory of her miracle alive. Their community attempted to have her accepted as an Ilmatari saint. They succeeded in 1218 DR.
+
+The harp can only be played by a bard of exceptional virtue, wisdom, and talent.
+
+STATISTICS:
+
+Charge abilities:
+– Heal once per day
+  Completely heals target and cures blindness, deafness, poison, disease, feeblemind, and intoxication
+  Range: Touch
+  Area of Effect: 1 creature
+
+Requires:
+ 13 Wisdom
+
+Weight: 3~
+@20399 = ~The Dire Old Lute of Pellon Kay~
+@20400 = ~Pellon Kay would never appear in history books for his musical talents. If it wasn't for his famous lute, no one would have remembered him at all. Born in Sembia and raised in a musical family, Pellon Kay never took his performances seriously. Kay made dozens of enemies everywhere he went because of his acidic wit and appetite for confrontation. Sages believe that Milil frowned upon Pellon's antics, but that Talos found Pellon's attitude to be quite amusing. The avatar of Talos watched Pellon start a fight with over twenty men in a bar one night. As a gift for such destructive entertainment, Talos touched the lute that was laying next to Pellon's unconscious body. After that night, Pellon discovered that he could make men go berserk just by playing his lute in their direction. He took great delight in setting mercenaries and sailors against each other for several weeks. Eventually, Pellon Kay was laid low by a grim-featured warrior with a crossbow who didn't let Pellon get close enough to employ his magical lute. The unknown warrior threw the lute into the Sea of Fallen Stars.
+
+STATISTICS:
+
+Charge abilities:
+– Dire Charm (Save vs. Spell negates)
+  Range: Visual range of the player
+  Duration: 2 turns
+  Area of Effect: 1 creature
+
+Weight: 2~
+
+/////////////////////////////////////
+///////////IWD CURSED ITEMS//////////
+/////////////////////////////////////
+@20401 = ~Belt of Stones~
+@20402 = ~This cursed item was created by the wicked sorcerer Valom of the Deep. Valom often hired lone mercenaries to collect magic item components for him. When the unlucky sellswords came on board Valom's floating laboratory, the Dim Courser, Valom would give them the girdle as a reward for a job well done. Once the victim would try on the girdle, Valom would kick them over the side of the boat, where they would quickly drown. Valom's luck ran out when he kicked Herred of Procampur into the Sea of Fallen Stars. Herred had a potion of water breathing and a helm of underwater action with him at the time. When the huge, seaweed-covered form of Herred emerged near the docks where Valom was resting, a local priest of Tyr immediately came to his aid. Upon discovering what Valom had done, the priest of Tyr and three paladins attempted to capture him. Valom killed two of the paladins, but died in the battle. It is believed that the belt was later sold to a traveling collector who specialized in cursed clothing.
+
+STATISTICS:
+
+Equipped abilities:
+– Strength: 6
+– May only be removed with a Remove Curse spell
+
+Requires:
+ 6 Strength
+
+Weight: 2~
+@20403 = ~Amulet of Dark Flesh~
+@20404 = ~A horrible cursed item crafted by the Calishite necromancer Niri Eddin, the Amulet of Dark Flesh is a token of disease and slow death. Eddin gave the item to his secret enemies as gifts and reclaimed it through his thief servants when the sickness had run its course. Niri is believed to still be "alive" somewhere in the realms despite the fact that he was a human born in 832 DR.
+
+STATISTICS:
+
+Equipped abilities:
+– Wearer is paralyzed and diseased (1 damage every 5 seconds)
+– Can only be removed with a Remove Curse spell
+
+Weight: 1~
+@20405 = ~Wailing of Virgins~
+@20406 = ~This thin cloak appears frayed at first, but upon closer inspection, the stray threads are actually human hairs from which the cloak is woven. The cloak twists in torchlight, each strand of hair raveling and unraveling about the others so subtly that it appears as if a light breeze is rippling the cloak.
+
+This cloak is woven from the hair of virgins sent to the Burial Isle to sleep with their dead barbarian lords. It was the Seer's duty to comfort these women, to soothe their pain—in order to do so, she took a lock of hair from each and wove the strands into a cloak that would draw the spirits of fear from the virgins and steady their hearts. The result was a cloak that hangs heavy with guilt and does little to shield the wearer from the cold of the North.
+
+When worn, the hairs weave around the wielder's frame, the long strands lacing together like threads on a loom. The cloak will not willingly unravel itself from a wearer without being coerced by a Remove Curse spell.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +4 vs. piercing, crushing, and missile attacks
+– Armor Class: +2 vs. slashing attacks
+– Immunity to all fear-based effects, Emotion, Hopelessness, and Symbol of Hopelessness
+– Can only be removed with a Remove Curse spell
+
+Charge abilities:
+– Cloak of Fear once per day
+  Non-undead creatures flee in panic for 2d8 rounds (Save vs. Spell negates)
+  Range: 0
+  Duration: 3 rounds
+  Area of Effect: 3-ft. radius
+
+Weight: 1~
+@20407 = ~Ring of Pain Amplification~
+@20408 = ~This cursed ring fuses itself to the wearer's finger, only coming off if a Remove Curse spell is used on the wearer. While it is in use, the wearer suffers extra damage from all melee attacks. Lovitarians are known to create these items and distribute them throughout the realms for their own amusement.
+
+STATISTICS:
+
+Equipped abilities:
+– Slashing Resistance: -20%
+– Piercing Resistance: -20%
+– Crushing Resistance: -20%
+– Can only be removed with a Remove Curse spell
+
+Weight: 0~
+@20409 = ~Ring of the Gorgon~
+@20410 = ~A powerful mage enchanted this ring to prevent petrification under the breath of his prized herd of gorgons. Zilzanzer the Magnificent raised gorgons for their blood, which he sold to safety-conscious castle owners who used it to block ethereal travel. Zilzanzer was petrified over a dozen times, each time being brought back by his faithful assistant's use of Stone to Flesh scrolls. Zilzanzer eventually decided that he should make an item to protect him from petrification. The result was the Ring of the Gorgon. Sages believe that Beshaba must have smiled upon Zilzanzer when he was born, for he was turned to stone when he put on the ring. His assistant dutifully read the Stone to Flesh scroll, bringing Zilzanzer out of his stone form. Unfortunately, Zilzanzer died in the process, this time forever.
+
+STATISTICS:
+
+Equipped abilities:
+– Wearer is turned to stone
+
+Weight: 0~
+@20411 = ~deprecated~
+@20412 = ~deprecated~
+@20413 = ~Mourner's Armor +4~
+@20414 = ~This unique suit of armor is of foreign design, created for a Kara-Turan samurai from the Baika Clan. The armor, crafted from thin, stiff leather, is dyed black but features the insignia of the plum blossom, the mon of the Baika Clan. It was only worn into battle once, when Baika Himuro fought a hopeless battle against the enemy samurai that flooded into his ancestral estate. It is believed that the enemy clan captured the armor and later traded it for siege equipment.
+
+STATISTICS:
+
+Equipped abilities:
+– Wearer is unaware of <PRO_HISHER> current Hit Points
+– Missile Resistance: 75%
+– Maximum Hit Points: +25
+– Open Locks: -25%
+– Find Traps: -25%
+– Pick Pockets: -25%
+– Move Silently: -25%
+– Hide In Shadows: -25%
+– Immunity to pain
+– May only be removed with a Remove Curse spell
+
+Armor Class: 4 (6 vs. piercing and missile)
+Requires:
+ 4 Strength
+
+Weight: 20~
+@20415 = ~Gauntlets of Infernal Damnation~
+@20416 = ~Cursed by a malefic priestess of Beshaba, goddess of bad luck, these hard black leather gloves affix themselves to whoever tries them on. Despite the extremely nasty nature of the gloves, wealthy adventurers sometimes buy the distinctive gauntlets to place in their treasure hordes, waiting for a greedy thief to try them on.
+
+STATISTICS:
+
+Equipped abilities:
+– Shroud of Flame on the wearer (inflicts 2d6 fire damage)
+– Can only be removed with a Remove Curse spell
+
+Weight: 2~
+@20417 = ~Morohanotsurugi +3~
+@20418 = ~This weapon originally belonged to a local Kara-Tur liege-lord, Yodama Akira, who burned one of the villages under his protection to the ground on a perceived slight from the peasants. Though within Yodama's rights as liege-lord, the act deeply shamed Yodama's daimyo, who commissioned Morohanotsurugi, the double-edged sword, as a result. Morohanotsurugi was given to Yodama to teach him a simple lesson: harming others should never be without consequence.
+
+STATISTICS:
+
+Equipped abilities:
+– Inflicts 1d8+3 (piercing) damage on wielder on every hit
+– May only be removed with a Remove Curse spell
+
+THAC0: +3
+Damage: 1d8+3 (piercing)
+Speed Factor: 0
+Proficiency Type: Scimitar/Wakizashi/Ninjatō
+Type: One-handed
+Requires:
+ 5 Strength
+
+Weight: 2~
+////////////////////////////////
+//////NEW ITEM DESCRIPTIONS/////
+////////////////////////////////
+@20419 = ~Fiery Vengance +3~
+@20420 = ~Im 1208DR, Blasille Ikretti, a paladin squire in the service of Mystra, had returned to her homestead after months-long training in the frozen north.  Shortly after her arrival, an insidious Ogre Magi that had been conducting surreptitous raids on the local towns targetted Blasille's home as his next conquest.  Under the cover of night, he struck.  Blasille fought as hard as she could, but was no match for the Ogre's magery.  She was captured, and forced to watch as one, by one, her friends and family were slaughtered.  The saddistic ogre took great pleasure in killing each of them slowly, while Blasille could do nothing.  For three days and nights, she was forced to witness this horror, pleading with her Goddess for help... but none came.
+
+on the fourth night, utterly broken, consumed by sorrow and rage, she made one final plea:  "Gods!  To any who would listen, hear me!  I will pay any price, bear any burden, suffer any curse, serve any master, if you will but grant me the power to destroy this fiend and avenge my fallen!".  Her cry was heard.  In her hands, where once was held a fragment of a shattered holy symbol, was now the hilt of a weapon unlike anything she had ever seen.  Blasille then heard what sounded like a faint whisper: "It's strength, from yours".  Paying the cryptic message no heed, she gripped it tightly, as a blazing blue blade sprang from it.  It sliced through her iron shackles as if they were no more than parchment paper.  With a soul-shattering cry, she charged at the Ogre Magi whom had decimated her home and family.  The Ogre's haughty scowl soon gave way to a look of panic, as Blasille swatted each of his spells back at him as she approached.  With two swift strokes, Blasille bi-sected and be-headed the Ogre, spitting on his carcass before leaving it for the crows to feast on.
+
+Blasille then collapsed.  As she lay, utterly spent, her skin pale,she understood.  Her life-force is what had given the weapon it's power, and as she drew her last breath, the blade retreated back into the hilt and went dark.  Vengance had been granted, and the price for it, paid.
+
+STATISTICS:
+
+Equipped abilities:
+– Reflects Magic Missile, Chromatic Orb, Larloch's Minor Drain, Melf's Acid Arrow, Agannazar's Scorcher, Snilloc's Snowball Swarm, Magic Stone, Doom, and Alicorn Lance back to the caster
+– Wielder takes 1 Hit Point of damage every 5 rounds while equipped
+
+THAC0: +3
+Damage: 2d4+3, +1 magical fire damage
+Damage type: Slashing
+Speed Factor: 2
+Proficiency Type: Bastard Sword
+Type: One-handed
+Requires:
+ 11 Strength
+
+Weight: 3~
+@20421 = ~Greasy Bastard Sword +2~
+@20422 = ~Gorcul the Foul, a smarmy pit fighter who eked out a living by fighting for the entertainment of others, commissioned a Thayvian wizard to enchant his favorite sword to give him an edge in combat.  By all appearances, the sword doesnt look like anything special, but when opponents are struck, they are occasioanlly splattered with a viscous, slippery grease that affects their footing and ability to strike back, resulting in many easy wins for Kilgore.  His winning streak wouldn't last long, however.  During a scheduled fight with a elderly gladiator that Kilgore had assumed he'd have an easy victory over, he was brought low in short order.  As it turns out, the old gladiator was well aware of Kilgore's "trick blade", and had prepared accordingly by drinking a potion of freedom before the fight.
+
+STATISTICS:
+
+Combat abilities:
+– 15% chance of Viscous Grease on hit, -2 THAC0, movement slowed for 3 rounds (Save vs. Spell at -2 negates)
+
+THAC0: +2
+Damage: 2d4+2 (slashing)
+Speed Factor: 6
+Proficiency Type: Bastard Sword
+Type: One-handed
+Requires:
+ 11 Strength
+
+Weight: 7~
+@20423 = ~Bawk-wizashi +2~
+@20424 = ~The Wu Jen who forged this sword, after losing his only companion, a clever little chicken whom accompanied him everywhere he went, to the thunderous hooves of an out-of-control stampede through his village was so grief-stricken by the loss that he swore an oath to restore the little bird to his side.   He did just that by binding it's soul to this wakizashi, which he then carried with him for the rest of his days.  When one wields the sword, a faint, almost imperceptible clucking sound can be heard.
+STATISTICS:
+
+Combat abilities:
+– 2% chance of polymorphing struck opponents into a chicken (Save vs. Sell at -4 negates)
+
+THAC0: +2
+Damage: 1d8+2 (piercing)
+Speed Factor: 1
+Proficiency Type: Scimitar/Wakizashi/Ninjatō
+Type: One-handed
+Requires:
+ 5 Strength
+
+Weight: 1~
+@20425 = ~Kunai~
+@20426 = ~Kunai are small fighting blades, similar in size to a dagger, and usually feature a ringed pommel.  They are quite flexible in their usage, and one of the favored tools of assassins and thieves hailing from the far eastern lands of Kara-Tur.
+
+STATISTICS:
+
+Damage: 1d4 (missile)
+Speed Factor: 2
+Proficiency Type: Dagger
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 0~
+@20427 = ~Black Lotus +3~
+@20428 = ~The black blade of this enchanted kunai features an intricate carving of a lotus flower with two small holes at the end of the stems on either side, from which a highly toxic venom flows when striking opponents.  The blade itself was forged not from any metal, but a magically-preserved fang of a giant spider, ensuring an inexhaustible supply of poison.  One must take great care when weilding it in battle, as <PRO_HESHE> may end up poisoning themselves by mistake.
+
+STATISTICS:
+
+Combat abilities:
+– Returns to the wielder's hand when thrown
+– 15% chance that hit target suffers 1 point of poison damage per second for 5 seconds (Save vs. Poison negates)
+– 5% chance on hit wielder suffers 1 point of poison damage per second for 5 seconds (Save vs. Poison negates)
+
+THAC0: +3
+Damage: 2d4+3
+Damage type (melee): Piercing
+Damage type (thrown): Missile
+Speed Factor: 1
+Proficiency Type: Dagger
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 1~
+@20429 = ~Orchid +2~
+@20430 = ~A Kara-Turan assassin, known only as "Deep Sleep", was the original owner of this ninjatō, and put it to great use during her career.  Due to it's ability to knock foes unconscious in battle with but a small nick from the blade, Deep Sleep was able to easily slay marks far stronger than one would think capable of a woman with her small, unassuming frame.  The two were seperated when she was forcefully retired by one of her employers for refusing a job which would have involed the assassination of a small child.  Since then, it has passed through many hands, and now finds itself in yours.
+
+STATISTICS:
+
+Combat abilities:
+– 10% chance target is knocked unconscious for one round when hit (Save vs. Death at -2 negates)
+
+THAC0: +2
+Damage: 1d8+2 (slashing)
+Speed Factor: 2
+Proficiency Type: Scimitar/Wakizashi/Ninjatō
+Type: One-handed
+Requires:
+ 6 Strength
+
+Weight: 3~
+@20431 = ~Falchion of Rime +3~
+@20432 = ~Forged in antiquity of the purest cold iron, and imbued with the very breath of Auril herself, this sword was carried by only her most devoted champions in several campaigns across the frozen north of Faerûn to extinguish all whom dared to bring warmth and light to her realm.  During the Time of Troubles, when the Faerûnian pantheon were made to walk Toril as mortals, Auril's avatar form, the Frostmaiden, kept the blade by her side at all times and used it to great effect to keep control over her icy realm, while also placing a curse on it to ensure only she, or her chosen could wield it without meeting a terrible fate.
+
+STATISTICS:
+
+Combat abilities:
+– 12% chance target is afflicted by Wasting Rime for two rounds when hit (One level drained, movement and attack speed reduced to 75%, Save vs. Breath at -4 negates, does not affect undead or creatures immune to cold)  There is 9% chance the wielder's party is afflicted instead
+
+Equipped abilities:
+– May only be removed with a Remove Curse spell
+
+THAC0: +3
+Damage: 1d8+3, +1d2 magical cold damage
+Damage type: Slashing
+Speed Factor: 2
+Proficiency Type: Scimitar/Wakizashi/Ninjatō
+Type: One-handed
+Requires:
+ 8 Strength
+
+Weight: 4~
+@20433 = ~Bellowing War Axe +3~
+@20434 = ~Kurg the Bellower, a dwarf whom lived Dorn's Deep during the golden era during the alliance with the elves of the Seldarine, was enamoured with both song and music that were part of the elves's culture.  He wanted to share his enthusiam with his fellow dwarves, and set about learning to sing and play from elf musicians.  The elves were a bit apprehensive at first, as they'd never heard of a dwarven bard, but nevertheless they took him under their tutelage.  Unfortunately, despite his best efforts, whenever he would perform what he had learned, the dwarves of the deep would only laugh and likened his song to that of a bleating goat.  Others would disparage his efforts by shouting: "Ye cannae even carry an axe, much less a tune!"
+
+Undeterred, Kurg sought help from one of his elven tutors, and the two set about forging an enchanted hand axe that would reverberate with Kurg's voice when he sang into it, resulting in the most unique and melodic tone.  At his next performance, the dwarves were both shocked and utterly delighted, marvelling at how such a wondeful sound could be produced with an axe as an instrument.  During the last days of the Deep, as the dwarves struggled against the invading orcish hordes, Kurg's song enfused them with courage and strength, allowing them to fight longer and harder than they would have been otherwise.
+
+To this day, Kurg's disembodied voice can sometimes still be heard in the halls, bellowing a doleful dirge.
+
+STATISTICS:
+
+Equipped abilities:
+– Upon critical hit, the axe sings Kurg's Bold Bellows for the party (Constitution +1, Hit Points +5, immunity to Sleep, Intoxication, Fatigue, and Backstab for one turn)
+
+THAC0: +3
+Damage: 1d8+3 (slashing)
+Speed Factor: 4
+Proficiency Type: Axe
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 5~
+@20435 = ~Stonegazer +3~
+@20436 = ~In the head of this heavily enchanted club, fashioned from petrified entwood, rests a crystallized eye of a greater basilisk.  Whether it was petrified by the gaze of the beast, or some other means prior to mounting and insertion of the eye is unknown, along with identity of it's maker.  One would expect a club of stone to be very heavy and unwieldy, but the enchantments lighten it to mostly that of an average wooden club for the wielder.  Recipients of strikes from the weapon, however, aren't as fortunate.  These same magics also keep the basilisk eye somewhat alive.  Creatures caught in it's gaze are turned to stone, albeit only temporarily.  The wielder must take great care when swinging the club, lest <PRO_HESHE> suffer the same fate.
+
+STATISTICS:
+
+Combat abilities:
+– 15% chance per hit target is turned to stone for three rounds (Save vs. Petrification negates)
+– 25% chance on a critical miss, wielder is turned to stone for three rounds (Save vs. Petrification negates)
+
+THAC0: +3
+Damage: 1d6+3 (crushing)
+Speed Factor: 5
+Proficiency Type: Club
+Type: One-handed
+Requires:
+ 9 Strength
+
+Weight: 5~
+@20437 = ~Tentacle Rod +3~
+@20438 = ~Tentacle rods are flail-like weapons of drowish origin.  The tentacles themselves are living, semi-sentient, and will actively attempt to protect their wielder, as well as infer directives to attack from them, reaching out towards a target to strike, giving the weilder a bit more attack range.  Being so alien in design, few other than the drow themselves can effectively use them in combat.  This particular rod's tentacles will absorb many types of curses aimed at it's user, and when all of them strike a target in unison, can impart debilitating effects on the victim.
+
+STATISTICS:
+
+Combat abilities:
+– 15% chance per hit target is blinded, confused, or stunned for two rounds (no save)
+
+Equipped abilities:
+– Wielder is immune to the following spells: Doom, Curse, Ray of Enfeeblement
+
+THAC0: +3
+Damage: 1d6+4 (crushing)
+Speed Factor: 2
+Proficiency Type: Quarterstaff
+Type: One-handed
+Requires:
+9 Strength
+
+Weight: 7~
+@20439 = ~Gold Rush +3~
+@20440 = ~Around 1103DR, in a small mining village nestled deep within the Spine of the World, rumors had been circulating for months of sightings of an extremely rare greater gold elemental.  It was speculated that it was disturbed by miners who had dug too greedily, and too deep, and any miner unfortunate enough to encounter it within the tunnels met with a swift end.  Naturally, these rumors drew many adventureres to the small town, seeking to find and slay the creature, as it's golden carcass would surely be worth a sizeable fortune.  Many came, spelunking through the twisting caverns of the mine, but none ever returned.
+
+In truth, there was no lurking gold elemental in the mines.  A few years prior, the gold and all other valuable minerals from the mine had completely dried up, and the towspeople were desperate to save their home.  They took what valuables they had remaining and traded them to a very talented gnomish tinkerer and mage to create a "golden" golem which they could use to lure those seeking fame and fortune to their town and reap the rewards of all their spent coin in the local shops.  The golem itself was made of pyrite, commonly known as fool's gold, and fashioned to look like an elemental.  It was thought that in the dark of the mines, no one would be able to tell the difference, and since the golem would slay any it met in the depths, there would be none to tell the tale anyhow.
+
+For a time, the ruse worked well and the village prospered.  This would not last, however.  Eventually, an expedition from Waterdeep was sent after word had reached the faraway city.  The Waterdhavians were well-seasoned and prepared, and when they finally located the golem, they were able to bring it low.  Upon discovery of the treachery, the townspeople were forced to return with the expedition and face corporal punishment for their evil deed, which resulted in the loss of many innocent lives.
+
+Of the golem itself, found within the heap of it's body was an extremely dense, softly glowing golden orb that had served as it's power core.  It was far too dense and hard to be real gold, yet seemed to have all of it's properties, alongside the latent enchantments it possessed.  Being the only thing of value found by the expedition, it was brought back to Waterdeep and presented to the Lords of the city.  After puzzling over what to do with it, one of the Lords requesitioned it to be used in the crafting of an exquisite mace.  The mace was then presented to a high priestess of Waukeen as a gift in return for her god's favor and blessing over the entire city.
+
+Decades later, after the mace had changed many hands within the church, it was carried into it's first real battle by a cleric named Dunhaven Winterborne.  Dunhaven noticed that when he would bash in the heads of his foes with the mace, a number of gold coins would fall out to the ground, seemingly from nowhere.  Dunhaven, both bewildered and amazed by this, quickly scooped them up and moved onto his next opponent.  It wasnt long before the greed that tends to follow large amounts of gold consumed him, and others took notice.  The next day, Dunhaven, along with many of his comrades were found slain in their tents, and the mace nowhere to be found.  In the years since, it has passed through many hands, and now finds itself in yours....but for how long?
+
+STATISTICS:
+
+Combat abilities:
+– On a critical hit, the wielder receives a random amount of gold coins, up to 99
+
+THAC0: +3
+Damage: 1d6+4 (crushing)
+Speed Factor: 4
+Proficiency Type: Mace
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 6~
+@20441 = ~Cavalcade +3~
+@20442 = ~When mounted knights choose their weapon to charge into battle with, they tend to choose those which work best from a mounted position, and for the task at hand.  The same couldn't be said for Saberra Wolfgrin.  Saberra, a half-orc of immense size and strength, always carried her favored weapon, a massive halberd, into battle whether she was on foot, or mounted.  With reckless abandon would she charge into fights, with little to no regard for her opponent's skill or size.  She would thrust and swing wildly with each stroke, fueled by insatiable rage and bloodlust.  One would expect such a fighting style to lead to an early death, but not for Saberra.  Old age and disease would be her only defeat.  As a final request, Saberra asked her lifelong friend, an elder shaman, to perform a ritual to transfer her soul into her favorite tool of conquest, so that she could, in spirit, continue to fight side-by-side with future generations.
+
+STATISTICS:
+
+Combat abilities:
+– 3% chance on hit target is instantly slain (No Save, creatues huge or larger are immune)
+– 1 attack per round
+
+THAC0: +3
+Damage: 1d10+3 (piercing or slashing)
+Speed Factor: 9
+Proficiency Type: Halberd
+Type: Two-handed
+Requires:
+ 17 Strength
+
+Weight: 23~
+@20443 = ~Iron Will +4~
+@20444 = ~Forged in the days of Netheril, of meteoric iron and heavily enchanted with raw, unfettered, ancient magics that even the most skilled of mages could not hope to comprehend, this sword was created to combat the Phaerimm.  Horrific, flying, worm-like beings that were capable of mind control of such strength as to even be able to control Beholders and Mind Flayers.  Nasty enough as that may be, they were also very adept magic wielders whom had created spells only they themselves were capable of casting.  Their spells had a side-effect of draining moisture from the surrounding area when used, and it is thought that their wide-spread use of it caused the Anauroch desert to form and spread.
+
+STATISTICS:
+
+Equipped abilities:
+– Immunity to charm, dire charm, and domination
+
+THAC0: +4
+Damage: 2d4+4, +1d4 magic damage
+Damage type: Slashing
+Speed Factor: 4
+Proficiency Type: Bastard Sword
+Type: One-handed
+Requires:
+ 11 Strength
+
+Weight: 6~
+@20445 = ~Howling Moon +4~
+@20446 = ~This ancient elven scimitar was forged by a devout follower of Fenmarel Mestarine, the diety of feral elves.  Rough, archaic runes and enchantments placed on the blade channel the raw, natural energies of the land and life itself, empowering the wielder and creating a link between <PRO_HESHE> and the land.  When in combat, wild creatures may heed the call and come to assist the wielder in their struggle.
+
+STATISTICS:
+
+Combat abilities:
+– 6% chance on hit of Animal Summoning III (summons 1d2+1 of 12 Hit Dice animals for 4 turns)
+
+THAC0: +4
+Damage: 1d8+4, +1d2 magic damage
+Damage type: Slashing
+Speed Factor: 2
+Proficiency Type: Scimitar/Wakizashi/Ninjatō
+Type: One-handed
+Requires:
+ 8 Strength
+
+Weight: 3~
+@20447 = ~Frozen Bone Staff +3~
+@20448 = ~In the frozen north, near the spine of the world, lay a myriad of caves, alcoves, and hidden passageways that have been used by those whom would rather practice their crafts in secret for ages, necromancy being key among them.  This staff was discovered when a band of adventurers from the Ten Towns happened upon one such cavern that was being used as a Zhent laboratory for experimenting on corpses to create new types of undead creatures to serve them.  The resident necromancers put up a heavy resistance, but were routed in the end.
+STATISTICS:
+
+Charge abilities:
+– Conjures 1d3 of 5 Hit Dice Icebone Skeleton Warriors for 8 hours or until destroyed
+– Column of Ice
+  Damage: 8d6 cold (Save vs. Wand for half)
+  Range: 100 ft.
+  Area of Effect: 1 creature
+
+THAC0: +3
+Damage: 1d6+3, +1d2 magical cold damage
+Damage type: Crushing
+Speed Factor: 3
+Proficiency Type: Quarterstaff
+Type: Two-handed
+Requires:
+ 5 Strength
+
+Weight: 5~
+@20449 = ~Scorching Spear +4~
+@20450 = ~Centuries ago, this spear was forged in the forged in the Elemental Plane of Fire's City of Brass, commissioned by a Sultan whom had several powerful artifacts created for use by his most trusted allies.  It was stolen along with a bastard sword, and a bloody swath was left across Faerûn by the Sultan as he attempted to recover them.  Over time, he grew tired of the pursuit, and returned to his plane, leaving them to be fought over by mortals.
+
+STATISTICS:
+
+Combat abilities:
+– Returns to the wielder's hand when thrown
+– 2 attacks per round
+
+THAC0: +4
+Damage: 1d6+4, + 2d2 magical fire damage
+Damage type (melee): Piercing
+Damage type (thrown): Missile
+Speed Factor: 2
+Proficiency Type: Spear
+Type: Two-handed
+Requires:
+ 5 Strength
+
+Weight: 3~
+@20451 = ~Endarire's Elven Plate +3~
+@20452 = ~Endarire was an elven warrior and mage-smith who hailed from Myth Drannor.  He was quite talented in his art and craftsmanship, holding a belief that true perfection of anything could only be achieved once.  As such, when he was satisfied with his work at the forge, never again would he make another of the same suit or armor, weapon, or other artifact.  While he did create items for his allies and friends, much of what he created was specifically made for himself, though not out of any sense of greed or pride, rather that he trusted weapons and armor created by his own hand moreso than others.  This suit of elven plate is one such of his magnificent creations.
+
+Made from enchanted, interwoven plates of lightweight mithral, movement in the armor is far less restrictive than normal plate, allowing for arcane spellcasting and thieving with less penalties.
+
+STATISTICS:
+
+Equipped abilities:
+– Spellcasting and theiving skills are not disabled
+– Open Locks: -10%
+– Find Traps: -10%
+– Pick Pockets: -30%
+– Move Silently: -20%
+– Intelligence: +1
+– Charisma: +1
+– Casting speed: -2
+
+Armor Class: 0 (-3 vs. slashing)
+Requires:
+ 10 Strength
+
+Weight: 20~
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////                                                  \\\\\
+///// New Spell Names and Descriptions                 \\\\\
+/////                                                  \\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+@3000 = ~Blood-stained Ancient Scroll~
+@3001 = ~This scroll, long hidden within the lining of Vecna's robe, is heavily stained with blood and appears to be made of human skin.  It likely contains a powerful spell scribed by the lich himself.~
+@3002 = ~Conjure Death~
+@3003 = ~Conjure Death
+(Necromancy)
+
+Level: 6
+Range: 30 ft.
+Duration: 8 hours
+Casting Time: 9
+Area of Effect: Special
+Saving Throw: None
+
+This spell is a more powerful version of the level 5 wizard spell, animate dead.  When cast, an undead horror is summoned to serve the caster and will obey <PRO_HISHER> commands, until the enchantment ends or it is utterly destroyed.
+
+  1st – 14th: 1d2 of 7 HD burning skeletons weilding a +1 melee or ranged weapon and +1 shield or buckler, 8 HD putrid zombies, 7 HD charged wights, or 9 HD drowned-in-bloods.
+
+  15th – 17th: 1d2 of 9 HD burning skeleton weilding a +2 melee or ranged weapon and +2 shield or buckler, 10 HD putrid zombies, 9 HD charged wights, or 11 HD drowned-in-bloods.
+
+  18th and up: 1d2 of 11 HD burning skeleton weilding a +3 melee or ranged weapon and +3 shield or buckler, 12 HD putrid zombies, 11 HD charged wights, or 13 HD drowned-in-bloods.
+
+The conjured undead can follow the caster, remain in an area and attack any creature entering the place, etc. It remains animated until it is destroyed in combat, 8 hours pass, or it is turned. This spell cannot be dispelled.~
+@3004 = ~Sealed Ancient Scroll~
+@3005 = ~Thunder Thrust~
+@3006 = ~Thunder Thrust
+(Evocation)
+
+Level: 6
+Range: 80 ft.
+Duration: Instant
+Casting Time: 4
+Area of Effect: 7-ft. radius
+Saving Throw: 1/2
+
+This spell draws forth a massive bolt of electrical energy from the plane of air into the prime, striking the caster's target and nearby foes with a surge of eletricity. Each bolt causes 12d8 points of electrical damage, plus an additional 1d8 points per level of the caster, up to a maximum of 21d8. Any creatures within a 7 foot radius are also caught in the blast and take 4d8 of electrical damage, plus 1d8 per two levels up to a maximum of 8d8.  The force of the blast knocks affected targets back and unconscious for one round.  Creatures may make a reflex save to evade the blast, or successfully Save vs. Spell to halve the damage.~
+@3007 = ~This scroll is sealed by some magical encryption that defies all attempts to understand it's contents.  Just when it appears that a word or symbol is discernable, it shifts into another form.  It would take far more knowledge than most mortals possess to decipher this enigma.~
+@3008 = ~Trollkiller's Fireball~
+@3009 = ~Trollkiller's Fireball
+(Evocation)
+
+Level: 4
+Range: Visual range of the caster
+Duration: Instant
+Casting Time: 3
+Area of Effect: 15-ft. radius
+Saving Throw: 1/2
+
+Trollkiller's Fireball is a more powerful version of the level 3 wizard spell, Fireball.  It's namesake, Durlag Trollkiller, commissioned an exiled elven mage of considerable skill to create this spell for use in eradicating trolls from his homeland.  Much to his delight, the creation of the spell was successful and put to great use during his troll-cleansing campaign.  In the years following, as Durlag's madness took hold of him, he kept all of his most prized possessions, including this spell, under lock, key, and devious trap inside his tower.  How it came to be in your possession is a mystery.   When cast, a raging ball of flame flies forth from the caster's hand, striking the target point and exploding in a horrific display of hellfire, doing 1d6 points of damage for each level of the spellcaster (up to a maximum of 16d6) to targets caught in the blast.  The searing heat is so intense that it can ignite clothing, armor, and even flesh, causing an additional 1d4 fire damage per round and sending the afflicted into a state of panic until they successfully roll a Save vs. Spell to extinguish the flames.  Those who roll successful a Save vs. Spell manage to dodge, fall flat, or roll aside, taking only half damage from the inital blast, and evade the ongoing fire damage and panic.  All saving throws must be made at -2.~
+@3010 = ~Hoar of Frost~
+@3011 = ~Hoar of Frost
+(Evocation)
+
+Level: 7
+Sphere: Combat, Elemental (Cold)
+Range: 0
+Duration: Instant
+Casting Time: 3
+Area of Effect: 18-ft. cone with 90-deg. arc
+Saving Throw: 1/2
+
+The chosen of Auril speak of this spell as legend, a power that the Ice Maiden bestows only upon her most favored, and is a closely guarded secret.  It is said this spell conjures forth the very breath of Auril herself.  Cold as the hearts of Auril's followers may be, there are beings far, far more cruel than they in the realms, and it is rumored that one such being, known as "The Shattered One", caputured a high priestess of Auril and performed torturous experiments on her to "extract" this magic for his own use.  Unfortunately for the mage, he was unable to channel the divine energies required for the spell to work properly.  However, the damage was done and the secrets of this magic were shared across the realms, much to Auril's displeasure.  This spell brings forth a gale of icy, frozen wind from the caster's hands, feezing all in it's path with 1d5+1 of cold damage per level, up to a maximum of 20d5+20.   Those afflicted by the blistering cold are frozen in their tracks, hindering their ability to fight unless a saving throw is made.   Those who roll a successful Save vs. Spell will shrug off a portion of the cold, taking half damage and avoid being frozen in place.  All saving throws must be made at -2.  The use of this spell by non-aurilites angers the Ice Maiden greatly and there is a small chance that an enraged golem of ice will form from the gale and attack the party.~
+@3012 = ~Corrosion~
+@3013 = ~Corrosion
+(Conjuration)
+
+Level: 7
+Range: 40 ft.
+Duration: 1 turn
+Casting Time: 5
+Area of Effect: 15-ft. radius
+Saving Throw: Special
+
+This spell conjures forth a thick, acrid, corrosive smog that immediately begins to dissolve the armor and flesh of any creature unfortunate enough to be caught in it.  Creatures caught in the area of effect will take 1d10 of acid damage per round that they remain in the caustic fog, and must roll a Saving Throw vs. Spells at a -4 penalty or suffer reduction to their resistances against all forms of physical damage 15% for three rounds.  These effects increase with the caster's level, up to a maximum of 1d10+5 acid damage and 20% reduction of physical damage resistance at level 17.~
+@3014 = ~Vitriolic Burst~
+@3015 = ~Produce Fire~
+@3016 = ~Cone of Cold~
+@3017 = ~Writhing Fog~
+@3018 = ~Hidden Scroll~
+@3019 = ~Dancing Lights~
+@3020 = ~Dancing Lights
+(Alteration)
+
+Level: 1
+Range: Sight
+Duration: 2 rds./level
+Casting Time: 1
+Area of Effect: Special
+Saving Throw: None
+
+This spell creates up to four glowing spheres of light (such as evidenced by will-o-wisps) or one faintly glowing, vaguely humanoid shape, somewhat similar to a fire elemental. The dancing lights move randomly without concentration upon such movement by the wizard. Although the lights cause no physical harm, they can distract enemies until either their duration expires or dispersed by weapon or magic.~
+@3021 = ~Darkness, 15' Radius~
+@3022 = ~Darkness, 15' Radius
+(Alteration)
+
+Level: 2
+Range: 30 ft.
+Duration: 1 turn
+Casting Time: 2
+Area of Effect: 15-ft. radius
+Saving Throw: None
+
+This spell causes total, impenetrable darkness. Neither normal nor magical light works in the area of effect. All vision (including infravision) is severely limited; anyone hostile caught in the area of effect is for all practical purposes blinded as per the 1st-level wizard spell. Creatures that leave the area covered by darkness will have their vision restored after 1 round.~
+@3023 = ~Faerie Fire~
+@3024 = ~Faerie Fire
+(Alteration)
+
+Level: 1
+Sphere: Weather
+Range: Sight
+Duration: 4 rounds/level
+Casting Time: 4
+Area of Effect: 10-ft. radius
+Saving Throw: None
+
+This spell outlines one or more creatures with a pale violet glow, making positions and movements easily visible. Outlined creatures are easier to strike, giving them an Armor Class penalty of -2.~
+@3025 = ~Shining Bolt~
+@3026 = ~Shining Bolt
+(Invocation/Evocation)
+
+Level: 1
+Range: 60 ft.
+Duration: Instant
+Casting Time: 1
+Area of Effect: 1 creature
+Saving Throw: None
+
+This ability allows Anomen to hurl a bolt of divine energy at an enemy once per day, dealing them 5d6 points of magic damage. Undead creatures and fiends are particularly susceptible to the bolt's effects, suffering double damage when they are struck. The target's Magic Resistance, if any, does not affect this ability.~
+@3027 = ~Curse~
+@3028 = ~Curse
+(Conjuration/Summoning)
+
+Level: 1
+Sphere: All
+Range: Visual range of the caster
+Duration: 6 rounds
+Casting Time: 9
+Area of Effect: 15-ft. radius
+Saving Throw: None
+
+When uttering the Curse spell, the caster lowers the morale of enemy creatures and any Saving Throws and attack rolls they make by 1. At the instant the spell is completed, it affects all creatures in a 15-ft. radius centered on the point selected by the caster. Affected creatures leaving the area are still subject to the spell's effect; those entering the area after the casting is completed are not.~
+@3029 = ~Infernal Bone Shield~
+@3030 = ~Infernal Bone Shield
+(Necromancy)
+
+Level: 5
+Sphere: Guardian, Creation
+Range: 0
+Duration: 3 rounds
+Casting Time: 3
+Area of Effect: 3-ft. radius
+Saving Throw: None
+
+This spell conjures forth a barrier of floating fell skeleton and demon bones that spin rapidly around the caster. Anyone entering the path of the bones takes 1d6 crushing damage and 1d6 fire damage per round.~
+@3031 = ~Fell Rage~
+@3032 = ~Fell Rage
+(Alteration)
+
+Level: 5
+Sphere: Combat
+Range: Visual range of the caster
+Duration: 2 turns
+Casting Time: 7
+Area of Effect: 1 creature
+Saving Throw: None
+
+This spell works only on player characters or allied creatures.  When cast, fell, demonic energies are channeled into the target causing them to go berserk, attacking the nearest creature until that creature is dead, then moving on to the next target. While under the effects of Fell Rage, the target is immune to charm, sleep, fear, hold, stunning, confusion, emotion, symbol spells, and related effects. In addition, the target gains +1 to hit, +1 to Strength, +1 to Dexterity, +1 to Constitution, +10 to maximum Hit Points, +2 to <PRO_HISHER> movement rate, 5% Physical Damage Resistance, 30% Fire Resistance, and 1d2 Damage(Acid) to all physical attacks. The spell has several disadvantages, however: The Hit Points of the target are masked for the duration of the spell, and at the end of the spell's duration, the target becomes fatigued and <PRO_HISHER> Strength, Dexterity, and Constitution are reduced by 3 for 2 turns. Fell Rage cannot be cast by or affect creatures of good alignment.~
+@3033 = ~Shadow Bolt~
+@3034 = ~Shadow Bolt
+(Invocation)
+
+Level: 5
+Sphere: Shadow
+Range: Visual range of the caster
+Duration: Instant
+Casting Time: 4
+Area of Effect: 5-ft. radius
+Saving Throw: Special
+
+This spell conjures forth shadowy orbs of dark energy from the shadow plane that bolt forward from the caster's hand to strike <PRO_HISHER> target with unerring precision. The priest creates one bolt at 9th level and an additional bolt at every third level after 9th—in other words, two bolts at 12th level, three at 15th, four at 18th, to a maximum of five bolts at 21st level. Each bolt inflicts 1d5 points of cold damage and 1d5 points of magic damage to the target and then bursts in a 5-ft. radius concussive blast that inflicts 6 points of cold damage and 6 points of magic damage, increasing by two points each per every 3 levels of the caster, up to a maximum of 14 per each at level 21.  Addtionally, creatures caught in the dark energy blast suffer a 20% chance of being blinded for one turn or being drained of one level permanently. Creatures can attempt a Save vs. Spell at -4 to negate the concussion damage and effects, but the impact of the bolts themselves allow no Saving Throw.  Undead creatures are immune to the effects of this spell.  Priests of good alignment may not cast this spell.~
+@3035 = ~Demi-Shadow Monsters~
+@3036 = ~Demi-Shadow Monsters
+(Illusion/Phantasm)
+
+Level: 5
+Range: Visual range of the caster
+Duration: 1 round/level
+Casting Time: 5
+Area of Effect: Special
+Saving Throw: None
+
+This spell is similar to the 4th-level wizard spell Shadow Monsters, except the summoned creatures are much more powerful.~
+@3037 = ~Electrical Discharge~
+@3038 = ~Shroud of Shadow~
+@3039 = ~Shroud of Shadow
+(Alteration, Illusion)
+
+Level: 7
+Range: 0
+Duration: 1 turn
+Casting Time: 1
+Area of Effect: The caster
+Saving Throw: None
+
+When this spell is cast, the caster is enshrouded by dark shadows, taking on the form of a shadow fiend.  While in this form, <PRO_HESHE> takes on some of the abilities of a shadow monster:  Movement rate is increased by 2, casting speed is increased by 2, attack rate is increased by 1/2 per round, resistance to all physical attacks is increased by 7%, resistances to fire, cold, acid, and magic attacks are increased by 20%, the caster is able to hide and stay hidden in shadows with ease, and <PRO_HISHER> movement cannot be impeded by normal means.  However, the inherent weakness of a shadow monster is also imparted to the caster, and <PRO_HISHER> becomes extremely susceptible to electrical attacks for the duration of the spell.~
+@3040 = ~Ko'Dezza's Multi-Fireball~
+@3041 = ~Ko'Dezza's Multi-Fireball
+(Evocation)
+
+Level: 7
+Range: 40 ft.
+Duration: Instant
+Casting Time: 4
+Area of Effect: 15-ft. radius
+Saving Throw: 1/2
+
+Ko'Dezza was an eccentric half-drow mage who lived before the time of troubles.  She attempted to create new spells by modifying and enhancing existing spells.  While her experiements met with failure more often than not, this spell was on her more successful efforts.  For all intents and purposes, this spell functions very similar to the level 3 spell, Fireball, except that two or more fireballs are launched simultaneously, and home in on a targetted creature with unerring accuracy.  When this spell is cast, two fireballs are launched at a target, and upon impact, explode in a horrific display of flames, doing 6d6 damage to the target and all creatures within a 15 foot radius of the impact.  For every two levels of the caster, damage is increased by 1d6 up to a maximum of 10d6 at level 22, and for every four levels an additional fireball is launched, up to a maximum of four at level 22.  Thus, a level 22 wizard can fire four fireballs each doing 10d6 fire damage at level 22. As with the level 3 spell, Fireball, creatures who make a Saving Throw per fireball may reduce their damage taken from it by half.  Creatures weak against fire would do well to steer clear of a mage with this spell in <PRO_HISHER> repetoire.~
+@3042 = ~Caustic Quagmire~
+@3043 = ~Caustic Quagmire
+(Conjuration)
+
+Level: 4
+Sphere: Summoning
+Range: Visual range of the caster
+Duration: 1 turn
+Casting Time: 4
+Area of Effect: 10-ft. radius
+Saving Throw: Special
+
+When this spell is cast, acrid pools of thick, corrosive ichor rise from the earth and cover the ground.  Any creatures entering the area or caught in it when the spell is cast are mired in the sticky substance, which severly hinders their movement while corroding their flesh and armor, doing 1d4 damage(acid) per round, and reducing their physical resistances by 5%, making them more susceptible to melee and ranged attacks.  For every three levels of the caster, damage is increased by one point, and physical resistance is reduced by an additional percentage point, up to a maximum of 1d4+5 and 10%, respectively.  A successful Save vs. Spell at -2 negates the slowed movement and reduced defenses, while halving damage for that round.~
+@3044 = ~Grasping Shadows~
+@3045 = ~Grasping Shadows
+(Conjuration)
+
+Level: 4
+Sphere: Combat, Shadow
+Range: Visual range of the caster
+Duration: 5 rounds
+Casting Time: 5
+Area of Effect: 12-ft. radius
+Saving Throw: Neg.
+
+This spell conjures forth shadowy tendrils from the ground that grasp, claw, and pierce the flesh of any creature caught within the area of effect.  Creatures affected suffer 1d4 piercing and 1d4 cold damage per round, increasing by 1 point each for every three levels of the caster, up to a maximum of 1d4+2 cold and 1d4+2 piercing.  Affected creatures must roll a Save vs. Paralyze at -4 or be paralyzed for one and a half rounds.  Creatures that make a saving throw avoid being paralyzed and reduce their damage taken by one half.  Undead creatures are immune to the effects of this spell.  This spell cannot be cast by priests of good alignment.~
+@3046 = ~Ko'Dezza's Slime Golem~
+@3047 = ~Ko'Dezza's Slime Golem
+(Conjuration/Summoning)
+
+Level: 5
+Range: 120 ft.
+Duration: 4 rounds + 1 round/level
+Casting Time: 5
+Area of Effect: Special
+Saving Throw: None
+
+Ko'Dezza, an eccentric half-drow mage who lived around 1260DR, attempted to create new spells by experimenting with modifying and combining components of existing spells.  More often than not, her attempts met with unmitigated disater, but this spell was one of her more successful ventures.  Upon casting this spell, the wizard summons forth several slime creatures that pool and coagulate into one monstrous, gelatinous golem.  This golem possesses all the strengths of a slime monster, being very resistant to most physical attacks.  However, it also shares the weaknesses of these creatures and is quite vulnerable to fire and acid attacks.  The summoned golem will obey the commands of it's summoner for four rounds, plus one additional round per level of the caster, or until it is destroyed.  There is a 10% chance when casting this spell that two slime golems will be summoned instead of one.~
+@3048 = ~Cataclysm~
+@3049 = ~Cataclysm
+(Alteration)
+
+Level: 8
+Sphere: Elemental (Earth, Fire)
+Range: 360 ft.
+Duration: 3 tremors
+Casting Time: 9
+Area of Effect: 15-ft. radius
+Saving Throw: Special
+
+When this spell is cast, the very earth shakes and is torn asunder sending gouts of flame up from the cracks. The cataclysm affects all creatures in its area of effect, occuring in three waves:
+
+ 1st: All creatures affected take 3d6 points of crushing damage, and 3d6 points of fire damage.  Affected creatures are also knocked to the ground, panicked, or go berserk for four rounds.  A successful Saving Throw vs. Spell with a -6 penalty halves the damage and negates the adverse effects.
+ 2nd: All creatures affected take 1d9 points of crushing damage, and 1d9 points of fire damage.  A successful Saving Throw vs. Spell with a -2 penalty halves the damage.
+ 3rd: All creatures affected take 1d6 points of crushing damage, and 1d6 points of fire damage.  A successful Saving Throw vs. Spell halves the damage.
+
+This spell will affect both friend and foe alike, so great care must be taken in its use. Finally, earth and fire elementals are angered by the careless sundering and there is a small chance that casting this spell will cause one to appear and attack the party.~
+@3050 = ~Penetrating Cold~
+@3051 = ~Penetrating Cold
+(Alteration, Enchantment)
+
+Level: 7
+Sphere: Elemental (Ice)
+Range: Visual range of the caster
+Duration: 6 rounds
+Casting Time: 6
+Area of Effect: 8-ft. radius
+Saving Throw: Special
+
+When cast, this spell calls forth incredibly sharp, icy stalagmites from deep within the earth to erupt from the ground violently.  Any creature entering the area takes 1d6 Hit Points of piercing and cold damage per round, increasing by one point each per level up to a maximum of 1d6+4 at level 18.  There is a 15% chance per round that affected creatures will be frozen solid and unable to move for three rounds, while being frozen from the inside out.  At the end of three rounds, the ice shatters violently, doing an additional 1d6 Hit Points of piercing and cold to the affected creature and other creatures within a 5-foot radius, increasing by one point each per level up to a maximum of 1d6+4 at level 18.   There is no save for this spell or it's effects.~
+@3052 = ~Maelstrom~
+@3053 = ~Maelstrom
+(Conjuration)
+
+Level: 8
+Range: Visual range of the caster
+Duration: 5 rounds
+Casting Time: 6
+Area of Effect: 17-ft. radius
+Saving Throw: None
+
+Upon casting of this spell, the wizard conjures forth a fierce storm of high winds, driven rain, and lightning.  Creatures caught in the storm are battered by the wind and rain, severely restricting their movement and fighting ability.  Affected creatures suffer a penalty of 4 to their THACO and Armor Class for one round, 3d3 Hit Points of slashing damage per round, and a 50% chance of being struck by lightning for 4d6 Hit Points of electrical damage.  There is also a 20% chance that non giant-sized creatures will lose their footing and be pulled towards the center of the maelstrom or knocked down for one round.  There is no Saving Throw allowed to avoid any of the effects of this spell.~
+@3054 = ~Sunscorch~
+@3055 = ~Sunscorch
+(Invocation)
+
+Level: 1
+Sphere: Sun
+Range: Visual range of the caster
+Duration: Instant
+Casting Time: 4
+Area of Effect: 1 creature
+Saving Throw: Special
+
+When this spell is cast, a brilliant ray of scorching heat slants down from the sky and strikes one target of the caster's choice. Any creature struck by the ray takes 1d6 points of damage, plus 1 point per level of the caster; however, if the target is an undead creature or a monster vulnerable to bright light, the damage is 1d6, plus 2 points per level of the caster. In addition to sustaining damage, victims are also blinded for 3 rounds. The victim is allowed a Save vs. Spell for half damage and to avoid the blindness.~
+@3056 = ~Shar's Embrace~
+@3057 = ~Shar's Embrace
+(Conjuration)
+
+Sphere: Shadow
+Level: 6
+Range: 0
+Duration: 1 turn + 1 round/level
+Casting Time: 5
+Area of Effect: The caster
+Saving Throw: None
+
+Upon casting of this spell, the cleric is enshrouded by a mass of swirling darkness conjured from the shadow plane, which acts as a protective barrier against incoming attacks.  The shadows absorb energy from attacks, both physical and magical, that are directed at the caster.  The barrier reduces damage from all attacks by 10%, increasing by an additional percentage point every two levels to a maximum of 15% at level 21.  Additionally, creatures who successfully hit the caster through the shadowy barrier within melee range suffer 1d5 points of magic damage and 1d5 points of cold damage, with a 20% change of being drained of one level as well.  There is no Saving Throw allowed for these effects, though undead creatures are immune.  This spell may not be cast by clerics of good alignment.~
+@3058 = ~Deleterious Nimbus~
+@3059 = ~Deleterious Nimbus
+(Evocation)
+
+Level: 8
+Range: 40 ft.
+Duration: 1 turn
+Casting Time: 6
+Area of Effect: 15-ft. radius
+Saving Throw: Special
+
+This spell is a more powerful version of the level 5 mage spell, Cloudkill.  When cast, it creates plumes of venemous gas of such toxicity as to immediately sear the flesh of creatures it comes in contact with, entering their bloodstream.  So deadly is this poison as to instantly slay creatures of 8 or fewer Hit Dice, and creatures with 9 or 10 Hit Dice must roll a Saving Throw vs. Poison at -8 for each round they remain in the area of effect, lest they be slain instantly as well.  Those above 10th level (or 10 Hit Dice) must leave the cloud immediately or suffer 1d12 + 1 Hit Points of poison damage per level per round that they remain in the affected area, up to a maximum of 1d12 + 15 Hit Points at level 30.  While remaining in the area of effect, there is a 25% chance per round that creatures will also be systemically poisoned, suffering an additional 2 Hit Points of poison damage per second for 2 rounds, unless they make a Saving Throw vs. poison at -8.  This affliction will persist even after leaving the area of effect.~
+@3060 = ~Ent Summoning~
+@3061 = ~Ent Summoning
+(Conjuration/Summoning)
+
+Level: 5
+Sphere: Plant, Summoning
+Range: 120 ft.
+Duration: 4 turns
+Casting Time: 9
+Area of Effect: Special
+Saving Throw: None
+
+When the words of this spell are spoken, the caster conjures forth a Dark Treant to serve <PRO_HIMHER> in battle.  The strength of the summoned treant will increase with the caster as <PRO_HESHE> gains more levels of experience.
+
+  1st – 10th: a 9 HD dark treant.  There is a 50% chance that two dark treants will be summoned instead.
+
+  11th – 13th: a 10 HD dark treant.  There is a 50% chance that two dark treants will be summoned instead.
+
+  14th and up: an 11 HD dark treant.  There is a 50% chance that two dark treants will be summoned instead.
+
+The summoned treants will obey the casters commands and remain in <PRO_HISHER> thrall until they are destroyed or the spell's duration expires.~
+@3062 = ~Crushing Earth~
+@3063 = ~Crushing Earth
+(Invocation)
+
+Level: 6
+Sphere: Elemental Earth
+Range: 100 ft.
+Duration: Instant
+Casting Time: 9
+Area of Effect: Special
+Saving Throw: Special
+
+By way of this spell, the caster summons forth a large boulder 6-ft. in diameter that is then hurled in the direction of <PRO_HISHER> choosing.  Once launched, this unstoppable force of earth plows over and through any creatures in it's path, causing 10d10 Hit Points of crushing damage, with a 15% chance of outright crushing them to death.  Creatures struck by the boulder can roll a Save vs. Spell to sidestep or jump out of the way at the last moment to halve the damage, there is no Saving Throw allowed to avoid the chance of being crushed to death.  Giant-sized creatures are less affected by the boulder and take 5d10 Hit Points of crushing damage, with a successful Save vs. Spell for half.  Giant-sized creatures cannot be instantly killed by the boulder.~
+@3064 = ~Ko'Dezza's Caustic Shell~
+@3065 = ~Ko'Dezza's Caustic Shell
+(Conjuration)
+
+Level: 3
+Range: 0
+Duration: 1 turn + 1 round/level
+Casting Time: 5
+Area of Effect: The caster
+Saving Throw: None
+
+Ko'Dezza, a half-drow mage who lived in an age past had a natural talent for magic, and attempted to eke out a living by experimenting on existing spells to create new spells and sold scrolls of her creations across the breadth of Faerûn.  This spell in particular was a great success, though it came at the cost of three fingers on her left hand.  When cast, the spell conjures forth a mass of living slime that encapsulates the caster in a protective bubble.  The slime-shell is highly corrosive, and thwarts acidic and physical attacks.  The caster's resistance to acid is increased by 50% for the duration of the spell, and attackers in melee range who successfully strike <PRO_HIMHER> through the shell are checmically burned by it, causing 1d6+2 Hit Points of acid damage, and suffering a penalty of 1 to their THACO score for one round unless a successfull Save vs. Spell at -2 is made.~
+@3066 = ~Antipode~
+@3067 = ~Antipode
+(Evocation)
+
+Level: 6
+Range: 40 ft.
+Duration: Instant
+Casting Time: 5
+Area of Effect: 15-ft. radius
+Saving Throw: 1/2
+
+When this spell is invoked, the wizard selects a target, carefully calculating it's range, and from each hand a bolt is launched, one of fire, the other, ice.  The missiles home in on their target with unerring accuracy and collide, resulting in a horrific explosion sending molten shrapnel and frozen shards flying outward in a 15-ft. radius, doing 6d6 Hit Points of fire damage, and 6d6 Hit Points of cold damage to the target and any creatures caught in the area of effect.  This spell increases in strength with the casters level, doing an additional 2d6 Hit Dice each for every four levels of the caster, up to a maximum of 12d6 each at level 24. Creatures failing their Saving Throws each suffer full damage from the blast. Those who roll successful Saving Throws are nimble enough to dodge or take cover at the last moment, only taking half of the damage.~
+@3068 = ~Flame Vortice~
+@3069 = ~Flame Vortice
+(Conjuration)
+
+Level: 6
+Range: Visual range of the caster
+Duration: Special
+Casting Time: 9
+Area of Effect: Special
+Saving Throw: Special
+
+When this spell is cast, the wizard opens a portal to the plane of fire in the sky above the battlefield, and pulls down a vortex of intense flames and super-heated air.  The swirling mass of fire touches down to the earth, then moves about unpredictably, scorching any creatures in it's path. The caster is immune to <PRO_HISHER> own spell, but <PRO_HISHER> companions are not, and must be wary.  If a creature is caught in the path of the burning vortex, it takes 8d8 fire damage, increasing by one point of damage per level of the caster, up to a maximum of 8d8+12.  Creatures may make a Saving Throw vs. Breath to halve the damage, but they must do so with a -6 penalty.  There is a 10% chance that affected creatures will be instantly incinerated to death, with no Saving Throw allowed.  A maximum of 6 creatures can be affected, after which the vortex will dissipate back into the fire plane.  Creatures immune to fire are not affected by this spell.~
+@3070 = ~Sundering Vitriol~
+@3071 = ~Sundering Vitriol
+(Evocation)
+
+Level: 3
+Sphere: Elemental Earth, Combat
+Range: 100 ft.
+Duration: Instant
+Casting Time: 4
+Area of Effect: 1 creature
+Saving Throw: None
+
+When this spell is cast, the druid draws forth a globule of viscous, caustic slime, which is then hurled towards a creature of the druid's choosing.  When struck by the slime, creatures suffer 1d3+2 Hit Points of acid damage, and their resistance to all forms of physical damage is lowered by 3 percent for one round.  For every 3 levels of experience of the caster, an additional globule is added to the volley, up to a maximum of 7 at level 24.  There is no Saving Throw allowed for the effects of this spell.~
+@3072 = ~Devouring Darkness~
+@3073 = ~Devouring Darkness
+(Conjuration, Shadow)
+
+Level: 7
+Sphere: Combat
+Range: 40 ft.
+Duration: 1 turn
+Casting Time: 9
+Area of Effect: 10-ft. radius
+Saving Throw: None
+
+When the priest chants this spell, a swirling misama of living shadow blankets an area of the caster's choosing.  Creatures caught in the maw of this hungering mass suffer 2d4 Hit Points of cold and 2d4 Hit Points of magic damage per round while they are in the area of effect, their level of fatigue increased by one, and must make a Saving Throw or also be held for one round and drained of two levels permanently.  The Saving throw against being held must be made at a penatly of -8, and -2 for being drained.  The caster and undead creatures are immune to the effects of this spell.  This spell may not be cast by clerics of good alignment.~
+@3074 = ~Ko'Dezza's Frozen Death~
+@3075 = ~Ko'Dezza's Frozen Death
+(Evocation)
+
+Level: 9
+Range: 40 ft.
+Duration: Instant
+Casting Time: 6
+Area of Effect: 15-ft. radius
+Saving Throw: none
+
+The first scroll containing this spell was discovered when a group of adventurers happened across a blasted hovel deep within the Spine of the World.  Under the remains lay a small laboratory that had apparently suffered a major magical mishap.  The scroll was firmly in the grasp of a necrotic, yet seemingly permanently frozen half-drowish hand.  It would be Ko'Dezza's final work, and her doom as well.  When cast, the wizard channels a massive amount of dark energy from the heart of the shadow plane into a singular point on the battlefield until it reaches critical mass, then explodes violently outward in all directions, ripping through any creatures in it's path, causing 7d10 Hit Points of cold damage and 7d10 Hit Points of magic damage.  There is a small chance that a creature hit by this dark energy will unwittingly become a conduit for a shadow elemental to enter the prime, resulting in their evisceration upon it's arrival.  The enraged elemental will attack the nearest creature, both friend and foe alike, until it is utterly destroyed.  There is no Saving Throw allowed for any of the effects of this spell.  Undead creatures are immune to the effects of this spell.~
+@3076 = ~Conjure Shadow Elemental~
+@3077 = ~Conjure Shadow Elemental
+(Conjuration/Summoning)
+
+Level: 6
+Sphere: Elemental (Shadow), Summoning
+Range: Visual range of the caster
+Duration: 1 turn/level
+Casting Time: 9
+Area of Effect: Special
+Saving Throw: None
+
+Upon casting a Conjure Shadow Elemental spell, the caster opens a special gate to the Plane of Shadow, and a shadow elemental is summoned in the vicinity of the caster. There is a 60% chance that a 12-Hit-Dice elemental appears; a 35% chance that a 16-Hit-Dice elemental appears; and a 5% chance that a 24-Hit-Dice elemental appears. The elemental will do the bidding of the caster until it is slain or the duration of the spell runs out. All the commands given to the elemental are done telepathically, so there is no time lost due to miscommunication and no need to know the language of the summoned creature. Unlike Mages, priests do not have to engage in a battle of the minds to control their elemental.  This spell may not be cast by clerics of good alignment.~
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\//
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////                                                  \\\\\
+///// Item/Spell Effect, Creature Name, Display Strings\\\\\
+/////                                                  \\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+@40000 = ~Strength Modification~
+@40001 = ~Strengthened~
+@40002 = ~Bleeding~
+@40003 = ~Hit Points reduced by 15%~
+@40004 = ~Drain Life~
+@40005 = ~Healed~
+@40006 = ~Hasted~
+@40007 = ~Slowed~
+@40008 = ~Deafened~
+@40009 = ~Electrical Surge~
+@40010 = ~THAC0 Modification~
+@40011 = ~Protected from Normal Weapons~
+@40012 = ~Invisible~
+@40013 = ~Spell Ineffective~
+@40014 = ~Silenced~
+@40015 = ~Silence~
+@40016 = ~Berserk~
+@40017 = ~Blinded~
+@40018 = ~Slow~
+@40019 = ~Stricken by a foul disease~
+@40020 = ~Miscast Magic~
+@40021 = ~Rigid Thinking~
+@40022 = ~Confused~
+@40023 = ~Poison~
+@40024 = ~Poisoned~
+@40025 = ~Diseased~
+@40026 = ~Banishment~
+@40027 = ~Mirror Imaged~
+@40028 = ~Dispel Effects~
+@40029 = ~Doomed~
+@40030 = ~Stone Form~
+@40031 = ~Lesser Water Elemental~
+@40032 = ~Panic~
+@40033 = ~Morale Failure: Panic~
+@40034 = ~Sound Burst~
+@40035 = ~Red Myconid~
+@40036 = ~Attack~
+@40037 = ~Stun~
+@40038 = ~Stunned~
+@40039 = ~Paralyzed~
+@40040 = ~Held~
+@40041 = ~Sleep~
+@40042 = ~Hallucinator Spores~
+@40043 = ~Etherealness~
+@40044 = ~Covered in viscous grease~
+@40045 = ~Berserk Warrior~
+@40046 = ~Chicken~
+@40047 = ~Unconscious~
+@40048 = ~Wasting Rime~
+@40049 = ~Kurg's Bold Bellows~
+@40050 = ~Petrified~
+@40051 = ~Viconia~
+@40052 = ~Dire charmed~
+@40053 = ~Charmed~
+@40054 = ~Dominated~
+@40055 = ~Icebone Skeleton Warrior~
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////                                                  \\\\\
+///// Item ability tooltip strings                     \\\\\
+/////                                                  \\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+@50000 = ~Summon Ankhegs~
+@50001 = ~Silence, 15' Radius~
+@50002 = ~Neutralize Poison~
+@50003 = ~Spell Sequencer~
+@50004 = ~Stone Form~
+@50005 = ~Thrown~
+@50006 = ~Melee~
+@50007 = ~Column of Ice~
+@50008 = ~Conjure Icebone Skeleton Warriors~
+
+////////////////old strings below///////////////////////////
+
+@5003 = ~Wind Slash~
+@5004 = ~Produce Fire~
+@5005 = ~Sundering Vitriol~
+@5006 = ~Thunder Thrust~
+@5007 = ~Cone of Cold~
+@5008 = ~Poison Weapon~
+@5009 = ~Neutralize Poison~
+@5010 = ~Wizard Eye~
+@5011 = ~Writhing Fog~
+@5012 = ~Antipode~
+@5013 = ~Blessing of Tymora~
+@5014 = ~Minor Antimagic Shell~
+@5015 = ~Cataclysm~
+@5016 = ~Cacophony of Chaos~
+@5017 = ~Knife Trick~
+@5018 = ~Mass Exaltation~
+@5019 = ~Mass Cure~
+@5020 = ~Mass Minor Trollish Regeneration~
+@5021 = ~Mass Trollish Regeneration~
+@5022 = ~Shadowstep~
+@5023 = ~Penetrating Cold~
+@5024 = ~deprecated~
+@5025 = ~Dread Flame~
+@5026 = ~Summon Zaaman Rul~
+@5027 = ~Summon Chan~
+@5028 = ~Summon Sunnis~
+@5029 = ~Summon Ben-Hadar~
+@5030 = ~Deprecated~
+@5031 = ~Ko'Dezza's Caustic Shell~
+@5032 = ~deprecated~
+@5033 = ~Summon Ankhegs~
+@5034 = ~Silence, 15' Radius~
+@5035 = ~Spell Sequencer~
+@5036 = ~Shield~
+@5037 = ~Spirit Armor~
+@5038 = ~Fire Storm~
+@5039 = ~Summon Chalimandren~
+@5040 = ~Burning Hands~
+@5041 = ~Luck~
+@5042 = ~Larloch's Minor Drain~
+@5043 = ~Horror~
+@5044 = ~Vampiric Touch~
+@5045 = ~You may not use two rings of wizardry at the same time.~
+@5046 = ~Flame Arrow~
+@5047 = ~Monster Summoning III~
+@5048 = ~Invisible Stalker~
+@5049 = ~Shadow Bolt~
+@5050 = ~Multi-Fireball~
+@5051 = ~Attack~
+@5052 = ~Spirit Ward~
+@5053 = ~Scorching Breath~
+@5054 = ~Engulfing Darkness~
+@5055 = ~Avatar of Shadow~
+@5056 = ~Shimmering Breath~
+@5057 = ~Arctic Breath~
+@5058 = ~Shocking Breath~
+@5059 = ~Shadow Breath~
+@5060 = ~Venemous Breath~
+@5061 = ~Caustic Breath~
+@5062 = ~Shadow Images~
+@5063 = ~Shadow Imaged~
+@5064 = ~Knock~
+@5065 = ~Shadow Elemental Attack~
+@5066 = ~Faerie Fire~
+@5067 = ~Minor Lightning Bolt~
+@5068 = ~Minor Chain Lightning~
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////                                                  \\\\\
+///// Dialogues for quest rewards and creatures        \\\\\
+/////                                                  \\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+@80000 = ~*plays an instrument*~
+@80001 = ~Consider this a bonus, as ye seem to be the honorable sort. Cheers, be seeing you.~
+@80002 = ~*sniff* Before we go, please take this.  We had bought it as a gift for our son's next birthday, and I cannot bear to look at it any longer.  I hope it serves you well, or at least brings you a few coins.~
+@80003 = ~One last thing. *hands you a cloak* I thank you for your trust in me, a rare commodity in the Underdark, to be sure.~
+@80004 = ~For your exemplary service to our temple, it was liberated from a miscreant attempting to pose as one of our own. Wield it well.~
+@80005 = ~Know that should you ever need, you are welcome in our troupe.~
+@80006 = ~Exceptional service begets an exceptional reward, walk in the light.~
+@80007 = ~Oh! Before leaving, they asked that I give you this to thank you for everything you have done for them.~
+@80008 = ~Please, take this hammer.  A rather bold surfacer came down here awhile back with it in hand, looking for Drow to try it on.  He didn't last very long.~
+@80009 = ~While not nearly enough of a reward for all that you have done for me, I found this on one of the majicked paladins unfortunately slain when you arrived. Please, take it.~
+@80014 = ~And what if it was? It is not of my making. I myself was once a resident for a time. It tends to snag passing teleporting mages from time to time. I left my magics and gadgets and was able to use some minor incantations to escape. Passive resistance is more successful when the very ground seems to drag magic to it. The others might find their release if they lose the anger and attachment to their toys. Ah, I will not argue this with you, the place was not of my making. You have done well enough to earn this. Goodbye.~
+@80015 = ~You return. You are proven capable, at least in this respect. Certainly you have the will to change your personal ways as well. We are square and fair, for the moment. I cannot guarantee that we will remain so, however, as your kind is to be scrutinized closely. Rather a nonexistent short-term memory as well, I'm afraid. You have done me a favor, now do yourself one. Behave yourself until you are of positive standing in the community, and take this, I've no longer any need for it. Begone.~
+@80016 = ~You return. I cannot say I am totally pleased with that, but you have done me a service, nonetheless. You may live, but we are still not square and fair. Cross my path again and the deaths of my daughters will be the fuel that drives my anger! You wouldn't like me when I'm angry. For now, I am satisfied, but only for now.  Take this for your services and begone from my sight.~
+
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////                                                  \\\\\
+/////        Strings for Items and Creatures           \\\\\
+/////                                                  \\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+@100000 = ~Why does the honeybee hum? He knows not the words! Waka waka!~ [BD45232]
+@100001 = ~How do ettins leave messages for one another? On a bull-ettin board!~ [BD45233]
+@100002 = ~Where is the safest place in all the land for diving? Waterdeep!~ [BD45234]
+@100003 = ~Never listen to a tale from a wyrm—they tend to drag on!~ [BD45235]
+@100004 = ~Why do skeletons never battle with one another? They lack guts.~ [BD45236]
+@100005 = ~Two orcs walk into a bar. Ouch!~ [BD45237]
+@100006 = ~Last time I told a joke to a ghoul, he laughed his head off!~ [BD45238]
+@100007 = ~What has the body of a lion, the wings of a dragon, and tastes great covered in butter? A manti-corn!~ [BD45239]
+@100008 = ~This is my last act of service to you, pig. I'll see you in the Abyss!~
+@100009 = ~AAAAAAGH!~
+@100010 = ~For Tempos!~
+@100011 = ~Blood and death!~
+@100012 = ~I shall join my kin in glorious death!~
+@100013 = ~Gulp!~

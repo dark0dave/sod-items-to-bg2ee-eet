@@ -1,0 +1,28 @@
+IF
+    Global("BD_HAVE_SOD","GLOBAL",1)
+    Global("K0_SOD_IMPORT_42","GLOBAL",1)
+    IsActive(Myself)
+THEN
+    RESPONSE #100
+        SetInterrupt(FALSE)
+        SetGlobal("K0_SOD_IMPORT_42","GLOBAL",2)
+        SetGlobal("k0_swap_axes","locals",1)
+        DestroyItem("KORAX01")  // Battle Axe +1
+        CreateItem("bdax1h03",0,0,0)  // Chill Axe +2
+        XEquipItem("bdax1h03",Myself,SLOT_WEAPON0,EQUIP)  // Chill Axe +2
+        SetInterrupt(FALSE)
+END
+
+IF
+    Global("K0_SOD_IMPORT_42","GLOBAL",2)
+    Global("k0_swap_axes","locals",0)
+    !BeenInParty("korgan")  //
+THEN
+    RESPONSE #100
+        SetInterrupt(FALSE)
+        SetGlobal("k0_swap_axes","locals",1)
+        DestroyItem("KORAX01")  // Battle Axe +1
+        CreateItem("bdax1h03",0,0,0)  // Chill Axe +2
+        XEquipItem("bdax1h03",Myself,SLOT_WEAPON0,EQUIP)  // Chill Axe +2
+        SetInterrupt(FALSE)
+END

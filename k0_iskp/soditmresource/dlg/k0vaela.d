@@ -1,0 +1,1 @@
+ADD_TRANS_ACTION VAELASA BEGIN 4 END BEGIN END ~GiveItem("bdbrd01",LastTalkedToBy)~

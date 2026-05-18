@@ -1,0 +1,76 @@
+IF
+    Global("BD_HAVE_SOD","GLOBAL",1)
+    Global("K0_SOD_IMPORT_19","GLOBAL",1)
+THEN
+    RESPONSE #100
+        SetInterrupt(FALSE)
+        SetGlobal("K0_SOD_IMPORT_19","GLOBAL",2)
+        TakeItemReplace("bdhalb01","HALB02","KAYPAL01")  // Storm Pike +2
+        ActionOverride("KAYPAL01",XEquipItem("bdhalb01",Myself,SLOT_WEAPON0,EQUIP))  // Storm Pike +2
+        SetInterrupt(FALSE)
+        Continue()
+END
+
+IF
+    Global("BD_HAVE_SOD","GLOBAL",1)
+    Global("K0_SOD_IMPORT_74","GLOBAL",1)
+THEN
+    RESPONSE #100
+        SetInterrupt(FALSE)
+        SetGlobal("K0_SOD_IMPORT_74","GLOBAL",2)
+        AddStoreItem("BSHOP02","bdxbow02",1,1)  // Harold +2
+        SetInterrupt(FALSE)
+        Continue()
+END
+
+IF
+    Global("BD_HAVE_SOD","GLOBAL",1)
+    Global("K0_SOD_IMPORT_70","GLOBAL",1)
+THEN
+    RESPONSE #100
+        SetInterrupt(FALSE)
+        SetGlobal("K0_SOD_IMPORT_70","GLOBAL",2)
+        AddStoreItem("BSHOP02","bdsw1h25",1,1)  // Spell Breaker +2
+        SetInterrupt(FALSE)
+        Continue()
+END
+
+IF
+    Global("BD_HAVE_SOD","GLOBAL",1)
+    Global("K0_SOD_IMPORT_71","GLOBAL",1)
+THEN
+    RESPONSE #100
+        SetInterrupt(FALSE)
+        SetGlobal("K0_SOD_IMPORT_71","GLOBAL",2)
+        AddStoreItem("BSHOP02","bdbow02",1,1)  // Corinth's Bow +2
+        SetInterrupt(FALSE)
+        Continue()
+END
+
+IF
+    Global("BD_HAVE_SOD","GLOBAL",1)
+    Global("K0_SOD_PEACOCKCAP","GLOBAL",0)
+THEN
+    RESPONSE #100
+        SetInterrupt(FALSE)
+        SetGlobal("K0_SOD_PEACOCKCAP","GLOBAL",1)
+        AddStoreItem("BSHOP02","bdhelm06",1,1)  // Peacock Cap
+        SetInterrupt(FALSE)
+        Continue()
+END
+
+IF
+    Global("BD_HAVE_SOD","GLOBAL",1)
+    Global("K0_SODAMMO_BSHOP02","GLOBAL",0)
+THEN
+    RESPONSE #100
+        SetInterrupt(FALSE)
+        SetGlobal("K0_SODAMMO_BSHOP02","GLOBAL",1)
+        AddStoreItem("BSHOP02","bdbolt01",120,1) //Bolt of Fire
+        AddStoreItem("BSHOP02","bdbolt02",120,1) //Bolt of Ice
+        AddStoreItem("BSHOP02","bull07",120,1) //Bullet of Fire
+        AddStoreItem("BSHOP02","bull08",120,1) //Bullet of Ice
+        AddStoreItem("BSHOP02","bull09",120,1) //Bullet of Electricity
+        SetInterrupt(FALSE)
+        Continue()
+END
