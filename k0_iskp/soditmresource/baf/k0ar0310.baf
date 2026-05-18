@@ -1,0 +1,25 @@
+IF
+    Global("BD_HAVE_SOD","GLOBAL",1)
+    Global("K0_SOD_IMPORT_01","GLOBAL",1)
+THEN
+    RESPONSE #100
+        SetInterrupt(FALSE)
+        SetGlobal("K0_SOD_IMPORT_01","GLOBAL",2)
+        TakeItemReplace("bdsw1h21","SW1H05","PIRSEA01")  // Vexation +2
+        ActionOverride("PIRSEA01",XEquipItem("bdsw1h21",Myself,SLOT_WEAPON0,EQUIP))  // Vexation +2
+        SetInterrupt(FALSE)
+        Continue()
+END
+
+IF
+    Global("BD_HAVE_SOD","GLOBAL",1)
+    Global("K0_SOD_IMPORT_59","GLOBAL",1)
+THEN
+    RESPONSE #100
+        SetInterrupt(FALSE)
+        SetGlobal("K0_SOD_IMPORT_59","GLOBAL",2)
+        TakeItemReplace("bdleat01","LEAT01","PIRSEA01")  // Cornugon's Revenge +2/Leather Armor
+        ActionOverride("PIRSEA01",XEquipItem("bdleat01",Myself,SLOT_ARMOR,EQUIP))  // Cornugon's Revenge +2
+        SetInterrupt(FALSE)
+        Continue()
+END

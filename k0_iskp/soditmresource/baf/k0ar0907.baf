@@ -1,0 +1,11 @@
+IF
+    Global("BD_HAVE_SOD","GLOBAL",1)
+    Global("K0_SOD_IMPORT_51","GLOBAL",1)
+THEN
+    RESPONSE #100
+        SetInterrupt(FALSE)
+        SetGlobal("K0_SOD_IMPORT_51","GLOBAL",2)
+        TakeItemReplace("bdshld08","SHLD30","HLMAFER")  // The Bloodied Guardian +2/Large Shield +2
+        ActionOverride("HLMAFER",XEquipItem("bdshld08",Myself,SLOT_SHIELD,EQUIP))  // The Bloodied Guardian +2
+        SetInterrupt(FALSE)
+END
