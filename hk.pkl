@@ -15,8 +15,8 @@ local builtins = new Mapping<String, Step> {
 
 local local_hooks = new Mapping<String, Step> {
   ["codespell"] {
-    glob = List("**/*.rs", "readme.md")
-    exclude = List("target/**", "fixtures/**", "hk.pkl")
+    glob = List("*.tra", "*.tp2", "*.d", "readme.md")
+    exclude = List("hk.pkl")
     check = "codespell -c {{files}}"
     fix = "codespell -cw {{files}}"
   }
