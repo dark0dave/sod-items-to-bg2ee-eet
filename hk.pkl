@@ -31,7 +31,8 @@ local local_hooks = new Mapping<String, Step> {
     check = "scripts/check-weidu.sh"
   }
   ["no-uppercase-check"] {
-    check = "find k0_iskp -type f -name '*[[:upper:]]*'"
+    check = "test $(find k0_iskp -type f -name '*[[:upper:]]*' | wc -l) -eq 0"
+    fix = "scripts/fix-case.sh"
   }
   ["nix fmt"] {
     fix = "nixfmt flake.nix"
