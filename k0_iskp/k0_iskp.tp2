@@ -1,6 +1,4 @@
-//SoD2BG2EE Item Upgrade
-
-BACKUP ~k0_iskp/backup~
+BACKUP ~weidu_external/k0_iskp/backup~
 SUPPORT ~https://www.gibberlings3.net/forums/forum/214-sod-to-bg2ee-item-upgrade/~
 
 VERSION ~v4.0.0-BETA~
@@ -24,7 +22,6 @@ LANGUAGE ~English~ ~english~ ~k0_iskp/tra/english/english.tra~
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
 
 
-
 ///////////////////////////////////////////////////////////////////////////////
 /////////////////Add more items from SoD into BG2, EET/////////////////////////
 ///////////////////////////////////////////////////////////////////////////////
@@ -34,47 +31,43 @@ REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001
 PRINT @10002
 
 INCLUDE ~k0_iskp/tpa/functions.tpa~    //adding functions
-INCLUDE ~k0_iskp/tpa/classspelltool.tpa~    //adding functions
 INCLUDE ~k0_iskp/tpa/addspellex.tpa~    //adding functions
 
 ACTION_IF GAME_IS ~bg2ee~ BEGIN    // Adding the resource files for SoD items into BG2
-COPY ~k0_iskp/soditmresource/bam~ ~override~
+COPY ~k0_iskp/bam~ ~override~
 END
 
 ////////////////////Installing required ITMs for BG2\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
 ////////////VEXATION +2////////////////
-
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdsw1h21.itm~ BEGIN // Check if already present
-COPY ~k0_iskp/soditmresource/bam/ibds1h21.bam~ ~override~
-  COPY ~k0_iskp/soditmresource/itm/bdsw1h21.itm~ ~override~    //Vexation +2
+COPY ~k0_iskp/bam/ibds1h21.bam~ ~override~
+  COPY ~k0_iskp/itm/bdsw1h21.itm~ ~override~    //Vexation +2
     SAY NAME1 @20002
     SAY NAME2 @20141
     SAY UNIDENTIFIED_DESC @20003
     SAY DESC @20142
-      COPY ~k0_iskp/soditmresource/spl/bdstrdrn.spl~ ~override~
+      COPY ~k0_iskp/spl/bdstrdrn.spl~ ~override~
       LPF ALTER_EFFECT INT_VAR match_opcode = 139 match_parameter1 = 14042 parameter1 = RESOLVE_STR_REF(@40000) END
       LPF ALTER_EFFECT INT_VAR match_opcode = 139 match_parameter1 = 1452 parameter1 = RESOLVE_STR_REF(@40001) END
-        COPY ~k0_iskp/soditmresource/spl/bdsw1h21.spl~ ~override~
+        COPY ~k0_iskp/spl/bdsw1h21.spl~ ~override~
           LPF ALTER_EFFECT INT_VAR match_opcode = 139 parameter1 = RESOLVE_STR_REF(@40002) END
 END
 
 /////MARTYR'S MORNINGSTAR +2////////////
-
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdblun04.itm~ BEGIN // Check if already present
-COPY ~k0_iskp/soditmresource/itm/bdblun04.itm~ ~override~    //Martyr's Morningstar +2
+COPY ~k0_iskp/itm/bdblun04.itm~ ~override~    //Martyr's Morningstar +2
   SAY NAME1 @20035
   SAY NAME2 @20143
   SAY UNIDENTIFIED_DESC @20036
   SAY DESC @20144
-    COPY ~k0_iskp/soditmresource/spl/bdblun04.spl~ ~override~
+    COPY ~k0_iskp/spl/bdblun04.spl~ ~override~
       LPF ALTER_EFFECT INT_VAR match_opcode = 139 parameter1 = RESOLVE_STR_REF(@40003) END
 END
 
 ///////BOLT OF ICE +1//////////////////
-
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdbolt02.itm~ BEGIN // Check if already present
-COPY ~k0_iskp/soditmresource/itm/bdbolt02.itm~ ~override~    //Bolt of Ice +1
+COPY ~k0_iskp/itm/bdbolt02.itm~ ~override~    //Bolt of Ice +1
   SAY NAME1 @20115
   SAY NAME2 @20145
   SAY UNIDENTIFIED_DESC @20116
@@ -82,9 +75,8 @@ COPY ~k0_iskp/soditmresource/itm/bdbolt02.itm~ ~override~    //Bolt of Ice +1
 END
 
 ///////BOLT OF FIRE +1////////////////
-
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdbolt01.itm~ BEGIN // Check if already present
-COPY ~k0_iskp/soditmresource/itm/bdbolt01.itm~ ~override~    //Bolt of Fire +1
+COPY ~k0_iskp/itm/bdbolt01.itm~ ~override~    //Bolt of Fire +1
   SAY NAME1 @20115
   SAY NAME2 @20147
   SAY UNIDENTIFIED_DESC @20116
@@ -94,7 +86,7 @@ END
 
 //////BULLET OF ELECTRICITY +1////////
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bull09.itm~ BEGIN // Check if already present
-COPY ~k0_iskp/soditmresource/itm/bull09.itm~ ~override~    //Bullet of Electricity +1
+COPY ~k0_iskp/itm/bull09.itm~ ~override~    //Bullet of Electricity +1
   SAY NAME1 @20117
   SAY NAME2 @20149
   SAY UNIDENTIFIED_DESC @20118
@@ -104,7 +96,7 @@ END
 
 //////BULLET OF ICE +1//////////////
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bull08.itm~ BEGIN // Check if already present
-COPY ~k0_iskp/soditmresource/itm/bull08.itm~ ~override~    //Bullet of Ice +1
+COPY ~k0_iskp/itm/bull08.itm~ ~override~    //Bullet of Ice +1
   SAY NAME1 @20117
   SAY NAME2 @20151
   SAY UNIDENTIFIED_DESC @20118
@@ -114,7 +106,7 @@ END
 
 ///////BULLET OF FIRE +1///////////
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bull07.itm~ BEGIN // Check if already present
-COPY ~k0_iskp/soditmresource/itm/bull07.itm~ ~override~    //Bullet of Fire +1
+COPY ~k0_iskp/itm/bull07.itm~ ~override~    //Bullet of Fire +1
   SAY NAME1 @20117
   SAY NAME2 @20153
   SAY UNIDENTIFIED_DESC @20118
@@ -124,45 +116,45 @@ END
 
 //////////SEVERANCE +2/////////////
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdsw1h22.itm~ BEGIN // Check if already present
-COPY ~k0_iskp/soditmresource/itm/bdsw1h22.itm~ ~override~    //Severance +2
+COPY ~k0_iskp/itm/bdsw1h22.itm~ ~override~    //Severance +2
   SAY NAME1 @20004
   SAY NAME2 @20155
   SAY UNIDENTIFIED_DESC @20005
   SAY DESC @20156
-    COPY ~k0_iskp/soditmresource/spl/bdsw1h22.spl~ ~override~
+    COPY ~k0_iskp/spl/bdsw1h22.spl~ ~override~
   SAY NAME1 @40004  // Spell Name
-    COPY ~k0_iskp/soditmresource/spl/bdsevrnc.spl~ ~override~
+    COPY ~k0_iskp/spl/bdsevrnc.spl~ ~override~
       LPF ALTER_EFFECT INT_VAR match_opcode = 139 parameter1 = RESOLVE_STR_REF(@40005) END
 END
 
 
 ////////CRIMSON DAWN +2////////////
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdsw1h01.itm~ BEGIN // Check if already present
-COPY ~k0_iskp/soditmresource/itm/bdsw1h01.itm~ ~override~  //Crimson Dawn +2
+COPY ~k0_iskp/itm/bdsw1h01.itm~ ~override~  //Crimson Dawn +2
   SAY NAME1 @20008
   SAY NAME2 @20157
   SAY UNIDENTIFIED_DESC @20009
   SAY DESC @20158
-    COPY ~k0_iskp/soditmresource/spl/bdcrimsn.spl~ ~override~
+    COPY ~k0_iskp/spl/bdcrimsn.spl~ ~override~
       LPF ALTER_EFFECT INT_VAR match_opcode = 139 parameter1 = RESOLVE_STR_REF(@40006) END
 END
 
 
 ////////TONGUE OF ACID +3//////////
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdsw1h02.itm~ BEGIN // Check if already present
-COPY ~k0_iskp/soditmresource/itm/bdsw1h02.itm~ ~override~   //Tongue of Acid +3
+COPY ~k0_iskp/itm/bdsw1h02.itm~ ~override~   //Tongue of Acid +3
   SAY NAME1 @20000
   SAY NAME2 @20159
   SAY UNIDENTIFIED_DESC @20001
   SAY DESC @20160
-    COPY ~k0_iskp/soditmresource/spl/bdsw1h02.spl~ ~override~
+    COPY ~k0_iskp/spl/bdsw1h02.spl~ ~override~
       LPF ALTER_EFFECT INT_VAR match_opcode = 139 parameter1 = RESOLVE_STR_REF(@40007) END
 END
 
 
 //////RHINO BEETLE PLATE///////////
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdplat04.itm~ BEGIN // Check if already present
-COPY ~k0_iskp/soditmresource/itm/bdplat04.itm~ ~override~ //Rhino Beetle Plate
+COPY ~k0_iskp/itm/bdplat04.itm~ ~override~ //Rhino Beetle Plate
   SAY NAME1 @20075
   SAY NAME2 @20161
   SAY UNIDENTIFIED_DESC @20076
@@ -172,7 +164,7 @@ END
 
 /////////SOFT FEET/////////////////
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdboot01.itm~ BEGIN // Check if already present
-COPY ~k0_iskp/soditmresource/itm/bdboot01.itm~ ~override~ //Soft Feet
+COPY ~k0_iskp/itm/bdboot01.itm~ ~override~ //Soft Feet
   SAY NAME1 @20111
   SAY NAME2 @20163
   SAY UNIDENTIFIED_DESC @20112
@@ -182,7 +174,7 @@ END
 
 ////////CROWN OF LIES//////////////
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdhelm01.itm~ BEGIN // Check if already present
-COPY ~k0_iskp/soditmresource/itm/bdhelm01.itm~ ~override~ //Crown of Lies
+COPY ~k0_iskp/itm/bdhelm01.itm~ ~override~ //Crown of Lies
   SAY NAME1 @20165
   SAY NAME2 @20167
   SAY UNIDENTIFIED_DESC @20166
@@ -192,7 +184,7 @@ END
 
 /////////SUNDERMAUL +3/////////////
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdhamm01.itm~ BEGIN // Check if already present
-COPY ~k0_iskp/soditmresource/itm/bdhamm01.itm~ ~override~ //Sundermaul +3
+COPY ~k0_iskp/itm/bdhamm01.itm~ ~override~ //Sundermaul +3
   SAY NAME1 @20026
   SAY NAME2 @20169
   SAY UNIDENTIFIED_DESC @20027
@@ -202,30 +194,30 @@ END
 
 ///////STAR-STREWN BOOTS///////////
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdboot03.itm~ BEGIN // Check if already present
-COPY ~k0_iskp/soditmresource/itm/bdboot03.itm~ ~override~  //Star-Strewn Boots
+COPY ~k0_iskp/itm/bdboot03.itm~ ~override~  //Star-Strewn Boots
   SAY NAME1 @20111
   SAY NAME2 @20171
   SAY UNIDENTIFIED_DESC @20112
   SAY DESC @20172
-    COPY ~k0_iskp/soditmresource/eff/bdboot03.eff~ ~override~
+    COPY ~k0_iskp/eff/bdboot03.eff~ ~override~
 END
 
 
 ///////STALKER'S GAUNTLETS/////////
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdbrac05.itm~ BEGIN // Check if already present
-COPY ~k0_iskp/soditmresource/itm/bdbrac05.itm~ ~override~ //Stalker's Gauntlets
+COPY ~k0_iskp/itm/bdbrac05.itm~ ~override~ //Stalker's Gauntlets
   SAY NAME1 @20099
   SAY NAME2 @20173
   SAY UNIDENTIFIED_DESC @20100
   SAY DESC @20174
-    COPY ~k0_iskp/soditmresource/eff/bdbrac05.eff~ ~override~
-      COPY ~k0_iskp/soditmresource/eff/bdbrac5a.eff~ ~override~
+    COPY ~k0_iskp/eff/bdbrac05.eff~ ~override~
+      COPY ~k0_iskp/eff/bdbrac5a.eff~ ~override~
 END
 
 
 ////////////CLOVERLEAF/////////////
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdbelt01.itm~ BEGIN // Check if already present
-COPY ~k0_iskp/soditmresource/itm/bdbelt01.itm~ ~override~  //Cloverleaf
+COPY ~k0_iskp/itm/bdbelt01.itm~ ~override~  //Cloverleaf
   SAY NAME1 @20109
   SAY NAME2 @20175
   SAY UNIDENTIFIED_DESC @20110
@@ -236,7 +228,7 @@ END
 
 //////THE UNCURSED STAFF +1////////
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdblun06.itm~ BEGIN // Check if already present
-COPY ~k0_iskp/soditmresource/itm/bdblun06.itm~ ~override~  //The Uncursed Staff +1
+COPY ~k0_iskp/itm/bdblun06.itm~ ~override~  //The Uncursed Staff +1
   SAY NAME1 @20039
   SAY NAME2 @20177
   SAY UNIDENTIFIED_DESC @20040
@@ -246,93 +238,93 @@ END
 
 //////////BACKWHACKER +2///////////
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdblun07.itm~ BEGIN // Check if already present
-COPY ~k0_iskp/soditmresource/itm/bdblun07.itm~ ~override~  //Backwhacker +2
+COPY ~k0_iskp/itm/bdblun07.itm~ ~override~  //Backwhacker +2
   SAY NAME1 @20030
   SAY NAME2 @20179
   SAY UNIDENTIFIED_DESC @20031
   SAY DESC @20180
-    COPY ~k0_iskp/soditmresource/spl/bdblun07.spl~ ~override~
+    COPY ~k0_iskp/spl/bdblun07.spl~ ~override~
 END
 
 
 //////BOW OF THE BANSHEE +2////////
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdbow04.itm~ BEGIN // Check if already present
-COPY ~k0_iskp/soditmresource/itm/bdbow04.itm~ ~override~  //Bow of the Banshee +2
+COPY ~k0_iskp/itm/bdbow04.itm~ ~override~  //Bow of the Banshee +2
   SAY NAME1 @20053
   SAY NAME2 @20181
   SAY UNIDENTIFIED_DESC @20054
   SAY DESC @20182
-    COPY ~k0_iskp/soditmresource/spl/bdbow04.spl~ ~override~
+    COPY ~k0_iskp/spl/bdbow04.spl~ ~override~
 END
 
 
 /////////NIMBLEFINGER GLOVES///////
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdbrac03.itm~ BEGIN // Check if already present
-COPY ~k0_iskp/soditmresource/itm/bdbrac03.itm~ ~override~  //Nimblefinger Gloves
+COPY ~k0_iskp/itm/bdbrac03.itm~ ~override~  //Nimblefinger Gloves
   SAY NAME1 @20099
   SAY NAME2 @20183
   SAY UNIDENTIFIED_DESC @20100
   SAY DESC @20184
     WRITE_SHORT 0x42 0  //Setting lore value to 0 to prevent need to identify
-      COPY ~k0_iskp/soditmresource/eff/bdbrac3a.eff~ ~override~
-        COPY ~k0_iskp/soditmresource/eff/bdbrac3b.eff~ ~override~
+      COPY ~k0_iskp/eff/bdbrac3a.eff~ ~override~
+        COPY ~k0_iskp/eff/bdbrac3b.eff~ ~override~
 END
 
 
 /////////SCREAMING BAGPIPES////////
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdbrd04.itm~ BEGIN // Check if already present
-COPY ~k0_iskp/soditmresource/itm/bdbrd04.itm~ ~override~  //Screaming Bagpipes
+COPY ~k0_iskp/itm/bdbrd04.itm~ ~override~  //Screaming Bagpipes
   SAY NAME1 @20129
   SAY NAME2 @20185
   SAY UNIDENTIFIED_DESC @20130
   SAY DESC @20186
-    COPY ~k0_iskp/soditmresource/spl/bdbrd04.spl~ ~override~
+    COPY ~k0_iskp/spl/bdbrd04.spl~ ~override~
       SAY NAME1 @40034
       LPF ALTER_EFFECT INT_VAR match_opcode = 139 parameter1 = RESOLVE_STR_REF(@40008) END
-        COPY ~k0_iskp/soditmresource/spl/bdbrd4a.spl~ ~override~
-          COPY ~k0_iskp/soditmresource/eff/bdbrd04.eff~ ~override~
-              COPY ~k0_iskp/soditmresource/spl/bdbrd4a.spl~ ~override~
+        COPY ~k0_iskp/spl/bdbrd4a.spl~ ~override~
+          COPY ~k0_iskp/eff/bdbrd04.eff~ ~override~
+              COPY ~k0_iskp/spl/bdbrd4a.spl~ ~override~
 END
 
 
 ////////CLOAK OF MINOR ARCANA//////
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdclck06.itm~ BEGIN // Check if already present
-COPY ~k0_iskp/soditmresource/itm/bdclck06.itm~ ~override~  //Cloak of Minor Arcana
+COPY ~k0_iskp/itm/bdclck06.itm~ ~override~  //Cloak of Minor Arcana
   SAY NAME1 @20107
   SAY NAME2 @20187
   SAY UNIDENTIFIED_DESC @20108
   SAY DESC @20188
-    COPY ~k0_iskp/soditmresource/itm/bdalnt01.itm~ ~override~ //note items for cloak to generate
+    COPY ~k0_iskp/itm/bdalnt01.itm~ ~override~ //note items for cloak to generate
       SAY NAME1 @20189
       SAY NAME2 @20189
       SAY UNIDENTIFIED_DESC @20190
       SAY DESC @20190
-        COPY ~k0_iskp/soditmresource/itm/bdalnt02.itm~ ~override~ //note items for cloak to generate
+        COPY ~k0_iskp/itm/bdalnt02.itm~ ~override~ //note items for cloak to generate
           SAY NAME1 @20191
           SAY NAME2 @20191
           SAY UNIDENTIFIED_DESC @20192
           SAY DESC @20192
-            COPY ~k0_iskp/soditmresource/itm/bdalnt03.itm~ ~override~ //note items for cloak to generate
+            COPY ~k0_iskp/itm/bdalnt03.itm~ ~override~ //note items for cloak to generate
               SAY NAME1 @20193
               SAY NAME2 @20193
               SAY UNIDENTIFIED_DESC @20194
               SAY DESC @20194
-                COPY ~k0_iskp/soditmresource/itm/bdalnt04.itm~ ~override~ //note items for cloak to generate
+                COPY ~k0_iskp/itm/bdalnt04.itm~ ~override~ //note items for cloak to generate
                 SAY NAME1 @20195
                 SAY NAME2 @20195
                 SAY UNIDENTIFIED_DESC @20196
                 SAY DESC @20196
-                  COPY ~k0_iskp/soditmresource/itm/bdalnt05.itm~ ~override~ //note items for cloak to generate
+                  COPY ~k0_iskp/itm/bdalnt05.itm~ ~override~ //note items for cloak to generate
                     SAY NAME1 @20197
                     SAY NAME2 @20197
                     SAY UNIDENTIFIED_DESC @20198
                     SAY DESC @20198
-                      COPY ~k0_iskp/soditmresource/itm/bdalnt06.itm~ ~override~ //note items for cloak to generate
+                      COPY ~k0_iskp/itm/bdalnt06.itm~ ~override~ //note items for cloak to generate
                         SAY NAME1 @20199
                         SAY NAME2 @20199
                         SAY UNIDENTIFIED_DESC @20200
                         SAY DESC @20200
-                          COPY ~k0_iskp/soditmresource/itm/bdalnt07.itm~ ~override~ //note items for cloak to generate
+                          COPY ~k0_iskp/itm/bdalnt07.itm~ ~override~ //note items for cloak to generate
                             SAY NAME1 @20201
                             SAY NAME2 @20201
                             SAY UNIDENTIFIED_DESC @20202
@@ -342,57 +334,57 @@ END
 
 /////////ELEMNT'S FURY +2//////////
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bddagg01.itm~ BEGIN // Check if already present
-COPY ~k0_iskp/soditmresource/itm/bddagg01.itm~ ~override~  //Element's Fury +2
+COPY ~k0_iskp/itm/bddagg01.itm~ ~override~  //Element's Fury +2
   SAY NAME1 @20016
   SAY NAME2 @20203
   SAY UNIDENTIFIED_DESC @20017
   SAY DESC @20204
     WRITE_SHORT 0x42 0  //Setting lore value to 0 to prevent need to identify
-      COPY ~k0_iskp/soditmresource/eff/bddagg1a.eff~ ~override~
-        COPY ~k0_iskp/soditmresource/eff/bddagg1b.eff~ ~override~
-          COPY ~k0_iskp/soditmresource/eff/bddagg1c.eff~ ~override~
-            COPY ~k0_iskp/soditmresource/eff/bddagg1d.eff~ ~override~
+      COPY ~k0_iskp/eff/bddagg1a.eff~ ~override~
+        COPY ~k0_iskp/eff/bddagg1b.eff~ ~override~
+          COPY ~k0_iskp/eff/bddagg1c.eff~ ~override~
+            COPY ~k0_iskp/eff/bddagg1d.eff~ ~override~
 END
 
 
 ////////////STORM PIKE +2//////////
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdhalb01.itm~ BEGIN // Check if already present
-COPY ~k0_iskp/soditmresource/itm/bdhalb01.itm~ ~override~  //Storm Pike +2
+COPY ~k0_iskp/itm/bdhalb01.itm~ ~override~  //Storm Pike +2
   SAY NAME1 @20047
   SAY NAME2 @20205
   SAY UNIDENTIFIED_DESC @20048
   SAY DESC @20206
-    COPY ~k0_iskp/soditmresource/spl/bdhalb01.spl~ ~override~
+    COPY ~k0_iskp/spl/bdhalb01.spl~ ~override~
       SAY NAME1 @40009
 END
 
 
 ///////TROLLBLOOD IOUN STONE///////
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdioun01.itm~ BEGIN // Check if already present
-COPY ~k0_iskp/soditmresource/itm/bdioun01.itm~ ~override~  //Trollblood Ioun Stone
+COPY ~k0_iskp/itm/bdioun01.itm~ ~override~  //Trollblood Ioun Stone
   SAY NAME1 @20089
   SAY NAME2 @20207
   SAY UNIDENTIFIED_DESC @20090
   SAY DESC @20208
     WRITE_SHORT 0x42 0  //Setting lore value to 0 to prevent need to identify
-      COPY ~k0_iskp/soditmresource/eff/bdioun01.eff~ ~override~
+      COPY ~k0_iskp/eff/bdioun01.eff~ ~override~
 END
 
 
 ////////SHIELD OF EGONS +2/////////
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdshld03.itm~ BEGIN // Check if already present
-COPY ~k0_iskp/soditmresource/itm/bdshld03.itm~ ~override~  //Shield of Egons +2
+COPY ~k0_iskp/itm/bdshld03.itm~ ~override~  //Shield of Egons +2
   SAY NAME1 @20213
   SAY NAME2 @20341
   SAY UNIDENTIFIED_DESC @20214
   SAY DESC @20342
-    COPY ~k0_iskp/soditmresource/eff/bdshld03.eff~ ~override~
+    COPY ~k0_iskp/eff/bdshld03.eff~ ~override~
 END
 
 
 //////RHINO BEETLE SHIELD +2///////
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdshld04.itm~ BEGIN // Check if already present
-COPY ~k0_iskp/soditmresource/itm/bdshld04.itm~ ~override~  //Rhino Beetle Shield +2
+COPY ~k0_iskp/itm/bdshld04.itm~ ~override~  //Rhino Beetle Shield +2
   SAY NAME1 @20213
   SAY NAME2 @20217
   SAY UNIDENTIFIED_DESC @20214
@@ -402,40 +394,40 @@ END
 
 //////////////KEY RING//////////////
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdkeyr.itm~ BEGIN // Check if already present
-COPY ~k0_iskp/soditmresource/itm/bdkeyr.itm~ ~override~  //Keyring
+COPY ~k0_iskp/itm/bdkeyr.itm~ ~override~  //Keyring
   SAY NAME1 @20219
   SAY NAME2 @20219
   SAY UNIDENTIFIED_DESC @20220
   SAY DESC @20220
-    COPY ~k0_iskp/soditmresource/sto/bdkeyr.sto~ ~override~    //Store required for Keyring
+    COPY ~k0_iskp/sto/bdkeyr.sto~ ~override~    //Store required for Keyring
       SAY NAME2 @20219
 END
 
 
 /////////ASTRAL CROSSBOW +2////////
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdxbow01.itm~ BEGIN // Check if already present
-COPY ~k0_iskp/soditmresource/itm/bdxbow01.itm~ ~override~    //Astral Crossbow +2
+COPY ~k0_iskp/itm/bdxbow01.itm~ ~override~    //Astral Crossbow +2
   SAY NAME1 @20059
   SAY NAME2 @20221
   SAY UNIDENTIFIED_DESC @20060
   SAY DESC @20222
     WRITE_SHORT 0x42 0  //Setting lore value to 0 to prevent need to identify
-      COPY ~k0_iskp/soditmresource/eff/bdxbow1h.eff~ ~override~
-        COPY ~k0_iskp/soditmresource/eff/bdxbow1d.eff~ ~override~
-          COPY ~k0_iskp/soditmresource/spl/bdxbow01.spl~ ~override~
+      COPY ~k0_iskp/eff/bdxbow1h.eff~ ~override~
+        COPY ~k0_iskp/eff/bdxbow1d.eff~ ~override~
+          COPY ~k0_iskp/spl/bdxbow01.spl~ ~override~
 END
 
 
 //////////SHADOWED SPEAR +2////////
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdsper01.itm~ BEGIN // Check if already present
-COPY ~k0_iskp/soditmresource/itm/bdsper01.itm~ ~override~  //Shadowed Spear +2
+COPY ~k0_iskp/itm/bdsper01.itm~ ~override~  //Shadowed Spear +2
   SAY NAME1 @20041
   SAY NAME2 @20223
   SAY UNIDENTIFIED_DESC @20042
   SAY DESC @20224
-  COPY ~k0_iskp/soditmresource/spl/bdsper1a.spl~ ~override~
+  COPY ~k0_iskp/spl/bdsper1a.spl~ ~override~
     LPF ALTER_EFFECT INT_VAR match_opcode = 139 parameter1 = RESOLVE_STR_REF(@40010) END
-      COPY ~k0_iskp/soditmresource/spl/bdsper1b.spl~ ~override~
+      COPY ~k0_iskp/spl/bdsper1b.spl~ ~override~
       SAY NAME1 @40043
       LPF ALTER_EFFECT INT_VAR match_opcode = 139 parameter1 = RESOLVE_STR_REF(@40011) END
 END
@@ -443,7 +435,7 @@ END
 
 ////FOREST QUEEN'S BENEDICTION/////
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdbrd01.itm~ BEGIN // Check if already present
-COPY ~k0_iskp/soditmresource/itm/bdbrd01.itm~ ~override~ //Forest Queen's Benediction
+COPY ~k0_iskp/itm/bdbrd01.itm~ ~override~ //Forest Queen's Benediction
   SAY NAME1 @20225
   SAY NAME2 @20227
   SAY UNIDENTIFIED_DESC @20226
@@ -453,12 +445,12 @@ END
 
 ///////////JESTER'S BRACERS////////
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdbrac02.itm~ BEGIN // Check if already present
-COPY ~k0_iskp/soditmresource/itm/bdbrac02.itm~ ~override~  //Jester's Bracers
+COPY ~k0_iskp/itm/bdbrac02.itm~ ~override~  //Jester's Bracers
   SAY NAME1 @20101
   SAY NAME2 @20229
   SAY UNIDENTIFIED_DESC @20102
   SAY DESC @20230
-    COPY ~k0_iskp/soditmresource/eff/bdbrac02.eff~ ~override~ //Corny jokes effect for Jester's Bracers
+    COPY ~k0_iskp/eff/bdbrac02.eff~ ~override~ //Corny jokes effect for Jester's Bracers
       SET strref = RESOLVE_STR_REF (@100000)
       WRITE_LONG 0x60 strref
       SET strref = RESOLVE_STR_REF (@100001)
@@ -468,25 +460,25 @@ COPY ~k0_iskp/soditmresource/itm/bdbrac02.itm~ ~override~  //Jester's Bracers
       SET strref = RESOLVE_STR_REF (@100005)
       SET strref = RESOLVE_STR_REF (@100006)
       SET strref = RESOLVE_STR_REF (@100007)
-        COPY ~k0_iskp/soditmresource/eff/bdbrac2a.eff~ ~override~
+        COPY ~k0_iskp/eff/bdbrac2a.eff~ ~override~
 END
 
 
 //////THE NIGHT'S EMBRACE +3///////
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdleat07.itm~ BEGIN // Check if already present
-COPY ~k0_iskp/soditmresource/itm/bdleat07.itm~ ~override~ //The Night's Embrace +3
+COPY ~k0_iskp/itm/bdleat07.itm~ ~override~ //The Night's Embrace +3
   SAY NAME1 @20065
   SAY NAME2 @20231
   SAY UNIDENTIFIED_DESC @20066
   SAY DESC @20232
-    COPY ~k0_iskp/soditmresource/spl/bdnighte.spl~ ~override~
+    COPY ~k0_iskp/spl/bdnighte.spl~ ~override~
       LPF ALTER_EFFECT INT_VAR match_opcode = 139 parameter1 = RESOLVE_STR_REF(@40012) END
 END
 
 
 ///////////RING OF PURITY//////////
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdring10.itm~ BEGIN // Check if already present
-COPY ~k0_iskp/soditmresource/itm/bdring10.itm~ ~override~   //Ring of Purity
+COPY ~k0_iskp/itm/bdring10.itm~ ~override~   //Ring of Purity
   SAY NAME1 @20105
   SAY NAME2 @20233
   SAY UNIDENTIFIED_DESC @20106
@@ -496,30 +488,30 @@ END
 
 ////////DERVISH CRESCENT +2////////
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdsw1h08.itm~ BEGIN // Check if already present
-COPY ~k0_iskp/soditmresource/itm/bdsw1h08.itm~ ~override~   //Dervish Crescent +2
+COPY ~k0_iskp/itm/bdsw1h08.itm~ ~override~   //Dervish Crescent +2
   SAY NAME1 @20006
   SAY NAME2 @20235
   SAY UNIDENTIFIED_DESC @20007
   SAY DESC @20236
-    COPY ~k0_iskp/soditmresource/spl/bdsw1h08.spl~ ~override~
+    COPY ~k0_iskp/spl/bdsw1h08.spl~ ~override~
 END
 
 
 ////////HEADBAND OF FOCUS//////////
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdhelm15.itm~ BEGIN // Check if already present
-COPY ~k0_iskp/soditmresource/itm/bdhelm15.itm~ ~override~  //Headband of Focus
+COPY ~k0_iskp/itm/bdhelm15.itm~ ~override~  //Headband of Focus
   SAY NAME1 @20237
   SAY NAME2 @20239
   SAY UNIDENTIFIED_DESC @20238
   SAY DESC @20240
     WRITE_SHORT 0x42 0  //Setting lore value to 0 to prevent need to identify
-      COPY ~k0_iskp/soditmresource/eff/bdhelm15.eff~ ~override~
+      COPY ~k0_iskp/eff/bdhelm15.eff~ ~override~
 END
 
 
 /////////WIZARD HAT///////////////
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdhelm12.itm~ BEGIN // Check if already present
-COPY ~k0_iskp/soditmresource/itm/bdhelm12.itm~ ~override~  //Wizard Hat
+COPY ~k0_iskp/itm/bdhelm12.itm~ ~override~  //Wizard Hat
   SAY NAME1 @20085
   SAY NAME2 @20241
   SAY UNIDENTIFIED_DESC @20086
@@ -529,29 +521,29 @@ END
 
 ///////ACID-ETCHED DAGGER +2///////
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bddagg05.itm~ BEGIN // Check if already present
-COPY ~k0_iskp/soditmresource/itm/bddagg05.itm~ ~override~  //Acid-Etched Dagger +2
+COPY ~k0_iskp/itm/bddagg05.itm~ ~override~  //Acid-Etched Dagger +2
   SAY NAME1 @20016
   SAY NAME2 @20243
   SAY UNIDENTIFIED_DESC @20017
   SAY DESC @20244
-    COPY ~k0_iskp/soditmresource/spl/bddagg05.spl~ ~override~
+    COPY ~k0_iskp/spl/bddagg05.spl~ ~override~
 END
 
 
 ////////THE SUNCATCHER +2//////////
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdshld02.itm~ BEGIN // Check if already present
-COPY ~k0_iskp/soditmresource/itm/bdshld02.itm~ ~override~  //The Suncatcher +2
+COPY ~k0_iskp/itm/bdshld02.itm~ ~override~  //The Suncatcher +2
   SAY NAME1 @20211
   SAY NAME2 @20245
   SAY UNIDENTIFIED_DESC @20212
   SAY DESC @20246
-    COPY ~k0_iskp/soditmresource/spl/bdshld02.spl~ ~override~
+    COPY ~k0_iskp/spl/bdshld02.spl~ ~override~
 END
 
 
 ////////THE GUARDIAN DEVIL/////////
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdhelm04.itm~ BEGIN // Check if already present
-COPY ~k0_iskp/soditmresource/itm/bdhelm04.itm~ ~override~  //The Guardian Devil
+COPY ~k0_iskp/itm/bdhelm04.itm~ ~override~  //The Guardian Devil
   SAY NAME1 @20083
   SAY NAME2 @20247
   SAY UNIDENTIFIED_DESC @20084
@@ -561,7 +553,7 @@ END
 
 /////////REED OF ECHOES////////////
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdmisc10.itm~ BEGIN // Check if already present
-COPY ~k0_iskp/soditmresource/itm/bdmisc10.itm~ ~override~  //Reed of Echoes
+COPY ~k0_iskp/itm/bdmisc10.itm~ ~override~  //Reed of Echoes
   SAY NAME1 @20127
   SAY NAME2 @20249
   SAY UNIDENTIFIED_DESC @20128
@@ -571,7 +563,7 @@ END
 
 /////////ECHO OF THE FIEND/////////
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdstaf03.itm~ BEGIN // Check if already present
-COPY ~k0_iskp/soditmresource/itm/bdstaf03.itm~ ~override~  //Echo of the Fiend +3
+COPY ~k0_iskp/itm/bdstaf03.itm~ ~override~  //Echo of the Fiend +3
   SAY NAME1 @20039
   SAY NAME2 @20251
   SAY UNIDENTIFIED_DESC @20040
@@ -581,7 +573,7 @@ END
 
 ///////AMULET OF WHISPERS//////////
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdamul01.itm~ BEGIN // Check if already present
-COPY ~k0_iskp/soditmresource/itm/bdamul01.itm~ ~override~  //Amulet of Whispers
+COPY ~k0_iskp/itm/bdamul01.itm~ ~override~  //Amulet of Whispers
   SAY NAME1 @20093
   SAY NAME2 @20253
   SAY UNIDENTIFIED_DESC @20094
@@ -599,19 +591,19 @@ END
 
 /////AMULET OF ABNORMALLY AWESOME ANKHEG SUMMONING/////
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdamul03.itm~ BEGIN // Check if already present
-COPY ~k0_iskp/soditmresource/itm/bdamul03.itm~ ~override~  //Amulet of Abnormally Awesome Ankheg Summoning
+COPY ~k0_iskp/itm/bdamul03.itm~ ~override~  //Amulet of Abnormally Awesome Ankheg Summoning
   SAY NAME1 @20093
   SAY NAME2 @20255
   SAY UNIDENTIFIED_DESC @20094
   SAY DESC @20256
     WRITE_SHORT 0x42 0  //Setting lore value to 0 to prevent need to identify
-      COPY ~k0_iskp/soditmresource/eff/bdankhsu.eff~ ~override~
+      COPY ~k0_iskp/eff/bdankhsu.eff~ ~override~
 END
 
 
 ////////LOCKET OF EMBRACING////////
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdamul07.itm~ BEGIN // Check if already present
-COPY ~k0_iskp/soditmresource/itm/bdamul07.itm~ ~override~  //Locket of Embracing
+COPY ~k0_iskp/itm/bdamul07.itm~ ~override~  //Locket of Embracing
   SAY NAME1 @20093
   SAY NAME2 @20257
   SAY UNIDENTIFIED_DESC @20094
@@ -621,20 +613,20 @@ END
 
 ////////////MODRON HEART///////////
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdamul08.itm~ BEGIN // Check if already present
-COPY ~k0_iskp/soditmresource/itm/bdamul08.itm~ ~override~  //Modron Heart
+COPY ~k0_iskp/itm/bdamul08.itm~ ~override~  //Modron Heart
   SAY NAME1 @20093
   SAY NAME2 @20259
   SAY UNIDENTIFIED_DESC @20094
   SAY DESC @20260
     WRITE_SHORT 0x42 0  //Setting lore value to 0 to prevent need to identify
-      COPY ~k0_iskp/soditmresource/eff/bdamul08.eff~ ~override~
-        COPY ~k0_iskp/soditmresource/eff/bdamul8a.eff~ ~override~
+      COPY ~k0_iskp/eff/bdamul08.eff~ ~override~
+        COPY ~k0_iskp/eff/bdamul8a.eff~ ~override~
 END
 
 
 ////////////CHILL AXE +2///////////
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdax1h03.itm~ BEGIN // Check if already present
-COPY ~k0_iskp/soditmresource/itm/bdax1h03.itm~ ~override~  //Chill Axe +2
+COPY ~k0_iskp/itm/bdax1h03.itm~ ~override~  //Chill Axe +2
   SAY NAME1 @20022
   SAY NAME2 @20261
   SAY UNIDENTIFIED_DESC @20023
@@ -646,7 +638,7 @@ END
 
 /////BELT OF THE CUNNING ROGUE/////
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdbelt03.itm~ BEGIN // Check if already present
-COPY ~k0_iskp/soditmresource/itm/bdbelt03.itm~ ~override~  //Belt of the Cunning Rogue
+COPY ~k0_iskp/itm/bdbelt03.itm~ ~override~  //Belt of the Cunning Rogue
   SAY NAME1 @20109
   SAY NAME2 @20263
   SAY UNIDENTIFIED_DESC @20110
@@ -656,19 +648,19 @@ END
 
 ////////MOSELA'S CUDGEL +2/////////
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdblun01.itm~ BEGIN // Check if already present
-COPY ~k0_iskp/soditmresource/itm/bdblun01.itm~ ~override~  //Mosela's Cudgel +2
+COPY ~k0_iskp/itm/bdblun01.itm~ ~override~  //Mosela's Cudgel +2
   SAY NAME1 @20030
   SAY NAME2 @20265
   SAY UNIDENTIFIED_DESC @20031
   SAY DESC @20266
-  COPY ~k0_iskp/soditmresource/eff/bdblun1d.eff~ ~override~
-    COPY ~k0_iskp/soditmresource/eff/bdblun1h.eff~ ~override~
+  COPY ~k0_iskp/eff/bdblun1d.eff~ ~override~
+    COPY ~k0_iskp/eff/bdblun1h.eff~ ~override~
 END
 
 
 ///////////THE HYDRA +2////////////
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdblun05.itm~ BEGIN // Check if already present
-COPY ~k0_iskp/soditmresource/itm/bdblun05.itm~ ~override~  //The Hydra +2
+COPY ~k0_iskp/itm/bdblun05.itm~ ~override~  //The Hydra +2
   SAY NAME1 @20037
   SAY NAME2 @20267
   SAY UNIDENTIFIED_DESC @20038
@@ -678,7 +670,7 @@ END
 
 ////////BLAZING GLORY +3///////////
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdblun09.itm~ BEGIN // Check if already present
-COPY ~k0_iskp/soditmresource/itm/bdblun09.itm~ ~override~  //Blazing Glory +3
+COPY ~k0_iskp/itm/bdblun09.itm~ ~override~  //Blazing Glory +3
   SAY NAME1 @20035
   SAY NAME2 @20269
   SAY UNIDENTIFIED_DESC @20036
@@ -688,7 +680,7 @@ END
 
 //////////SIDESTEP SLIPPERS////////
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdboot12.itm~ BEGIN // Check if already present
-COPY ~k0_iskp/soditmresource/itm/bdboot12.itm~ ~override~  //Sidestep Slippers
+COPY ~k0_iskp/itm/bdboot12.itm~ ~override~  //Sidestep Slippers
   SAY NAME1 @20111
   SAY NAME2 @20271
   SAY UNIDENTIFIED_DESC @20112
@@ -698,41 +690,41 @@ END
 
 /////////SAVAGE SHORTBOW +2////////
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdbow05.itm~ BEGIN // Check if already present
-COPY ~k0_iskp/soditmresource/itm/bdbow05.itm~ ~override~  //Savage Shortbow +2
+COPY ~k0_iskp/itm/bdbow05.itm~ ~override~  //Savage Shortbow +2
   SAY NAME1 @20051
   SAY NAME2 @20273
   SAY UNIDENTIFIED_DESC @20052
   SAY DESC @20274
-    COPY ~k0_iskp/soditmresource/spl/bdbow05.spl~ ~override~
-      COPY ~k0_iskp/soditmresource/eff/bdbow05.eff~ ~override~
+    COPY ~k0_iskp/spl/bdbow05.spl~ ~override~
+      COPY ~k0_iskp/eff/bdbow05.eff~ ~override~
 END
 
 
 ////BRACERS OF THE SHUTTERED LID///
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdbrac01.itm~ BEGIN // Check if already present
-COPY ~k0_iskp/soditmresource/itm/bdbrac01.itm~ ~override~  //Bracers of the Shuttered Lid
+COPY ~k0_iskp/itm/bdbrac01.itm~ ~override~  //Bracers of the Shuttered Lid
   SAY NAME1 @20101
   SAY NAME2 @20275
   SAY UNIDENTIFIED_DESC @20102
-    COPY ~k0_iskp/soditmresource/spl/bdbrac01.spl~ ~override~
+    COPY ~k0_iskp/spl/bdbrac01.spl~ ~override~
       LPF ALTER_EFFECT INT_VAR match_opcode = 139 parameter1 = RESOLVE_STR_REF(@40017) END
 END
 
 
 //////BRACERS OF PERSEVERANCE//////
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdbrac15.itm~ BEGIN // Check if already present
-COPY ~k0_iskp/soditmresource/itm/bdbrac15.itm~ ~override~  //Bracers of Perseverance
+COPY ~k0_iskp/itm/bdbrac15.itm~ ~override~  //Bracers of Perseverance
   SAY NAME1 @20101
   SAY NAME2 @20277
   SAY UNIDENTIFIED_DESC @20102
   SAY DESC @20278
-    COPY ~k0_iskp/soditmresource/spl/bdbrac15.spl~ ~override~
+    COPY ~k0_iskp/spl/bdbrac15.spl~ ~override~
 END
 
 
 ///FLUTE OF THE IMMCULATE BREEZE///
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdbrd02.itm~ BEGIN // Check if already present
-COPY ~k0_iskp/soditmresource/itm/bdbrd02.itm~ ~override~  //Flute of the Immaculate Breeze
+COPY ~k0_iskp/itm/bdbrd02.itm~ ~override~  //Flute of the Immaculate Breeze
   SAY NAME1 @20127
   SAY NAME2 @20279
   SAY UNIDENTIFIED_DESC @20128
@@ -742,7 +734,7 @@ END
 
 /////////STALWART SCALES +2////////
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdchan06.itm~ BEGIN // Check if already present
-COPY ~k0_iskp/soditmresource/itm/bdchan06.itm~ ~override~  //Stalwart Scales +2
+COPY ~k0_iskp/itm/bdchan06.itm~ ~override~  //Stalwart Scales +2
   SAY NAME1 @20071
   SAY NAME2 @20281
   SAY UNIDENTIFIED_DESC @20072
@@ -753,7 +745,7 @@ END
 
 //////////////SABLE CLOAK//////////
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdclck02.itm~ BEGIN // Check if already present
-COPY ~k0_iskp/soditmresource/itm/bdclck02.itm~ ~override~  //Sable Cloak
+COPY ~k0_iskp/itm/bdclck02.itm~ ~override~  //Sable Cloak
   SAY NAME1 @20107
   SAY NAME2 @20283
   SAY UNIDENTIFIED_DESC @20108
@@ -774,58 +766,58 @@ END
 
 /////////CROMMUS'S CAPELET//////////
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdclck03.itm~ BEGIN // Check if already present
-COPY ~k0_iskp/soditmresource/itm/bdclck03.itm~ ~override~  //Crommus's Capelet
+COPY ~k0_iskp/itm/bdclck03.itm~ ~override~  //Crommus's Capelet
   SAY NAME1 @20107
   SAY NAME2 @20285
   SAY UNIDENTIFIED_DESC @20108
   SAY DESC @20286
     WRITE_SHORT 0x42 0  //Setting lore value to 0 to prevent need to identify
-      COPY ~k0_iskp/soditmresource/spl/bdclck03.spl~ ~override~
+      COPY ~k0_iskp/spl/bdclck03.spl~ ~override~
 END
 
 
 /////////FESTERING SPEAR +1////////
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdhalb02.itm~ BEGIN // Check if already present
-COPY ~k0_iskp/soditmresource/itm/bdhalb02.itm~ ~override~  //Festering Spear +1
+COPY ~k0_iskp/itm/bdhalb02.itm~ ~override~  //Festering Spear +1
   SAY NAME1 @20041
   SAY NAME2 @20287
   SAY UNIDENTIFIED_DESC @20042
   SAY DESC @20288
-    COPY ~k0_iskp/soditmresource/spl/bdhalb02.spl~ ~override~
+    COPY ~k0_iskp/spl/bdhalb02.spl~ ~override~
       LPF ALTER_EFFECT INT_VAR match_opcode = 139 parameter1 = RESOLVE_STR_REF(@40002) END
-        COPY ~k0_iskp/soditmresource/spl/bdfester.spl~ ~override~
+        COPY ~k0_iskp/spl/bdfester.spl~ ~override~
           LPF ALTER_EFFECT INT_VAR match_opcode = 139 parameter1 = RESOLVE_STR_REF(@40019) END
 END
 
 
 ///////ARROW OF ANTIMAGIC +1///////
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdarow01.itm~ BEGIN // Check if already present
-COPY ~k0_iskp/soditmresource/itm/bdarow01.itm~ ~override~  //Arrow of Antimagic +1
+COPY ~k0_iskp/itm/bdarow01.itm~ ~override~  //Arrow of Antimagic +1
   SAY NAME1 @20113
   SAY NAME2 @20289
   SAY UNIDENTIFIED_DESC @20114
   SAY DESC @20290
-    COPY ~k0_iskp/soditmresource/spl/bdarow01.spl~ ~override~
+    COPY ~k0_iskp/spl/bdarow01.spl~ ~override~
       LPF ALTER_EFFECT INT_VAR match_opcode = 139 parameter1 = RESOLVE_STR_REF(@40020) END
 END
 
 
 ///////////DREAD HAMMER +2//////////
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdhamm06.itm~ BEGIN // Check if already present
-COPY ~k0_iskp/soditmresource/itm/bdhamm06.itm~ ~override~  //Dread Hammer +2
+COPY ~k0_iskp/itm/bdhamm06.itm~ ~override~  //Dread Hammer +2
   SAY NAME1 @20026
   SAY NAME2 @20291
   SAY UNIDENTIFIED_DESC @20027
   SAY DESC @20292
-    COPY ~k0_iskp/soditmresource/spl/bdhamm06.spl~ ~override~
-      COPY ~k0_iskp/soditmresource/spl/bdhamm6a.spl~ ~override~
-      COPY ~k0_iskp/soditmresource/spl/bdhamm6b.spl~ ~override~
+    COPY ~k0_iskp/spl/bdhamm06.spl~ ~override~
+      COPY ~k0_iskp/spl/bdhamm6a.spl~ ~override~
+      COPY ~k0_iskp/spl/bdhamm6b.spl~ ~override~
 END
 
 
 //////////BATTLE TANKARD///////////
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdhelm05.itm~ BEGIN // Check if already present
-COPY ~k0_iskp/soditmresource/itm/bdhelm05.itm~ ~override~  //Battle Tankard
+COPY ~k0_iskp/itm/bdhelm05.itm~ ~override~  //Battle Tankard
   SAY NAME1 @20083
   SAY NAME2 @20293
   SAY UNIDENTIFIED_DESC @20084
@@ -835,18 +827,18 @@ END
 
 ///////////PEACOCK CAP/////////////
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdhelm06.itm~ BEGIN // Check if already present
-COPY ~k0_iskp/soditmresource/itm/bdhelm06.itm~ ~override~  //Peacock Cap
+COPY ~k0_iskp/itm/bdhelm06.itm~ ~override~  //Peacock Cap
   SAY NAME1 @20085
   SAY NAME2 @20295
   SAY UNIDENTIFIED_DESC @20086
   SAY DESC @20296
-    COPY ~k0_iskp/soditmresource/eff/bdhelm6a.eff~ ~override~
+    COPY ~k0_iskp/eff/bdhelm6a.eff~ ~override~
 END
 
 
 ///////////HELM OF EQUUS///////////
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdhelm07.itm~ BEGIN // Check if already present
-COPY ~k0_iskp/soditmresource/itm/bdhelm07.itm~ ~override~  //Helm of Equus
+COPY ~k0_iskp/itm/bdhelm07.itm~ ~override~  //Helm of Equus
   SAY NAME1 @20083
   SAY NAME2 @20297
   SAY UNIDENTIFIED_DESC @20084
@@ -856,7 +848,7 @@ END
 
 /////HELM OF UNWAVERING PURPOSE////
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdhelm10.itm~ BEGIN // Check if already present
-COPY ~k0_iskp/soditmresource/itm/bdhelm10.itm~ ~override~  //Helm of Unwavering Purpose
+COPY ~k0_iskp/itm/bdhelm10.itm~ ~override~  //Helm of Unwavering Purpose
   SAY NAME1 @20083
   SAY NAME2 @20299
   SAY UNIDENTIFIED_DESC @20084
@@ -869,7 +861,7 @@ END
 
 ///////BLOOD RED IOUN STONE////////
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdioun02.itm~ BEGIN // Check if already present
-COPY ~k0_iskp/soditmresource/itm/bdioun02.itm~ ~override~  //Blood Red Ioun Stone
+COPY ~k0_iskp/itm/bdioun02.itm~ ~override~  //Blood Red Ioun Stone
   SAY NAME1 @20089
   SAY NAME2 @20301
   SAY UNIDENTIFIED_DESC @20090
@@ -880,7 +872,7 @@ END
 
 //////RACONTEUR'S REGALIA//////////
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdleat03.itm~ BEGIN // Check if already present
-COPY ~k0_iskp/soditmresource/itm/bdleat03.itm~ ~override~  //Raconteur's Regalia
+COPY ~k0_iskp/itm/bdleat03.itm~ ~override~  //Raconteur's Regalia
   SAY NAME1 @20067
   SAY NAME2 @20303
   SAY UNIDENTIFIED_DESC @20068
@@ -890,21 +882,19 @@ END
 
 ////////PURIFICATION STONE/////////
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdmisc05.itm~ BEGIN // Check if already present
-COPY ~k0_iskp/soditmresource/itm/bdmisc05.itm~ ~override~  //Purification Stone
+COPY ~k0_iskp/itm/bdmisc05.itm~ ~override~  //Purification Stone
   SAY NAME1 @20089
   SAY NAME2 @20305
   SAY UNIDENTIFIED_DESC @20090
   SAY DESC @20306
     LPF ALTER_EFFECT INT_VAR match_opcode = 267 match_parameter1 = 14017 parameter1 = RESOLVE_STR_REF(@40023) END
     LPF ALTER_EFFECT INT_VAR match_opcode = 267 match_parameter1 = 14662 parameter1 = RESOLVE_STR_REF(@40024) END
-//    LPF ALTER_EFFECT INT_VAR match_opcode = 267 match_parameter1 = 31238 parameter1 = RESOLVE_STR_REF(@40025) END  //Not needed for BG2, EET
- //   LPF ALTER_EFFECT INT_VAR match_opcode = 267 match_parameter1 = 26453 parameter1 = RESOLVE_STR_REF(@40019) END  //Not needed for BG2, EET
 END
 
 
 //////DAEROS' FULL PLATE +1////////
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdplat01.itm~ BEGIN // Check if already present
-COPY ~k0_iskp/soditmresource/itm/bdplat01.itm~ ~override~  //Daeros's Full Plate +1
+COPY ~k0_iskp/itm/bdplat01.itm~ ~override~  //Daeros's Full Plate +1
   SAY NAME1 @20077
   SAY NAME2 @20307
   SAY UNIDENTIFIED_DESC @20078
@@ -914,7 +904,7 @@ END
 
 ///////BLOODY BONE PLATE +2////////
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdplat03.itm~ BEGIN // Check if already present
-COPY ~k0_iskp/soditmresource/itm/bdplat03.itm~ ~override~  //Bloody Bone Plate +2
+COPY ~k0_iskp/itm/bdplat03.itm~ ~override~  //Bloody Bone Plate +2
   SAY NAME1 @20075
   SAY NAME2 @20309
   SAY UNIDENTIFIED_DESC @20076
@@ -925,7 +915,7 @@ END
 
 //////ROBE OF ARCANE APTITUDE//////
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdrobe01.itm~ BEGIN // Check if already present
-COPY ~k0_iskp/soditmresource/itm/bdrobe01.itm~ ~override~  //Robe of Acane Aptitude
+COPY ~k0_iskp/itm/bdrobe01.itm~ ~override~  //Robe of Acane Aptitude
   SAY NAME1 @20079
   SAY NAME2 @20311
   SAY UNIDENTIFIED_DESC @20080
@@ -935,60 +925,60 @@ END
 
 /////////////FIREFLY +2////////////
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdslng01.itm~ BEGIN // Check if already present
-COPY ~k0_iskp/soditmresource/itm/bdslng01.itm~ ~override~  //Firefly +2
+COPY ~k0_iskp/itm/bdslng01.itm~ ~override~  //Firefly +2
   SAY NAME1 @20049
   SAY NAME2 @20313
   SAY UNIDENTIFIED_DESC @20050
   SAY DESC @20314
-    COPY ~k0_iskp/soditmresource/eff/bdslng1a.eff~ ~override~
+    COPY ~k0_iskp/eff/bdslng1a.eff~ ~override~
 END
 
 
 ///////////EADRO'S BLADE +1////////
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdsw1h03.itm~ BEGIN // Check if already present
-COPY ~k0_iskp/soditmresource/itm/bdsw1h03.itm~ ~override~  //Eadro's Blade +1
+COPY ~k0_iskp/itm/bdsw1h03.itm~ ~override~  //Eadro's Blade +1
   SAY NAME1 @20006
   SAY NAME2 @20315
   SAY UNIDENTIFIED_DESC @20007
   SAY DESC @20316
-    COPY ~k0_iskp/soditmresource/spl/bdsw1h03.spl~ ~override~
-      COPY ~k0_iskp/soditmresource/spl/bdsw1h3b.spl~ ~override~
+    COPY ~k0_iskp/spl/bdsw1h03.spl~ ~override~
+      COPY ~k0_iskp/spl/bdsw1h3b.spl~ ~override~
         SAY NAME1 @40026
-          COPY ~k0_iskp/soditmresource/eff/bdsw1h3d.eff~ ~override~
-            COPY ~k0_iskp/soditmresource/eff/bdsw1h3h.eff~ ~override~
-              COPY ~k0_iskp/soditmresource/eff/bdsw1h3m.eff~ ~override~
+          COPY ~k0_iskp/eff/bdsw1h3d.eff~ ~override~
+            COPY ~k0_iskp/eff/bdsw1h3h.eff~ ~override~
+              COPY ~k0_iskp/eff/bdsw1h3m.eff~ ~override~
 END
 
 
 /////////FRACTAL BLADE +3//////////
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdsw1h14.itm~ BEGIN // Check if already present
-COPY ~k0_iskp/soditmresource/itm/bdsw1h14.itm~ ~override~  //Fractal Blade +3
+COPY ~k0_iskp/itm/bdsw1h14.itm~ ~override~  //Fractal Blade +3
   SAY NAME1 @20002
   SAY NAME2 @20317
   SAY UNIDENTIFIED_DESC @20003
   SAY DESC @20318
-    COPY ~k0_iskp/soditmresource/spl/bdsw1h14.spl~ ~override~
-      COPY ~k0_iskp/soditmresource/spl/bdfractl.spl~ ~override~
+    COPY ~k0_iskp/spl/bdsw1h14.spl~ ~override~
+      COPY ~k0_iskp/spl/bdfractl.spl~ ~override~
         LPF ALTER_EFFECT INT_VAR match_opcode = 139 parameter1 = RESOLVE_STR_REF(@40027) END
 END
 
 
 //////////SPELL BREAKER +2/////////
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdsw1h25.itm~ BEGIN // Check if already present
-COPY ~k0_iskp/soditmresource/itm/bdsw1h25.itm~ ~override~  //Spell Breaker +2
+COPY ~k0_iskp/itm/bdsw1h25.itm~ ~override~  //Spell Breaker +2
   SAY NAME1 @20000
   SAY NAME2 @20319
   SAY UNIDENTIFIED_DESC @20001
   SAY DESC @20320
-    COPY ~k0_iskp/soditmresource/spl/bdsw1h25.spl~ ~override~
+    COPY ~k0_iskp/spl/bdsw1h25.spl~ ~override~
       LPF ALTER_EFFECT INT_VAR match_opcode = 139 parameter1 = RESOLVE_STR_REF(@40028) END
-        COPY ~k0_iskp/soditmresource/eff/bdsw1h25.eff~ ~override~
+        COPY ~k0_iskp/eff/bdsw1h25.eff~ ~override~
 END
 
 
 ////////GIFT OF THE DEMON +1///////
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdsw1hx5.itm~ BEGIN // Check if already present
-COPY ~k0_iskp/soditmresource/itm/bdsw1hx5.itm~ ~override~  //Gift of the Demon +1
+COPY ~k0_iskp/itm/bdsw1hx5.itm~ ~override~  //Gift of the Demon +1
   WRITE_SHORT 0x42 100  //Setting lore value to identify
     SAY NAME1 @20002
     SAY NAME2 @20321
@@ -999,57 +989,57 @@ END
 
 //SWORD OF TROLL DECAPITATION +1///
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdsw2h02.itm~ BEGIN // Check if already present
-COPY ~k0_iskp/soditmresource/itm/bdsw2h02.itm~ ~override~  //Sword of Troll Decapitation +1
+COPY ~k0_iskp/itm/bdsw2h02.itm~ ~override~  //Sword of Troll Decapitation +1
   SAY NAME1 @20014
   SAY NAME2 @20323
   SAY UNIDENTIFIED_DESC @20015
   SAY DESC @20324
-    COPY ~k0_iskp/soditmresource/spl/bdsw2h02.spl~ ~override~
-      COPY ~k0_iskp/soditmresource/spl/bdtrlstr.spl~ ~override~
+    COPY ~k0_iskp/spl/bdsw2h02.spl~ ~override~
+      COPY ~k0_iskp/spl/bdtrlstr.spl~ ~override~
         LPF ALTER_EFFECT INT_VAR match_opcode = 139 parameter1 = RESOLVE_STR_REF(@40001) END
-        COPY ~k0_iskp/soditmresource/eff/bdsw2h2d.eff~ ~override~
-          COPY ~k0_iskp/soditmresource/eff/bdsw2h2h.eff~ ~override~
+        COPY ~k0_iskp/eff/bdsw2h2d.eff~ ~override~
+          COPY ~k0_iskp/eff/bdsw2h2h.eff~ ~override~
 END
 
 
 /////////SWORD OF RUIN +2//////////
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdsw2h03.itm~ BEGIN // Check if already present
-COPY ~k0_iskp/soditmresource/itm/bdsw2h03.itm~ ~override~  //Sword of Ruin +2
+COPY ~k0_iskp/itm/bdsw2h03.itm~ ~override~  //Sword of Ruin +2
   SAY NAME1 @20014
   SAY NAME2 @20325
   SAY UNIDENTIFIED_DESC @20015
   SAY DESC @20326
-    COPY ~k0_iskp/soditmresource/spl/bdsw2h03.spl~ ~override~
+    COPY ~k0_iskp/spl/bdsw2h03.spl~ ~override~
 END
 
 
 ///////////////HAROLD +2///////////
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdxbow02.itm~ BEGIN // Check if already present
-COPY ~k0_iskp/soditmresource/itm/bdxbow02.itm~ ~override~  //Harold +2
+COPY ~k0_iskp/itm/bdxbow02.itm~ ~override~  //Harold +2
   SAY NAME1 @20061
   SAY NAME2 @20327
   SAY UNIDENTIFIED_DESC @20062
   SAY DESC @20328
-    COPY ~k0_iskp/soditmresource/spl/bddoom.spl~ ~override~
+    COPY ~k0_iskp/spl/bddoom.spl~ ~override~
       LPF ALTER_EFFECT INT_VAR match_opcode = 139 parameter1 = RESOLVE_STR_REF(@40029) END
 END
 
 
 ///////CLOAK OF THE GARGOYLE///////
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdclck05.itm~ BEGIN // Check if already present
-COPY ~k0_iskp/soditmresource/itm/bdclck05.itm~ ~override~    //Cloak of the Gargoyle
+COPY ~k0_iskp/itm/bdclck05.itm~ ~override~    //Cloak of the Gargoyle
   SAY NAME1 @20107
   SAY NAME2 @20329
   SAY UNIDENTIFIED_DESC @20108
   SAY DESC @20340
-    COPY ~k0_iskp/soditmresource/spl/bdstonef.spl~ ~override~
+    COPY ~k0_iskp/spl/bdstonef.spl~ ~override~
       LPF ALTER_EFFECT INT_VAR match_opcode = 139 parameter1 = RESOLVE_STR_REF(@40030) END
 END
 
 
 ///////RHYTE'S LAST ARROW +2///////
 ACTION_IF GAME_IS ~bg2ee~ BEGIN
-COPY ~k0_iskp/soditmresource/itm/k0rhytea.itm~ ~override~    //Rhyte's Last Arrow +2
+COPY ~k0_iskp/itm/k0rhytea.itm~ ~override~    //Rhyte's Last Arrow +2
   SAY NAME1 @20024
   SAY NAME2 @20343
   SAY UNIDENTIFIED_DESC @20025
@@ -1058,13 +1048,13 @@ COPY ~k0_iskp/soditmresource/itm/k0rhytea.itm~ ~override~    //Rhyte's Last Arro
   WRITE_ASCII 0x58 k0rhyted
   WRITE_ASCII 0x76 k0rhytei
   WRITE_ASCII 0xae k0rhytei
-    COPY ~k0_iskp/soditmresource/spl/bdrhyte.spl~ ~override~
+    COPY ~k0_iskp/spl/bdrhyte.spl~ ~override~
       LPF ALTER_EFFECT INT_VAR match_opcode = 139 parameter1 = RESOLVE_STR_REF(@40010) END
 END
 
 ///////GENTRUS'S HAND MIRROR///////
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdmirr01.itm~ BEGIN // Check if already present
-COPY ~k0_iskp/soditmresource/itm/bdmirr01.itm~ ~override~    //Gentrus's Hand Mirror
+COPY ~k0_iskp/itm/bdmirr01.itm~ ~override~    //Gentrus's Hand Mirror
   SAY NAME1 @20345
   SAY NAME2 @20347
   SAY UNIDENTIFIED_DESC @20346
@@ -1073,15 +1063,15 @@ END
 
 ////////THE SECRET REVEALED////////
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdmisc47.itm~ BEGIN // Check if already present
-COPY ~k0_iskp/soditmresource/itm/bdmisc47.itm~ ~override~    //The Secret Revealed
+COPY ~k0_iskp/itm/bdmisc47.itm~ ~override~    //The Secret Revealed
   SAY NAME1 @20349
   SAY NAME2 @20351
   SAY UNIDENTIFIED_DESC @20350
   SAY DESC @20352
-    COPY ~k0_iskp/soditmresource/spl/bdmisc47.spl~ ~override~
+    COPY ~k0_iskp/spl/bdmisc47.spl~ ~override~
       SAY NAME1 @20351
       LPF ALTER_EFFECT INT_VAR match_opcode = 139 parameter1 = RESOLVE_STR_REF(@40020) END
-        COPY ~k0_iskp/soditmresource/itm/bdmisx47.itm~ ~override~ //used up version
+        COPY ~k0_iskp/itm/bdmisx47.itm~ ~override~ //used up version
           SAY NAME1 @20349
           SAY NAME2 @20351
           SAY UNIDENTIFIED_DESC @20350
@@ -1090,18 +1080,18 @@ END
 
 ///////////LON'S AMULET////////////
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdamul11.itm~ BEGIN // Check if already present
-COPY ~k0_iskp/soditmresource/itm/bdamul11.itm~ ~override~    //Lon's Amulet
+COPY ~k0_iskp/itm/bdamul11.itm~ ~override~    //Lon's Amulet
   SAY NAME1 @20093
   SAY NAME2 @20353
   SAY UNIDENTIFIED_DESC @20094
   SAY DESC @20354
     WRITE_SHORT 0x42 0  //Setting lore value to 0 to prevent need to identify
-      COPY ~k0_iskp/soditmresource/eff/bdamul11.eff~ ~override~
+      COPY ~k0_iskp/eff/bdamul11.eff~ ~override~
 END
 
 /////////GLIMMER OF HOPE +2/////////
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdblun08.itm~ BEGIN // Check if already present
-COPY ~k0_iskp/soditmresource/itm/bdblun08.itm~ ~override~    //Glimmer of Hope +2
+COPY ~k0_iskp/itm/bdblun08.itm~ ~override~    //Glimmer of Hope +2
   SAY NAME1 @20033
   SAY NAME2 @20355
   SAY UNIDENTIFIED_DESC @20034
@@ -1111,40 +1101,40 @@ END
 
 ////////////COLD FURY +2///////////
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdhalb03.itm~ BEGIN // Check if already present
-COPY ~k0_iskp/soditmresource/itm/bdhalb03.itm~ ~override~    //Cold Fury +2
+COPY ~k0_iskp/itm/bdhalb03.itm~ ~override~    //Cold Fury +2
   SAY NAME1 @20047
   SAY NAME2 @20357
   SAY UNIDENTIFIED_DESC @20048
   SAY DESC @20358
-    COPY ~k0_iskp/soditmresource/spl/bdhalb03.spl~ ~override~
+    COPY ~k0_iskp/spl/bdhalb03.spl~ ~override~
       LPF ALTER_EFFECT INT_VAR match_opcode = 139 parameter1 = RESOLVE_STR_REF(@40007) END
 END
 
 //////THE BLOODIED GUARDIAN +2/////
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdshld08.itm~ BEGIN // Check if already present
-COPY ~k0_iskp/soditmresource/itm/bdshld08.itm~ ~override~    //The Bloodied Guardian +2
+COPY ~k0_iskp/itm/bdshld08.itm~ ~override~    //The Bloodied Guardian +2
   SAY NAME1 @20215
   SAY NAME2 @20359
   SAY UNIDENTIFIED_DESC @20216
   SAY DESC @20360
-    COPY ~k0_iskp/soditmresource/spl/bdshblod.spl~ ~override~
+    COPY ~k0_iskp/spl/bdshblod.spl~ ~override~
     LPF ALTER_EFFECT INT_VAR match_opcode = 139 parameter1 = RESOLVE_STR_REF(@40001) END
 END
 
 ///////////MEDAL OF VALOR//////////
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdmisc32.itm~ BEGIN // Check if already present
-COPY ~k0_iskp/soditmresource/itm/bdmisc32.itm~ ~override~    //Medal of Valor
+COPY ~k0_iskp/itm/bdmisc32.itm~ ~override~    //Medal of Valor
   SAY NAME1 @20093
   SAY NAME2 @20361
   SAY UNIDENTIFIED_DESC @20094
   SAY DESC @20362
-    COPY ~k0_iskp/soditmresource/spl/bdshblod.spl~ ~override~
+    COPY ~k0_iskp/spl/bdshblod.spl~ ~override~
     LPF ALTER_EFFECT INT_VAR match_opcode = 139 parameter1 = RESOLVE_STR_REF(@40001) END
 END
 
 ////////RING OF THE CRUSADE////////
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdring03.itm~ BEGIN // Check if already present
-COPY ~k0_iskp/soditmresource/itm/bdring03.itm~ ~override~    //Ring of the Crusade
+COPY ~k0_iskp/itm/bdring03.itm~ ~override~    //Ring of the Crusade
   SAY NAME1 @20105
   SAY NAME2 @20363
   SAY UNIDENTIFIED_DESC @20106
@@ -1153,28 +1143,28 @@ END
 
 /////////CORINTH'S BOW +2//////////
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdbow02.itm~ BEGIN // Check if already present
-COPY ~k0_iskp/soditmresource/itm/bdbow02.itm~ ~override~    //Corinth's Bow +2
+COPY ~k0_iskp/itm/bdbow02.itm~ ~override~    //Corinth's Bow +2
   SAY NAME1 @20055
   SAY NAME2 @20365
   SAY UNIDENTIFIED_DESC @20056
   SAY DESC @20366
-    COPY ~k0_iskp/soditmresource/spl/bdbow02.spl~ ~override~
+    COPY ~k0_iskp/spl/bdbow02.spl~ ~override~
 END
 
 //WAND OF WATER ELEMENTAL SUMMONING
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdwand01.itm~ BEGIN // Check if already present
-COPY ~k0_iskp/soditmresource/itm/bdwand01.itm~ ~override~    //Wand of Water Elemental Summoning
+COPY ~k0_iskp/itm/bdwand01.itm~ ~override~    //Wand of Water Elemental Summoning
   SAY NAME1 @20121
   SAY NAME2 @20367
   SAY UNIDENTIFIED_DESC @20122
   SAY DESC @20368
     ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdwelems.cre~ BEGIN // CRE required for summon
-    COPY ~k0_iskp/soditmresource/cre/bdwelems.cre~ ~override~
+    COPY ~k0_iskp/cre/bdwelems.cre~ ~override~
       SAY NAME1 @40031
       SAY NAME2 @40031
       END
         ACTION_IF NOT FILE_EXISTS_IN_GAME ~cwelemw.2da~ BEGIN //2DA required for summon
-        COPY ~k0_iskp/soditmresource/2da/cwelemw.2da~ ~override~
+        COPY ~k0_iskp/2da/cwelemw.2da~ ~override~
         END
           ACTION_IF NOT FILE_EXISTS_IN_GAME ~melwa1.bam~ BEGIN //BAMs required for animation
           COPY ~k0_iskp/anim/iwdwaterele/bam~ ~override~
@@ -1189,7 +1179,7 @@ END
 
 /////PROTECTOR OF THE UNWORTHY/////
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdbelt04.itm~ BEGIN // Check if already present
-COPY ~k0_iskp/soditmresource/itm/bdbelt04.itm~ ~override~    //Protector of the Unworthy
+COPY ~k0_iskp/itm/bdbelt04.itm~ ~override~    //Protector of the Unworthy
   SAY NAME1 @20109
   SAY NAME2 @20369
   SAY UNIDENTIFIED_DESC @20110
@@ -1198,16 +1188,16 @@ END
 
 /////COMMANDER'S CHAIN MAIL +2/////
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdchan04.itm~ BEGIN // Check if already present
-COPY ~k0_iskp/soditmresource/itm/bdchan04.itm~ ~override~    //Commander's Chain Mail +2
+COPY ~k0_iskp/itm/bdchan04.itm~ ~override~    //Commander's Chain Mail +2
   SAY NAME1 @20069
   SAY NAME2 @20371
   SAY UNIDENTIFIED_DESC @20070
   SAY DESC @20372
     LPF ALTER_EFFECT INT_VAR match_opcode = 267 match_parameter1 = 25818 parameter1 = RESOLVE_STR_REF(@40032) END
     LPF ALTER_EFFECT INT_VAR match_opcode = 267 match_parameter1 = 20568 parameter1 = RESOLVE_STR_REF(@40033) END
-      COPY ~k0_iskp/soditmresource/eff/bdchan04.eff~ ~override~
-        ADD_PROJECTILE ~k0_iskp/soditmresource/pro/bdvrpo.pro~
-        COPY ~k0_iskp/soditmresource/spl/bdchan04.spl~ ~override~
+      COPY ~k0_iskp/eff/bdchan04.eff~ ~override~
+        ADD_PROJECTILE ~k0_iskp/pro/bdvrpo.pro~
+        COPY ~k0_iskp/spl/bdchan04.spl~ ~override~
           LPF ALTER_SPELL_HEADER INT_VAR projectile = EVAL "%bdvrpo%" END
           LPF ALTER_EFFECT INT_VAR match_opcode = 267 match_parameter1 = 25818 parameter1 = RESOLVE_STR_REF(@40032) END
           LPF ALTER_EFFECT INT_VAR match_opcode = 267 match_parameter1 = 20568 parameter1 = RESOLVE_STR_REF(@40033) END
@@ -1215,7 +1205,7 @@ END
 
 /////////////THE GIFT//////////////
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdamul12.itm~ BEGIN // Check if already present
-COPY ~k0_iskp/soditmresource/itm/bdamul12.itm~ ~override~    //The Gift
+COPY ~k0_iskp/itm/bdamul12.itm~ ~override~    //The Gift
   SAY NAME1 @20093
   SAY NAME2 @20373
   SAY UNIDENTIFIED_DESC @20094
@@ -1224,7 +1214,7 @@ END
 
 ///////CORNUGON'S REVENGE +2///////
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdleat01.itm~ BEGIN // Check if already present
-COPY ~k0_iskp/soditmresource/itm/bdleat01.itm~ ~override~    //Cornugon's Revenge +2
+COPY ~k0_iskp/itm/bdleat01.itm~ ~override~    //Cornugon's Revenge +2
   SAY NAME1 @20375
   SAY NAME2 @20377
   SAY UNIDENTIFIED_DESC @20376
@@ -1234,26 +1224,26 @@ END
 
 /////////MYCONID BLOOM-SAC/////////
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdmisc08.itm~ BEGIN // Check if already present
-COPY ~k0_iskp/soditmresource/itm/bdmisc08.itm~ ~override~    //Myconid Bloom-Sac
+COPY ~k0_iskp/itm/bdmisc08.itm~ ~override~    //Myconid Bloom-Sac
   SAY NAME1 @20379
   SAY NAME2 @20381
   SAY UNIDENTIFIED_DESC @20380
   SAY DESC @20382
     ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdmycsu1.cre~ BEGIN // CRE required for summon
-      COPY ~k0_iskp/soditmresource/cre/bdmycsu1.cre~ ~override~
+      COPY ~k0_iskp/cre/bdmycsu1.cre~ ~override~
         SAY NAME1 @40035
         SAY NAME2 @40035
         END
           ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdmisc08.2da~ BEGIN //2DA required for summon
-          COPY ~k0_iskp/soditmresource/2da/bdmisc08.2da~ ~override~
+          COPY ~k0_iskp/2da/bdmisc08.2da~ ~override~
           END
             ACTION_IF NOT FILE_EXISTS_IN_GAME ~b5-20m1.itm~ BEGIN //Weapon required for CRE
-            COPY ~k0_iskp/soditmresource/itm/b5-20m1.itm~ ~override~
+            COPY ~k0_iskp/itm/b5-20m1.itm~ ~override~
             SAY NAME1 @40036
             SAY NAME2 @40036
             END
               ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdplant.itm~ BEGIN //Ring required for CRE
-              COPY ~k0_iskp/soditmresource/itm/bdplant.itm~ ~override~
+              COPY ~k0_iskp/itm/bdplant.itm~ ~override~
               SAY NAME1 @20105
               SAY NAME2 @20105
                 LPF ALTER_EFFECT INT_VAR match_opcode = 206 parameter1 = RESOLVE_STR_REF(@40013) END
@@ -1268,7 +1258,7 @@ COPY ~k0_iskp/soditmresource/itm/bdmisc08.itm~ ~override~    //Myconid Bloom-Sac
                 LPF ALTER_EFFECT INT_VAR match_opcode = 267 match_parameter1 = 25137 parameter1 = RESOLVE_STR_REF(@40002) END
                 END
                   ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdmycsp1.spl~ BEGIN //Ring required for CRE
-                  COPY ~k0_iskp/soditmresource/spl/bdmycsp1.spl~ ~override~
+                  COPY ~k0_iskp/spl/bdmycsp1.spl~ ~override~
                   SAY NAME1 @40042
                     LPF ALTER_EFFECT INT_VAR match_opcode = 139 parameter1 = RESOLVE_STR_REF(@40022) END
                     END
@@ -1276,7 +1266,7 @@ COPY ~k0_iskp/soditmresource/itm/bdmisc08.itm~ ~override~    //Myconid Bloom-Sac
 
 /////////////////Adding SoD item ability tooltips\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
-COPY - ~k0_iskp/soditmresource/2da/soditmtooltip.2da~ ~k0_iskp/soditmresource/2da/soditmtooltip.2da~
+COPY - ~k0_iskp/2da/soditmtooltip.2da~ ~k0_iskp/2da/soditmtooltip.2da~
   READ_2DA_ENTRIES_NOW r2en_tooltip 1
   FOR (row = 0; row < r2en_tooltip; row += 1) BEGIN
     READ_2DA_ENTRY_FORMER r2en_tooltip row 0 item
@@ -1301,129 +1291,127 @@ COPY_EXISTING ~tooltip.2da~ ~override~
 ///////////Adding more SoD items into existing import script\\\\\\\\\\\\\\\\\\\
 
 ACTION_IF FILE_EXISTS_IN_GAME ~bdsodimp.bcs~ BEGIN // Check for existing import script before extending
-  EXTEND_BOTTOM ~bdsodimp.bcs~ ~k0_iskp/soditmresource/baf/k0sodimp.baf~
+  EXTEND_BOTTOM ~bdsodimp.bcs~ ~k0_iskp/baf/k0sodimp.baf~
 END
 
-////////////////////////Placing SoD items in-game\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-//////*-denotes that item imports regardless of presence in imported save, importing a basic SoD save still required\\\\\\
-
-EXTEND_BOTTOM ~ar0602.bcs~ ~k0_iskp/soditmresource/baf/k0ar0602.baf~  //Keyring*, Gift of the Demon +1*
-EXTEND_BOTTOM ~ar0603.bcs~ ~k0_iskp/soditmresource/baf/k0ar0603.baf~  //The Gift
-EXTEND_BOTTOM ~ar1106.bcs~ ~k0_iskp/soditmresource/baf/k0ar1106.baf~  //Purification Stone
-EXTEND_BOTTOM ~ar0400.bcs~ ~k0_iskp/soditmresource/baf/k0ar0400.baf~  //Festering Spear +1*, Backwhacker +2, Battle Tankard
-EXTEND_BOTTOM ~ar0505.bcs~ ~k0_iskp/soditmresource/baf/k0ar0505.baf~  //Sword of Ruin +2
-EXTEND_BOTTOM ~ar1203.bcs~ ~k0_iskp/soditmresource/baf/k0ar1203.baf~  //Crown of Lies, Sundermaul +3
-EXTEND_BOTTOM ~ar1402.bcs~ ~k0_iskp/soditmresource/baf/k0ar1402.baf~  //Tongue of Acid +3/Echo of the Fiend +3/The Guardian Devil
-EXTEND_BOTTOM ~ar1900.bcs~ ~k0_iskp/soditmresource/baf/k0ar1900.baf~  //Rhino Beetle Plate/Rhino Beetle Shield +2
-EXTEND_BOTTOM ~ar0301.bcs~ ~k0_iskp/soditmresource/baf/k0ar0301.baf~  //The Night's Embrace +3
-EXTEND_BOTTOM ~ar0202.bcs~ ~k0_iskp/soditmresource/baf/k0ar0202.baf~  //Star-Strewn Boots
-EXTEND_BOTTOM ~ar1301.bcs~ ~k0_iskp/soditmresource/baf/k0ar1301.baf~  //Shadowed Spear +2
-EXTEND_BOTTOM ~haerdali.bcs~ ~k0_iskp/soditmresource/baf/k0haerd.baf~  //Cloverleaf
-EXTEND_BOTTOM ~nalia.bcs~ ~k0_iskp/soditmresource/baf/k0nalia.baf~      //Trollblood Ioun Stone
-EXTEND_BOTTOM ~ar0705.bcs~ ~k0_iskp/soditmresource/baf/k0ar0705.baf~  //Cloak of Minor Arcana
-EXTEND_BOTTOM ~ar0804.bcs~ ~k0_iskp/soditmresource/baf/k0ar0804.baf~  //Acid-Etched Dagger +2
-EXTEND_BOTTOM ~ohhfak.bcs~ ~k0_iskp/soditmresource/baf/k0hexxa.baf~      //Element's Fury +2
-EXTEND_BOTTOM ~keldorn.bcs~ ~k0_iskp/soditmresource/baf/k0keldo.baf~  //Astral Crossbow +2
-EXTEND_BOTTOM ~ar0701.bcs~ ~k0_iskp/soditmresource/baf/k0ar0701.baf~  //Bow of the Banshee +2
-EXTEND_BOTTOM ~ar1202.bcs~ ~k0_iskp/soditmresource/baf/k0ar1202.baf~  //Ring of Purity, Protector of the Unworthy*
-EXTEND_TOP ~rasaad.bcs~ ~k0_iskp/soditmresource/baf/k0rasaa.baf~      //Headband of Focus
-EXTEND_BOTTOM ~ar0500.bcs~ ~k0_iskp/soditmresource/baf/k0ar0500.baf~  //Storm Pike +2, Harold +2, Spell Breaker +2, Peacock Cap*
-EXTEND_BOTTOM ~oh7000.bcs~ ~k0_iskp/soditmresource/baf/k0ar7000.baf~  //Crimson Dawn +2
-EXTEND_BOTTOM ~pirmur01.bcs~ ~k0_iskp/soditmresource/baf/k0pirmu.baf~  //The Hydra +2
-EXTEND_BOTTOM ~anomen.bcs~ ~k0_iskp/soditmresource/baf/k0anom.baf~      //Martyr's Morningstar +2
-EXTEND_BOTTOM ~korgan.bcs~ ~k0_iskp/soditmresource/baf/k0korg.baf~      //Chill Axe +2
-EXTEND_BOTTOM ~ar0702.bcs~ ~k0_iskp/soditmresource/baf/k0ar0702.baf~  //Bracers of the Shuttered Lid, Helm of Unwavering Purpose, Cold Fury +2, Firefly +2, Commander's Chain Mail +2
-EXTEND_BOTTOM ~mazzy.bcs~ ~k0_iskp/soditmresource/baf/k0mazzy.baf~      //Stalwart Scales +2
-EXTEND_BOTTOM ~yoshimo.bcs~ ~k0_iskp/soditmresource/baf/k0yoshi.baf~  //Blood Red Ioun Stone
-EXTEND_BOTTOM ~dorn.bcs~ ~k0_iskp/soditmresource/baf/k0dorn.baf~      //Bloody Bone Plate +2
-EXTEND_BOTTOM ~aerie.bcs~ ~k0_iskp/soditmresource/baf/k0aerie.baf~      //Amulet of Whipsers
-EXTEND_BOTTOM ~neera.bcs~ ~k0_iskp/soditmresource/baf/k0neera.baf~      //Crommus's Capelet
-EXTEND_BOTTOM ~valygar.bcs~ ~k0_iskp/soditmresource/baf/k0valyg.baf~  //Stalker's Gauntlets
-EXTEND_BOTTOM ~cernd.bcs~ ~k0_iskp/soditmresource/baf/k0cernd.baf~      //Lon's Amulet
-EXTEND_BOTTOM ~ar1403.bcs~ ~k0_iskp/soditmresource/baf/k0ar1403.baf~  //The Suncatcher +2
-EXTEND_BOTTOM ~jan.bcs~ ~k0_iskp/soditmresource/baf/k0jan.baf~          //Modron Heart
-EXTEND_BOTTOM ~ar0300.bcs~ ~k0_iskp/soditmresource/baf/k0ar0300.baf~  //Robe of Arcane Apititude
-EXTEND_BOTTOM ~ar0601.bcs~ ~k0_iskp/soditmresource/baf/k0ar0601.baf~  //Eadro's Blade +1*
-EXTEND_BOTTOM ~oh5000.bcs~ ~k0_iskp/soditmresource/baf/k0ar5000.baf~  //Sable Cloak
-EXTEND_BOTTOM ~ar2600.bcs~ ~k0_iskp/soditmresource/baf/k0ar2600.baf~  //Fractal Blade +3
-EXTEND_BOTTOM ~ar1304.bcs~ ~k0_iskp/soditmresource/baf/k0ar1304.baf~  //Daeros's Full Plate +1, Severance +2
-EXTEND_BOTTOM ~ar1904.bcs~ ~k0_iskp/soditmresource/baf/k0ar1904.baf~  //Amulet of Abnormally Awesome Ankheg Summoning*
-EXTEND_BOTTOM ~ar0907.bcs~ ~k0_iskp/soditmresource/baf/k0ar0907.baf~  //The Bloodied Guardian +2
-EXTEND_BOTTOM ~oh5300.bcs~ ~k0_iskp/soditmresource/baf/k0oh5300.baf~  //Ring of the Crusade
-EXTEND_BOTTOM ~oh6000.bcs~ ~k0_iskp/soditmresource/baf/k0oh6000.baf~  //Wand of Water Elemental Summoning*
-EXTEND_BOTTOM ~ar2000.bcs~ ~k0_iskp/soditmresource/baf/k0ar2000.baf~  //Jester's Bracers, Wizard Hat, Raconteur's Regalia, Mosela's Cudgel +2, Savage Shortbow
-EXTEND_BOTTOM ~trrak01.bcs~ ~k0_iskp/soditmresource/baf/k0trrak1.baf~  //Sword of Troll Decapitation +1*
+///////////////////Placing SoD items in-game\\\\\\\\\\\\\\\\\\\\\\\\\\
+EXTEND_BOTTOM ~ar0602.bcs~ ~k0_iskp/baf/k0ar0602.baf~  //Keyring*, Gift of the Demon +1*
+EXTEND_BOTTOM ~ar0603.bcs~ ~k0_iskp/baf/k0ar0603.baf~  //The Gift
+EXTEND_BOTTOM ~ar1106.bcs~ ~k0_iskp/baf/k0ar1106.baf~  //Purification Stone
+EXTEND_BOTTOM ~ar0400.bcs~ ~k0_iskp/baf/k0ar0400.baf~  //Festering Spear +1*, Backwhacker +2, Battle Tankard
+EXTEND_BOTTOM ~ar0505.bcs~ ~k0_iskp/baf/k0ar0505.baf~  //Sword of Ruin +2
+EXTEND_BOTTOM ~ar1203.bcs~ ~k0_iskp/baf/k0ar1203.baf~  //Crown of Lies, Sundermaul +3
+EXTEND_BOTTOM ~ar1402.bcs~ ~k0_iskp/baf/k0ar1402.baf~  //Tongue of Acid +3/Echo of the Fiend +3/The Guardian Devil
+EXTEND_BOTTOM ~ar1900.bcs~ ~k0_iskp/baf/k0ar1900.baf~  //Rhino Beetle Plate/Rhino Beetle Shield +2
+EXTEND_BOTTOM ~ar0301.bcs~ ~k0_iskp/baf/k0ar0301.baf~  //The Night's Embrace +3
+EXTEND_BOTTOM ~ar0202.bcs~ ~k0_iskp/baf/k0ar0202.baf~  //Star-Strewn Boots
+EXTEND_BOTTOM ~ar1301.bcs~ ~k0_iskp/baf/k0ar1301.baf~  //Shadowed Spear +2
+EXTEND_BOTTOM ~haerdali.bcs~ ~k0_iskp/baf/k0haerd.baf~  //Cloverleaf
+EXTEND_BOTTOM ~nalia.bcs~ ~k0_iskp/baf/k0nalia.baf~      //Trollblood Ioun Stone
+EXTEND_BOTTOM ~ar0705.bcs~ ~k0_iskp/baf/k0ar0705.baf~  //Cloak of Minor Arcana
+EXTEND_BOTTOM ~ar0804.bcs~ ~k0_iskp/baf/k0ar0804.baf~  //Acid-Etched Dagger +2
+EXTEND_BOTTOM ~ohhfak.bcs~ ~k0_iskp/baf/k0hexxa.baf~      //Element's Fury +2
+EXTEND_BOTTOM ~keldorn.bcs~ ~k0_iskp/baf/k0keldo.baf~  //Astral Crossbow +2
+EXTEND_BOTTOM ~ar0701.bcs~ ~k0_iskp/baf/k0ar0701.baf~  //Bow of the Banshee +2
+EXTEND_BOTTOM ~ar1202.bcs~ ~k0_iskp/baf/k0ar1202.baf~  //Ring of Purity, Protector of the Unworthy*
+EXTEND_TOP ~rasaad.bcs~ ~k0_iskp/baf/k0rasaa.baf~      //Headband of Focus
+EXTEND_BOTTOM ~ar0500.bcs~ ~k0_iskp/baf/k0ar0500.baf~  //Storm Pike +2, Harold +2, Spell Breaker +2, Peacock Cap*
+EXTEND_BOTTOM ~oh7000.bcs~ ~k0_iskp/baf/k0ar7000.baf~  //Crimson Dawn +2
+EXTEND_BOTTOM ~pirmur01.bcs~ ~k0_iskp/baf/k0pirmu.baf~  //The Hydra +2
+EXTEND_BOTTOM ~anomen.bcs~ ~k0_iskp/baf/k0anom.baf~      //Martyr's Morningstar +2
+EXTEND_BOTTOM ~korgan.bcs~ ~k0_iskp/baf/k0korg.baf~      //Chill Axe +2
+EXTEND_BOTTOM ~ar0702.bcs~ ~k0_iskp/baf/k0ar0702.baf~  //Bracers of the Shuttered Lid, Helm of Unwavering Purpose, Cold Fury +2, Firefly +2, Commander's Chain Mail +2
+EXTEND_BOTTOM ~mazzy.bcs~ ~k0_iskp/baf/k0mazzy.baf~      //Stalwart Scales +2
+EXTEND_BOTTOM ~yoshimo.bcs~ ~k0_iskp/baf/k0yoshi.baf~  //Blood Red Ioun Stone
+EXTEND_BOTTOM ~dorn.bcs~ ~k0_iskp/baf/k0dorn.baf~      //Bloody Bone Plate +2
+EXTEND_BOTTOM ~aerie.bcs~ ~k0_iskp/baf/k0aerie.baf~      //Amulet of Whipsers
+EXTEND_BOTTOM ~neera.bcs~ ~k0_iskp/baf/k0neera.baf~      //Crommus's Capelet
+EXTEND_BOTTOM ~valygar.bcs~ ~k0_iskp/baf/k0valyg.baf~  //Stalker's Gauntlets
+EXTEND_BOTTOM ~cernd.bcs~ ~k0_iskp/baf/k0cernd.baf~      //Lon's Amulet
+EXTEND_BOTTOM ~ar1403.bcs~ ~k0_iskp/baf/k0ar1403.baf~  //The Suncatcher +2
+EXTEND_BOTTOM ~jan.bcs~ ~k0_iskp/baf/k0jan.baf~          //Modron Heart
+EXTEND_BOTTOM ~ar0300.bcs~ ~k0_iskp/baf/k0ar0300.baf~  //Robe of Arcane Apititude
+EXTEND_BOTTOM ~ar0601.bcs~ ~k0_iskp/baf/k0ar0601.baf~  //Eadro's Blade +1*
+EXTEND_BOTTOM ~oh5000.bcs~ ~k0_iskp/baf/k0ar5000.baf~  //Sable Cloak
+EXTEND_BOTTOM ~ar2600.bcs~ ~k0_iskp/baf/k0ar2600.baf~  //Fractal Blade +3
+EXTEND_BOTTOM ~ar1304.bcs~ ~k0_iskp/baf/k0ar1304.baf~  //Daeros's Full Plate +1, Severance +2
+EXTEND_BOTTOM ~ar1904.bcs~ ~k0_iskp/baf/k0ar1904.baf~  //Amulet of Abnormally Awesome Ankheg Summoning*
+EXTEND_BOTTOM ~ar0907.bcs~ ~k0_iskp/baf/k0ar0907.baf~  //The Bloodied Guardian +2
+EXTEND_BOTTOM ~oh5300.bcs~ ~k0_iskp/baf/k0oh5300.baf~  //Ring of the Crusade
+EXTEND_BOTTOM ~oh6000.bcs~ ~k0_iskp/baf/k0oh6000.baf~  //Wand of Water Elemental Summoning*
+EXTEND_BOTTOM ~ar2000.bcs~ ~k0_iskp/baf/k0ar2000.baf~  //Jester's Bracers, Wizard Hat, Raconteur's Regalia, Mosela's Cudgel +2, Savage Shortbow
+EXTEND_BOTTOM ~trrak01.bcs~ ~k0_iskp/baf/k0trrak1.baf~  //Sword of Troll Decapitation +1*
 
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~ar0418.bcs~ BEGIN  //Check for existing area script first
-  COMPILE ~k0_iskp/soditmresource/baf/k0ar0418.baf~  //Myconid Bloom-Sac*
+  COMPILE ~k0_iskp/baf/k0ar0418.baf~  //Myconid Bloom-Sac*
    COPY_EXISTING ~ar0418.are~ ~override~
     WRITE_ASCII 0x94 k0ar0418
     END
       ELSE BEGIN
-        EXTEND_BOTTOM ~ar0418.bcs~ ~k0_iskp/soditmresource/baf/k0ar0418.baf~
+        EXTEND_BOTTOM ~ar0418.bcs~ ~k0_iskp/baf/k0ar0418.baf~
         END
 
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~ar0408.bcs~ BEGIN  //Check for existing area script first
-  COMPILE ~k0_iskp/soditmresource/baf/k0ar0408.baf~  //Martyr's Morningstar +2
+  COMPILE ~k0_iskp/baf/k0ar0408.baf~  //Martyr's Morningstar +2
    COPY_EXISTING ~ar0408.are~ ~override~
     WRITE_ASCII 0x94 k0ar0408
     END
       ELSE BEGIN
-        EXTEND_BOTTOM ~ar0408.bcs~ ~k0_iskp/soditmresource/baf/k0ar0408.baf~
+        EXTEND_BOTTOM ~ar0408.bcs~ ~k0_iskp/baf/k0ar0408.baf~
         END
 
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~ar1101.bcs~ BEGIN  //Check for existing area script first
-  COMPILE ~k0_iskp/soditmresource/baf/k0ar1101.baf~  //The Secret Revealed*
+  COMPILE ~k0_iskp/baf/k0ar1101.baf~  //The Secret Revealed*
    COPY_EXISTING ~ar1101.are~ ~override~
     WRITE_ASCII 0x94 k0ar1101
     END
       ELSE BEGIN
-        EXTEND_BOTTOM ~ar1101.bcs~ ~k0_iskp/soditmresource/baf/k0ar1101.baf~
+        EXTEND_BOTTOM ~ar1101.bcs~ ~k0_iskp/baf/k0ar1101.baf~
         END
 
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~ar0310.bcs~ BEGIN  //Check for existing area script first
-  COMPILE ~k0_iskp/soditmresource/baf/k0ar0310.baf~  //Vexation +2, Cornugon's Revenge +2
+  COMPILE ~k0_iskp/baf/k0ar0310.baf~  //Vexation +2, Cornugon's Revenge +2
    COPY_EXISTING ~ar0310.are~ ~override~
     WRITE_ASCII 0x94 k0ar0310
     END
       ELSE BEGIN
-        EXTEND_BOTTOM ~ar0310.bcs~ ~k0_iskp/soditmresource/baf/k0ar0310.baf~
+        EXTEND_BOTTOM ~ar0310.bcs~ ~k0_iskp/baf/k0ar0310.baf~
         END
 
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~ar0305.bcs~ BEGIN  //Check for existing area script first
-  COMPILE ~k0_iskp/soditmresource/baf/k0ar0305.baf~  //Nimblefinger Gloves, Soft Feet
+  COMPILE ~k0_iskp/baf/k0ar0305.baf~  //Nimblefinger Gloves, Soft Feet
    COPY_EXISTING ~ar0305.are~ ~override~
     WRITE_ASCII 0x94 k0ar0305
     END
       ELSE BEGIN
-        EXTEND_BOTTOM ~ar0305.bcs~ ~k0_iskp/soditmresource/baf/k0ar0305.baf~
+        EXTEND_BOTTOM ~ar0305.bcs~ ~k0_iskp/baf/k0ar0305.baf~
         END
 
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~ar0712.bcs~ BEGIN  //Check for existing area script first
-COMPILE ~k0_iskp/soditmresource/baf/k0ar0712.baf~    //The Uncursed Staff +1, Screaming Bagpipes*, Dread Hammer +2
+COMPILE ~k0_iskp/baf/k0ar0712.baf~    //The Uncursed Staff +1, Screaming Bagpipes*, Dread Hammer +2
     COPY_EXISTING ~ar0712.are~ ~override~
       WRITE_ASCII 0x94 k0ar0712
       END
         ELSE BEGIN
-          EXTEND_BOTTOM ~ar0712.bcs~ ~k0_iskp/soditmresource/baf/k0ar0712.baf~
+          EXTEND_BOTTOM ~ar0712.bcs~ ~k0_iskp/baf/k0ar0712.baf~
           END
-            COMPILE  ~k0_iskp/soditmresource/baf/k0pooky.baf~  //new race script to allow pooky to use the bagpipes in combat, since his default script is shared
+            COMPILE  ~k0_iskp/baf/k0pooky.baf~  //new race script to allow pooky to use the bagpipes in combat, since his default script is shared
             COPY_EXISTING ~sevpat03.cre~ ~override~
               WRITE_ASCII 0x258 k0pooky
 
 
-EXTEND_BOTTOM ~ar1200.bcs~ ~k0_iskp/soditmresource/baf/k0ar1200.baf~  //The Forest Queen's Benediction*, Helm of Equus*
-  EXTEND_BOTTOM ~vaelasa.bcs~ ~k0_iskp/soditmresource/baf/k0vaela.baf~  //allows vaelasa to use the FBQ in combat
+EXTEND_BOTTOM ~ar1200.bcs~ ~k0_iskp/baf/k0ar1200.baf~  //The Forest Queen's Benediction*, Helm of Equus*
+  EXTEND_BOTTOM ~vaelasa.bcs~ ~k0_iskp/baf/k0vaela.baf~  //allows vaelasa to use the FBQ in combat
     ACTION_IF FILE_EXISTS_IN_GAME ~vaelasa.dlg~ BEGIN
-       COMPILE ~k0_iskp/soditmresource/dlg/k0vaela.d~ //update vaelasa's dialogue to give FBQ as reward for returning acorns, if it's in her inventory
+       COMPILE ~k0_iskp/dlg/k0vaela.d~ //update vaelasa's dialogue to give FBQ as reward for returning acorns, if it's in her inventory
     END
 
-COMPILE ~k0_iskp/soditmresource/dlg/k0trgen.d~  //Dervish Crescent +2
-COMPILE ~k0_iskp/soditmresource/dlg/k0raeli.d~  //Reed of Echoes
-COMPILE ~k0_iskp/soditmresource/dlg/k0garre.d~  //Locket of Embracing
-COMPILE ~k0_iskp/soditmresource/dlg/k0roger.d~  //Belt of the Cunning Rogue
-COMPILE ~k0_iskp/soditmresource/dlg/k0scsai.d~  //Shield of Egons +2
-COMPILE ~k0_iskp/soditmresource/dlg/k0trski.d~  //Bracers of Perseverance
-COMPILE ~k0_iskp/soditmresource/dlg/k0mourn.d~  //Flute of the Immaculate Breeze*
-COMPILE ~k0_iskp/soditmresource/dlg/k0udsol.d~  //Cloak of the Gargoyle
-COMPILE ~k0_iskp/soditmresource/dlg/k0bzglor.d~  //Blazing Glory +3
+COMPILE ~k0_iskp/dlg/k0trgen.d~  //Dervish Crescent +2
+COMPILE ~k0_iskp/dlg/k0raeli.d~  //Reed of Echoes
+COMPILE ~k0_iskp/dlg/k0garre.d~  //Locket of Embracing
+COMPILE ~k0_iskp/dlg/k0roger.d~  //Belt of the Cunning Rogue
+COMPILE ~k0_iskp/dlg/k0scsai.d~  //Shield of Egons +2
+COMPILE ~k0_iskp/dlg/k0trski.d~  //Bracers of Perseverance
+COMPILE ~k0_iskp/dlg/k0mourn.d~  //Flute of the Immaculate Breeze*
+COMPILE ~k0_iskp/dlg/k0udsol.d~  //Cloak of the Gargoyle
+COMPILE ~k0_iskp/dlg/k0bzglor.d~  //Blazing Glory +3
