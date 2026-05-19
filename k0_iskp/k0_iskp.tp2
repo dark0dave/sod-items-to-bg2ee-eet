@@ -14,7 +14,7 @@ LANGUAGE ~English~ ~english~ ~k0_iskp/tra/english/english.tra~
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
 /////                                                  \\\\\
-///// Daeros Trollkiller's Item-Spell-Kit pack         \\\\\
+///// Daeros Trollkiller's Sod items to bgee and eet   \\\\\
 /////                                                  \\\\\
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
@@ -30,14 +30,14 @@ GROUP @10003
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001
 PRINT @10002
 
-INCLUDE ~k0_iskp/tpa/functions.tpa~    //adding functions
-INCLUDE ~k0_iskp/tpa/addspellex.tpa~    //adding functions
+INCLUDE ~k0_iskp/tpa/functions.tpa~
 
-ACTION_IF GAME_IS ~bg2ee~ BEGIN    // Adding the resource files for SoD items into BG2
-COPY ~k0_iskp/bam~ ~override~
+// Adding the resource files for SoD items into BG2
+ACTION_IF GAME_IS ~bg2ee~ BEGIN
+  COPY ~k0_iskp/bam~ ~override~
 END
 
-////////////////////Installing required ITMs for BG2\\\\\\\\\\\\\\\\\\\\\\\\\\\
+////////////////////Items\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
 ////////////VEXATION +2////////////////
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdsw1h21.itm~ BEGIN // Check if already present
@@ -1285,7 +1285,6 @@ COPY - ~k0_iskp/2da/soditmtooltip.2da~ ~k0_iskp/2da/soditmtooltip.2da~
 COPY_EXISTING ~tooltip.2da~ ~override~
   LPF a7#normalize_table END
   BUT_ONLY
-
 
 
 ///////////Adding more SoD items into existing import script\\\\\\\\\\\\\\\\\\\
