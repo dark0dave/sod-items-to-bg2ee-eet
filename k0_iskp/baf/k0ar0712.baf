@@ -1,17 +1,5 @@
 IF
     Global("BD_HAVE_SOD","GLOBAL",1)
-    Global("K0_SOD_IMPORT_12","GLOBAL",1)
-THEN
-    RESPONSE #100
-        SetInterrupt(FALSE)
-        SetGlobal("K0_SOD_IMPORT_12","GLOBAL",2)
-        ActionOverride("SEVPAT02",CreateItem("bdblun06",0,0,0)) // The Uncursed Staff +1
-        ActionOverride("SEVPAT02",XEquipItem("bdblun06",Myself,SLOT_WEAPON0,EQUIP))  // The Uncursed Staff +1
-        SetInterrupt(FALSE)
-END
-
-IF
-    Global("BD_HAVE_SOD","GLOBAL",1)
     Global("K0_SOD_BAGPIPES","GLOBAL",0)
 THEN
     RESPONSE #100
@@ -29,7 +17,7 @@ THEN
     RESPONSE #100
         SetInterrupt(FALSE)
         SetGlobal("K0_SOD_IMPORT_56","GLOBAL",2)
-        TakeItemReplace("bdhamm06","HAMM02","SEVPAT01")  // Dread Hammer +2/ War Hammer +1
-        ActionOverride("SEVPAT01",XEquipItem("bdhamm01",Myself,SLOT_WEAPON0,EQUIP))  // Sundermaul +3
+        TakeItemReplace("bdhamm06","HAMM02","SEVPAT01")  // Dread Hammer +2
+        ActionOverride("SEVPAT01",XEquipItem("bdhamm06",Myself,SLOT_WEAPON0,EQUIP))  // Dread Hammer +2
         SetInterrupt(FALSE)
 END

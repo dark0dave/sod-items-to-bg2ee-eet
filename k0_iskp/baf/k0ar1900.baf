@@ -9,15 +9,3 @@ THEN
         ActionOverride("TDR10A",XEquipItem("bdplat04",Myself,SLOT_ARMOR,EQUIP)  // Rhino Beetle Plate
         SetInterrupt(FALSE)
 END
-
-IF
-    Global("BD_HAVE_SOD","GLOBAL",1)
-    Global("K0_SOD_IMPORT_22","GLOBAL",1)
-THEN
-    RESPONSE #100
-        SetInterrupt(FALSE)
-        SetGlobal("K0_SOD_IMPORT_22","GLOBAL",2)
-        ActionOverride("TDR10A",CreateItem("bdshld04",0,0,0)) // Rhino Beetle Shield +2
-        ActionOverride("TDR10A",XEquipItem("bdshld04",Myself,SLOT_SHIELD,EQUIP)  // Rhino Beetle Shield +2
-        SetInterrupt(FALSE)
-END
