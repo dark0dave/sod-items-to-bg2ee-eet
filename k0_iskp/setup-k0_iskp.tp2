@@ -1182,6 +1182,16 @@ ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdamul01.itm~ BEGIN
     END
 END
 
+OUTER_SET item = ~bdamul01~
+OUTER_SET ability1 = RESOLVE_STR_REF(@50001)
+APPEND ~tooltip.2da~ ~%item%  %ability1%  -1  -1~
+BUT_ONLY
+
+COPY_EXISTING ~tooltip.2da~ ~override~
+  LPF a7#normalize_table
+END
+BUT_ONLY
+
 COPY_EXISTING ~neera8.cre~ ~override~
   REPLACE_CRE_ITEM ~bdamul01~ #0 #0 #0 ~IDENTIFIED~ ~AMULET~  // Amulet of Whispers
 
@@ -1200,6 +1210,16 @@ ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdamul03.itm~ BEGIN
     WRITE_SHORT 0x42 0  // Setting lore value to 0 to prevent need to identify
   COPY ~k0_iskp/eff/bdankhsu.eff~ ~override~
 END
+
+OUTER_SET item = "bdamul03"
+OUTER_SET ability1 = RESOLVE_STR_REF(@50000)
+APPEND ~tooltip.2da~ ~%item%  %ability1%  -1  -1~
+BUT_ONLY
+
+COPY_EXISTING ~tooltip.2da~ ~override~
+  LPF a7#normalize_table
+END
+BUT_ONLY
 
 EXTEND_BOTTOM ~ar1904.bcs~ ~k0_iskp/baf/k0ar1904.baf~  // Amulet of Abnormally Awesome Ankheg Summoning*
 
@@ -1829,6 +1849,16 @@ ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdmisc05.itm~ BEGIN
     END
 END
 
+OUTER_SET item = "bdmisc05"
+OUTER_SET ability1 = RESOLVE_STR_REF(@50002)
+APPEND ~tooltip.2da~ ~%item%  %ability1%  -1  -1~
+BUT_ONLY
+
+COPY_EXISTING ~tooltip.2da~ ~override~
+  LPF a7#normalize_table
+END
+BUT_ONLY
+
 EXTEND_BOTTOM ~ar1106.bcs~ ~k0_iskp/baf/k0ar1106.baf~  // Purification Stone
 
 BEGIN ~daeros'full_plate~
@@ -1910,6 +1940,16 @@ ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdrobe01.itm~ BEGIN
     SAY UNIDENTIFIED_DESC @20080
     SAY DESC @20312
 END
+
+OUTER_SET item = "bdrobe01"
+OUTER_SET ability1 = RESOLVE_STR_REF(@50003)
+APPEND ~tooltip.2da~ ~%item%  %ability1%  -1  -1~
+BUT_ONLY
+
+COPY_EXISTING ~tooltip.2da~ ~override~
+  LPF a7#normalize_table
+END
+BUT_ONLY
 
 <<<<<<<< .../inlined/k0ar0300.baf
 IF
@@ -2233,6 +2273,16 @@ ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdclck05.itm~ BEGIN
     END
 END
 
+OUTER_SET item = "bdclck05"
+OUTER_SET ability1 = RESOLVE_STR_REF(@50004)
+APPEND ~tooltip.2da~ ~%item%  %ability1%  -1  -1~
+BUT_ONLY
+
+COPY_EXISTING ~tooltip.2da~ ~override~
+  LPF a7#normalize_table
+END
+BUT_ONLY
+
 COMPILE ~k0_iskp/dlg/k0udsol.d~  // Cloak of the Gargoyle
 
 BEGIN ~rhyte's_last_arrow~
@@ -2258,6 +2308,17 @@ ACTION_IF GAME_IS ~bg2ee~ BEGIN
         parameter1   = RESOLVE_STR_REF(@40010)
     END
 END
+
+OUTER_SET item = "k0rhytea"
+OUTER_SET ability1 = RESOLVE_STR_REF(@50005)
+OUTER_SET ability1 = RESOLVE_STR_REF(@50006)
+APPEND ~tooltip.2da~ ~%item%  %ability1%  %ability2%  -1~
+BUT_ONLY
+
+COPY_EXISTING ~tooltip.2da~ ~override~
+  LPF a7#normalize_table
+END
+BUT_ONLY
 
 <<<<<<<< .../inlined/k0ar0701.baf
 IF
@@ -2744,42 +2805,6 @@ ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdmycsp1.spl~ BEGIN  // Ring required for CRE
     END
 END
 COMPILE ~k0_iskp/baf/k0ar0418.baf~  // Myconid Bloom-Sac*
-// ///////////////Adding SoD item ability tooltips\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-COPY - ~k0_iskp/2da/soditmtooltip.2da~ ~k0_iskp/2da/soditmtooltip.2da~
-  READ_2DA_ENTRIES_NOW r2en_tooltip 1
-  FOR (row = 0; row < r2en_tooltip; row += 1) BEGIN
-    READ_2DA_ENTRY_FORMER r2en_tooltip row 0 item
-    READ_2DA_ENTRY_FORMER r2en_tooltip row 1 ability1
-    READ_2DA_ENTRY_FORMER r2en_tooltip row 2 ability2
-    READ_2DA_ENTRY_FORMER r2en_tooltip row 3 ability3
-    LPF RESOLVE_REF
-      STR_VAR
-        ref = EVAL ~%ability1%~
-      RET
-        ability1 = strref
-    END
-    LPF RESOLVE_REF
-      STR_VAR
-        ref = EVAL ~%ability2%~
-      RET
-        ability2 = strref
-    END
-    LPF RESOLVE_REF
-      STR_VAR
-        ref = EVAL ~%ability3%~
-      RET
-        ability3 = strref
-    END
-    INNER_ACTION BEGIN
-      APPEND ~tooltip.2da~ ~%item%  %ability1%  %ability2%  %ability3%~
-    END
-  END
-BUT_ONLY
-
-COPY_EXISTING ~tooltip.2da~ ~override~
-  LPF a7#normalize_table
-  END
-BUT_ONLY
 
 // /////////Adding more SoD items into existing import script\\\\\\\\\\\\\\\\\\\
 /*
