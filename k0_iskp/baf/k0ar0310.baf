@@ -1,10 +1,9 @@
 IF
-    Global("BD_HAVE_SOD","GLOBAL",1)
-    Global("K0_SOD_IMPORT_01","GLOBAL",1)
+    Global("K0_BDSW1H21","GLOBAL",0)
 THEN
     RESPONSE #100
         SetInterrupt(FALSE)
-        SetGlobal("K0_SOD_IMPORT_01","GLOBAL",2)
+        SetGlobal("K0_SOD_IMPORT_01","GLOBAL",1)
         TakeItemReplace("bdsw1h21","SW1H05","PIRSEA01")  // Vexation +2
         ActionOverride("PIRSEA01",XEquipItem("bdsw1h21",Myself,SLOT_WEAPON0,EQUIP))  // Vexation +2
         SetInterrupt(FALSE)
