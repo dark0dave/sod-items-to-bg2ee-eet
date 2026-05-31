@@ -642,8 +642,10 @@ ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdbrd04.itm~ BEGIN
   COPY ~k0_iskp/eff/bdbrd04.eff~ ~override~
   COPY ~k0_iskp/spl/bdbrd4a.spl~ ~override~
 END
-
 COMPILE ~k0_iskp/baf/k0ar0712.baf~  // The Uncursed Staff +1, Screaming Bagpipes*, Dread Hammer +2
+COMPILE ~k0_iskp/baf/k0pooky.baf~  // new race script to allow pooky to use the bagpipes in combat, since his default script is shared
+COPY_EXISTING ~sevpat03.cre~ ~override~
+  WRITE_ASCII 0x258 k0pooky
 
 BEGIN ~cloak_of_minor_arcana~
 DESIGNATED 1018
@@ -916,7 +918,6 @@ DESIGNATED 1027
 GROUP ~Items~
 LABEL ~forest queen's benediction~
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001
-
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdbrd01.itm~ BEGIN
   COPY ~k0_iskp/itm/bdbrd01.itm~ ~override~
     SAY NAME1 @20225
@@ -924,8 +925,11 @@ ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdbrd01.itm~ BEGIN
     SAY UNIDENTIFIED_DESC @20226
     SAY DESC @20228
 END
-
 EXTEND_BOTTOM ~ar1200.bcs~ ~k0_iskp/baf/k0ar1200.baf~  // The Forest Queen's Benediction*, Helm of Equus*
+EXTEND_BOTTOM ~vaelasa.bcs~ ~k0_iskp/baf/k0vaela.baf~  // allows vaelasa to use the FBQ in combat
+ACTION_IF FILE_EXISTS_IN_GAME ~vaelasa.dlg~ BEGIN
+  COMPILE ~k0_iskp/dlg/k0vaela.d~  // update vaelasa's dialogue to give FBQ as reward for returning acorns, if it's in her inventory
+END
 
 BEGIN ~jester's_bracers~
 DESIGNATED 1028
@@ -1184,12 +1188,11 @@ END
 
 OUTER_SET item = ~bdamul01~
 OUTER_SET ability1 = RESOLVE_STR_REF(@50001)
-APPEND ~tooltip.2da~ ~%item%  %ability1%  -1  -1~
-BUT_ONLY
+APPEND ~tooltip.2da~ ~%item%  %ability1%  -1  -1~ BUT_ONLY
 
 COPY_EXISTING ~tooltip.2da~ ~override~
   LPF a7#normalize_table
-END
+  END
 BUT_ONLY
 
 COPY_EXISTING ~neera8.cre~ ~override~
@@ -1213,12 +1216,11 @@ END
 
 OUTER_SET item = "bdamul03"
 OUTER_SET ability1 = RESOLVE_STR_REF(@50000)
-APPEND ~tooltip.2da~ ~%item%  %ability1%  -1  -1~
-BUT_ONLY
+APPEND ~tooltip.2da~ ~%item%  %ability1%  -1  -1~ BUT_ONLY
 
 COPY_EXISTING ~tooltip.2da~ ~override~
   LPF a7#normalize_table
-END
+  END
 BUT_ONLY
 
 EXTEND_BOTTOM ~ar1904.bcs~ ~k0_iskp/baf/k0ar1904.baf~  // Amulet of Abnormally Awesome Ankheg Summoning*
@@ -1851,12 +1853,11 @@ END
 
 OUTER_SET item = "bdmisc05"
 OUTER_SET ability1 = RESOLVE_STR_REF(@50002)
-APPEND ~tooltip.2da~ ~%item%  %ability1%  -1  -1~
-BUT_ONLY
+APPEND ~tooltip.2da~ ~%item%  %ability1%  -1  -1~ BUT_ONLY
 
 COPY_EXISTING ~tooltip.2da~ ~override~
   LPF a7#normalize_table
-END
+  END
 BUT_ONLY
 
 EXTEND_BOTTOM ~ar1106.bcs~ ~k0_iskp/baf/k0ar1106.baf~  // Purification Stone
@@ -1943,12 +1944,11 @@ END
 
 OUTER_SET item = "bdrobe01"
 OUTER_SET ability1 = RESOLVE_STR_REF(@50003)
-APPEND ~tooltip.2da~ ~%item%  %ability1%  -1  -1~
-BUT_ONLY
+APPEND ~tooltip.2da~ ~%item%  %ability1%  -1  -1~ BUT_ONLY
 
 COPY_EXISTING ~tooltip.2da~ ~override~
   LPF a7#normalize_table
-END
+  END
 BUT_ONLY
 
 <<<<<<<< .../inlined/k0ar0300.baf
@@ -2275,12 +2275,11 @@ END
 
 OUTER_SET item = "bdclck05"
 OUTER_SET ability1 = RESOLVE_STR_REF(@50004)
-APPEND ~tooltip.2da~ ~%item%  %ability1%  -1  -1~
-BUT_ONLY
+APPEND ~tooltip.2da~ ~%item%  %ability1%  -1  -1~ BUT_ONLY
 
 COPY_EXISTING ~tooltip.2da~ ~override~
   LPF a7#normalize_table
-END
+  END
 BUT_ONLY
 
 COMPILE ~k0_iskp/dlg/k0udsol.d~  // Cloak of the Gargoyle
@@ -2312,12 +2311,11 @@ END
 OUTER_SET item = "k0rhytea"
 OUTER_SET ability1 = RESOLVE_STR_REF(@50005)
 OUTER_SET ability1 = RESOLVE_STR_REF(@50006)
-APPEND ~tooltip.2da~ ~%item%  %ability1%  %ability2%  -1~
-BUT_ONLY
+APPEND ~tooltip.2da~ ~%item%  %ability1%  %ability2%  -1~ BUT_ONLY
 
 COPY_EXISTING ~tooltip.2da~ ~override~
   LPF a7#normalize_table
-END
+  END
 BUT_ONLY
 
 <<<<<<<< .../inlined/k0ar0701.baf
@@ -2804,7 +2802,7 @@ ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdmycsp1.spl~ BEGIN  // Ring required for CRE
         parameter1   = RESOLVE_STR_REF(@40022)
     END
 END
-COMPILE ~k0_iskp/baf/k0ar0418.baf~  // Myconid Bloom-Sac*
+COMPILE ~k0_iskp/baf/k0ar0418.baf~  // Myconid Bloom-Sac
 
 // /////////Adding more SoD items into existing import script\\\\\\\\\\\\\\\\\\\
 /*
