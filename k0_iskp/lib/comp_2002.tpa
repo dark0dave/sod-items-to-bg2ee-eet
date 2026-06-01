@@ -24,4 +24,4 @@ THEN
     Continue()
 END
 >>>>>>>>
-EXTEND_BOTTOM ~ar1400.bcs~ ~.../inlined/k0ar1400.baff~
+EXTEND_BOTTOM ~ar1400.bcs~ ~.../inlined/k0ar1400.baf~
