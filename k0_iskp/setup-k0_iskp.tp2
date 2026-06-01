@@ -1,5 +1,5 @@
 BACKUP ~weidu_external/k0_iskp/backup~
-SUPPORT ~https://github.com/dark0dave/sod-items-to-bg2ee-eet/issues~
+SUPPORT ~https://github.com/dark0dave/sod-items-to-bg2ee-eet/discussions~
 AUTO_EVAL_STRINGS
 VERSION ~v4.0.0.RC1~
 README ~k0_iskp/readme.md~ ASK_EVERY_COMPONENT
@@ -765,6 +765,38 @@ REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001
 
 INCLUDE ~k0_iskp/lib/comp_1093.tpa~
 
+BEGIN ~bullet_of_darkness~
+DESIGNATED 1094
+GROUP ~Items~
+LABEL ~Bullet of Darkness +3~
+REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001
+
+INCLUDE ~k0_iskp/lib/comp_1094.tpa~
+
+BEGIN ~cleric's_vestments~
+DESIGNATED 2000
+GROUP ~Items Misc~
+LABEL ~cleric's vestments~
+REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001
+
+INCLUDE ~k0_iskp/lib/comp_2000.tpa~
+
+BEGIN ~spider_silk~
+DESIGNATED 2001
+GROUP ~Items Misc~
+LABEL ~Spider Silk~
+REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001
+
+INCLUDE ~k0_iskp/lib/comp_2001.tpa~
+
+BEGIN ~bear_skin~
+DESIGNATED 2002
+GROUP ~Items Misc~
+LABEL ~Fine Bearskin~
+REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001
+
+INCLUDE ~k0_iskp/lib/comp_2002.tpa~
+
 BEGIN ~sod_all~
 DESIGNATED 10000
 GROUP ~All~
@@ -865,3 +897,4 @@ INCLUDE ~k0_iskp/lib/comp_1090.tpa~
 INCLUDE ~k0_iskp/lib/comp_1091.tpa~
 INCLUDE ~k0_iskp/lib/comp_1092.tpa~
 INCLUDE ~k0_iskp/lib/comp_1093.tpa~
+INCLUDE ~k0_iskp/lib/comp_1094.tpa~

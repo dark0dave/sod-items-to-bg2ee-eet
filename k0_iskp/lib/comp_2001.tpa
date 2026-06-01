@@ -1,0 +1,24 @@
+// Spider Silk
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdsilk01.itm~ BEGIN
+  COPY ~k0_iskp/itm/bdsilk01.itm~ ~override~
+    SAY NAME1 ~Spider Silk~
+    SAY NAME2 ~Spider Silk~
+    SAY UNIDENTIFIED_DESC ~This silvery-gray webbing is from a giant spider.
+
+STATISTICS:
+
+Weight: 1~
+    SAY DESC ~This silvery-gray webbing is from a giant spider.
+
+STATISTICS:
+
+Weight: 1~
+END
+COPY_EXISTING ~sptredd.cre~ ~override~
+  ADD_CRE_ITEM ~bdsilk01~ #0 #0 #0 ~IDENTIFIED~ ~INV~
+COPY_EXISTING ~spbene.cre~ ~override~
+  ADD_CRE_ITEM ~bdsilk01~ #0 #0 #0 ~IDENTIFIED~ ~INV~
+COPY_EXISTING ~spsamar.cre~ ~override~
+  ADD_CRE_ITEM ~bdsilk01~ #0 #0 #0 ~IDENTIFIED~ ~INV~
+COPY_EXISTING ~spphil.cre~ ~override~
+  ADD_CRE_ITEM ~bdsilk01~ #0 #0 #0 ~IDENTIFIED~ ~INV~

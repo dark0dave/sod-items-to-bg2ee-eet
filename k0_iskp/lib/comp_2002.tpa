@@ -1,0 +1,27 @@
+// Fine Bearskin
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdmisc34.itm~ BEGIN
+  COPY ~sod2bg2_iu/itm/bearskin/bdmisc34.itm~ ~override~
+    SAY NAME1 ~Fine Bearskin~
+    SAY NAME2 ~Fine Bearskin~
+    SAY UNIDENTIFIED_DESC ~The thick hide from an enormous bear.
+
+STATISTICS:
+
+Weight: 10~
+    SAY DESC ~The thick hide from an enormous bear.
+
+STATISTICS:
+
+Weight: 10~
+END
+<<<<<<<< .../inlined/k0ar1400.baf
+IF
+  Global("K0_SOD_MISC_ITEMS_BDMISC34","AR1400",0)
+THEN
+  RESPONSE #100
+    SetGlobal("K0_SOD_MISC_ITEMS_BDMISC34","AR1400",1)
+    CreateCreature("dtkgbear",[2032.367],NW)
+    Continue()
+END
+>>>>>>>>
+EXTEND_BOTTOM ~ar1400.bcs~ ~.../inlined/k0ar1400.baff~
