@@ -1,8 +1,19 @@
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdmisc10.itm~ BEGIN
   COPY ~k0_iskp/itm/bdmisc10.itm~ ~override~
-    SAY NAME1 @20127
-    SAY NAME2 @20249
-    SAY UNIDENTIFIED_DESC @20128
-    SAY DESC @20250
+    SAY NAME1 @20127 /* Flute */
+    SAY NAME2 @20249 /* Reed of Echoes */
+    SAY UNIDENTIFIED_DESC @20128 /* A flute is a long, hollow instrument with holes along its length. A bard can coax a pleasing, piping tune from a flute, which is also easy to carry on the road.
+
+STATISTICS:
+
+Weight: 3 */
+    SAY DESC @20250 /* A Harper bard crafted this item, intending it to be a gift for Storm Silverhand. Once completed, however, its maker decided that the reed was simply too plain. He gave it instead to a fellow Harper, the bard who carried it on missions for many years. The reed has changed hands many times since, and though it still serves its original purpose—allowing its bearer to prepare additional spells—when played as an instrument, it emits a mournful tone no musician, however skilled, can vitiate.
+
+STATISTICS:
+
+Equipped abilities:
+– Can memorize 2 extra 1st-level, 1 extra 2nd-level, and 1 extra 3rd-level wizard spell
+
+Weight: 1 */
 END
 COMPILE ~k0_iskp/dlg/k0raeli.d~  // Reed of Echoes

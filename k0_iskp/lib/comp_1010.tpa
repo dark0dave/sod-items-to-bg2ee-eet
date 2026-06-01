@@ -1,9 +1,20 @@
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdboot03.itm~ BEGIN
   COPY ~k0_iskp/itm/bdboot03.itm~ ~override~
-    SAY NAME1 @20111
-    SAY NAME2 @20171
-    SAY UNIDENTIFIED_DESC @20112
-    SAY DESC @20172
+    SAY NAME1 @20111 /* Boots */
+    SAY NAME2 @20171 /* Star-Strewn Boots */
+    SAY UNIDENTIFIED_DESC @20112 /* Boots are normally handmade by cobblers. Common boots are made by using a form, but good boots are designed for the foot of an individual.
+
+STATISTICS:
+
+Weight: 4 */
+    SAY DESC @20172 /* These boots belonged to Crommus the Minstrel many centuries ago. When Artipheon the mage slew Crommus and severed the bard's voice, some of Artipheon's power infused Crommus's boots. The once ordinary midnight-blue leather boots now glitter as if hundreds of twinkling stars were embedded in the material.
+
+STATISTICS:
+
+Equipped abilities:
+– Magic Resistance: +7%, +15% (Wizard Slayers)
+
+Weight: 4 */
   COPY ~k0_iskp/eff/bdboot03.eff~ ~override~
 END
 COPY_EXISTING ~bheye.cre~ ~override~

@@ -1,14 +1,34 @@
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdleat07.itm~ BEGIN
   COPY ~k0_iskp/itm/bdleat07.itm~ ~override~
-    SAY NAME1 @20065
-    SAY NAME2 @20231
-    SAY UNIDENTIFIED_DESC @20066
-    SAY DESC @20232
+    SAY NAME1 @20065 /* Leather Armor */
+    SAY NAME2 @20231 /* The Night's Embrace +3 */
+    SAY UNIDENTIFIED_DESC @20066 /* Leather armor, despite the popular misconception, is not soft and supple like the leather used to make a Ranger's boots or a Druid's robe. That kind of leather offers no better protection than common clothing.
+
+STATISTICS:
+
+Armor Class: 8 (10 vs. piercing and missile)
+Requires:
+ 4 Strength
+
+Weight: 15 */
+    SAY DESC @20232 /* A thief from Iriaebor who feared being captured by the city guard was known to have favored this armor. She designed the suit so that if she were ever incapacitated in any way, she would be rendered temporarily invisible. The armor did its job, and the thief had a long and successful career in the city. When she retired, she gifted the armor to her younger brother, and it has changed hands many times since then.
+
+STATISTICS:
+
+Equipped abilities:
+– If the wearer is rendered helpless (e.g. by a Hold Person spell), <PRO_HESHE> becomes invisible for 1 turn
+– Hide In Shadows: +20%
+
+Armor Class: 5 (7 vs. piercing and missile)
+Requires:
+ 3 Strength
+
+Weight: 5 */
   COPY ~k0_iskp/spl/bdnighte.spl~ ~override~
     LPF ALTER_EFFECT
       INT_VAR
         match_opcode = 139
-        parameter1   = RESOLVE_STR_REF(@40012)
+        parameter1   = RESOLVE_STR_REF(@40012 /* Invisible */)
     END
 END
 <<<<<<<< .../inlined/k0ar0301.baf

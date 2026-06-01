@@ -1,9 +1,34 @@
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdxbow01.itm~ BEGIN
   COPY ~k0_iskp/itm/bdxbow01.itm~ ~override~
-    SAY NAME1 @20059
-    SAY NAME2 @20221
-    SAY UNIDENTIFIED_DESC @20060
-    SAY DESC @20222
+    SAY NAME1 @20059 /* Light Crossbow */
+    SAY NAME2 @20221 /* Astral Crossbow +2 */
+    SAY UNIDENTIFIED_DESC @20060 /* A crossbow is a bow mounted crosswise on a wooden or metal shaft, the latter called a tiller. The bow is usually made of ash or yew. The crossbow fires a quarrel (also called a bolt).
+
+STATISTICS:
+
+Speed Factor: 5
+Proficiency Type: Crossbow
+Type: Two-handed
+Requires:
+ 8 Strength
+
+Weight: 7 */
+    SAY DESC @20222 /* The silvery string of this elegant weapon gleams like the silver strings connecting Astral Travelers to their bodies. Legends speak of a deva who crafted this weapon out of bits of soul from astral travelers, willingly given to the deva to forge a weapon of good. The deva passed the crossbow down to a champion of good on the mortal Plane, who wielded it for many years before falling under a glabrezu's claws.
+
+STATISTICS:
+
+Combat abilities:
+– On a critical hit, the target falls to the ground rendered unconscious for 1 round (no save) as they are stricken with a vision of their soul leaving their body.
+
+THAC0: +2, +4 vs. evil creatures
+Damage: +2 (missile), +4 vs. evil creatures
+Speed Factor: 3
+Proficiency Type: Crossbow
+Type: Two-handed
+Requires:
+ 8 Strength
+
+Weight: 5 */
     WRITE_SHORT 0x42 0  // Setting lore value to 0 to prevent need to identify
   COPY ~k0_iskp/eff/bdxbow1h.eff~ ~override~
   COPY ~k0_iskp/eff/bdxbow1d.eff~ ~override~

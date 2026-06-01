@@ -1,14 +1,43 @@
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdsw1h01.itm~ BEGIN
   COPY ~k0_iskp/itm/bdsw1h01.itm~ ~override~
-    SAY NAME1 @20008
-    SAY NAME2 @20157
-    SAY UNIDENTIFIED_DESC @20009
-    SAY DESC @20158
+    SAY NAME1 @20008 /* Katana */
+    SAY NAME2 @20157 /* Crimson Dawn +2 */
+    SAY UNIDENTIFIED_DESC @20009 /* The katana is a single-edged, slightly curved sword that ends with a chisel point. The katana is perhaps one of the finest swords ever made, the steps to its creation a long and secret process that is more art form than anything else. This blade is an important facet of Kara-Turan culture. To touch or wield a samurai's katana is to insult the samurai and to incite his wrath. For a gaijin, or foreigner, to own such a blade is a rare occurrence. Either the gaijin is a greatly honored friend of an important minister, or the gaijin has murdered a samurai.
+
+STATISTICS:
+
+Damage: 1d10 (slashing)
+Speed Factor: 4
+Proficiency Type: Katana
+Type: One-handed
+Requires:
+ 6 Strength
+
+Weight: 6 */
+    SAY DESC @20158 /* Legend tells that this elegant blade appeared at the moment the sun rose over the eastern horizon. As the dawn's rosy light flooded the forest, the blade shimmered into being atop a flat stone. Local foresters, even warriors, were afraid to touch the weapon lest it was cursed. Finally, a brave old man who had been a fighter in his youth grasped the hilt and claimed the blade as its own. Terrifying beasts sprang at him a moment later, creatures of red mist and fangs and claws. The old man clung to his courage and lay about him with the sword. He grew faster with every monster he killed until finally the clearing was empty. The old man was feasted in the village for days and then set off to live his final years seeking adventure on the road.
+
+STATISTICS:
+
+Equipped abilities:
+– Critical Hit Chance: +5% (with this weapon only)
+
+Combat abilities:
+– 15% chance per kill of hasting the weilder for 3 rounds
+
+THAC0: +2
+Damage: 1d10+2 (slashing)
+Speed Factor: 2
+Proficiency Type: Katana
+Type: One-handed
+Requires:
+ 6 Strength
+
+Weight: 4 */
   COPY ~k0_iskp/spl/bdcrimsn.spl~ ~override~
     LPF ALTER_EFFECT
       INT_VAR
         match_opcode = 139
-        parameter1   = RESOLVE_STR_REF(@40006)
+        parameter1   = RESOLVE_STR_REF(@40006 /* Hasted */)
     END
 END
 COPY_EXISTING ~ohhdrago.cre~ ~override~

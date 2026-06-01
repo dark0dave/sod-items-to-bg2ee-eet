@@ -1,13 +1,17 @@
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdbrac01.itm~ BEGIN
   COPY ~k0_iskp/itm/bdbrac01.itm~ ~override~
-    SAY NAME1 @20101
-    SAY NAME2 @20275
-    SAY UNIDENTIFIED_DESC @20102
+    SAY NAME1 @20101 /* Bracers */
+    SAY NAME2 @20275 /* Bracers of the Shuttered Lid */
+    SAY UNIDENTIFIED_DESC @20102 /* Bracers are thick bands of metal or leather that are strapped, belted, or tied to a character's forearm. Generally, the magic that is instilled in bracers is good only during combat, since most bracers help protect the wearer from injury or improve their chances to strike an opponent. Exceptions do exist, though such specialized items are rare at best.
+
+STATISTICS:
+
+Weight: 2 */
   COPY ~k0_iskp/spl/bdbrac01.spl~ ~override~
     LPF ALTER_EFFECT
       INT_VAR
         match_opcode = 139
-        parameter1   = RESOLVE_STR_REF(@40017)
+        parameter1   = RESOLVE_STR_REF(@40017 /* Blinded */)
     END
 END
 COPY_EXISTING ~rasaad8.cre~ ~override~

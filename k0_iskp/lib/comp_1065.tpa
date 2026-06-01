@@ -1,23 +1,37 @@
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdmisc05.itm~ BEGIN
   COPY ~k0_iskp/itm/bdmisc05.itm~ ~override~
-    SAY NAME1 @20089
-    SAY NAME2 @20305
-    SAY UNIDENTIFIED_DESC @20090
-    SAY DESC @20306
+    SAY NAME1 @20089 /* Ioun Stone */
+    SAY NAME2 @20305 /* Purification Stone */
+    SAY UNIDENTIFIED_DESC @20090 /* This is a small stone that floats in an orbit around the owner's head. Simply equip the stone to set it in its orbit. These obviously magical stones have different properties depending on their color.
+
+STATISTICS:
+
+Weight: 0 */
+    SAY DESC @20306 /* This smooth silvery-gray stone floats in the air around its user's head, untethered by gravity or other earthly concerns. Protecting its user from poison and disease, it can be used once a day to cleanse mortal bodies of unnatural contamination.
+
+STATISTICS:
+
+Equipped abilities:
+– Immunity to poison and disease
+
+Charge abilities:
+– Neutralize Poison once per day
+
+Weight: 0 */
     LPF ALTER_EFFECT
       INT_VAR
         match_opcode     = 267
         match_parameter1 = 14017
-        parameter1       = RESOLVE_STR_REF(@40023)
+        parameter1       = RESOLVE_STR_REF(@40023 /* Poison */)
     END
     LPF ALTER_EFFECT
       INT_VAR
         match_opcode     = 267
         match_parameter1 = 14662
-        parameter1       = RESOLVE_STR_REF(@40024)
+        parameter1       = RESOLVE_STR_REF(@40024 /* Poisoned */)
     END
 END
-OUTER_SET ability1 = RESOLVE_STR_REF(@50002)
+OUTER_SET ability1 = RESOLVE_STR_REF(@5009 /* Neutralize Poison */)
 APPEND ~tooltip.2da~ ~bdmisc05  %ability1%  -1  -1~ BUT_ONLY
 COPY_EXISTING ~tooltip.2da~ ~override~
   LPF a7#normalize_table

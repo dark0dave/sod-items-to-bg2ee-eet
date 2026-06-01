@@ -1,20 +1,47 @@
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdhalb02.itm~ BEGIN
   COPY ~k0_iskp/itm/bdhalb02.itm~ ~override~
-    SAY NAME1 @20041
-    SAY NAME2 @20287
-    SAY UNIDENTIFIED_DESC @20042
-    SAY DESC @20288
+    SAY NAME1 @20041 /* Spear */
+    SAY NAME2 @20287 /* Festering Spear +1 */
+    SAY UNIDENTIFIED_DESC @20042 /* One of the earliest weapons, dating back to the most primitive of times, the first spears were simply wooden poles or sticks sharpened at one end. When the civilized races mastered metals, spearheads were made from iron and steel. Having reached this end, weaponsmiths began experimenting with different types of spearheads, thus leading to the development of certain polearm types.
+
+STATISTICS:
+
+Damage: 1d6 (piercing)
+Speed Factor: 6
+Proficiency Type: Spear
+Type: Two-handed
+Requires:
+ 5 Strength
+
+Weight: 5 */
+    SAY DESC @20288 /* The razor-sharp tip of this spear easily cuts through armor and down to the bone. Victims of its devastating attacks bleed heavily as their wounds instantly fester and weep, dazing them with pain and making it difficult to continue the battle.
+
+STATISTICS:
+
+Combat abilities:
+– Inflicts 2 points of bleeding damage per hit (1 point per round)
+– On a critical hit, the target is infected by disease (-2 penalty to Strength and Dexterity for 1 turn, non-cumulative)
+
+THAC0: +1
+Damage: 1d6+1 (piercing)
+Speed Factor: 5
+Proficiency Type: Spear
+Type: Two-handed
+Requires:
+ 5 Strength
+
+Weight: 5 */
   COPY ~k0_iskp/spl/bdhalb02.spl~ ~override~
     LPF ALTER_EFFECT
       INT_VAR
         match_opcode = 139
-        parameter1   = RESOLVE_STR_REF(@40002)
+        parameter1   = RESOLVE_STR_REF(@40002 /* Bleeding */)
     END
   COPY ~k0_iskp/spl/bdfester.spl~ ~override~
     LPF ALTER_EFFECT
       INT_VAR
         match_opcode = 139
-        parameter1   = RESOLVE_STR_REF(@40019)
+        parameter1   = RESOLVE_STR_REF(@40019 /* Stricken by a foul disease */)
     END
 END
 <<<<<<<< .../inlined/k0ar0400.baf

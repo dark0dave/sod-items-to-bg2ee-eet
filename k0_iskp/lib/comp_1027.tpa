@@ -1,9 +1,25 @@
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdbrd01.itm~ BEGIN
   COPY ~k0_iskp/itm/bdbrd01.itm~ ~override~
-    SAY NAME1 @20225
-    SAY NAME2 @20227
-    SAY UNIDENTIFIED_DESC @20226
-    SAY DESC @20228
+    SAY NAME1 @20225 /* Cornetto */
+    SAY NAME2 @20227 /* The Forest Queen's Benediction */
+    SAY UNIDENTIFIED_DESC @20226 /* A cornetto is a slender horn, usually carved from wood. Finger holes bored along its length allow a musician to create a variety of notes. A mouthpiece crafted of ivory or horn is attached to the tapered end.
+
+STATISTICS:
+
+Weight: 3 */
+    SAY DESC @20228 /* Mielikki, the Forest Queen, bestows her gifts only on those who show kindness and compassion to all living creatures. Legend tells that a bard once came upon a pack of hunters running a unicorn to ground. The bard, despite being outnumbered, threw herself at the hunters and fought them valiantly while the unicorn escaped. The hunters beat the bard near to death and left her broken body on the ground. Moments after they left, the unicorn stepped softly to the bard and extended its horn. The bard grasped the horn weakly and, to her astonishment, it came away in her hand. The bard sat up, healed of all wounds and bestowed with a valuable gift. The unicorn vanished into the trees, and the bard found the horn bestowed healing powers whenever she played it.
+
+The cornetto can only be played by a bard of exceptional virtue and wisdom.
+
+STATISTICS:
+
+Charge abilities:
+– Mass Cure once per day
+
+Requires:
+ 13 Wisdom
+
+Weight: 3 */
 END
 <<<<<<<< .../inlined/k0ar2000.baf
 IF
@@ -32,7 +48,7 @@ IF
       HPPercentLT(ThirdNearestMyGroupOfType,80)
 THEN
   RESPONSE #100
-    DisplayStringHead(Myself,@80000)  // *plays an instrument*
+    DisplayStringHead(Myself,@80000 /* *plays an instrument* */)  // *plays an instrument*
     UseItem("bdbrd01",LastSeenBy(Myself))  // The Forest Queen's Benediction
     Continue()
 END

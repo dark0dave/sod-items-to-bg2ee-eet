@@ -17,7 +17,7 @@ BEGIN
       INCLUDE ~.../inlined/MI_RSR_%ref%.tpp~
     END
     ELSE BEGIN
-      OUTER_SPRINT strref ~*~
+      OUTER_SPRINT strref @100123 /* * */
     END
   END
 END

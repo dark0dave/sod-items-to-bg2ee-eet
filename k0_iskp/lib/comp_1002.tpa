@@ -1,42 +1,119 @@
 // Bolt of Fire +1
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdbolt01.itm~ BEGIN
   COPY ~k0_iskp/itm/bdbolt01.itm~ ~override~
-    SAY NAME1 @20115
-    SAY NAME2 @20147
-    SAY UNIDENTIFIED_DESC @20116
-    SAY DESC @20148
+    SAY NAME1 @20115 /* Bolt */
+    SAY NAME2 @20147 /* Bolt of Fire +1 */
+    SAY UNIDENTIFIED_DESC @20116 /* Quarrels or bolts are the ammunition fired by crossbows regardless of the weapon's size.
+
+STATISTICS:
+
+Damage: 1d8 (missile)
+Launcher: Crossbow
+
+Weight: 0 */
+    SAY DESC @20148 /* This bolt is magically enhanced so as to burst into flames when it is fired. The effect is similar to a bolt doused in oil and set to flame.
+
+STATISTICS:
+
+THAC0: +1
+Damage: 1d8+1, +1d3 (fire)
+Damage Type: Missile
+Launcher: Crossbow
+
+Weight: 0 */
 END
 // Bolt of Ice +1
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdbolt02.itm~ BEGIN
   COPY ~k0_iskp/itm/bdbolt02.itm~ ~override~
-    SAY NAME1 @20115
-    SAY NAME2 @20145
-    SAY UNIDENTIFIED_DESC @20116
-    SAY DESC @20146
+    SAY NAME1 @20115 /* Bolt */
+    SAY NAME2 @20145 /* Bolt of Ice +1 */
+    SAY UNIDENTIFIED_DESC @20116 /* Quarrels or bolts are the ammunition fired by crossbows regardless of the weapon's size.
+
+STATISTICS:
+
+Damage: 1d8 (missile)
+Launcher: Crossbow
+
+Weight: 0 */
+    SAY DESC @20146 /* This bolt is magically enhanced so as to burst into a rolling ball of ice when it is fired. When the bolt strikes its victim, a shock of cold will travel through its body, both burning and numbing to the very core.
+
+STATISTICS:
+
+THAC0: +1
+Damage: 1d8+1, +1d3 (cold)
+Damage type: Missile
+Launcher: Crossbow
+
+Weight: 0 */
 END
 // Bullet of Fire +1
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bull07.itm~ BEGIN
   COPY ~k0_iskp/itm/bull07.itm~ ~override~
-    SAY NAME1 @20117
-    SAY NAME2 @20153
-    SAY UNIDENTIFIED_DESC @20118
-    SAY DESC @20154
+    SAY NAME1 @20117 /* Bullet */
+    SAY NAME2 @20153 /* Bullet of Fire +1 */
+    SAY UNIDENTIFIED_DESC @20118 /* A bullet is simply a rounded, well-balanced stone.
+
+STATISTICS:
+
+Damage: 1d4+1 (missile)
+Launcher: Sling
+
+Weight: 0 */
+    SAY DESC @20154 /* Carved from the knucklebones of slain salamanders, these incendiary missiles burst into flames once they are hurled from a sling.
+
+STATISTICS:
+
+Damage: 1d4+1, +1d6 fire damage (Save vs. Spell for none)
+Damage type: Missile
+Launcher: Sling
+
+Weight: 0 */
 END
 // Bullet of Ice +1
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bull08.itm~ BEGIN
   COPY ~k0_iskp/itm/bull08.itm~ ~override~
-    SAY NAME1 @20117
-    SAY NAME2 @20151
-    SAY UNIDENTIFIED_DESC @20118
-    SAY DESC @20152
+    SAY NAME1 @20117 /* Bullet */
+    SAY NAME2 @20151 /* Bullet of Ice +1 */
+    SAY UNIDENTIFIED_DESC @20118 /* A bullet is simply a rounded, well-balanced stone.
+
+STATISTICS:
+
+Damage: 1d4+1 (missile)
+Launcher: Sling
+
+Weight: 0 */
+    SAY DESC @20152 /* Chipped from the corpse of an ice elemental, these sharp projectiles shatter upon impact to chill the target with unnatural cold.
+
+STATISTICS:
+
+Damage: 1d4+1, +1d6 cold damage (Save vs. Spell for none)
+Damage type: Missile
+Launcher: Sling
+
+Weight: 0 */
 END
 // Bullet of Electricity +1
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bull09.itm~ BEGIN
   COPY ~k0_iskp/itm/bull09.itm~ ~override~
-    SAY NAME1 @20117
-    SAY NAME2 @20149
-    SAY UNIDENTIFIED_DESC @20118
-    SAY DESC @20150
+    SAY NAME1 @20117 /* Bullet */
+    SAY NAME2 @20149 /* Bullet of Electricity +1 */
+    SAY UNIDENTIFIED_DESC @20118 /* A bullet is simply a rounded, well-balanced stone.
+
+STATISTICS:
+
+Damage: 1d4+1 (missile)
+Launcher: Sling
+
+Weight: 0 */
+    SAY DESC @20150 /* Each of these copper bullets is molded around the vertebrae of an electric eel. Upon impact, they release a powerful jolt to the target.
+
+STATISTICS:
+
+Damage: 1d4+1, +1d6 electrical damage (Save vs. Spell for none)
+Damage type: Missile
+Launcher: Sling
+
+Weight: 0 */
 END
 COPY_EXISTING ~shop04.sto~ ~override~  // Enge's Shop
   ADD_STORE_ITEM ~bdbolt01~ #1 #0 #0 ~IDENTIFIED~ #120  // Bolt of Fire +1

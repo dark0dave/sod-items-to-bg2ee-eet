@@ -1,9 +1,21 @@
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdioun02.itm~ BEGIN
   COPY ~k0_iskp/itm/bdioun02.itm~ ~override~
-    SAY NAME1 @20089
-    SAY NAME2 @20301
-    SAY UNIDENTIFIED_DESC @20090
-    SAY DESC @20302
+    SAY NAME1 @20089 /* Ioun Stone */
+    SAY NAME2 @20301 /* Blood Red Ioun Stone */
+    SAY UNIDENTIFIED_DESC @20090 /* This is a small stone that floats in an orbit around the owner's head. Simply equip the stone to set it in its orbit. These obviously magical stones have different properties depending on their color.
+
+STATISTICS:
+
+Weight: 0 */
+    SAY DESC @20302 /* This spherical stone gleams crimson, like a hardened globe of blood. Once activated, it can enhance the wearer's hand-eye coordination, reflexes, and balance, which makes it a highly prized accessory among rogues.
+
+STATISTICS:
+
+Equipped abilities:
+– Dexterity: +1
+– Weapon Speed Factor: +2
+
+Weight: 0 */
     WRITE_SHORT 0x42 0  // Setting lore value to 0 to prevent need to identify
 END
 <<<<<<<< .../inlined/k0yoshi.baf

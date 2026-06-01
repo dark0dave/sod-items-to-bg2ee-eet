@@ -1,14 +1,44 @@
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdax1h03.itm~ BEGIN
   COPY ~k0_iskp/itm/bdax1h03.itm~ ~override~
-    SAY NAME1 @20022
-    SAY NAME2 @20261
-    SAY UNIDENTIFIED_DESC @20023
-    SAY DESC @20262
+    SAY NAME1 @20022 /* Battle Axe */
+    SAY NAME2 @20261 /* Chill Axe +2 */
+    SAY UNIDENTIFIED_DESC @20023 /* The most common version of the battle axe is a stout pole about four feet in length with a single-edged, trumpet-shaped blade mounted on one end. Battle axes are also called broad axes.
+
+STATISTICS:
+
+Damage: 1d8 (slashing)
+Speed Factor: 7
+Proficiency Type: Axe
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 7 */
+    SAY DESC @20262 /* This finely crafted axe bears the sigil of the Ice Dragon Berserker Lodge. Glowing white runes edge its cold silver blade, and a cloud of chill air trails behind the axe whenever it is swung. The most powerful rangers of the Ice Dragon Berserker Lodge carry these axes with them on their dejemmas, as protection from southern threats.
+
+STATISTICS:
+
+Equipped abilities:
+– Strength: +1
+
+Combat abilities:
+– 2% chance per hit that the weilder will become berserk, losing control of <PRO_HISHER> actions for 3 rounds
+
+THAC0: +2
+Damage: 1d8+2, +1 cold
+Damage Type: Slashing
+Speed Factor: 5
+Proficiency Type: Axe
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 5 */
     WRITE_SHORT 0x42 0  // Setting lore value to 0 to prevent need to identify
     LPF ALTER_EFFECT
       INT_VAR
         match_opcode = 139
-        parameter1   = RESOLVE_STR_REF(@40016)
+        parameter1   = RESOLVE_STR_REF(@40016 /* Berserk */)
     END
 END
 <<<<<<<< .../inlined/k0korg.baf

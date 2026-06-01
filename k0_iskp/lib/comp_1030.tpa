@@ -1,9 +1,22 @@
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdring10.itm~ BEGIN
   COPY ~k0_iskp/itm/bdring10.itm~ ~override~  // Ring of Purity
-    SAY NAME1 @20105
-    SAY NAME2 @20233
-    SAY UNIDENTIFIED_DESC @20106
-    SAY DESC @20234
+    SAY NAME1 @20105 /* Ring */
+    SAY NAME2 @20233 /* Ring of Purity */
+    SAY UNIDENTIFIED_DESC @20106 /* A ring is a small band of precious metal that is used as jewelry. Some rare rings have had enchantments placed upon them that confer various magical abilities. These rings are highly sought after, especially by those of the adventuring profession.
+
+STATISTICS:
+
+Weight: 0 */
+    SAY DESC @20234 /* This ring, designed for the hero Zachiira, is engraved with holy symbols. When Zachiira requested aid from King Strohm III, it was the king’s royal advisor, the great and powerful Theurgist Karlash Arnostognas, who made this item, in the hope that it would aid the hero in her battle against a demon vampire. Zachiira survived the encounter, but sadly her triumphal return was met with rather less celebration and rather more grief, as the good king was already dead when she arrived. Zachiira laid the holy artifact at the entrance to the king’s tomb, and it was there the relic was discovered by wandering thrill-seekers.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +2 vs. evil creatures
+– Hit Points: +10
+– Chant
+
+Weight: 0 */
 END
 <<<<<<<< .../inlined/k0ar1202.baf
 IF

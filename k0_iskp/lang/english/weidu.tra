@@ -1,10 +1,526 @@
-/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
-/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
-/////                                                  \\\\\
-///// Setup dialogues                                  \\\\\
-/////                                                  \\\\\
-/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
-/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+@3000 = ~Blood-stained Ancient Scroll~
+@3001 = ~This scroll, long hidden within the lining of Vecna's robe, is heavily stained with blood and appears to be made of human skin.  It likely contains a powerful spell scribed by the lich himself.~
+@3002 = ~Conjure Death~
+@3003 = ~Conjure Death
+(Necromancy)
+
+Level: 6
+Range: 30 ft.
+Duration: 8 hours
+Casting Time: 9
+Area of Effect: Special
+Saving Throw: None
+
+This spell is a more powerful version of the level 5 wizard spell, animate dead.  When cast, an undead horror is summoned to serve the caster and will obey <PRO_HISHER> commands, until the enchantment ends or it is utterly destroyed.
+
+  1st – 14th: 1d2 of 7 HD burning skeletons weilding a +1 melee or ranged weapon and +1 shield or buckler, 8 HD putrid zombies, 7 HD charged wights, or 9 HD drowned-in-bloods.
+
+  15th – 17th: 1d2 of 9 HD burning skeleton weilding a +2 melee or ranged weapon and +2 shield or buckler, 10 HD putrid zombies, 9 HD charged wights, or 11 HD drowned-in-bloods.
+
+  18th and up: 1d2 of 11 HD burning skeleton weilding a +3 melee or ranged weapon and +3 shield or buckler, 12 HD putrid zombies, 11 HD charged wights, or 13 HD drowned-in-bloods.
+
+The conjured undead can follow the caster, remain in an area and attack any creature entering the place, etc. It remains animated until it is destroyed in combat, 8 hours pass, or it is turned. This spell cannot be dispelled.~
+@3004 = ~Sealed Ancient Scroll~
+@3005 = ~Thunder Thrust~
+@3006 = ~Thunder Thrust
+(Evocation)
+
+Level: 6
+Range: 80 ft.
+Duration: Instant
+Casting Time: 4
+Area of Effect: 7-ft. radius
+Saving Throw: 1/2
+
+This spell draws forth a massive bolt of electrical energy from the plane of air into the prime, striking the caster's target and nearby foes with a surge of electricity. Each bolt causes 12d8 points of electrical damage, plus an additional 1d8 points per level of the caster, up to a maximum of 21d8. Any creatures within a 7 foot radius are also caught in the blast and take 4d8 of electrical damage, plus 1d8 per two levels up to a maximum of 8d8.  The force of the blast knocks affected targets back and unconscious for one round.  Creatures may make a reflex save to evade the blast, or successfully Save vs. Spell to halve the damage.~
+@3007 = ~This scroll is sealed by some magical encryption that defies all attempts to understand it's contents.  Just when it appears that a word or symbol is discernible, it shifts into another form.  It would take far more knowledge than most mortals possess to decipher this enigma.~
+@3008 = ~Trollkiller's Fireball~
+@3009 = ~Trollkiller's Fireball
+(Evocation)
+
+Level: 4
+Range: Visual range of the caster
+Duration: Instant
+Casting Time: 3
+Area of Effect: 15-ft. radius
+Saving Throw: 1/2
+
+Trollkiller's Fireball is a more powerful version of the level 3 wizard spell, Fireball.  It's namesake, Durlag Trollkiller, commissioned an exiled elven mage of considerable skill to create this spell for use in eradicating trolls from his homeland.  Much to his delight, the creation of the spell was successful and put to great use during his troll-cleansing campaign.  In the years following, as Durlag's madness took hold of him, he kept all of his most prized possessions, including this spell, under lock, key, and devious trap inside his tower.  How it came to be in your possession is a mystery.   When cast, a raging ball of flame flies forth from the caster's hand, striking the target point and exploding in a horrific display of hellfire, doing 1d6 points of damage for each level of the spellcaster (up to a maximum of 16d6) to targets caught in the blast.  The searing heat is so intense that it can ignite clothing, armor, and even flesh, causing an additional 1d4 fire damage per round and sending the afflicted into a state of panic until they successfully roll a Save vs. Spell to extinguish the flames.  Those who roll successful a Save vs. Spell manage to dodge, fall flat, or roll aside, taking only half damage from the initial blast, and evade the ongoing fire damage and panic.  All saving throws must be made at -2.~
+@3010 = ~Hoar of Frost~
+@3011 = ~Hoar of Frost
+(Evocation)
+
+Level: 7
+Sphere: Combat, Elemental (Cold)
+Range: 0
+Duration: Instant
+Casting Time: 3
+Area of Effect: 18-ft. cone with 90-deg. arc
+Saving Throw: 1/2
+
+The chosen of Auril speak of this spell as legend, a power that the Ice Maiden bestows only upon her most favored, and is a closely guarded secret.  It is said this spell conjures forth the very breath of Auril herself.  Cold as the hearts of Auril's followers may be, there are beings far, far more cruel than they in the realms, and it is rumored that one such being, known as "The Shattered One", captured a high priestess of Auril and performed torturous experiments on her to "extract" this magic for his own use.  Unfortunately for the mage, he was unable to channel the divine energies required for the spell to work properly.  However, the damage was done and the secrets of this magic were shared across the realms, much to Auril's displeasure.  This spell brings forth a gale of icy, frozen wind from the caster's hands, freezing all in it's path with 1d5+1 of cold damage per level, up to a maximum of 20d5+20.   Those afflicted by the blistering cold are frozen in their tracks, hindering their ability to fight unless a saving throw is made.   Those who roll a successful Save vs. Spell will shrug off a portion of the cold, taking half damage and avoid being frozen in place.  All saving throws must be made at -2.  The use of this spell by non-aurilites angers the Ice Maiden greatly and there is a small chance that an enraged golem of ice will form from the gale and attack the party.~
+@3012 = ~Corrosion~
+@3013 = ~Corrosion
+(Conjuration)
+
+Level: 7
+Range: 40 ft.
+Duration: 1 turn
+Casting Time: 5
+Area of Effect: 15-ft. radius
+Saving Throw: Special
+
+This spell conjures forth a thick, acrid, corrosive smog that immediately begins to dissolve the armor and flesh of any creature unfortunate enough to be caught in it.  Creatures caught in the area of effect will take 1d10 of acid damage per round that they remain in the caustic fog, and must roll a Saving Throw vs. Spells at a -4 penalty or suffer reduction to their resistances against all forms of physical damage 15% for three rounds.  These effects increase with the caster's level, up to a maximum of 1d10+5 acid damage and 20% reduction of physical damage resistance at level 17.~
+@3014 = ~Vitriolic Burst~
+@3015 = ~Produce Fire~
+@3016 = ~Cone of Cold~
+@3017 = ~Writhing Fog~
+@3018 = ~Hidden Scroll~
+@3019 = ~Dancing Lights~
+@3020 = ~Dancing Lights
+(Alteration)
+
+Level: 1
+Range: Sight
+Duration: 2 rds./level
+Casting Time: 1
+Area of Effect: Special
+Saving Throw: None
+
+This spell creates up to four glowing spheres of light (such as evidenced by will-o-wisps) or one faintly glowing, vaguely humanoid shape, somewhat similar to a fire elemental. The dancing lights move randomly without concentration upon such movement by the wizard. Although the lights cause no physical harm, they can distract enemies until either their duration expires or dispersed by weapon or magic.~
+@3021 = ~Darkness, 15' Radius~
+@3022 = ~Darkness, 15' Radius
+(Alteration)
+
+Level: 2
+Range: 30 ft.
+Duration: 1 turn
+Casting Time: 2
+Area of Effect: 15-ft. radius
+Saving Throw: None
+
+This spell causes total, impenetrable darkness. Neither normal nor magical light works in the area of effect. All vision (including infravision) is severely limited; anyone hostile caught in the area of effect is for all practical purposes blinded as per the 1st-level wizard spell. Creatures that leave the area covered by darkness will have their vision restored after 1 round.~
+@3023 = ~Faerie Fire~
+@3024 = ~Faerie Fire
+(Alteration)
+
+Level: 1
+Sphere: Weather
+Range: Sight
+Duration: 4 rounds/level
+Casting Time: 4
+Area of Effect: 10-ft. radius
+Saving Throw: None
+
+This spell outlines one or more creatures with a pale violet glow, making positions and movements easily visible. Outlined creatures are easier to strike, giving them an Armor Class penalty of -2.~
+@3025 = ~Shining Bolt~
+@3026 = ~Shining Bolt
+(Invocation/Evocation)
+
+Level: 1
+Range: 60 ft.
+Duration: Instant
+Casting Time: 1
+Area of Effect: 1 creature
+Saving Throw: None
+
+This ability allows Anomen to hurl a bolt of divine energy at an enemy once per day, dealing them 5d6 points of magic damage. Undead creatures and fiends are particularly susceptible to the bolt's effects, suffering double damage when they are struck. The target's Magic Resistance, if any, does not affect this ability.~
+@3027 = ~Curse~
+@3028 = ~Curse
+(Conjuration/Summoning)
+
+Level: 1
+Sphere: All
+Range: Visual range of the caster
+Duration: 6 rounds
+Casting Time: 9
+Area of Effect: 15-ft. radius
+Saving Throw: None
+
+When uttering the Curse spell, the caster lowers the morale of enemy creatures and any Saving Throws and attack rolls they make by 1. At the instant the spell is completed, it affects all creatures in a 15-ft. radius centered on the point selected by the caster. Affected creatures leaving the area are still subject to the spell's effect; those entering the area after the casting is completed are not.~
+@3029 = ~Infernal Bone Shield~
+@3030 = ~Infernal Bone Shield
+(Necromancy)
+
+Level: 5
+Sphere: Guardian, Creation
+Range: 0
+Duration: 3 rounds
+Casting Time: 3
+Area of Effect: 3-ft. radius
+Saving Throw: None
+
+This spell conjures forth a barrier of floating fell skeleton and demon bones that spin rapidly around the caster. Anyone entering the path of the bones takes 1d6 crushing damage and 1d6 fire damage per round.~
+@3031 = ~Fell Rage~
+@3032 = ~Fell Rage
+(Alteration)
+
+Level: 5
+Sphere: Combat
+Range: Visual range of the caster
+Duration: 2 turns
+Casting Time: 7
+Area of Effect: 1 creature
+Saving Throw: None
+
+This spell works only on player characters or allied creatures.  When cast, fell, demonic energies are channeled into the target causing them to go berserk, attacking the nearest creature until that creature is dead, then moving on to the next target. While under the effects of Fell Rage, the target is immune to charm, sleep, fear, hold, stunning, confusion, emotion, symbol spells, and related effects. In addition, the target gains +1 to hit, +1 to Strength, +1 to Dexterity, +1 to Constitution, +10 to maximum Hit Points, +2 to <PRO_HISHER> movement rate, 5% Physical Damage Resistance, 30% Fire Resistance, and 1d2 Damage(Acid) to all physical attacks. The spell has several disadvantages, however: The Hit Points of the target are masked for the duration of the spell, and at the end of the spell's duration, the target becomes fatigued and <PRO_HISHER> Strength, Dexterity, and Constitution are reduced by 3 for 2 turns. Fell Rage cannot be cast by or affect creatures of good alignment.~
+@3033 = ~Shadow Bolt~
+@3034 = ~Shadow Bolt
+(Invocation)
+
+Level: 5
+Sphere: Shadow
+Range: Visual range of the caster
+Duration: Instant
+Casting Time: 4
+Area of Effect: 5-ft. radius
+Saving Throw: Special
+
+This spell conjures forth shadowy orbs of dark energy from the shadow plane that bolt forward from the caster's hand to strike <PRO_HISHER> target with unerring precision. The priest creates one bolt at 9th level and an additional bolt at every third level after 9th—in other words, two bolts at 12th level, three at 15th, four at 18th, to a maximum of five bolts at 21st level. Each bolt inflicts 1d5 points of cold damage and 1d5 points of magic damage to the target and then bursts in a 5-ft. radius concussive blast that inflicts 6 points of cold damage and 6 points of magic damage, increasing by two points each per every 3 levels of the caster, up to a maximum of 14 per each at level 21.  Additionally, creatures caught in the dark energy blast suffer a 20% chance of being blinded for one turn or being drained of one level permanently. Creatures can attempt a Save vs. Spell at -4 to negate the concussion damage and effects, but the impact of the bolts themselves allow no Saving Throw.  Undead creatures are immune to the effects of this spell.  Priests of good alignment may not cast this spell.~
+@3035 = ~Demi-Shadow Monsters~
+@3036 = ~Demi-Shadow Monsters
+(Illusion/Phantasm)
+
+Level: 5
+Range: Visual range of the caster
+Duration: 1 round/level
+Casting Time: 5
+Area of Effect: Special
+Saving Throw: None
+
+This spell is similar to the 4th-level wizard spell Shadow Monsters, except the summoned creatures are much more powerful.~
+@3037 = ~Electrical Discharge~
+@3038 = ~Shroud of Shadow~
+@3039 = ~Shroud of Shadow
+(Alteration, Illusion)
+
+Level: 7
+Range: 0
+Duration: 1 turn
+Casting Time: 1
+Area of Effect: The caster
+Saving Throw: None
+
+When this spell is cast, the caster is enshrouded by dark shadows, taking on the form of a shadow fiend.  While in this form, <PRO_HESHE> takes on some of the abilities of a shadow monster:  Movement rate is increased by 2, casting speed is increased by 2, attack rate is increased by 1/2 per round, resistance to all physical attacks is increased by 7%, resistances to fire, cold, acid, and magic attacks are increased by 20%, the caster is able to hide and stay hidden in shadows with ease, and <PRO_HISHER> movement cannot be impeded by normal means.  However, the inherent weakness of a shadow monster is also imparted to the caster, and <PRO_HISHER> becomes extremely susceptible to electrical attacks for the duration of the spell.~
+@3040 = ~Ko'Dezza's Multi-Fireball~
+@3041 = ~Ko'Dezza's Multi-Fireball
+(Evocation)
+
+Level: 7
+Range: 40 ft.
+Duration: Instant
+Casting Time: 4
+Area of Effect: 15-ft. radius
+Saving Throw: 1/2
+
+Ko'Dezza was an eccentric half-drow mage who lived before the time of troubles.  She attempted to create new spells by modifying and enhancing existing spells.  While her experiments met with failure more often than not, this spell was on her more successful efforts.  For all intents and purposes, this spell functions very similar to the level 3 spell, Fireball, except that two or more fireballs are launched simultaneously, and home in on a targeted creature with unerring accuracy.  When this spell is cast, two fireballs are launched at a target, and upon impact, explode in a horrific display of flames, doing 6d6 damage to the target and all creatures within a 15 foot radius of the impact.  For every two levels of the caster, damage is increased by 1d6 up to a maximum of 10d6 at level 22, and for every four levels an additional fireball is launched, up to a maximum of four at level 22.  Thus, a level 22 wizard can fire four fireballs each doing 10d6 fire damage at level 22. As with the level 3 spell, Fireball, creatures who make a Saving Throw per fireball may reduce their damage taken from it by half.  Creatures weak against fire would do well to steer clear of a mage with this spell in <PRO_HISHER> repertoire.~
+@3042 = ~Caustic Quagmire~
+@3043 = ~Caustic Quagmire
+(Conjuration)
+
+Level: 4
+Sphere: Summoning
+Range: Visual range of the caster
+Duration: 1 turn
+Casting Time: 4
+Area of Effect: 10-ft. radius
+Saving Throw: Special
+
+When this spell is cast, acrid pools of thick, corrosive ichor rise from the earth and cover the ground.  Any creatures entering the area or caught in it when the spell is cast are mired in the sticky substance, which severely hinders their movement while corroding their flesh and armor, doing 1d4 damage(acid) per round, and reducing their physical resistances by 5%, making them more susceptible to melee and ranged attacks.  For every three levels of the caster, damage is increased by one point, and physical resistance is reduced by an additional percentage point, up to a maximum of 1d4+5 and 10%, respectively.  A successful Save vs. Spell at -2 negates the slowed movement and reduced defenses, while halving damage for that round.~
+@3044 = ~Grasping Shadows~
+@3045 = ~Grasping Shadows
+(Conjuration)
+
+Level: 4
+Sphere: Combat, Shadow
+Range: Visual range of the caster
+Duration: 5 rounds
+Casting Time: 5
+Area of Effect: 12-ft. radius
+Saving Throw: Neg.
+
+This spell conjures forth shadowy tendrils from the ground that grasp, claw, and pierce the flesh of any creature caught within the area of effect.  Creatures affected suffer 1d4 piercing and 1d4 cold damage per round, increasing by 1 point each for every three levels of the caster, up to a maximum of 1d4+2 cold and 1d4+2 piercing.  Affected creatures must roll a Save vs. Paralyze at -4 or be paralyzed for one and a half rounds.  Creatures that make a saving throw avoid being paralyzed and reduce their damage taken by one half.  Undead creatures are immune to the effects of this spell.  This spell cannot be cast by priests of good alignment.~
+@3046 = ~Ko'Dezza's Slime Golem~
+@3047 = ~Ko'Dezza's Slime Golem
+(Conjuration/Summoning)
+
+Level: 5
+Range: 120 ft.
+Duration: 4 rounds + 1 round/level
+Casting Time: 5
+Area of Effect: Special
+Saving Throw: None
+
+Ko'Dezza, an eccentric half-drow mage who lived around 1260DR, attempted to create new spells by experimenting with modifying and combining components of existing spells.  More often than not, her attempts met with unmitigated disater, but this spell was one of her more successful ventures.  Upon casting this spell, the wizard summons forth several slime creatures that pool and coagulate into one monstrous, gelatinous golem.  This golem possesses all the strengths of a slime monster, being very resistant to most physical attacks.  However, it also shares the weaknesses of these creatures and is quite vulnerable to fire and acid attacks.  The summoned golem will obey the commands of it's summoner for four rounds, plus one additional round per level of the caster, or until it is destroyed.  There is a 10% chance when casting this spell that two slime golems will be summoned instead of one.~
+@3048 = ~Cataclysm~
+@3049 = ~Cataclysm
+(Alteration)
+
+Level: 8
+Sphere: Elemental (Earth, Fire)
+Range: 360 ft.
+Duration: 3 tremors
+Casting Time: 9
+Area of Effect: 15-ft. radius
+Saving Throw: Special
+
+When this spell is cast, the very earth shakes and is torn asunder sending gouts of flame up from the cracks. The cataclysm affects all creatures in its area of effect, occurring in three waves:
+
+ 1st: All creatures affected take 3d6 points of crushing damage, and 3d6 points of fire damage.  Affected creatures are also knocked to the ground, panicked, or go berserk for four rounds.  A successful Saving Throw vs. Spell with a -6 penalty halves the damage and negates the adverse effects.
+ 2nd: All creatures affected take 1d9 points of crushing damage, and 1d9 points of fire damage.  A successful Saving Throw vs. Spell with a -2 penalty halves the damage.
+ 3rd: All creatures affected take 1d6 points of crushing damage, and 1d6 points of fire damage.  A successful Saving Throw vs. Spell halves the damage.
+
+This spell will affect both friend and foe alike, so great care must be taken in its use. Finally, earth and fire elementals are angered by the careless sundering and there is a small chance that casting this spell will cause one to appear and attack the party.~
+@3050 = ~Penetrating Cold~
+@3051 = ~Penetrating Cold
+(Alteration, Enchantment)
+
+Level: 7
+Sphere: Elemental (Ice)
+Range: Visual range of the caster
+Duration: 6 rounds
+Casting Time: 6
+Area of Effect: 8-ft. radius
+Saving Throw: Special
+
+When cast, this spell calls forth incredibly sharp, icy stalagmites from deep within the earth to erupt from the ground violently.  Any creature entering the area takes 1d6 Hit Points of piercing and cold damage per round, increasing by one point each per level up to a maximum of 1d6+4 at level 18.  There is a 15% chance per round that affected creatures will be frozen solid and unable to move for three rounds, while being frozen from the inside out.  At the end of three rounds, the ice shatters violently, doing an additional 1d6 Hit Points of piercing and cold to the affected creature and other creatures within a 5-foot radius, increasing by one point each per level up to a maximum of 1d6+4 at level 18.   There is no save for this spell or it's effects.~
+@3052 = ~Maelstrom~
+@3053 = ~Maelstrom
+(Conjuration)
+
+Level: 8
+Range: Visual range of the caster
+Duration: 5 rounds
+Casting Time: 6
+Area of Effect: 17-ft. radius
+Saving Throw: None
+
+Upon casting of this spell, the wizard conjures forth a fierce storm of high winds, driven rain, and lightning.  Creatures caught in the storm are battered by the wind and rain, severely restricting their movement and fighting ability.  Affected creatures suffer a penalty of 4 to their THACO and Armor Class for one round, 3d3 Hit Points of slashing damage per round, and a 50% chance of being struck by lightning for 4d6 Hit Points of electrical damage.  There is also a 20% chance that non giant-sized creatures will lose their footing and be pulled towards the center of the maelstrom or knocked down for one round.  There is no Saving Throw allowed to avoid any of the effects of this spell.~
+@3054 = ~Sunscorch~
+@3055 = ~Sunscorch
+(Invocation)
+
+Level: 1
+Sphere: Sun
+Range: Visual range of the caster
+Duration: Instant
+Casting Time: 4
+Area of Effect: 1 creature
+Saving Throw: Special
+
+When this spell is cast, a brilliant ray of scorching heat slants down from the sky and strikes one target of the caster's choice. Any creature struck by the ray takes 1d6 points of damage, plus 1 point per level of the caster; however, if the target is an undead creature or a monster vulnerable to bright light, the damage is 1d6, plus 2 points per level of the caster. In addition to sustaining damage, victims are also blinded for 3 rounds. The victim is allowed a Save vs. Spell for half damage and to avoid the blindness.~
+@3056 = ~Shar's Embrace~
+@3057 = ~Shar's Embrace
+(Conjuration)
+
+Sphere: Shadow
+Level: 6
+Range: 0
+Duration: 1 turn + 1 round/level
+Casting Time: 5
+Area of Effect: The caster
+Saving Throw: None
+
+Upon casting of this spell, the cleric is enshrouded by a mass of swirling darkness conjured from the shadow plane, which acts as a protective barrier against incoming attacks.  The shadows absorb energy from attacks, both physical and magical, that are directed at the caster.  The barrier reduces damage from all attacks by 10%, increasing by an additional percentage point every two levels to a maximum of 15% at level 21.  Additionally, creatures who successfully hit the caster through the shadowy barrier within melee range suffer 1d5 points of magic damage and 1d5 points of cold damage, with a 20% change of being drained of one level as well.  There is no Saving Throw allowed for these effects, though undead creatures are immune.  This spell may not be cast by clerics of good alignment.~
+@3058 = ~Deleterious Nimbus~
+@3059 = ~Deleterious Nimbus
+(Evocation)
+
+Level: 8
+Range: 40 ft.
+Duration: 1 turn
+Casting Time: 6
+Area of Effect: 15-ft. radius
+Saving Throw: Special
+
+This spell is a more powerful version of the level 5 mage spell, Cloudkill.  When cast, it creates plumes of venomous gas of such toxicity as to immediately sear the flesh of creatures it comes in contact with, entering their bloodstream.  So deadly is this poison as to instantly slay creatures of 8 or fewer Hit Dice, and creatures with 9 or 10 Hit Dice must roll a Saving Throw vs. Poison at -8 for each round they remain in the area of effect, lest they be slain instantly as well.  Those above 10th level (or 10 Hit Dice) must leave the cloud immediately or suffer 1d12 + 1 Hit Points of poison damage per level per round that they remain in the affected area, up to a maximum of 1d12 + 15 Hit Points at level 30.  While remaining in the area of effect, there is a 25% chance per round that creatures will also be systemically poisoned, suffering an additional 2 Hit Points of poison damage per second for 2 rounds, unless they make a Saving Throw vs. poison at -8.  This affliction will persist even after leaving the area of effect.~
+@3060 = ~Ent Summoning~
+@3061 = ~Ent Summoning
+(Conjuration/Summoning)
+
+Level: 5
+Sphere: Plant, Summoning
+Range: 120 ft.
+Duration: 4 turns
+Casting Time: 9
+Area of Effect: Special
+Saving Throw: None
+
+When the words of this spell are spoken, the caster conjures forth a Dark Treant to serve <PRO_HIMHER> in battle.  The strength of the summoned treant will increase with the caster as <PRO_HESHE> gains more levels of experience.
+
+  1st – 10th: a 9 HD dark treant.  There is a 50% chance that two dark treants will be summoned instead.
+
+  11th – 13th: a 10 HD dark treant.  There is a 50% chance that two dark treants will be summoned instead.
+
+  14th and up: an 11 HD dark treant.  There is a 50% chance that two dark treants will be summoned instead.
+
+The summoned treants will obey the casters commands and remain in <PRO_HISHER> thrall until they are destroyed or the spell's duration expires.~
+@3062 = ~Crushing Earth~
+@3063 = ~Crushing Earth
+(Invocation)
+
+Level: 6
+Sphere: Elemental Earth
+Range: 100 ft.
+Duration: Instant
+Casting Time: 9
+Area of Effect: Special
+Saving Throw: Special
+
+By way of this spell, the caster summons forth a large boulder 6-ft. in diameter that is then hurled in the direction of <PRO_HISHER> choosing.  Once launched, this unstoppable force of earth plows over and through any creatures in it's path, causing 10d10 Hit Points of crushing damage, with a 15% chance of outright crushing them to death.  Creatures struck by the boulder can roll a Save vs. Spell to sidestep or jump out of the way at the last moment to halve the damage, there is no Saving Throw allowed to avoid the chance of being crushed to death.  Giant-sized creatures are less affected by the boulder and take 5d10 Hit Points of crushing damage, with a successful Save vs. Spell for half.  Giant-sized creatures cannot be instantly killed by the boulder.~
+@3064 = ~Ko'Dezza's Caustic Shell~
+@3065 = ~Ko'Dezza's Caustic Shell
+(Conjuration)
+
+Level: 3
+Range: 0
+Duration: 1 turn + 1 round/level
+Casting Time: 5
+Area of Effect: The caster
+Saving Throw: None
+
+Ko'Dezza, a half-drow mage who lived in an age past had a natural talent for magic, and attempted to eke out a living by experimenting on existing spells to create new spells and sold scrolls of her creations across the breadth of Faerûn.  This spell in particular was a great success, though it came at the cost of three fingers on her left hand.  When cast, the spell conjures forth a mass of living slime that encapsulates the caster in a protective bubble.  The slime-shell is highly corrosive, and thwarts acidic and physical attacks.  The caster's resistance to acid is increased by 50% for the duration of the spell, and attackers in melee range who successfully strike <PRO_HIMHER> through the shell are checmically burned by it, causing 1d6+2 Hit Points of acid damage, and suffering a penalty of 1 to their THACO score for one round unless a successful Save vs. Spell at -2 is made.~
+@3066 = ~Antipode~
+@3067 = ~Antipode
+(Evocation)
+
+Level: 6
+Range: 40 ft.
+Duration: Instant
+Casting Time: 5
+Area of Effect: 15-ft. radius
+Saving Throw: 1/2
+
+When this spell is invoked, the wizard selects a target, carefully calculating it's range, and from each hand a bolt is launched, one of fire, the other, ice.  The missiles home in on their target with unerring accuracy and collide, resulting in a horrific explosion sending molten shrapnel and frozen shards flying outward in a 15-ft. radius, doing 6d6 Hit Points of fire damage, and 6d6 Hit Points of cold damage to the target and any creatures caught in the area of effect.  This spell increases in strength with the casters level, doing an additional 2d6 Hit Dice each for every four levels of the caster, up to a maximum of 12d6 each at level 24. Creatures failing their Saving Throws each suffer full damage from the blast. Those who roll successful Saving Throws are nimble enough to dodge or take cover at the last moment, only taking half of the damage.~
+@3068 = ~Flame Vortice~
+@3069 = ~Flame Vortice
+(Conjuration)
+
+Level: 6
+Range: Visual range of the caster
+Duration: Special
+Casting Time: 9
+Area of Effect: Special
+Saving Throw: Special
+
+When this spell is cast, the wizard opens a portal to the plane of fire in the sky above the battlefield, and pulls down a vortex of intense flames and super-heated air.  The swirling mass of fire touches down to the earth, then moves about unpredictably, scorching any creatures in it's path. The caster is immune to <PRO_HISHER> own spell, but <PRO_HISHER> companions are not, and must be wary.  If a creature is caught in the path of the burning vortex, it takes 8d8 fire damage, increasing by one point of damage per level of the caster, up to a maximum of 8d8+12.  Creatures may make a Saving Throw vs. Breath to halve the damage, but they must do so with a -6 penalty.  There is a 10% chance that affected creatures will be instantly incinerated to death, with no Saving Throw allowed.  A maximum of 6 creatures can be affected, after which the vortex will dissipate back into the fire plane.  Creatures immune to fire are not affected by this spell.~
+@3070 = ~Sundering Vitriol~
+@3071 = ~Sundering Vitriol
+(Evocation)
+
+Level: 3
+Sphere: Elemental Earth, Combat
+Range: 100 ft.
+Duration: Instant
+Casting Time: 4
+Area of Effect: 1 creature
+Saving Throw: None
+
+When this spell is cast, the druid draws forth a globule of viscous, caustic slime, which is then hurled towards a creature of the druid's choosing.  When struck by the slime, creatures suffer 1d3+2 Hit Points of acid damage, and their resistance to all forms of physical damage is lowered by 3 percent for one round.  For every 3 levels of experience of the caster, an additional globule is added to the volley, up to a maximum of 7 at level 24.  There is no Saving Throw allowed for the effects of this spell.~
+@3072 = ~Devouring Darkness~
+@3073 = ~Devouring Darkness
+(Conjuration, Shadow)
+
+Level: 7
+Sphere: Combat
+Range: 40 ft.
+Duration: 1 turn
+Casting Time: 9
+Area of Effect: 10-ft. radius
+Saving Throw: None
+
+When the priest chants this spell, a swirling misama of living shadow blankets an area of the caster's choosing.  Creatures caught in the maw of this hungering mass suffer 2d4 Hit Points of cold and 2d4 Hit Points of magic damage per round while they are in the area of effect, their level of fatigue increased by one, and must make a Saving Throw or also be held for one round and drained of two levels permanently.  The Saving throw against being held must be made at a penalty of -8, and -2 for being drained.  The caster and undead creatures are immune to the effects of this spell.  This spell may not be cast by clerics of good alignment.~
+@3074 = ~Ko'Dezza's Frozen Death~
+@3075 = ~Ko'Dezza's Frozen Death
+(Evocation)
+
+Level: 9
+Range: 40 ft.
+Duration: Instant
+Casting Time: 6
+Area of Effect: 15-ft. radius
+Saving Throw: none
+
+The first scroll containing this spell was discovered when a group of adventurers happened across a blasted hovel deep within the Spine of the World.  Under the remains lay a small laboratory that had apparently suffered a major magical mishap.  The scroll was firmly in the grasp of a necrotic, yet seemingly permanently frozen half-drowish hand.  It would be Ko'Dezza's final work, and her doom as well.  When cast, the wizard channels a massive amount of dark energy from the heart of the shadow plane into a singular point on the battlefield until it reaches critical mass, then explodes violently outward in all directions, ripping through any creatures in it's path, causing 7d10 Hit Points of cold damage and 7d10 Hit Points of magic damage.  There is a small chance that a creature hit by this dark energy will unwittingly become a conduit for a shadow elemental to enter the prime, resulting in their evisceration upon it's arrival.  The enraged elemental will attack the nearest creature, both friend and foe alike, until it is utterly destroyed.  There is no Saving Throw allowed for any of the effects of this spell.  Undead creatures are immune to the effects of this spell.~
+@3076 = ~Conjure Shadow Elemental~
+@3077 = ~Conjure Shadow Elemental
+(Conjuration/Summoning)
+
+Level: 6
+Sphere: Elemental (Shadow), Summoning
+Range: Visual range of the caster
+Duration: 1 turn/level
+Casting Time: 9
+Area of Effect: Special
+Saving Throw: None
+
+Upon casting a Conjure Shadow Elemental spell, the caster opens a special gate to the Plane of Shadow, and a shadow elemental is summoned in the vicinity of the caster. There is a 60% chance that a 12-Hit-Dice elemental appears; a 35% chance that a 16-Hit-Dice elemental appears; and a 5% chance that a 24-Hit-Dice elemental appears. The elemental will do the bidding of the caster until it is slain or the duration of the spell runs out. All the commands given to the elemental are done telepathically, so there is no time lost due to miscommunication and no need to know the language of the summoned creature. Unlike Mages, priests do not have to engage in a battle of the minds to control their elemental.  This spell may not be cast by clerics of good alignment.~
+@5003 = ~Wind Slash~
+@5004 = ~Produce Fire~
+@5005 = ~Sundering Vitriol~
+@5006 = ~Thunder Thrust~
+@5007 = ~Cone of Cold~
+@5008 = ~Poison Weapon~
+@5009 = ~Neutralize Poison~
+@5010 = ~Wizard Eye~
+@5011 = ~Writhing Fog~
+@5012 = ~Antipode~
+@5013 = ~Blessing of Tymora~
+@5014 = ~Minor Antimagic Shell~
+@5015 = ~Cataclysm~
+@5016 = ~Cacophony of Chaos~
+@5017 = ~Knife Trick~
+@5018 = ~Mass Exaltation~
+@5019 = ~Mass Cure~
+@5020 = ~Mass Minor Trollish Regeneration~
+@5021 = ~Mass Trollish Regeneration~
+@5022 = ~Shadowstep~
+@5023 = ~Penetrating Cold~
+@5024 = ~deprecated~
+@5025 = ~Dread Flame~
+@5026 = ~Summon Zaaman Rul~
+@5027 = ~Summon Chan~
+@5028 = ~Summon Sunnis~
+@5029 = ~Summon Ben-Hadar~
+@5030 = ~Deprecated~
+@5031 = ~Ko'Dezza's Caustic Shell~
+@5032 = ~deprecated~
+@5033 = ~Summon Ankhegs~
+@5034 = ~Silence, 15' Radius~
+@5035 = ~Spell Sequencer~
+@5036 = ~Shield~
+@5037 = ~Spirit Armor~
+@5038 = ~Fire Storm~
+@5039 = ~Summon Chalimandren~
+@5040 = ~Burning Hands~
+@5041 = ~Luck~
+@5042 = ~Larloch's Minor Drain~
+@5043 = ~Horror~
+@5044 = ~Vampiric Touch~
+@5045 = ~You may not use two rings of wizardry at the same time.~
+@5046 = ~Flame Arrow~
+@5047 = ~Monster Summoning III~
+@5048 = ~Invisible Stalker~
+@5049 = ~Shadow Bolt~
+@5050 = ~Multi-Fireball~
+@5051 = ~Attack~
+@5052 = ~Spirit Ward~
+@5053 = ~Scorching Breath~
+@5054 = ~Engulfing Darkness~
+@5055 = ~Avatar of Shadow~
+@5056 = ~Shimmering Breath~
+@5057 = ~Arctic Breath~
+@5058 = ~Shocking Breath~
+@5059 = ~Shadow Breath~
+@5060 = ~Venomous Breath~
+@5061 = ~Caustic Breath~
+@5062 = ~Shadow Images~
+@5063 = ~Shadow Imaged~
+@5064 = ~Knock~
+@5065 = ~Shadow Elemental Attack~
+@5066 = ~Faerie Fire~
+@5067 = ~Minor Lightning Bolt~
+@5068 = ~Minor Chain Lightning~
 @10000 = ~Item-Spell-Kit Pack by Daeros Trollkiller (Formerly SoD to BG2 Item Upgrade)~
 @10001 = ~This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy~
 @10003 = ~Items~
@@ -25,13 +541,6 @@
 @10018 = ~Add bard instruments from IWD into Baldur's Gate EE, Baldur's Gate 2 EE, EE Trilogy~
 @10019 = ~Add cursed items from IWD into Baldur's Gate EE, Baldur's Gate 2 EE, EE Trilogy~
 @10020 = ~Add new items to BG1:EE, BG2:EE, EE:Trilogy, and IWD:EE~
-/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
-/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
-/////                                                  \\\\\
-///// Item Descriptions                                \\\\\
-/////                                                  \\\\\
-/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
-/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
 @20000 = ~Long Sword~
 @20001 = ~These swords are usually referred to as double-edged swords, war swords, or military swords. In many cases, the long sword has a single-edged blade. There is no single version of the long sword; the design and length vary from culture to culture and may vary within the same culture depending on the era. Among the most common characteristics of all long swords is their length, which ranges from thirty-five inches to forty-seven inches. In the latter case, the blade is known to take up forty inches of the total length. Most long swords have a double-edged blade and a sharp point at the tip. Despite the tip, the long sword is designed for slashing, not thrusting.
 
@@ -1986,7 +2495,7 @@ Requires:
 
 Weight: 2~
 @20323 = ~Sword of Troll Decapitation +1~
-@20324= ~Runes along the length of this powerful blade spell ""death to trolls"" in multiple languages. A green gem set in the weapon's hilt glows with a pale green light. Legend tells that the famous dwarf Durlag Trollkiller used this sword in his adventuring days, but lost it during a particularly brutal fight in the Troll Hills.
+@20324 = ~Runes along the length of this powerful blade spell ""death to trolls"" in multiple languages. A green gem set in the weapon's hilt glows with a pale green light. Legend tells that the famous dwarf Durlag Trollkiller used this sword in his adventuring days, but lost it during a particularly brutal fight in the Troll Hills.
 
 Despite the item's name, it does not actually decapitate trolls. A rumor sprung up regarding its powers and despite evidence to the contrary, the sword has never shaken the nickname.
 
@@ -2412,10 +2921,6 @@ Charge abilities:
   Duration: 2 turns
 
 Weight: 1~
-
-/////////////////////////////////////
-///////IWD BARD INSTRUMENTS//////////
-/////////////////////////////////////
 @20383 = ~Hunting Horn~
 @20384 = ~These small, curved horns produce a loud clarion call that can carry as far as two miles. They are favored by many of the northern barbarian tribes.~
 @20385 = ~Bardic Horn of Valhallah~
@@ -2508,10 +3013,6 @@ Charge abilities:
   Area of Effect: 1 creature
 
 Weight: 2~
-
-/////////////////////////////////////
-///////////IWD CURSED ITEMS//////////
-/////////////////////////////////////
 @20401 = ~Belt of Stones~
 @20402 = ~This cursed item was created by the wicked sorcerer Valom of the Deep. Valom often hired lone mercenaries to collect magic item components for him. When the unlucky sellswords came on board Valom's floating laboratory, the Dim Courser, Valom would give them the girdle as a reward for a job well done. Once the victim would try on the girdle, Valom would kick them over the side of the boat, where they would quickly drown. Valom's luck ran out when he kicked Herred of Procampur into the Sea of Fallen Stars. Herred had a potion of water breathing and a helm of underwater action with him at the time. When the huge, seaweed-covered form of Herred emerged near the docks where Valom was resting, a local priest of Tyr immediately came to his aid. Upon discovering what Valom had done, the priest of Tyr and three paladins attempted to capture him. Valom killed two of the paladins, but died in the battle. It is believed that the belt was later sold to a traveling collector who specialized in cursed clothing.
 
@@ -2631,9 +3132,6 @@ Requires:
  5 Strength
 
 Weight: 2~
-////////////////////////////////
-//////NEW ITEM DESCRIPTIONS/////
-////////////////////////////////
 @20419 = ~Fiery Vengeance +3~
 @20420 = ~Im 1208DR, Blasille Ikretti, a paladin squire in the service of Mystra, had returned to her homestead after months-long training in the frozen north.  Shortly after her arrival, an insidious Ogre Magi that had been conducting surreptitous raids on the local towns targeted Blasille's home as his next conquest.  Under the cover of night, he struck.  Blasille fought as hard as she could, but was no match for the Ogre's magery.  She was captured, and forced to watch as one, by one, her friends and family were slaughtered.  The saddistic ogre took great pleasure in killing each of them slowly, while Blasille could do nothing.  For three days and nights, she was forced to witness this horror, pleading with her Goddess for help... but none came.
 
@@ -2963,477 +3461,6 @@ Requires:
  10 Strength
 
 Weight: 20~
-/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
-/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
-/////                                                  \\\\\
-///// New Spell Names and Descriptions                 \\\\\
-/////                                                  \\\\\
-/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
-/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
-@3000 = ~Blood-stained Ancient Scroll~
-@3001 = ~This scroll, long hidden within the lining of Vecna's robe, is heavily stained with blood and appears to be made of human skin.  It likely contains a powerful spell scribed by the lich himself.~
-@3002 = ~Conjure Death~
-@3003 = ~Conjure Death
-(Necromancy)
-
-Level: 6
-Range: 30 ft.
-Duration: 8 hours
-Casting Time: 9
-Area of Effect: Special
-Saving Throw: None
-
-This spell is a more powerful version of the level 5 wizard spell, animate dead.  When cast, an undead horror is summoned to serve the caster and will obey <PRO_HISHER> commands, until the enchantment ends or it is utterly destroyed.
-
-  1st – 14th: 1d2 of 7 HD burning skeletons weilding a +1 melee or ranged weapon and +1 shield or buckler, 8 HD putrid zombies, 7 HD charged wights, or 9 HD drowned-in-bloods.
-
-  15th – 17th: 1d2 of 9 HD burning skeleton weilding a +2 melee or ranged weapon and +2 shield or buckler, 10 HD putrid zombies, 9 HD charged wights, or 11 HD drowned-in-bloods.
-
-  18th and up: 1d2 of 11 HD burning skeleton weilding a +3 melee or ranged weapon and +3 shield or buckler, 12 HD putrid zombies, 11 HD charged wights, or 13 HD drowned-in-bloods.
-
-The conjured undead can follow the caster, remain in an area and attack any creature entering the place, etc. It remains animated until it is destroyed in combat, 8 hours pass, or it is turned. This spell cannot be dispelled.~
-@3004 = ~Sealed Ancient Scroll~
-@3005 = ~Thunder Thrust~
-@3006 = ~Thunder Thrust
-(Evocation)
-
-Level: 6
-Range: 80 ft.
-Duration: Instant
-Casting Time: 4
-Area of Effect: 7-ft. radius
-Saving Throw: 1/2
-
-This spell draws forth a massive bolt of electrical energy from the plane of air into the prime, striking the caster's target and nearby foes with a surge of electricity. Each bolt causes 12d8 points of electrical damage, plus an additional 1d8 points per level of the caster, up to a maximum of 21d8. Any creatures within a 7 foot radius are also caught in the blast and take 4d8 of electrical damage, plus 1d8 per two levels up to a maximum of 8d8.  The force of the blast knocks affected targets back and unconscious for one round.  Creatures may make a reflex save to evade the blast, or successfully Save vs. Spell to halve the damage.~
-@3007 = ~This scroll is sealed by some magical encryption that defies all attempts to understand it's contents.  Just when it appears that a word or symbol is discernible, it shifts into another form.  It would take far more knowledge than most mortals possess to decipher this enigma.~
-@3008 = ~Trollkiller's Fireball~
-@3009 = ~Trollkiller's Fireball
-(Evocation)
-
-Level: 4
-Range: Visual range of the caster
-Duration: Instant
-Casting Time: 3
-Area of Effect: 15-ft. radius
-Saving Throw: 1/2
-
-Trollkiller's Fireball is a more powerful version of the level 3 wizard spell, Fireball.  It's namesake, Durlag Trollkiller, commissioned an exiled elven mage of considerable skill to create this spell for use in eradicating trolls from his homeland.  Much to his delight, the creation of the spell was successful and put to great use during his troll-cleansing campaign.  In the years following, as Durlag's madness took hold of him, he kept all of his most prized possessions, including this spell, under lock, key, and devious trap inside his tower.  How it came to be in your possession is a mystery.   When cast, a raging ball of flame flies forth from the caster's hand, striking the target point and exploding in a horrific display of hellfire, doing 1d6 points of damage for each level of the spellcaster (up to a maximum of 16d6) to targets caught in the blast.  The searing heat is so intense that it can ignite clothing, armor, and even flesh, causing an additional 1d4 fire damage per round and sending the afflicted into a state of panic until they successfully roll a Save vs. Spell to extinguish the flames.  Those who roll successful a Save vs. Spell manage to dodge, fall flat, or roll aside, taking only half damage from the initial blast, and evade the ongoing fire damage and panic.  All saving throws must be made at -2.~
-@3010 = ~Hoar of Frost~
-@3011 = ~Hoar of Frost
-(Evocation)
-
-Level: 7
-Sphere: Combat, Elemental (Cold)
-Range: 0
-Duration: Instant
-Casting Time: 3
-Area of Effect: 18-ft. cone with 90-deg. arc
-Saving Throw: 1/2
-
-The chosen of Auril speak of this spell as legend, a power that the Ice Maiden bestows only upon her most favored, and is a closely guarded secret.  It is said this spell conjures forth the very breath of Auril herself.  Cold as the hearts of Auril's followers may be, there are beings far, far more cruel than they in the realms, and it is rumored that one such being, known as "The Shattered One", captured a high priestess of Auril and performed torturous experiments on her to "extract" this magic for his own use.  Unfortunately for the mage, he was unable to channel the divine energies required for the spell to work properly.  However, the damage was done and the secrets of this magic were shared across the realms, much to Auril's displeasure.  This spell brings forth a gale of icy, frozen wind from the caster's hands, freezing all in it's path with 1d5+1 of cold damage per level, up to a maximum of 20d5+20.   Those afflicted by the blistering cold are frozen in their tracks, hindering their ability to fight unless a saving throw is made.   Those who roll a successful Save vs. Spell will shrug off a portion of the cold, taking half damage and avoid being frozen in place.  All saving throws must be made at -2.  The use of this spell by non-aurilites angers the Ice Maiden greatly and there is a small chance that an enraged golem of ice will form from the gale and attack the party.~
-@3012 = ~Corrosion~
-@3013 = ~Corrosion
-(Conjuration)
-
-Level: 7
-Range: 40 ft.
-Duration: 1 turn
-Casting Time: 5
-Area of Effect: 15-ft. radius
-Saving Throw: Special
-
-This spell conjures forth a thick, acrid, corrosive smog that immediately begins to dissolve the armor and flesh of any creature unfortunate enough to be caught in it.  Creatures caught in the area of effect will take 1d10 of acid damage per round that they remain in the caustic fog, and must roll a Saving Throw vs. Spells at a -4 penalty or suffer reduction to their resistances against all forms of physical damage 15% for three rounds.  These effects increase with the caster's level, up to a maximum of 1d10+5 acid damage and 20% reduction of physical damage resistance at level 17.~
-@3014 = ~Vitriolic Burst~
-@3015 = ~Produce Fire~
-@3016 = ~Cone of Cold~
-@3017 = ~Writhing Fog~
-@3018 = ~Hidden Scroll~
-@3019 = ~Dancing Lights~
-@3020 = ~Dancing Lights
-(Alteration)
-
-Level: 1
-Range: Sight
-Duration: 2 rds./level
-Casting Time: 1
-Area of Effect: Special
-Saving Throw: None
-
-This spell creates up to four glowing spheres of light (such as evidenced by will-o-wisps) or one faintly glowing, vaguely humanoid shape, somewhat similar to a fire elemental. The dancing lights move randomly without concentration upon such movement by the wizard. Although the lights cause no physical harm, they can distract enemies until either their duration expires or dispersed by weapon or magic.~
-@3021 = ~Darkness, 15' Radius~
-@3022 = ~Darkness, 15' Radius
-(Alteration)
-
-Level: 2
-Range: 30 ft.
-Duration: 1 turn
-Casting Time: 2
-Area of Effect: 15-ft. radius
-Saving Throw: None
-
-This spell causes total, impenetrable darkness. Neither normal nor magical light works in the area of effect. All vision (including infravision) is severely limited; anyone hostile caught in the area of effect is for all practical purposes blinded as per the 1st-level wizard spell. Creatures that leave the area covered by darkness will have their vision restored after 1 round.~
-@3023 = ~Faerie Fire~
-@3024 = ~Faerie Fire
-(Alteration)
-
-Level: 1
-Sphere: Weather
-Range: Sight
-Duration: 4 rounds/level
-Casting Time: 4
-Area of Effect: 10-ft. radius
-Saving Throw: None
-
-This spell outlines one or more creatures with a pale violet glow, making positions and movements easily visible. Outlined creatures are easier to strike, giving them an Armor Class penalty of -2.~
-@3025 = ~Shining Bolt~
-@3026 = ~Shining Bolt
-(Invocation/Evocation)
-
-Level: 1
-Range: 60 ft.
-Duration: Instant
-Casting Time: 1
-Area of Effect: 1 creature
-Saving Throw: None
-
-This ability allows Anomen to hurl a bolt of divine energy at an enemy once per day, dealing them 5d6 points of magic damage. Undead creatures and fiends are particularly susceptible to the bolt's effects, suffering double damage when they are struck. The target's Magic Resistance, if any, does not affect this ability.~
-@3027 = ~Curse~
-@3028 = ~Curse
-(Conjuration/Summoning)
-
-Level: 1
-Sphere: All
-Range: Visual range of the caster
-Duration: 6 rounds
-Casting Time: 9
-Area of Effect: 15-ft. radius
-Saving Throw: None
-
-When uttering the Curse spell, the caster lowers the morale of enemy creatures and any Saving Throws and attack rolls they make by 1. At the instant the spell is completed, it affects all creatures in a 15-ft. radius centered on the point selected by the caster. Affected creatures leaving the area are still subject to the spell's effect; those entering the area after the casting is completed are not.~
-@3029 = ~Infernal Bone Shield~
-@3030 = ~Infernal Bone Shield
-(Necromancy)
-
-Level: 5
-Sphere: Guardian, Creation
-Range: 0
-Duration: 3 rounds
-Casting Time: 3
-Area of Effect: 3-ft. radius
-Saving Throw: None
-
-This spell conjures forth a barrier of floating fell skeleton and demon bones that spin rapidly around the caster. Anyone entering the path of the bones takes 1d6 crushing damage and 1d6 fire damage per round.~
-@3031 = ~Fell Rage~
-@3032 = ~Fell Rage
-(Alteration)
-
-Level: 5
-Sphere: Combat
-Range: Visual range of the caster
-Duration: 2 turns
-Casting Time: 7
-Area of Effect: 1 creature
-Saving Throw: None
-
-This spell works only on player characters or allied creatures.  When cast, fell, demonic energies are channeled into the target causing them to go berserk, attacking the nearest creature until that creature is dead, then moving on to the next target. While under the effects of Fell Rage, the target is immune to charm, sleep, fear, hold, stunning, confusion, emotion, symbol spells, and related effects. In addition, the target gains +1 to hit, +1 to Strength, +1 to Dexterity, +1 to Constitution, +10 to maximum Hit Points, +2 to <PRO_HISHER> movement rate, 5% Physical Damage Resistance, 30% Fire Resistance, and 1d2 Damage(Acid) to all physical attacks. The spell has several disadvantages, however: The Hit Points of the target are masked for the duration of the spell, and at the end of the spell's duration, the target becomes fatigued and <PRO_HISHER> Strength, Dexterity, and Constitution are reduced by 3 for 2 turns. Fell Rage cannot be cast by or affect creatures of good alignment.~
-@3033 = ~Shadow Bolt~
-@3034 = ~Shadow Bolt
-(Invocation)
-
-Level: 5
-Sphere: Shadow
-Range: Visual range of the caster
-Duration: Instant
-Casting Time: 4
-Area of Effect: 5-ft. radius
-Saving Throw: Special
-
-This spell conjures forth shadowy orbs of dark energy from the shadow plane that bolt forward from the caster's hand to strike <PRO_HISHER> target with unerring precision. The priest creates one bolt at 9th level and an additional bolt at every third level after 9th—in other words, two bolts at 12th level, three at 15th, four at 18th, to a maximum of five bolts at 21st level. Each bolt inflicts 1d5 points of cold damage and 1d5 points of magic damage to the target and then bursts in a 5-ft. radius concussive blast that inflicts 6 points of cold damage and 6 points of magic damage, increasing by two points each per every 3 levels of the caster, up to a maximum of 14 per each at level 21.  Additionally, creatures caught in the dark energy blast suffer a 20% chance of being blinded for one turn or being drained of one level permanently. Creatures can attempt a Save vs. Spell at -4 to negate the concussion damage and effects, but the impact of the bolts themselves allow no Saving Throw.  Undead creatures are immune to the effects of this spell.  Priests of good alignment may not cast this spell.~
-@3035 = ~Demi-Shadow Monsters~
-@3036 = ~Demi-Shadow Monsters
-(Illusion/Phantasm)
-
-Level: 5
-Range: Visual range of the caster
-Duration: 1 round/level
-Casting Time: 5
-Area of Effect: Special
-Saving Throw: None
-
-This spell is similar to the 4th-level wizard spell Shadow Monsters, except the summoned creatures are much more powerful.~
-@3037 = ~Electrical Discharge~
-@3038 = ~Shroud of Shadow~
-@3039 = ~Shroud of Shadow
-(Alteration, Illusion)
-
-Level: 7
-Range: 0
-Duration: 1 turn
-Casting Time: 1
-Area of Effect: The caster
-Saving Throw: None
-
-When this spell is cast, the caster is enshrouded by dark shadows, taking on the form of a shadow fiend.  While in this form, <PRO_HESHE> takes on some of the abilities of a shadow monster:  Movement rate is increased by 2, casting speed is increased by 2, attack rate is increased by 1/2 per round, resistance to all physical attacks is increased by 7%, resistances to fire, cold, acid, and magic attacks are increased by 20%, the caster is able to hide and stay hidden in shadows with ease, and <PRO_HISHER> movement cannot be impeded by normal means.  However, the inherent weakness of a shadow monster is also imparted to the caster, and <PRO_HISHER> becomes extremely susceptible to electrical attacks for the duration of the spell.~
-@3040 = ~Ko'Dezza's Multi-Fireball~
-@3041 = ~Ko'Dezza's Multi-Fireball
-(Evocation)
-
-Level: 7
-Range: 40 ft.
-Duration: Instant
-Casting Time: 4
-Area of Effect: 15-ft. radius
-Saving Throw: 1/2
-
-Ko'Dezza was an eccentric half-drow mage who lived before the time of troubles.  She attempted to create new spells by modifying and enhancing existing spells.  While her experiments met with failure more often than not, this spell was on her more successful efforts.  For all intents and purposes, this spell functions very similar to the level 3 spell, Fireball, except that two or more fireballs are launched simultaneously, and home in on a targeted creature with unerring accuracy.  When this spell is cast, two fireballs are launched at a target, and upon impact, explode in a horrific display of flames, doing 6d6 damage to the target and all creatures within a 15 foot radius of the impact.  For every two levels of the caster, damage is increased by 1d6 up to a maximum of 10d6 at level 22, and for every four levels an additional fireball is launched, up to a maximum of four at level 22.  Thus, a level 22 wizard can fire four fireballs each doing 10d6 fire damage at level 22. As with the level 3 spell, Fireball, creatures who make a Saving Throw per fireball may reduce their damage taken from it by half.  Creatures weak against fire would do well to steer clear of a mage with this spell in <PRO_HISHER> repertoire.~
-@3042 = ~Caustic Quagmire~
-@3043 = ~Caustic Quagmire
-(Conjuration)
-
-Level: 4
-Sphere: Summoning
-Range: Visual range of the caster
-Duration: 1 turn
-Casting Time: 4
-Area of Effect: 10-ft. radius
-Saving Throw: Special
-
-When this spell is cast, acrid pools of thick, corrosive ichor rise from the earth and cover the ground.  Any creatures entering the area or caught in it when the spell is cast are mired in the sticky substance, which severely hinders their movement while corroding their flesh and armor, doing 1d4 damage(acid) per round, and reducing their physical resistances by 5%, making them more susceptible to melee and ranged attacks.  For every three levels of the caster, damage is increased by one point, and physical resistance is reduced by an additional percentage point, up to a maximum of 1d4+5 and 10%, respectively.  A successful Save vs. Spell at -2 negates the slowed movement and reduced defenses, while halving damage for that round.~
-@3044 = ~Grasping Shadows~
-@3045 = ~Grasping Shadows
-(Conjuration)
-
-Level: 4
-Sphere: Combat, Shadow
-Range: Visual range of the caster
-Duration: 5 rounds
-Casting Time: 5
-Area of Effect: 12-ft. radius
-Saving Throw: Neg.
-
-This spell conjures forth shadowy tendrils from the ground that grasp, claw, and pierce the flesh of any creature caught within the area of effect.  Creatures affected suffer 1d4 piercing and 1d4 cold damage per round, increasing by 1 point each for every three levels of the caster, up to a maximum of 1d4+2 cold and 1d4+2 piercing.  Affected creatures must roll a Save vs. Paralyze at -4 or be paralyzed for one and a half rounds.  Creatures that make a saving throw avoid being paralyzed and reduce their damage taken by one half.  Undead creatures are immune to the effects of this spell.  This spell cannot be cast by priests of good alignment.~
-@3046 = ~Ko'Dezza's Slime Golem~
-@3047 = ~Ko'Dezza's Slime Golem
-(Conjuration/Summoning)
-
-Level: 5
-Range: 120 ft.
-Duration: 4 rounds + 1 round/level
-Casting Time: 5
-Area of Effect: Special
-Saving Throw: None
-
-Ko'Dezza, an eccentric half-drow mage who lived around 1260DR, attempted to create new spells by experimenting with modifying and combining components of existing spells.  More often than not, her attempts met with unmitigated disater, but this spell was one of her more successful ventures.  Upon casting this spell, the wizard summons forth several slime creatures that pool and coagulate into one monstrous, gelatinous golem.  This golem possesses all the strengths of a slime monster, being very resistant to most physical attacks.  However, it also shares the weaknesses of these creatures and is quite vulnerable to fire and acid attacks.  The summoned golem will obey the commands of it's summoner for four rounds, plus one additional round per level of the caster, or until it is destroyed.  There is a 10% chance when casting this spell that two slime golems will be summoned instead of one.~
-@3048 = ~Cataclysm~
-@3049 = ~Cataclysm
-(Alteration)
-
-Level: 8
-Sphere: Elemental (Earth, Fire)
-Range: 360 ft.
-Duration: 3 tremors
-Casting Time: 9
-Area of Effect: 15-ft. radius
-Saving Throw: Special
-
-When this spell is cast, the very earth shakes and is torn asunder sending gouts of flame up from the cracks. The cataclysm affects all creatures in its area of effect, occurring in three waves:
-
- 1st: All creatures affected take 3d6 points of crushing damage, and 3d6 points of fire damage.  Affected creatures are also knocked to the ground, panicked, or go berserk for four rounds.  A successful Saving Throw vs. Spell with a -6 penalty halves the damage and negates the adverse effects.
- 2nd: All creatures affected take 1d9 points of crushing damage, and 1d9 points of fire damage.  A successful Saving Throw vs. Spell with a -2 penalty halves the damage.
- 3rd: All creatures affected take 1d6 points of crushing damage, and 1d6 points of fire damage.  A successful Saving Throw vs. Spell halves the damage.
-
-This spell will affect both friend and foe alike, so great care must be taken in its use. Finally, earth and fire elementals are angered by the careless sundering and there is a small chance that casting this spell will cause one to appear and attack the party.~
-@3050 = ~Penetrating Cold~
-@3051 = ~Penetrating Cold
-(Alteration, Enchantment)
-
-Level: 7
-Sphere: Elemental (Ice)
-Range: Visual range of the caster
-Duration: 6 rounds
-Casting Time: 6
-Area of Effect: 8-ft. radius
-Saving Throw: Special
-
-When cast, this spell calls forth incredibly sharp, icy stalagmites from deep within the earth to erupt from the ground violently.  Any creature entering the area takes 1d6 Hit Points of piercing and cold damage per round, increasing by one point each per level up to a maximum of 1d6+4 at level 18.  There is a 15% chance per round that affected creatures will be frozen solid and unable to move for three rounds, while being frozen from the inside out.  At the end of three rounds, the ice shatters violently, doing an additional 1d6 Hit Points of piercing and cold to the affected creature and other creatures within a 5-foot radius, increasing by one point each per level up to a maximum of 1d6+4 at level 18.   There is no save for this spell or it's effects.~
-@3052 = ~Maelstrom~
-@3053 = ~Maelstrom
-(Conjuration)
-
-Level: 8
-Range: Visual range of the caster
-Duration: 5 rounds
-Casting Time: 6
-Area of Effect: 17-ft. radius
-Saving Throw: None
-
-Upon casting of this spell, the wizard conjures forth a fierce storm of high winds, driven rain, and lightning.  Creatures caught in the storm are battered by the wind and rain, severely restricting their movement and fighting ability.  Affected creatures suffer a penalty of 4 to their THACO and Armor Class for one round, 3d3 Hit Points of slashing damage per round, and a 50% chance of being struck by lightning for 4d6 Hit Points of electrical damage.  There is also a 20% chance that non giant-sized creatures will lose their footing and be pulled towards the center of the maelstrom or knocked down for one round.  There is no Saving Throw allowed to avoid any of the effects of this spell.~
-@3054 = ~Sunscorch~
-@3055 = ~Sunscorch
-(Invocation)
-
-Level: 1
-Sphere: Sun
-Range: Visual range of the caster
-Duration: Instant
-Casting Time: 4
-Area of Effect: 1 creature
-Saving Throw: Special
-
-When this spell is cast, a brilliant ray of scorching heat slants down from the sky and strikes one target of the caster's choice. Any creature struck by the ray takes 1d6 points of damage, plus 1 point per level of the caster; however, if the target is an undead creature or a monster vulnerable to bright light, the damage is 1d6, plus 2 points per level of the caster. In addition to sustaining damage, victims are also blinded for 3 rounds. The victim is allowed a Save vs. Spell for half damage and to avoid the blindness.~
-@3056 = ~Shar's Embrace~
-@3057 = ~Shar's Embrace
-(Conjuration)
-
-Sphere: Shadow
-Level: 6
-Range: 0
-Duration: 1 turn + 1 round/level
-Casting Time: 5
-Area of Effect: The caster
-Saving Throw: None
-
-Upon casting of this spell, the cleric is enshrouded by a mass of swirling darkness conjured from the shadow plane, which acts as a protective barrier against incoming attacks.  The shadows absorb energy from attacks, both physical and magical, that are directed at the caster.  The barrier reduces damage from all attacks by 10%, increasing by an additional percentage point every two levels to a maximum of 15% at level 21.  Additionally, creatures who successfully hit the caster through the shadowy barrier within melee range suffer 1d5 points of magic damage and 1d5 points of cold damage, with a 20% change of being drained of one level as well.  There is no Saving Throw allowed for these effects, though undead creatures are immune.  This spell may not be cast by clerics of good alignment.~
-@3058 = ~Deleterious Nimbus~
-@3059 = ~Deleterious Nimbus
-(Evocation)
-
-Level: 8
-Range: 40 ft.
-Duration: 1 turn
-Casting Time: 6
-Area of Effect: 15-ft. radius
-Saving Throw: Special
-
-This spell is a more powerful version of the level 5 mage spell, Cloudkill.  When cast, it creates plumes of venomous gas of such toxicity as to immediately sear the flesh of creatures it comes in contact with, entering their bloodstream.  So deadly is this poison as to instantly slay creatures of 8 or fewer Hit Dice, and creatures with 9 or 10 Hit Dice must roll a Saving Throw vs. Poison at -8 for each round they remain in the area of effect, lest they be slain instantly as well.  Those above 10th level (or 10 Hit Dice) must leave the cloud immediately or suffer 1d12 + 1 Hit Points of poison damage per level per round that they remain in the affected area, up to a maximum of 1d12 + 15 Hit Points at level 30.  While remaining in the area of effect, there is a 25% chance per round that creatures will also be systemically poisoned, suffering an additional 2 Hit Points of poison damage per second for 2 rounds, unless they make a Saving Throw vs. poison at -8.  This affliction will persist even after leaving the area of effect.~
-@3060 = ~Ent Summoning~
-@3061 = ~Ent Summoning
-(Conjuration/Summoning)
-
-Level: 5
-Sphere: Plant, Summoning
-Range: 120 ft.
-Duration: 4 turns
-Casting Time: 9
-Area of Effect: Special
-Saving Throw: None
-
-When the words of this spell are spoken, the caster conjures forth a Dark Treant to serve <PRO_HIMHER> in battle.  The strength of the summoned treant will increase with the caster as <PRO_HESHE> gains more levels of experience.
-
-  1st – 10th: a 9 HD dark treant.  There is a 50% chance that two dark treants will be summoned instead.
-
-  11th – 13th: a 10 HD dark treant.  There is a 50% chance that two dark treants will be summoned instead.
-
-  14th and up: an 11 HD dark treant.  There is a 50% chance that two dark treants will be summoned instead.
-
-The summoned treants will obey the casters commands and remain in <PRO_HISHER> thrall until they are destroyed or the spell's duration expires.~
-@3062 = ~Crushing Earth~
-@3063 = ~Crushing Earth
-(Invocation)
-
-Level: 6
-Sphere: Elemental Earth
-Range: 100 ft.
-Duration: Instant
-Casting Time: 9
-Area of Effect: Special
-Saving Throw: Special
-
-By way of this spell, the caster summons forth a large boulder 6-ft. in diameter that is then hurled in the direction of <PRO_HISHER> choosing.  Once launched, this unstoppable force of earth plows over and through any creatures in it's path, causing 10d10 Hit Points of crushing damage, with a 15% chance of outright crushing them to death.  Creatures struck by the boulder can roll a Save vs. Spell to sidestep or jump out of the way at the last moment to halve the damage, there is no Saving Throw allowed to avoid the chance of being crushed to death.  Giant-sized creatures are less affected by the boulder and take 5d10 Hit Points of crushing damage, with a successful Save vs. Spell for half.  Giant-sized creatures cannot be instantly killed by the boulder.~
-@3064 = ~Ko'Dezza's Caustic Shell~
-@3065 = ~Ko'Dezza's Caustic Shell
-(Conjuration)
-
-Level: 3
-Range: 0
-Duration: 1 turn + 1 round/level
-Casting Time: 5
-Area of Effect: The caster
-Saving Throw: None
-
-Ko'Dezza, a half-drow mage who lived in an age past had a natural talent for magic, and attempted to eke out a living by experimenting on existing spells to create new spells and sold scrolls of her creations across the breadth of Faerûn.  This spell in particular was a great success, though it came at the cost of three fingers on her left hand.  When cast, the spell conjures forth a mass of living slime that encapsulates the caster in a protective bubble.  The slime-shell is highly corrosive, and thwarts acidic and physical attacks.  The caster's resistance to acid is increased by 50% for the duration of the spell, and attackers in melee range who successfully strike <PRO_HIMHER> through the shell are checmically burned by it, causing 1d6+2 Hit Points of acid damage, and suffering a penalty of 1 to their THACO score for one round unless a successful Save vs. Spell at -2 is made.~
-@3066 = ~Antipode~
-@3067 = ~Antipode
-(Evocation)
-
-Level: 6
-Range: 40 ft.
-Duration: Instant
-Casting Time: 5
-Area of Effect: 15-ft. radius
-Saving Throw: 1/2
-
-When this spell is invoked, the wizard selects a target, carefully calculating it's range, and from each hand a bolt is launched, one of fire, the other, ice.  The missiles home in on their target with unerring accuracy and collide, resulting in a horrific explosion sending molten shrapnel and frozen shards flying outward in a 15-ft. radius, doing 6d6 Hit Points of fire damage, and 6d6 Hit Points of cold damage to the target and any creatures caught in the area of effect.  This spell increases in strength with the casters level, doing an additional 2d6 Hit Dice each for every four levels of the caster, up to a maximum of 12d6 each at level 24. Creatures failing their Saving Throws each suffer full damage from the blast. Those who roll successful Saving Throws are nimble enough to dodge or take cover at the last moment, only taking half of the damage.~
-@3068 = ~Flame Vortice~
-@3069 = ~Flame Vortice
-(Conjuration)
-
-Level: 6
-Range: Visual range of the caster
-Duration: Special
-Casting Time: 9
-Area of Effect: Special
-Saving Throw: Special
-
-When this spell is cast, the wizard opens a portal to the plane of fire in the sky above the battlefield, and pulls down a vortex of intense flames and super-heated air.  The swirling mass of fire touches down to the earth, then moves about unpredictably, scorching any creatures in it's path. The caster is immune to <PRO_HISHER> own spell, but <PRO_HISHER> companions are not, and must be wary.  If a creature is caught in the path of the burning vortex, it takes 8d8 fire damage, increasing by one point of damage per level of the caster, up to a maximum of 8d8+12.  Creatures may make a Saving Throw vs. Breath to halve the damage, but they must do so with a -6 penalty.  There is a 10% chance that affected creatures will be instantly incinerated to death, with no Saving Throw allowed.  A maximum of 6 creatures can be affected, after which the vortex will dissipate back into the fire plane.  Creatures immune to fire are not affected by this spell.~
-@3070 = ~Sundering Vitriol~
-@3071 = ~Sundering Vitriol
-(Evocation)
-
-Level: 3
-Sphere: Elemental Earth, Combat
-Range: 100 ft.
-Duration: Instant
-Casting Time: 4
-Area of Effect: 1 creature
-Saving Throw: None
-
-When this spell is cast, the druid draws forth a globule of viscous, caustic slime, which is then hurled towards a creature of the druid's choosing.  When struck by the slime, creatures suffer 1d3+2 Hit Points of acid damage, and their resistance to all forms of physical damage is lowered by 3 percent for one round.  For every 3 levels of experience of the caster, an additional globule is added to the volley, up to a maximum of 7 at level 24.  There is no Saving Throw allowed for the effects of this spell.~
-@3072 = ~Devouring Darkness~
-@3073 = ~Devouring Darkness
-(Conjuration, Shadow)
-
-Level: 7
-Sphere: Combat
-Range: 40 ft.
-Duration: 1 turn
-Casting Time: 9
-Area of Effect: 10-ft. radius
-Saving Throw: None
-
-When the priest chants this spell, a swirling misama of living shadow blankets an area of the caster's choosing.  Creatures caught in the maw of this hungering mass suffer 2d4 Hit Points of cold and 2d4 Hit Points of magic damage per round while they are in the area of effect, their level of fatigue increased by one, and must make a Saving Throw or also be held for one round and drained of two levels permanently.  The Saving throw against being held must be made at a penalty of -8, and -2 for being drained.  The caster and undead creatures are immune to the effects of this spell.  This spell may not be cast by clerics of good alignment.~
-@3074 = ~Ko'Dezza's Frozen Death~
-@3075 = ~Ko'Dezza's Frozen Death
-(Evocation)
-
-Level: 9
-Range: 40 ft.
-Duration: Instant
-Casting Time: 6
-Area of Effect: 15-ft. radius
-Saving Throw: none
-
-The first scroll containing this spell was discovered when a group of adventurers happened across a blasted hovel deep within the Spine of the World.  Under the remains lay a small laboratory that had apparently suffered a major magical mishap.  The scroll was firmly in the grasp of a necrotic, yet seemingly permanently frozen half-drowish hand.  It would be Ko'Dezza's final work, and her doom as well.  When cast, the wizard channels a massive amount of dark energy from the heart of the shadow plane into a singular point on the battlefield until it reaches critical mass, then explodes violently outward in all directions, ripping through any creatures in it's path, causing 7d10 Hit Points of cold damage and 7d10 Hit Points of magic damage.  There is a small chance that a creature hit by this dark energy will unwittingly become a conduit for a shadow elemental to enter the prime, resulting in their evisceration upon it's arrival.  The enraged elemental will attack the nearest creature, both friend and foe alike, until it is utterly destroyed.  There is no Saving Throw allowed for any of the effects of this spell.  Undead creatures are immune to the effects of this spell.~
-@3076 = ~Conjure Shadow Elemental~
-@3077 = ~Conjure Shadow Elemental
-(Conjuration/Summoning)
-
-Level: 6
-Sphere: Elemental (Shadow), Summoning
-Range: Visual range of the caster
-Duration: 1 turn/level
-Casting Time: 9
-Area of Effect: Special
-Saving Throw: None
-
-Upon casting a Conjure Shadow Elemental spell, the caster opens a special gate to the Plane of Shadow, and a shadow elemental is summoned in the vicinity of the caster. There is a 60% chance that a 12-Hit-Dice elemental appears; a 35% chance that a 16-Hit-Dice elemental appears; and a 5% chance that a 24-Hit-Dice elemental appears. The elemental will do the bidding of the caster until it is slain or the duration of the spell runs out. All the commands given to the elemental are done telepathically, so there is no time lost due to miscommunication and no need to know the language of the summoned creature. Unlike Mages, priests do not have to engage in a battle of the minds to control their elemental.  This spell may not be cast by clerics of good alignment.~
-/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\//
-/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
-/////                                                  \\\\\
-///// Item/Spell Effect, Creature Name, Display Strings\\\\\
-/////                                                  \\\\\
-/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
-/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
 @40000 = ~Strength Modification~
 @40001 = ~Strengthened~
 @40002 = ~Bleeding~
@@ -3490,13 +3517,6 @@ Upon casting a Conjure Shadow Elemental spell, the caster opens a special gate t
 @40053 = ~Charmed~
 @40054 = ~Dominated~
 @40055 = ~Icebone Skeleton Warrior~
-/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
-/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
-/////                                                  \\\\\
-///// Item ability tooltip strings                     \\\\\
-/////                                                  \\\\\
-/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
-/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
 @50000 = ~Summon Ankhegs~
 @50001 = ~Silence, 15' Radius~
 @50002 = ~Neutralize Poison~
@@ -3506,82 +3526,6 @@ Upon casting a Conjure Shadow Elemental spell, the caster opens a special gate t
 @50006 = ~Melee~
 @50007 = ~Column of Ice~
 @50008 = ~Conjure Icebone Skeleton Warriors~
-
-////////////////old strings below///////////////////////////
-
-@5003 = ~Wind Slash~
-@5004 = ~Produce Fire~
-@5005 = ~Sundering Vitriol~
-@5006 = ~Thunder Thrust~
-@5007 = ~Cone of Cold~
-@5008 = ~Poison Weapon~
-@5009 = ~Neutralize Poison~
-@5010 = ~Wizard Eye~
-@5011 = ~Writhing Fog~
-@5012 = ~Antipode~
-@5013 = ~Blessing of Tymora~
-@5014 = ~Minor Antimagic Shell~
-@5015 = ~Cataclysm~
-@5016 = ~Cacophony of Chaos~
-@5017 = ~Knife Trick~
-@5018 = ~Mass Exaltation~
-@5019 = ~Mass Cure~
-@5020 = ~Mass Minor Trollish Regeneration~
-@5021 = ~Mass Trollish Regeneration~
-@5022 = ~Shadowstep~
-@5023 = ~Penetrating Cold~
-@5024 = ~deprecated~
-@5025 = ~Dread Flame~
-@5026 = ~Summon Zaaman Rul~
-@5027 = ~Summon Chan~
-@5028 = ~Summon Sunnis~
-@5029 = ~Summon Ben-Hadar~
-@5030 = ~Deprecated~
-@5031 = ~Ko'Dezza's Caustic Shell~
-@5032 = ~deprecated~
-@5033 = ~Summon Ankhegs~
-@5034 = ~Silence, 15' Radius~
-@5035 = ~Spell Sequencer~
-@5036 = ~Shield~
-@5037 = ~Spirit Armor~
-@5038 = ~Fire Storm~
-@5039 = ~Summon Chalimandren~
-@5040 = ~Burning Hands~
-@5041 = ~Luck~
-@5042 = ~Larloch's Minor Drain~
-@5043 = ~Horror~
-@5044 = ~Vampiric Touch~
-@5045 = ~You may not use two rings of wizardry at the same time.~
-@5046 = ~Flame Arrow~
-@5047 = ~Monster Summoning III~
-@5048 = ~Invisible Stalker~
-@5049 = ~Shadow Bolt~
-@5050 = ~Multi-Fireball~
-@5051 = ~Attack~
-@5052 = ~Spirit Ward~
-@5053 = ~Scorching Breath~
-@5054 = ~Engulfing Darkness~
-@5055 = ~Avatar of Shadow~
-@5056 = ~Shimmering Breath~
-@5057 = ~Arctic Breath~
-@5058 = ~Shocking Breath~
-@5059 = ~Shadow Breath~
-@5060 = ~Venomous Breath~
-@5061 = ~Caustic Breath~
-@5062 = ~Shadow Images~
-@5063 = ~Shadow Imaged~
-@5064 = ~Knock~
-@5065 = ~Shadow Elemental Attack~
-@5066 = ~Faerie Fire~
-@5067 = ~Minor Lightning Bolt~
-@5068 = ~Minor Chain Lightning~
-/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
-/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
-/////                                                  \\\\\
-///// Dialogues for quest rewards and creatures        \\\\\
-/////                                                  \\\\\
-/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
-/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
 @80000 = ~*plays an instrument*~
 @80001 = ~Consider this a bonus, as ye seem to be the honorable sort. Cheers, be seeing you.~
 @80002 = ~*sniff* Before we go, please take this.  We had bought it as a gift for our son's next birthday, and I cannot bear to look at it any longer.  I hope it serves you well, or at least brings you a few coins.~
@@ -3595,14 +3539,6 @@ Upon casting a Conjure Shadow Elemental spell, the caster opens a special gate t
 @80014 = ~And what if it was? It is not of my making. I myself was once a resident for a time. It tends to snag passing teleporting mages from time to time. I left my magics and gadgets and was able to use some minor incantations to escape. Passive resistance is more successful when the very ground seems to drag magic to it. The others might find their release if they lose the anger and attachment to their toys. Ah, I will not argue this with you, the place was not of my making. You have done well enough to earn this. Goodbye.~
 @80015 = ~You return. You are proven capable, at least in this respect. Certainly you have the will to change your personal ways as well. We are square and fair, for the moment. I cannot guarantee that we will remain so, however, as your kind is to be scrutinized closely. Rather a nonexistent short-term memory as well, I'm afraid. You have done me a favor, now do yourself one. Behave yourself until you are of positive standing in the community, and take this, I've no longer any need for it. Begone.~
 @80016 = ~You return. I cannot say I am totally pleased with that, but you have done me a service, nonetheless. You may live, but we are still not square and fair. Cross my path again and the deaths of my daughters will be the fuel that drives my anger! You wouldn't like me when I'm angry. For now, I am satisfied, but only for now.  Take this for your services and begone from my sight.~
-
-/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
-/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
-/////                                                  \\\\\
-/////        Strings for Items and Creatures           \\\\\
-/////                                                  \\\\\
-/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
-/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
 @100000 = ~Why does the honeybee hum? He knows not the words! Waka waka!~ [BD45232]
 @100001 = ~How do ettins leave messages for one another? On a bull-ettin board!~ [BD45233]
 @100002 = ~Where is the safest place in all the land for diving? Waterdeep!~ [BD45234]
@@ -3617,3 +3553,138 @@ Upon casting a Conjure Shadow Elemental spell, the caster opens a special gate t
 @100011 = ~Blood and death!~
 @100012 = ~I shall join my kin in glorious death!~
 @100013 = ~Gulp!~
+@100015 = ~vexation~
+@100016 = ~martyrs_morningstar~
+@100017 = ~missiles~
+@100018 = ~severance~
+@100019 = ~crimson_dawn~
+@100020 = ~tongue_of_acid~
+@100021 = ~rhino_beetle_plate~
+@100022 = ~soft_feet~
+@100023 = ~crown_of_lies~
+@100024 = ~sundermaul~
+@100025 = ~star_strewn_boots~
+@100026 = ~stalker's_gauntlets~
+@100027 = ~cloverleaf~
+@100028 = ~the_uncursed_staff~
+@100029 = ~backwhacker~
+@100030 = ~bow_of_the_banshee~
+@100031 = ~nimblefinger_gloves~
+@100032 = ~screaming_bagpipes~
+@100033 = ~cloak_of_minor_arcana~
+@100034 = ~element's_fury~
+@100035 = ~storm_pike~
+@100036 = ~trollblood_ioun_stone~
+@100037 = ~shield_of_egons~
+@100038 = ~rhino_beetle_shield~
+@100039 = ~key_ring~
+@100040 = ~astral_crossbow~
+@100041 = ~shadowed_spear~
+@100042 = ~forest_queen's_benediction~
+@100043 = ~jester's_bracers~
+@100044 = ~the_night's_embrace~
+@100045 = ~ring_of_purity~
+@100046 = ~dervish_crescent~
+@100047 = ~headband_of_focus~
+@100048 = ~wizard_hat~
+@100049 = ~acid_etched_dagger~
+@100050 = ~the_suncatcher~
+@100051 = ~the_guardian_devil~
+@100052 = ~reed_of_echoes~
+@100053 = ~echo_of_the_fiend~
+@100054 = ~amulet_of_whispers~
+@100055 = ~amulet_of_abnormally_awesome_summoning~
+@100056 = ~locket_of_embracing~
+@100057 = ~modron_heart~
+@100058 = ~chill_axe~
+@100059 = ~belt_of_the_cunning_rogue~
+@100060 = ~mosela's_cudgel~
+@100061 = ~the_hydra~
+@100062 = ~blazing_glory~
+@100063 = ~sidestep_slippers~
+@100064 = ~savage_shortbow~
+@100065 = ~bracers_of_the_shuttered_lid~
+@100066 = ~bracers_of_perseverance~
+@100067 = ~flute_of_the_immaculate_breeze~
+@100068 = ~stalwart_scales~
+@100069 = ~sable_cloak~
+@100070 = ~crommus's_capelet~
+@100071 = ~festering_spear~
+@100072 = ~arrow_of_antimagic~
+@100073 = ~dread_hammer~
+@100074 = ~battle_tankard~
+@100075 = ~peacock_cap~
+@100076 = ~helm_of_equus~
+@100077 = ~helm_of_unwavering_purpose~
+@100078 = ~blood_red_ioun_stone~
+@100079 = ~raconteur's_regalia~
+@100080 = ~purification_stone~
+@100081 = ~daeros'full_plate~
+@100082 = ~bloody_bone_plate~
+@100083 = ~robe_of_arcane_aptitude~
+@100084 = ~firefly~
+@100085 = ~eadro's_blade~
+@100086 = ~fractal_blade~
+@100087 = ~spell_breaker~
+@100088 = ~gift_of_the_demon~
+@100089 = ~sword_of_troll_decapitation~
+@100090 = ~sword_of_ruin~
+@100091 = ~harold~
+@100092 = ~cloak_of_the_gargoyle~
+@100093 = ~rhyte's_last_arrow~
+@100094 = ~gentrus's_hand_mirror~
+@100095 = ~the_secret_revealed~
+@100096 = ~lon's_amulet~
+@100097 = ~glimmer_of_hope~
+@100098 = ~cold_fury~
+@100099 = ~the_bloodied_guardian~
+@100100 = ~medal_of_valor~
+@100101 = ~ring_of_the_crusade~
+@100102 = ~corinth's_bow~
+@100103 = ~wand_of_water_elemental_summoning~
+@100104 = ~protector_of_the_unworthy~
+@100105 = ~commander's_chain_mail~
+@100106 = ~the_gift~
+@100107 = ~cornugon's_revenge~
+@100108 = ~myconid_bloom_sac~
+@100109 = ~bullet_of_darkness~
+@100110 = ~cleric's_vestments~
+@100111 = ~Items Misc~
+@100112 = ~spider_silk~
+@100113 = ~bear_skin~
+@100114 = ~sod_all~
+@100115 = ~All~
+@100116 = ~v4.0.0.RC1~
+@100117 = ~Bullet of Darkness +3~
+@100118 = ~Though it appears to be nothing more than standard sling ammunition, one who handles this bullet will soon realize it is far more than that. Specially made by Jegg Hillcarver of Bridgefort, within the missile's metal surface are shards of voidstone. Highly dangerous, if not outright lethal, to most targets, the bullet's one great deficiency is in its utility against the undead. Objects of the Negative Material Plane have no effect on the unliving; neither then does this most unique item.
+
+STATISTICS:
+
+Combat abilities:
+– The target suffers -1 to Strength for 5 rounds per hit (minimum 1 Strength; Save vs. Spell negates).
+– Does no damage to the undead
+
+THAC0: +3
+Damage: 1d4+4 (magic)
+Launcher: Sling
+
+Weight: 0~
+@100119 = ~Cleric's Vestments~
+@100120 = ~These dark red and green robes are of a simple dwarven design, but made with material of the highest quality and care. The sleeves and fringe end in gold trim, and the lining is a soft and luxurious silk as is traditional for dwarven noble wear.
+
+STATISTICS:
+
+Weight: 4~
+@100121 = ~Fine Bearskin~
+@100122 = ~The thick hide from an enormous bear.
+
+STATISTICS:
+
+Weight: 10~
+@100123 = ~*~
+@100124 = ~Spider Silk~
+@100125 = ~This silvery-gray webbing is from a giant spider.
+
+STATISTICS:
+
+Weight: 1~

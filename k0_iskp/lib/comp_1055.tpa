@@ -1,9 +1,21 @@
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdclck03.itm~ BEGIN
   COPY ~k0_iskp/itm/bdclck03.itm~ ~override~
-    SAY NAME1 @20107
-    SAY NAME2 @20285
-    SAY UNIDENTIFIED_DESC @20108
-    SAY DESC @20286
+    SAY NAME1 @20107 /* Cloak */
+    SAY NAME2 @20285 /* Crommus's Capelet */
+    SAY UNIDENTIFIED_DESC @20108 /* The cloak can be made in every possible shape with just about every type of fabric. The most common forms are a circular piece of fabric with a hole in the center for the head, and fabric draped from neck, connected by a chain, brooch, cord, or pins.
+
+STATISTICS:
+
+Weight: 3 */
+    SAY DESC @20286 /* This homespun capelet appears to have been hand-embroidered. The delicate scrollwork around its edges shows how much time and care went into the garment's creation. Crommus, the cloak's original owner, was a ghost for many years, and some of his incorporeal essence seems to have seeped into the fabric of the capelet.
+
+STATISTICS:
+
+Equipped abilities:
+– Each time the wearer is hit, there is a 5% chance that <PRO_HESHE> will be affected by the Blur spell
+– Save vs. Enchantment spells: +2
+
+Weight: 3 */
     WRITE_SHORT 0x42 0  // Setting lore value to 0 to prevent need to identify
   COPY ~k0_iskp/spl/bdclck03.spl~ ~override~
 END

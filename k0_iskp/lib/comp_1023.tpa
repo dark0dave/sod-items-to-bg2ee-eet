@@ -1,9 +1,30 @@
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdshld04.itm~ BEGIN
   COPY ~k0_iskp/itm/bdshld04.itm~ ~override~
-    SAY NAME1 @20213
-    SAY NAME2 @20217
-    SAY UNIDENTIFIED_DESC @20214
-    SAY DESC @20218
+    SAY NAME1 @20213 /* Medium Shield */
+    SAY NAME2 @20217 /* Rhino Beetle Shield +2 */
+    SAY UNIDENTIFIED_DESC @20214 /* A medium shield is carried in the same manner as a small shield. Unlike the small shield, however, its weight prevents the character from using <PRO_HISHER> shield hand for anything other than carrying the medium shield. Medium shields are usually made of metal, range from three to four feet in diameter, and can be of any shape, from round to square to a dragon's spread wings. A typical medieval shield resembles a triangle with one point facing downward.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +1
+
+Requires:
+ 12 Strength
+
+Weight: 8 */
+    SAY DESC @20218 /* The rhino beetle's carapace makes a most effective shield provided one can survive long enough to pry a piece off the creature. Lightweight but sturdy, this item makes a powerful argument for the premise that the best shields are found in nature, not the forge. The unusual material makes the shield particularly effective against missile weapons.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +3, an extra +2 vs. missile attacks
+– Missile Damage Resistance: +15%
+
+Requires:
+ 10 Strength
+
+Weight: 6 */
 END
 <<<<<<<< .../inlined/k0ar1900.baf
 IF

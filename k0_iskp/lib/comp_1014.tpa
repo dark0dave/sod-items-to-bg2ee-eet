@@ -1,9 +1,35 @@
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdblun07.itm~ BEGIN
   COPY ~k0_iskp/itm/bdblun07.itm~ ~override~
-    SAY NAME1 @20030
-    SAY NAME2 @20179
-    SAY UNIDENTIFIED_DESC @20031
-    SAY DESC @20180
+    SAY NAME1 @20030 /* Club */
+    SAY NAME2 @20179 /* Backwhacker +2 */
+    SAY UNIDENTIFIED_DESC @20031 /* Most clubs are stout, hardwood sticks, narrow at the grip and wider at the end. This simple weapon has been used since people first began using tools. Anyone can find a good stout piece of wood and swing it; hence the club's widespread use.
+
+STATISTICS:
+
+Damage: 1d6 (crushing)
+Speed Factor: 4
+Proficiency Type: Club
+Type: One-handed
+Requires:
+ 5 Strength
+
+Weight: 3 */
+    SAY DESC @20180 /* Most thieves favor bladed weapons when striking from the shadows, but not all. Whether due to religious convictions, personal preference, or anti-establishment tendencies, some thieves prefer to backstab their enemies with a blunt instrument.
+
+STATISTICS:
+
+Combat abilities:
+– Renders the target unconscious for 2 rounds when a backstab is performed (Save vs. Death negates)
+
+THAC0: +2
+Damage: 1d6+2 (crushing)
+Speed Factor: 2
+Proficiency Type: Club
+Type: One-handed
+Requires:
+ 5 Strength
+
+Weight: 3 */
   COPY ~k0_iskp/spl/bdblun07.spl~ ~override~
 END
 <<<<<<<< .../inlined/k0ar0400.baf

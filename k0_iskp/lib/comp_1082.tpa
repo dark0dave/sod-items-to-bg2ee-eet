@@ -1,9 +1,52 @@
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdblun08.itm~ BEGIN
   COPY ~k0_iskp/itm/bdblun08.itm~ ~override~
-    SAY NAME1 @20033
-    SAY NAME2 @20355
-    SAY UNIDENTIFIED_DESC @20034
-    SAY DESC @20356
+    SAY NAME1 @20033 /* Mace */ /* A throwing club differs from a normal club in that they are a bit smaller and lighter, and capped on either end by a spherical knot of wood, naturally occurring in the trees they are hewn from.
+
+STATISTICS:
+
+Damage: 1d5+1 (1d5 melee)
+Damage type: missile (crushing)
+Speed Factor: 2
+Proficiency Type: Club
+Type: One-handed
+Requires:
+ 5 Strength
+
+Weight: 1 */
+    SAY NAME2 @20355 /* Glimmer of Hope +2 */
+    SAY UNIDENTIFIED_DESC @20034 /* The mace is a direct descendant of the basic club, being nothing more than a wooden shaft with a stone or iron head mounted on the end. The head design varies: Some are spiked, others flanged, and still others have pyramidal knobs.
+
+STATISTICS:
+
+Damage: 1d6+1 (crushing)
+Speed Factor: 7
+Proficiency Type: Mace
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 10 */
+    SAY DESC @20356 /* A pacifist priest of Ilmater carried this mace to warn off would-be evildoers, but never lifted the weapon in battle. He preached that all thinking creatures had the capacity for good in them, and that to destroy another life was to rob it of its potential. His fellow priests, though respectful of his views, did not take their philosophy to such an extreme. Few were surprised when the priest was waylaid by bandits and killed one day. His mace was recovered and brought back to the temple, and the other priests were amazed to find a small diamond embedded in the tip. The diamond flashes with brilliance from time to time, blessing its wielder and filling them with a sense of hope.
+
+STATISTICS:
+
+Equipped abilities:
+– Wisdom: +1
+
+Combat abilities:
+– 10% chance per hit of casting Bless centered on the wielder
+
+STATISTICS:
+
+THAC0: +2
+Damage: 1d6+3 (crushing)
+Speed Factor: 5
+Proficiency Type: Mace
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 7 */
     WRITE_SHORT 0x42 0  // Setting lore value to 0 to prevent need to identify
 END
 COPY_EXISTING ~anomen10.cre~ ~override~

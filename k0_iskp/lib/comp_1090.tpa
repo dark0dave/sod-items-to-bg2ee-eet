@@ -1,20 +1,40 @@
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdchan04.itm~ BEGIN
   COPY ~k0_iskp/itm/bdchan04.itm~ ~override~
-    SAY NAME1 @20069
-    SAY NAME2 @20371
-    SAY UNIDENTIFIED_DESC @20070
-    SAY DESC @20372
+    SAY NAME1 @20069 /* Chain Mail */
+    SAY NAME2 @20371 /* Commander's Chain Mail +2 */
+    SAY UNIDENTIFIED_DESC @20070 /* Chain mail is made of interlocking metal rings. It is always worn over a layer of padded fabric or soft leather to prevent chafing and lessen the impact of blows.
+
+STATISTICS:
+
+Armor Class: 5 (3 vs. slashing, 7 vs. crushing)
+Requires:
+ 8 Strength
+
+Weight: 40 */
+    SAY DESC @20372 /* Though the dents and dull spots of this chain mail show its use, someone has taken good care of the armor. Patches of bright new links show where the armor has been carefully mended. The lack of ornamentation or gilded patterns on the suit give it an honest look, as if this were the armor of a soldier who served well and honorably.
+
+STATISTICS:
+
+Equipped abilities:
+– Charisma: +1
+– The wearer and any allies within <PRO_HISHER> visual radius are immune to fear and morale failure
+
+Armor Class: 2 (0 vs. slashing, 4 vs. crushing)
+Requires:
+ 8 Strength
+
+Weight: 9 */
     LPF ALTER_EFFECT
       INT_VAR
         match_opcode     = 267
         match_parameter1 = 25818
-        parameter1       = RESOLVE_STR_REF(@40032)
+        parameter1       = RESOLVE_STR_REF(@40032 /* Panic */)
     END
     LPF ALTER_EFFECT
       INT_VAR
         match_opcode     = 267
         match_parameter1 = 20568
-        parameter1       = RESOLVE_STR_REF(@40033)
+        parameter1       = RESOLVE_STR_REF(@40033 /* Morale Failure: Panic */)
     END
   COPY ~k0_iskp/eff/bdchan04.eff~ ~override~
   ADD_PROJECTILE ~k0_iskp/pro/bdvrpo.pro~
@@ -27,13 +47,13 @@ ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdchan04.itm~ BEGIN
       INT_VAR
         match_opcode     = 267
         match_parameter1 = 25818
-        parameter1       = RESOLVE_STR_REF(@40032)
+        parameter1       = RESOLVE_STR_REF(@40032 /* Panic */)
     END
     LPF ALTER_EFFECT
       INT_VAR
         match_opcode     = 267
         match_parameter1 = 20568
-        parameter1       = RESOLVE_STR_REF(@40033)
+        parameter1       = RESOLVE_STR_REF(@40033 /* Morale Failure: Panic */)
     END
 END
 COPY_EXISTING ~ribald.sto~ ~override~  // Ribald

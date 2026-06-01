@@ -1,8 +1,37 @@
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdblun09.itm~ BEGIN
   COPY ~k0_iskp/itm/bdblun09.itm~ ~override~
-    SAY NAME1 @20035
-    SAY NAME2 @20269
-    SAY UNIDENTIFIED_DESC @20036
-    SAY DESC @20270
+    SAY NAME1 @20035 /* Morning Star */
+    SAY NAME2 @20269 /* Blazing Glory +3 */
+    SAY UNIDENTIFIED_DESC @20036 /* The morning star is a wooden shaft topped with a metal head covered by a spiked iron sheath. Morning stars have an overall length of about four feet. Some have a round, oval, or cylindrical shaped head studded with spikes. Extending from most morning star heads, regardless of design, is a long point for thrusting.
+
+STATISTICS:
+
+Damage: 2d4 (crushing)
+Speed Factor: 7
+Proficiency Type: Flail/Morning Star
+Type: One-handed
+Requires:
+ 11 Strength
+
+Weight: 12 */
+    SAY DESC @20270 /* This glittering morningstar was crafted by weaponsmiths in the Temple of Tempus in Waterdeep. Fashioned as a weapon for Tempus's priests, who cannot use their deity's favored weapon due to its bladed edge, Blazing Glory has a black iron tip studded with points of alternating gold and ruby. Enchantments harden these points and add a flash of fire with every blow. The weilder of Blazing Glory never tires in battle, fortified by the will of the Lord of Battles himself.
+
+STATISTICS:
+
+Equipped abilities:
+– Immunity to fatigue
+
+Combat abilities:
+– 10% chance of casting Chant centered on the weilder on each hit
+
+THAC0: +3
+Damage: 2d4+3 (crushing) +1 (fire)
+Speed Factor: 4
+Proficiency Type: Flail/Morning Star
+Type: One-handed
+Requires:
+ 11 Strength
+
+Weight: 8 */
 END
 COMPILE ~k0_iskp/dlg/k0bzglor.d~  // Blazing Glory +3

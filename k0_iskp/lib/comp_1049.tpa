@@ -1,9 +1,34 @@
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdbow05.itm~ BEGIN
   COPY ~k0_iskp/itm/bdbow05.itm~ ~override~
-    SAY NAME1 @20051
-    SAY NAME2 @20273
-    SAY UNIDENTIFIED_DESC @20052
-    SAY DESC @20274
+    SAY NAME1 @20051 /* Shortbow */
+    SAY NAME2 @20273 /* Savage Shortbow +2 */
+    SAY UNIDENTIFIED_DESC @20052 /* Shortbows were the first bows to be developed, although they were not called such. This is more of a default term that refers to anything which is not a longbow. Shortbow staves are about five feet long on the average. As the years passed, attempts were made to increase bow ranges. Bows were either given longer staves or flexibility was increased with no change to the length. The former resulted in what is now called the longbow.
+
+STATISTICS:
+
+Speed Factor: 6
+Proficiency Type: Shortbow
+Type: Two-handed
+Requires:
+ 6 Strength
+
+Weight: 2 */
+    SAY DESC @20274 /* This bow appears crudely made. The knotty length of wood has numerous stumps where twigs were pruned away, and living leaves still spring from it. In spite of its apparent poor quality, the bow has clearly been enhanced with nature magic. It is rumored the wild elves of the Chondalwood make good use of such weapons, especially against invading orcs and ogres.
+
+STATISTICS:
+
+Equipped abilities:
+– Constitution: +1 (elves and half-elves)
+
+THAC0: +2
+Damage: +2, +3 extra vs. orcs, half-orcs, and ogres
+Speed Factor: 4
+Proficiency Type: Shortbow
+Type: Two-handed
+Requires:
+ 6 Strength
+
+Weight: 2 */
   COPY ~k0_iskp/spl/bdbow05.spl~ ~override~
   COPY ~k0_iskp/eff/bdbow05.eff~ ~override~
 END

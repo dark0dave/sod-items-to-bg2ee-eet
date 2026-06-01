@@ -1,9 +1,36 @@
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdhamm01.itm~ BEGIN
   COPY ~k0_iskp/itm/bdhamm01.itm~ ~override~
-    SAY NAME1 @20026
-    SAY NAME2 @20169
-    SAY UNIDENTIFIED_DESC @20027
-    SAY DESC @20170
+    SAY NAME1 @20026 /* War Hammer */
+    SAY NAME2 @20169 /* Sundermaul +3 */
+    SAY UNIDENTIFIED_DESC @20027 /* Mounted knights cannot effectively use long pole weapons while on horseback and, as a result, many weapons have been fitted with shorter shafts so they may be wielded with just one hand. Maces and flails are two examples of this—the war hammer is another. The horseman's war hammer is the descendent of the Lucerne hammer. It is made entirely of steel, with rondels protecting and strengthening the grip. (Rondels are small disks of metal, often shaped into decorative designs.) The shaft is about eighteen inches long.
+
+STATISTICS:
+
+Damage: 1d4+1 (crushing)
+Speed Factor: 4
+Proficiency Type: War Hammer
+Type: One-handed
+Requires:
+ 9 Strength
+
+Weight: 6 */
+    SAY DESC @20170 /* Legends speak of a hammer with the power of the gods themselves called Crom Faeyr. A smith once forged an inferior hammer and claimed it Crom Faeyr. Such was the retribution of the gods that ever since, when the name "Crom Faeyr" is uttered, the very earth beneath the weilder's feet may rip and tear asunder, threatening to bury the blasphemer and any who happen to be standing nearby.
+
+STATISTICS:
+
+Combat abilities:
+– 15% chance per hit of inflicting a -1 penalty to Armor Class for 1 turn (Save vs. Spell negates)
+– 2% chance per hit that an earthquake is triggered, centered on the weilder
+
+THAC0: +3
+Damage: 1d4+4 (crushing)
+Speed Factor: 1
+Proficiency Type: War Hammer
+Type: One-handed
+Requires:
+ 9 Strength
+
+Weight: 4 */
 END
 ACTION_IF FILE_EXISTS_IN_GAME ~udsvir05.dlg~ BEGIN
   COPY_EXISTING ~udsvir05.dlg~ ~override~

@@ -1,9 +1,18 @@
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdbrac03.itm~ BEGIN
   COPY ~k0_iskp/itm/bdbrac03.itm~ ~override~
-    SAY NAME1 @20099
-    SAY NAME2 @20183
-    SAY UNIDENTIFIED_DESC @20100
-    SAY DESC @20184
+    SAY NAME1 @20099 /* Gauntlets */
+    SAY NAME2 @20183 /* Nimblefinger Gloves */
+    SAY UNIDENTIFIED_DESC @20100 /* Gauntlets are armored gloves. They can be made of leather, metal plates, or chain mail. Every suit of armor is assumed to include gauntlets of an appropriate type. Magical gauntlets tend to be finer, lighter, and more easily worn than normal varieties. */
+    SAY DESC @20184 /* Fashioned from the finest doeskin available, this pair of gloves was obviously designed for gnomish hands (though dwarves and other shorter races might also be able to use them). For the right wearer, the gloves offer protection and comfort in equal proportion. Fitting like a second skin, the user becomes more sensitive to what their hands are doing; this added focus increases the wearer's nimbleness and dexterity.
+
+STATISTICS:
+
+Equipped abilities:
+– Dexterity: +2 (gnomes), +1 (halflings, dwarves, and goblins)
+– Pick Pockets: +25%
+– Set Traps: +25%
+
+Weight: 2 */
     WRITE_SHORT 0x42 0  // Setting lore value to 0 to prevent need to identify
   COPY ~k0_iskp/eff/bdbrac3a.eff~ ~override~
   COPY ~k0_iskp/eff/bdbrac3b.eff~ ~override~

@@ -1,18 +1,18 @@
 // Fine Bearskin
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdmisc34.itm~ BEGIN
   COPY ~k0_iskp/itm/bdmisc34.itm~ ~override~
-    SAY NAME1 ~Fine Bearskin~
-    SAY NAME2 ~Fine Bearskin~
-    SAY UNIDENTIFIED_DESC ~The thick hide from an enormous bear.
+    SAY NAME1 @100121 /* Fine Bearskin */
+    SAY NAME2 @100121 /* Fine Bearskin */
+    SAY UNIDENTIFIED_DESC @100122 /* The thick hide from an enormous bear.
 
 STATISTICS:
 
-Weight: 10~
-    SAY DESC ~The thick hide from an enormous bear.
+Weight: 10 */
+    SAY DESC @100122 /* The thick hide from an enormous bear.
 
 STATISTICS:
 
-Weight: 10~
+Weight: 10 */
 END
 <<<<<<<< .../inlined/k0ar1400.baf
 IF

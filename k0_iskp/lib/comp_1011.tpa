@@ -1,9 +1,18 @@
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdbrac05.itm~ BEGIN
   COPY ~k0_iskp/itm/bdbrac05.itm~ ~override~
-    SAY NAME1 @20099
-    SAY NAME2 @20173
-    SAY UNIDENTIFIED_DESC @20100
-    SAY DESC @20174
+    SAY NAME1 @20099 /* Gauntlets */
+    SAY NAME2 @20173 /* Stalker's Gauntlets */
+    SAY UNIDENTIFIED_DESC @20100 /* Gauntlets are armored gloves. They can be made of leather, metal plates, or chain mail. Every suit of armor is assumed to include gauntlets of an appropriate type. Magical gauntlets tend to be finer, lighter, and more easily worn than normal varieties. */
+    SAY DESC @20174 /* These gauntlets assist in the stalking and killing of prey. Favored by hunters and rogues of all kinds, they display their full power when donned by a Stalker. Made of supple leather with brass-buckled straps along the side, these gauntlets are often decorated with embroidered figures of stags, foxes, or, as is the case with this pair, wolves.
+
+STATISTICS:
+
+Equipped abilities:
+– Dexterity: +1
+– Hide in Shadows: +15% (+30% for Stalkers)
+– Backstab Multiplier: +1 (Stalkers only)
+
+Weight: 2 */
   COPY ~k0_iskp/eff/bdbrac05.eff~ ~override~
   COPY ~k0_iskp/eff/bdbrac5a.eff~ ~override~
 END

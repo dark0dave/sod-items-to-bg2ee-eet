@@ -1,8 +1,8 @@
 // Bullet of Darkness +3
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdbull02.itm~ BEGIN
   COPY ~k0_iskp/itm/bdbull02.itm~ ~override~
-    SAY NAME2 ~Bullet of Darkness +3~
-    SAY DESC ~Though it appears to be nothing more than standard sling ammunition, one who handles this bullet will soon realize it is far more than that. Specially made by Jegg Hillcarver of Bridgefort, within the missile's metal surface are shards of voidstone. Highly dangerous, if not outright lethal, to most targets, the bullet's one great deficiency is in its utility against the undead. Objects of the Negative Material Plane have no effect on the unliving; neither then does this most unique item.
+    SAY NAME2 @100117 /* Bullet of Darkness +3 */
+    SAY DESC @100118 /* Though it appears to be nothing more than standard sling ammunition, one who handles this bullet will soon realize it is far more than that. Specially made by Jegg Hillcarver of Bridgefort, within the missile's metal surface are shards of voidstone. Highly dangerous, if not outright lethal, to most targets, the bullet's one great deficiency is in its utility against the undead. Objects of the Negative Material Plane have no effect on the unliving; neither then does this most unique item.
 
 STATISTICS:
 
@@ -14,7 +14,7 @@ THAC0: +3
 Damage: 1d4+4 (magic)
 Launcher: Sling
 
-Weight: 0~
+Weight: 0 */
 END
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~dtkmaghl.vvc~ BEGIN
   COPY ~k0_iskp/vvc/dtkmaghl.vvc~ ~override~

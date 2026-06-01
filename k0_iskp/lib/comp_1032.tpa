@@ -1,9 +1,24 @@
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdhelm15.itm~ BEGIN
   COPY ~k0_iskp/itm/bdhelm15.itm~ ~override~
-    SAY NAME1 @20237
-    SAY NAME2 @20239
-    SAY UNIDENTIFIED_DESC @20238
-    SAY DESC @20240
+    SAY NAME1 @20237 /* Headband */
+    SAY NAME2 @20239 /* Headband of Focus */
+    SAY UNIDENTIFIED_DESC @20238 /* A ribbon or band worn around the head.
+
+STATISTICS:
+
+Weight: 1 */
+    SAY DESC @20240 /* A worshipper of Nobanion crafted this gold silk headband, embroidered with abstract running lions along its length, while meditating on the teachings of Lord Firemane. When the headband was complete, the worshipper found that Nobanion had rewarded his fealty by granting the headband the ability to conjure a surge of might within the wearer.
+
+STATISTICS:
+
+Equipped abilities:
+– THAC0: +2 (unarmed attacks)
+– Critical Hit Chance: +5% (unarmed attacks)
+
+Charge abilities:
+– Draw Upon Holy Might once per day
+
+Weight: 1 */
     WRITE_SHORT 0x42 0  // Setting lore value to 0 to prevent need to identify
   COPY ~k0_iskp/eff/bdhelm15.eff~ ~override~
 END

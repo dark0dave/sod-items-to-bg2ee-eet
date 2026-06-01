@@ -1,9 +1,23 @@
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdbelt04.itm~ BEGIN
   COPY ~k0_iskp/itm/bdbelt04.itm~ ~override~
-    SAY NAME1 @20109
-    SAY NAME2 @20369
-    SAY UNIDENTIFIED_DESC @20110
-    SAY DESC @20370
+    SAY NAME1 @20109 /* Belt */
+    SAY NAME2 @20369 /* Protector of the Unworthy */
+    SAY UNIDENTIFIED_DESC @20110 /* Girdles are generally similar to belts. Unlike belts, girdles are not used to hold up pants and dungarees, but to carry pouches, scabbards, and the like.
+
+STATISTICS:
+
+Weight: 2 */
+    SAY DESC @20370 /* Girdle of Blades: The Protector of the Unworthy
+The most infamous owner of this item forever tainted its reputation, though it is still a truly useful item. Morinden of the Wicked Heart made his living looting the bodies of those he slew. He would goad true warriors into duels of honor—though he had little knowledge of the subject—and laugh as their blades glanced off him. Eventually he met his end at the hands of a frustrated woodsman, who had wisely cast his sword aside in favor of a tree stump.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +4 bonus vs. slashing attacks
+– Armor Class: -4 penalty vs. crushing attacks
+– May only be removed by a Remove Curse spell
+
+Weight: 2 */
 END
 <<<<<<<< .../inlined/k0ar1202.baf
 IF

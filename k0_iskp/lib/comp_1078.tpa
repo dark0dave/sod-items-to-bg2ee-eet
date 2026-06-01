@@ -1,9 +1,114 @@
 ACTION_IF GAME_IS ~bg2ee~ BEGIN
   COPY ~k0_iskp/itm/k0rhytea.itm~ ~override~
-    SAY NAME1 @20024
-    SAY NAME2 @20343
-    SAY UNIDENTIFIED_DESC @20025
-    SAY DESC @20344
+    SAY NAME1 @20024 /* Throwing Axe */
+    SAY NAME2 @20343 /* Rhyte's Last Arrow +2 */
+    SAY UNIDENTIFIED_DESC @20025 /* The hand axe or throwing axe is also known as a hatchet. The axe blade has a sharp steel tip counterbalanced by a pointed fluke. The short handle has a point on the bottom, and the head may have a spike on the top.
+
+STATISTICS:
+
+Damage: 1d6+1
+Damage type (melee): Slashing
+Damage type (thrown): Missile
+Speed Factor: 4
+Proficiency Type: Axe
+Type: One-handed
+Requires:
+ 4 Strength
+
+Weight: 1 */
+    SAY DESC @20344 /* The tale of this weapon lost its significance in the sea of great stories that are told about the High Forest, but some bards still sing the song of the skilled archer Adaniss Rhyte.
+
+"Oh, shocked from the strike of his powerful bow,
+The slain game sought by Adaniss falls.
+Long ago in the time of the Quiet Earth,
+The hunt from the famed High Forest calls.
+
+"The Duke of Everlund known for his boast
+Of the trophies held in his pride as dear.
+Intensely enraged at his rival hunter
+Whose bounty by far surpassed his one year.
+
+"One morn tragedy befell the land
+With the misconceived death of the Duke's prized hound.
+Fallen at the base of a great elm tree
+A bow's shot death in its heart was found.
+
+"With skill so great targets in his eyes were at the mercy of his arrow's flight.
+His hands sure and still,
+Never missing a kill,
+None could match the marksmanship of Adaniss Rhyte.
+
+"The same eve Adaniss called on the Duke,
+His solemn mistake he wished to repay.
+But the noble's rage claimed ten pounds of flesh
+And an archer's arm hit the ground that day.
+
+"The evil lord demanded justice unjust
+The most vile curse on his arm to be cast.
+Vengeance he sought for the price he had paid
+Rhyte vowed the hound's arrow not to be his last.
+
+"In sorrow the town helped him forge an axe
+Blessed to honor his most glorious day.
+With the mark of Rhyte's arrow to guide its strike
+And reputed to kill in the very same way.
+
+"With skill so great targets in his eyes were at the mercy of his arrow's flight.
+His hands sure and still,
+Never missing a kill,
+None could match the marksmanship of Adaniss Rhyte.
+
+"Again called the forest with its precious game,
+And a prize Adaniss with thrill did he seek.
+But none could be finer than the great clawed falcon
+Sought by all amidst the forest's Lost Peaks.
+
+"Once more the rivalry of the Duke did stir,
+For he thought of his skills with Rhyte's bow to be best.
+And set his sights on the glorious bird
+To emerge as the holder of its sainted crest.
+
+"The two climbed the peaks and searched days on end,
+Each of their wills set as strong as the stone.
+They found each other at a cliff by chance;
+Both of their hatreds ran as deep as the bone.
+
+"With skill so great targets in his eyes were at the mercy of his arrow's flight.
+His hands sure and still,
+Never missing a kill,
+None could match the marksmanship of Adaniss Rhyte.
+
+"The Duke drew the bow and pulled the string taut,
+But first flew Adaniss's axe with its blow.
+Cleaved, the lord stumbled to cliff's edge and off,
+Defeated by Rhyte's last arrow...
+
+"With skill so great targets in his eyes were at the mercy of his arrow's flight.
+His hands sure and still,
+Never missing a kill,
+None could match the marksmanship of Adaniss Rhyte.
+None could match the marksmanship of Adaniss Rhyte."
+
+STATISTICS:
+
+Equipped abilities:
+– Chance to score a critical hit: +5% (with this weapon only)
+
+Combat abilities:
+– On a critical hit, the wielder gains +5 THAC0 for 3 rounds (non-cumulative)
+– Returns to the wielder's hand when thrown
+
+THAC0: +2
+Damage: 1d6+3
+Damage type (melee): Slashing
+Damage type (thrown): Missile
+Speed Factor: 2
+Proficiency Type: Axe
+Type: One-handed
+Requires:
+ 4 Strength
+
+Weight: 3 */
     WRITE_ASCII 0x3a k0rhytei
     WRITE_ASCII 0x58 k0rhyted
     WRITE_ASCII 0x76 k0rhytei
@@ -12,11 +117,11 @@ ACTION_IF GAME_IS ~bg2ee~ BEGIN
     LPF ALTER_EFFECT
       INT_VAR
         match_opcode = 139
-        parameter1   = RESOLVE_STR_REF(@40010)
+        parameter1   = RESOLVE_STR_REF(@40010 /* THAC0 Modification */)
     END
 END
-OUTER_SET ability1 = RESOLVE_STR_REF(@50005)
-OUTER_SET ability1 = RESOLVE_STR_REF(@50006)
+OUTER_SET ability1 = RESOLVE_STR_REF(@50005 /* Thrown */)
+OUTER_SET ability1 = RESOLVE_STR_REF(@50006 /* Melee */)
 APPEND ~tooltip.2da~ ~k0rhytea  %ability1%  %ability2%  -1~ BUT_ONLY
 COPY_EXISTING ~tooltip.2da~ ~override~
   LPF a7#normalize_table

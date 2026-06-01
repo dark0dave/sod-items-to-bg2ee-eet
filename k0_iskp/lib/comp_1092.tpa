@@ -1,13 +1,49 @@
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdleat01.itm~ BEGIN
   COPY ~k0_iskp/itm/bdleat01.itm~ ~override~
-    SAY NAME1 @20375
-    SAY NAME2 @20377
-    SAY UNIDENTIFIED_DESC @20376
-    SAY DESC @20378
+    SAY NAME1 @20375 /* Hide Armor */
+    SAY NAME2 @20377 /* Cornugon's Revenge +2 */
+    SAY UNIDENTIFIED_DESC @20376 /* Hide armor is made from the thick hide of a very large animal (an elephant for example) or from many layers of normal leather from common animals, like cows. Hide armor is far too bulky, inflexible and heavy to be used much in advanced human cultures. However, among the barbaric humanoid masses throughout the dark forests and misty jungles of the world, hide armor is common. Even though it does offer more protection than leather armor, one must get by the offensive odor and shoddy appearance in order to wear it effectively. Even though Thieves can wear this armor, it has a negative effect on their abilities.
+
+STATISTICS:
+
+Equipped abilities:
+– Open Locks: -10%
+– Find Traps: -10%
+– Pick Pockets: -10%
+– Move Silently: -20%
+
+Armor Class: 6 (8 vs. piercing and missile)
+Requires:
+ 6 Strength
+
+Weight: 40 */
+    SAY DESC @20378 /* The devil Thel’blax was a scourge against the armies of the Abyss until he was assassinated by the servants of his own master, Dispater. With his final breath, Thel’blax cursed his own body to never lie still even in death. When his body was carried to the Iron Tower, Thel’blax’s horns and barbs continued to thrash about as though alive.
+
+The cursed cornugon’s body was dismantled by his peers, in the hopes that destroying him would end the curse; but the disparate pieces of Thel’blax’s body continued to prick and tear at any who approached. At last, Dispater ordered his ironsmiths to forge the pieces into a suit of armor, intending to use it as a means of torturing insubordinates. Inevitably, the armor fell into the hands of intrepid (if foolhardy) adventurers, who then brought the piece to Faerûn.
+
+Even now, the curse of Thel’blax affects the armor, causing its barbs to sink painfully into the flesh of anyone wearing it. It provides a measure of protection, behaving like hide armor, and even allows the wearer to benefit from Thel’blax’s resilience; but the constant stinging and flaying from the cornugon’s still-living barbs make this armor unsuitable for the faint of heart or the weak of stomach.
+
+STATISTICS:
+
+Equipped abilities:
+– Open Locks: -10%
+– Find Traps: -10%
+– Pick Pockets: -10%
+– Move Silently: -20%
+– Regenerate 2 Hit Points every round
+– Constitution: -2
+– Wearer cannot be protected from evil
+– May only be removed with a Remove Curse spell
+
+Armor Class: 4 (6 vs. piercing and missile)
+Requires:
+ 6 Strength
+
+Weight: 35 */
     LPF ALTER_EFFECT
       INT_VAR
         match_opcode = 206
-        parameter1   = RESOLVE_STR_REF(@40013)
+        parameter1   = RESOLVE_STR_REF(@40013 /* Spell Ineffective */)
     END
 END
 <<<<<<<< .../inlined/k0ar0310.baf

@@ -1,14 +1,41 @@
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdhalb03.itm~ BEGIN
   COPY ~k0_iskp/itm/bdhalb03.itm~ ~override~
-    SAY NAME1 @20047
-    SAY NAME2 @20357
-    SAY UNIDENTIFIED_DESC @20048
-    SAY DESC @20358
+    SAY NAME1 @20047 /* Halberd */
+    SAY NAME2 @20357 /* Cold Fury +2 */
+    SAY UNIDENTIFIED_DESC @20048 /* By far the oldest and most often used polearm, the halberd consists of a cleaver-like axe blade mounted on a staff averaging six feet in length. The axe blade is balanced at the rear with a fluke and surmounted by a sharp spike, usually of quadrangular design. The fluke is sometimes replaced by a hook used to dismount cavalry. A halberd can be best described as a cross between a spear and an axe.
+
+STATISTICS:
+
+Damage: 1d10 (slashing or piercing, whichever is better)
+Speed Factor: 9
+Proficiency Type: Halberd
+Type: Two-handed
+Requires:
+ 13 Strength
+
+Weight: 15 */
+    SAY DESC @20358 /* Chilly blue frost trails like fog off the blade of this halberd. A palpable aura of cold surrounds the weapon, dealing frost damage to most enemies but wounding those that dwell in flame most severely.
+
+STATISTICS:
+
+Combat abilities:
+– Each hit slows fire-dwelling and fire-using creatures for 3 rounds (Save vs. Spell negates)
+
+THAC0: +2
+Damage: 1d10+2, +1d2 cold
+Damage Type: Slashing or piercing, whichever is better
+Speed Factor: 7
+Proficiency Type: Halberd
+Type: Two-handed
+Requires:
+ 13 Strength
+
+Weight: 12 */
   COPY ~k0_iskp/spl/bdhalb03.spl~ ~override~
     LPF ALTER_EFFECT
       INT_VAR
         match_opcode = 139
-        parameter1   = RESOLVE_STR_REF(@40007)
+        parameter1   = RESOLVE_STR_REF(@40007 /* Slowed */)
     END
 END
 COPY_EXISTING ~ribald.sto~ ~override~  // Ribald

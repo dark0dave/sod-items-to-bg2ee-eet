@@ -1,9 +1,21 @@
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdioun01.itm~ BEGIN
   COPY ~k0_iskp/itm/bdioun01.itm~ ~override~
-    SAY NAME1 @20089
-    SAY NAME2 @20207
-    SAY UNIDENTIFIED_DESC @20090
-    SAY DESC @20208
+    SAY NAME1 @20089 /* Ioun Stone */
+    SAY NAME2 @20207 /* Trollblood Ioun Stone */
+    SAY UNIDENTIFIED_DESC @20090 /* This is a small stone that floats in an orbit around the owner's head. Simply equip the stone to set it in its orbit. These obviously magical stones have different properties depending on their color.
+
+STATISTICS:
+
+Weight: 0 */
+    SAY DESC @20208 /* This ioun stone gleams dark green, like a hardened globe of troll blood. Legend tells of its creation from the blood of seven different trolls, each one captured and then subjected to magical experiments for seven nights. The resulting ioun stone both grants its user a weaker form a troll's healing ability and increases their martial prowess against trolls.
+
+STATISTICS:
+
+Equipped abilities:
+– THAC0: +3 vs. trolls
+– Regenerate 1 Hit Point per round
+
+Weight: 0 */
     WRITE_SHORT 0x42 0  // Setting lore value to 0 to prevent need to identify
   COPY ~k0_iskp/eff/bdioun01.eff~ ~override~
 END

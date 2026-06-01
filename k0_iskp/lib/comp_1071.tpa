@@ -1,15 +1,44 @@
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdsw1h14.itm~ BEGIN
   COPY ~k0_iskp/itm/bdsw1h14.itm~ ~override~
-    SAY NAME1 @20002
-    SAY NAME2 @20317
-    SAY UNIDENTIFIED_DESC @20003
-    SAY DESC @20318
+    SAY NAME1 @20002 /* Short Sword */
+    SAY NAME2 @20317 /* Fractal Blade +3 */
+    SAY UNIDENTIFIED_DESC @20003 /* The short sword is the first type of sword to come into existence. In the simplest of terms, a short sword can be considered a dagger with a blade so long that it can no longer be called a dagger. The term short sword does not exist in sword classifications. However, it has come to be used to describe a double-edged blade about two feet in length. The sword tip is usually pointed, ideal for thrusting.
+
+STATISTICS:
+
+Damage: 1d6 (piercing)
+Speed Factor: 3
+Proficiency Type: Short Sword
+Type: One-handed
+Requires:
+ 5 Strength
+
+Weight: 3 */
+    SAY DESC @20318 /* A line of diamond-shaped mirrors run up the center of this short sword's blade. The smallest bit of light catches the mirrors, flashing and flickering as the weilder fights. Rumor has it that the blade was constructed by a particularly vain fighter from Sembia who later lost it in a duel. The fighter became distracted by his own reflection in a nearby shop window and failed to parry his opponent's blow.
+
+STATISTICS:
+
+Equipped abilities:
+– Whenever the weilder is hit, there is a 10% chance <PRO_HESHE> is surrounded by 3 mirror images for 3 rounds
+
+Combat abilities:
+– 50% chance per hit of dispelling all illusionary spells (e.g. Mirror Image or Improved Invisibility) affecting the target
+
+THAC0: +3
+Damage: 1d6+3 (piercing)
+Speed Factor: 0
+Proficiency Type: Short Sword
+Type: One-handed
+Requires:
+ 5 Strength
+
+Weight: 2 */
   COPY ~k0_iskp/spl/bdsw1h14.spl~ ~override~
   COPY ~k0_iskp/spl/bdfractl.spl~ ~override~
     LPF ALTER_EFFECT
       INT_VAR
         match_opcode = 139
-        parameter1   = RESOLVE_STR_REF(@40027)
+        parameter1   = RESOLVE_STR_REF(@40027 /* Mirror Imaged */)
     END
 END
 <<<<<<<< .../inlined/k0ar2600.baf

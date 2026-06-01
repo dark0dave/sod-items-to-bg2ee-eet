@@ -1,14 +1,38 @@
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdshld08.itm~ BEGIN
   COPY ~k0_iskp/itm/bdshld08.itm~ ~override~
-    SAY NAME1 @20215
-    SAY NAME2 @20359
-    SAY UNIDENTIFIED_DESC @20216
-    SAY DESC @20360
+    SAY NAME1 @20215 /* Large Shield */
+    SAY NAME2 @20359 /* The Bloodied Guardian +2 */
+    SAY UNIDENTIFIED_DESC @20216 /* The body shield, also known as the kite or tower shield, is a massive metal or wooden shield reaching nearly from the chin to the toe of the user. It must be firmly fastened to the forearm, and the shield hand must firmly grip it at all times. Naturally, this precludes use of the shield hand for anything but holding the body shield in place.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +1, an extra +1 vs. missile attacks
+
+Requires:
+ 15 Strength
+
+Weight: 15 */
+    SAY DESC @20360 /* This shield was carried by a mercenary working with the Order of the Steel Fang. The warriors of the order were impressed with the mercenary's tenacity and courage. She charged into battle without hesitation and seemed to fight all the harder when she was wounded. When their quest was completed, the Order of the Steel Fang gifted a battleaxe to the mercenary as thanks for her service. In turn she gave the order her shield as a sign of respect. The shield stayed in the order for years until it was lost on a battlefield.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +3, an extra +1 vs. missile attacks
+– Fire Resistance: +25%
+
+Combat abilities:
+– When the wielder's Hit Points drop below 50%, <PRO_HESHE> gains +1 to Strength for 5 rounds
+
+Requires:
+ 10 Strength
+
+Weight: 4 */
   COPY ~k0_iskp/spl/bdshblod.spl~ ~override~
     LPF ALTER_EFFECT
       INT_VAR
         match_opcode = 139
-        parameter1   = RESOLVE_STR_REF(@40001)
+        parameter1   = RESOLVE_STR_REF(@40001 /* Strengthened */)
     END
 END
 <<<<<<<< .../inlined/k0ar0907.baf

@@ -1,51 +1,200 @@
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdclck06.itm~ BEGIN
   COPY ~k0_iskp/itm/bdclck06.itm~ ~override~
-    SAY NAME1 @20107
-    SAY NAME2 @20187
-    SAY UNIDENTIFIED_DESC @20108
-    SAY DESC @20188
+    SAY NAME1 @20107 /* Cloak */
+    SAY NAME2 @20187 /* Cloak of Minor Arcana */
+    SAY UNIDENTIFIED_DESC @20108 /* The cloak can be made in every possible shape with just about every type of fabric. The most common forms are a circular piece of fabric with a hole in the center for the head, and fabric draped from neck, connected by a chain, brooch, cord, or pins.
+
+STATISTICS:
+
+Weight: 3 */
+    SAY DESC @20188 /* Embroidered silver stars hide within the folds of this shimmering blue cloak. Wizards, especially those just beginning careers as adventurers, wear such items to aid them in their travels. As wizards grow in power and begin crafting their own equipment, they often gift these cloaks to apprentices.
+
+STATISTICS:
+
+Equipped abilities:
+– Caster Level: +1 (Mages, Sorcerers, and Bards)
+– Lore: +10
+
+Charge abilities:
+– Generates a random arcane scroll of level 3 or below
+
+Weight: 3 */
   COPY
     ~k0_iskp/itm/bdalnt01.itm~ ~override~  // note items for cloak to generate
-    SAY NAME1 @20189
-    SAY NAME2 @20189
-    SAY UNIDENTIFIED_DESC @20190
-    SAY DESC @20190
+    SAY NAME1 @20189 /* Alveus Note 01 */
+    SAY NAME2 @20189 /* Alveus Note 01 */
+    SAY UNIDENTIFIED_DESC @20190 /* Dear Greenbough Publishing,
+
+I write to rectify the confusion in which your last missive was apparently sent. Your reply in regards to my next manuscript, "Adventuring With All Your Limbs Attached: Both There And Back Again" is my latest treatsie on the adventuring mage's life. As the greatest first-level mage who has ever lived (so far), my musings and experiences are of considerable value to both the novice and seasoned adventurer. Not only is my writing style light and entertaining to read, but the contents of my manuscript could save many lives.
+
+You understand my confusion, then, when I received your reply that your line of comedic tomes was full for this year and to try again in future seasons. Please check your informative travelogue lineup and respond at your earliest convenience.
+
+Sincerely,
+
+Alveus Malcanter */
+    SAY DESC @20190 /* Dear Greenbough Publishing,
+
+I write to rectify the confusion in which your last missive was apparently sent. Your reply in regards to my next manuscript, "Adventuring With All Your Limbs Attached: Both There And Back Again" is my latest treatsie on the adventuring mage's life. As the greatest first-level mage who has ever lived (so far), my musings and experiences are of considerable value to both the novice and seasoned adventurer. Not only is my writing style light and entertaining to read, but the contents of my manuscript could save many lives.
+
+You understand my confusion, then, when I received your reply that your line of comedic tomes was full for this year and to try again in future seasons. Please check your informative travelogue lineup and respond at your earliest convenience.
+
+Sincerely,
+
+Alveus Malcanter */
   COPY
     ~k0_iskp/itm/bdalnt02.itm~ ~override~  // note items for cloak to generate
-    SAY NAME1 @20191
-    SAY NAME2 @20191
-    SAY UNIDENTIFIED_DESC @20192
-    SAY DESC @20192
+    SAY NAME1 @20191 /* Alveus Note 02 */
+    SAY NAME2 @20191 /* Alveus Note 02 */
+    SAY UNIDENTIFIED_DESC @20192 /* (This parchment has been torn at the top. It seems to have been ripped from a larger piece.)
+
+Rule Three: Taverns can be of great use for surviving an adventure. Before venturing into that dank tomb or bleak dungeon, visit the local tavern. Buy lots of drinks. Soon your party will be merrily singing and drinking the night away. While they sleep off their excesses the next morning, you can quietly leave town.
+
+Rule Four: Some will tell you that second-level spells are necessary for a successful career. Don't believe them! With great power comes great responsibility, so if you stick to first-level spells, no one will expect you to stick your neck out into a dangerous situation.
+
+Rule Five: A mage is only as good as their robe. Though you may never rival my exquisite collection of Faerûn's finest robes (may? I am too humble. None could rival that collection of finery), you would do well to obtain a quality tailor at the first opportunity.
+
+Remember, with intelligence, discretion, and an overwhelming, shrieking, constant fear of death, you too can be a successful adventuring mage! */
+    SAY DESC @20192 /* (This parchment has been torn at the top. It seems to have been ripped from a larger piece.)
+
+Rule Three: Taverns can be of great use for surviving an adventure. Before venturing into that dank tomb or bleak dungeon, visit the local tavern. Buy lots of drinks. Soon your party will be merrily singing and drinking the night away. While they sleep off their excesses the next morning, you can quietly leave town.
+
+Rule Four: Some will tell you that second-level spells are necessary for a successful career. Don't believe them! With great power comes great responsibility, so if you stick to first-level spells, no one will expect you to stick your neck out into a dangerous situation.
+
+Rule Five: A mage is only as good as their robe. Though you may never rival my exquisite collection of Faerûn's finest robes (may? I am too humble. None could rival that collection of finery), you would do well to obtain a quality tailor at the first opportunity.
+
+Remember, with intelligence, discretion, and an overwhelming, shrieking, constant fear of death, you too can be a successful adventuring mage! */
   COPY
     ~k0_iskp/itm/bdalnt03.itm~ ~override~  // note items for cloak to generate
-    SAY NAME1 @20193
-    SAY NAME2 @20193
-    SAY UNIDENTIFIED_DESC @20194
-    SAY DESC @20194
+    SAY NAME1 @20193 /* Alveus Note 03 */
+    SAY NAME2 @20193 /* Alveus Note 03 */
+    SAY UNIDENTIFIED_DESC @20194 /* Potential Aphorisms
+
+A green slime in the hand is worth nothing, and also you now have no hand. Wear gloves at all times.
+
+A statue is just a potential gargoyle. Carry a statue-poking stick and give it to someone in heavy armor.
+
+A pocketful of gold is good; a sackful of gold is better. But carrying a huge sack of gold makes it hard to run away, so a bag of holding is a good investment.
+
+Something about bacon? "Your bacon's in the fire" is bad, but bacon is also delicious...
+
+(The writing trails off, and doodles fill the rest of the page.) */
+    SAY DESC @20194 /* Potential Aphorisms
+
+A green slime in the hand is worth nothing, and also you now have no hand. Wear gloves at all times.
+
+A statue is just a potential gargoyle. Carry a statue-poking stick and give it to someone in heavy armor.
+
+A pocketful of gold is good; a sackful of gold is better. But carrying a huge sack of gold makes it hard to run away, so a bag of holding is a good investment.
+
+Something about bacon? "Your bacon's in the fire" is bad, but bacon is also delicious...
+
+(The writing trails off, and doodles fill the rest of the page.) */
   COPY
     ~k0_iskp/itm/bdalnt04.itm~ ~override~  // note items for cloak to generate
-    SAY NAME1 @20195
-    SAY NAME2 @20195
-    SAY UNIDENTIFIED_DESC @20196
-    SAY DESC @20196
+    SAY NAME1 @20195 /* Alveus Note 04 */
+    SAY NAME2 @20195 /* Alveus Note 04 */
+    SAY UNIDENTIFIED_DESC @20196 /* (This note is titled "Advice to a Novice Mage.")
+
+If you are reading this, then you are, perhaps, a young mage just starting out on your career. You might aspire to the heights of some of the greatest wizards in Faerûn. "Elminster," you think to yourself. "Blackstaff. Malcanter."
+
+NO, not Malcanter! You chuckle at your foolishness. Who could ever compete with the greatest first-level mage to have ever lived (so far)?
+
+I am here to tell you that while, in truth, you cannot hope to ever acquire the seasoned and respected name I have made for myself, you can at least hope to reach the plateau from which my shadow seems just slightly less long and chilly as it envelops you. If you follow my advice, you will be well on your way to becoming a second-rate imitation of myself.
+
+Rule One: There are some that believe taking credit for a job well done is the easiest way to build a reputation. But taking credit for a job someone ELSE did well and is now dead so they can't contradict you anyway is, in fact, more effic—
+
+(The scroll has been torn off here, and the rest is missing.) */
+    SAY DESC @20196 /* (This note is titled "Advice to a Novice Mage.")
+
+If you are reading this, then you are, perhaps, a young mage just starting out on your career. You might aspire to the heights of some of the greatest wizards in Faerûn. "Elminster," you think to yourself. "Blackstaff. Malcanter."
+
+NO, not Malcanter! You chuckle at your foolishness. Who could ever compete with the greatest first-level mage to have ever lived (so far)?
+
+I am here to tell you that while, in truth, you cannot hope to ever acquire the seasoned and respected name I have made for myself, you can at least hope to reach the plateau from which my shadow seems just slightly less long and chilly as it envelops you. If you follow my advice, you will be well on your way to becoming a second-rate imitation of myself.
+
+Rule One: There are some that believe taking credit for a job well done is the easiest way to build a reputation. But taking credit for a job someone ELSE did well and is now dead so they can't contradict you anyway is, in fact, more effic—
+
+(The scroll has been torn off here, and the rest is missing.) */
   COPY
     ~k0_iskp/itm/bdalnt05.itm~ ~override~  // note items for cloak to generate
-    SAY NAME1 @20197
-    SAY NAME2 @20197
-    SAY UNIDENTIFIED_DESC @20198
-    SAY DESC @20198
+    SAY NAME1 @20197 /* Alveus Note 05 */
+    SAY NAME2 @20197 /* Alveus Note 05 */
+    SAY UNIDENTIFIED_DESC @20198 /* This crumpled piece of parchment has been signed over and over again with the name "Alveus Malcanter" in increasingly flourishing style. Interspersed among the signatures are sentence fragments, including, "I hope this book saves your life!" and "May you never need the advice contained herein because you listened to me and decided to become a cobbler instead!" */
+    SAY DESC @20198 /* This crumpled piece of parchment has been signed over and over again with the name "Alveus Malcanter" in increasingly flourishing style. Interspersed among the signatures are sentence fragments, including, "I hope this book saves your life!" and "May you never need the advice contained herein because you listened to me and decided to become a cobbler instead!" */
   COPY
     ~k0_iskp/itm/bdalnt06.itm~ ~override~  // note items for cloak to generate
-    SAY NAME1 @20199
-    SAY NAME2 @20199
-    SAY UNIDENTIFIED_DESC @20200
-    SAY DESC @20200
+    SAY NAME1 @20199 /* Alveus Note 06 */
+    SAY NAME2 @20199 /* Alveus Note 06 */
+    SAY UNIDENTIFIED_DESC @20200 /* Ideas for Next Book
+
+(The following notes are written in meticulous point-form.)
+
+– Always stay at the back of the party. Monsters rarely attack from the rear.
+
+– Middle, Middle is good too. Surround yourself with hulking companions in full plate armor.
+
+(Here follows a doodle of a stick figure in a pointy hat surrounded by armored individuals carrying enormous swords.)
+
+– Can also follow way behind group. Say one hundred yards. Cast spells from a distance and join in when the looting begins.
+
+– Perhaps one mile behind party? They can scream if they need help.
+
+(The next few points are scratched out.)
+
+– Could just stay home. */
+    SAY DESC @20200 /* Ideas for Next Book
+
+(The following notes are written in meticulous point-form.)
+
+– Always stay at the back of the party. Monsters rarely attack from the rear.
+
+– Middle, Middle is good too. Surround yourself with hulking companions in full plate armor.
+
+(Here follows a doodle of a stick figure in a pointy hat surrounded by armored individuals carrying enormous swords.)
+
+– Can also follow way behind group. Say one hundred yards. Cast spells from a distance and join in when the looting begins.
+
+– Perhaps one mile behind party? They can scream if they need help.
+
+(The next few points are scratched out.)
+
+– Could just stay home. */
   COPY
     ~k0_iskp/itm/bdalnt07.itm~ ~override~  // note items for cloak to generate
-    SAY NAME1 @20201
-    SAY NAME2 @20201
-    SAY UNIDENTIFIED_DESC @20202
-    SAY DESC @20202
+    SAY NAME1 @20201 /* Alveus Note 07 */
+    SAY NAME2 @20201 /* Alveus Note 07 */
+    SAY UNIDENTIFIED_DESC @20202 /* My Dearest Agythi,
+
+It was with no little joy that I received your missive. Corresponding with those who have read my books and learning how my advice has positively affected their lives is a source of great pleasure for me. That you were able to write such a letter without the use of your arms makes the feat even more impressive—I suspect in the future you will take my oft-repeated mantra "Do not wrestle an angry ogre, or indeed any ogre, if it can be avoided" to heart.
+
+I gather from your note that you found my words less useful than one might have hoped when it came to the matter of the ogre wrestling. I have some questions regarding the events that led to such an unfortunate happenstance:
+
+1) How did you come to find yourself in amongst a pack of savage, bloodthirsty ogres? Over the years, I have offered many suggestions and strategies designed to help the prudent adventurer avoid just such a situation as this. If nothing else, my advice regarding the fortifying of one's home and the frequency with which one leaves it (my advice being "never"), if followed, should have prevented such a circumstance as this from ever occurring.
+
+2) Who challenged whom to the wrestling match? I do hope that it was the ogre's idea, as I'm quite certain the flaws in such a scheme originating from your side of the equation have become painfully self-evident.
+
+3) Had you ever considered a profession that carries with it slightly less risk of having one's arms torn off by a redblooding great ogre? Those who aren't cut out for adventure will often find themselves torn from it if they fail to act with the appropriate level of caution. Though they lack the potential glory a lucky few are able to wrest from a life of exploration and action, there is no shame whatsoever in fulfilling the role of a farmer, a courtesan, a tailor, or any number of other, more banal occupations. Someone has to shine my boots, after all.
+
+However you came to this regrettable state, I hope you will take some solace in the enclosed copy of my latest book. As you are a reader of my work, I have signed the volume and shall have the messenger take ten percent off the price I generally charge. May you find some enlightenment or entertainment in its pages during your period of convalescence.
+
+Yours very truly,
+Alveus Malcanter */
+    SAY DESC @20202 /* My Dearest Agythi,
+
+It was with no little joy that I received your missive. Corresponding with those who have read my books and learning how my advice has positively affected their lives is a source of great pleasure for me. That you were able to write such a letter without the use of your arms makes the feat even more impressive—I suspect in the future you will take my oft-repeated mantra "Do not wrestle an angry ogre, or indeed any ogre, if it can be avoided" to heart.
+
+I gather from your note that you found my words less useful than one might have hoped when it came to the matter of the ogre wrestling. I have some questions regarding the events that led to such an unfortunate happenstance:
+
+1) How did you come to find yourself in amongst a pack of savage, bloodthirsty ogres? Over the years, I have offered many suggestions and strategies designed to help the prudent adventurer avoid just such a situation as this. If nothing else, my advice regarding the fortifying of one's home and the frequency with which one leaves it (my advice being "never"), if followed, should have prevented such a circumstance as this from ever occurring.
+
+2) Who challenged whom to the wrestling match? I do hope that it was the ogre's idea, as I'm quite certain the flaws in such a scheme originating from your side of the equation have become painfully self-evident.
+
+3) Had you ever considered a profession that carries with it slightly less risk of having one's arms torn off by a redblooding great ogre? Those who aren't cut out for adventure will often find themselves torn from it if they fail to act with the appropriate level of caution. Though they lack the potential glory a lucky few are able to wrest from a life of exploration and action, there is no shame whatsoever in fulfilling the role of a farmer, a courtesan, a tailor, or any number of other, more banal occupations. Someone has to shine my boots, after all.
+
+However you came to this regrettable state, I hope you will take some solace in the enclosed copy of my latest book. As you are a reader of my work, I have signed the volume and shall have the messenger take ten percent off the price I generally charge. May you find some enlightenment or entertainment in its pages during your period of convalescence.
+
+Yours very truly,
+Alveus Malcanter */
 END
 <<<<<<<< .../inlined/k0ar0705.baf
 IF

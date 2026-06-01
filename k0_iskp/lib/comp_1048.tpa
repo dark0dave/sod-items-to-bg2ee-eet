@@ -1,9 +1,22 @@
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdboot12.itm~ BEGIN
   COPY ~k0_iskp/itm/bdboot12.itm~ ~override~
-    SAY NAME1 @20111
-    SAY NAME2 @20271
-    SAY UNIDENTIFIED_DESC @20112
-    SAY DESC @20272
+    SAY NAME1 @20111 /* Boots */
+    SAY NAME2 @20271 /* Sidestep Slippers */
+    SAY UNIDENTIFIED_DESC @20112 /* Boots are normally handmade by cobblers. Common boots are made by using a form, but good boots are designed for the foot of an individual.
+
+STATISTICS:
+
+Weight: 4 */
+    SAY DESC @20272 /* These soft leather slippers are favored by monks, who benefit from their enchanted traction when executing their specialized fighting style. The grip and control provided by the slippers allow a monk to dodge all but the most deadly attacks.
+
+STATISTICS:
+
+Equipped abilities:
+– Dexterity: +1
+– Armor Class: +1
+– Save vs. Invocation spells: +2
+
+Weight: 3 */
 END
 COPY_EXISTING ~ribald.sto~ ~override~  // Ribald
   ADD_STORE_ITEM ~bdboot12~ #0 #0 #0 ~IDENTIFIED~ #1

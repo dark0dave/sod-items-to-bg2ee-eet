@@ -1,9 +1,22 @@
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdamul08.itm~ BEGIN
   COPY ~k0_iskp/itm/bdamul08.itm~ ~override~
-    SAY NAME1 @20093
-    SAY NAME2 @20259
-    SAY UNIDENTIFIED_DESC @20094
-    SAY DESC @20260
+    SAY NAME1 @20093 /* Amulet */
+    SAY NAME2 @20259 /* Modron Heart */
+    SAY UNIDENTIFIED_DESC @20094 /* Amulets are usually magical devices that are commonly worn around the neck, suspended from a chain. The type of chain that comes with an amulet generally increases the item's aesthetic value, not its magical properties. Only one amulet can be dangled from the neck at a time.
+
+STATISTICS:
+
+Weight: 1 */
+    SAY DESC @20260 /* Modrons are mechanical creatures of utter law and efficiency that make their home on Mechanus. Many think of modrons as soulless, emotionless beings without a heart to speak of, but this item proves those beliefs false. The Modron Heart is a core of pure law that strengthens its wearer in battle against chaotic creatures.
+
+STATISTICS:
+
+Equipped abilities:
+– THAC0: +2 vs. chaotic
+– Damage: +2 vs. chaotic
+– Armor Class: +2 vs. chaotic
+
+Weight: 1 */
     WRITE_SHORT 0x42 0  // Setting lore value to 0 to prevent need to identify
   COPY ~k0_iskp/eff/bdamul08.eff~ ~override~
   COPY ~k0_iskp/eff/bdamul8a.eff~ ~override~

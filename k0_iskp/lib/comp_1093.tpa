@@ -1,94 +1,106 @@
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdmisc08.itm~ BEGIN
   COPY ~k0_iskp/itm/bdmisc08.itm~ ~override~
-    SAY NAME1 @20379
-    SAY NAME2 @20381
-    SAY UNIDENTIFIED_DESC @20380
-    SAY DESC @20382
+    SAY NAME1 @20379 /* Myconid Pod */
+    SAY NAME2 @20381 /* Myconid Bloom-Sac */
+    SAY UNIDENTIFIED_DESC @20380 /* This bulbous organic pod detached from the myconid when it died.
+
+STATISTICS:
+
+Weight: 1 */
+    SAY DESC @20382 /* This bulbous organic pod apparently holds the key to myconid reproduction.
+
+STATISTICS:
+
+Charge abilities:
+– Summon 1d4 myconids
+  Duration: 2 turns
+
+Weight: 1 */
 END
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdmycsu1.cre~ BEGIN  // CRE required for summon
   COPY ~k0_iskp/cre/bdmycsu1.cre~ ~override~
-    SAY NAME1 @40035
-    SAY NAME2 @40035
+    SAY NAME1 @40035 /* Red Myconid */
+    SAY NAME2 @40035 /* Red Myconid */
 END
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdmisc08.2da~ BEGIN  // 2DA required for summon
   COPY ~k0_iskp/2da/bdmisc08.2da~ ~override~
 END
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~b5-20m1.itm~ BEGIN  // Weapon required for CRE
   COPY ~k0_iskp/itm/b5-20m1.itm~ ~override~
-    SAY NAME1 @40036
-    SAY NAME2 @40036
+    SAY NAME1 @5051 /* Attack */
+    SAY NAME2 @5051 /* Attack */
 END
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdplant.itm~ BEGIN  // Ring required for CRE
   COPY ~k0_iskp/itm/bdplant.itm~ ~override~
-    SAY NAME1 @20105
-    SAY NAME2 @20105
+    SAY NAME1 @20105 /* Ring */
+    SAY NAME2 @20105 /* Ring */
     LPF ALTER_EFFECT
       INT_VAR
         match_opcode = 206
-        parameter1   = RESOLVE_STR_REF(@40013)
+        parameter1   = RESOLVE_STR_REF(@40013 /* Spell Ineffective */)
     END
     LPF ALTER_EFFECT
       INT_VAR
         match_opcode     = 267
         match_parameter1 = 25862
-        parameter1       = RESOLVE_STR_REF(@40037)
+        parameter1       = RESOLVE_STR_REF(@40037 /* Stun */)
     END
     LPF ALTER_EFFECT
       INT_VAR
         match_opcode     = 267
         match_parameter1 = 26215
-        parameter1       = RESOLVE_STR_REF(@40023)
+        parameter1       = RESOLVE_STR_REF(@40023 /* Poison */)
     END
     LPF ALTER_EFFECT
       INT_VAR
         match_opcode     = 267
         match_parameter1 = 25425
-        parameter1       = RESOLVE_STR_REF(@40024)
+        parameter1       = RESOLVE_STR_REF(@40024 /* Poisoned */)
     END
     LPF ALTER_EFFECT
       INT_VAR
         match_opcode     = 267
         match_parameter1 = 14650
-        parameter1       = RESOLVE_STR_REF(@40039)
+        parameter1       = RESOLVE_STR_REF(@40039 /* Paralyzed */)
     END
     LPF ALTER_EFFECT
       INT_VAR
         match_opcode     = 267
         match_parameter1 = 25866
-        parameter1       = RESOLVE_STR_REF(@40040)
+        parameter1       = RESOLVE_STR_REF(@40040 /* Held */)
     END
     LPF ALTER_EFFECT
       INT_VAR
         match_opcode     = 267
         match_parameter1 = 31799
-        parameter1       = RESOLVE_STR_REF(@40040)
+        parameter1       = RESOLVE_STR_REF(@40040 /* Held */)
     END
     LPF ALTER_EFFECT
       INT_VAR
         match_opcode     = 267
         match_parameter1 = 26371
-        parameter1       = RESOLVE_STR_REF(@40041)
+        parameter1       = RESOLVE_STR_REF(@40041 /* Sleep */)
     END
     LPF ALTER_EFFECT
       INT_VAR
         match_opcode     = 267
         match_parameter1 = 26050
-        parameter1       = RESOLVE_STR_REF(@40038)
+        parameter1       = RESOLVE_STR_REF(@40038 /* Stunned */)
     END
     LPF ALTER_EFFECT
       INT_VAR
         match_opcode     = 267
         match_parameter1 = 25137
-        parameter1       = RESOLVE_STR_REF(@40002)
+        parameter1       = RESOLVE_STR_REF(@40002 /* Bleeding */)
     END
 END
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdmycsp1.spl~ BEGIN  // Ring required for CRE
   COPY ~k0_iskp/spl/bdmycsp1.spl~ ~override~
-    SAY NAME1 @40042
+    SAY NAME1 @40042 /* Hallucinator Spores */
     LPF ALTER_EFFECT
       INT_VAR
         match_opcode = 139
-        parameter1   = RESOLVE_STR_REF(@40022)
+        parameter1   = RESOLVE_STR_REF(@40022 /* Confused */)
     END
 END
 <<<<<<<< .../inlined/k0ar0418.baf

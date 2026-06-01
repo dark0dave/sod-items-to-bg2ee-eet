@@ -1,10 +1,36 @@
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdsw1hx5.itm~ BEGIN
   COPY ~k0_iskp/itm/bdsw1hx5.itm~ ~override~
     WRITE_SHORT 0x42 100  // Setting lore value to identify
-    SAY NAME1 @20002
-    SAY NAME2 @20321
-    SAY UNIDENTIFIED_DESC @20003
-    SAY DESC @20322
+    SAY NAME1 @20002 /* Short Sword */
+    SAY NAME2 @20321 /* Gift of the Demon +1 */
+    SAY UNIDENTIFIED_DESC @20003 /* The short sword is the first type of sword to come into existence. In the simplest of terms, a short sword can be considered a dagger with a blade so long that it can no longer be called a dagger. The term short sword does not exist in sword classifications. However, it has come to be used to describe a double-edged blade about two feet in length. The sword tip is usually pointed, ideal for thrusting.
+
+STATISTICS:
+
+Damage: 1d6 (piercing)
+Speed Factor: 3
+Proficiency Type: Short Sword
+Type: One-handed
+Requires:
+ 5 Strength
+
+Weight: 3 */
+    SAY DESC @20322 /* This onyx blade pulses with a sickly green light. The hilt is carved of bone and the pommel resembles the grinning skull of a gelugon. The blade has snapped in half, leaving the sword disappointingly less powerful than it was before. Demonic gifts come with a catch, and this one has just revealed itself.
+
+STATISTICS:
+
+Equipped abilities:
+– May only be removed with a Remove Curse spell
+
+THAC0: +1
+Damage: 1d8+1 (slashing)
+Speed Factor: 4
+Proficiency Type: Long Sword
+Type: One-handed
+Requires:
+ 6 Strength
+
+Weight: 2 */
 END
 <<<<<<<< .../inlined/k0ar0602.baf
 IF

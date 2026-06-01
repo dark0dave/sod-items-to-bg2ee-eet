@@ -1,9 +1,40 @@
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdhamm06.itm~ BEGIN
   COPY ~k0_iskp/itm/bdhamm06.itm~ ~override~
-    SAY NAME1 @20026
-    SAY NAME2 @20291
-    SAY UNIDENTIFIED_DESC @20027
-    SAY DESC @20292
+    SAY NAME1 @20026 /* War Hammer */
+    SAY NAME2 @20291 /* Dread Hammer +2 */
+    SAY UNIDENTIFIED_DESC @20027 /* Mounted knights cannot effectively use long pole weapons while on horseback and, as a result, many weapons have been fitted with shorter shafts so they may be wielded with just one hand. Maces and flails are two examples of this—the war hammer is another. The horseman's war hammer is the descendent of the Lucerne hammer. It is made entirely of steel, with rondels protecting and strengthening the grip. (Rondels are small disks of metal, often shaped into decorative designs.) The shaft is about eighteen inches long.
+
+STATISTICS:
+
+Damage: 1d4+1 (crushing)
+Speed Factor: 4
+Proficiency Type: War Hammer
+Type: One-handed
+Requires:
+ 9 Strength
+
+Weight: 6 */
+    SAY DESC @20292 /* A Cold, Dread Hammer from a Cold, Dead Hand
+Once the property of dwarven cleric of Abbathor, Gurn Coldhearth, this mighty war hammer was infused with dark magics soon after Coldhearth's transformation into a lich. The brown leather of the handle and gray metal of the head are purest black now, seemingly forged of a darkness so deep no light can escape it. Any hand that holds it soon grows cold and numb, but those strong enough to endure the discomfort will wield a weapon of formidable power.
+
+STATISTICS:
+
+Equipped abilities:
+– On a critical miss, the weilder takes 1d4 points of cold damage
+
+Combat abilities:
+– Deals an extra 2d4 points of cold damage vs. good-aligned Clerics
+
+THAC0: +2
+Damage: 1d4+3, +1 cold
+Damage Type: Crushing
+Speed Factor: 2
+Proficiency Type: War Hammer
+Type: One-handed
+Requires:
+ 9 Strength
+
+Weight: 5 */
   COPY ~k0_iskp/spl/bdhamm06.spl~ ~override~
   COPY ~k0_iskp/spl/bdhamm6a.spl~ ~override~
   COPY ~k0_iskp/spl/bdhamm6b.spl~ ~override~

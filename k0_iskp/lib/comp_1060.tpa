@@ -1,9 +1,16 @@
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdhelm06.itm~ BEGIN
   COPY ~k0_iskp/itm/bdhelm06.itm~ ~override~
-    SAY NAME1 @20085
-    SAY NAME2 @20295
-    SAY UNIDENTIFIED_DESC @20086
-    SAY DESC @20296
+    SAY NAME1 @20085 /* Hat */
+    SAY NAME2 @20295 /* Peacock Cap */
+    SAY UNIDENTIFIED_DESC @20086 /* This soft cap looks neither durable nor practical. Its stylish appearance marks it as strictly decorative. */
+    SAY DESC @20296 /* Decades ago, Yeren the bard traveled the jungles of Chult to learn the stories and songs of those who lived within them. Though the trip was fraught with danger, Yeren's bravery was rewarded when he discovered a Chultan village. The villagers welcomed him. Over the next month, he learned of their history and art while telling them stories of life in Waterdeep. When Yeren departed, the villagers gifted him a headdress trimmed with peacock feathers. Too distinctive to wear on the streets of Waterdeep, Yeren selected one feather to sew into his cap, which he later enchanted.
+
+STATISTICS:
+
+Equipped abilities:
+– Charisma: +2 (Bards), +1 (others)
+
+Weight: 0 */
   COPY ~k0_iskp/eff/bdhelm6a.eff~ ~override~
 END
 <<<<<<<< .../inlined/k0ar0500.baf

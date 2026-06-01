@@ -1,20 +1,34 @@
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdbrac02.itm~ BEGIN
   COPY ~k0_iskp/itm/bdbrac02.itm~ ~override~
-    SAY NAME1 @20101
-    SAY NAME2 @20229
-    SAY UNIDENTIFIED_DESC @20102
-    SAY DESC @20230
+    SAY NAME1 @20101 /* Bracers */
+    SAY NAME2 @20229 /* Jester's Bracers */
+    SAY UNIDENTIFIED_DESC @20102 /* Bracers are thick bands of metal or leather that are strapped, belted, or tied to a character's forearm. Generally, the magic that is instilled in bracers is good only during combat, since most bracers help protect the wearer from injury or improve their chances to strike an opponent. Exceptions do exist, though such specialized items are rare at best.
+
+STATISTICS:
+
+Weight: 2 */
+    SAY DESC @20230 /* These bracers once belonged to a traveling bard famed for his sharp tongue and quick retorts. One rainy night, the bard took refuge in a rickety inn on the road to Shadowdale. There he performed for his supper, sprinkling his routine with caustic jibes as was his custom. One of the drinkers in the tavern, an old woman, stood up midway through the performance and snapped, "You think it clever to insult and belittle others? Do so, then, for as long as you live!" The bard found himself unable to remove his now-cursed protective bracers and was forced to spout corny jokes until he could pay a wizard to remove them.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: 5
+– Charisma: -1 (except for Jesters)
+– Wearer is forced to tell corny jokes
+– May only be removed with a Remove Curse spell
+
+Weight: 2 */
   COPY
     ~k0_iskp/eff/bdbrac02.eff~ ~override~  // Corny jokes effect for Jester's Bracers
-    SET strref = RESOLVE_STR_REF (@100000)
+    SET strref = RESOLVE_STR_REF (@100000 /* Why does the honeybee hum? He knows not the words! Waka waka! */)
     WRITE_LONG 0x60 strref
-    SET strref = RESOLVE_STR_REF (@100001)
-    SET strref = RESOLVE_STR_REF (@100002)
-    SET strref = RESOLVE_STR_REF (@100003)
-    SET strref = RESOLVE_STR_REF (@100004)
-    SET strref = RESOLVE_STR_REF (@100005)
-    SET strref = RESOLVE_STR_REF (@100006)
-    SET strref = RESOLVE_STR_REF (@100007)
+    SET strref = RESOLVE_STR_REF (@100001 /* How do ettins leave messages for one another? On a bull-ettin board! */)
+    SET strref = RESOLVE_STR_REF (@100002 /* Where is the safest place in all the land for diving? Waterdeep! */)
+    SET strref = RESOLVE_STR_REF (@100003 /* Never listen to a tale from a wyrm—they tend to drag on! */)
+    SET strref = RESOLVE_STR_REF (@100004 /* Why do skeletons never battle with one another? They lack guts. */)
+    SET strref = RESOLVE_STR_REF (@100005 /* Two orcs walk into a bar. Ouch! */)
+    SET strref = RESOLVE_STR_REF (@100006 /* Last time I told a joke to a ghoul, he laughed his head off! */)
+    SET strref = RESOLVE_STR_REF (@100007 /* What has the body of a lion, the wings of a dragon, and tastes great covered in butter? A manti-corn! */)
   COPY ~k0_iskp/eff/bdbrac2a.eff~ ~override~
 END
 <<<<<<<< .../inlined/k0ar2000.baf

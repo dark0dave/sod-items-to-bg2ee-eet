@@ -1,9 +1,27 @@
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdhelm04.itm~ BEGIN
   COPY ~k0_iskp/itm/bdhelm04.itm~ ~override~
-    SAY NAME1 @20083
-    SAY NAME2 @20247
-    SAY UNIDENTIFIED_DESC @20084
-    SAY DESC @20248
+    SAY NAME1 @20083 /* Helmet */
+    SAY NAME2 @20247 /* The Guardian Devil */
+    SAY UNIDENTIFIED_DESC @20084 /* This class of decorative helmet, made of reinforced leather or metal, covers the face and head. Eye slits and breathing holes come highly recommended.
+
+STATISTICS:
+
+Equipped abilities:
+– Protects against critical hits
+
+Weight: 2 */
+    SAY DESC @20248 /* This black iron helm has a rough, spiked texture on the outside and a fanged devil's head engraved above the brow. Despite its uncomfortable appearance, its padded interior comfortably fits its wearer's head as though it was designed for it. Not only does the helm protect the wearer from critical hits, but it extends its protection to the rest of the wearer's body.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +1
+– Slashing Damage Resistance: +15%
+– Piercing Damage Resistance: +15%
+– Missile Damage Resistance: +15%
+– Protects against critical hits
+
+Weight: 2 */
 END
 COPY_EXISTING ~bdhelm04.itm~ ~override~
   SET location = 48

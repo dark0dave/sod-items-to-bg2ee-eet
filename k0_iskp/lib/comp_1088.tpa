@@ -1,14 +1,32 @@
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdwand01.itm~ BEGIN
   COPY ~k0_iskp/itm/bdwand01.itm~ ~override~
-    SAY NAME1 @20121
-    SAY NAME2 @20367
-    SAY UNIDENTIFIED_DESC @20122
-    SAY DESC @20368
+    SAY NAME1 @20121 /* Wand */
+    SAY NAME2 @20367 /* Wand of Water Elemental Summoning */
+    SAY UNIDENTIFIED_DESC @20122 /* Wands are 1 1/4 ft. long and slender. They are made of ivory, bone, or wood and are usually tipped with something—metal, crystal, stone, and so on. They are fragile and tend to break easily. Because of this, they are often kept in cases.
+
+Wands are powered by charges, each use costing one or more charges (depending on the item). When a wand runs out of charges, it is consumed and destroyed.
+
+STATISTICS:
+
+Weight: 1 */
+    SAY DESC @20368 /* Seaweed strands wrap around this coral-encrusted wand. When a charge is expended, a water elemental appears to do its summoner's bidding.
+
+STATISTICS:
+
+Charge abilities:
+– Summon lesser water elemental
+  Range: 20 ft.
+  Duration: 1 turn
+
+Requires:
+ 9 Intelligence
+
+Weight: 1 */
 END
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdwelems.cre~ BEGIN  // CRE required for summon
   COPY ~k0_iskp/cre/bdwelems.cre~ ~override~
-    SAY NAME1 @40031
-    SAY NAME2 @40031
+    SAY NAME1 @40031 /* Lesser Water Elemental */
+    SAY NAME2 @40031 /* Lesser Water Elemental */
 END
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~cwelemw.2da~ BEGIN  // 2DA required for summon
   COPY ~k0_iskp/2da/cwelemw.2da~ ~override~
