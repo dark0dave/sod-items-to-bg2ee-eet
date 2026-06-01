@@ -1,7 +1,20 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-weidu --nogame --untraify-tra k0_iskp/lang/english/weidu.tra --untraify-d k0_iskp/setup-k0_iskp.tp2
-sed -i 's/ \/\*.*\*\///g' k0_iskp/setup-k0_iskp.tp2
-weidu --nogame --traify-comment --traify-old-tra k0_iskp/lang/english/weidu.tra --traify k0_iskp/setup-k0_iskp.tp2
-mv k0_iskp/setup-k0_iskp.tra k0_iskp/lang/english/weidu.tra
+retraify() {
+  weidu --nogame --untraify-tra "${2}" --untraify-d "${1}"
+  sed -i 's/ \/\*.*\*\///g' "${1}"
+  weidu --nogame --traify-comment --traify-old-tra "${2}" --traify "${1}"
+  mv "${2::-4}.tra" "${2}"
+}
+
+main() {
+  for file in $( find . -type f -iname "*.tp2" ); do
+    retraify "${file}" k0_iskp/lang/english/weidu.tra
+  done
+  for file in $( find . -type f -iname "*.tpa" ); do
+    retraify "${file}" k0_iskp/lang/english/weidu.tra
+  done
+}
+
+main
