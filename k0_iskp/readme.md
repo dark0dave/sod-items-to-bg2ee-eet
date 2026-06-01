@@ -1,8 +1,19 @@
+[![Release](https://img.shields.io/github/v/release/dark0dave/sod-items-to-bg2ee-eet?include_prereleases&color=41788a&style=for-the-badge)](https://github.com/dark0dave/sod-items-to-bg2ee-eet/releases)
+[![Published](https://img.shields.io/github/release-date-pre/dark0dave/sod-items-to-bg2ee-eet?display_date=published_at&label=published&color=014a69&style=for-the-badge)](https://github.com/dark0dave/sod-items-to-bg2ee-eet/releases/latest)
+[![Downloads](https://img.shields.io/github/downloads/dark0dave/sod-items-to-bg2ee-eet/total?color=41788a&style=for-the-badge)](https://github.com/dark0dave/sod-items-to-bg2ee-eet/releases)
+[![Language](https://img.shields.io/badge/language-english-014a69?style=for-the-badge)](https://github.com/dark0dave/sod-items-to-bg2ee-eet/releases)
+[![Games](https://img.shields.io/badge/games-BG2EE%20%a0%20EET-41788a?style=for-the-badge)](https://github.com/dark0dave/sod-items-to-bg2ee-eet/releases)
+[![Platform](https://img.shields.io/badge/platform-Windows%20%a0%20macOS%20%a0%20Linux%20%a0%20Project%20Infinity-014a69?style=for-the-badge)](https://github.com/dark0dave/sod-items-to-bg2ee-eet/releases)
+[![Checks](https://img.shields.io/github/actions/workflow/status/dark0dave/sod-items-to-bg2ee-eet/checks.yaml?style=for-the-badge&color=41788a)](https://github.com/dark0dave/sod-items-to-bg2ee-eet/actions/workflows/checks.yaml)
 # Sod items to BG2EE/EET
 
 This mod, currently in Beta, is a complete re-write and re-imagining of my Siege of Dragonspear to Baldur's Gate 2 EE Item Upgrade mod. The reason for the new name is twofold: To be more accurate as to the content of the mod, and to differentiate it as to not cause any confusion between the two. This mod is meant to replace SoDtoBG2IU, as such the former has been retired and will no longer receive any updates. Trollkiller's Item-Spell-Kitpack is not compatible with SoDtoBG2IU, nor are there plans to make it such.
 
 Sod Items to BG2EE/EET offers much better modularity, which allows for finer granularity of the player's choice of which components they can install and use, and as an added bonus, will also have better compatibility with other mods.
+
+## A note about ownership
+
+Please see the g3 forum, [here](https://www.gibberlings3.net/forums/topic/41281-sod-to-bg2-item-upgrade-mod-any-modders-interested-in-taking-over-this-one-from-me/).
 
 ## Location Spoilers
 
