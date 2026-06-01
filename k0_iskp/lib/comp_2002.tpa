@@ -1,6 +1,6 @@
 // Fine Bearskin
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdmisc34.itm~ BEGIN
-  COPY ~sod2bg2_iu/itm/bearskin/bdmisc34.itm~ ~override~
+  COPY ~k0_iskp/itm/bdmisc34.itm~ ~override~
     SAY NAME1 ~Fine Bearskin~
     SAY NAME2 ~Fine Bearskin~
     SAY UNIDENTIFIED_DESC ~The thick hide from an enormous bear.

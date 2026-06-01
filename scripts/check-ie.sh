@@ -26,6 +26,17 @@ function checkPathsInTp2() {
   done
 }
 
+function checkPathsInTpa() {
+  for file in $(find . -type f -iname "*.tpa" | sort | uniq ); do
+    for fileToMove in $(grep -E "COPY\W~.*\..{3}~\W~override" "${file}" | sed -E "s/^.*~(.*)~\W~.*$/\1/g"); do
+      if [[ ! -f "${fileToMove}" ]]; then
+        echo "${fileToMove} is not a file";
+        exit 1;
+      fi
+    done
+  done
+}
+
 function uniqueDesignated() {
   for file in $(find . -type f -iname "*.tp2" | sort | uniq ); do
     duplicates=$(grep -E "DESIGNATED\W+[0-9]+" "${file}" | sort | uniq -d);
@@ -47,6 +58,7 @@ main() {
   checkIE "*wav"
   checkIE "*vvc"
   checkPathsInTp2
+  checkPathsInTpa
   uniqueDesignated
 }
 
