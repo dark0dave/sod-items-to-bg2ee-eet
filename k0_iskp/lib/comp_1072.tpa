@@ -12,19 +12,5 @@ ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdsw1h25.itm~ BEGIN
     END
   COPY ~k0_iskp/eff/bdsw1h25.eff~ ~override~
 END
-<<<<<<<< .../inlined/k0ar0500.baf
-IF
-  Global("K0_ITEMS_BDSW1H25","GLOBAL",0)
-THEN
-  RESPONSE #100
-    SetInterrupt(FALSE)
-    SetGlobal("K0_ITEMS_BDSW1H25","GLOBAL",1)
-    AddStoreItem("BSHOP02","bdsw1h25",1,1)  // Spell Breaker +2
-    SetInterrupt(FALSE)
-    Continue()
-END
->>>>>>>>
-EXTEND_BOTTOM ~ar0500.bcs~ ~.../inlined/k0ar0500.baf~
-COPY_EXISTING ~ar0500.are~ ~override~
-  WRITE_ASCII AREA_SCRIPT ~ar0500~ #8
-BUT_ONLY
+COPY_EXISTING ~bshop02.sto~ ~override~
+  ADD_STORE_ITEM ~bdsw1h25~ #1 #0 #0 ~IDENTIFIED~ #1

@@ -19,7 +19,7 @@ THEN
         Continue()
 END
 >>>>>>>>
-EXTEND_BOTTOM ~k0oh5300.bcs~ ~.../inlined/k0k0oh5300.baf~
+EXTEND_BOTTOM ~k0oh5300.bcs~ ~.../inlined/k0oh5300.baf~
 COPY_EXISTING ~oh5300.are~ ~override~
   WRITE_ASCII AREA_SCRIPT ~oh5300~ #8
 BUT_ONLY

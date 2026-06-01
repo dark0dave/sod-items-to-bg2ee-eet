@@ -47,9 +47,8 @@ ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdamul01.itm~ BEGIN
         parameter1       = RESOLVE_STR_REF(@40015)
     END
 END
-OUTER_SET item = ~bdamul01~
 OUTER_SET ability1 = RESOLVE_STR_REF(@50001)
-APPEND ~tooltip.2da~ ~%item%  %ability1%  -1  -1~ BUT_ONLY
+APPEND ~tooltip.2da~ ~bdamul01  %ability1%  -1  -1~ BUT_ONLY
 COPY_EXISTING ~tooltip.2da~ ~override~
   LPF a7#normalize_table
   END

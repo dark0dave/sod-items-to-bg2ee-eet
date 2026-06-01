@@ -5,9 +5,8 @@ ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdrobe01.itm~ BEGIN
     SAY UNIDENTIFIED_DESC @20080
     SAY DESC @20312
 END
-OUTER_SET item = "bdrobe01"
 OUTER_SET ability1 = RESOLVE_STR_REF(@50003)
-APPEND ~tooltip.2da~ ~%item%  %ability1%  -1  -1~ BUT_ONLY
+APPEND ~tooltip.2da~ ~bdrobe01  %ability1%  -1  -1~ BUT_ONLY
 COPY_EXISTING ~tooltip.2da~ ~override~
   LPF a7#normalize_table
   END

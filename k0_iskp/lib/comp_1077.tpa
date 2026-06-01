@@ -11,9 +11,8 @@ ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdclck05.itm~ BEGIN
         parameter1   = RESOLVE_STR_REF(@40030)
     END
 END
-OUTER_SET item = "bdclck05"
 OUTER_SET ability1 = RESOLVE_STR_REF(@50004)
-APPEND ~tooltip.2da~ ~%item%  %ability1%  -1  -1~ BUT_ONLY
+APPEND ~tooltip.2da~ ~bdclck05  %ability1%  -1  -1~ BUT_ONLY
 COPY_EXISTING ~tooltip.2da~ ~override~
   LPF a7#normalize_table
   END

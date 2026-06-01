@@ -146,7 +146,7 @@ COPY_EXISTING ~roger.sto~ ~override~  // Roger the Fence
   ADD_STORE_ITEM ~bull07~ #1 #0 #0 ~IDENTIFIED~ #120  // Bullet of Fire +1
   ADD_STORE_ITEM ~bull08~ #1 #0 #0 ~IDENTIFIED~ #120  // Bullet of Ice +1
   ADD_STORE_ITEM ~bull09~ #1 #0 #0 ~IDENTIFIED~ #120  // Bullet of Electricity +1
-COPY_EXISTING ~bshop02~ ~override~
+COPY_EXISTING ~bshop02.sto~ ~override~
   ADD_STORE_ITEM ~bdbolt01~ #1 #0 #0 ~IDENTIFIED~ #120  // Bolt of Fire +1
   ADD_STORE_ITEM ~bdbolt02~ #1 #0 #0 ~IDENTIFIED~ #120  // Bolt of Ice +1
   ADD_STORE_ITEM ~bull07~ #1 #0 #0 ~IDENTIFIED~ #120  // Bullet of Fire +1

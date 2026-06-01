@@ -15,10 +15,9 @@ ACTION_IF GAME_IS ~bg2ee~ BEGIN
         parameter1   = RESOLVE_STR_REF(@40010)
     END
 END
-OUTER_SET item = "k0rhytea"
 OUTER_SET ability1 = RESOLVE_STR_REF(@50005)
 OUTER_SET ability1 = RESOLVE_STR_REF(@50006)
-APPEND ~tooltip.2da~ ~%item%  %ability1%  %ability2%  -1~ BUT_ONLY
+APPEND ~tooltip.2da~ ~k0rhytea  %ability1%  %ability2%  -1~ BUT_ONLY
 COPY_EXISTING ~tooltip.2da~ ~override~
   LPF a7#normalize_table
   END
