@@ -1,0 +1,28 @@
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdsw1h03.itm~ BEGIN
+  COPY ~k0_iskp/itm/bdsw1h03.itm~ ~override~
+    SAY NAME1 @20006
+    SAY NAME2 @20315
+    SAY UNIDENTIFIED_DESC @20007
+    SAY DESC @20316
+  COPY ~k0_iskp/spl/bdsw1h03.spl~ ~override~
+  COPY ~k0_iskp/spl/bdsw1h3b.spl~ ~override~
+    SAY NAME1 @40026
+  COPY ~k0_iskp/eff/bdsw1h3d.eff~ ~override~
+  COPY ~k0_iskp/eff/bdsw1h3h.eff~ ~override~
+  COPY ~k0_iskp/eff/bdsw1h3m.eff~ ~override~
+END
+<<<<<<<< .../inlined/k0ar0601.baf
+IF
+  Global("K0_ITEMS_BDSW1H03","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobal("K0_ITEMS_BDSW1H03","GLOBAL",1)
+    ActionOverride("Container 1",CreateItem("bdsw1h03",0,0,0)) // Eadro's Blade +1
+    SetInterrupt(TRUE)
+END
+>>>>>>>>
+EXTEND_BOTTOM ~ar0601.bcs~ ~.../inlined/k0ar0601.baf~
+COPY_EXISTING ~ar0601.are~ ~override~
+  WRITE_ASCII AREA_SCRIPT ~ar0601~ #8
+BUT_ONLY

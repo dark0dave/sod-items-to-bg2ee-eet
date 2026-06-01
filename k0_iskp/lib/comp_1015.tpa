@@ -1,0 +1,9 @@
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdbow04.itm~ BEGIN
+COPY ~k0_iskp/itm/bdbow04.itm~ ~override~
+SAY NAME1 @20053
+SAY NAME2 @20181
+SAY UNIDENTIFIED_DESC @20054
+SAY DESC @20182
+COPY ~k0_iskp/spl/bdbow04.spl~ ~override~
+END
+EXTEND_BOTTOM ~ar0701.bcs~ ~k0_iskp/baf/k0ar0701.baf~  // Bow of the Banshee +2

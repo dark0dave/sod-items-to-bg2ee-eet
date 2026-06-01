@@ -1,0 +1,23 @@
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdbelt04.itm~ BEGIN
+  COPY ~k0_iskp/itm/bdbelt04.itm~ ~override~
+    SAY NAME1 @20109
+    SAY NAME2 @20369
+    SAY UNIDENTIFIED_DESC @20110
+    SAY DESC @20370
+END
+<<<<<<<< .../inlined/k0ar1202.baf
+IF
+    Global("K0_ITEMS_BDBELT04","GLOBAL",0)
+THEN
+    RESPONSE #100
+        SetInterrupt(FALSE)
+        SetGlobal("K0_ITEMS_BDBELT04","GLOBAL",1)
+        ActionOverride("TAZOK",CreateItem("bdbelt04",0,0,0)) // Protector of the Unworthy
+        ActionOverride("TAZOK",XEquipItem("bdbelt04",Myself,SLOT_BELT,EQUIP))
+        SetInterrupt(FALSE)
+END
+>>>>>>>>
+EXTEND_BOTTOM ~ar1202.bcs~ ~.../inlined/k0ar1202.baf~
+COPY_EXISTING ~ar1202.are~ ~override~
+  WRITE_ASCII AREA_SCRIPT ~ar1202~ #8
+BUT_ONLY

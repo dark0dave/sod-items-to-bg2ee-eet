@@ -1,0 +1,9 @@
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdboot12.itm~ BEGIN
+  COPY ~k0_iskp/itm/bdboot12.itm~ ~override~
+    SAY NAME1 @20111
+    SAY NAME2 @20271
+    SAY UNIDENTIFIED_DESC @20112
+    SAY DESC @20272
+END
+COPY_EXISTING ~ribald.sto~ ~override~  // Ribald
+  ADD_STORE_ITEM ~bdboot12~ #0 #0 #0 ~IDENTIFIED~ #1

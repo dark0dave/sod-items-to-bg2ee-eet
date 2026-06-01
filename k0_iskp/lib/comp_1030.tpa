@@ -1,0 +1,8 @@
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdring10.itm~ BEGIN
+COPY ~k0_iskp/itm/bdring10.itm~ ~override~  // Ring of Purity
+SAY NAME1 @20105
+SAY NAME2 @20233
+SAY UNIDENTIFIED_DESC @20106
+SAY DESC @20234
+END
+EXTEND_BOTTOM ~ar1202.bcs~ ~k0_iskp/baf/k0ar1202.baf~  // Ring of Purity, Protector of the Unworthy*

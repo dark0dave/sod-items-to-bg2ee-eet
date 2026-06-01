@@ -1,0 +1,12 @@
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdbrd01.itm~ BEGIN
+COPY ~k0_iskp/itm/bdbrd01.itm~ ~override~
+SAY NAME1 @20225
+SAY NAME2 @20227
+SAY UNIDENTIFIED_DESC @20226
+SAY DESC @20228
+END
+EXTEND_BOTTOM ~ar1200.bcs~ ~k0_iskp/baf/k0ar1200.baf~  // The Forest Queen's Benediction*, Helm of Equus*
+EXTEND_BOTTOM ~vaelasa.bcs~ ~k0_iskp/baf/k0vaela.baf~  // allows vaelasa to use the FBQ in combat
+ACTION_IF FILE_EXISTS_IN_GAME ~vaelasa.dlg~ BEGIN
+COMPILE ~k0_iskp/dlg/k0vaela.d~  // update vaelasa's dialogue to give FBQ as reward for returning acorns, if it's in her inventory
+END

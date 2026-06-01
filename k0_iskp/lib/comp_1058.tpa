@@ -1,0 +1,26 @@
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdhamm06.itm~ BEGIN
+  COPY ~k0_iskp/itm/bdhamm06.itm~ ~override~
+    SAY NAME1 @20026
+    SAY NAME2 @20291
+    SAY UNIDENTIFIED_DESC @20027
+    SAY DESC @20292
+  COPY ~k0_iskp/spl/bdhamm06.spl~ ~override~
+  COPY ~k0_iskp/spl/bdhamm6a.spl~ ~override~
+  COPY ~k0_iskp/spl/bdhamm6b.spl~ ~override~
+END
+<<<<<<<< .../inlined/k0ar0712.baf
+IF
+  Global("K0_ITEMS_BDHAMM06","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobal("K0_ITEMS_BDHAMM06","GLOBAL",1)
+    TakeItemReplace("bdhamm06","HAMM02","SEVPAT01")  // Dread Hammer +2
+    ActionOverride("SEVPAT01",XEquipItem("bdhamm06",Myself,SLOT_WEAPON0,EQUIP))  // Sundermaul +3
+    SetInterrupt(FALSE)
+END
+>>>>>>>>
+EXTEND_BOTTOM ~ar0712.bcs~ ~.../inlined/k0ar0712.baf~
+COPY_EXISTING ~ar0712.are~ ~override~
+  WRITE_ASCII AREA_SCRIPT ~ar0712~ #8
+BUT_ONLY

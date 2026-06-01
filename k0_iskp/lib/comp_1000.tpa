@@ -1,0 +1,44 @@
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdsw1h21.itm~ BEGIN
+COPY ~k0_iskp/bam/ibds1h21.bam~ ~override~
+COPY ~k0_iskp/itm/bdsw1h21.itm~ ~override~
+SAY NAME1 @20002
+SAY NAME2 @20141
+SAY UNIDENTIFIED_DESC @20003
+SAY DESC @20142
+COPY ~k0_iskp/spl/bdstrdrn.spl~ ~override~
+LPF ALTER_EFFECT
+INT_VAR
+match_opcode     = 139
+match_parameter1 = 14042
+parameter1       = RESOLVE_STR_REF(@40000)
+END
+LPF ALTER_EFFECT
+INT_VAR
+match_opcode     = 139
+match_parameter1 = 1452
+parameter1       = RESOLVE_STR_REF(@40001)
+END
+COPY ~k0_iskp/spl/bdsw1h21.spl~ ~override~
+LPF ALTER_EFFECT
+INT_VAR
+match_opcode = 139
+parameter1   = RESOLVE_STR_REF(@40002)
+END
+END
+<<<<<<<< .../inlined/k0ar0310.baf
+IF
+Global("K0_ITEMS_BDSW1H21","GLOBAL",0)
+THEN
+RESPONSE #100
+SetInterrupt(FALSE)
+SetGlobal("K0_ITEMS_BDSW1H21","GLOBAL",1)
+TakeItemReplace("bdsw1h21","SW1H05","PIRSEA01")
+ActionOverride("PIRSEA01",XEquipItem("bdsw1h21",Myself,SLOT_WEAPON0,EQUIP))
+SetInterrupt(FALSE)
+Continue()
+END
+>>>>>>>>
+EXTEND_BOTTOM ~ar0310.bcs~ ~.../inlined/k0ar0310.baf~
+COPY_EXISTING ~ar0310.are~ ~override~
+WRITE_ASCII AREA_SCRIPT ~ar0310~ #8
+BUT_ONLY

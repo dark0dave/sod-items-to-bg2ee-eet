@@ -1,0 +1,24 @@
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdblun07.itm~ BEGIN
+COPY ~k0_iskp/itm/bdblun07.itm~ ~override~
+SAY NAME1 @20030
+SAY NAME2 @20179
+SAY UNIDENTIFIED_DESC @20031
+SAY DESC @20180
+COPY ~k0_iskp/spl/bdblun07.spl~ ~override~
+END
+<<<<<<<< .../inlined/k0ar0400.baf
+IF
+Global("K0_ITEMS_BDBLUN07","GLOBAL",0)
+THEN
+RESPONSE #100
+SetInterrupt(FALSE)
+SetGlobal("K0_ITEMS_BDBLUN07","GLOBAL",1)
+TakeItemReplace("bdblun07","AX1H01","COHRVALE")  // Backwhacker +2
+ActionOverride("COHRVALE",XEquipItem("bdblun07",Myself,SLOT_WEAPON0,EQUIP))  // Backwhacker +2
+SetInterrupt(FALSE)
+END
+>>>>>>>>
+EXTEND_BOTTOM ~ar0400.bcs~ ~.../inlined/k0ar0400.baf~
+COPY_EXISTING ~ar0400.are~ ~override~
+WRITE_ASCII AREA_SCRIPT ~ar0400~ #8
+BUT_ONLY

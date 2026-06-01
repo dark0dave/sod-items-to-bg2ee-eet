@@ -1,0 +1,26 @@
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdhalb01.itm~ BEGIN
+COPY ~k0_iskp/itm/bdhalb01.itm~ ~override~
+SAY NAME1 @20047
+SAY NAME2 @20205
+SAY UNIDENTIFIED_DESC @20048
+SAY DESC @20206
+COPY ~k0_iskp/spl/bdhalb01.spl~ ~override~
+SAY NAME1 @40009
+END
+<<<<<<<< .../inlined/k0ar0500.baf
+IF
+Global("K0_ITEMS_BDHALB01","GLOBAL",0)
+THEN
+RESPONSE #100
+SetInterrupt(FALSE)
+SetGlobal("K0_ITEMS_BDHALB01","GLOBAL",1)
+TakeItemReplace("bdhalb01","HALB02","KAYPAL01")  // Storm Pike +2
+ActionOverride("KAYPAL01",XEquipItem("bdhalb01",Myself,SLOT_WEAPON0,EQUIP))  // Storm Pike +2
+SetInterrupt(FALSE)
+Continue()
+END
+>>>>>>>>
+EXTEND_BOTTOM ~ar0500.bcs~ ~.../inlined/k0ar0500.baf~
+COPY_EXISTING ~ar0500.are~ ~override~
+WRITE_ASCII AREA_SCRIPT ~ar0500~ #8
+BUT_ONLY

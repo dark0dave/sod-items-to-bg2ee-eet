@@ -1,0 +1,11 @@
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdbrac03.itm~ BEGIN
+COPY ~k0_iskp/itm/bdbrac03.itm~ ~override~
+SAY NAME1 @20099
+SAY NAME2 @20183
+SAY UNIDENTIFIED_DESC @20100
+SAY DESC @20184
+WRITE_SHORT 0x42 0  // Setting lore value to 0 to prevent need to identify
+COPY ~k0_iskp/eff/bdbrac3a.eff~ ~override~
+COPY ~k0_iskp/eff/bdbrac3b.eff~ ~override~
+END
+COMPILE ~k0_iskp/baf/k0ar0305.baf~  // Nimblefinger Gloves, Soft Feet

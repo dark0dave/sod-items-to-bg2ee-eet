@@ -1,29 +1,5 @@
 IF
     Global("BD_HAVE_SOD","GLOBAL",1)
-    Global("K0_SOD_IMPORT_49","GLOBAL",1)
-THEN
-    RESPONSE #100
-        SetInterrupt(FALSE)
-        SetGlobal("K0_SOD_IMPORT_49","GLOBAL",2)
-        AddStoreItem("ribald","bdbrac01",1,1)  // Bracers of the Shuttered Lid
-        SetInterrupt(FALSE)
-        Continue()
-END
-
-IF
-    Global("BD_HAVE_SOD","GLOBAL",1)
-    Global("K0_SOD_IMPORT_60","GLOBAL",1)
-THEN
-    RESPONSE #100
-        SetInterrupt(FALSE)
-        SetGlobal("K0_SOD_IMPORT_60","GLOBAL",2)
-        AddStoreItem("ribald","bdhelm10",1,1)  // Helm of Unwavering Purpose
-        SetInterrupt(FALSE)
-        Continue()
-END
-
-IF
-    Global("BD_HAVE_SOD","GLOBAL",1)
     Global("K0_SOD_IMPORT_67","GLOBAL",1)
 THEN
     RESPONSE #100

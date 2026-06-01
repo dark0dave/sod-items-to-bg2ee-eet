@@ -1,0 +1,41 @@
+ACTION_IF GAME_IS ~bg2ee~ BEGIN
+  COPY ~k0_iskp/itm/k0rhytea.itm~ ~override~
+    SAY NAME1 @20024
+    SAY NAME2 @20343
+    SAY UNIDENTIFIED_DESC @20025
+    SAY DESC @20344
+    WRITE_ASCII 0x3a k0rhytei
+    WRITE_ASCII 0x58 k0rhyted
+    WRITE_ASCII 0x76 k0rhytei
+    WRITE_ASCII 0xae k0rhytei
+  COPY ~k0_iskp/spl/bdrhyte.spl~ ~override~
+    LPF ALTER_EFFECT
+      INT_VAR
+        match_opcode = 139
+        parameter1   = RESOLVE_STR_REF(@40010)
+    END
+END
+OUTER_SET item = "k0rhytea"
+OUTER_SET ability1 = RESOLVE_STR_REF(@50005)
+OUTER_SET ability1 = RESOLVE_STR_REF(@50006)
+APPEND ~tooltip.2da~ ~%item%  %ability1%  %ability2%  -1~ BUT_ONLY
+COPY_EXISTING ~tooltip.2da~ ~override~
+  LPF a7#normalize_table
+  END
+BUT_ONLY
+<<<<<<<< .../inlined/k0ar0701.baf
+IF
+  Global("K0_ITEMS_BDRHYTE","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobal("K0_ITEMS_BDRHYTE","GLOBAL",1)
+    TakeItemReplace("k0rhytea","AX1H08","TARNOR")  // Rhyte's Last Arrow +2/Hangard's Axe +2
+    ActionOverride("TARNOR",XEquipItem("k0rhytea",Myself,SLOT_WEAPON0,EQUIP))  // Rhyte's Last Arrow +2
+    SetInterrupt(FALSE)
+END
+>>>>>>>>
+EXTEND_BOTTOM ~ar0701.bcs~ ~.../inlined/k0ar0701.baf~
+COPY_EXISTING ~ar0701.are~ ~override~
+  WRITE_ASCII AREA_SCRIPT ~ar0701~ #8
+BUT_ONLY

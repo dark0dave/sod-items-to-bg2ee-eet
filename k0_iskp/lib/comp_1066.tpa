@@ -1,0 +1,24 @@
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdplat01.itm~ BEGIN
+  COPY ~k0_iskp/itm/bdplat01.itm~ ~override~
+    SAY NAME1 @20077
+    SAY NAME2 @20307
+    SAY UNIDENTIFIED_DESC @20078
+    SAY DESC @20308
+END
+<<<<<<<< .../inlined/k0ar1304.baf
+IF
+  Global("K0_ITEMS_BDPLAT01","GLOBAL",0)
+  Global("RoenallSpawn","AR1304",1)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobal("K0_ITEMS_BDPLAT01","GLOBAL",1)
+    TakeItemReplace("bdplat01","PLAT14","KPROEN01")  // Daeros' Full Plate +1
+    ActionOverride("KPROEN01",XEquipItem("bdplat01",Myself,SLOT_ARMOR,EQUIP))  // Daeros' Full Plate +1
+    SetInterrupt(FALSE)
+END
+>>>>>>>>
+EXTEND_BOTTOM ~ar1304.bcs~ ~.../inlined/k0ar1304.baf~
+COPY_EXISTING ~ar1304.are~ ~override~
+  WRITE_ASCII AREA_SCRIPT ~ar1304~ #8
+BUT_ONLY

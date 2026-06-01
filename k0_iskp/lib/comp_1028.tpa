@@ -1,0 +1,20 @@
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdbrac02.itm~ BEGIN
+COPY ~k0_iskp/itm/bdbrac02.itm~ ~override~
+SAY NAME1 @20101
+SAY NAME2 @20229
+SAY UNIDENTIFIED_DESC @20102
+SAY DESC @20230
+COPY
+~k0_iskp/eff/bdbrac02.eff~ ~override~  // Corny jokes effect for Jester's Bracers
+SET strref = RESOLVE_STR_REF (@100000)
+WRITE_LONG 0x60 strref
+SET strref = RESOLVE_STR_REF (@100001)
+SET strref = RESOLVE_STR_REF (@100002)
+SET strref = RESOLVE_STR_REF (@100003)
+SET strref = RESOLVE_STR_REF (@100004)
+SET strref = RESOLVE_STR_REF (@100005)
+SET strref = RESOLVE_STR_REF (@100006)
+SET strref = RESOLVE_STR_REF (@100007)
+COPY ~k0_iskp/eff/bdbrac2a.eff~ ~override~
+END
+EXTEND_BOTTOM ~ar2000.bcs~ ~k0_iskp/baf/k0ar2000.baf~  // Jester's Bracers, Wizard Hat, Raconteur's Regalia, Mosela's Cudgel +2, Savage Shortbow

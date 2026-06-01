@@ -1,0 +1,23 @@
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdhamm01.itm~ BEGIN
+COPY ~k0_iskp/itm/bdhamm01.itm~ ~override~
+SAY NAME1 @20026
+SAY NAME2 @20169
+SAY UNIDENTIFIED_DESC @20027
+SAY DESC @20170
+END
+<<<<<<<< .../inlined/k0ar1203.baf
+IF
+Global("K0_ITEMS_BDHAMM01","GLOBAL",0)
+THEN
+RESPONSE #100
+SetInterrupt(FALSE)
+SetGlobal("K0_ITEMS_BDHAMM01","GLOBAL",1)
+ActionOverride("FIRKRA02",CreateItem("bdhamm01",0,0,0)) // Sundermaul +3
+SetInterrupt(FALSE)
+Continue()
+END
+>>>>>>>>
+EXTEND_BOTTOM ~ar1203.bcs~ ~.../inlined/k0ar1203.baf~
+COPY_EXISTING ~ar1203.are~ ~override~
+WRITE_ASCII AREA_SCRIPT ~ar1203~ #8
+BUT_ONLY

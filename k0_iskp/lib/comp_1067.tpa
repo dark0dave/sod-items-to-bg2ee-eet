@@ -1,0 +1,23 @@
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdplat03.itm~ BEGIN
+  COPY ~k0_iskp/itm/bdplat03.itm~ ~override~
+    SAY NAME1 @20075
+    SAY NAME2 @20309
+    SAY UNIDENTIFIED_DESC @20076
+    SAY DESC @20310
+    WRITE_SHORT 0x42 0  // Setting lore value to 0 to prevent need to identify
+END
+<<<<<<<< .../inlined/k0dorn.baf
+IF
+  Global("K0_ITEMS_BDPLAT03","LOCALS",0)
+  IsActive(Myself)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobal("K0_ITEMS_BDPLAT03","LOCALS",1)
+    DestroyItem("PLAT01")  // Plate Mail
+    CreateItem("bdplat03",0,0,0)  // Bloody Bone Plate +2
+    XEquipItem("bdplat03",Myself,SLOT_ARMOR,EQUIP)  // Bloody Bone Plate +2
+    SetInterrupt(FALSE)
+END
+>>>>>>>>
+EXTEND_BOTTOM ~dorn.bcs~ ~.../inlined/k0dorn.baf~

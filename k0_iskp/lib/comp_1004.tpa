@@ -1,0 +1,14 @@
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdsw1h01.itm~ BEGIN
+COPY ~k0_iskp/itm/bdsw1h01.itm~ ~override~
+SAY NAME1 @20008
+SAY NAME2 @20157
+SAY UNIDENTIFIED_DESC @20009
+SAY DESC @20158
+COPY ~k0_iskp/spl/bdcrimsn.spl~ ~override~
+LPF ALTER_EFFECT
+INT_VAR
+match_opcode = 139
+parameter1   = RESOLVE_STR_REF(@40006)
+END
+END
+EXTEND_BOTTOM ~oh7000.bcs~ ~k0_iskp/baf/k0ar7000.baf~

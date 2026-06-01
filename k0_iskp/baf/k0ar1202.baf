@@ -8,15 +8,3 @@ THEN
         ActionOverride("DDGUARD7",CreateItem("bdring10",0,0,0)) // Ring of Purity
         SetInterrupt(FALSE)
 END
-
-IF
-    Global("BD_HAVE_SOD","GLOBAL",1)
-    Global("K0_SOD_PROTUNW","GLOBAL",0)
-THEN
-    RESPONSE #100
-        SetInterrupt(FALSE)
-        SetGlobal("K0_SOD_PROTUNW","GLOBAL",1)
-        ActionOverride("TAZOK",CreateItem("bdbelt04",0,0,0)) // Protector of the Unworthy
-        ActionOverride("TAZOK",XEquipItem("bdbelt04",Myself,SLOT_BELT,EQUIP))
-        SetInterrupt(FALSE)
-END

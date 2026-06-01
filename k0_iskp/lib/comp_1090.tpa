@@ -1,0 +1,40 @@
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdchan04.itm~ BEGIN
+  COPY ~k0_iskp/itm/bdchan04.itm~ ~override~
+    SAY NAME1 @20069
+    SAY NAME2 @20371
+    SAY UNIDENTIFIED_DESC @20070
+    SAY DESC @20372
+    LPF ALTER_EFFECT
+      INT_VAR
+        match_opcode     = 267
+        match_parameter1 = 25818
+        parameter1       = RESOLVE_STR_REF(@40032)
+    END
+    LPF ALTER_EFFECT
+      INT_VAR
+        match_opcode     = 267
+        match_parameter1 = 20568
+        parameter1       = RESOLVE_STR_REF(@40033)
+    END
+  COPY ~k0_iskp/eff/bdchan04.eff~ ~override~
+  ADD_PROJECTILE ~k0_iskp/pro/bdvrpo.pro~
+  COPY ~k0_iskp/spl/bdchan04.spl~ ~override~
+    LPF ALTER_SPELL_HEADER
+      INT_VAR
+        projectile = EVAL "%bdvrpo%"
+    END
+    LPF ALTER_EFFECT
+      INT_VAR
+        match_opcode     = 267
+        match_parameter1 = 25818
+        parameter1       = RESOLVE_STR_REF(@40032)
+    END
+    LPF ALTER_EFFECT
+      INT_VAR
+        match_opcode     = 267
+        match_parameter1 = 20568
+        parameter1       = RESOLVE_STR_REF(@40033)
+    END
+END
+COPY_EXISTING ~ribald.sto~ ~override~  // Ribald
+  ADD_STORE_ITEM ~bdchan04~ #1 #0 #0 ~IDENTIFIED~ #1

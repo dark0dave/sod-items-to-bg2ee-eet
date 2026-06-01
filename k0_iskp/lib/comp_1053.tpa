@@ -1,0 +1,23 @@
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdchan06.itm~ BEGIN
+  COPY ~k0_iskp/itm/bdchan06.itm~ ~override~
+    SAY NAME1 @20071
+    SAY NAME2 @20281
+    SAY UNIDENTIFIED_DESC @20072
+    SAY DESC @20282
+    WRITE_SHORT 0x42 0  // Setting lore value to 0 to prevent need to identify
+END
+<<<<<<<< .../inlined/k0mazzy.baf
+IF
+  Global("K0_ITEMS_BDCHAN06","GLOBAL",1)
+  IsActive(Myself)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobal("K0_ITEMS_BDCHAN06","GLOBAL",2)
+    DestroyItem("CHAN01")  // Chain Mail Armor
+    CreateItem("bdchan06",0,0,0)  // Stalwart Scales +2
+    XEquipItem("bdchan06",Myself,SLOT_ARMOR,EQUIP)  // Stalwart Scales +2
+    SetInterrupt(FALSE)
+END
+>>>>>>>>
+EXTEND_BOTTOM ~mazzy.bcs~ ~.../inlined/k0mazzy.baf~

@@ -1,0 +1,165 @@
+// Bolt of Fire +1
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdbolt01.itm~ BEGIN
+COPY ~k0_iskp/itm/bdbolt01.itm~ ~override~
+SAY NAME1 @20115
+SAY NAME2 @20147
+SAY UNIDENTIFIED_DESC @20116
+SAY DESC @20148
+END
+// Bolt of Ice +1
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdbolt02.itm~ BEGIN
+COPY ~k0_iskp/itm/bdbolt02.itm~ ~override~
+SAY NAME1 @20115
+SAY NAME2 @20145
+SAY UNIDENTIFIED_DESC @20116
+SAY DESC @20146
+END
+// Bullet of Fire +1
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bull07.itm~ BEGIN
+COPY ~k0_iskp/itm/bull07.itm~ ~override~
+SAY NAME1 @20117
+SAY NAME2 @20153
+SAY UNIDENTIFIED_DESC @20118
+SAY DESC @20154
+END
+// Bullet of Ice +1
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bull08.itm~ BEGIN
+COPY ~k0_iskp/itm/bull08.itm~ ~override~
+SAY NAME1 @20117
+SAY NAME2 @20151
+SAY UNIDENTIFIED_DESC @20118
+SAY DESC @20152
+END
+// Bullet of Electricity +1
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bull09.itm~ BEGIN
+COPY ~k0_iskp/itm/bull09.itm~ ~override~
+SAY NAME1 @20117
+SAY NAME2 @20149
+SAY UNIDENTIFIED_DESC @20118
+SAY DESC @20150
+END
+COPY_EXISTING ~shop04.sto~ ~override~  // Enge's Shop
+ADD_STORE_ITEM ~bdbolt01~ #1 #0 #0 ~IDENTIFIED~ #120  // Bolt of Fire +1
+ADD_STORE_ITEM ~bdbolt02~ #1 #0 #0 ~IDENTIFIED~ #120  // Bolt of Ice +1
+ADD_STORE_ITEM ~bull07~ #1 #0 #0 ~IDENTIFIED~ #120  // Bullet of Fire +1
+ADD_STORE_ITEM ~bull08~ #1 #0 #0 ~IDENTIFIED~ #120  // Bullet of Ice +1
+ADD_STORE_ITEM ~bull09~ #1 #0 #0 ~IDENTIFIED~ #120
+// Bullet of Electricity +1
+COPY_EXISTING ~ribald3.sto~ ~override~  // Ribald (restock)
+ADD_STORE_ITEM ~bdbolt01~ #1 #0 #0 ~IDENTIFIED~ #120  // Bolt of Fire +1
+ADD_STORE_ITEM ~bdbolt02~ #1 #0 #0 ~IDENTIFIED~ #120  // Bolt of Ice +1
+ADD_STORE_ITEM ~bull07~ #1 #0 #0 ~IDENTIFIED~ #120  // Bullet of Fire +1
+ADD_STORE_ITEM ~bull08~ #1 #0 #0 ~IDENTIFIED~ #120  // Bullet of Ice +1
+ADD_STORE_ITEM ~bull09~ #1 #0 #0 ~IDENTIFIED~ #120
+// Bullet of Electricity +1
+COPY_EXISTING ~ribald.sto~ ~override~  // Ribald
+ADD_STORE_ITEM ~bdbolt01~ #1 #0 #0 ~IDENTIFIED~ #120  // Bolt of Fire +1
+ADD_STORE_ITEM ~bdbolt02~ #1 #0 #0 ~IDENTIFIED~ #120  // Bolt of Ice +1
+ADD_STORE_ITEM ~bull07~ #1 #0 #0 ~IDENTIFIED~ #120  // Bullet of Fire +1
+ADD_STORE_ITEM ~bull08~ #1 #0 #0 ~IDENTIFIED~ #120  // Bullet of Ice +1
+ADD_STORE_ITEM ~bull09~ #1 #0 #0 ~IDENTIFIED~ #120
+// Bullet of Electricity +1
+COPY_EXISTING ~amsmug01.sto~ ~override~  // Amkethran Smugglers
+ADD_STORE_ITEM ~bdbolt01~ #1 #0 #0 ~IDENTIFIED~ #120  // Bolt of Fire +1
+ADD_STORE_ITEM ~bdbolt02~ #1 #0 #0 ~IDENTIFIED~ #120  // Bolt of Ice +1
+ADD_STORE_ITEM ~bull07~ #1 #0 #0 ~IDENTIFIED~ #120  // Bullet of Fire +1
+ADD_STORE_ITEM ~bull08~ #1 #0 #0 ~IDENTIFIED~ #120  // Bullet of Ice +1
+ADD_STORE_ITEM ~bull09~ #1 #0 #0 ~IDENTIFIED~ #120
+// Bullet of Electricity +1
+COPY_EXISTING ~amsmug02.sto~ ~override~  // Amkethran Smugglers 2
+ADD_STORE_ITEM ~bdbolt01~ #1 #0 #0 ~IDENTIFIED~ #120  // Bolt of Fire +1
+ADD_STORE_ITEM ~bdbolt02~ #1 #0 #0 ~IDENTIFIED~ #120  // Bolt of Ice +1
+ADD_STORE_ITEM ~bull07~ #1 #0 #0 ~IDENTIFIED~ #120  // Bullet of Fire +1
+ADD_STORE_ITEM ~bull08~ #1 #0 #0 ~IDENTIFIED~ #120  // Bullet of Ice +1
+ADD_STORE_ITEM ~bull09~ #1 #0 #0 ~IDENTIFIED~ #120
+// Bullet of Electricity +1
+COPY_EXISTING ~arled.sto~ ~override~  // Shadow Thief Fence
+ADD_STORE_ITEM ~bdbolt01~ #1 #0 #0 ~IDENTIFIED~ #120  // Bolt of Fire +1
+ADD_STORE_ITEM ~bdbolt02~ #1 #0 #0 ~IDENTIFIED~ #120  // Bolt of Ice +1
+ADD_STORE_ITEM ~bull07~ #1 #0 #0 ~IDENTIFIED~ #120  // Bullet of Fire +1
+ADD_STORE_ITEM ~bull08~ #1 #0 #0 ~IDENTIFIED~ #120  // Bullet of Ice +1
+ADD_STORE_ITEM ~bull09~ #1 #0 #0 ~IDENTIFIED~ #120
+// Bullet of Electricity +1
+COPY_EXISTING ~bernard5.sto~ ~override~  // Bernard
+ADD_STORE_ITEM ~bdbolt01~ #1 #0 #0 ~IDENTIFIED~ #120  // Bolt of Fire +1
+ADD_STORE_ITEM ~bdbolt02~ #1 #0 #0 ~IDENTIFIED~ #120  // Bolt of Ice +1
+ADD_STORE_ITEM ~bull07~ #1 #0 #0 ~IDENTIFIED~ #120  // Bullet of Fire +1
+ADD_STORE_ITEM ~bull08~ #1 #0 #0 ~IDENTIFIED~ #120  // Bullet of Ice +1
+ADD_STORE_ITEM ~bull09~ #1 #0 #0 ~IDENTIFIED~ #120
+// Bullet of Electricity +1
+COPY_EXISTING ~bernard6.sto~ ~override~  // Bernard 2
+ADD_STORE_ITEM ~bdbolt01~ #1 #0 #0 ~IDENTIFIED~ #120  // Bolt of Fire +1
+ADD_STORE_ITEM ~bdbolt02~ #1 #0 #0 ~IDENTIFIED~ #120  // Bolt of Ice +1
+ADD_STORE_ITEM ~bull07~ #1 #0 #0 ~IDENTIFIED~ #120  // Bullet of Fire +1
+ADD_STORE_ITEM ~bull08~ #1 #0 #0 ~IDENTIFIED~ #120  // Bullet of Ice +1
+ADD_STORE_ITEM ~bull09~ #1 #0 #0 ~IDENTIFIED~ #120
+// Bullet of Electricity +1
+COPY_EXISTING ~hendak.sto~ ~override~  // Hendak
+ADD_STORE_ITEM ~bdbolt01~ #1 #0 #0 ~IDENTIFIED~ #120  // Bolt of Fire +1
+ADD_STORE_ITEM ~bdbolt02~ #1 #0 #0 ~IDENTIFIED~ #120  // Bolt of Ice +1
+ADD_STORE_ITEM ~bull07~ #1 #0 #0 ~IDENTIFIED~ #120  // Bullet of Fire +1
+ADD_STORE_ITEM ~bull08~ #1 #0 #0 ~IDENTIFIED~ #120  // Bullet of Ice +1
+ADD_STORE_ITEM ~bull09~ #1 #0 #0 ~IDENTIFIED~ #120
+// Bullet of Electricity +1
+COPY_EXISTING ~ohbsdwm.sto~ ~override~  // Weapon Merchant
+ADD_STORE_ITEM ~bdbolt01~ #1 #0 #0 ~IDENTIFIED~ #120  // Bolt of Fire +1
+ADD_STORE_ITEM ~bdbolt02~ #1 #0 #0 ~IDENTIFIED~ #120  // Bolt of Ice +1
+ADD_STORE_ITEM ~bull07~ #1 #0 #0 ~IDENTIFIED~ #120  // Bullet of Fire +1
+ADD_STORE_ITEM ~bull08~ #1 #0 #0 ~IDENTIFIED~ #120  // Bullet of Ice +1
+ADD_STORE_ITEM ~bull09~ #1 #0 #0 ~IDENTIFIED~ #120
+// Bullet of Electricity +1
+COPY_EXISTING ~ohngduke.sto~ ~override~  // Gul Dukeem
+ADD_STORE_ITEM ~bdbolt01~ #1 #0 #0 ~IDENTIFIED~ #120  // Bolt of Fire +1
+ADD_STORE_ITEM ~bdbolt02~ #1 #0 #0 ~IDENTIFIED~ #120  // Bolt of Ice +1
+ADD_STORE_ITEM ~bull07~ #1 #0 #0 ~IDENTIFIED~ #120  // Bullet of Fire +1
+ADD_STORE_ITEM ~bull08~ #1 #0 #0 ~IDENTIFIED~ #120  // Bullet of Ice +1
+ADD_STORE_ITEM ~bull09~ #1 #0 #0 ~IDENTIFIED~ #120
+// Bullet of Electricity +1
+COPY_EXISTING ~ohnsdwm.sto~ ~override~  // Merchant
+ADD_STORE_ITEM ~bdbolt01~ #1 #0 #0 ~IDENTIFIED~ #120  // Bolt of Fire +1
+ADD_STORE_ITEM ~bdbolt02~ #1 #0 #0 ~IDENTIFIED~ #120  // Bolt of Ice +1
+ADD_STORE_ITEM ~bull07~ #1 #0 #0 ~IDENTIFIED~ #120  // Bullet of Fire +1
+ADD_STORE_ITEM ~bull08~ #1 #0 #0 ~IDENTIFIED~ #120  // Bullet of Ice +1
+ADD_STORE_ITEM ~bull09~ #1 #0 #0 ~IDENTIFIED~ #120
+// Bullet of Electricity +1
+COPY_EXISTING ~trgeni01.sto~ ~override~  // Khan Zahraa
+ADD_STORE_ITEM ~bdbolt01~ #1 #0 #0 ~IDENTIFIED~ #120  // Bolt of Fire +1
+ADD_STORE_ITEM ~bdbolt02~ #1 #0 #0 ~IDENTIFIED~ #120  // Bolt of Ice +1
+ADD_STORE_ITEM ~bull07~ #1 #0 #0 ~IDENTIFIED~ #120  // Bullet of Fire +1
+ADD_STORE_ITEM ~bull08~ #1 #0 #0 ~IDENTIFIED~ #120  // Bullet of Ice +1
+ADD_STORE_ITEM ~bull09~ #1 #0 #0 ~IDENTIFIED~ #120
+// Bullet of Electricity +1
+COPY_EXISTING ~trmer04a.sto~ ~override~  // Anvil of the Right
+ADD_STORE_ITEM ~bdbolt01~ #1 #0 #0 ~IDENTIFIED~ #120  // Bolt of Fire +1
+ADD_STORE_ITEM ~bdbolt02~ #1 #0 #0 ~IDENTIFIED~ #120  // Bolt of Ice +1
+ADD_STORE_ITEM ~bull07~ #1 #0 #0 ~IDENTIFIED~ #120  // Bullet of Fire +1
+ADD_STORE_ITEM ~bull08~ #1 #0 #0 ~IDENTIFIED~ #120  // Bullet of Ice +1
+ADD_STORE_ITEM ~bull09~ #1 #0 #0 ~IDENTIFIED~ #120
+// Bullet of Electricity +1
+COPY_EXISTING ~type3.sto~ ~override~  // Copper Coronet
+ADD_STORE_ITEM ~bdbolt01~ #1 #0 #0 ~IDENTIFIED~ #120  // Bolt of Fire +1
+ADD_STORE_ITEM ~bdbolt02~ #1 #0 #0 ~IDENTIFIED~ #120  // Bolt of Ice +1
+ADD_STORE_ITEM ~bull07~ #1 #0 #0 ~IDENTIFIED~ #120  // Bullet of Fire +1
+ADD_STORE_ITEM ~bull08~ #1 #0 #0 ~IDENTIFIED~ #120  // Bullet of Ice +1
+ADD_STORE_ITEM ~bull09~ #1 #0 #0 ~IDENTIFIED~ #120
+// Bullet of Electricity +1
+COPY_EXISTING ~hgkar01.sto~ ~override~  // Karthis al-Hezzar
+ADD_STORE_ITEM ~bdbolt01~ #1 #0 #0 ~IDENTIFIED~ #120  // Bolt of Fire +1
+ADD_STORE_ITEM ~bdbolt02~ #1 #0 #0 ~IDENTIFIED~ #120  // Bolt of Ice +1
+ADD_STORE_ITEM ~bull07~ #1 #0 #0 ~IDENTIFIED~ #120  // Bullet of Fire +1
+ADD_STORE_ITEM ~bull08~ #1 #0 #0 ~IDENTIFIED~ #120  // Bullet of Ice +1
+ADD_STORE_ITEM ~bull09~ #1 #0 #0 ~IDENTIFIED~ #120
+// Bullet of Electricity +1
+COPY_EXISTING ~sarbar01.sto~ ~override~  // The Tankard Tree
+ADD_STORE_ITEM ~bdbolt01~ #1 #0 #0 ~IDENTIFIED~ #120  // Bolt of Fire +1
+ADD_STORE_ITEM ~bdbolt02~ #1 #0 #0 ~IDENTIFIED~ #120  // Bolt of Ice +1
+ADD_STORE_ITEM ~bull07~ #1 #0 #0 ~IDENTIFIED~ #120  // Bullet of Fire +1
+ADD_STORE_ITEM ~bull08~ #1 #0 #0 ~IDENTIFIED~ #120  // Bullet of Ice +1
+ADD_STORE_ITEM ~bull09~ #1 #0 #0 ~IDENTIFIED~ #120
+// Bullet of Electricity +1
+COPY_EXISTING ~roger.sto~ ~override~  // Roger the Fence
+ADD_STORE_ITEM ~bdbolt01~ #1 #0 #0 ~IDENTIFIED~ #120  // Bolt of Fire +1
+ADD_STORE_ITEM ~bdbolt02~ #1 #0 #0 ~IDENTIFIED~ #120  // Bolt of Ice +1
+ADD_STORE_ITEM ~bull07~ #1 #0 #0 ~IDENTIFIED~ #120  // Bullet of Fire +1
+ADD_STORE_ITEM ~bull08~ #1 #0 #0 ~IDENTIFIED~ #120  // Bullet of Ice +1
+ADD_STORE_ITEM ~bull09~ #1 #0 #0 ~IDENTIFIED~ #120  // Bullet of Electricity +1

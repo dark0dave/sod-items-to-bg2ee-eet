@@ -1,0 +1,29 @@
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdshld08.itm~ BEGIN
+  COPY ~k0_iskp/itm/bdshld08.itm~ ~override~
+    SAY NAME1 @20215
+    SAY NAME2 @20359
+    SAY UNIDENTIFIED_DESC @20216
+    SAY DESC @20360
+  COPY ~k0_iskp/spl/bdshblod.spl~ ~override~
+    LPF ALTER_EFFECT
+      INT_VAR
+        match_opcode = 139
+        parameter1   = RESOLVE_STR_REF(@40001)
+    END
+END
+<<<<<<<< .../inlined/k0ar0907.baf
+IF
+    Global("K0_ITEMS_BDSHLD08","GLOBAL",1)
+THEN
+    RESPONSE #100
+        SetInterrupt(FALSE)
+        SetGlobal("K0_ITEMS_BDSHLD08","GLOBAL",2)
+        TakeItemReplace("bdshld08","SHLD30","HLMAFER")  // The Bloodied Guardian +2/Large Shield +2
+        ActionOverride("HLMAFER",XEquipItem("bdshld08",Myself,SLOT_SHIELD,EQUIP))  // The Bloodied Guardian +2
+        SetInterrupt(FALSE)
+END
+>>>>>>>>
+EXTEND_BOTTOM ~ar0907.bcs~ ~.../inlined/k0ar0907.baf~
+COPY_EXISTING ~ar0907.are~ ~override~
+  WRITE_ASCII AREA_SCRIPT ~ar0907~ #8
+BUT_ONLY

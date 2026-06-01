@@ -1,0 +1,10 @@
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdamul11.itm~ BEGIN
+  COPY ~k0_iskp/itm/bdamul11.itm~ ~override~
+    SAY NAME1 @20093
+    SAY NAME2 @20353
+    SAY UNIDENTIFIED_DESC @20094
+    SAY DESC @20354
+    WRITE_SHORT 0x42 0  // Setting lore value to 0 to prevent need to identify
+  COPY ~k0_iskp/eff/bdamul11.eff~ ~override~
+END
+EXTEND_BOTTOM ~cernd.bcs~ ~k0_iskp/baf/k0cernd.baf~  // Lon's Amulet

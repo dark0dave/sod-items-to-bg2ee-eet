@@ -1,0 +1,22 @@
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdbrac01.itm~ BEGIN
+  COPY ~k0_iskp/itm/bdbrac01.itm~ ~override~
+    SAY NAME1 @20101
+    SAY NAME2 @20275
+    SAY UNIDENTIFIED_DESC @20102
+  COPY ~k0_iskp/spl/bdbrac01.spl~ ~override~
+    LPF ALTER_EFFECT
+      INT_VAR
+        match_opcode = 139
+        parameter1   = RESOLVE_STR_REF(@40017)
+    END
+END
+COPY_EXISTING ~rasaad8.cre~ ~override~
+  REPLACE_CRE_ITEM ~bdbrac01~ #0 #0 #0 ~IDENTIFIED~ ~WEAPON~ EQUIP
+COPY_EXISTING ~rasaad9.cre~ ~override~
+  REPLACE_CRE_ITEM ~bdbrac01~ #0 #0 #0 ~IDENTIFIED~ ~WEAPON~ EQUIP
+COPY_EXISTING ~rasaad10.cre~ ~override~
+  REPLACE_CRE_ITEM ~bdbrac01~ #0 #0 #0 ~IDENTIFIED~ ~WEAPON~ EQUIP
+COPY_EXISTING ~rasaad11.cre~ ~override~
+  REPLACE_CRE_ITEM ~bdbrac01~ #0 #0 #0 ~IDENTIFIED~ ~WEAPON~ EQUIP
+COPY_EXISTING ~rasaad13.cre~ ~override~
+  REPLACE_CRE_ITEM ~bdbrac01~ #0 #0 #0 ~IDENTIFIED~ ~WEAPON~ EQUIP

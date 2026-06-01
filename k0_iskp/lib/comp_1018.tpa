@@ -1,0 +1,50 @@
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdclck06.itm~ BEGIN
+COPY ~k0_iskp/itm/bdclck06.itm~ ~override~
+SAY NAME1 @20107
+SAY NAME2 @20187
+SAY UNIDENTIFIED_DESC @20108
+SAY DESC @20188
+COPY
+~k0_iskp/itm/bdalnt01.itm~ ~override~  // note items for cloak to generate
+SAY NAME1 @20189
+SAY NAME2 @20189
+SAY UNIDENTIFIED_DESC @20190
+SAY DESC @20190
+COPY
+~k0_iskp/itm/bdalnt02.itm~ ~override~  // note items for cloak to generate
+SAY NAME1 @20191
+SAY NAME2 @20191
+SAY UNIDENTIFIED_DESC @20192
+SAY DESC @20192
+COPY
+~k0_iskp/itm/bdalnt03.itm~ ~override~  // note items for cloak to generate
+SAY NAME1 @20193
+SAY NAME2 @20193
+SAY UNIDENTIFIED_DESC @20194
+SAY DESC @20194
+COPY
+~k0_iskp/itm/bdalnt04.itm~ ~override~  // note items for cloak to generate
+SAY NAME1 @20195
+SAY NAME2 @20195
+SAY UNIDENTIFIED_DESC @20196
+SAY DESC @20196
+COPY
+~k0_iskp/itm/bdalnt05.itm~ ~override~  // note items for cloak to generate
+SAY NAME1 @20197
+SAY NAME2 @20197
+SAY UNIDENTIFIED_DESC @20198
+SAY DESC @20198
+COPY
+~k0_iskp/itm/bdalnt06.itm~ ~override~  // note items for cloak to generate
+SAY NAME1 @20199
+SAY NAME2 @20199
+SAY UNIDENTIFIED_DESC @20200
+SAY DESC @20200
+COPY
+~k0_iskp/itm/bdalnt07.itm~ ~override~  // note items for cloak to generate
+SAY NAME1 @20201
+SAY NAME2 @20201
+SAY UNIDENTIFIED_DESC @20202
+SAY DESC @20202
+END
+EXTEND_BOTTOM ~ar0705.bcs~ ~k0_iskp/baf/k0ar0705.baf~  // Cloak of Minor Arcana

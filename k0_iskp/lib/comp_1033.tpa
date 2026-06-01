@@ -1,0 +1,20 @@
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdhelm12.itm~ BEGIN
+  COPY ~k0_iskp/itm/bdhelm12.itm~ ~override~
+    SAY NAME1 @20085
+    SAY NAME2 @20241
+    SAY UNIDENTIFIED_DESC @20086
+    SAY DESC @20242
+END
+<<<<<<<< .../inlined/k0ar2000.baf
+IF
+    Global("K0_ITEMS_BDHELM12","GLOBAL",0)
+THEN
+    RESPONSE #100
+        SetInterrupt(FALSE)
+        SetGlobal("K0_ITEMS_BDHELM12","GLOBAL",1)
+        AddStoreItem("TRMER02","bdhelm12",1,1)  // Wizzard Hat
+        SetInterrupt(FALSE)
+        Continue()
+END
+>>>>>>>>
+EXTEND_BOTTOM ~ar2000.bcs~ ~.../inlined/k0ar2000.baf~

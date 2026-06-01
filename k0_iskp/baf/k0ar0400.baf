@@ -8,16 +8,3 @@ THEN
         ActionOverride("Barrel 2",CreateItem("bdhalb02",0,0,0)) // Festering Spear +1
         SetInterrupt(TRUE)
 END
-
-IF
-    Global("BD_HAVE_SOD","GLOBAL",1)
-    Global("K0_SOD_IMPORT_57","GLOBAL",1)
-    Global("ShagbagEscape","GLOBAL",1)
-THEN
-    RESPONSE #100
-        SetInterrupt(FALSE)
-        SetGlobal("K0_SOD_IMPORT_57","GLOBAL",2)
-        TakeItemReplace("bdhelm05","HELM01","korshag")  // Battle Tankard
-        ActionOverride("korshag",XEquipItem("bdhelm05",Myself,SLOT_HELMET,EQUIP)  // Battle Tankard
-        SetInterrupt(FALSE)
-END
