@@ -2,7 +2,7 @@
 
 This mod, currently in Beta, is a complete re-write and re-imagining of my Siege of Dragonspear to Baldur's Gate 2 EE Item Upgrade mod. The reason for the new name is twofold: To be more accurate as to the content of the mod, and to differentiate it as to not cause any confusion between the two. This mod is meant to replace SoDtoBG2IU, as such the former has been retired and will no longer receive any updates. Trollkiller's Item-Spell-Kitpack is not compatible with SoDtoBG2IU, nor are there plans to make it such.
 
-Trollkiller's Item-Spell-Kitpack offers better modularity, which allows for finer granularity of the player's choice of which components they can install and use, and as an added bonus, will also have better compatibility with other mods. The only component that will have a hard dependency on other components within the mod is the upgradeable items component, simply because if the source items to be upgraded are not present within the game, there would be nothing to upgrade, making it completely redundant.
+Sod Items to BG2EE/EET offers much better modularity, which allows for finer granularity of the player's choice of which components they can install and use, and as an added bonus, will also have better compatibility with other mods.
 
 ## Location Spoilers
 
