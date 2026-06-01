@@ -1,0 +1,19 @@
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdring10.itm~ BEGIN
+  COPY ~k0_iskp/itm/bdring10.itm~ ~override~  // Ring of Purity
+    SAY NAME1 @20105
+    SAY NAME2 @20233
+    SAY UNIDENTIFIED_DESC @20106
+    SAY DESC @20234
+END
+<<<<<<<< .../inlined/k0ar1202.baf
+IF
+    Global("K0_ITEMS_BDRING10","GLOBAL",0)
+THEN
+    RESPONSE #100
+        SetInterrupt(FALSE)
+        SetGlobal("K0_ITEMS_BDRING10","GLOBAL",1)
+        ActionOverride("DDGUARD7",CreateItem("bdring10",0,0,0)) // Ring of Purity
+        SetInterrupt(FALSE)
+END
+>>>>>>>>
+EXTEND_BOTTOM ~ar1202.bcs~ ~.../inlined/k0ar1202.baf~

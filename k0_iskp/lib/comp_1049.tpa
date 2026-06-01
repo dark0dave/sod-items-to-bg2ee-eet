@@ -1,0 +1,11 @@
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdbow05.itm~ BEGIN
+  COPY ~k0_iskp/itm/bdbow05.itm~ ~override~
+    SAY NAME1 @20051
+    SAY NAME2 @20273
+    SAY UNIDENTIFIED_DESC @20052
+    SAY DESC @20274
+  COPY ~k0_iskp/spl/bdbow05.spl~ ~override~
+  COPY ~k0_iskp/eff/bdbow05.eff~ ~override~
+END
+COPY_EXISTING ~trmer02.sto~ ~override~  // Caravan Merchant
+  ADD_STORE_ITEM ~bdbow05~ #0 #0 #0 ~IDENTIFIED~ #1

@@ -1,0 +1,24 @@
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdhelm15.itm~ BEGIN
+  COPY ~k0_iskp/itm/bdhelm15.itm~ ~override~
+    SAY NAME1 @20237
+    SAY NAME2 @20239
+    SAY UNIDENTIFIED_DESC @20238
+    SAY DESC @20240
+    WRITE_SHORT 0x42 0  // Setting lore value to 0 to prevent need to identify
+  COPY ~k0_iskp/eff/bdhelm15.eff~ ~override~
+END
+<<<<<<<< .../inlined/k0rasaa.baf
+IF
+    Global("K0_ITEMS_BDHELM15","GLOBAL",0)
+    IsActive(Myself)
+THEN
+    RESPONSE #100
+        SetInterrupt(FALSE)
+        SetGlobal("K0_ITEMS_BDHELM15","GLOBAL",1)
+        CreateItem("bdhelm15",0,0,0)  // Headband of Focus
+        XEquipItem("bdhelm15",Myself,SLOT_HELMET,EQUIP)  // Headband of Focus
+        SetInterrupt(FALSE)
+        Continue()
+END
+>>>>>>>>
+EXTEND_TOP ~rasaad.bcs~ ~.../inlined/k0rasaa.baf~

@@ -1,0 +1,22 @@
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdamul12.itm~ BEGIN
+  COPY ~k0_iskp/itm/bdamul12.itm~ ~override~
+    SAY NAME1 @20093
+    SAY NAME2 @20373
+    SAY UNIDENTIFIED_DESC @20094
+    SAY DESC @20374
+END
+<<<<<<<< .../inlined/k0ar0603.baf
+IF
+    Global("K0_ITEMS_BDAMUL12","GLOBAL",1)
+THEN
+    RESPONSE #100
+        SetInterrupt(FALSE)
+        SetGlobal("K0_ITEMS_BDAMUL12","GLOBAL",2)
+        ActionOverride("Container 21",CreateItem("bdamul12",0,0,0)) // The Gift
+        SetInterrupt(TRUE)
+END
+>>>>>>>>
+EXTEND_BOTTOM ~ar0603.bcs~ ~.../inlined/k0ar0603.baf~
+COPY_EXISTING ~ar0603.are~ ~override~
+  WRITE_ASCII AREA_SCRIPT ~ar0603~ #8
+BUT_ONLY

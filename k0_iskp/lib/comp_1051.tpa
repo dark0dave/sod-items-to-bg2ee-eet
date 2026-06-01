@@ -1,0 +1,9 @@
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdbrac15.itm~ BEGIN
+  COPY ~k0_iskp/itm/bdbrac15.itm~ ~override~
+    SAY NAME1 @20101
+    SAY NAME2 @20277
+    SAY UNIDENTIFIED_DESC @20102
+    SAY DESC @20278
+  COPY ~k0_iskp/spl/bdbrac15.spl~ ~override~
+END
+COMPILE ~k0_iskp/dlg/k0trski.d~  // Bracers of Perseverance

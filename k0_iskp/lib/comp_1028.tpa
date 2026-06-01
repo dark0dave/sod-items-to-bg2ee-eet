@@ -1,0 +1,33 @@
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdbrac02.itm~ BEGIN
+  COPY ~k0_iskp/itm/bdbrac02.itm~ ~override~
+    SAY NAME1 @20101
+    SAY NAME2 @20229
+    SAY UNIDENTIFIED_DESC @20102
+    SAY DESC @20230
+  COPY
+    ~k0_iskp/eff/bdbrac02.eff~ ~override~  // Corny jokes effect for Jester's Bracers
+    SET strref = RESOLVE_STR_REF (@100000)
+    WRITE_LONG 0x60 strref
+    SET strref = RESOLVE_STR_REF (@100001)
+    SET strref = RESOLVE_STR_REF (@100002)
+    SET strref = RESOLVE_STR_REF (@100003)
+    SET strref = RESOLVE_STR_REF (@100004)
+    SET strref = RESOLVE_STR_REF (@100005)
+    SET strref = RESOLVE_STR_REF (@100006)
+    SET strref = RESOLVE_STR_REF (@100007)
+  COPY ~k0_iskp/eff/bdbrac2a.eff~ ~override~
+END
+<<<<<<<< .../inlined/k0ar2000.baf
+IF
+    Global("K0_ITEMS_BDBRAC02","GLOBAL",1)
+THEN
+    RESPONSE #100
+        SetInterrupt(FALSE)
+        SetGlobal("K0_ITEMS_BDBRAC02","GLOBAL",2)
+        ActionOverride("NEEBER",CreateItem("bdbrac02",0,0,0)) // Jester's Bracers
+        ActionOverride("NEEBER",XEquipItem("bdbrac02",Myself,SLOT_GAUNTLETS,EQUIP))  // Jester's Bracers
+        SetInterrupt(FALSE)
+        Continue()
+END
+>>>>>>>>
+EXTEND_BOTTOM ~ar2000.bcs~ ~.../inlined/k0ar2000.baf~

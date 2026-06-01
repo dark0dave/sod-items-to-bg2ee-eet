@@ -1,0 +1,9 @@
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdshld03.itm~ BEGIN
+  COPY ~k0_iskp/itm/bdshld03.itm~ ~override~
+    SAY NAME1 @20213
+    SAY NAME2 @20341
+    SAY UNIDENTIFIED_DESC @20214
+    SAY DESC @20342
+  COPY ~k0_iskp/eff/bdshld03.eff~ ~override~
+END
+COMPILE ~k0_iskp/dlg/k0scsai.d~  // Shield of Egons +2

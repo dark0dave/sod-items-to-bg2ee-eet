@@ -1,0 +1,21 @@
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdbrd04.itm~ BEGIN
+  COPY ~k0_iskp/itm/bdbrd04.itm~ ~override~
+    SAY NAME1 @20129
+    SAY NAME2 @20185
+    SAY UNIDENTIFIED_DESC @20130
+    SAY DESC @20186
+  COPY ~k0_iskp/spl/bdbrd04.spl~ ~override~
+    SAY NAME1 @40034
+    LPF ALTER_EFFECT
+      INT_VAR
+        match_opcode = 139
+        parameter1   = RESOLVE_STR_REF(@40008)
+    END
+  COPY ~k0_iskp/spl/bdbrd4a.spl~ ~override~
+  COPY ~k0_iskp/eff/bdbrd04.eff~ ~override~
+  COPY ~k0_iskp/spl/bdbrd4a.spl~ ~override~
+END
+COMPILE ~k0_iskp/baf/k0pooky.baf~  // new race script to allow pooky to use the bagpipes in combat, since his default script is shared
+COPY_EXISTING ~sevpat03.cre~ ~override~
+  ADD_CRE_ITEM ~bdbrd04~ #2 #0 #0 ~NONE~ ~QITEM1~  // Screaming bagpipes
+  WRITE_ASCII 0x258 dtkpooky

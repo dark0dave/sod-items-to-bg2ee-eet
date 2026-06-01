@@ -1,0 +1,58 @@
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdamul01.itm~ BEGIN
+  COPY ~k0_iskp/itm/bdamul01.itm~ ~override~
+    SAY NAME1 @20093
+    SAY NAME2 @20253
+    SAY UNIDENTIFIED_DESC @20094
+    SAY DESC @20254
+    WRITE_SHORT 0x42 0  // Setting lore value to 0 to prevent need to identify
+    LPF ALTER_EFFECT
+      INT_VAR
+        match_opcode = 206
+        parameter1   = RESOLVE_STR_REF(@40013)
+    END
+    LPF ALTER_EFFECT
+      INT_VAR
+        match_opcode     = 267
+        match_parameter1 = 14676
+        parameter1       = RESOLVE_STR_REF(@40014)
+    END
+    LPF ALTER_EFFECT
+      INT_VAR
+        match_opcode     = 267
+        match_parameter1 = 17425
+        parameter1       = RESOLVE_STR_REF(@40014)
+    END
+    LPF ALTER_EFFECT
+      INT_VAR
+        match_opcode     = 267
+        match_parameter1 = 14002
+        parameter1       = RESOLVE_STR_REF(@40015)
+    END
+    LPF ALTER_EFFECT
+      INT_VAR
+        match_opcode     = 267
+        match_parameter1 = 12756
+        parameter1       = RESOLVE_STR_REF(@40015)
+    END
+    LPF ALTER_EFFECT
+      INT_VAR
+        match_opcode     = 267
+        match_parameter1 = 12774
+        parameter1       = RESOLVE_STR_REF(@40015)
+    END
+    LPF ALTER_EFFECT
+      INT_VAR
+        match_opcode     = 267
+        match_parameter1 = 25953
+        parameter1       = RESOLVE_STR_REF(@40015)
+    END
+END
+OUTER_SET item = ~bdamul01~
+OUTER_SET ability1 = RESOLVE_STR_REF(@50001)
+APPEND ~tooltip.2da~ ~%item%  %ability1%  -1  -1~ BUT_ONLY
+COPY_EXISTING ~tooltip.2da~ ~override~
+  LPF a7#normalize_table
+  END
+BUT_ONLY
+COPY_EXISTING ~neera8.cre~ ~override~
+  REPLACE_CRE_ITEM ~bdamul01~ #0 #0 #0 ~IDENTIFIED~ ~AMULET~  // Amulet of Whispers

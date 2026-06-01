@@ -1,0 +1,9 @@
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdhelm01.itm~ BEGIN
+  COPY ~k0_iskp/itm/bdhelm01.itm~ ~override~
+    SAY NAME1 @20165
+    SAY NAME2 @20167
+    SAY UNIDENTIFIED_DESC @20166
+    SAY DESC @20168
+END
+COPY_EXISTING ~firkra02.cre~ ~override~
+  ADD_CRE_ITEM ~bdhelm01~ #0 #0 #0 ~NONE~ ~INV~

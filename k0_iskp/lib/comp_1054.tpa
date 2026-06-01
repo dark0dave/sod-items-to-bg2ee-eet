@@ -1,0 +1,76 @@
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdclck02.itm~ BEGIN
+  COPY ~k0_iskp/itm/bdclck02.itm~ ~override~
+    SAY NAME1 @20107
+    SAY NAME2 @20283
+    SAY UNIDENTIFIED_DESC @20108
+    SAY DESC @20284
+    LPF ALTER_EFFECT
+      INT_VAR
+        match_opcode = 206
+        parameter1   = RESOLVE_STR_REF(@40013)
+    END
+    LPF ALTER_EFFECT
+      INT_VAR
+        match_opcode     = 267
+        match_parameter1 = 14000
+        parameter1       = RESOLVE_STR_REF(@40018)
+    END
+    LPF ALTER_EFFECT
+      INT_VAR
+        match_opcode     = 267
+        match_parameter1 = 11799
+        parameter1       = RESOLVE_STR_REF(@40018)
+    END
+    LPF ALTER_EFFECT
+      INT_VAR
+        match_opcode     = 267
+        match_parameter1 = 12081
+        parameter1       = RESOLVE_STR_REF(@40018)
+    END
+    LPF ALTER_EFFECT
+      INT_VAR
+        match_opcode     = 267
+        match_parameter1 = 12992
+        parameter1       = RESOLVE_STR_REF(@40018)
+    END
+    LPF ALTER_EFFECT
+      INT_VAR
+        match_opcode     = 267
+        match_parameter1 = 13062
+        parameter1       = RESOLVE_STR_REF(@40018)
+    END
+    LPF ALTER_EFFECT
+      INT_VAR
+        match_opcode     = 267
+        match_parameter1 = 26103
+        parameter1       = RESOLVE_STR_REF(@40018)
+    END
+    LPF ALTER_EFFECT
+      INT_VAR
+        match_opcode     = 267
+        match_parameter1 = 14668
+        parameter1       = RESOLVE_STR_REF(@40007)
+    END
+    LPF ALTER_EFFECT
+      INT_VAR
+        match_opcode     = 267
+        match_parameter1 = 25856
+        parameter1       = RESOLVE_STR_REF(@40007)
+    END
+    LPF ALTER_EFFECT
+      INT_VAR
+        match_opcode     = 267
+        match_parameter1 = 31728
+        parameter1       = RESOLVE_STR_REF(@40007)
+    END
+    LPF ALTER_EFFECT
+      INT_VAR
+        match_opcode     = 267
+        match_parameter1 = 31772
+        parameter1       = RESOLVE_STR_REF(@40007)
+    END
+END
+COPY_EXISTING ~ohdboll.cre~ ~override~
+  REPLACE_CRE_ITEM ~bdclck02~ #0 #0 #0 ~IDENTIFIED~ ~CLOAK~
+COPY_EXISTING ~ohdfirej.cre~ ~override~
+  REPLACE_CRE_ITEM ~bdclck02~ #0 #0 #0 ~IDENTIFIED~ ~CLOAK~

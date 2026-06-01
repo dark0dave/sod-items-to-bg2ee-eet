@@ -1,0 +1,12 @@
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdboot03.itm~ BEGIN
+  COPY ~k0_iskp/itm/bdboot03.itm~ ~override~
+    SAY NAME1 @20111
+    SAY NAME2 @20171
+    SAY UNIDENTIFIED_DESC @20112
+    SAY DESC @20172
+  COPY ~k0_iskp/eff/bdboot03.eff~ ~override~
+END
+COPY_EXISTING ~bheye.cre~ ~override~
+  ADD_CRE_ITEM ~bdboot03~ #0 #0 #0 ~NONE~ ~BOOTS~
+COPY_EXISTING ~unsee.cre~ ~override~
+  ADD_CRE_ITEM ~bdboot03~ #0 #0 #0 ~NONE~ ~BOOTS~

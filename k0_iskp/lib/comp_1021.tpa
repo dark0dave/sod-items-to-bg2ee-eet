@@ -1,0 +1,17 @@
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdioun01.itm~ BEGIN
+  COPY ~k0_iskp/itm/bdioun01.itm~ ~override~
+    SAY NAME1 @20089
+    SAY NAME2 @20207
+    SAY UNIDENTIFIED_DESC @20090
+    SAY DESC @20208
+    WRITE_SHORT 0x42 0  // Setting lore value to 0 to prevent need to identify
+  COPY ~k0_iskp/eff/bdioun01.eff~ ~override~
+END
+COPY_EXISTING ~nalia8.cre~ ~override~
+  ADD_CRE_ITEM ~bdioun01~ #0 #0 #0 ~IDENTIFIED~ ~HELMET~
+COPY_EXISTING ~nalia10.cre~ ~override~
+  ADD_CRE_ITEM ~bdioun01~ #0 #0 #0 ~IDENTIFIED~ ~HELMET~
+COPY_EXISTING ~nalia11.cre~ ~override~
+  ADD_CRE_ITEM ~bdioun01~ #0 #0 #0 ~IDENTIFIED~ ~HELMET~
+COPY_EXISTING ~nalia13.cre~ ~override~
+  ADD_CRE_ITEM ~bdioun01~ #0 #0 #0 ~IDENTIFIED~ ~HELMET~

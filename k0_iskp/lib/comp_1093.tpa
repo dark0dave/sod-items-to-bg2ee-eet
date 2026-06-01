@@ -1,0 +1,110 @@
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdmisc08.itm~ BEGIN
+  COPY ~k0_iskp/itm/bdmisc08.itm~ ~override~
+    SAY NAME1 @20379
+    SAY NAME2 @20381
+    SAY UNIDENTIFIED_DESC @20380
+    SAY DESC @20382
+END
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdmycsu1.cre~ BEGIN  // CRE required for summon
+  COPY ~k0_iskp/cre/bdmycsu1.cre~ ~override~
+    SAY NAME1 @40035
+    SAY NAME2 @40035
+END
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdmisc08.2da~ BEGIN  // 2DA required for summon
+  COPY ~k0_iskp/2da/bdmisc08.2da~ ~override~
+END
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~b5-20m1.itm~ BEGIN  // Weapon required for CRE
+  COPY ~k0_iskp/itm/b5-20m1.itm~ ~override~
+    SAY NAME1 @40036
+    SAY NAME2 @40036
+END
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdplant.itm~ BEGIN  // Ring required for CRE
+  COPY ~k0_iskp/itm/bdplant.itm~ ~override~
+    SAY NAME1 @20105
+    SAY NAME2 @20105
+    LPF ALTER_EFFECT
+      INT_VAR
+        match_opcode = 206
+        parameter1   = RESOLVE_STR_REF(@40013)
+    END
+    LPF ALTER_EFFECT
+      INT_VAR
+        match_opcode     = 267
+        match_parameter1 = 25862
+        parameter1       = RESOLVE_STR_REF(@40037)
+    END
+    LPF ALTER_EFFECT
+      INT_VAR
+        match_opcode     = 267
+        match_parameter1 = 26215
+        parameter1       = RESOLVE_STR_REF(@40023)
+    END
+    LPF ALTER_EFFECT
+      INT_VAR
+        match_opcode     = 267
+        match_parameter1 = 25425
+        parameter1       = RESOLVE_STR_REF(@40024)
+    END
+    LPF ALTER_EFFECT
+      INT_VAR
+        match_opcode     = 267
+        match_parameter1 = 14650
+        parameter1       = RESOLVE_STR_REF(@40039)
+    END
+    LPF ALTER_EFFECT
+      INT_VAR
+        match_opcode     = 267
+        match_parameter1 = 25866
+        parameter1       = RESOLVE_STR_REF(@40040)
+    END
+    LPF ALTER_EFFECT
+      INT_VAR
+        match_opcode     = 267
+        match_parameter1 = 31799
+        parameter1       = RESOLVE_STR_REF(@40040)
+    END
+    LPF ALTER_EFFECT
+      INT_VAR
+        match_opcode     = 267
+        match_parameter1 = 26371
+        parameter1       = RESOLVE_STR_REF(@40041)
+    END
+    LPF ALTER_EFFECT
+      INT_VAR
+        match_opcode     = 267
+        match_parameter1 = 26050
+        parameter1       = RESOLVE_STR_REF(@40038)
+    END
+    LPF ALTER_EFFECT
+      INT_VAR
+        match_opcode     = 267
+        match_parameter1 = 25137
+        parameter1       = RESOLVE_STR_REF(@40002)
+    END
+END
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdmycsp1.spl~ BEGIN  // Ring required for CRE
+  COPY ~k0_iskp/spl/bdmycsp1.spl~ ~override~
+    SAY NAME1 @40042
+    LPF ALTER_EFFECT
+      INT_VAR
+        match_opcode = 139
+        parameter1   = RESOLVE_STR_REF(@40022)
+    END
+END
+<<<<<<<< .../inlined/k0ar0418.baf
+IF
+    Global("K0_ITEM_BDMISC08","GLOBAL",0)
+THEN
+    RESPONSE #100
+        SetInterrupt(FALSE)
+        SetGlobal("K0_ITEM_BDMISC08","GLOBAL",1)
+        ActionOverride("ICMYC02",CreateItem("bdmisc08",4,0,0)) // Myconid Bloom-Sac
+        ActionOverride("ICMYC02",XEquipItem("bdmisc08",Myself,SLOT_MISC4,EQUIP))  // Myconid Bloom-Sac
+        SetInterrupt(FALSE)
+        Continue()
+END
+>>>>>>>>
+EXTEND_BOTTOM ~ar0418.bcs~ ~.../inlined/k0ar0418.baf~
+COPY_EXISTING ~ar0418.are~ ~override~
+  WRITE_ASCII AREA_SCRIPT ~ar0418~ #8
+BUT_ONLY

@@ -1,0 +1,31 @@
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdrobe01.itm~ BEGIN
+  COPY ~k0_iskp/itm/bdrobe01.itm~ ~override~
+    SAY NAME1 @20079
+    SAY NAME2 @20311
+    SAY UNIDENTIFIED_DESC @20080
+    SAY DESC @20312
+END
+OUTER_SET item = "bdrobe01"
+OUTER_SET ability1 = RESOLVE_STR_REF(@50003)
+APPEND ~tooltip.2da~ ~%item%  %ability1%  -1  -1~ BUT_ONLY
+COPY_EXISTING ~tooltip.2da~ ~override~
+  LPF a7#normalize_table
+  END
+BUT_ONLY
+<<<<<<<< .../inlined/k0ar0300.baf
+IF
+  Global("K0_ITEMS_BDROBE01","GLOBAL",0)
+  Global("LyrosSpawn","GLOBAL",2)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobal("K0_ITEMS_BDROBE01","GLOBAL",1)
+    ActionOverride("LYROS",CreateItem("bdclck06",7,0,0)) // Cloak of Minor Arcana
+    ActionOverride("LYROS",XEquipItem("bdclck06",Myself,SLOT_CLOAK,EQUIP))  // Robe of Arcane Aptitude
+    SetInterrupt(FALSE)
+END
+>>>>>>>>
+EXTEND_BOTTOM ~ar0300.bcs~ ~.../inlined/k0ar0300.baf~
+COPY_EXISTING ~ar0300.are~ ~override~
+  WRITE_ASCII AREA_SCRIPT ~ar0300~ #8
+BUT_ONLY

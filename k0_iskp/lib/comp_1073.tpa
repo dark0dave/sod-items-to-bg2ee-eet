@@ -1,0 +1,24 @@
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdsw1hx5.itm~ BEGIN
+  COPY ~k0_iskp/itm/bdsw1hx5.itm~ ~override~
+    WRITE_SHORT 0x42 100  // Setting lore value to identify
+    SAY NAME1 @20002
+    SAY NAME2 @20321
+    SAY UNIDENTIFIED_DESC @20003
+    SAY DESC @20322
+END
+<<<<<<<< .../inlined/k0ar0602.baf
+IF
+  Global("K0_ITEMS_BDSW1HX5","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobal("K0_ITEMS_BDSW1HX5","GLOBAL",1)
+    ActionOverride("Picture 1",DestroyItem("dagg02")) // Dagger +1
+    ActionOverride("Picture 1",CreateItem("bdsw1hx5",0,0,0)) // Gift of the Demon +1
+    SetInterrupt(TRUE)
+END
+>>>>>>>>
+EXTEND_BOTTOM ~ar0602.bcs~ ~.../inlined/k0ar0602.baf~
+COPY_EXISTING ~ar0602.are~ ~override~
+  WRITE_ASCII AREA_SCRIPT ~ar0602~ #8
+BUT_ONLY

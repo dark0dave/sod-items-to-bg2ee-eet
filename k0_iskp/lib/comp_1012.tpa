@@ -1,0 +1,16 @@
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdbelt01.itm~ BEGIN
+  COPY ~k0_iskp/itm/bdbelt01.itm~ ~override~
+    SAY NAME1 @20109
+    SAY NAME2 @20175
+    SAY UNIDENTIFIED_DESC @20110
+    SAY DESC @20176
+    WRITE_SHORT 0x42 0  // Setting lore value to 0 to prevent need to identify
+END
+COPY_EXISTING ~haer10.cre~ ~override~
+  ADD_CRE_ITEM ~bdbelt01~ #0 #0 #0 ~NONE~ ~BELT~
+COPY_EXISTING ~haer11.cre~ ~override~
+  ADD_CRE_ITEM ~bdbelt01~ #0 #0 #0 ~NONE~ ~BELT~
+COPY_EXISTING ~haer13.cre~ ~override~
+  ADD_CRE_ITEM ~bdbelt01~ #0 #0 #0 ~NONE~ ~BELT~
+COPY_EXISTING ~haer15.cre~ ~override~
+  ADD_CRE_ITEM ~bdbelt01~ #0 #0 #0 ~NONE~ ~BELT~

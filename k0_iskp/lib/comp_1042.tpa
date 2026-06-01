@@ -1,0 +1,18 @@
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdamul08.itm~ BEGIN
+  COPY ~k0_iskp/itm/bdamul08.itm~ ~override~
+    SAY NAME1 @20093
+    SAY NAME2 @20259
+    SAY UNIDENTIFIED_DESC @20094
+    SAY DESC @20260
+    WRITE_SHORT 0x42 0  // Setting lore value to 0 to prevent need to identify
+  COPY ~k0_iskp/eff/bdamul08.eff~ ~override~
+  COPY ~k0_iskp/eff/bdamul8a.eff~ ~override~
+END
+COPY_EXISTING ~jan8.cre~ ~override~
+  ADD_CRE_ITEM ~bdamul08~ #0 #0 #0 ~IDENTIFIED~ ~AMULET~
+COPY_EXISTING ~jan10.cre~ ~override~
+  ADD_CRE_ITEM ~bdamul08~ #0 #0 #0 ~IDENTIFIED~ ~AMULET~
+COPY_EXISTING ~jan11.cre~ ~override~
+  ADD_CRE_ITEM ~bdamul08~ #0 #0 #0 ~IDENTIFIED~ ~AMULET~
+COPY_EXISTING ~jan12.cre~ ~override~
+  ADD_CRE_ITEM ~bdamul08~ #0 #0 #0 ~IDENTIFIED~ ~AMULET~

@@ -1,0 +1,9 @@
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdplat01.itm~ BEGIN
+  COPY ~k0_iskp/itm/bdplat01.itm~ ~override~
+    SAY NAME1 @20077
+    SAY NAME2 @20307
+    SAY UNIDENTIFIED_DESC @20078
+    SAY DESC @20308
+END
+COPY_EXISTING ~kproen01.cre~ ~override~
+  REPLACE_CRE_ITEM ~bdplat01~ #0 #0 #0 ~NONE~ ~ARMOR~

@@ -1,0 +1,22 @@
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdmirr01.itm~ BEGIN
+  COPY ~k0_iskp/itm/bdmirr01.itm~ ~override~
+    SAY NAME1 @20345
+    SAY NAME2 @20347
+    SAY UNIDENTIFIED_DESC @20346
+    SAY DESC @20348
+END
+<<<<<<<< .../inlined/k0ar0602.baf
+IF
+  Global("K0_ITEMS_BDMIRR01","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobal("K0_ITEMS_BDMIRR01","GLOBAL",1)
+    ActionOverride("Shelf 3",CreateItem("bdmirr01",3,0,0)) // Gentrus's Hand Mirror
+    SetInterrupt(TRUE)
+END
+>>>>>>>>
+EXTEND_BOTTOM ~ar0602.bcs~ ~.../inlined/k0ar0602.baf~
+COPY_EXISTING ~ar0602.are~ ~override~
+  WRITE_ASCII AREA_SCRIPT ~ar0602~ #8
+BUT_ONLY
