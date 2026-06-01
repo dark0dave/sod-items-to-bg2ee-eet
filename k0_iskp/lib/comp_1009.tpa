@@ -1,0 +1,14 @@
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdhamm01.itm~ BEGIN
+  COPY ~k0_iskp/itm/bdhamm01.itm~ ~override~
+    SAY NAME1 @20026
+    SAY NAME2 @20169
+    SAY UNIDENTIFIED_DESC @20027
+    SAY DESC @20170
+END
+ACTION_IF FILE_EXISTS_IN_GAME ~udsvir05.dlg~ BEGIN
+  COPY_EXISTING ~udsvir05.dlg~ ~override~
+    DECOMPILE_AND_PATCH BEGIN
+      REPLACE_TEXTUALLY ~AddexperienceParty(10000)~ ~AddexperienceParty(10000) GiveItemCreate("bdhamm01",LastTalkedToBy,0,0,0)~
+    END
+  BUT_ONLY_IF_IT_CHANGES
+END

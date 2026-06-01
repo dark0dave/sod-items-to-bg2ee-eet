@@ -1,0 +1,21 @@
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdhelm05.itm~ BEGIN
+  COPY ~k0_iskp/itm/bdhelm05.itm~ ~override~
+    SAY NAME1 @20083
+    SAY NAME2 @20293
+    SAY UNIDENTIFIED_DESC @20084
+    SAY DESC @20294
+END
+<<<<<<<< .../inlined/k0ar0400.baf
+IF
+    Global("K0_SOD_IMPORT_57","GLOBAL",1)
+    Global("ShagbagEscape","GLOBAL",1)
+THEN
+    RESPONSE #100
+        SetInterrupt(FALSE)
+        SetGlobal("K0_SOD_IMPORT_57","GLOBAL",2)
+        TakeItemReplace("bdhelm05","HELM01","korshag")  // Battle Tankard
+        ActionOverride("korshag",XEquipItem("bdhelm05",Myself,SLOT_HELMET,EQUIP))  // Battle Tankard
+        SetInterrupt(FALSE)
+END
+>>>>>>>>
+EXTEND_BOTTOM ~ar0400.bcs~ ~.../inlined/k0ar0400.baf~

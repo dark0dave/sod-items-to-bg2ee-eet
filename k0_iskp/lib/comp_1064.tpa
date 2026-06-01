@@ -1,0 +1,20 @@
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdleat03.itm~ BEGIN
+  COPY ~k0_iskp/itm/bdleat03.itm~ ~override~
+    SAY NAME1 @20067
+    SAY NAME2 @20303
+    SAY UNIDENTIFIED_DESC @20068
+    SAY DESC @20304
+END
+<<<<<<<< .../inlined/k0ar2000.baf
+IF
+    Global("K0_SOD_IMPORT_62","GLOBAL",0)
+THEN
+    RESPONSE #100
+        SetInterrupt(FALSE)
+        SetGlobal("K0_SOD_IMPORT_62","GLOBAL",1)
+        AddStoreItem("TRMER02","bdleat03",1,1)  // Raconteur's Regalia
+        SetInterrupt(FALSE)
+        Continue()
+END
+>>>>>>>>
+EXTEND_BOTTOM ~ar2000.bcs~ ~.../inlined/k0ar2000.baf~

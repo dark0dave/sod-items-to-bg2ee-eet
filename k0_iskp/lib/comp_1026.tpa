@@ -1,0 +1,32 @@
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdsper01.itm~ BEGIN
+  COPY ~k0_iskp/itm/bdsper01.itm~ ~override~
+    SAY NAME1 @20041
+    SAY NAME2 @20223
+    SAY UNIDENTIFIED_DESC @20042
+    SAY DESC @20224
+  COPY ~k0_iskp/spl/bdsper1a.spl~ ~override~
+    LPF ALTER_EFFECT
+      INT_VAR
+        match_opcode = 139
+        parameter1   = RESOLVE_STR_REF(@40010)
+    END
+  COPY ~k0_iskp/spl/bdsper1b.spl~ ~override~
+    SAY NAME1 @40043
+    LPF ALTER_EFFECT
+      INT_VAR
+        match_opcode = 139
+        parameter1   = RESOLVE_STR_REF(@40011)
+    END
+END
+<<<<<<<< .../inlined/k0ar1301.baf
+IF
+    Global("K0_ITEMS_BDSPER01","GLOBAL",0)
+THEN
+    RESPONSE #100
+        SetInterrupt(FALSE)
+        SetGlobal("K0_ITEMS_BDSPER01","GLOBAL",1)
+        ActionOverride("TORGAL",CreateItem("bdsper01",0,0,0)) // Shadowed Spear +2
+        SetInterrupt(FALSE)
+END
+>>>>>>>>
+EXTEND_BOTTOM ~ar1301.bcs~ ~.../inlined/k0ar1301.baf~

@@ -1,0 +1,20 @@
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdxbow01.itm~ BEGIN
+  COPY ~k0_iskp/itm/bdxbow01.itm~ ~override~
+    SAY NAME1 @20059
+    SAY NAME2 @20221
+    SAY UNIDENTIFIED_DESC @20060
+    SAY DESC @20222
+    WRITE_SHORT 0x42 0  // Setting lore value to 0 to prevent need to identify
+  COPY ~k0_iskp/eff/bdxbow1h.eff~ ~override~
+  COPY ~k0_iskp/eff/bdxbow1d.eff~ ~override~
+  COPY ~k0_iskp/spl/bdxbow01.spl~ ~override~
+END
+
+COPY_EXISTING ~keldor9.cre~ ~override~
+  REPLACE_CRE_ITEM ~bdxbow01~ #0 #0 #0 ~IDENTIFIED~ ~WEAPON2~ EQUIP TWOHANDED
+COPY_EXISTING ~keldor8.cre~ ~override~
+  REPLACE_CRE_ITEM ~bdxbow01~ #0 #0 #0 ~IDENTIFIED~ ~WEAPON2~ EQUIP TWOHANDED
+COPY_EXISTING ~keldor10.cre~ ~override~
+  REPLACE_CRE_ITEM ~bdxbow01~ #0 #0 #0 ~IDENTIFIED~ ~WEAPON2~ EQUIP TWOHANDED
+COPY_EXISTING ~keldor12.cre~ ~override~
+  REPLACE_CRE_ITEM ~bdxbow01~ #0 #0 #0 ~IDENTIFIED~ ~WEAPON2~ EQUIP TWOHANDED

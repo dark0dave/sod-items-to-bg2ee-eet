@@ -1,0 +1,28 @@
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdax1h03.itm~ BEGIN
+  COPY ~k0_iskp/itm/bdax1h03.itm~ ~override~
+    SAY NAME1 @20022
+    SAY NAME2 @20261
+    SAY UNIDENTIFIED_DESC @20023
+    SAY DESC @20262
+    WRITE_SHORT 0x42 0  // Setting lore value to 0 to prevent need to identify
+    LPF ALTER_EFFECT
+      INT_VAR
+        match_opcode = 139
+        parameter1   = RESOLVE_STR_REF(@40016)
+    END
+END
+<<<<<<<< .../inlined/k0korg.baf
+IF
+    Global("K0_ITEMS_BDAX1H03","GLOBAL",1)
+    IsActive(Myself)
+THEN
+    RESPONSE #100
+        SetInterrupt(FALSE)
+        SetGlobal("K0_ITEMS_BDAX1H03","GLOBAL",2)
+        DestroyItem("KORAX01")  // Battle Axe +1
+        CreateItem("bdax1h03",0,0,0)  // Chill Axe +2
+        XEquipItem("bdax1h03",Myself,SLOT_WEAPON0,EQUIP)  // Chill Axe +2
+        SetInterrupt(FALSE)
+END
+>>>>>>>>
+EXTEND_BOTTOM ~korgan.bcs~ ~.../inlined/k0korg.baf~

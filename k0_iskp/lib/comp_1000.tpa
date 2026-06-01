@@ -1,0 +1,29 @@
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdsw1h21.itm~ BEGIN
+  COPY ~k0_iskp/bam/ibds1h21.bam~ ~override~
+  COPY ~k0_iskp/itm/bdsw1h21.itm~ ~override~
+    SAY NAME1 @20002
+    SAY NAME2 @20141
+    SAY UNIDENTIFIED_DESC @20003
+    SAY DESC @20142
+  COPY ~k0_iskp/spl/bdstrdrn.spl~ ~override~
+    LPF ALTER_EFFECT
+      INT_VAR
+        match_opcode     = 139
+        match_parameter1 = 14042
+        parameter1       = RESOLVE_STR_REF(@40000)
+    END
+    LPF ALTER_EFFECT
+      INT_VAR
+        match_opcode     = 139
+        match_parameter1 = 1452
+        parameter1       = RESOLVE_STR_REF(@40001)
+    END
+  COPY ~k0_iskp/spl/bdsw1h21.spl~ ~override~
+    LPF ALTER_EFFECT
+      INT_VAR
+        match_opcode = 139
+        parameter1   = RESOLVE_STR_REF(@40002)
+    END
+END
+COPY_EXISTING ~pirsea01.cre~ ~override~
+  REPLACE_CRE_ITEM ~bdsw1h21~ #0 #0 #0 ~NONE~ ~WEAPON~ EQUIP

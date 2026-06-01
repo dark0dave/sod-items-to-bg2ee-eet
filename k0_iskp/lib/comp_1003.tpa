@@ -1,0 +1,17 @@
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdsw1h22.itm~ BEGIN
+  COPY ~k0_iskp/itm/bdsw1h22.itm~ ~override~
+    SAY NAME1 @20004
+    SAY NAME2 @20155
+    SAY UNIDENTIFIED_DESC @20005
+    SAY DESC @20156
+  COPY ~k0_iskp/spl/bdsw1h22.spl~ ~override~
+    SAY NAME1 @40004
+  COPY ~k0_iskp/spl/bdsevrnc.spl~ ~override~
+    LPF ALTER_EFFECT
+      INT_VAR
+        match_opcode = 139
+        parameter1   = RESOLVE_STR_REF(@40005)
+    END
+END
+COPY_EXISTING ~pirmur01.cre~ ~override~
+  REPLACE_CRE_ITEM ~bdsw1h22~ #0 #0 #0 ~NONE~ ~WEAPON~ EQUIP

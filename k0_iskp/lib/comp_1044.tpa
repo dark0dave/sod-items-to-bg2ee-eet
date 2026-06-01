@@ -1,0 +1,8 @@
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdbelt03.itm~ BEGIN
+  COPY ~k0_iskp/itm/bdbelt03.itm~ ~override~
+    SAY NAME1 @20109
+    SAY NAME2 @20263
+    SAY UNIDENTIFIED_DESC @20110
+    SAY DESC @20264
+END
+COMPILE ~k0_iskp/dlg/k0roger.d~  // Belt of the Cunning Rogue

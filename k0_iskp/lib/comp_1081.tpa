@@ -1,0 +1,17 @@
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdamul11.itm~ BEGIN
+  COPY ~k0_iskp/itm/bdamul11.itm~ ~override~
+    SAY NAME1 @20093
+    SAY NAME2 @20353
+    SAY UNIDENTIFIED_DESC @20094
+    SAY DESC @20354
+    WRITE_SHORT 0x42 0  // Setting lore value to 0 to prevent need to identify
+  COPY ~k0_iskp/eff/bdamul11.eff~ ~override~
+END
+COPY_EXISTING ~cernd10.cre~ ~override~
+  REPLACE_CRE_ITEM ~bdamul11~ #10 #0 #0 ~IDENTIFIED~ ~AMULET~
+COPY_EXISTING ~cernd12.cre~ ~override~
+  REPLACE_CRE_ITEM ~bdamul11~ #10 #0 #0 ~IDENTIFIED~ ~AMULET~
+COPY_EXISTING ~cernd13.cre~ ~override~
+  REPLACE_CRE_ITEM ~bdamul11~ #10 #0 #0 ~IDENTIFIED~ ~AMULET~
+COPY_EXISTING ~cernd13b.cre~ ~override~
+  REPLACE_CRE_ITEM ~bdamul11~ #10 #0 #0 ~IDENTIFIED~ ~AMULET~

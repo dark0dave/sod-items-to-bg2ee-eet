@@ -1,0 +1,31 @@
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdsw1h14.itm~ BEGIN
+  COPY ~k0_iskp/itm/bdsw1h14.itm~ ~override~
+    SAY NAME1 @20002
+    SAY NAME2 @20317
+    SAY UNIDENTIFIED_DESC @20003
+    SAY DESC @20318
+  COPY ~k0_iskp/spl/bdsw1h14.spl~ ~override~
+  COPY ~k0_iskp/spl/bdfractl.spl~ ~override~
+    LPF ALTER_EFFECT
+      INT_VAR
+        match_opcode = 139
+        parameter1   = RESOLVE_STR_REF(@40027)
+    END
+END
+<<<<<<<< .../inlined/k0ar2600.baf
+IF
+  Global("K0_ITEMS_BDSW1H14","GLOBAL",0)
+  Global("SpawnWolfwere","AR2600",1)  // Thetyr Wood
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobal("K0_ITEMS_BDSW1H14","GLOBAL",1)
+    ActionOverride("c6safa",CreateItem("bdsw1h14",0,0,0)) // Fractal Blade +3
+    ActionOverride("c6safa",XEquipItem("bdsw1h14",Myself,SLOT_WEAPON0,EQUIP))  // Fractal Blade +3
+    SetInterrupt(FALSE)
+END
+>>>>>>>>
+EXTEND_BOTTOM ~ar2600.bcs~ ~.../inlined/k0ar2600.baf~
+COPY_EXISTING ~ar2600.are~ ~override~
+  WRITE_ASCII AREA_SCRIPT ~ar2600~ #8
+BUT_ONLY

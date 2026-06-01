@@ -1,0 +1,22 @@
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdblun01.itm~ BEGIN
+  COPY ~k0_iskp/itm/bdblun01.itm~ ~override~
+    SAY NAME1 @20030
+    SAY NAME2 @20265
+    SAY UNIDENTIFIED_DESC @20031
+    SAY DESC @20266
+  COPY ~k0_iskp/eff/bdblun1d.eff~ ~override~
+  COPY ~k0_iskp/eff/bdblun1h.eff~ ~override~
+END
+<<<<<<<< .../inlined/k0ar2000.baf
+IF
+    Global("K0_ITEMS_BDBLUN01","GLOBAL",0)
+THEN
+    RESPONSE #100
+        SetInterrupt(FALSE)
+        SetGlobal("K0_ITEMS_BDBLUN01","GLOBAL",1)
+        AddStoreItem("TRMER02","bdblun01",1,1)  // Mosela's Cudgel +2
+        SetInterrupt(FALSE)
+        Continue()
+END
+>>>>>>>>
+EXTEND_BOTTOM ~ar2000.bcs~ ~.../inlined/k0ar2000.baf~

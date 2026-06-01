@@ -1,0 +1,47 @@
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdhelm04.itm~ BEGIN
+  COPY ~k0_iskp/itm/bdhelm04.itm~ ~override~
+    SAY NAME1 @20083
+    SAY NAME2 @20247
+    SAY UNIDENTIFIED_DESC @20084
+    SAY DESC @20248
+END
+COPY_EXISTING ~bdhelm04.itm~ ~override~
+  SET location = 48
+  SET cycle_speed = 255
+  SET r = 100
+  SET b = 0
+  SET g = 0
+  LPF ADD_ITEM_EQEFFECT
+    INT_VAR
+      opcode       = 9
+      target       = 1
+      parameter1   = (b BLSL 24) + (g BLSL 16) + (r BLSL 8)
+      parameter2   = (cycle_speed BLSL 16) + location
+      timing       = 2
+      probability1 = 100
+  END  // This adds a pulse glow effect in the desired location with desired RBG values, probability, etc..
+  LPF ALTER_EFFECT
+    INT_VAR
+      match_opcode     = 7
+      match_parameter2 = 49
+      parameter1       = 0
+  END  // changing color index - parameter 2 = location parameter 1 = color index number
+  LPF ALTER_EFFECT
+    INT_VAR
+      match_opcode     = 7
+      match_parameter2 = 53
+      parameter1       = 0
+  END  // changing color index - parameter 2 = location parameter 1 = color index number
+BUT_ONLY IF_EXISTS
+<<<<<<<< .../inlined/k0ar1402.baf
+IF
+    Global("K0_ITEMS_BDHELM04","GLOBAL",0)
+THEN
+    RESPONSE #100
+        SetInterrupt(FALSE)
+        SetGlobal("K0_ITEMS_BDHELM04","GLOBAL",1)
+        ActionOverride("SHADRA01",CreateItem("bdhelm04",0,0,0)) // The Guardian Devil
+        SetInterrupt(FALSE)
+END
+>>>>>>>>
+EXTEND_BOTTOM ~ar1402.bcs~ ~.../inlined/k0ar1402.baf~

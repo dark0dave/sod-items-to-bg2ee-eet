@@ -1,0 +1,16 @@
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdchan06.itm~ BEGIN
+  COPY ~k0_iskp/itm/bdchan06.itm~ ~override~
+    SAY NAME1 @20071
+    SAY NAME2 @20281
+    SAY UNIDENTIFIED_DESC @20072
+    SAY DESC @20282
+    WRITE_SHORT 0x42 0  // Setting lore value to 0 to prevent need to identify
+END
+COPY_EXISTING ~mazzy8.cre~ ~override~
+  REPLACE_CRE_ITEM ~bdchan06~ #0 #0 #0 ~IDENTIFIED~ ~ARMOR~
+COPY_EXISTING ~mazzy9.cre~ ~override~
+  REPLACE_CRE_ITEM ~bdchan06~ #0 #0 #0 ~IDENTIFIED~ ~ARMOR~
+COPY_EXISTING ~mazzy11.cre~ ~override~
+  REPLACE_CRE_ITEM ~bdchan06~ #0 #0 #0 ~IDENTIFIED~ ~ARMOR~
+COPY_EXISTING ~mazzy12.cre~ ~override~
+  REPLACE_CRE_ITEM ~bdchan06~ #0 #0 #0 ~IDENTIFIED~ ~ARMOR~

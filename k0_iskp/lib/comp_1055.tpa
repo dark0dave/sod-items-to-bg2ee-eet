@@ -1,0 +1,17 @@
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdclck03.itm~ BEGIN
+  COPY ~k0_iskp/itm/bdclck03.itm~ ~override~
+    SAY NAME1 @20107
+    SAY NAME2 @20285
+    SAY UNIDENTIFIED_DESC @20108
+    SAY DESC @20286
+    WRITE_SHORT 0x42 0  // Setting lore value to 0 to prevent need to identify
+  COPY ~k0_iskp/spl/bdclck03.spl~ ~override~
+END
+COPY_EXISTING ~valyg8.cre~ ~override~
+  REPLACE_CRE_ITEM ~bdclck03~ #0 #0 #0 ~IDENTIFIED~ ~CLOAK~
+COPY_EXISTING ~valyg9.cre~ ~override~
+  REPLACE_CRE_ITEM ~bdclck03~ #0 #0 #0 ~IDENTIFIED~ ~CLOAK~
+COPY_EXISTING ~valyg11.cre~ ~override~
+  REPLACE_CRE_ITEM ~bdclck03~ #0 #0 #0 ~IDENTIFIED~ ~CLOAK~
+COPY_EXISTING ~valyg12.cre~ ~override~
+  REPLACE_CRE_ITEM ~bdclck03~ #0 #0 #0 ~IDENTIFIED~ ~CLOAK~

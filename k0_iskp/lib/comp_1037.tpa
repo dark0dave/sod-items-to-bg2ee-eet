@@ -1,0 +1,8 @@
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdmisc10.itm~ BEGIN
+  COPY ~k0_iskp/itm/bdmisc10.itm~ ~override~
+    SAY NAME1 @20127
+    SAY NAME2 @20249
+    SAY UNIDENTIFIED_DESC @20128
+    SAY DESC @20250
+END
+COMPILE ~k0_iskp/dlg/k0raeli.d~  // Reed of Echoes

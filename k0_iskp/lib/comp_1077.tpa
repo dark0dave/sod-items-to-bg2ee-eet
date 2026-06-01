@@ -1,0 +1,21 @@
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdclck05.itm~ BEGIN
+  COPY ~k0_iskp/itm/bdclck05.itm~ ~override~
+    SAY NAME1 @20107
+    SAY NAME2 @20329
+    SAY UNIDENTIFIED_DESC @20108
+    SAY DESC @20340
+  COPY ~k0_iskp/spl/bdstonef.spl~ ~override~
+    LPF ALTER_EFFECT
+      INT_VAR
+        match_opcode = 139
+        parameter1   = RESOLVE_STR_REF(@40030)
+    END
+END
+OUTER_SET item = "bdclck05"
+OUTER_SET ability1 = RESOLVE_STR_REF(@50004)
+APPEND ~tooltip.2da~ ~%item%  %ability1%  -1  -1~ BUT_ONLY
+COPY_EXISTING ~tooltip.2da~ ~override~
+  LPF a7#normalize_table
+  END
+BUT_ONLY
+COMPILE ~k0_iskp/dlg/k0udsol.d~  // Cloak of the Gargoyle
