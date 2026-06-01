@@ -1,9 +1,29 @@
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdplat01.itm~ BEGIN
   COPY ~k0_iskp/itm/bdplat01.itm~ ~override~
-    SAY NAME1 @20077
-    SAY NAME2 @20307
-    SAY UNIDENTIFIED_DESC @20078
-    SAY DESC @20308
+    SAY NAME1 @20077 /* Full Plate Armor */
+    SAY NAME2 @20307 /* Daeros's Full Plate +1 */
+    SAY UNIDENTIFIED_DESC @20078 /* Full plate armor is the best armor a warrior can buy, both in appearance and protection. The perfectly fitted, interlocking plates are specially angled to deflect arrows and blows, and the entire suit is carefully adorned with rich engraving and embossed detail.
+
+STATISTICS:
+
+Armor Class: 1 (-3 vs. slashing, -2 vs. piercing and missile)
+Requires:
+ 15 Strength
+
+Weight: 70 */
+    SAY DESC @20308 /* This heavy steel breastplate bears the image of a soaring copper dragon on the front. The lightness of the breastplate and the fine detail on the dragon's image suggest dwarven craftsmanship.
+
+STATISTICS:
+
+Equipped abilities:
+– Fire Resistance: +40%
+– Save vs. Breath: +2
+
+Armor Class: 0 (-4 vs. slashing, -3 vs. piercing and missile)
+Requires:
+ 15 Strength
+
+Weight: 30 */
 END
 COPY_EXISTING ~kproen01.cre~ ~override~
   REPLACE_CRE_ITEM ~bdplat01~ #0 #0 #0 ~NONE~ ~ARMOR~

@@ -1,15 +1,44 @@
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdblun04.itm~ BEGIN
   COPY ~k0_iskp/bam/ibdbln04.bam~ ~override~
   COPY ~k0_iskp/itm/bdblun04.itm~ ~override~
-    SAY NAME1 @20035
-    SAY NAME2 @20143
-    SAY UNIDENTIFIED_DESC @20036
-    SAY DESC @20144
+    SAY NAME1 @20035 /* Morning Star */
+    SAY NAME2 @20143 /* Martyr's Morningstar +2 */
+    SAY UNIDENTIFIED_DESC @20036 /* The morning star is a wooden shaft topped with a metal head covered by a spiked iron sheath. Morning stars have an overall length of about four feet. Some have a round, oval, or cylindrical shaped head studded with spikes. Extending from most morning star heads, regardless of design, is a long point for thrusting.
+
+STATISTICS:
+
+Damage: 2d4 (crushing)
+Speed Factor: 7
+Proficiency Type: Flail/Morning Star
+Type: One-handed
+Requires:
+ 11 Strength
+
+Weight: 12 */
+    SAY DESC @20144 /* Forged by Ilusarian Roan, a priest of Ilmater, this morning star sacrifices the weilder's strength in order to destroy the enemies of the faith. Roan used the morning star when he joined a company of knights and priests fighting against a cabal of Cyricists. He took down six cultists before he died, and the morning star was returned to the temple with his remains.
+
+STATISTICS:
+
+Equipped abilities:
+– Hit Points: -10
+
+Combat abilities:
+– On a critical hit, target loses 15% of their maximum Hit Points
+
+THAC0: +2
+Damage: 2d4+2 (crushing)
+Speed Factor: 5
+Proficiency Type: Flail/Morning Star
+Type: One-handed
+Requires:
+ 11 Strength
+
+Weight: 9 */
   COPY ~k0_iskp/spl/bdblun04.spl~ ~override~
     LPF ALTER_EFFECT
       INT_VAR
         match_opcode = 139
-        parameter1   = RESOLVE_STR_REF(@40003)
+        parameter1   = RESOLVE_STR_REF(@40003 /* Hit Points reduced by 15% */)
     END
 END
 COPY_EXISTING ~anomen10.cre~ ~override~

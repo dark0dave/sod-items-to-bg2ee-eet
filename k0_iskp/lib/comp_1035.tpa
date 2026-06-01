@@ -1,9 +1,38 @@
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdshld02.itm~ BEGIN
   COPY ~k0_iskp/itm/bdshld02.itm~ ~override~
-    SAY NAME1 @20211
-    SAY NAME2 @20245
-    SAY UNIDENTIFIED_DESC @20212
-    SAY DESC @20246
+    SAY NAME1 @20211 /* Small Shield */
+    SAY NAME2 @20245 /* The Suncatcher +2 */
+    SAY UNIDENTIFIED_DESC @20212 /* A small shield is usually round and is carried on the forearm, gripped with the shield hand. Its light weight as compared to a medium shield permits the user to carry other items in that hand, although <PRO_HESHE> cannot wield or carry another weapon.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +1
+– No protection against missile attacks
+
+Requires:
+ 4 Strength
+
+Weight: 3 */
+    SAY DESC @20246 /* Shield of Barnassus: The Suncatcher
+Barnassus, a cleric of Lathander, created a polished bronze shield hundreds of years ago in order to battle a medusa rumored to be lurking in the catacombs beneath his city. Barnassus tracked the medusa to her lair and realized, almost too late, that what he faced was no ordinary medusa but one that had also succumbed to the curse of vampirism.
+
+Barnassus closed his eyes and charged forward, ready to take down his enemy or die trying. Lathander rewarded Barnassus's bravery by filling the room with sunlight while the priest slew the medusa.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +3
+– 15% chance that anyone attacking the weilder in melee takes 1d4 points of fire damage and becomes blinded for 2 rounds (Save vs. Spell halves damage and negates blindness)
+– No protection against missile attacks
+
+Charge abilities:
+– Sunfire once per day
+
+Requires:
+ 4 Strength
+
+Weight: 2 */
   COPY ~k0_iskp/spl/bdshld02.spl~ ~override~
 END
 <<<<<<<< .../inlined/k0ar1403.baf

@@ -1,9 +1,39 @@
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdbow02.itm~ BEGIN
   COPY ~k0_iskp/itm/bdbow02.itm~ ~override~
-    SAY NAME1 @20055
-    SAY NAME2 @20365
-    SAY UNIDENTIFIED_DESC @20056
-    SAY DESC @20366
+    SAY NAME1 @20055 /* Composite Longbow */
+    SAY NAME2 @20365 /* Corinth's Bow +2 */
+    SAY UNIDENTIFIED_DESC @20056 /* Composite bows are longbows or shortbows whose staves are made from more than one type of material. This gives greater flexibility and makes arrows fired from this bow deliver more damage. These were developed after the normal longbow.
+
+STATISTICS:
+
+THAC0: +1
+Damage: +2
+Speed Factor: 7
+Proficiency Type: Longbow
+Type: Two-handed
+Requires:
+ 18 Strength
+
+Weight: 10 */
+    SAY DESC @20366 /* Though obviously well-used, someone has taken excellent care of this finely crafted bow. A small golden seal on one side appears to be a family crest.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +1
+
+Combat abilities:
+– After scoring a critical hit, the wielder is affected by the Luck spell
+
+THAC0: +3
+Damage: +4
+Speed Factor: 5
+Proficiency Type: Longbow
+Type: Two-handed
+Requires:
+ 18 Strength
+
+Weight: 8 */
   COPY ~k0_iskp/spl/bdbow02.spl~ ~override~
 END
 COPY_EXISTING ~bshop02.sto~ ~override~

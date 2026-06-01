@@ -1,16 +1,45 @@
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdsw1h22.itm~ BEGIN
   COPY ~k0_iskp/itm/bdsw1h22.itm~ ~override~
-    SAY NAME1 @20004
-    SAY NAME2 @20155
-    SAY UNIDENTIFIED_DESC @20005
-    SAY DESC @20156
+    SAY NAME1 @20004 /* Bastard Sword */
+    SAY NAME2 @20155 /* Severance +2 */
+    SAY UNIDENTIFIED_DESC @20005 /* Also known as the hand-and-a-half sword, the bastard sword derives its name from the fact that it is halfway between the two-handed sword and the long sword. The bastard sword has a double-edged blade and a long grip, which can accommodate both hands if preferred. The overall length of the bastard sword ranges between four feet and four feet ten inches.
+
+STATISTICS:
+
+Damage: 2d4 (slashing)
+Speed Factor: 8
+Proficiency Type: Bastard Sword
+Type: One-handed
+Requires:
+ 11 Strength
+
+Weight: 10 */
+    SAY DESC @20156 /* Anyone who draws this well-balanced blade feels a surge of vitality in their body. The sword was originally wielded by a fighter who found the bloody business of war exhausting. He hated to make his enemies suffer and trained to be a better warrior solely so he could end battles quickly. With this enchanted blade, he destroyed his enemies with speedy precision, not leaving them to linger on the battlefield. When death finally came for him in a duel, he was reported to have said, "At last," with a sigh of relief before he expired.
+
+STATISTICS:
+
+Equipped abilities:
+– Hit Points: +5
+
+Combat abilities:
+– 15% chance per hit of draining 1d4 Hit Points from the target and transferring them to the weilder. This will not heal beyond the weilder's maximum. Does not affect undead, constructs, and extraplanar creatures.
+
+THAC0: +2
+Damage: 2d4+2 (slashing)
+Speed Factor: 6
+Proficiency Type: Bastard Sword
+Type: One-handed
+Requires:
+ 11 Strength
+
+Weight: 7 */
   COPY ~k0_iskp/spl/bdsw1h22.spl~ ~override~
-    SAY NAME1 @40004
+    SAY NAME1 @40004 /* Drain Life */
   COPY ~k0_iskp/spl/bdsevrnc.spl~ ~override~
     LPF ALTER_EFFECT
       INT_VAR
         match_opcode = 139
-        parameter1   = RESOLVE_STR_REF(@40005)
+        parameter1   = RESOLVE_STR_REF(@40005 /* Healed */)
     END
 END
 COPY_EXISTING ~pirmur01.cre~ ~override~

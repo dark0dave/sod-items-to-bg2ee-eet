@@ -1,11 +1,38 @@
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdhalb01.itm~ BEGIN
   COPY ~k0_iskp/itm/bdhalb01.itm~ ~override~
-    SAY NAME1 @20047
-    SAY NAME2 @20205
-    SAY UNIDENTIFIED_DESC @20048
-    SAY DESC @20206
+    SAY NAME1 @20047 /* Halberd */
+    SAY NAME2 @20205 /* Storm Pike +2 */
+    SAY UNIDENTIFIED_DESC @20048 /* By far the oldest and most often used polearm, the halberd consists of a cleaver-like axe blade mounted on a staff averaging six feet in length. The axe blade is balanced at the rear with a fluke and surmounted by a sharp spike, usually of quadrangular design. The fluke is sometimes replaced by a hook used to dismount cavalry. A halberd can be best described as a cross between a spear and an axe.
+
+STATISTICS:
+
+Damage: 1d10 (slashing or piercing, whichever is better)
+Speed Factor: 9
+Proficiency Type: Halberd
+Type: Two-handed
+Requires:
+ 13 Strength
+
+Weight: 15 */
+    SAY DESC @20206 /* Storm giants seldom do favors for humans, but when Threk Boltweilder was saved by the wizard Alimor, Threk offered his services as a conduit for the wizard's enchanting spells. Alimor borrowed a lightning bolt from the storm giant to craft this halberd for his companion, Haldus, who had often complained about how the party never found any magic halberds despite it being his chosen weapon. Haldus was so excited by the storm giant's gift that he wielded it immediately, striking a boulder that happened to be nearby, and was promptly struck dead by the captured lightning's power.
+
+STATISTICS:
+
+Combat abilities:
+– 15% chance per hit of stunning the target for 1 round (Save vs. Spell negates)
+– On a critical miss, the halberd deals 1d4 electrical damage to the weilder
+
+THAC0: +2
+Damage: 1d10+2 (slashing or piercing, whichever is better), +1 electrical
+Speed Factor: 7
+Proficiency Type: Halberd
+Type: Two-handed
+Requires:
+ 11 Strength
+
+Weight: 12 */
   COPY ~k0_iskp/spl/bdhalb01.spl~ ~override~
-    SAY NAME1 @40009
+    SAY NAME1 @40009 /* Electrical Surge */
 END
 <<<<<<<< .../inlined/k0ar0500.baf
 IF

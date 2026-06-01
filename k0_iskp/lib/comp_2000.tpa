@@ -1,18 +1,18 @@
 // Cleric's Vestments
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdrobe04.itm~ BEGIN
   COPY ~k0_iskp/itm/bdrobe04.itm~ ~override~
-    SAY NAME1 ~Cleric's Vestments~
-    SAY NAME2 ~Cleric's Vestments~
-    SAY UNIDENTIFIED_DESC ~These dark red and green robes are of a simple dwarven design, but made with material of the highest quality and care. The sleeves and fringe end in gold trim, and the lining is a soft and luxurious silk as is traditional for dwarven noble wear.
+    SAY NAME1 @100119 /* Cleric's Vestments */
+    SAY NAME2 @100119 /* Cleric's Vestments */
+    SAY UNIDENTIFIED_DESC @100120 /* These dark red and green robes are of a simple dwarven design, but made with material of the highest quality and care. The sleeves and fringe end in gold trim, and the lining is a soft and luxurious silk as is traditional for dwarven noble wear.
 
 STATISTICS:
 
-Weight: 4~
-    SAY DESC ~These dark red and green robes are of a simple dwarven design, but made with material of the highest quality and care. The sleeves and fringe end in gold trim, and the lining is a soft and luxurious silk as is traditional for dwarven noble wear.
+Weight: 4 */
+    SAY DESC @100120 /* These dark red and green robes are of a simple dwarven design, but made with material of the highest quality and care. The sleeves and fringe end in gold trim, and the lining is a soft and luxurious silk as is traditional for dwarven noble wear.
 
 STATISTICS:
 
-Weight: 4~
+Weight: 4 */
 END
 COPY_EXISTING ~aerie6.cre~ ~override~
   REPLACE_CRE_ITEM ~bdrobe04~ #0 #0 #0 ~IDENTIFIED~ ~ARMOR~

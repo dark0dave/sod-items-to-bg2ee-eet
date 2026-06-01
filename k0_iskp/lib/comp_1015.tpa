@@ -1,9 +1,36 @@
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdbow04.itm~ BEGIN
   COPY ~k0_iskp/itm/bdbow04.itm~ ~override~
-    SAY NAME1 @20053
-    SAY NAME2 @20181
-    SAY UNIDENTIFIED_DESC @20054
-    SAY DESC @20182
+    SAY NAME1 @20053 /* Longbow */
+    SAY NAME2 @20181 /* Bow of the Banshee +2 */
+    SAY UNIDENTIFIED_DESC @20054 /* The longbow is similar to the shortbow, except that the staff is about as tall as the archer is—usually six to six-and-a-half feet. It has better range and accuracy than the shortbow, but a slower Speed Factor.
+
+STATISTICS:
+
+THAC0: +1
+Speed Factor: 7
+Proficiency Type: Longbow
+Type: Two-handed
+Requires:
+ 6 Strength
+
+Weight: 3 */
+    SAY DESC @20182 /* A wooden face carved mid-scream stares out from the shaft of this hardwood bow. It's whispered that the half-orc archer Zavruk had an elven soul bound into the bow, but the bow's lack of a necromantic aura casts doubt on the story. What's certain is that the bowstring makes a horrible screeching noise whenever fired, instilling fear in the weilder's enemies.
+
+STATISTICS:
+
+Combat abilities:
+– 10% chance per hit of casting Cloak of Fear centered on the weilder
+– Deals 1 extra point of magic damage to panicked targets
+
+THAC0: +3
+Damage: +2
+Speed Factor: 5
+Proficiency Type: Longbow
+Type: Two-handed
+Requires:
+ 6 Strength
+
+Weight: 3 */
   COPY ~k0_iskp/spl/bdbow04.spl~ ~override~
 END
 COPY_EXISTING ~gall.cre~ ~override~

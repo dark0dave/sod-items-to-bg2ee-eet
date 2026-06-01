@@ -1,11 +1,26 @@
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdrobe01.itm~ BEGIN
   COPY ~k0_iskp/itm/bdrobe01.itm~ ~override~
-    SAY NAME1 @20079
-    SAY NAME2 @20311
-    SAY UNIDENTIFIED_DESC @20080
-    SAY DESC @20312
+    SAY NAME1 @20079 /* Mage Robe */
+    SAY NAME2 @20311 /* Robe of Arcane Aptitude */
+    SAY UNIDENTIFIED_DESC @20080 /* Since the age of Netheril, mages have learned to bestow a wide variety of magical properties upon the everyday objects that surround them. A favorite item of such enchantment is the common robe. It is lightweight, affordable, and holds its enchantment well, thereby making it ideal equipment for a mage. Due to their magical heritage, however, only single-, dual-, and multi-class Mages may wear these enchanted robes.
+
+STATISTICS:
+
+Weight: 3 */
+    SAY DESC @20312 /* The provenance of this dark purple robe has been lost in the mists of history, but a faint odor of stale magic lingers in the air around the threadbare garment. The one who wore it was clearly no stranger to the Weave. Closely examining the robe, you are able to pick out a stylized flame design woven into the fabric. It seems likely the intricate pattern was always subtle, but even were that not true, countless years of wear have rendered the flames all but invisible.
+
+STATISTICS:
+
+Equipped abilities:
+– Intelligence: +1
+– Armor Class: 5
+
+Charge abilities:
+– Spell Sequencer once per day
+
+Weight: 3 */
 END
-OUTER_SET ability1 = RESOLVE_STR_REF(@50003)
+OUTER_SET ability1 = RESOLVE_STR_REF(@5035 /* Spell Sequencer */)
 APPEND ~tooltip.2da~ ~bdrobe01  %ability1%  -1  -1~ BUT_ONLY
 COPY_EXISTING ~tooltip.2da~ ~override~
   LPF a7#normalize_table

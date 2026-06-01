@@ -1,73 +1,85 @@
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdclck02.itm~ BEGIN
   COPY ~k0_iskp/itm/bdclck02.itm~ ~override~
-    SAY NAME1 @20107
-    SAY NAME2 @20283
-    SAY UNIDENTIFIED_DESC @20108
-    SAY DESC @20284
+    SAY NAME1 @20107 /* Cloak */
+    SAY NAME2 @20283 /* Sable Cloak */
+    SAY UNIDENTIFIED_DESC @20108 /* The cloak can be made in every possible shape with just about every type of fabric. The most common forms are a circular piece of fabric with a hole in the center for the head, and fabric draped from neck, connected by a chain, brooch, cord, or pins.
+
+STATISTICS:
+
+Weight: 3 */
+    SAY DESC @20284 /* An explorer traveling to the Spine of the World commissioned this cloak when she heard a white dragon had been spotted in the area. After she safely returned to the warmth of the south, she sold the elegant sable cloak.
+
+STATISTICS:
+
+Equipped abilities:
+– Cold Resistance: +40%
+– Immunity to slow
+
+Weight: 3 */
     LPF ALTER_EFFECT
       INT_VAR
         match_opcode = 206
-        parameter1   = RESOLVE_STR_REF(@40013)
+        parameter1   = RESOLVE_STR_REF(@40013 /* Spell Ineffective */)
     END
     LPF ALTER_EFFECT
       INT_VAR
         match_opcode     = 267
         match_parameter1 = 14000
-        parameter1       = RESOLVE_STR_REF(@40018)
+        parameter1       = RESOLVE_STR_REF(@40018 /* Slow */)
     END
     LPF ALTER_EFFECT
       INT_VAR
         match_opcode     = 267
         match_parameter1 = 11799
-        parameter1       = RESOLVE_STR_REF(@40018)
+        parameter1       = RESOLVE_STR_REF(@40018 /* Slow */)
     END
     LPF ALTER_EFFECT
       INT_VAR
         match_opcode     = 267
         match_parameter1 = 12081
-        parameter1       = RESOLVE_STR_REF(@40018)
+        parameter1       = RESOLVE_STR_REF(@40018 /* Slow */)
     END
     LPF ALTER_EFFECT
       INT_VAR
         match_opcode     = 267
         match_parameter1 = 12992
-        parameter1       = RESOLVE_STR_REF(@40018)
+        parameter1       = RESOLVE_STR_REF(@40018 /* Slow */)
     END
     LPF ALTER_EFFECT
       INT_VAR
         match_opcode     = 267
         match_parameter1 = 13062
-        parameter1       = RESOLVE_STR_REF(@40018)
+        parameter1       = RESOLVE_STR_REF(@40018 /* Slow */)
     END
     LPF ALTER_EFFECT
       INT_VAR
         match_opcode     = 267
         match_parameter1 = 26103
-        parameter1       = RESOLVE_STR_REF(@40018)
+        parameter1       = RESOLVE_STR_REF(@40018 /* Slow */)
     END
     LPF ALTER_EFFECT
       INT_VAR
         match_opcode     = 267
         match_parameter1 = 14668
-        parameter1       = RESOLVE_STR_REF(@40007)
+        parameter1       = RESOLVE_STR_REF(@40007 /* Slowed */)
     END
     LPF ALTER_EFFECT
       INT_VAR
         match_opcode     = 267
         match_parameter1 = 25856
-        parameter1       = RESOLVE_STR_REF(@40007)
+        parameter1       = RESOLVE_STR_REF(@40007 /* Slowed */)
     END
     LPF ALTER_EFFECT
       INT_VAR
         match_opcode     = 267
         match_parameter1 = 31728
-        parameter1       = RESOLVE_STR_REF(@40007)
+        parameter1       = RESOLVE_STR_REF(@40007 /* Slowed */)
     END
     LPF ALTER_EFFECT
       INT_VAR
         match_opcode     = 267
         match_parameter1 = 31772
-        parameter1       = RESOLVE_STR_REF(@40007)
+        parameter1       = RESOLVE_STR_REF(@40007 /* Slowed */)
     END
 END
 COPY_EXISTING ~ohdboll.cre~ ~override~

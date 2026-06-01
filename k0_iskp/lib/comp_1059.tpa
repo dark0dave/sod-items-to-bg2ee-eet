@@ -1,9 +1,24 @@
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdhelm05.itm~ BEGIN
   COPY ~k0_iskp/itm/bdhelm05.itm~ ~override~
-    SAY NAME1 @20083
-    SAY NAME2 @20293
-    SAY UNIDENTIFIED_DESC @20084
-    SAY DESC @20294
+    SAY NAME1 @20083 /* Helmet */
+    SAY NAME2 @20293 /* Battle Tankard */
+    SAY UNIDENTIFIED_DESC @20084 /* This class of decorative helmet, made of reinforced leather or metal, covers the face and head. Eye slits and breathing holes come highly recommended.
+
+STATISTICS:
+
+Equipped abilities:
+– Protects against critical hits
+
+Weight: 2 */
+    SAY DESC @20294 /* This enormous tankard seems sized for a giant. Indeed, a rune on the tankard's base indicates it may come from the halls of Gerti Orelsdottr far to the north. Someone has carved eye and mouth holes in the tankard's side so it can be used as a helmet. Wine stains and the pervasive smell of stale beer indicate that the wearer of this "helmet" is used to reveling late into the night (or perhaps early into the morning).
+
+STATISTICS:
+
+Equipped abilities:
+– Immunity to fatigue
+– Protects against critical hits
+
+Weight: 2 */
 END
 <<<<<<<< .../inlined/k0ar0400.baf
 IF

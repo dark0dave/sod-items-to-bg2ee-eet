@@ -1,53 +1,69 @@
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdamul01.itm~ BEGIN
   COPY ~k0_iskp/itm/bdamul01.itm~ ~override~
-    SAY NAME1 @20093
-    SAY NAME2 @20253
-    SAY UNIDENTIFIED_DESC @20094
-    SAY DESC @20254
+    SAY NAME1 @20093 /* Amulet */
+    SAY NAME2 @20253 /* Amulet of Whispers */
+    SAY UNIDENTIFIED_DESC @20094 /* Amulets are usually magical devices that are commonly worn around the neck, suspended from a chain. The type of chain that comes with an amulet generally increases the item's aesthetic value, not its magical properties. Only one amulet can be dangled from the neck at a time.
+
+STATISTICS:
+
+Weight: 1 */
+    SAY DESC @20254 /* The archmage Ulcaster enjoyed making long speeches in front of his students, filibustering on any number of subjects from arcane theory to the ethics of conjuration. Most of his students enjoyed the lectures, but one of his pupils decided that he would personally stand up to interrupt the stream of words from Ulcaster's mouth.
+
+At the next lecture, the pupil stood up and shouted, "I won't listen to you any longer!" To his horror, no sound issued from his throat. Ulcaster had twisted the chain of an amulet he wore, which rendered every student in the lecture hall utterly silent. The archmage was unaffected, and so carried on his lecture uninhibited.
+
+STATISTICS:
+
+Equipped abilities:
+– Vocalize
+
+Charge abilities:
+– Silence, 15' Radius once per day
+
+Weight: 1 */
     WRITE_SHORT 0x42 0  // Setting lore value to 0 to prevent need to identify
     LPF ALTER_EFFECT
       INT_VAR
         match_opcode = 206
-        parameter1   = RESOLVE_STR_REF(@40013)
+        parameter1   = RESOLVE_STR_REF(@40013 /* Spell Ineffective */)
     END
     LPF ALTER_EFFECT
       INT_VAR
         match_opcode     = 267
         match_parameter1 = 14676
-        parameter1       = RESOLVE_STR_REF(@40014)
+        parameter1       = RESOLVE_STR_REF(@40014 /* Silenced */)
     END
     LPF ALTER_EFFECT
       INT_VAR
         match_opcode     = 267
         match_parameter1 = 17425
-        parameter1       = RESOLVE_STR_REF(@40014)
+        parameter1       = RESOLVE_STR_REF(@40014 /* Silenced */)
     END
     LPF ALTER_EFFECT
       INT_VAR
         match_opcode     = 267
         match_parameter1 = 14002
-        parameter1       = RESOLVE_STR_REF(@40015)
+        parameter1       = RESOLVE_STR_REF(@40015 /* Silence */)
     END
     LPF ALTER_EFFECT
       INT_VAR
         match_opcode     = 267
         match_parameter1 = 12756
-        parameter1       = RESOLVE_STR_REF(@40015)
+        parameter1       = RESOLVE_STR_REF(@40015 /* Silence */)
     END
     LPF ALTER_EFFECT
       INT_VAR
         match_opcode     = 267
         match_parameter1 = 12774
-        parameter1       = RESOLVE_STR_REF(@40015)
+        parameter1       = RESOLVE_STR_REF(@40015 /* Silence */)
     END
     LPF ALTER_EFFECT
       INT_VAR
         match_opcode     = 267
         match_parameter1 = 25953
-        parameter1       = RESOLVE_STR_REF(@40015)
+        parameter1       = RESOLVE_STR_REF(@40015 /* Silence */)
     END
 END
-OUTER_SET ability1 = RESOLVE_STR_REF(@50001)
+OUTER_SET ability1 = RESOLVE_STR_REF(@5034 /* Silence, 15' Radius */)
 APPEND ~tooltip.2da~ ~bdamul01  %ability1%  -1  -1~ BUT_ONLY
 COPY_EXISTING ~tooltip.2da~ ~override~
   LPF a7#normalize_table

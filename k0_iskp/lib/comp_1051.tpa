@@ -1,9 +1,23 @@
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdbrac15.itm~ BEGIN
   COPY ~k0_iskp/itm/bdbrac15.itm~ ~override~
-    SAY NAME1 @20101
-    SAY NAME2 @20277
-    SAY UNIDENTIFIED_DESC @20102
-    SAY DESC @20278
+    SAY NAME1 @20101 /* Bracers */
+    SAY NAME2 @20277 /* Bracers of Perseverance */
+    SAY UNIDENTIFIED_DESC @20102 /* Bracers are thick bands of metal or leather that are strapped, belted, or tied to a character's forearm. Generally, the magic that is instilled in bracers is good only during combat, since most bracers help protect the wearer from injury or improve their chances to strike an opponent. Exceptions do exist, though such specialized items are rare at best.
+
+STATISTICS:
+
+Weight: 2 */
+    SAY DESC @20278 /* Each of these soft leather bracers, dyed gray, displays the embroidered figure of a boar in shimmering red thread. The bracers were crafted by a monk of the Black Raven Monastery who took longer to achieve mastery of her art than her peers, but reached her goals eventually.
+
+STATISTICS:
+
+Equipped abilities:
+– Hit Points: +10
+
+Combat abilities:
+– When the wearer suffers a critical miss, <PRO_HESHE> is affected by the Aid spell
+
+Weight: 2 */
   COPY ~k0_iskp/spl/bdbrac15.spl~ ~override~
 END
 COMPILE ~k0_iskp/dlg/k0trski.d~  // Bracers of Perseverance

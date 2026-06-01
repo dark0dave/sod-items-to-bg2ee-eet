@@ -1,9 +1,41 @@
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bddagg01.itm~ BEGIN
   COPY ~k0_iskp/itm/bddagg01.itm~ ~override~
-    SAY NAME1 @20016
-    SAY NAME2 @20203
-    SAY UNIDENTIFIED_DESC @20017
-    SAY DESC @20204
+    SAY NAME1 @20016 /* Dagger */
+    SAY NAME2 @20203 /* Element's Fury +2 */
+    SAY UNIDENTIFIED_DESC @20017 /* The typical dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter.
+
+STATISTICS:
+
+Damage: 1d4 (piercing)
+Speed Factor: 2
+Proficiency Type: Dagger
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 1 */
+    SAY DESC @20204 /* The mage who crafted this strange dagger was obsessed with the four elemental planes and sought to create a means to join them together. Opening portals to all of them at once, he managed to join their energies together to enchant this relic, giving it properties of each plane.
+
+Unfortunately, he happened to be standing between the portals, holding the dagger in his hand; when the energies converged, they converged on him. It was the mage’s apprentice who discovered the dagger, clutched in his master’s charred and frozen hands.
+
+STATISTICS:
+
+Combat abilities:
+– Deals an extra 1d4 cold damage to fire elementals
+– Deals an extra 1d4 fire damage to water elementals
+– Deals an extra 1d4 acid damage to earth elementals
+– Deals an extra 1d4 electrical damage to air elementals
+
+THAC0: +2
+Damage: 1d4+2, +1 fire, cold, electrical, or acid damage (random)
+Damage type: Piercing
+Speed Factor: 0
+Proficiency Type: Dagger
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 1 */
     WRITE_SHORT 0x42 0  // Setting lore value to 0 to prevent need to identify
   COPY ~k0_iskp/eff/bddagg1a.eff~ ~override~
   COPY ~k0_iskp/eff/bddagg1b.eff~ ~override~

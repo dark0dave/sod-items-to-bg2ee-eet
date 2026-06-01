@@ -1,14 +1,25 @@
 // Import only
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdmisc32.itm~ BEGIN
   COPY ~k0_iskp/itm/bdmisc32.itm~ ~override~
-    SAY NAME1 @20093
-    SAY NAME2 @20361
-    SAY UNIDENTIFIED_DESC @20094
-    SAY DESC @20362
+    SAY NAME1 @20093 /* Amulet */
+    SAY NAME2 @20361 /* Medal of Valor */
+    SAY UNIDENTIFIED_DESC @20094 /* Amulets are usually magical devices that are commonly worn around the neck, suspended from a chain. The type of chain that comes with an amulet generally increases the item's aesthetic value, not its magical properties. Only one amulet can be dangled from the neck at a time.
+
+STATISTICS:
+
+Weight: 1 */
+    SAY DESC @20362 /* A Waterdhavian medal awarded for bravery in combat. Its silver shine has dulled over the years.
+
+STATISTICS:
+
+Equipped abilities:
+– THAC0: +2
+
+Weight: 0 */
   COPY ~k0_iskp/spl/bdshblod.spl~ ~override~
     LPF ALTER_EFFECT
       INT_VAR
         match_opcode = 139
-        parameter1   = RESOLVE_STR_REF(@40001)
+        parameter1   = RESOLVE_STR_REF(@40001 /* Strengthened */)
     END
 END

@@ -1,9 +1,29 @@
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdleat03.itm~ BEGIN
   COPY ~k0_iskp/itm/bdleat03.itm~ ~override~
-    SAY NAME1 @20067
-    SAY NAME2 @20303
-    SAY UNIDENTIFIED_DESC @20068
-    SAY DESC @20304
+    SAY NAME1 @20067 /* Studded Leather Armor */
+    SAY NAME2 @20303 /* Raconteur's Regalia +2 */
+    SAY UNIDENTIFIED_DESC @20068 /* Studded leather armor has little in common with normal leather armor. While leather armor is a hardened shell, studded leather armor is soft and supple with hundreds of metal rivets affixed. The rivets are so close together that they form a flexible coating of hard metal that turns aside slashing and cutting attacks. The soft leather backing is little more than a means of securing the rivets in place.
+
+STATISTICS:
+
+Armor Class: 7 (5 vs. slashing, 6 vs. piercing and missile)
+Requires:
+ 6 Strength
+
+Weight: 25 */
+    SAY DESC @20304 /* When the half-elven bard Beleress left his home in Evereska, his musical tutor gave him this suit of armor as a parting gift. The brightly colored armor looks stylish as it protects, though it wasn't able to keep its original owner from falling prey to hill giants on his travels. On the breastplate of the armor appears a stylized golden heart, a mark of respect to Hanali Celanil. When Beleress died, a scar appeared on the golden heart that persists to this day.
+
+STATISTICS:
+
+Equipped abilities:
+– Pick Pockets: +10%
+– Spellcasting is not disabled
+
+Armor Class: 5 (3 vs. slashing, 4 vs. piercing and missile)
+Requires:
+ 6 Strength
+
+Weight: 8 */
 END
 <<<<<<<< .../inlined/k0ar2000.baf
 IF

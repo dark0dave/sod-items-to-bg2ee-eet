@@ -1,9 +1,29 @@
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdplat03.itm~ BEGIN
   COPY ~k0_iskp/itm/bdplat03.itm~ ~override~
-    SAY NAME1 @20075
-    SAY NAME2 @20309
-    SAY UNIDENTIFIED_DESC @20076
-    SAY DESC @20310
+    SAY NAME1 @20075 /* Plate Mail */
+    SAY NAME2 @20309 /* Bloody Bone Plate +2 */
+    SAY UNIDENTIFIED_DESC @20076 /* Plate mail is a combination of chain armor with metal plates covering the vital areas such as the chest, abdomen, and groin. Similar in construction to bronze plate mail, true plate mail comprises chain and leather.
+
+STATISTICS:
+
+Armor Class: 3 (0 vs. slashing)
+Requires:
+ 12 Strength
+
+Weight: 50 */
+    SAY DESC @20310 /* The warrior who once wore this armor died at the hands of a friend she trusted. The mark of her betrayal remains in the bloodstains that have darkened to brown on the gleaming bone-white armor. The armor functions properly, though it makes the wearer unappealing to look at.
+
+STATISTICS:
+
+Equipped abilities:
+– Immunity to backstab
+– Charisma: -1
+
+Armor Class: 1 (-2 vs. slashing)
+Requires:
+ 8 Strength
+
+Weight: 20 */
     WRITE_SHORT 0x42 0  // Setting lore value to 0 to prevent need to identify
 END
 <<<<<<<< .../inlined/k0dorn.baf

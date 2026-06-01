@@ -1,9 +1,21 @@
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdamul11.itm~ BEGIN
   COPY ~k0_iskp/itm/bdamul11.itm~ ~override~
-    SAY NAME1 @20093
-    SAY NAME2 @20353
-    SAY UNIDENTIFIED_DESC @20094
-    SAY DESC @20354
+    SAY NAME1 @20093 /* Amulet */
+    SAY NAME2 @20353 /* Lon's Amulet */
+    SAY UNIDENTIFIED_DESC @20094 /* Amulets are usually magical devices that are commonly worn around the neck, suspended from a chain. The type of chain that comes with an amulet generally increases the item's aesthetic value, not its magical properties. Only one amulet can be dangled from the neck at a time.
+
+STATISTICS:
+
+Weight: 1 */
+    SAY DESC @20354 /* This silver holy symbol of Selûne features a pair of feminine eyes surrounded by seven stars.
+
+STATISTICS:
+
+Equipped abilities:
+– Wisdom: +1 (Shapeshifters)
+– Bless
+
+Weight: 1 */
     WRITE_SHORT 0x42 0  // Setting lore value to 0 to prevent need to identify
   COPY ~k0_iskp/eff/bdamul11.eff~ ~override~
 END

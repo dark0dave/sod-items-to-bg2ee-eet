@@ -1,13 +1,29 @@
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdamul03.itm~ BEGIN
   COPY ~k0_iskp/itm/bdamul03.itm~ ~override~
-    SAY NAME1 @20093
-    SAY NAME2 @20255
-    SAY UNIDENTIFIED_DESC @20094
-    SAY DESC @20256
+    SAY NAME1 @20093 /* Amulet */
+    SAY NAME2 @20255 /* Amulet of Abnormally Awesome Ankheg Summoning */
+    SAY UNIDENTIFIED_DESC @20094 /* Amulets are usually magical devices that are commonly worn around the neck, suspended from a chain. The type of chain that comes with an amulet generally increases the item's aesthetic value, not its magical properties. Only one amulet can be dangled from the neck at a time.
+
+STATISTICS:
+
+Weight: 1 */
+    SAY DESC @20256 /* Crafted by the dark druid Ferrusk, this amulet resembles the curved pincers of an ankheg hanging from an iron chain. The pincers' polished green carapace catches the light, gleaming with an emerald sheen. Ferrusk created this amulet to summon a passel of ankhegs to fight at its wearer's command.
+
+STATISTICS:
+
+Equipped abilities:
+– Acid Resistance: +15%
+
+Charge abilities:
+– Summons two ankhegs
+  Range: 30 ft.
+  Duration: 2 turns
+
+Weight: 0 */
     WRITE_SHORT 0x42 0  // Setting lore value to 0 to prevent need to identify
   COPY ~k0_iskp/eff/bdankhsu.eff~ ~override~
 END
-OUTER_SET ability1 = RESOLVE_STR_REF(@50000)
+OUTER_SET ability1 = RESOLVE_STR_REF(@5033 /* Summon Ankhegs */)
 APPEND ~tooltip.2da~ ~bdamul03  %ability1%  -1  -1~ BUT_ONLY
 COPY_EXISTING ~tooltip.2da~ ~override~
   LPF a7#normalize_table

@@ -1,9 +1,17 @@
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdhelm12.itm~ BEGIN
   COPY ~k0_iskp/itm/bdhelm12.itm~ ~override~
-    SAY NAME1 @20085
-    SAY NAME2 @20241
-    SAY UNIDENTIFIED_DESC @20086
-    SAY DESC @20242
+    SAY NAME1 @20085 /* Hat */
+    SAY NAME2 @20241 /* Wizard Hat */
+    SAY UNIDENTIFIED_DESC @20086 /* This soft cap looks neither durable nor practical. Its stylish appearance marks it as strictly decorative. */
+    SAY DESC @20242 /* This classic pointed wizard's hat has the wearer's title emblazoned across it in rather gaudy sequins. The wizzard's hat makes the wearer much faster, both in casting and on foot. A wizard who runs away from combat lives to run away another day, after all.
+
+STATISTICS:
+
+Equipped abilities:
+– Casting Speed: +1
+– Movement Speed: +2
+
+Weight: 0 */
 END
 <<<<<<<< .../inlined/k0ar2000.baf
 IF

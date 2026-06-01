@@ -1,8 +1,22 @@
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdamul07.itm~ BEGIN
   COPY ~k0_iskp/itm/bdamul07.itm~ ~override~
-    SAY NAME1 @20093
-    SAY NAME2 @20257
-    SAY UNIDENTIFIED_DESC @20094
-    SAY DESC @20258
+    SAY NAME1 @20093 /* Amulet */
+    SAY NAME2 @20257 /* Locket of Embracing */
+    SAY UNIDENTIFIED_DESC @20094 /* Amulets are usually magical devices that are commonly worn around the neck, suspended from a chain. The type of chain that comes with an amulet generally increases the item's aesthetic value, not its magical properties. Only one amulet can be dangled from the neck at a time.
+
+STATISTICS:
+
+Weight: 1 */
+    SAY DESC @20258 /* Esthia and Ambrose both served as Knights of the Mystic Fire, paladins dedicated to Mystra, goddess of magic. Esthia had this necklace commissioned for Ambrose, telling him it would ensure his safety when she could not hold him in her arms.
+
+On his last mission, Ambrose sent the necklace back to Esthia with a note telling her he had met another woman and would never return to the chapterhouse. Heartbroken, Esthia threw the necklace into a ditch, where it was later found by a peddler.
+
+STATISTICS:
+
+Equipped abilities:
+– Caster Level: +1 (Clerics and Paladins)
+– Can memorize two extra 1st-level divine spells
+
+Weight: 0 */
 END
 COMPILE ~k0_iskp/dlg/k0garre.d~  // Locket of Embracing

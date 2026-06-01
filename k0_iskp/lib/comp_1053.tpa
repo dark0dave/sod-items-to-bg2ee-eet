@@ -1,9 +1,28 @@
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdchan06.itm~ BEGIN
   COPY ~k0_iskp/itm/bdchan06.itm~ ~override~
-    SAY NAME1 @20071
-    SAY NAME2 @20281
-    SAY UNIDENTIFIED_DESC @20072
-    SAY DESC @20282
+    SAY NAME1 @20071 /* Splint Mail */
+    SAY NAME2 @20281 /* Stalwart Scales +2 */
+    SAY UNIDENTIFIED_DESC @20072 /* Splint mail is a variant of banded mail in which the metal strips are applied vertically to the backing of chain, leather, or cloth rather than horizontally as in banded mail. Since the body does not swivel in mid-torso as much as it flexes back to front, splint mail is more restrictive in battle.
+
+STATISTICS:
+
+Armor Class: 4 (3 vs. piercing and missile, 2 vs. crushing)
+Requires:
+ 8 Strength
+
+Weight: 40 */
+    SAY DESC @20282 /* Noted dwarven smith Hedda Perigot crafted this suit of armor in response to a challenge. Fellow smiths discussed their disdain of working with non-metal or stone materials at the tavern one night, and Hedda bragged that she had no such difficulties. The smiths challenged her to create a hybrid suit of half-metal, half-armor. Hedda set to work making the lightest, most flexible steel plates she could and affixing them to a well-made leather breastplate. The result was a shimmering suit of splint mail that weighed less than a normal suit and proved most useful against slashing attacks. Hedda won the bet, and free drinks for a month.
+
+STATISTICS:
+
+Equipped abilities:
+– Slashing Resistance: +10%
+
+Armor Class: 2 (1 vs. piercing and missile, 0 vs. crushing)
+Requires:
+ 8 Strength
+
+Weight: 15 */
     WRITE_SHORT 0x42 0  // Setting lore value to 0 to prevent need to identify
 END
 COPY_EXISTING ~mazzy8.cre~ ~override~

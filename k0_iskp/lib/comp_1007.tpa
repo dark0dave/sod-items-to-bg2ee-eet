@@ -1,9 +1,23 @@
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdboot01.itm~ BEGIN
   COPY ~k0_iskp/itm/bdboot01.itm~ ~override~
-    SAY NAME1 @20111
-    SAY NAME2 @20163
-    SAY UNIDENTIFIED_DESC @20112
-    SAY DESC @20164
+    SAY NAME1 @20111 /* Boots */
+    SAY NAME2 @20163 /* Soft Feet */
+    SAY UNIDENTIFIED_DESC @20112 /* Boots are normally handmade by cobblers. Common boots are made by using a form, but good boots are designed for the foot of an individual.
+
+STATISTICS:
+
+Weight: 4 */
+    SAY DESC @20164 /* These boots were crafted by a young mage who wished to be trained as a shadowdancer, but was turned away for being too loud when he walked. "A shadowdancer weaves between the shadows and makes no sound," they said. "You move like an elephant climbing a tree."
+
+Undeterred, the mage crafted a set of boots that caused his feet to become insubstantial, allowing him to walk with quiet confidence and avoid stepping on nasty substances.
+
+STATISTICS:
+
+Equipped abilities:
+– Move Silently: +25%
+– Immunity to Grease, Entangle, and Web
+
+Weight: 1 */
 END
 COPY_EXISTING ~bmthief.sto~ ~override~  // Black Market Thief
   ADD_STORE_ITEM ~bdboot01~ #0 #0 #0 ~IDENTIFIED~ #1

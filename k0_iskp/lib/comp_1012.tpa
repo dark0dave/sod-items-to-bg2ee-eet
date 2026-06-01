@@ -1,9 +1,22 @@
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdbelt01.itm~ BEGIN
   COPY ~k0_iskp/itm/bdbelt01.itm~ ~override~
-    SAY NAME1 @20109
-    SAY NAME2 @20175
-    SAY UNIDENTIFIED_DESC @20110
-    SAY DESC @20176
+    SAY NAME1 @20109 /* Belt */
+    SAY NAME2 @20175 /* Cloverleaf */
+    SAY UNIDENTIFIED_DESC @20110 /* Girdles are generally similar to belts. Unlike belts, girdles are not used to hold up pants and dungarees, but to carry pouches, scabbards, and the like.
+
+STATISTICS:
+
+Weight: 2 */
+    SAY DESC @20176 /* The halfling Tip Eldermaple was noted in his town for never losing at cards. The halfling attributed his good fortune to the blessings of Tyche and lived a long, quiet, and very prosperous life.
+
+When Tip finally died at the age of one hundred and three, he left his favorite belt to his son, who discovered that the belt buckle had caught a four-leaf clover in the clasp. Whether Tip had placed the clover there himself, or whether it had simply been stuck there after a tumble down a hill in his youth, no one will ever know. What is known is that Tip’s fortune passed down to his son, until the belt was stolen from him by an ogre while he was traveling along the Sword Coast.
+
+STATISTICS:
+
+Equipped abilities:
+– Luck
+
+Weight: 2 */
     WRITE_SHORT 0x42 0  // Setting lore value to 0 to prevent need to identify
 END
 COPY_EXISTING ~haer10.cre~ ~override~

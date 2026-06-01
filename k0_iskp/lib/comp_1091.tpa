@@ -1,9 +1,22 @@
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdamul12.itm~ BEGIN
   COPY ~k0_iskp/itm/bdamul12.itm~ ~override~
-    SAY NAME1 @20093
-    SAY NAME2 @20373
-    SAY UNIDENTIFIED_DESC @20094
-    SAY DESC @20374
+    SAY NAME1 @20093 /* Amulet */
+    SAY NAME2 @20373 /* The Gift */
+    SAY UNIDENTIFIED_DESC @20094 /* Amulets are usually magical devices that are commonly worn around the neck, suspended from a chain. The type of chain that comes with an amulet generally increases the item's aesthetic value, not its magical properties. Only one amulet can be dangled from the neck at a time.
+
+STATISTICS:
+
+Weight: 1 */
+    SAY DESC @20374 /* Crafted from the most delicate spider silk, an unblemished aquamarine gem its centerpiece, this necklace represents its creator's undying devotion for his beloved. It does more than accentuate its wearer's beauty, though it certainly does that as well. It also seemingly rejuvenates her, leaving her practically glowing with youth and vitality. Were arcane energies involved in its creation, or does it merely reflect the deeply-held feelings of the necklace's maker for its intended recipient? It is impossible to say; such is the magic of love.
+
+STATISTICS:
+
+Equipped abilities:
+– Hit Points: +10
+– Charisma: +1
+– Immunity to fatigue
+
+Weight: 2 */
 END
 <<<<<<<< .../inlined/k0ar0603.baf
 IF

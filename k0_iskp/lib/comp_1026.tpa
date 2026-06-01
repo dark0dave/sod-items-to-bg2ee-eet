@@ -1,21 +1,56 @@
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdsper01.itm~ BEGIN
   COPY ~k0_iskp/itm/bdsper01.itm~ ~override~
-    SAY NAME1 @20041
-    SAY NAME2 @20223
-    SAY UNIDENTIFIED_DESC @20042
-    SAY DESC @20224
+    SAY NAME1 @20041 /* Spear */
+    SAY NAME2 @20223 /* Shadowed Spear +2 */
+    SAY UNIDENTIFIED_DESC @20042 /* One of the earliest weapons, dating back to the most primitive of times, the first spears were simply wooden poles or sticks sharpened at one end. When the civilized races mastered metals, spearheads were made from iron and steel. Having reached this end, weaponsmiths began experimenting with different types of spearheads, thus leading to the development of certain polearm types.
+
+STATISTICS:
+
+Damage: 1d6 (piercing)
+Speed Factor: 6
+Proficiency Type: Spear
+Type: Two-handed
+Requires:
+ 5 Strength
+
+Weight: 5 */
+    SAY DESC @20224 /* Rumor has it that a cult of Shar crafted this spear for blackguards in their service, but the spear was liberated during an attack by knights of Lathander. The Temple of Lathander in Athkatla hid the spear away for many years before it was stolen one night by burglars in service to Mask. Since then multiple copies of the spear have been spotted, presumably duplicated by the clergy of Mask. Shadows cling to the black shaft of the spear and the weilder seems to flicker in and out of reality.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +2
+
+Combat abilities:
+– 20% chance per hit to teleport to a random enemy and receive a +4 THAC0 bonus for 1 round
+– 5% chance per hit to teleport to a random enemy and become ethereal for 1 round
+
+Charge abilities:
+– Etherealness
+  Special: Wearer is immune to normal weapons. Spells may still be cast, and weapons may still be used.
+  Duration: 1 round
+
+THAC0: +2
+Damage: 1d6+2 (piercing)
+Speed Factor: 4
+Proficiency Type: Spear
+Type: Two-handed
+Requires:
+ 5 Strength
+
+Weight: 3 */
   COPY ~k0_iskp/spl/bdsper1a.spl~ ~override~
     LPF ALTER_EFFECT
       INT_VAR
         match_opcode = 139
-        parameter1   = RESOLVE_STR_REF(@40010)
+        parameter1   = RESOLVE_STR_REF(@40010 /* THAC0 Modification */)
     END
   COPY ~k0_iskp/spl/bdsper1b.spl~ ~override~
-    SAY NAME1 @40043
+    SAY NAME1 @40043 /* Etherealness */
     LPF ALTER_EFFECT
       INT_VAR
         match_opcode = 139
-        parameter1   = RESOLVE_STR_REF(@40011)
+        parameter1   = RESOLVE_STR_REF(@40011 /* Protected from Normal Weapons */)
     END
 END
 <<<<<<<< .../inlined/k0ar1301.baf

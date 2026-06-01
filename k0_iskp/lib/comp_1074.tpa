@@ -1,15 +1,44 @@
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdsw2h02.itm~ BEGIN
   COPY ~k0_iskp/itm/bdsw2h02.itm~ ~override~
-    SAY NAME1 @20014
-    SAY NAME2 @20323
-    SAY UNIDENTIFIED_DESC @20015
-    SAY DESC @20324
+    SAY NAME1 @20014 /* Two-handed Sword */
+    SAY NAME2 @20323 /* Sword of Troll Decapitation +1 */
+    SAY UNIDENTIFIED_DESC @20015 /* The two-handed sword is a derivative of the long sword. Weaponsmiths have always looked for ways to improve existing weapons. In an effort to improve the long sword, the blade was lengthened. Eventually, the handle had to be extended and two hands became necessary to properly swing the sword. The primary function of two-handed swords is cleaving mounted knights and breaking up pike formations.
+
+STATISTICS:
+
+Damage: 1d10 (slashing)
+Speed Factor: 10
+Proficiency Type: Two-handed Sword
+Type: Two-handed
+Requires:
+ 14 Strength
+
+Weight: 15 */
+    SAY DESC @20324 /* Runes along the length of this powerful blade spell ""death to trolls"" in multiple languages. A green gem set in the weapon's hilt glows with a pale green light. Legend tells that the famous dwarf Durlag Trollkiller used this sword in his adventuring days, but lost it during a particularly brutal fight in the Troll Hills.
+
+Despite the item's name, it does not actually decapitate trolls. A rumor sprung up regarding its powers and despite evidence to the contrary, the sword has never shaken the nickname.
+
+STATISTICS:
+
+Combat abilities:
+– On a critical hit against a troll, the wearer gains +1 to Strength for 1 turn (non-cumulative)
+
+THAC0: +1, +3 vs. trolls
+Damage: 1d10+1, +2 fire vs. trolls
+Damage Type: Slashing
+Speed Factor: 9
+Proficiency Type: Two-handed Sword
+Type: Two-handed
+Requires:
+ 14 Strength
+
+Weight: 12 */
   COPY ~k0_iskp/spl/bdsw2h02.spl~ ~override~
   COPY ~k0_iskp/spl/bdtrlstr.spl~ ~override~
     LPF ALTER_EFFECT
       INT_VAR
         match_opcode = 139
-        parameter1   = RESOLVE_STR_REF(@40001)
+        parameter1   = RESOLVE_STR_REF(@40001 /* Strengthened */)
     END
   COPY ~k0_iskp/eff/bdsw2h2d.eff~ ~override~
   COPY ~k0_iskp/eff/bdsw2h2h.eff~ ~override~

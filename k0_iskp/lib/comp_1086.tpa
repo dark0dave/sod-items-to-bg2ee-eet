@@ -1,9 +1,21 @@
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdring03.itm~ BEGIN
   COPY ~k0_iskp/itm/bdring03.itm~ ~override~
-    SAY NAME1 @20105
-    SAY NAME2 @20363
-    SAY UNIDENTIFIED_DESC @20106
-    SAY DESC @20364
+    SAY NAME1 @20105 /* Ring */
+    SAY NAME2 @20363 /* Ring of the Crusade */
+    SAY UNIDENTIFIED_DESC @20106 /* A ring is a small band of precious metal that is used as jewelry. Some rare rings have had enchantments placed upon them that confer various magical abilities. These rings are highly sought after, especially by those of the adventuring profession.
+
+STATISTICS:
+
+Weight: 0 */
+    SAY DESC @20364 /* Two small round topazes flank the symbol of Caelar Argent engraved on this ring's silver band. Such rings testify to the high status of crusaders who have shown their prowess in battle or in some way demonstrated unwavering commitment to the Shining Lady's cause.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +1, +3 vs. demons and devils
+– Saving Throws: +1, +3 vs. demons and devils
+
+Weight: 0 */
 END
 <<<<<<<< .../inlined/k0oh5300.baf
 IF

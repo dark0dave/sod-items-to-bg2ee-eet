@@ -1,9 +1,36 @@
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bddagg05.itm~ BEGIN
   COPY ~k0_iskp/itm/bddagg05.itm~ ~override~
-    SAY NAME1 @20016
-    SAY NAME2 @20243
-    SAY UNIDENTIFIED_DESC @20017
-    SAY DESC @20244
+    SAY NAME1 @20016 /* Dagger */
+    SAY NAME2 @20243 /* Acid-Etched Dagger +2 */
+    SAY UNIDENTIFIED_DESC @20017 /* The typical dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter.
+
+STATISTICS:
+
+Damage: 1d4 (piercing)
+Speed Factor: 2
+Proficiency Type: Dagger
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 1 */
+    SAY DESC @20244 /* This dagger, though old, was obviously crafted well and enchanted carefully. An ordinary dagger would have long ago dissolved in the juices of the albino wyrmling's stomach. Though the dagger is still intact and boasts a sharp edge, its time in the wyrmling's stomach has left swirling patterns of acid etching along the blade and hilt.
+
+STATISTICS:
+
+Combat abilities:
+– 15% chance per hit that the target takes 1 extra point of acid damage per round during the next 3 rounds
+
+THAC0: +2
+Damage: 1d4+2, +1 (acid)
+Damage Type: Piercing
+Speed Factor: 0
+Proficiency Type: Dagger
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 1 */
   COPY ~k0_iskp/spl/bddagg05.spl~ ~override~
 END
 <<<<<<<< .../inlined/k0ar0804.baf

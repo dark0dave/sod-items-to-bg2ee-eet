@@ -5,7 +5,7 @@ retraify() {
   weidu --nogame --untraify-tra "${2}" --untraify-d "${1}"
   sed -i 's/ \/\*.*\*\///g' "${1}"
   weidu --nogame --traify-comment --traify-old-tra "${2}" --traify "${1}"
-  mv "${2::-4}.tra" "${2}"
+  mv "${1::-4}.tra" "${2}"
 }
 
 main() {

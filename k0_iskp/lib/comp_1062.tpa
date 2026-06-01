@@ -1,26 +1,42 @@
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdhelm10.itm~ BEGIN
   COPY ~k0_iskp/itm/bdhelm10.itm~ ~override~
-    SAY NAME1 @20083
-    SAY NAME2 @20299
-    SAY UNIDENTIFIED_DESC @20084
-    SAY DESC @20300
+    SAY NAME1 @20083 /* Helmet */
+    SAY NAME2 @20299 /* Helm of Unwavering Purpose */
+    SAY UNIDENTIFIED_DESC @20084 /* This class of decorative helmet, made of reinforced leather or metal, covers the face and head. Eye slits and breathing holes come highly recommended.
+
+STATISTICS:
+
+Equipped abilities:
+– Protects against critical hits
+
+Weight: 2 */
+    SAY DESC @20300 /* This pitted bronze helmet boasts a dark crest that stretches laterally across the crown. Three silver coins, blackened with tarnish, are set in a line over the brow. The helm carries a sense of ancient resolve, of a purpose not yet fulfilled but never abandoned.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +1
+– Immunity to confusion
+– Protects against critical hits
+
+Weight: 2 */
     LPF ALTER_EFFECT
       INT_VAR
         match_opcode     = 267
         match_parameter1 = 14791
-        parameter1       = RESOLVE_STR_REF(@40021)
+        parameter1       = RESOLVE_STR_REF(@40021 /* Rigid Thinking */)
     END
     LPF ALTER_EFFECT
       INT_VAR
         match_opcode     = 267
         match_parameter1 = 14782
-        parameter1       = RESOLVE_STR_REF(@40022)
+        parameter1       = RESOLVE_STR_REF(@40022 /* Confused */)
     END
     LPF ALTER_EFFECT
       INT_VAR
         match_opcode     = 267
         match_parameter1 = 25807
-        parameter1       = RESOLVE_STR_REF(@40022)
+        parameter1       = RESOLVE_STR_REF(@40022 /* Confused */)
     END
 END
 COPY_EXISTING ~ribald.sto~ ~override~  // Ribald

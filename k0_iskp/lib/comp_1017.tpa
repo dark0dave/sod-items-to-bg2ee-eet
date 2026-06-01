@@ -1,15 +1,29 @@
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdbrd04.itm~ BEGIN
   COPY ~k0_iskp/itm/bdbrd04.itm~ ~override~
-    SAY NAME1 @20129
-    SAY NAME2 @20185
-    SAY UNIDENTIFIED_DESC @20130
-    SAY DESC @20186
+    SAY NAME1 @20129 /* Bagpipes */
+    SAY NAME2 @20185 /* Screaming Bagpipes */
+    SAY UNIDENTIFIED_DESC @20130 /* Though bagpipes may look strange to those who have never seen them before, they produce a pleasant buzzing sound. The musician blows through the mouthpiece into the bag while holding a pipe, or "chanter," carved with finger-holes used to create the notes.
+
+STATISTICS:
+
+Weight: 3 */
+    SAY DESC @20186 /* This deep purple set of bagpipes has an odd, furry texture to it. On closer inspection, the bagpipes appear to have been made of the hide of some tentacled creature, with each of its furry purple tentacles becoming one of the instrument's pipes. When played, the bagpipe growls and screeches like a creature in pain.
+
+STATISTICS:
+
+Charge abilities:
+– Sound Burst twice per day
+  Damage: 4d8 sonic (Jester), 2d8 (others) (Save vs. Breath halves)
+  Special: Deafens for 3 rounds (Save vs. Breath negates)
+  Area of Effect: 15-ft. radius around the Bard
+
+Weight: 3 */
   COPY ~k0_iskp/spl/bdbrd04.spl~ ~override~
-    SAY NAME1 @40034
+    SAY NAME1 @40034 /* Sound Burst */
     LPF ALTER_EFFECT
       INT_VAR
         match_opcode = 139
-        parameter1   = RESOLVE_STR_REF(@40008)
+        parameter1   = RESOLVE_STR_REF(@40008 /* Deafened */)
     END
   COPY ~k0_iskp/spl/bdbrd4a.spl~ ~override~
   COPY ~k0_iskp/eff/bdbrd04.eff~ ~override~
