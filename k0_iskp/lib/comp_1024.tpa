@@ -1,0 +1,23 @@
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdkeyr.itm~ BEGIN
+COPY ~k0_iskp/itm/bdkeyr.itm~ ~override~
+SAY NAME1 @20219
+SAY NAME2 @20219
+SAY UNIDENTIFIED_DESC @20220
+SAY DESC @20220
+COPY ~k0_iskp/sto/bdkeyr.sto~ ~override~
+SAY NAME2 @20219
+END
+<<<<<<<< .../inlined/k0ar0602.baf
+IF
+Global("K0_ITEMS_BDKEYR","AR0602",0)
+THEN
+RESPONSE #100
+SetGlobal("K0_ITEMS_BDKEYR","AR0602",1)
+ActionOverride("Jailkeep Table",CreateItem("bdkeyr",0,0,0))  // Key Ring
+Continue()
+END
+>>>>>>>>
+EXTEND_BOTTOM ~ar0602.bcs~ ~.../inlined/k0ar0602.baf~
+COPY_EXISTING ~ar0602.are~ ~override~
+WRITE_ASCII AREA_SCRIPT ~ar0602~ #8
+BUT_ONLY

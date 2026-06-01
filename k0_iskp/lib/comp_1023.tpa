@@ -1,0 +1,23 @@
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdshld04.itm~ BEGIN
+COPY ~k0_iskp/itm/bdshld04.itm~ ~override~
+SAY NAME1 @20213
+SAY NAME2 @20217
+SAY UNIDENTIFIED_DESC @20214
+SAY DESC @20218
+END
+<<<<<<<< .../inlined/k0ar1900.baf
+IF
+Global("K0_ITEM_BDSHLD04","GLOBAL",1)
+THEN
+RESPONSE #100
+SetInterrupt(FALSE)
+SetGlobal("K0_ITEM_BDSHLD04","GLOBAL",2)
+ActionOverride("TDR10A",CreateItem("bdshld04",0,0,0)) // Rhino Beetle Shield +2
+ActionOverride("TDR10A",XEquipItem("bdshld04",Myself,SLOT_SHIELD,EQUIP))  // Rhino Beetle Shield +2
+SetInterrupt(FALSE)
+END
+>>>>>>>>
+EXTEND_BOTTOM ~ar1900.bcs~ ~.../inlined/k0ar1900.baf~
+COPY_EXISTING ~ar1900.are~ ~override~
+WRITE_ASCII AREA_SCRIPT ~ar1900~ #8
+BUT_ONLY

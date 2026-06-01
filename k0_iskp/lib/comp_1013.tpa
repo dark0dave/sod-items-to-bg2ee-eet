@@ -1,0 +1,23 @@
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdblun06.itm~ BEGIN
+COPY ~k0_iskp/itm/bdblun06.itm~ ~override~
+SAY NAME1 @20039
+SAY NAME2 @20177
+SAY UNIDENTIFIED_DESC @20040
+SAY DESC @20178
+END
+<<<<<<<< .../inlined/k0ar0712.baf
+IF
+Global("K0_ITEMS_BDBLUN06","GLOBAL",1)
+THEN
+RESPONSE #100
+SetInterrupt(FALSE)
+SetGlobal("K0_ITEMS_BDBLUN06","GLOBAL",2)
+ActionOverride("SEVPAT02",CreateItem("bdblun06",0,0,0)) // The Uncursed Staff +1
+ActionOverride("SEVPAT02",XEquipItem("bdblun06",Myself,SLOT_WEAPON0,EQUIP))  // The Uncursed Staff +1
+SetInterrupt(FALSE)
+END
+>>>>>>>>
+EXTEND_BOTTOM ~ar0712.bcs~ ~.../inlined/k0ar0712.baf~
+COPY_EXISTING ~ar0712.are~ ~override~
+WRITE_ASCII AREA_SCRIPT ~ar0712~ #8
+BUT_ONLY

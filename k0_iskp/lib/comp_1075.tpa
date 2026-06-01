@@ -1,0 +1,23 @@
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdsw2h03.itm~ BEGIN
+  COPY ~k0_iskp/itm/bdsw2h03.itm~ ~override~
+    SAY NAME1 @20014
+    SAY NAME2 @20325
+    SAY UNIDENTIFIED_DESC @20015
+    SAY DESC @20326
+  COPY ~k0_iskp/spl/bdsw2h03.spl~ ~override~
+END
+<<<<<<<< .../inlined/k0ar0505.baf
+IF
+  Global("K0_ITEMS_BDSW2H03","GLOBAL",1)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobal("K0_ITEMS_BDSW2H03","GLOBAL",2)
+    ActionOverride("Container 10",CreateItem("bdsw2h03",0,0,0)) // Sword of Ruin +2
+    SetInterrupt(TRUE)
+END
+>>>>>>>>
+EXTEND_BOTTOM ~ar0505.bcs~ ~.../inlined/k0ar0505.baf~
+COPY_EXISTING ~ar0505.are~ ~override~
+  WRITE_ASCII AREA_SCRIPT ~ar0505~ #8
+BUT_ONLY

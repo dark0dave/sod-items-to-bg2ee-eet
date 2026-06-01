@@ -1,0 +1,40 @@
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdwand01.itm~ BEGIN
+  COPY ~k0_iskp/itm/bdwand01.itm~ ~override~
+    SAY NAME1 @20121
+    SAY NAME2 @20367
+    SAY UNIDENTIFIED_DESC @20122
+    SAY DESC @20368
+END
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdwelems.cre~ BEGIN  // CRE required for summon
+  COPY ~k0_iskp/cre/bdwelems.cre~ ~override~
+    SAY NAME1 @40031
+    SAY NAME2 @40031
+END
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~cwelemw.2da~ BEGIN  // 2DA required for summon
+  COPY ~k0_iskp/2da/cwelemw.2da~ ~override~
+END
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~melwa1.bam~ BEGIN  // BAMs required for animation
+  COPY ~k0_iskp/anim/iwdwaterele/bam~ ~override~
+END
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~watere01.wav~ BEGIN  // WAVs required for animation
+  COPY ~k0_iskp/anim/iwdwaterele/wav/watere~ ~override~
+END
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bf_md01.wav~ BEGIN
+  COPY ~k0_iskp/anim/iwdwaterele/wav/bf_md~ ~override~
+END
+<<<<<<<< .../inlined/k0oh6000.baf
+IF
+    Global("K0_ITEMS_BDWAND01","GLOBAL",0)
+THEN
+    RESPONSE #100
+        SetInterrupt(FALSE)
+        SetGlobal("K0_ITEMS_BDWAND01","GLOBAL",1)
+        ActionOverride("Gnome_cart",CreateItem("bdwand01",4,0,0)) // Wand of Water Elemental Summoning
+        SetInterrupt(TRUE)
+        Continue()
+END
+>>>>>>>>
+EXTEND_BOTTOM ~oh6000.bcs~ ~.../inlined/k0oh6000.baf~
+COPY_EXISTING ~oh6000.are~ ~override~
+  WRITE_ASCII AREA_SCRIPT ~oh6000~ #8
+BUT_ONLY

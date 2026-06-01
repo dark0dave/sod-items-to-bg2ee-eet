@@ -1,0 +1,32 @@
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdsw1h22.itm~ BEGIN
+COPY ~k0_iskp/itm/bdsw1h22.itm~ ~override~
+SAY NAME1 @20004
+SAY NAME2 @20155
+SAY UNIDENTIFIED_DESC @20005
+SAY DESC @20156
+COPY ~k0_iskp/spl/bdsw1h22.spl~ ~override~
+SAY NAME1 @40004
+COPY ~k0_iskp/spl/bdsevrnc.spl~ ~override~
+LPF ALTER_EFFECT
+INT_VAR
+match_opcode = 139
+parameter1   = RESOLVE_STR_REF(@40005)
+END
+END
+<<<<<<<< .../inlined/k0ar1304.baf
+IF
+Global("K0_ITEMS_BDSW1H22","GLOBAL",0)
+Global("RoenallSpawn","AR1304",1)
+THEN
+RESPONSE #100
+SetInterrupt(FALSE)
+SetGlobal("K0_ITEMS_BDSW1H22","GLOBAL",1)
+TakeItemReplace("bdsw1h22","SW1H02","KPROEN01")
+ActionOverride("KPROEN01",XEquipItem("bdsw1h22",Myself,SLOT_WEAPON0,EQUIP))
+SetInterrupt(FALSE)
+END
+>>>>>>>>
+EXTEND_BOTTOM ~ar1304.bcs~ ~.../inlined/k0ar1304.baf~
+COPY_EXISTING ~ar1304.are~ ~override~
+WRITE_ASCII AREA_SCRIPT ~ar1304~ #8
+BUT_ONLY

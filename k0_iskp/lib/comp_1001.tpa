@@ -1,0 +1,18 @@
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdblun04.itm~ BEGIN
+COPY ~k0_iskp/bam/ibdbln04.bam~ ~override~
+COPY ~k0_iskp/itm/bdblun04.itm~ ~override~
+SAY NAME1 @20035
+SAY NAME2 @20143
+SAY UNIDENTIFIED_DESC @20036
+SAY DESC @20144
+COPY ~k0_iskp/spl/bdblun04.spl~ ~override~
+LPF ALTER_EFFECT
+INT_VAR
+match_opcode = 139
+parameter1   = RESOLVE_STR_REF(@40003)
+END
+END
+EXTEND_BOTTOM ~ar0408.bcs~ ~k0_iskp/baf/k0ar0408.baf~
+COPY_EXISTING ~ar0408.are~ ~override~
+WRITE_ASCII AREA_SCRIPT ~ar0408~ #8
+BUT_ONLY

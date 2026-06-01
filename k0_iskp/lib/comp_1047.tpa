@@ -1,0 +1,8 @@
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdblun09.itm~ BEGIN
+  COPY ~k0_iskp/itm/bdblun09.itm~ ~override~
+    SAY NAME1 @20035
+    SAY NAME2 @20269
+    SAY UNIDENTIFIED_DESC @20036
+    SAY DESC @20270
+END
+COMPILE ~k0_iskp/dlg/k0bzglor.d~  // Blazing Glory +3

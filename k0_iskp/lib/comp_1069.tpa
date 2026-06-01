@@ -1,0 +1,10 @@
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdslng01.itm~ BEGIN
+  COPY ~k0_iskp/itm/bdslng01.itm~ ~override~
+    SAY NAME1 @20049
+    SAY NAME2 @20313
+    SAY UNIDENTIFIED_DESC @20050
+    SAY DESC @20314
+  COPY ~k0_iskp/eff/bdslng1a.eff~ ~override~
+END
+COPY_EXISTING ~ribald.sto~ ~override~  // Ribald
+  ADD_STORE_ITEM ~bdslng01~ #1 #0 #0 ~IDENTIFIED~ #1

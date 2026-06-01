@@ -1,0 +1,25 @@
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdring03.itm~ BEGIN
+  COPY ~k0_iskp/itm/bdring03.itm~ ~override~
+    SAY NAME1 @20105
+    SAY NAME2 @20363
+    SAY UNIDENTIFIED_DESC @20106
+    SAY DESC @20364
+END
+<<<<<<<< .../inlined/k0oh5300.baf
+IF
+    Global("K0_ITEMS_BDRING03","GLOBAL",1)
+    Global("OHD_enter_terpfen","oh5300",3)
+THEN
+    RESPONSE #100
+        SetInterrupt(FALSE)
+        SetGlobal("K0_ITEMS_BDRING03","GLOBAL",2)
+        ActionOverride("OHDTERP",CreateItem("bdring03",0,0,0)) // Ring of the Crusade
+        ActionOverride("OHDTERP",XEquipItem("bdring03",Myself,SLOT_RING_LEFT,EQUIP))  // Ring of the Crusade
+        SetInterrupt(FALSE)
+        Continue()
+END
+>>>>>>>>
+EXTEND_BOTTOM ~k0oh5300.bcs~ ~.../inlined/k0k0oh5300.baf~
+COPY_EXISTING ~oh5300.are~ ~override~
+  WRITE_ASCII AREA_SCRIPT ~oh5300~ #8
+BUT_ONLY

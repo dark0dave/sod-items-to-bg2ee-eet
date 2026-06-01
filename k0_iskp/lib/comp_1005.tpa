@@ -1,0 +1,28 @@
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdsw1h02.itm~ BEGIN
+COPY ~k0_iskp/itm/bdsw1h02.itm~ ~override~
+SAY NAME1 @20000
+SAY NAME2 @20159
+SAY UNIDENTIFIED_DESC @20001
+SAY DESC @20160
+COPY ~k0_iskp/spl/bdsw1h02.spl~ ~override~
+LPF ALTER_EFFECT
+INT_VAR
+match_opcode = 139
+parameter1   = RESOLVE_STR_REF(@40007)
+END
+END
+<<<<<<<< .../inlined/k0ar1402.baf
+IF
+Global("K0_ITEMS_BDSW1H22","GLOBAL",0)
+THEN
+RESPONSE #100
+SetInterrupt(FALSE)
+SetGlobal("K0_ITEMS_BDSW1H22","GLOBAL",1)
+ActionOverride("SHADRA01",CreateItem("bdsw1h02",0,0,0))
+SetInterrupt(FALSE)
+END
+>>>>>>>>
+EXTEND_BOTTOM ~ar1402~ ~.../inlined/k0ar1402.baf~
+COPY_EXISTING ~ar1402.are~ ~override~
+WRITE_ASCII AREA_SCRIPT ~ar1402~ #8
+BUT_ONLY

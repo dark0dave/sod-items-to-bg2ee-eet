@@ -1,0 +1,49 @@
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdarow01.itm~ BEGIN
+  COPY ~k0_iskp/itm/bdarow01.itm~ ~override~
+    SAY NAME1 @20113
+    SAY NAME2 @20289
+    SAY UNIDENTIFIED_DESC @20114
+    SAY DESC @20290
+  COPY ~k0_iskp/spl/bdarow01.spl~ ~override~
+    LPF ALTER_EFFECT
+      INT_VAR
+        match_opcode = 139
+        parameter1   = RESOLVE_STR_REF(@40020)
+    END
+END
+COPY_EXISTING ~shop04.sto~ ~override~  // Enge's Shop
+  ADD_STORE_ITEM ~bdarow01~ #1 #0 #0 ~IDENTIFIED~ #5
+COPY_EXISTING ~ribald3.sto~ ~override~  // Ribald (restock)
+  ADD_STORE_ITEM ~bdarow01~ #1 #0 #0 ~IDENTIFIED~ #5
+COPY_EXISTING ~ribald.sto~ ~override~  // Ribald
+  ADD_STORE_ITEM ~bdarow01~ #1 #0 #0 ~IDENTIFIED~ #5
+COPY_EXISTING ~amsmug01.sto~ ~override~  // Amkethran Smugglers
+  ADD_STORE_ITEM ~bdarow01~ #1 #0 #0 ~IDENTIFIED~ #5
+COPY_EXISTING ~amsmug02.sto~ ~override~  // Amkethran Smugglers 2
+  ADD_STORE_ITEM ~bdarow01~ #1 #0 #0 ~IDENTIFIED~ #5
+COPY_EXISTING ~arled.sto~ ~override~  // Shadow Thief Fence
+  ADD_STORE_ITEM ~bdarow01~ #1 #0 #0 ~IDENTIFIED~ #5
+COPY_EXISTING ~bernard5.sto~ ~override~  // Bernard
+  ADD_STORE_ITEM ~bdarow01~ #1 #0 #0 ~IDENTIFIED~ #5
+COPY_EXISTING ~bernard6.sto~ ~override~  // Bernard 2
+  ADD_STORE_ITEM ~bdarow01~ #1 #0 #0 ~IDENTIFIED~ #5
+COPY_EXISTING ~hendak.sto~ ~override~  // Hendak
+  ADD_STORE_ITEM ~bdarow01~ #1 #0 #0 ~IDENTIFIED~ #5
+COPY_EXISTING ~ohbsdwm.sto~ ~override~  // Weapon Merchant
+  ADD_STORE_ITEM ~bdarow01~ #1 #0 #0 ~IDENTIFIED~ #5
+COPY_EXISTING ~ohngduke.sto~ ~override~  // Gul Dukeem
+  ADD_STORE_ITEM ~bdarow01~ #1 #0 #0 ~IDENTIFIED~ #5
+COPY_EXISTING ~ohnsdwm.sto~ ~override~  // Merchant
+  ADD_STORE_ITEM ~bdarow01~ #1 #0 #0 ~IDENTIFIED~ #5
+COPY_EXISTING ~trgeni01.sto~ ~override~  // Khan Zahraa
+  ADD_STORE_ITEM ~bdarow01~ #1 #0 #0 ~IDENTIFIED~ #5
+COPY_EXISTING ~trmer04a.sto~ ~override~  // Anvil of the Right
+  ADD_STORE_ITEM ~bdarow01~ #1 #0 #0 ~IDENTIFIED~ #5
+COPY_EXISTING ~type3.sto~ ~override~  // Copper Coronet
+  ADD_STORE_ITEM ~bdarow01~ #1 #0 #0 ~IDENTIFIED~ #5
+COPY_EXISTING ~hgkar01.sto~ ~override~  // Karthis al-Hezzar
+  ADD_STORE_ITEM ~bdarow01~ #1 #0 #0 ~IDENTIFIED~ #5
+COPY_EXISTING ~sarbar01.sto~ ~override~  // The Tankard Tree
+  ADD_STORE_ITEM ~bdarow01~ #1 #0 #0 ~IDENTIFIED~ #5
+COPY_EXISTING ~roger.sto~ ~override~  // Roger the Fence
+  ADD_STORE_ITEM ~bdarow01~ #1 #0 #0 ~IDENTIFIED~ #5

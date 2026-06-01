@@ -1,0 +1,13 @@
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdbrd02.itm~ BEGIN
+  COPY ~k0_iskp/itm/bdbrd02.itm~ ~override~
+    SAY NAME1 @20127
+    SAY NAME2 @20279
+    SAY UNIDENTIFIED_DESC @20128
+    SAY DESC @20280
+END
+COPY_EXISTING ~mourner6.dlg~ ~override~
+  DECOMPILE_AND_PATCH BEGIN
+    REPLACE_TEXTUALLY ~AddexperienceParty(5000)~ ~AddexperienceParty(5000) GiveItemCreate("bdbrd02",LastTalkedToBy,0,0,0)~
+    REPLACE_TEXTUALLY ~#27069~ ~Yes, thank you so much. *sniff* Please, take this as a token of our thanks for bringing peace to our son.  It was to be a gift for him, and I can no longer bear to look at it.  Come, my husband... let us go home.~
+  END
+BUT_ONLY_IF_IT_CHANGES

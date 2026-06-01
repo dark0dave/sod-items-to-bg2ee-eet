@@ -1,0 +1,30 @@
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdsw1h25.itm~ BEGIN
+  COPY ~k0_iskp/itm/bdsw1h25.itm~ ~override~
+    SAY NAME1 @20000
+    SAY NAME2 @20319
+    SAY UNIDENTIFIED_DESC @20001
+    SAY DESC @20320
+  COPY ~k0_iskp/spl/bdsw1h25.spl~ ~override~
+    LPF ALTER_EFFECT
+      INT_VAR
+        match_opcode = 139
+        parameter1   = RESOLVE_STR_REF(@40028)
+    END
+  COPY ~k0_iskp/eff/bdsw1h25.eff~ ~override~
+END
+<<<<<<<< .../inlined/k0ar0500.baf
+IF
+  Global("K0_ITEMS_BDSW1H25","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobal("K0_ITEMS_BDSW1H25","GLOBAL",1)
+    AddStoreItem("BSHOP02","bdsw1h25",1,1)  // Spell Breaker +2
+    SetInterrupt(FALSE)
+    Continue()
+END
+>>>>>>>>
+EXTEND_BOTTOM ~ar0500.bcs~ ~.../inlined/k0ar0500.baf~
+COPY_EXISTING ~ar0500.are~ ~override~
+  WRITE_ASCII AREA_SCRIPT ~ar0500~ #8
+BUT_ONLY

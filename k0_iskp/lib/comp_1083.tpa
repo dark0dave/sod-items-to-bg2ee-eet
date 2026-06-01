@@ -1,0 +1,15 @@
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdhalb03.itm~ BEGIN
+  COPY ~k0_iskp/itm/bdhalb03.itm~ ~override~
+    SAY NAME1 @20047
+    SAY NAME2 @20357
+    SAY UNIDENTIFIED_DESC @20048
+    SAY DESC @20358
+  COPY ~k0_iskp/spl/bdhalb03.spl~ ~override~
+    LPF ALTER_EFFECT
+      INT_VAR
+        match_opcode = 139
+        parameter1   = RESOLVE_STR_REF(@40007)
+    END
+END
+COPY_EXISTING ~ribald.sto~ ~override~  // Ribald
+  ADD_STORE_ITEM ~bdhalb03~ #1 #0 #0 ~IDENTIFIED~ #1

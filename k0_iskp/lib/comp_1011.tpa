@@ -1,0 +1,10 @@
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdbrac05.itm~ BEGIN
+COPY ~k0_iskp/itm/bdbrac05.itm~ ~override~
+SAY NAME1 @20099
+SAY NAME2 @20173
+SAY UNIDENTIFIED_DESC @20100
+SAY DESC @20174
+COPY ~k0_iskp/eff/bdbrac05.eff~ ~override~
+COPY ~k0_iskp/eff/bdbrac5a.eff~ ~override~
+END
+EXTEND_BOTTOM ~valygar.bcs~ ~k0_iskp/baf/k0valyg.baf~  // Stalker's Gauntlets

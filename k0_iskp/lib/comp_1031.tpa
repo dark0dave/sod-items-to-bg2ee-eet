@@ -1,0 +1,9 @@
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdsw1h08.itm~ BEGIN
+  COPY ~k0_iskp/itm/bdsw1h08.itm~ ~override~  // Dervish Crescent +2
+    SAY NAME1 @20006
+    SAY NAME2 @20235
+    SAY UNIDENTIFIED_DESC @20007
+    SAY DESC @20236
+  COPY ~k0_iskp/spl/bdsw1h08.spl~ ~override~
+END
+COMPILE ~k0_iskp/dlg/k0trgen.d~  // Dervish Crescent +2

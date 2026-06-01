@@ -1,0 +1,22 @@
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdblun05.itm~ BEGIN
+  COPY ~k0_iskp/itm/bdblun05.itm~ ~override~
+    SAY NAME1 @20037
+    SAY NAME2 @20267
+    SAY UNIDENTIFIED_DESC @20038
+    SAY DESC @20268
+END
+<<<<<<<< .../inlined/k0pirmu.baf
+IF
+    Global("K0_ITEMS_BDBLUN05","GLOBAL",1)
+THEN
+    RESPONSE #100
+        SetInterrupt(FALSE)
+        SetGlobal("K0_ITEMS_BDBLUN05","GLOBAL",2)
+        DestroyItem("BLUN13")  // Flail +2
+        CreateItem("bdblun05",0,0,0)  // The Hydra +2
+        XEquipItem("bdblun05",Myself,SLOT_WEAPON0,EQUIP)  // The Hydra +2
+        SetInterrupt(FALSE)
+        Continue()
+END
+>>>>>>>>
+EXTEND_BOTTOM ~pirmur01.bcs~ ~.../inlined/k0pirmu.baf~

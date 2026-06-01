@@ -10,16 +10,3 @@ THEN
         SetInterrupt(FALSE)
         Continue()
 END
-
-IF
-    Global("BD_HAVE_SOD","GLOBAL",1)
-    Global("K0_SOD_IMPORT_59","GLOBAL",1)
-THEN
-    RESPONSE #100
-        SetInterrupt(FALSE)
-        SetGlobal("K0_SOD_IMPORT_59","GLOBAL",2)
-        ActionOverride("PALKNI04",CreateItem("bdhelm07",0,0,0)) // Helm of Equus
-        ActionOverride("PALKNI04",XEquipItem("bdhelm07",Myself,SLOT_HELMET,EQUIP))  // Helm of Equus
-        SetInterrupt(FALSE)
-        Continue()
-END

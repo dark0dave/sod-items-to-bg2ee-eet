@@ -1,0 +1,31 @@
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdmisc47.itm~ BEGIN
+  COPY ~k0_iskp/itm/bdmisc47.itm~ ~override~
+    SAY NAME1 @20349
+    SAY NAME2 @20351
+    SAY UNIDENTIFIED_DESC @20350
+    SAY DESC @20352
+  COPY ~k0_iskp/spl/bdmisc47.spl~ ~override~
+    SAY NAME1 @20351
+    LPF ALTER_EFFECT
+      INT_VAR
+        match_opcode = 139
+        parameter1   = RESOLVE_STR_REF(@40020)
+    END
+  COPY ~k0_iskp/itm/bdmisx47.itm~ ~override~  // used up version
+    SAY NAME1 @20349
+    SAY NAME2 @20351
+    SAY UNIDENTIFIED_DESC @20350
+    SAY DESC @20352
+END
+<<<<<<<< .../inlined/k0ar1101.baf
+IF
+    Global("K0_ITEM_BDMISC47","GLOBAL",0)
+THEN
+    RESPONSE #100
+        SetInterrupt(FALSE)
+        SetGlobal("K0_ITEM_BDMISC47","GLOBAL",1)
+        ActionOverride("Container 3",CreateItem("bdmisc47",1,0,0)) // The Secret Revealed
+        SetInterrupt(TRUE)
+END
+>>>>>>>>
+EXTEND_BOTTOM ~ar1101~ ~.../inlined/k0ar1101.baf~  // The Secret Revealed*

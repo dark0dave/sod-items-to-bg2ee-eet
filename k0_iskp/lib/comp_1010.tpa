@@ -1,0 +1,9 @@
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdboot03.itm~ BEGIN
+COPY ~k0_iskp/itm/bdboot03.itm~ ~override~
+SAY NAME1 @20111
+SAY NAME2 @20171
+SAY UNIDENTIFIED_DESC @20112
+SAY DESC @20172
+COPY ~k0_iskp/eff/bdboot03.eff~ ~override~
+END
+EXTEND_BOTTOM ~ar0202.bcs~ ~k0_iskp/baf/k0ar0202.baf~  // Star-Strewn Boots

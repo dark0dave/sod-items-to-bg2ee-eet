@@ -1,0 +1,25 @@
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdamul08.itm~ BEGIN
+  COPY ~k0_iskp/itm/bdamul08.itm~ ~override~
+    SAY NAME1 @20093
+    SAY NAME2 @20259
+    SAY UNIDENTIFIED_DESC @20094
+    SAY DESC @20260
+    WRITE_SHORT 0x42 0  // Setting lore value to 0 to prevent need to identify
+  COPY ~k0_iskp/eff/bdamul08.eff~ ~override~
+  COPY ~k0_iskp/eff/bdamul8a.eff~ ~override~
+END
+<<<<<<<< .../inlined/k0jan.baf
+IF
+    Global("K0_ITEMS_BDAMUL08","GLOBAL",1)
+    IsActive(Myself)
+THEN
+    RESPONSE #100
+        SetInterrupt(FALSE)
+        SetGlobal("K0_ITEMS_BDAMUL08","GLOBAL",2)
+        SetGlobal("k0_swap_amulet","locals",1)
+        CreateItem("bdamul08",0,0,0)  // Modron Heart
+        XEquipItem("bdamul08",Myself,SLOT_AMULET,EQUIP)  // Modron Heart
+        SetInterrupt(FALSE)
+END
+>>>>>>>>
+EXTEND_BOTTOM ~jan.bcs~ ~k0_iskp/baf/k0jan.baf~

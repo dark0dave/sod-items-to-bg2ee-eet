@@ -1,0 +1,34 @@
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdhalb02.itm~ BEGIN
+  COPY ~k0_iskp/itm/bdhalb02.itm~ ~override~
+    SAY NAME1 @20041
+    SAY NAME2 @20287
+    SAY UNIDENTIFIED_DESC @20042
+    SAY DESC @20288
+  COPY ~k0_iskp/spl/bdhalb02.spl~ ~override~
+    LPF ALTER_EFFECT
+      INT_VAR
+        match_opcode = 139
+        parameter1   = RESOLVE_STR_REF(@40002)
+    END
+  COPY ~k0_iskp/spl/bdfester.spl~ ~override~
+    LPF ALTER_EFFECT
+      INT_VAR
+        match_opcode = 139
+        parameter1   = RESOLVE_STR_REF(@40019)
+    END
+END
+<<<<<<<< .../inlined/k0ar0400.baf
+IF
+  Global("K0_ITEM_BDHALB02","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobal("K0_ITEM_BDHALB02","GLOBAL",1)
+    ActionOverride("Barrel 2",CreateItem("bdhalb02",0,0,0)) // Festering Spear +1
+    SetInterrupt(TRUE)
+END
+>>>>>>>>
+EXTEND_BOTTOM ~ar0400.bcs~ ~.../inlined/k0ar0400.baf~
+COPY_EXISTING ~ar0400.are~ ~override~
+  WRITE_ASCII AREA_SCRIPT ~ar0400~ #8
+BUT_ONLY

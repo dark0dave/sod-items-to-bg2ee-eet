@@ -1,0 +1,28 @@
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdamul03.itm~ BEGIN
+  COPY ~k0_iskp/itm/bdamul03.itm~ ~override~
+    SAY NAME1 @20093
+    SAY NAME2 @20255
+    SAY UNIDENTIFIED_DESC @20094
+    SAY DESC @20256
+    WRITE_SHORT 0x42 0  // Setting lore value to 0 to prevent need to identify
+  COPY ~k0_iskp/eff/bdankhsu.eff~ ~override~
+END
+OUTER_SET item = "bdamul03"
+OUTER_SET ability1 = RESOLVE_STR_REF(@50000)
+APPEND ~tooltip.2da~ ~%item%  %ability1%  -1  -1~ BUT_ONLY
+COPY_EXISTING ~tooltip.2da~ ~override~
+  LPF a7#normalize_table
+  END
+BUT_ONLY
+<<<<<<<< .../inlined/k0ar1904.baf
+IF
+    Global("K0_ITEMS_BDAMUL03","GLOBAL",0)
+THEN
+    RESPONSE #100
+        SetInterrupt(FALSE)
+        SetGlobal("K0_ITEMS_BDAMUL03","GLOBAL",1)
+        ActionOverride("Container 2",CreateItem("bdamul03",6,0,0)) // Amulet of Abnormally Awesome Ankheg Summoning
+        SetInterrupt(TRUE)
+END
+>>>>>>>>
+EXTEND_BOTTOM ~ar1904.bcs~ ~.../inlined/k0ar1904.baf~

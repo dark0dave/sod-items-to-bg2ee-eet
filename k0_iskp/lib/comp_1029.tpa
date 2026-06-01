@@ -1,0 +1,14 @@
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdleat07.itm~ BEGIN
+COPY ~k0_iskp/itm/bdleat07.itm~ ~override~
+SAY NAME1 @20065
+SAY NAME2 @20231
+SAY UNIDENTIFIED_DESC @20066
+SAY DESC @20232
+COPY ~k0_iskp/spl/bdnighte.spl~ ~override~
+LPF ALTER_EFFECT
+INT_VAR
+match_opcode = 139
+parameter1   = RESOLVE_STR_REF(@40012)
+END
+END
+EXTEND_BOTTOM ~ar0301.bcs~ ~k0_iskp/baf/k0ar0301.baf~  // The Night's Embrace +3

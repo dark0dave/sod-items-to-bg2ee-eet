@@ -1,0 +1,30 @@
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdsw2h02.itm~ BEGIN
+  COPY ~k0_iskp/itm/bdsw2h02.itm~ ~override~
+    SAY NAME1 @20014
+    SAY NAME2 @20323
+    SAY UNIDENTIFIED_DESC @20015
+    SAY DESC @20324
+  COPY ~k0_iskp/spl/bdsw2h02.spl~ ~override~
+  COPY ~k0_iskp/spl/bdtrlstr.spl~ ~override~
+    LPF ALTER_EFFECT
+      INT_VAR
+        match_opcode = 139
+        parameter1   = RESOLVE_STR_REF(@40001)
+    END
+  COPY ~k0_iskp/eff/bdsw2h2d.eff~ ~override~
+  COPY ~k0_iskp/eff/bdsw2h2h.eff~ ~override~
+END
+<<<<<<<< .../inlined/k0trrak1.baf
+IF
+  Global("K0_ITEMS_BDSW2H02","LOCALS",0)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobal("K0_ITEMS_BDSW2H02","LOCALS",1)
+    DestroyItem("SW1H04")  // Long Sword
+    CreateItem("bdsw2h02",0,0,0)  // Sword of Troll Decapitation +1
+    XEquipItem("bdsw2h02",Myself,SLOT_WEAPON0,EQUIP)  // Sword of Troll Decapitation +1
+    SetInterrupt(FALSE)
+END
+>>>>>>>>
+EXTEND_BOTTOM ~trrak01.bcs~ ~.../inlined/k0trrak1.baf~

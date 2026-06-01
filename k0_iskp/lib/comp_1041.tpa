@@ -1,0 +1,8 @@
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdamul07.itm~ BEGIN
+  COPY ~k0_iskp/itm/bdamul07.itm~ ~override~
+    SAY NAME1 @20093
+    SAY NAME2 @20257
+    SAY UNIDENTIFIED_DESC @20094
+    SAY DESC @20258
+END
+COMPILE ~k0_iskp/dlg/k0garre.d~  // Locket of Embracing

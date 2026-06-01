@@ -1,0 +1,38 @@
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdmisc05.itm~ BEGIN
+  COPY ~k0_iskp/itm/bdmisc05.itm~ ~override~
+    SAY NAME1 @20089
+    SAY NAME2 @20305
+    SAY UNIDENTIFIED_DESC @20090
+    SAY DESC @20306
+    LPF ALTER_EFFECT
+      INT_VAR
+        match_opcode     = 267
+        match_parameter1 = 14017
+        parameter1       = RESOLVE_STR_REF(@40023)
+    END
+    LPF ALTER_EFFECT
+      INT_VAR
+        match_opcode     = 267
+        match_parameter1 = 14662
+        parameter1       = RESOLVE_STR_REF(@40024)
+    END
+END
+OUTER_SET item = "bdmisc05"
+OUTER_SET ability1 = RESOLVE_STR_REF(@50002)
+APPEND ~tooltip.2da~ ~%item%  %ability1%  -1  -1~ BUT_ONLY
+COPY_EXISTING ~tooltip.2da~ ~override~
+  LPF a7#normalize_table
+  END
+BUT_ONLY
+<<<<<<<< .../inlined/k0ar1106.baf
+IF
+    Global("K0_ITEMS_BDMISC05","GLOBAL",0)
+THEN
+    RESPONSE #100
+        SetInterrupt(FALSE)
+        SetGlobal("K0_ITEMS_BDMISC05","GLOBAL",1)
+        ActionOverride("MimicChest",CreateItem("bdmisc05",0,0,0)) // Purification Stone
+        SetInterrupt(TRUE)
+END
+>>>>>>>>
+EXTEND_BOTTOM ~ar1106.bcs~ ~.../inlined/k0ar1106.baf~
