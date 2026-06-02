@@ -1,0 +1,12 @@
+// Biter +2
+<<<<<<<< .../inlined/k0baldur.baf
+IF
+  Global("K0_IMPORT_ITEMS_BITER","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("BD_HAVE_SOD","GLOBAL",1)  // Core variable needed for all items to import
+    SetGlobal("BD_SOD_IMPORT_08","GLOBAL",1)  // Biter +2
+    SetGlobal("K0_IMPORT_ITEMS_BITER","GLOBAL",1)
+END
+>>>>>>>>
+EXTEND_BOTTOM ~baldur.bcs~ ~.../inlined/k0baldur.baf~

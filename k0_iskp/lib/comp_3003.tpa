@@ -1,0 +1,12 @@
+// Robe of Red Flames
+<<<<<<<< .../inlined/k0baldur.baf
+IF
+  Global("K0_IMPORT_ITEMS_BELT_OF_THE_SKILLFUL_BLADE","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("BD_HAVE_SOD","GLOBAL",1)  // Core variable needed for all items to import
+    SetGlobal("BD_SOD_IMPORT_03","GLOBAL",1)  // Robe of Red Flames
+    SetGlobal("K0_IMPORT_ITEMS_BELT_OF_THE_SKILLFUL_BLADE","GLOBAL",1)
+END
+>>>>>>>>
+EXTEND_BOTTOM ~baldur.bcs~ ~.../inlined/k0baldur.baf~
