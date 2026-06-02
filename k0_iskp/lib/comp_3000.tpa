@@ -1,0 +1,11 @@
+// Have SoD
+<<<<<<<< .../inlined/k0baldur.baf
+IF
+  Global("K0_IMPORT_ITEMS_HAVE_SOD","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("BD_HAVE_SOD","GLOBAL",1)  // Core variable needed for all items to import
+    SetGlobal("K0_IMPORT_ITEMS_HAVE_SOD","GLOBAL",1)
+END
+>>>>>>>>
+EXTEND_BOTTOM ~baldur.bcs~ ~.../inlined/k0baldur.baf~

@@ -1,0 +1,12 @@
+// Bard Hat
+<<<<<<<< .../inlined/k0baldur.baf
+IF
+  Global("K0_IMPORT_ITEMS_BARD_HAT","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("BD_HAVE_SOD","GLOBAL",1)  // Core variable needed for all items to import
+    SetGlobal("BD_SOD_IMPORT_07","GLOBAL",1)  // Bard Hat
+    SetGlobal("K0_IMPORT_ITEMS_BARD_HAT","GLOBAL",1)
+END
+>>>>>>>>
+EXTEND_BOTTOM ~baldur.bcs~ ~.../inlined/k0baldur.baf~

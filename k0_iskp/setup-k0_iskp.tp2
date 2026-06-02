@@ -773,10 +773,18 @@ REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with 
 
 INCLUDE ~k0_iskp/lib/comp_1094.tpa~
 
-BEGIN @100110 /* cleric's_vestments */
+BEGIN @100143 /* all_items */
+DESIGNATED 1999
+GROUP @100115 /* All */
+LABEL ~All items only~
+REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
+
+INCLUDE ~k0_iskp/lib/comp_1999.tpa~
+
+BEGIN @100126 /* clerics_vestments */
 DESIGNATED 2000
 GROUP @100111 /* Items Misc */
-LABEL ~cleric's vestments~
+LABEL ~Clerics Vestments for Aerie~
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_2000.tpa~
@@ -784,7 +792,7 @@ INCLUDE ~k0_iskp/lib/comp_2000.tpa~
 BEGIN @100112 /* spider_silk */
 DESIGNATED 2001
 GROUP @100111 /* Items Misc */
-LABEL ~Spider Silk~
+LABEL ~Spider Silk Loot~
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_2001.tpa~
@@ -792,10 +800,130 @@ INCLUDE ~k0_iskp/lib/comp_2001.tpa~
 BEGIN @100113 /* bear_skin */
 DESIGNATED 2002
 GROUP @100111 /* Items Misc */
-LABEL ~Fine Bearskin~
+LABEL ~Fine Bearskin Loot~
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_2002.tpa~
+
+BEGIN @100127 /* have_sod */
+DESIGNATED 3000
+GROUP @100128 /* Imports */
+LABEL ~Have SoD~
+REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
+
+INCLUDE ~k0_iskp/lib/comp_3000.tpa~
+
+BEGIN @100129 /* voidsword */
+DESIGNATED 3001
+GROUP @100128 /* Imports */
+LABEL ~Voidsword Only~
+REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
+
+INCLUDE ~k0_iskp/lib/comp_3001.tpa~
+
+BEGIN @100130 /* voidhammer */
+DESIGNATED 3002
+GROUP @100128 /* Imports */
+LABEL ~Voidhammer Only~
+REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
+
+INCLUDE ~k0_iskp/lib/comp_3002.tpa~
+
+BEGIN @100131 /* robe_of_red_flames */
+DESIGNATED 3003
+GROUP @100128 /* Imports */
+LABEL ~Robe of Red Flames Only~
+REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
+
+INCLUDE ~k0_iskp/lib/comp_3003.tpa~
+
+BEGIN @100132 /* belt_skillful_blade */
+DESIGNATED 3004
+GROUP @100128 /* Imports */
+LABEL ~Belt Skillful Blade Only~
+REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
+
+INCLUDE ~k0_iskp/lib/comp_3004.tpa~
+
+BEGIN @100133 /* archers_eyes */
+DESIGNATED 3005
+GROUP @100128 /* Imports */
+LABEL ~Archer's Eyes Only~
+REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
+
+INCLUDE ~k0_iskp/lib/comp_3005.tpa~
+
+BEGIN @100134 /* helm_of_dumathoin */
+DESIGNATED 3006
+GROUP @100128 /* Imports */
+LABEL ~Helm of Dumathoin Only~
+REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
+
+INCLUDE ~k0_iskp/lib/comp_3006.tpa~
+
+BEGIN @100135 /* bard_hat */
+DESIGNATED 3007
+GROUP @100128 /* Imports */
+LABEL ~Bard Hat Only~
+REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
+
+INCLUDE ~k0_iskp/lib/comp_3007.tpa~
+
+BEGIN @100136 /* biter */
+DESIGNATED 3008
+GROUP @100128 /* Imports */
+LABEL ~Biter Only~
+REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
+
+INCLUDE ~k0_iskp/lib/comp_3008.tpa~
+
+BEGIN @100137 /* tangled_strings */
+DESIGNATED 3009
+GROUP @100128 /* Imports */
+LABEL ~Tangled Strings Only~
+REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
+
+INCLUDE ~k0_iskp/lib/comp_3009.tpa~
+
+BEGIN @100138 /* buckler_fist */
+DESIGNATED 3010
+GROUP @100128 /* Imports */
+LABEL ~Buckler of the Fist Only~
+REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
+
+INCLUDE ~k0_iskp/lib/comp_3010.tpa~
+
+BEGIN @100139 /* dragon_blade */
+DESIGNATED 3011
+GROUP @100128 /* Imports */
+LABEL ~Dragon Blade Only~
+REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
+
+INCLUDE ~k0_iskp/lib/comp_3011.tpa~
+
+BEGIN @100140 /* all_imports_voidsword */
+DESIGNATED 3100
+GROUP @100115 /* All */
+LABEL ~All Imports Voidsword Choice~
+REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
+
+INCLUDE ~k0_iskp/lib/comp_3100.tpa~
+
+BEGIN @100141 /* all_imports_voidhammer */
+DESIGNATED 3101
+GROUP @100115 /* All */
+LABEL ~All Imports Voidhammer Choice~
+REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
+
+INCLUDE ~k0_iskp/lib/comp_3101.tpa~
+
+BEGIN @100142 /* all_imports_random */
+DESIGNATED 3102
+GROUP @100115 /* All */
+LABEL ~All Imports Random Voidsword or Voidhammer~
+REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
+
+INCLUDE ~k0_iskp/lib/comp_3102.tpa~
 
 BEGIN @100114 /* sod_all */
 DESIGNATED 10000

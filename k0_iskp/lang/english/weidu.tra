@@ -3688,3 +3688,21 @@ Weight: 10~
 STATISTICS:
 
 Weight: 1~
+@100126 = ~clerics_vestments~
+@100127 = ~have_sod~
+@100128 = ~Imports~
+@100129 = ~voidsword~
+@100130 = ~voidhammer~
+@100131 = ~robe_of_red_flames~
+@100132 = ~belt_skillful_blade~
+@100133 = ~archers_eyes~
+@100134 = ~helm_of_dumathoin~
+@100135 = ~bard_hat~
+@100136 = ~biter~
+@100137 = ~tangled_strings~
+@100138 = ~buckler_fist~
+@100139 = ~dragon_blade~
+@100140 = ~all_imports_voidsword~
+@100141 = ~all_imports_voidhammer~
+@100142 = ~all_imports_random~
+@100143 = ~all_items~
