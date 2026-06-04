@@ -3706,3 +3706,7 @@ Weight: 1~
 @100141 = ~all_imports_voidhammer~
 @100142 = ~all_imports_random~
 @100143 = ~all_items~
+@100145 = ~Can not be installed along side all items~
+@100146 = ~Can not be installed along side all components component~
+@100147 = ~Can not be installed along side other all components~
+@100148 = ~Can not be installed along side any all imports~

@@ -1,7 +1,7 @@
 BACKUP ~weidu_external/k0_iskp/backup~
 SUPPORT ~https://github.com/dark0dave/sod-items-to-bg2ee-eet/discussions~
 AUTO_EVAL_STRINGS
-VERSION ~v4.0.0.RC3~
+VERSION ~v4.0.0.RC4~
 README ~k0_iskp/readme.md~ ASK_EVERY_COMPONENT
 
 AUTO_TRA ~k0_iskp/lang/%s~
@@ -17,6 +17,8 @@ BEGIN @100015 /* vexation */
 DESIGNATED 1000
 GROUP @10003 /* Items */
 LABEL ~Vexation~
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~1999~ @100145 /* Can not be installed along side all items */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_1000.tpa~
@@ -25,6 +27,8 @@ BEGIN @100016 /* martyrs_morningstar */
 DESIGNATED 1001
 GROUP @10003 /* Items */
 LABEL ~Martyr's Morningstar~
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~1999~ @100145 /* Can not be installed along side all items */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_1001.tpa~
@@ -33,6 +37,8 @@ BEGIN @100017 /* missiles */
 DESIGNATED 1002
 GROUP @10003 /* Items */
 LABEL ~Missiles~
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~1999~ @100145 /* Can not be installed along side all items */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_1002.tpa~
@@ -41,6 +47,8 @@ BEGIN @100018 /* severance */
 DESIGNATED 1003
 GROUP @10003 /* Items */
 LABEL ~Severance~
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~1999~ @100145 /* Can not be installed along side all items */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_1003.tpa~
@@ -49,6 +57,8 @@ BEGIN @100019 /* crimson_dawn */
 DESIGNATED 1004
 GROUP @10003 /* Items */
 LABEL ~Crimson Dawn~
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~1999~ @100145 /* Can not be installed along side all items */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_1004.tpa~
@@ -57,6 +67,8 @@ BEGIN @100020 /* tongue_of_acid */
 DESIGNATED 1005
 GROUP @10003 /* Items */
 LABEL ~Tongue of Acid~
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~1999~ @100145 /* Can not be installed along side all items */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_1005.tpa~
@@ -65,6 +77,8 @@ BEGIN @100021 /* rhino_beetle_plate */
 DESIGNATED 1006
 GROUP @10003 /* Items */
 LABEL ~rhino beetle plate~
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~1999~ @100145 /* Can not be installed along side all items */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_1006.tpa~
@@ -73,6 +87,8 @@ BEGIN @100022 /* soft_feet */
 DESIGNATED 1007
 GROUP @10003 /* Items */
 LABEL ~soft feet~
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~1999~ @100145 /* Can not be installed along side all items */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_1007.tpa~
@@ -81,6 +97,8 @@ BEGIN @100023 /* crown_of_lies */
 DESIGNATED 1008
 GROUP @10003 /* Items */
 LABEL ~crown of lies~
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~1999~ @100145 /* Can not be installed along side all items */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_1008.tpa~
@@ -89,6 +107,8 @@ BEGIN @100024 /* sundermaul */
 DESIGNATED 1009
 GROUP @10003 /* Items */
 LABEL ~Sundermaul~
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~1999~ @100145 /* Can not be installed along side all items */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_1009.tpa~
@@ -97,6 +117,8 @@ BEGIN @100025 /* star_strewn_boots */
 DESIGNATED 1010
 GROUP @10003 /* Items */
 LABEL ~star-strewn boots~
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~1999~ @100145 /* Can not be installed along side all items */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_1010.tpa~
@@ -105,6 +127,8 @@ BEGIN @100026 /* stalker's_gauntlets */
 DESIGNATED 1011
 GROUP @10003 /* Items */
 LABEL ~stalker's gauntlets~
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~1999~ @100145 /* Can not be installed along side all items */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_1011.tpa~
@@ -113,6 +137,8 @@ BEGIN @100027 /* cloverleaf */
 DESIGNATED 1012
 GROUP @10003 /* Items */
 LABEL ~Cloverleaf Item~
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~1999~ @100145 /* Can not be installed along side all items */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_1012.tpa~
@@ -121,6 +147,8 @@ BEGIN @100028 /* the_uncursed_staff */
 DESIGNATED 1013
 GROUP @10003 /* Items */
 LABEL ~the uncursed staff~
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~1999~ @100145 /* Can not be installed along side all items */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_1013.tpa~
@@ -129,6 +157,8 @@ BEGIN @100029 /* backwhacker */
 DESIGNATED 1014
 GROUP @10003 /* Items */
 LABEL ~Backwhacker~
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~1999~ @100145 /* Can not be installed along side all items */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_1014.tpa~
@@ -137,6 +167,8 @@ BEGIN @100030 /* bow_of_the_banshee */
 DESIGNATED 1015
 GROUP @10003 /* Items */
 LABEL ~bow of the banshee~
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~1999~ @100145 /* Can not be installed along side all items */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_1015.tpa~
@@ -145,6 +177,8 @@ BEGIN @100031 /* nimblefinger_gloves */
 DESIGNATED 1016
 GROUP @10003 /* Items */
 LABEL ~nimblefinger gloves~
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~1999~ @100145 /* Can not be installed along side all items */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_1016.tpa~
@@ -153,6 +187,8 @@ BEGIN @100032 /* screaming_bagpipes */
 DESIGNATED 1017
 GROUP @10003 /* Items */
 LABEL ~screaming bagpipes~
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~1999~ @100145 /* Can not be installed along side all items */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_1017.tpa~
@@ -161,6 +197,8 @@ BEGIN @100033 /* cloak_of_minor_arcana */
 DESIGNATED 1018
 GROUP @10003 /* Items */
 LABEL ~cloak of minor arcana~
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~1999~ @100145 /* Can not be installed along side all items */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_1018.tpa~
@@ -169,6 +207,8 @@ BEGIN @100034 /* element's_fury */
 DESIGNATED 1019
 GROUP @10003 /* Items */
 LABEL ~Element's Fury~
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~1999~ @100145 /* Can not be installed along side all items */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_1019.tpa~
@@ -177,6 +217,8 @@ BEGIN @100035 /* storm_pike */
 DESIGNATED 1020
 GROUP @10003 /* Items */
 LABEL ~storm pike~
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~1999~ @100145 /* Can not be installed along side all items */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_1020.tpa~
@@ -185,6 +227,8 @@ BEGIN @100036 /* trollblood_ioun_stone */
 DESIGNATED 1021
 GROUP @10003 /* Items */
 LABEL ~trollblood ioun stone~
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~1999~ @100145 /* Can not be installed along side all items */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_1021.tpa~
@@ -193,6 +237,8 @@ BEGIN @100037 /* shield_of_egons */
 DESIGNATED 1022
 GROUP @10003 /* Items */
 LABEL ~shield of egons~
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~1999~ @100145 /* Can not be installed along side all items */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_1022.tpa~
@@ -201,6 +247,8 @@ BEGIN @100038 /* rhino_beetle_shield */
 DESIGNATED 1023
 GROUP @10003 /* Items */
 LABEL ~rhino beetle shield~
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~1999~ @100145 /* Can not be installed along side all items */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_1023.tpa~
@@ -209,6 +257,8 @@ BEGIN @100039 /* key_ring */
 DESIGNATED 1024
 GROUP @10003 /* Items */
 LABEL ~key ring~
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~1999~ @100145 /* Can not be installed along side all items */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_1024.tpa~
@@ -217,6 +267,8 @@ BEGIN @100040 /* astral_crossbow */
 DESIGNATED 1025
 GROUP @10003 /* Items */
 LABEL ~astral crossbow~
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~1999~ @100145 /* Can not be installed along side all items */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_1025.tpa~
@@ -225,6 +277,8 @@ BEGIN @100041 /* shadowed_spear */
 DESIGNATED 1026
 GROUP @10003 /* Items */
 LABEL ~shadowed spear~
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~1999~ @100145 /* Can not be installed along side all items */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_1026.tpa~
@@ -233,6 +287,8 @@ BEGIN @100042 /* forest_queen's_benediction */
 DESIGNATED 1027
 GROUP @10003 /* Items */
 LABEL ~forest queen's benediction~
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~1999~ @100145 /* Can not be installed along side all items */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_1027.tpa~
@@ -241,6 +297,8 @@ BEGIN @100043 /* jester's_bracers */
 DESIGNATED 1028
 GROUP @10003 /* Items */
 LABEL ~jester's bracers~
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~1999~ @100145 /* Can not be installed along side all items */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_1028.tpa~
@@ -249,6 +307,8 @@ BEGIN @100044 /* the_night's_embrace */
 DESIGNATED 1029
 GROUP @10003 /* Items */
 LABEL ~the night's embrace~
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~1999~ @100145 /* Can not be installed along side all items */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_1029.tpa~
@@ -257,6 +317,8 @@ BEGIN @100045 /* ring_of_purity */
 DESIGNATED 1030
 GROUP @10003 /* Items */
 LABEL ~ring of purity~
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~1999~ @100145 /* Can not be installed along side all items */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_1030.tpa~
@@ -265,6 +327,8 @@ BEGIN @100046 /* dervish_crescent */
 DESIGNATED 1031
 GROUP @10003 /* Items */
 LABEL ~dervish crescent~
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~1999~ @100145 /* Can not be installed along side all items */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_1031.tpa~
@@ -273,6 +337,8 @@ BEGIN @100047 /* headband_of_focus */
 DESIGNATED 1032
 GROUP @10003 /* Items */
 LABEL ~headband of focus~
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~1999~ @100145 /* Can not be installed along side all items */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_1032.tpa~
@@ -281,6 +347,8 @@ BEGIN @100048 /* wizard_hat */
 DESIGNATED 1033
 GROUP @10003 /* Items */
 LABEL ~wizard hat~
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~1999~ @100145 /* Can not be installed along side all items */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_1033.tpa~
@@ -289,6 +357,8 @@ BEGIN @100049 /* acid_etched_dagger */
 DESIGNATED 1034
 GROUP @10003 /* Items */
 LABEL ~acid-etched dagger~
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~1999~ @100145 /* Can not be installed along side all items */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_1034.tpa~
@@ -297,6 +367,8 @@ BEGIN @100050 /* the_suncatcher */
 DESIGNATED 1035
 GROUP @10003 /* Items */
 LABEL ~the suncatcher~
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~1999~ @100145 /* Can not be installed along side all items */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_1035.tpa~
@@ -305,6 +377,8 @@ BEGIN @100051 /* the_guardian_devil */
 DESIGNATED 1036
 GROUP @10003 /* Items */
 LABEL ~the guardian devil~
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~1999~ @100145 /* Can not be installed along side all items */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_1036.tpa~
@@ -313,6 +387,8 @@ BEGIN @100052 /* reed_of_echoes */
 DESIGNATED 1037
 GROUP @10003 /* Items */
 LABEL ~reed of echoes~
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~1999~ @100145 /* Can not be installed along side all items */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_1037.tpa~
@@ -321,6 +397,8 @@ BEGIN @100053 /* echo_of_the_fiend */
 DESIGNATED 1038
 GROUP @10003 /* Items */
 LABEL ~echo of the fiend~
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~1999~ @100145 /* Can not be installed along side all items */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_1038.tpa~
@@ -329,6 +407,8 @@ BEGIN @100054 /* amulet_of_whispers */
 DESIGNATED 1039
 GROUP @10003 /* Items */
 LABEL ~amulet of whispers~
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~1999~ @100145 /* Can not be installed along side all items */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_1039.tpa~
@@ -337,6 +417,8 @@ BEGIN @100055 /* amulet_of_abnormally_awesome_summoning */
 DESIGNATED 1040
 GROUP @10003 /* Items */
 LABEL ~amulet of abnormally awesome summoning~
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~1999~ @100145 /* Can not be installed along side all items */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_1040.tpa~
@@ -345,6 +427,8 @@ BEGIN @100056 /* locket_of_embracing */
 DESIGNATED 1041
 GROUP @10003 /* Items */
 LABEL ~locket of embracing~
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~1999~ @100145 /* Can not be installed along side all items */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_1041.tpa~
@@ -353,6 +437,8 @@ BEGIN @100057 /* modron_heart */
 DESIGNATED 1042
 GROUP @10003 /* Items */
 LABEL ~modron heart~
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~1999~ @100145 /* Can not be installed along side all items */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_1042.tpa~
@@ -361,6 +447,8 @@ BEGIN @100058 /* chill_axe */
 DESIGNATED 1043
 GROUP @10003 /* Items */
 LABEL ~chill axe~
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~1999~ @100145 /* Can not be installed along side all items */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_1043.tpa~
@@ -369,6 +457,8 @@ BEGIN @100059 /* belt_of_the_cunning_rogue */
 DESIGNATED 1044
 GROUP @10003 /* Items */
 LABEL ~belt of the cunning rogue~
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~1999~ @100145 /* Can not be installed along side all items */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_1044.tpa~
@@ -377,6 +467,8 @@ BEGIN @100060 /* mosela's_cudgel */
 DESIGNATED 1045
 GROUP @10003 /* Items */
 LABEL ~mosela's cudgel~
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~1999~ @100145 /* Can not be installed along side all items */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_1045.tpa~
@@ -385,6 +477,8 @@ BEGIN @100061 /* the_hydra */
 DESIGNATED 1046
 GROUP @10003 /* Items */
 LABEL ~the hydra~
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~1999~ @100145 /* Can not be installed along side all items */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_1046.tpa~
@@ -393,6 +487,8 @@ BEGIN @100062 /* blazing_glory */
 DESIGNATED 1047
 GROUP @10003 /* Items */
 LABEL ~blazing glory~
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~1999~ @100145 /* Can not be installed along side all items */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_1047.tpa~
@@ -401,6 +497,8 @@ BEGIN @100063 /* sidestep_slippers */
 DESIGNATED 1048
 GROUP @10003 /* Items */
 LABEL ~sidestep slippers~
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~1999~ @100145 /* Can not be installed along side all items */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_1048.tpa~
@@ -409,6 +507,8 @@ BEGIN @100064 /* savage_shortbow */
 DESIGNATED 1049
 GROUP @10003 /* Items */
 LABEL ~savage shortbow~
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~1999~ @100145 /* Can not be installed along side all items */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_1049.tpa~
@@ -417,6 +517,8 @@ BEGIN @100065 /* bracers_of_the_shuttered_lid */
 DESIGNATED 1050
 GROUP @10003 /* Items */
 LABEL ~bracers of the shuttered lid~
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~1999~ @100145 /* Can not be installed along side all items */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_1050.tpa~
@@ -425,6 +527,8 @@ BEGIN @100066 /* bracers_of_perseverance */
 DESIGNATED 1051
 GROUP @10003 /* Items */
 LABEL ~bracers of perseverance~
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~1999~ @100145 /* Can not be installed along side all items */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_1051.tpa~
@@ -433,6 +537,8 @@ BEGIN @100067 /* flute_of_the_immaculate_breeze */
 DESIGNATED 1052
 GROUP @10003 /* Items */
 LABEL ~Flute of the Immacultate Breeze~
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~1999~ @100145 /* Can not be installed along side all items */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_1052.tpa~
@@ -441,6 +547,8 @@ BEGIN @100068 /* stalwart_scales */
 DESIGNATED 1053
 GROUP @10003 /* Items */
 LABEL ~stalwart scales~
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~1999~ @100145 /* Can not be installed along side all items */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_1053.tpa~
@@ -449,6 +557,8 @@ BEGIN @100069 /* sable_cloak */
 DESIGNATED 1054
 GROUP @10003 /* Items */
 LABEL ~sable cloak~
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~1999~ @100145 /* Can not be installed along side all items */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_1054.tpa~
@@ -457,6 +567,8 @@ BEGIN @100070 /* crommus's_capelet */
 DESIGNATED 1055
 GROUP @10003 /* Items */
 LABEL ~crommus's capelet~
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~1999~ @100145 /* Can not be installed along side all items */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_1055.tpa~
@@ -465,6 +577,8 @@ BEGIN @100071 /* festering_spear */
 DESIGNATED 1056
 GROUP @10003 /* Items */
 LABEL ~festering spear~
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~1999~ @100145 /* Can not be installed along side all items */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_1056.tpa~
@@ -473,6 +587,8 @@ BEGIN @100072 /* arrow_of_antimagic */
 DESIGNATED 1057
 GROUP @10003 /* Items */
 LABEL ~arrow of antimagic~
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~1999~ @100145 /* Can not be installed along side all items */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_1057.tpa~
@@ -481,6 +597,8 @@ BEGIN @100073 /* dread_hammer */
 DESIGNATED 1058
 GROUP @10003 /* Items */
 LABEL ~dread hammer~
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~1999~ @100145 /* Can not be installed along side all items */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_1058.tpa~
@@ -489,6 +607,8 @@ BEGIN @100074 /* battle_tankard */
 DESIGNATED 1059
 GROUP @10003 /* Items */
 LABEL ~battle tankard~
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~1999~ @100145 /* Can not be installed along side all items */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_1059.tpa~
@@ -497,6 +617,8 @@ BEGIN @100075 /* peacock_cap */
 DESIGNATED 1060
 GROUP @10003 /* Items */
 LABEL ~peacock cap~
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~1999~ @100145 /* Can not be installed along side all items */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_1060.tpa~
@@ -505,6 +627,8 @@ BEGIN @100076 /* helm_of_equus */
 DESIGNATED 1061
 GROUP @10003 /* Items */
 LABEL ~helm of equus~
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~1999~ @100145 /* Can not be installed along side all items */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_1061.tpa~
@@ -513,6 +637,8 @@ BEGIN @100077 /* helm_of_unwavering_purpose */
 DESIGNATED 1062
 GROUP @10003 /* Items */
 LABEL ~helm of unwavering purpose~
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~1999~ @100145 /* Can not be installed along side all items */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_1062.tpa~
@@ -521,6 +647,8 @@ BEGIN @100078 /* blood_red_ioun_stone */
 DESIGNATED 1063
 GROUP @10003 /* Items */
 LABEL ~blood red ioun stone~
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~1999~ @100145 /* Can not be installed along side all items */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_1063.tpa~
@@ -529,6 +657,8 @@ BEGIN @100079 /* raconteur's_regalia */
 DESIGNATED 1064
 GROUP @10003 /* Items */
 LABEL ~raconteur's regalia~
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~1999~ @100145 /* Can not be installed along side all items */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_1064.tpa~
@@ -537,6 +667,8 @@ BEGIN @100080 /* purification_stone */
 DESIGNATED 1065
 GROUP @10003 /* Items */
 LABEL ~purification stone~
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~1999~ @100145 /* Can not be installed along side all items */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_1065.tpa~
@@ -545,6 +677,8 @@ BEGIN @100081 /* daeros'full_plate */
 DESIGNATED 1066
 GROUP @10003 /* Items */
 LABEL ~daeros' full plate~
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~1999~ @100145 /* Can not be installed along side all items */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_1066.tpa~
@@ -553,6 +687,8 @@ BEGIN @100082 /* bloody_bone_plate */
 DESIGNATED 1067
 GROUP @10003 /* Items */
 LABEL ~bloody bone plate~
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~1999~ @100145 /* Can not be installed along side all items */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_1067.tpa~
@@ -561,6 +697,8 @@ BEGIN @100083 /* robe_of_arcane_aptitude */
 DESIGNATED 1068
 GROUP @10003 /* Items */
 LABEL ~robe of arcane aptitude~
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~1999~ @100145 /* Can not be installed along side all items */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_1068.tpa~
@@ -569,6 +707,8 @@ BEGIN @100084 /* firefly */
 DESIGNATED 1069
 GROUP @10003 /* Items */
 LABEL ~Firefly~
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~1999~ @100145 /* Can not be installed along side all items */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_1069.tpa~
@@ -577,6 +717,8 @@ BEGIN @100085 /* eadro's_blade */
 DESIGNATED 1070
 GROUP @10003 /* Items */
 LABEL ~eadro's blade~
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~1999~ @100145 /* Can not be installed along side all items */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_1070.tpa~
@@ -585,6 +727,8 @@ BEGIN @100086 /* fractal_blade */
 DESIGNATED 1071
 GROUP @10003 /* Items */
 LABEL ~fractal blade~
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~1999~ @100145 /* Can not be installed along side all items */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_1071.tpa~
@@ -593,6 +737,8 @@ BEGIN @100087 /* spell_breaker */
 DESIGNATED 1072
 GROUP @10003 /* Items */
 LABEL ~spell breaker~
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~1999~ @100145 /* Can not be installed along side all items */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_1072.tpa~
@@ -601,6 +747,8 @@ BEGIN @100088 /* gift_of_the_demon */
 DESIGNATED 1073
 GROUP @10003 /* Items */
 LABEL ~gift of the demon~
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~1999~ @100145 /* Can not be installed along side all items */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_1073.tpa~
@@ -609,6 +757,8 @@ BEGIN @100089 /* sword_of_troll_decapitation */
 DESIGNATED 1074
 GROUP @10003 /* Items */
 LABEL ~sword of troll decapitation~
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~1999~ @100145 /* Can not be installed along side all items */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_1074.tpa~
@@ -617,6 +767,8 @@ BEGIN @100090 /* sword_of_ruin */
 DESIGNATED 1075
 GROUP @10003 /* Items */
 LABEL ~sword of ruin~
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~1999~ @100145 /* Can not be installed along side all items */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_1075.tpa~
@@ -625,6 +777,8 @@ BEGIN @100091 /* harold */
 DESIGNATED 1076
 GROUP @10003 /* Items */
 LABEL ~Harold~
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~1999~ @100145 /* Can not be installed along side all items */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_1076.tpa~
@@ -633,6 +787,8 @@ BEGIN @100092 /* cloak_of_the_gargoyle */
 DESIGNATED 1077
 GROUP @10003 /* Items */
 LABEL ~cloak of the gargoyle~
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~1999~ @100145 /* Can not be installed along side all items */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_1077.tpa~
@@ -641,6 +797,8 @@ BEGIN @100093 /* rhyte's_last_arrow */
 DESIGNATED 1078
 GROUP @10003 /* Items */
 LABEL ~rhyte's last arrow~
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~1999~ @100145 /* Can not be installed along side all items */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_1078.tpa~
@@ -649,6 +807,8 @@ BEGIN @100094 /* gentrus's_hand_mirror */
 DESIGNATED 1079
 GROUP @10003 /* Items */
 LABEL ~gentrus's hand mirror~
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~1999~ @100145 /* Can not be installed along side all items */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_1079.tpa~
@@ -657,6 +817,8 @@ BEGIN @100095 /* the_secret_revealed */
 DESIGNATED 1080
 GROUP @10003 /* Items */
 LABEL ~the secret revealed~
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~1999~ @100145 /* Can not be installed along side all items */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_1080.tpa~
@@ -665,6 +827,8 @@ BEGIN @100096 /* lon's_amulet */
 DESIGNATED 1081
 GROUP @10003 /* Items */
 LABEL ~lon's amulet~
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~1999~ @100145 /* Can not be installed along side all items */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_1081.tpa~
@@ -673,6 +837,8 @@ BEGIN @100097 /* glimmer_of_hope */
 DESIGNATED 1082
 GROUP @10003 /* Items */
 LABEL ~glimmer of hope~
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~1999~ @100145 /* Can not be installed along side all items */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_1082.tpa~
@@ -681,6 +847,8 @@ BEGIN @100098 /* cold_fury */
 DESIGNATED 1083
 GROUP @10003 /* Items */
 LABEL ~cold fury~
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~1999~ @100145 /* Can not be installed along side all items */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_1083.tpa~
@@ -689,6 +857,8 @@ BEGIN @100099 /* the_bloodied_guardian */
 DESIGNATED 1084
 GROUP @10003 /* Items */
 LABEL ~the bloodied guardian~
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~1999~ @100145 /* Can not be installed along side all items */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_1084.tpa~
@@ -697,6 +867,8 @@ BEGIN @100100 /* medal_of_valor */
 DESIGNATED 1085
 GROUP @10003 /* Items */
 LABEL ~medal of valor~
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~1999~ @100145 /* Can not be installed along side all items */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_1085.tpa~
@@ -705,6 +877,8 @@ BEGIN @100101 /* ring_of_the_crusade */
 DESIGNATED 1086
 GROUP @10003 /* Items */
 LABEL ~ring of the crusade~
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~1999~ @100145 /* Can not be installed along side all items */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_1086.tpa~
@@ -713,6 +887,8 @@ BEGIN @100102 /* corinth's_bow */
 DESIGNATED 1087
 GROUP @10003 /* Items */
 LABEL ~corinth's bow~
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~1999~ @100145 /* Can not be installed along side all items */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_1087.tpa~
@@ -721,6 +897,8 @@ BEGIN @100103 /* wand_of_water_elemental_summoning */
 DESIGNATED 1088
 GROUP @10003 /* Items */
 LABEL ~wand of water elemental summoning~
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~1999~ @100145 /* Can not be installed along side all items */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_1088.tpa~
@@ -729,6 +907,8 @@ BEGIN @100104 /* protector_of_the_unworthy */
 DESIGNATED 1089
 GROUP @10003 /* Items */
 LABEL ~protector of the unworthy~
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~1999~ @100145 /* Can not be installed along side all items */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_1089.tpa~
@@ -737,6 +917,8 @@ BEGIN @100105 /* commander's_chain_mail */
 DESIGNATED 1090
 GROUP @10003 /* Items */
 LABEL ~commander's chain mail~
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~1999~ @100145 /* Can not be installed along side all items */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_1090.tpa~
@@ -745,6 +927,8 @@ BEGIN @100106 /* the_gift */
 DESIGNATED 1091
 GROUP @10003 /* Items */
 LABEL ~the gift~
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~1999~ @100145 /* Can not be installed along side all items */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_1091.tpa~
@@ -753,6 +937,8 @@ BEGIN @100107 /* cornugon's_revenge */
 DESIGNATED 1092
 GROUP @10003 /* Items */
 LABEL ~cornugon's revenge~
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~1999~ @100145 /* Can not be installed along side all items */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_1092.tpa~
@@ -761,6 +947,8 @@ BEGIN @100108 /* myconid_bloom_sac */
 DESIGNATED 1093
 GROUP @10003 /* Items */
 LABEL ~myconid bloom-sac~
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~1999~ @100145 /* Can not be installed along side all items */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_1093.tpa~
@@ -769,6 +957,8 @@ BEGIN @100109 /* bullet_of_darkness */
 DESIGNATED 1094
 GROUP @10003 /* Items */
 LABEL ~Bullet of Darkness~
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~1999~ @100145 /* Can not be installed along side all items */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_1094.tpa~
@@ -777,6 +967,7 @@ BEGIN @100143 /* all_items */
 DESIGNATED 1999
 GROUP @100115 /* All */
 LABEL ~All items only~
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100147 /* Can not be installed along side other all components */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_1999.tpa~
@@ -785,6 +976,7 @@ BEGIN @100126 /* clerics_vestments */
 DESIGNATED 2000
 GROUP @100111 /* Items Misc */
 LABEL ~Clerics Vestments for Aerie~
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_2000.tpa~
@@ -793,6 +985,7 @@ BEGIN @100112 /* spider_silk */
 DESIGNATED 2001
 GROUP @100111 /* Items Misc */
 LABEL ~Spider Silk Loot~
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_2001.tpa~
@@ -801,6 +994,7 @@ BEGIN @100113 /* bear_skin */
 DESIGNATED 2002
 GROUP @100111 /* Items Misc */
 LABEL ~Fine Bearskin Loot~
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_2002.tpa~
@@ -809,6 +1003,10 @@ BEGIN @100127 /* have_sod */
 DESIGNATED 3000
 GROUP @100128 /* Imports */
 LABEL ~Have SoD~
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~3100~ @100148 /* Can not be installed along side any all imports */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~3101~ @100148 /* Can not be installed along side any all imports */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~3102~ @100148 /* Can not be installed along side any all imports */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_3000.tpa~
@@ -817,6 +1015,10 @@ BEGIN @100129 /* voidsword */
 DESIGNATED 3001
 GROUP @100128 /* Imports */
 LABEL ~Voidsword Only~
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~3100~ @100148 /* Can not be installed along side any all imports */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~3101~ @100148 /* Can not be installed along side any all imports */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~3102~ @100148 /* Can not be installed along side any all imports */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_3001.tpa~
@@ -825,6 +1027,10 @@ BEGIN @100130 /* voidhammer */
 DESIGNATED 3002
 GROUP @100128 /* Imports */
 LABEL ~Voidhammer Only~
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~3100~ @100148 /* Can not be installed along side any all imports */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~3101~ @100148 /* Can not be installed along side any all imports */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~3102~ @100148 /* Can not be installed along side any all imports */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_3002.tpa~
@@ -833,6 +1039,10 @@ BEGIN @100131 /* robe_of_red_flames */
 DESIGNATED 3003
 GROUP @100128 /* Imports */
 LABEL ~Robe of Red Flames Only~
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~3100~ @100148 /* Can not be installed along side any all imports */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~3101~ @100148 /* Can not be installed along side any all imports */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~3102~ @100148 /* Can not be installed along side any all imports */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_3003.tpa~
@@ -841,6 +1051,10 @@ BEGIN @100132 /* belt_skillful_blade */
 DESIGNATED 3004
 GROUP @100128 /* Imports */
 LABEL ~Belt Skillful Blade Only~
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~3100~ @100148 /* Can not be installed along side any all imports */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~3101~ @100148 /* Can not be installed along side any all imports */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~3102~ @100148 /* Can not be installed along side any all imports */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_3004.tpa~
@@ -849,6 +1063,10 @@ BEGIN @100133 /* archers_eyes */
 DESIGNATED 3005
 GROUP @100128 /* Imports */
 LABEL ~Archer's Eyes Only~
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~3100~ @100148 /* Can not be installed along side any all imports */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~3101~ @100148 /* Can not be installed along side any all imports */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~3102~ @100148 /* Can not be installed along side any all imports */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_3005.tpa~
@@ -857,6 +1075,10 @@ BEGIN @100134 /* helm_of_dumathoin */
 DESIGNATED 3006
 GROUP @100128 /* Imports */
 LABEL ~Helm of Dumathoin Only~
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~3100~ @100148 /* Can not be installed along side any all imports */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~3101~ @100148 /* Can not be installed along side any all imports */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~3102~ @100148 /* Can not be installed along side any all imports */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_3006.tpa~
@@ -865,6 +1087,10 @@ BEGIN @100135 /* bard_hat */
 DESIGNATED 3007
 GROUP @100128 /* Imports */
 LABEL ~Bard Hat Only~
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~3100~ @100148 /* Can not be installed along side any all imports */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~3101~ @100148 /* Can not be installed along side any all imports */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~3102~ @100148 /* Can not be installed along side any all imports */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_3007.tpa~
@@ -873,6 +1099,10 @@ BEGIN @100136 /* biter */
 DESIGNATED 3008
 GROUP @100128 /* Imports */
 LABEL ~Biter Only~
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~3100~ @100148 /* Can not be installed along side any all imports */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~3101~ @100148 /* Can not be installed along side any all imports */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~3102~ @100148 /* Can not be installed along side any all imports */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_3008.tpa~
@@ -881,6 +1111,10 @@ BEGIN @100137 /* tangled_strings */
 DESIGNATED 3009
 GROUP @100128 /* Imports */
 LABEL ~Tangled Strings Only~
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~3100~ @100148 /* Can not be installed along side any all imports */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~3101~ @100148 /* Can not be installed along side any all imports */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~3102~ @100148 /* Can not be installed along side any all imports */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_3009.tpa~
@@ -889,6 +1123,10 @@ BEGIN @100138 /* buckler_fist */
 DESIGNATED 3010
 GROUP @100128 /* Imports */
 LABEL ~Buckler of the Fist Only~
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~3100~ @100148 /* Can not be installed along side any all imports */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~3101~ @100148 /* Can not be installed along side any all imports */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~3102~ @100148 /* Can not be installed along side any all imports */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_3010.tpa~
@@ -897,6 +1135,10 @@ BEGIN @100139 /* dragon_blade */
 DESIGNATED 3011
 GROUP @100128 /* Imports */
 LABEL ~Dragon Blade Only~
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~3100~ @100148 /* Can not be installed along side any all imports */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~3101~ @100148 /* Can not be installed along side any all imports */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~3102~ @100148 /* Can not be installed along side any all imports */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_3011.tpa~
@@ -905,6 +1147,9 @@ BEGIN @100140 /* all_imports_voidsword */
 DESIGNATED 3100
 GROUP @100115 /* All */
 LABEL ~All Imports Voidsword Choice~
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~3101~ @100148 /* Can not be installed along side any all imports */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~3102~ @100148 /* Can not be installed along side any all imports */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_3100.tpa~
@@ -913,6 +1158,9 @@ BEGIN @100141 /* all_imports_voidhammer */
 DESIGNATED 3101
 GROUP @100115 /* All */
 LABEL ~All Imports Voidhammer Choice~
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~3100~ @100148 /* Can not be installed along side any all imports */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~3102~ @100148 /* Can not be installed along side any all imports */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_3101.tpa~
@@ -921,6 +1169,9 @@ BEGIN @100142 /* all_imports_random */
 DESIGNATED 3102
 GROUP @100115 /* All */
 LABEL ~All Imports Random Voidsword or Voidhammer~
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~3100~ @100148 /* Can not be installed along side any all imports */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~3101~ @100148 /* Can not be installed along side any all imports */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_3102.tpa~
@@ -929,6 +1180,10 @@ BEGIN @100114 /* sod_all */
 DESIGNATED 10000
 GROUP @100115 /* All */
 LABEL ~All items from SoD~
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~1999~ @100145 /* Can not be installed along side all items */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~3100~ @100148 /* Can not be installed along side any all imports */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~3101~ @100148 /* Can not be installed along side any all imports */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~3102~ @100148 /* Can not be installed along side any all imports */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_10000.tpa~
