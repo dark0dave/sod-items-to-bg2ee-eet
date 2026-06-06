@@ -46,20 +46,7 @@ Weight: 35 */
         parameter1   = RESOLVE_STR_REF(@40013 /* Spell Ineffective */)
     END
 END
-<<<<<<<< .../inlined/k0ar0310.baf
-IF
-  Global("K0_ITEMS_BDLEAT01","GLOBAL",0)
-THEN
-  RESPONSE #100
-    SetInterrupt(FALSE)
-    SetGlobal("K0_ITEMS_BDLEAT01","GLOBAL",1)
-    TakeItemReplace("bdleat01","LEAT01","PIRSEA01")  // Cornugon's Revenge +2/Leather Armor
-    ActionOverride("PIRSEA01",XEquipItem("bdleat01",Myself,SLOT_ARMOR,EQUIP))  // Cornugon's Revenge +2
-    SetInterrupt(FALSE)
-    Continue()
-END
->>>>>>>>
-EXTEND_BOTTOM ~ar0310.bcs~ ~.../inlined/k0ar0310.baf~
-COPY_EXISTING ~ar0310.are~ ~override~
-  WRITE_ASCII AREA_SCRIPT ~ar0310~ #8
-BUT_ONLY
+
+COPY_EXISTING ~pirsea01.cre~ ~override~
+  REMOVE_CRE_ITEM ~LEAT01~
+  REPLACE_CRE_ITEM ~bdleat01~ #0 #0 #0 ~NONE~ ~ARMOR~ EQUIP

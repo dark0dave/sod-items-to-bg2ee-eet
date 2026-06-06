@@ -19,12 +19,12 @@ Weight: 0 */
 END
 <<<<<<<< .../inlined/k0oh5300.baf
 IF
-    Global("K0_ITEMS_BDRING03","GLOBAL",1)
+    Global("K0_ITEMS_BDRING03","GLOBAL",0)
     Global("OHD_enter_terpfen","oh5300",3)
 THEN
     RESPONSE #100
         SetInterrupt(FALSE)
-        SetGlobal("K0_ITEMS_BDRING03","GLOBAL",2)
+        SetGlobal("K0_ITEMS_BDRING03","GLOBAL",1)
         ActionOverride("OHDTERP",CreateItem("bdring03",0,0,0)) // Ring of the Crusade
         ActionOverride("OHDTERP",XEquipItem("bdring03",Myself,SLOT_RING_LEFT,EQUIP))  // Ring of the Crusade
         SetInterrupt(FALSE)

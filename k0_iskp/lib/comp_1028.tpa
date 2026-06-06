@@ -1,13 +1,13 @@
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdbrac02.itm~ BEGIN
   COPY ~k0_iskp/itm/bdbrac02.itm~ ~override~
-    SAY NAME1 @20101 /* Bracers */
-    SAY NAME2 @20229 /* Jester's Bracers */
-    SAY UNIDENTIFIED_DESC @20102 /* Bracers are thick bands of metal or leather that are strapped, belted, or tied to a character's forearm. Generally, the magic that is instilled in bracers is good only during combat, since most bracers help protect the wearer from injury or improve their chances to strike an opponent. Exceptions do exist, though such specialized items are rare at best.
+    SAY NAME1 @20101  /* Bracers */
+    SAY NAME2 @20229  /* Jester's Bracers */
+    SAY UNIDENTIFIED_DESC @20102  /* Bracers are thick bands of metal or leather that are strapped, belted, or tied to a character's forearm. Generally, the magic that is instilled in bracers is good only during combat, since most bracers help protect the wearer from injury or improve their chances to strike an opponent. Exceptions do exist, though such specialized items are rare at best.
 
 STATISTICS:
 
 Weight: 2 */
-    SAY DESC @20230 /* These bracers once belonged to a traveling bard famed for his sharp tongue and quick retorts. One rainy night, the bard took refuge in a rickety inn on the road to Shadowdale. There he performed for his supper, sprinkling his routine with caustic jibes as was his custom. One of the drinkers in the tavern, an old woman, stood up midway through the performance and snapped, "You think it clever to insult and belittle others? Do so, then, for as long as you live!" The bard found himself unable to remove his now-cursed protective bracers and was forced to spout corny jokes until he could pay a wizard to remove them.
+    SAY DESC @20230  /* These bracers once belonged to a traveling bard famed for his sharp tongue and quick retorts. One rainy night, the bard took refuge in a rickety inn on the road to Shadowdale. There he performed for his supper, sprinkling his routine with caustic jibes as was his custom. One of the drinkers in the tavern, an old woman, stood up midway through the performance and snapped, "You think it clever to insult and belittle others? Do so, then, for as long as you live!" The bard found himself unable to remove his now-cursed protective bracers and was forced to spout corny jokes until he could pay a wizard to remove them.
 
 STATISTICS:
 
@@ -18,6 +18,7 @@ Equipped abilities:
 – May only be removed with a Remove Curse spell
 
 Weight: 2 */
+
   COPY
     ~k0_iskp/eff/bdbrac02.eff~ ~override~  // Corny jokes effect for Jester's Bracers
     SET strref = RESOLVE_STR_REF (@100000 /* Why does the honeybee hum? He knows not the words! Waka waka! */)
@@ -31,17 +32,5 @@ Weight: 2 */
     SET strref = RESOLVE_STR_REF (@100007 /* What has the body of a lion, the wings of a dragon, and tastes great covered in butter? A manti-corn! */)
   COPY ~k0_iskp/eff/bdbrac2a.eff~ ~override~
 END
-<<<<<<<< .../inlined/k0ar2000.baf
-IF
-    Global("K0_ITEMS_BDBRAC02","GLOBAL",1)
-THEN
-    RESPONSE #100
-        SetInterrupt(FALSE)
-        SetGlobal("K0_ITEMS_BDBRAC02","GLOBAL",2)
-        ActionOverride("NEEBER",CreateItem("bdbrac02",0,0,0)) // Jester's Bracers
-        ActionOverride("NEEBER",XEquipItem("bdbrac02",Myself,SLOT_GAUNTLETS,EQUIP))  // Jester's Bracers
-        SetInterrupt(FALSE)
-        Continue()
-END
->>>>>>>>
-EXTEND_BOTTOM ~ar2000.bcs~ ~.../inlined/k0ar2000.baf~
+COPY_EXISTING ~shop04.sto~ ~override~  // Enge's Shop
+  ADD_STORE_ITEM ~bdbrac02~ #0 #0 #0 ~IDENTIFIED~ #1

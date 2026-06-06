@@ -29,15 +29,11 @@ COPY_EXISTING ~tooltip.2da~ ~override~
   LPF a7#normalize_table
   END
 BUT_ONLY
-<<<<<<<< .../inlined/k0ar1904.baf
-IF
-    Global("K0_ITEMS_BDAMUL03","GLOBAL",0)
-THEN
-    RESPONSE #100
-        SetInterrupt(FALSE)
-        SetGlobal("K0_ITEMS_BDAMUL03","GLOBAL",1)
-        ActionOverride("Container 2",CreateItem("bdamul03",6,0,0)) // Amulet of Abnormally Awesome Ankheg Summoning
-        SetInterrupt(TRUE)
-END
->>>>>>>>
-EXTEND_BOTTOM ~ar1904.bcs~ ~.../inlined/k0ar1904.baf~
+COPY_EXISTING ~cernd10.cre~ ~override~
+  REPLACE_CRE_ITEM ~bdamul03~ #10 #0 #0 ~IDENTIFIED~ ~AMULET~
+COPY_EXISTING ~cernd12.cre~ ~override~
+  REPLACE_CRE_ITEM ~bdamul03~ #10 #0 #0 ~IDENTIFIED~ ~AMULET~
+COPY_EXISTING ~cernd13.cre~ ~override~
+  REPLACE_CRE_ITEM ~bdamul03~ #10 #0 #0 ~IDENTIFIED~ ~AMULET~
+COPY_EXISTING ~cernd13b.cre~ ~override~
+  REPLACE_CRE_ITEM ~bdamul03~ #10 #0 #0 ~IDENTIFIED~ ~AMULET~

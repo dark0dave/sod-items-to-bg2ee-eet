@@ -1,13 +1,13 @@
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdbelt04.itm~ BEGIN
   COPY ~k0_iskp/itm/bdbelt04.itm~ ~override~
-    SAY NAME1 @20109 /* Belt */
-    SAY NAME2 @20369 /* Protector of the Unworthy */
-    SAY UNIDENTIFIED_DESC @20110 /* Girdles are generally similar to belts. Unlike belts, girdles are not used to hold up pants and dungarees, but to carry pouches, scabbards, and the like.
+    SAY NAME1 @20109  /* Belt */
+    SAY NAME2 @20369  /* Protector of the Unworthy */
+    SAY UNIDENTIFIED_DESC @20110  /* Girdles are generally similar to belts. Unlike belts, girdles are not used to hold up pants and dungarees, but to carry pouches, scabbards, and the like.
 
 STATISTICS:
 
 Weight: 2 */
-    SAY DESC @20370 /* Girdle of Blades: The Protector of the Unworthy
+    SAY DESC @20370  /* Girdle of Blades: The Protector of the Unworthy
 The most infamous owner of this item forever tainted its reputation, though it is still a truly useful item. Morinden of the Wicked Heart made his living looting the bodies of those he slew. He would goad true warriors into duels of honor—though he had little knowledge of the subject—and laugh as their blades glanced off him. Eventually he met his end at the hands of a frustrated woodsman, who had wisely cast his sword aside in favor of a tree stump.
 
 STATISTICS:
@@ -19,19 +19,5 @@ Equipped abilities:
 
 Weight: 2 */
 END
-<<<<<<<< .../inlined/k0ar1202.baf
-IF
-    Global("K0_ITEMS_BDBELT04","GLOBAL",0)
-THEN
-    RESPONSE #100
-        SetInterrupt(FALSE)
-        SetGlobal("K0_ITEMS_BDBELT04","GLOBAL",1)
-        ActionOverride("TAZOK",CreateItem("bdbelt04",0,0,0)) // Protector of the Unworthy
-        ActionOverride("TAZOK",XEquipItem("bdbelt04",Myself,SLOT_BELT,EQUIP))
-        SetInterrupt(FALSE)
-END
->>>>>>>>
-EXTEND_BOTTOM ~ar1202.bcs~ ~.../inlined/k0ar1202.baf~
-COPY_EXISTING ~ar1202.are~ ~override~
-  WRITE_ASCII AREA_SCRIPT ~ar1202~ #8
-BUT_ONLY
+COPY_EXISTING ~tazok.cre~ ~override~
+  ADD_CRE_ITEM ~bdbelt04~ #0 #0 #0 ~none~ ~belt~ EQUIP

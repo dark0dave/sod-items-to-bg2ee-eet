@@ -1,13 +1,13 @@
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdmisc47.itm~ BEGIN
   COPY ~k0_iskp/itm/bdmisc47.itm~ ~override~
-    SAY NAME1 @20349 /* Glowing Gemstone */
-    SAY NAME2 @20351 /* The Secret Revealed */
-    SAY UNIDENTIFIED_DESC @20350 /* This gemstone glows with an inner light.
+    SAY NAME1 @20349  /* Glowing Gemstone */
+    SAY NAME2 @20351  /* The Secret Revealed */
+    SAY UNIDENTIFIED_DESC @20350  /* This gemstone glows with an inner light.
 
 STATISTICS:
 
 Weight: 0 */
-    SAY DESC @20352 /* This green gemstone glows with the power of Dumathoin, the Keeper of Secrets beneath the Mountain. Its divine power exacts a heavy price on the undead, especially liches.
+    SAY DESC @20352  /* This green gemstone glows with the power of Dumathoin, the Keeper of Secrets beneath the Mountain. Its divine power exacts a heavy price on the undead, especially liches.
 
 STATISTICS:
 
@@ -17,22 +17,24 @@ Charge abilities:
   Special: Weakens liches, leaving them more susceptible to attack
 
 Weight: 1 */
+
   COPY ~k0_iskp/spl/bdmisc47.spl~ ~override~
-    SAY NAME1 @20351 /* The Secret Revealed */
+    SAY NAME1 @20351  /* The Secret Revealed */
     LPF ALTER_EFFECT
       INT_VAR
         match_opcode = 139
         parameter1   = RESOLVE_STR_REF(@40020 /* Miscast Magic */)
     END
   COPY ~k0_iskp/itm/bdmisx47.itm~ ~override~  // used up version
-    SAY NAME1 @20349 /* Glowing Gemstone */
-    SAY NAME2 @20351 /* The Secret Revealed */
-    SAY UNIDENTIFIED_DESC @20350 /* This gemstone glows with an inner light.
+    SAY NAME1 @20349  /* Glowing Gemstone */
+    SAY NAME2 @20351  /* The Secret Revealed */
+    SAY UNIDENTIFIED_DESC @20350  /* This gemstone glows with an inner light.
 
 STATISTICS:
 
 Weight: 0 */
-    SAY DESC @20352 /* This green gemstone glows with the power of Dumathoin, the Keeper of Secrets beneath the Mountain. Its divine power exacts a heavy price on the undead, especially liches.
+    SAY DESC @20352
+  /* This green gemstone glows with the power of Dumathoin, the Keeper of Secrets beneath the Mountain. Its divine power exacts a heavy price on the undead, especially liches.
 
 STATISTICS:
 
@@ -43,15 +45,13 @@ Charge abilities:
 
 Weight: 1 */
 END
-<<<<<<<< .../inlined/k0ar1101.baf
-IF
-    Global("K0_ITEM_BDMISC47","GLOBAL",0)
-THEN
-    RESPONSE #100
-        SetInterrupt(FALSE)
-        SetGlobal("K0_ITEM_BDMISC47","GLOBAL",1)
-        ActionOverride("Container 3",CreateItem("bdmisc47",1,0,0)) // The Secret Revealed
-        SetInterrupt(TRUE)
-END
->>>>>>>>
-EXTEND_BOTTOM ~ar1101~ ~.../inlined/k0ar1101.baf~  // The Secret Revealed*
+COPY_EXISTING ~ar1101.are~ ~override~
+  LPF fj_are_structure
+    INT_VAR
+      fj_con_itm_idx = 2
+    STR_VAR
+      fj_name           = bdmisc47
+      fj_structure_type = itm
+      fj_charge0        = 1
+  END
+BUT_ONLY

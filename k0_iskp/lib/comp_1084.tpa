@@ -35,19 +35,6 @@ Weight: 4 */
         parameter1   = RESOLVE_STR_REF(@40001 /* Strengthened */)
     END
 END
-<<<<<<<< .../inlined/k0ar0907.baf
-IF
-    Global("K0_ITEMS_BDSHLD08","GLOBAL",1)
-THEN
-    RESPONSE #100
-        SetInterrupt(FALSE)
-        SetGlobal("K0_ITEMS_BDSHLD08","GLOBAL",2)
-        TakeItemReplace("bdshld08","SHLD30","HLMAFER")  // The Bloodied Guardian +2/Large Shield +2
-        ActionOverride("HLMAFER",XEquipItem("bdshld08",Myself,SLOT_SHIELD,EQUIP))  // The Bloodied Guardian +2
-        SetInterrupt(FALSE)
-END
->>>>>>>>
-EXTEND_BOTTOM ~ar0907.bcs~ ~.../inlined/k0ar0907.baf~
-COPY_EXISTING ~ar0907.are~ ~override~
-  WRITE_ASCII AREA_SCRIPT ~ar0907~ #8
-BUT_ONLY
+COPY_EXISTING ~hlmafer.cre~ ~override~
+  REMOVE_CRE_ITEM ~SHLD30~
+  REPLACE_CRE_ITEM ~bdshld08~ #0 #0 #0 ~IDENTIFIED~ ~SHIELD~ EQUIP

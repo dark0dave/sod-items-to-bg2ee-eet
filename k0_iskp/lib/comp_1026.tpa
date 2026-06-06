@@ -53,15 +53,5 @@ Weight: 3 */
         parameter1   = RESOLVE_STR_REF(@40011 /* Protected from Normal Weapons */)
     END
 END
-<<<<<<<< .../inlined/k0ar1301.baf
-IF
-    Global("K0_ITEMS_BDSPER01","GLOBAL",0)
-THEN
-    RESPONSE #100
-        SetInterrupt(FALSE)
-        SetGlobal("K0_ITEMS_BDSPER01","GLOBAL",1)
-        ActionOverride("TORGAL",CreateItem("bdsper01",0,0,0)) // Shadowed Spear +2
-        SetInterrupt(FALSE)
-END
->>>>>>>>
-EXTEND_BOTTOM ~ar1301.bcs~ ~.../inlined/k0ar1301.baf~
+COPY_EXISTING ~torgal.cre~ ~override~
+  ADD_CRE_ITEM ~bdsper01~ #0 #0 #0 ~NONE~ ~WEAPON~ EQUIP TWOHANDED

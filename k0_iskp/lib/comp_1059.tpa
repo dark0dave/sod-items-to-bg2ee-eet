@@ -22,12 +22,12 @@ Weight: 2 */
 END
 <<<<<<<< .../inlined/k0ar0400.baf
 IF
-    Global("K0_SOD_IMPORT_57","GLOBAL",1)
+    Global("K0_ITEMS_BDHELM05","GLOBAL",0)
     Global("ShagbagEscape","GLOBAL",1)
 THEN
     RESPONSE #100
         SetInterrupt(FALSE)
-        SetGlobal("K0_SOD_IMPORT_57","GLOBAL",2)
+        SetGlobal("K0_ITEMS_BDHELM05","GLOBAL",1)
         TakeItemReplace("bdhelm05","HELM01","korshag")  // Battle Tankard
         ActionOverride("korshag",XEquipItem("bdhelm05",Myself,SLOT_HELMET,EQUIP))  // Battle Tankard
         SetInterrupt(FALSE)

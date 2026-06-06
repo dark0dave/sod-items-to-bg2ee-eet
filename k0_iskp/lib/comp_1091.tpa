@@ -1,13 +1,13 @@
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdamul12.itm~ BEGIN
   COPY ~k0_iskp/itm/bdamul12.itm~ ~override~
-    SAY NAME1 @20093 /* Amulet */
-    SAY NAME2 @20373 /* The Gift */
-    SAY UNIDENTIFIED_DESC @20094 /* Amulets are usually magical devices that are commonly worn around the neck, suspended from a chain. The type of chain that comes with an amulet generally increases the item's aesthetic value, not its magical properties. Only one amulet can be dangled from the neck at a time.
+    SAY NAME1 @20093  /* Amulet */
+    SAY NAME2 @20373  /* The Gift */
+    SAY UNIDENTIFIED_DESC @20094  /* Amulets are usually magical devices that are commonly worn around the neck, suspended from a chain. The type of chain that comes with an amulet generally increases the item's aesthetic value, not its magical properties. Only one amulet can be dangled from the neck at a time.
 
 STATISTICS:
 
 Weight: 1 */
-    SAY DESC @20374 /* Crafted from the most delicate spider silk, an unblemished aquamarine gem its centerpiece, this necklace represents its creator's undying devotion for his beloved. It does more than accentuate its wearer's beauty, though it certainly does that as well. It also seemingly rejuvenates her, leaving her practically glowing with youth and vitality. Were arcane energies involved in its creation, or does it merely reflect the deeply-held feelings of the necklace's maker for its intended recipient? It is impossible to say; such is the magic of love.
+    SAY DESC @20374  /* Crafted from the most delicate spider silk, an unblemished aquamarine gem its centerpiece, this necklace represents its creator's undying devotion for his beloved. It does more than accentuate its wearer's beauty, though it certainly does that as well. It also seemingly rejuvenates her, leaving her practically glowing with youth and vitality. Were arcane energies involved in its creation, or does it merely reflect the deeply-held feelings of the necklace's maker for its intended recipient? It is impossible to say; such is the magic of love.
 
 STATISTICS:
 
@@ -18,18 +18,12 @@ Equipped abilities:
 
 Weight: 2 */
 END
-<<<<<<<< .../inlined/k0ar0603.baf
-IF
-    Global("K0_ITEMS_BDAMUL12","GLOBAL",1)
-THEN
-    RESPONSE #100
-        SetInterrupt(FALSE)
-        SetGlobal("K0_ITEMS_BDAMUL12","GLOBAL",2)
-        ActionOverride("Container 21",CreateItem("bdamul12",0,0,0)) // The Gift
-        SetInterrupt(TRUE)
-END
->>>>>>>>
-EXTEND_BOTTOM ~ar0603.bcs~ ~.../inlined/k0ar0603.baf~
 COPY_EXISTING ~ar0603.are~ ~override~
-  WRITE_ASCII AREA_SCRIPT ~ar0603~ #8
+  LPF fj_are_structure
+    INT_VAR
+      fj_con_itm_idx = 1
+    STR_VAR
+      fj_name           = bdamul12
+      fj_structure_type = itm
+  END
 BUT_ONLY

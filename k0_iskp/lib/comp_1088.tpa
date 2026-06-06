@@ -1,15 +1,15 @@
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdwand01.itm~ BEGIN
   COPY ~k0_iskp/itm/bdwand01.itm~ ~override~
-    SAY NAME1 @20121 /* Wand */
-    SAY NAME2 @20367 /* Wand of Water Elemental Summoning */
-    SAY UNIDENTIFIED_DESC @20122 /* Wands are 1 1/4 ft. long and slender. They are made of ivory, bone, or wood and are usually tipped with something—metal, crystal, stone, and so on. They are fragile and tend to break easily. Because of this, they are often kept in cases.
+    SAY NAME1 @20121  /* Wand */
+    SAY NAME2 @20367  /* Wand of Water Elemental Summoning */
+    SAY UNIDENTIFIED_DESC @20122  /* Wands are 1 1/4 ft. long and slender. They are made of ivory, bone, or wood and are usually tipped with something—metal, crystal, stone, and so on. They are fragile and tend to break easily. Because of this, they are often kept in cases.
 
 Wands are powered by charges, each use costing one or more charges (depending on the item). When a wand runs out of charges, it is consumed and destroyed.
 
 STATISTICS:
 
 Weight: 1 */
-    SAY DESC @20368 /* Seaweed strands wrap around this coral-encrusted wand. When a charge is expended, a water elemental appears to do its summoner's bidding.
+    SAY DESC @20368  /* Seaweed strands wrap around this coral-encrusted wand. When a charge is expended, a water elemental appears to do its summoner's bidding.
 
 STATISTICS:
 
@@ -25,8 +25,8 @@ Weight: 1 */
 END
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdwelems.cre~ BEGIN  // CRE required for summon
   COPY ~k0_iskp/cre/bdwelems.cre~ ~override~
-    SAY NAME1 @40031 /* Lesser Water Elemental */
-    SAY NAME2 @40031 /* Lesser Water Elemental */
+    SAY NAME1 @40031  /* Lesser Water Elemental */
+    SAY NAME2 @40031  /* Lesser Water Elemental */
 END
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~cwelemw.2da~ BEGIN  // 2DA required for summon
   COPY ~k0_iskp/2da/cwelemw.2da~ ~override~
@@ -40,19 +40,13 @@ END
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bf_md01.wav~ BEGIN
   COPY ~k0_iskp/anim/iwdwaterele/wav/bf_md~ ~override~
 END
-<<<<<<<< .../inlined/k0oh6000.baf
-IF
-    Global("K0_ITEMS_BDWAND01","GLOBAL",0)
-THEN
-    RESPONSE #100
-        SetInterrupt(FALSE)
-        SetGlobal("K0_ITEMS_BDWAND01","GLOBAL",1)
-        ActionOverride("Gnome_cart",CreateItem("bdwand01",4,0,0)) // Wand of Water Elemental Summoning
-        SetInterrupt(TRUE)
-        Continue()
-END
->>>>>>>>
-EXTEND_BOTTOM ~oh6000.bcs~ ~.../inlined/k0oh6000.baf~
 COPY_EXISTING ~oh6000.are~ ~override~
-  WRITE_ASCII AREA_SCRIPT ~oh6000~ #8
+  LPF fj_are_structure
+    INT_VAR
+      fj_con_itm_idx = 1
+      fj_charge0     = 4
+    STR_VAR
+      fj_name           = bdwand01
+      fj_structure_type = itm
+  END
 BUT_ONLY

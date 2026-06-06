@@ -1,8 +1,8 @@
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdblun05.itm~ BEGIN
   COPY ~k0_iskp/itm/bdblun05.itm~ ~override~
-    SAY NAME1 @20037 /* Flail */
-    SAY NAME2 @20267 /* The Hydra +2 */
-    SAY UNIDENTIFIED_DESC @20038 /* The flail is a sturdy wooden handle attached to an iron rod, a wooden rod with spikes, or a spiked iron ball. Between the handle and its implement is either a hinge or chain link. The weapon was originally used as a tool for threshing grain.
+    SAY NAME1 @20037  /* Flail */
+    SAY NAME2 @20267  /* The Hydra +2 */
+    SAY UNIDENTIFIED_DESC @20038  /* The flail is a sturdy wooden handle attached to an iron rod, a wooden rod with spikes, or a spiked iron ball. Between the handle and its implement is either a hinge or chain link. The weapon was originally used as a tool for threshing grain.
 
 STATISTICS:
 
@@ -14,7 +14,7 @@ Requires:
  13 Strength
 
 Weight: 15 */
-    SAY DESC @20268 /* The three heads of this flail look like dragon heads, giving the weapon its fearsome name. As the weilder swings the weapon, its heads seem to blur and divide until a mass of hydra heads whips from the end of the chain. When the weilder ceases attacking, the weapon reverts to its original appearance.
+    SAY DESC @20268  /* The three heads of this flail look like dragon heads, giving the weapon its fearsome name. As the weilder swings the weapon, its heads seem to blur and divide until a mass of hydra heads whips from the end of the chain. When the weilder ceases attacking, the weapon reverts to its original appearance.
 
 STATISTICS:
 
@@ -31,18 +31,5 @@ Requires:
 
 Weight: 12 */
 END
-<<<<<<<< .../inlined/k0pirmu.baf
-IF
-    Global("K0_ITEMS_BDBLUN05","GLOBAL",1)
-THEN
-    RESPONSE #100
-        SetInterrupt(FALSE)
-        SetGlobal("K0_ITEMS_BDBLUN05","GLOBAL",2)
-        DestroyItem("BLUN13")  // Flail +2
-        CreateItem("bdblun05",0,0,0)  // The Hydra +2
-        XEquipItem("bdblun05",Myself,SLOT_WEAPON0,EQUIP)  // The Hydra +2
-        SetInterrupt(FALSE)
-        Continue()
-END
->>>>>>>>
-EXTEND_BOTTOM ~pirmur01.bcs~ ~.../inlined/k0pirmu.baf~
+COPY_EXISTING ~roger.sto~ ~override~  // Roger the Fence
+  ADD_STORE_ITEM ~bdblun05~ #0 #0 #0 ~IDENTIFIED~ #1

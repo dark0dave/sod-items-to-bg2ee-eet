@@ -12,9 +12,6 @@ main() {
   for file in $( find . -type f -iname "*.tp2" ); do
     retraify "${file}" k0_iskp/lang/english/weidu.tra
   done
-  for file in $( find . -type f -iname "*.tpa" ); do
-    retraify "${file}" k0_iskp/lang/english/weidu.tra
-  done
 }
 
 main

@@ -3710,3 +3710,18 @@ Weight: 1~
 @100146 = ~Can not be installed along side all components component~
 @100147 = ~Can not be installed along side other all components~
 @100148 = ~Can not be installed along side any all imports~
+@100149 = ~Dragonscale Armor~
+@100150 = ~Scale armor is made from the tough, chitinous scales of creatures throughout the realms.  The protective quality varies dependent on the scales used, and the skill of the smith who fashions them into armor.  Natural resistances and even some magical abilities from the host can be imparted to the wearer.~
+@100151 = ~This shimmering viridian suit of leather armor is soft and supple despite the strength in the plates of green dragon scale. The wearer of this armor is protected from even the heaviest blows as well as from poison.
+
+STATISTICS:
+
+Equipped abilities:
+– Immunity to poison
+
+Armor Class: 4 (2 vs. slashing, 3 vs. piercing and missile)
+Requires:
+ 6 Strength
+
+Weight: 7~
+@100153 = ~green_dragonscale_armour~
