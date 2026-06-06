@@ -1,31 +1,27 @@
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdkeyr.itm~ BEGIN
   COPY ~k0_iskp/itm/bdkeyr.itm~ ~override~
-    SAY NAME1 @20219 /* Key Ring */
-    SAY NAME2 @20219 /* Key Ring */
-    SAY UNIDENTIFIED_DESC @20220 /* A latch on this heavy steel ring allows it to open on a hinge. Dozens of keys may be threaded on the ring to keep them organized.
+    SAY NAME1 @20219  /* Key Ring */
+    SAY NAME2 @20219  /* Key Ring */
+    SAY UNIDENTIFIED_DESC @20220  /* A latch on this heavy steel ring allows it to open on a hinge. Dozens of keys may be threaded on the ring to keep them organized.
 
 STATISTICS:
 
 Weight: 0 */
-    SAY DESC @20220 /* A latch on this heavy steel ring allows it to open on a hinge. Dozens of keys may be threaded on the ring to keep them organized.
+    SAY DESC @20220  /* A latch on this heavy steel ring allows it to open on a hinge. Dozens of keys may be threaded on the ring to keep them organized.
 
 STATISTICS:
 
 Weight: 0 */
+
   COPY ~k0_iskp/sto/bdkeyr.sto~ ~override~
-    SAY NAME2 @20219 /* Key Ring */
+    SAY NAME2 @20219  /* Key Ring */
 END
-<<<<<<<< .../inlined/k0ar0602.baf
-IF
-  Global("K0_ITEMS_BDKEYR","AR0602",0)
-THEN
-  RESPONSE #100
-    SetGlobal("K0_ITEMS_BDKEYR","AR0602",1)
-    ActionOverride("Jailkeep Table",CreateItem("bdkeyr",0,0,0))  // Key Ring
-    Continue()
-END
->>>>>>>>
-EXTEND_BOTTOM ~ar0602.bcs~ ~.../inlined/k0ar0602.baf~
 COPY_EXISTING ~ar0602.are~ ~override~
-  WRITE_ASCII AREA_SCRIPT ~ar0602~ #8
+  LPF fj_are_structure
+    INT_VAR
+      fj_con_itm_idx = 37
+    STR_VAR
+      fj_name           = bdkeyr
+      fj_structure_type = itm
+  END
 BUT_ONLY

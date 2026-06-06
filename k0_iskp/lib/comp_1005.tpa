@@ -50,6 +50,3 @@ THEN
 END
 >>>>>>>>
 EXTEND_BOTTOM ~ar1402~ ~.../inlined/k0ar1402.baf~
-COPY_EXISTING ~ar1402.are~ ~override~
-  WRITE_ASCII AREA_SCRIPT ~ar1402~ #8
-BUT_ONLY
