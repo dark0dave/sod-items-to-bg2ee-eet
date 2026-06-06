@@ -1,0 +1,22 @@
+// Green Dragonscale Armor
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdleat05.itm~ BEGIN
+  COPY ~k0_iskp/itm/bdleat05.itm~ ~override~
+    SAY NAME1 @20073 /* Scale Armor */
+    SAY NAME2 @100149 /* Dragonscale Armor */
+    SAY UNIDENTIFIED_DESC @100150 /* Scale armor is made from the tough, chitinous scales of creatures througout the realms.  The protective quality varies dependant on the scales used, and the skill of the smith who fashions them into armor.  Natural resistances and even some magical abilities from the host can be imparted to the wearer. */
+    SAY DESC @100151 /* This shimmering viridian suit of leather armor is soft and supple despite the strength in the plates of green dragon scale. The wearer of this armor is protected from even the heaviest blows as well as from poison.
+
+STATISTICS:
+
+Equipped abilities:
+– Immunity to poison
+
+Armor Class: 4 (2 vs. slashing, 3 vs. piercing and missile)
+Requires:
+ 6 Strength
+
+Weight: 7 */
+END
+
+COPY_EXISTING ~tdr10a.cre~ ~override~
+  ADD_CRE_ITEM ~bdleat05~ #0 #0 #0 ~NONE~ ~ARMOR~

@@ -20,7 +20,7 @@ Please see the g3 forum, [here](https://www.gibberlings3.net/forums/topic/41281-
 ### KeyRing
 Table by Jailkeep Golem in Irenicus' dungeon
 
-### Tongue of Acid +3, Guardian Devil, Echo of the Fiend +3 (random)
+### Tongue of Acid +3
 Shadow Dragon (Thaxll'ssillyia), Shade Lord's Dungeon
 
 ### Vexation +2
@@ -71,7 +71,7 @@ Enge's Shop, Waukeen's Promenade
 ### Cloak of Minor Arcana
 Mekrath, Sewers, Haer' Dalis sidequest
 
-### Element's Fury +2, Acid-Etched Dagger +2 (random)
+### Element's Fury +2
 Pai'Na, Lower Tombs in Graveyard District
 
 ### Storm Pike +2
@@ -182,9 +182,6 @@ Firkraag, Windspear Hills Dungeon; Revanek, Twisted Rune Building, Athkatla Brid
 ### Shadow Dragon's Blood
 Shadow Dragon, Shade Lord's Dungeon and Shadow Plane (Rasaad's quest)
 
-### Blood-stained Ancient Scroll (Conjure Death)
-Robe of Vecna, Adventurer's Mart, Waukeen's Promenade (obtained by using the charge ability once purchased)
-
 ### Bolt of Fire +1
 Enge's shop, various other shops througout SoA and ToB
 
@@ -216,7 +213,7 @@ Various shops throughout SoA and ToB
 Higgold, Bard Strongholg, after you turn over the deed to the playhouse
 
 ### The Suncatcher +2
-Paladin, Windspear Hills, after you are tricked into killing them
+Wolfwere Hideout, changed because of conflicts with Ajantis in BG2 mod
 
 ### Amulet of Whispers
 Neera's starting equipment
@@ -346,3 +343,37 @@ Reward for completing cleric stronghold quest line (any of the three)
 
 ### Cloak of the Gargoyle
 Solaufein, Underdark, given to you if you accept his fake eggs to replace Phaere's
+
+### Secret Revealed
+Barrel, Valygar's Cabin, Umar Hills
+
+### Sword of Ruin (1075)
+2nd Floor, Saerk's House
+
+### Bloodied Guardian (1084)
+Maferan, 1st Floor, Guarded Compound, Temple District
+
+### Wand of Water Elemental Summoning (1088)
+In the cart next to the gnome, The Wild Forest
+
+### Protector of the Unworthy (1089)
+Tazok, Firkraag's Maze, Windspear Hills
+
+### Commander's Chain Mail (1090)
+Ribald, Adventurer's Mart, Waukeen's Promenade
+
+### The Gift (1091)
+2nd Floor, Irenicus's Dungeon
+
+## Unplaced Items
+
+I am open to suggestions as to where these should be placed.
+
+### Acid-Etched Dagger (1034)
+todo
+### Rhino Beatle Plate (1006)
+todo
+### Guardian Devil (1036)
+todo
+### Echo of the Fiend (1038)
+todo

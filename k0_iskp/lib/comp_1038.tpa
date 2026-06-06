@@ -34,15 +34,3 @@ Requires:
 
 Weight: 2 */
 END
-<<<<<<<< .../inlined/k0ar1402.baf
-IF
-    Global("K0_ITEMS_BDSTAF03","GLOBAL",0)
-THEN
-    RESPONSE #100
-        SetInterrupt(FALSE)
-        SetGlobal("K0_ITEMS_BDSTAF03","GLOBAL",1)
-        ActionOverride("SHADRA01",CreateItem("bdstaf03",0,0,0)) // Echo of the Fiend +3
-        SetInterrupt(FALSE)
-END
->>>>>>>>
-EXTEND_BOTTOM ~ar1402.bcs~ ~.../inlined/k0ar1402.baf~

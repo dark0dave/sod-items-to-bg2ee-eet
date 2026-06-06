@@ -1,8 +1,8 @@
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdleat07.itm~ BEGIN
   COPY ~k0_iskp/itm/bdleat07.itm~ ~override~
-    SAY NAME1 @20065 /* Leather Armor */
-    SAY NAME2 @20231 /* The Night's Embrace +3 */
-    SAY UNIDENTIFIED_DESC @20066 /* Leather armor, despite the popular misconception, is not soft and supple like the leather used to make a Ranger's boots or a Druid's robe. That kind of leather offers no better protection than common clothing.
+    SAY NAME1 @20065  /* Leather Armor */
+    SAY NAME2 @20231  /* The Night's Embrace +3 */
+    SAY UNIDENTIFIED_DESC @20066  /* Leather armor, despite the popular misconception, is not soft and supple like the leather used to make a Ranger's boots or a Druid's robe. That kind of leather offers no better protection than common clothing.
 
 STATISTICS:
 
@@ -11,7 +11,7 @@ Requires:
  4 Strength
 
 Weight: 15 */
-    SAY DESC @20232 /* A thief from Iriaebor who feared being captured by the city guard was known to have favored this armor. She designed the suit so that if she were ever incapacitated in any way, she would be rendered temporarily invisible. The armor did its job, and the thief had a long and successful career in the city. When she retired, she gifted the armor to her younger brother, and it has changed hands many times since then.
+    SAY DESC @20232  /* A thief from Iriaebor who feared being captured by the city guard was known to have favored this armor. She designed the suit so that if she were ever incapacitated in any way, she would be rendered temporarily invisible. The armor did its job, and the thief had a long and successful career in the city. When she retired, she gifted the armor to her younger brother, and it has changed hands many times since then.
 
 STATISTICS:
 
@@ -24,6 +24,7 @@ Requires:
  3 Strength
 
 Weight: 5 */
+
   COPY ~k0_iskp/spl/bdnighte.spl~ ~override~
     LPF ALTER_EFFECT
       INT_VAR
@@ -31,16 +32,5 @@ Weight: 5 */
         parameter1   = RESOLVE_STR_REF(@40012 /* Invisible */)
     END
 END
-<<<<<<<< .../inlined/k0ar0301.baf
-IF
-    Global("K0_ITEMS_BDLEAT07","GLOBAL",0)
-THEN
-    RESPONSE #100
-        SetInterrupt(FALSE)
-        SetGlobal("K0_ITEMS_BDLEAT07","GLOBAL",1)
-        TakeItemReplace("bdleat07","leat08","MAEVAR")  // The Night's Embrace +3 / Shadow Armor +3
-        ActionOverride("MAEVAR",XEquipItem("bdleat07",Myself,SLOT_ARMOR,EQUIP))  // The Night's Embrace +3
-        SetInterrupt(FALSE)
-END
->>>>>>>>
-EXTEND_BOTTOM ~ar0301.bcs~ ~.../inlined/k0ar0301.baf~  // The Night's Embrace +3
+COPY_EXISTING ~maevar.cre~ ~override~
+  REPLACE_CRE_ITEM ~bdleat07~ #0 #0 #0 ~NONE~ ~ARMOR~

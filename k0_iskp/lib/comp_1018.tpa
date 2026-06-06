@@ -196,16 +196,5 @@ However you came to this regrettable state, I hope you will take some solace in 
 Yours very truly,
 Alveus Malcanter */
 END
-<<<<<<<< .../inlined/k0ar0705.baf
-IF
-    Global("K0_ITEMS_CLCK17","GLOBAL",0)
-THEN
-    RESPONSE #100
-        SetInterrupt(FALSE)
-        SetGlobal("K0_ITEMS_CLCK17","GLOBAL",1)
-        TakeItemReplace("bdrobe01","CLCK17","MEKRATH")  // Robe of Arcane Apititude/Robe of the Evil Archmagi
-        ActionOverride("MEKRATH",XEquipItem("bdrobe01",Myself,SLOT_ARMOR,EQUIP))  //Robe of Arcane Apititude
-        SetInterrupt(FALSE)
-END
->>>>>>>>
-EXTEND_BOTTOM ~ar0705.bcs~ ~.../inlined/k0ar0705.baf~
+COPY_EXISTING ~lyros.cre~ ~override~
+  REPLACE_CRE_ITEM ~bdrobe01~ #0 #0 #0 ~IDENTIFIED~ ~ARMOR~

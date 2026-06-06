@@ -51,15 +51,3 @@ COPY_EXISTING ~bdhelm04.itm~ ~override~
       parameter1       = 0
   END  // changing color index - parameter 2 = location parameter 1 = color index number
 BUT_ONLY IF_EXISTS
-<<<<<<<< .../inlined/k0ar1402.baf
-IF
-    Global("K0_ITEMS_BDHELM04","GLOBAL",0)
-THEN
-    RESPONSE #100
-        SetInterrupt(FALSE)
-        SetGlobal("K0_ITEMS_BDHELM04","GLOBAL",1)
-        ActionOverride("SHADRA01",CreateItem("bdhelm04",0,0,0)) // The Guardian Devil
-        SetInterrupt(FALSE)
-END
->>>>>>>>
-EXTEND_BOTTOM ~ar1402.bcs~ ~.../inlined/k0ar1402.baf~

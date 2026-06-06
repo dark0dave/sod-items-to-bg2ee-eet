@@ -1,8 +1,9 @@
+// Rhino Beetle Plate
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdplat04.itm~ BEGIN
   COPY ~k0_iskp/itm/bdplat04.itm~ ~override~
-    SAY NAME1 @20075 /* Plate Mail */
-    SAY NAME2 @20161 /* Rhino Beetle Plate */
-    SAY UNIDENTIFIED_DESC @20076 /* Plate mail is a combination of chain armor with metal plates covering the vital areas such as the chest, abdomen, and groin. Similar in construction to bronze plate mail, true plate mail comprises chain and leather.
+    SAY NAME1 @20075  /* Plate Mail */
+    SAY NAME2 @20161  /* Rhino Beetle Plate */
+    SAY UNIDENTIFIED_DESC @20076  /* Plate mail is a combination of chain armor with metal plates covering the vital areas such as the chest, abdomen, and groin. Similar in construction to bronze plate mail, true plate mail comprises chain and leather.
 
 STATISTICS:
 
@@ -11,7 +12,7 @@ Requires:
  12 Strength
 
 Weight: 50 */
-    SAY DESC @20162 /* Constructed from a rhino beetle's sturdy shell, this armor offers its wearer excellent protection without impeding their motion to the same extent as traditional metal plate mail. The unusual material makes this suit of armor particularly effective against missile weapons.
+    SAY DESC @20162  /* Constructed from a rhino beetle's sturdy shell, this armor offers its wearer excellent protection without impeding their motion to the same extent as traditional metal plate mail. The unusual material makes this suit of armor particularly effective against missile weapons.
 
 STATISTICS:
 
@@ -24,19 +25,3 @@ Requires:
 
 Weight: 25 */
 END
-<<<<<<<< .../inlined/k0ar1900.baf
-IF
-  Global("K0_ITEMS_BDPLAT04","GLOBAL",0)
-THEN
-  RESPONSE #100
-    SetInterrupt(FALSE)
-    SetGlobal("K0_ITEMS_BDPLAT04","GLOBAL",1)
-    ActionOverride("TDR10A",CreateItem("bdplat04",0,0,0)) // Rhino Beetle Plate
-    ActionOverride("TDR10A",XEquipItem("bdplat04",Myself,SLOT_ARMOR,EQUIP))  // Rhino Beetle Plate
-    SetInterrupt(FALSE)
-END
->>>>>>>>
-EXTEND_BOTTOM ~ar1900.bcs~ ~.../inlined/k0ar1900.baf~
-COPY_EXISTING ~ar1900.are~ ~override~
-  WRITE_ASCII AREA_SCRIPT ~ar1900~ #8
-BUT_ONLY

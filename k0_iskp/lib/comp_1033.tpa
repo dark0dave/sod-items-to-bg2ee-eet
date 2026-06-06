@@ -13,16 +13,5 @@ Equipped abilities:
 
 Weight: 0 */
 END
-<<<<<<<< .../inlined/k0ar2000.baf
-IF
-    Global("K0_ITEMS_BDHELM12","GLOBAL",0)
-THEN
-    RESPONSE #100
-        SetInterrupt(FALSE)
-        SetGlobal("K0_ITEMS_BDHELM12","GLOBAL",1)
-        AddStoreItem("TRMER02","bdhelm12",1,1)  // Wizzard Hat
-        SetInterrupt(FALSE)
-        Continue()
-END
->>>>>>>>
-EXTEND_BOTTOM ~ar2000.bcs~ ~.../inlined/k0ar2000.baf~
+COPY_EXISTING ~wmart2.sto~ ~override~
+	ADD_STORE_ITEM ~bdhelm12~ #0 #0 #0 ~IDENTIFIED~ #1

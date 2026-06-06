@@ -36,4 +36,18 @@ COPY_EXISTING ~tooltip.2da~ ~override~
   LPF a7#normalize_table
   END
 BUT_ONLY
-COMPILE ~k0_iskp/dlg/k0udsol.d~  // Cloak of the Gargoyle
+<<<<<<<< .../inlined/k0udsol.d
+EXTEND_BOTTOM UDSVIR05 6
+  IF ~Global("K0_ITEMS_BDCLCK05","GLOBAL",0)~
+    THEN DO ~SetGlobal ("K0_ITEMS_BDCLCK05","GLOBAL",1)
+    GiveItemCreate("bdhamm01",LastTalkedToBy,0,0,0)~ GOTO K0SODIMP
+END
+
+APPEND UDSVIR05
+  IF ~~ THEN BEGIN K0SODIMP
+    SAY @80008
+    COPY_TRANS UDSVIR05 6
+  END
+END
+>>>>>>>>
+COMPILE ~.../inlined/k0udsol.d~

@@ -117,6 +117,3 @@ THEN
 END
 >>>>>>>>
 EXTEND_BOTTOM ~ar0418.bcs~ ~.../inlined/k0ar0418.baf~
-COPY_EXISTING ~ar0418.are~ ~override~
-  WRITE_ASCII AREA_SCRIPT ~ar0418~ #8
-BUT_ONLY

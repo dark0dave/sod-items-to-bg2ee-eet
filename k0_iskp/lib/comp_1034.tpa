@@ -33,16 +33,3 @@ Requires:
 Weight: 1 */
   COPY ~k0_iskp/spl/bddagg05.spl~ ~override~
 END
-<<<<<<<< .../inlined/k0ar0804.baf
-IF
-    Global("K0_ITEMS_BDDAGG05","GLOBAL",0)
-THEN
-    RESPONSE #100
-        SetInterrupt(FALSE)
-        SetGlobal("K0_ITEMS_BDDAGG05","GLOBAL",1)
-        TakeItemReplace("bddagg05","STAF01","SPPAIN")  // Acid-Etched Dagger +2
-        ActionOverride("SPPAIN",XEquipItem("bddagg05",Myself,SLOT_WEAPON0,EQUIP))  // Acid-Etched Dagger +2
-        SetInterrupt(FALSE)
-END
->>>>>>>>
-EXTEND_BOTTOM ~ar0804.bcs~ ~.../inlined/k0ar0804.baf~

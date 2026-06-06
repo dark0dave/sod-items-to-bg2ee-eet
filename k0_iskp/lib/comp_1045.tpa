@@ -36,16 +36,5 @@ Weight: 3 */
   COPY ~k0_iskp/eff/bdblun1d.eff~ ~override~
   COPY ~k0_iskp/eff/bdblun1h.eff~ ~override~
 END
-<<<<<<<< .../inlined/k0ar2000.baf
-IF
-    Global("K0_ITEMS_BDBLUN01","GLOBAL",0)
-THEN
-    RESPONSE #100
-        SetInterrupt(FALSE)
-        SetGlobal("K0_ITEMS_BDBLUN01","GLOBAL",1)
-        AddStoreItem("TRMER02","bdblun01",1,1)  // Mosela's Cudgel +2
-        SetInterrupt(FALSE)
-        Continue()
-END
->>>>>>>>
-EXTEND_BOTTOM ~ar2000.bcs~ ~.../inlined/k0ar2000.baf~
+COPY_EXISTING ~ribald.sto~ ~override~		//Ribald
+	ADD_STORE_ITEM ~bdblun01~ #0 #0 #0 ~IDENTIFIED~ #1
