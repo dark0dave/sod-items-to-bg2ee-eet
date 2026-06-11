@@ -47,6 +47,21 @@ function uniqueDesignated() {
   done
 }
 
+function checkForBam() {
+  for file in $(find . -type f -iname "*.itm" | sort | uniq ); do
+    inv=$(hexdump -s 58 -n 8 -C "${file}"  | head -1 | awk -F "|" '{print $2}'| sed "s/\.//g" | tr '[:upper:]' '[:lower:]');
+    desc=$(hexdump -s 88 -n 8 -C "${file}" | head -1 | awk -F "|" '{print $2}' | sed "s/\.//g" | tr '[:upper:]' '[:lower:]');
+    [[ -z "${inv}" ]] && continue;
+    if [[ ! -f "k0_iskp/bam/${inv}.bam" ]] then
+      echo "${file}: MISSING ${inv}";
+    fi
+    [[ -z "${desc}" ]] && continue;
+    if [[ ! -f "k0_iskp/bam/${desc}.bam" ]] then
+      echo "${file}: MISSING ${desc}";
+    fi
+  done
+}
+
 main() {
   checkIE "*bam"
   checkIE "*baf"
