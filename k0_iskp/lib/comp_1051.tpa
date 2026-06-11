@@ -21,3 +21,11 @@ Weight: 2 */
   COPY ~k0_iskp/spl/bdbrac15.spl~ ~override~
 END
 COMPILE ~k0_iskp/dlg/k0trski.d~  // Bracers of Perseverance
+
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~ibdbrc15.bam~ BEGIN
+  COPY ~k0_iskp/bam/ibdbrc15.bam~ ~override~
+END
+
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~pbrac26.bam~ BEGIN
+  COPY ~k0_iskp/bam/pbrac26.bam~ ~override~
+END

@@ -1,7 +1,4 @@
 // All SoD items
-ACTION_IF GAME_IS ~bg2ee~ BEGIN
-  COPY ~k0_iskp/bam~ ~override~
-END
 INCLUDE ~k0_iskp/lib/comp_1000.tpa~
 INCLUDE ~k0_iskp/lib/comp_1001.tpa~
 INCLUDE ~k0_iskp/lib/comp_1002.tpa~

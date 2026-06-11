@@ -58,3 +58,7 @@ EXTEND_BOTTOM ~ar2600.bcs~ ~.../inlined/k0ar2600.baf~
 COPY_EXISTING ~ar2600.are~ ~override~
   WRITE_ASCII AREA_SCRIPT ~ar2600~ #8
 BUT_ONLY
+
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~ibds1h14.bam~ BEGIN
+  COPY ~k0_iskp/bam/ibds1h14.bam~ ~override~
+END

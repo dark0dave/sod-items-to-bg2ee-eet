@@ -20,3 +20,7 @@ Equipped abilities:
 Weight: 2 */
 END
 COMPILE ~k0_iskp/dlg/k0roger.d~  // Belt of the Cunning Rogue
+
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~ibdblt03.bam~ BEGIN
+  COPY ~k0_iskp/bam/ibdblt03.bam~ ~override~
+END

@@ -22,3 +22,11 @@ COPY_EXISTING ~mourner6.dlg~ ~override~
     REPLACE_TEXTUALLY ~#27069~ ~Yes, thank you so much. *sniff* Please, take this as a token of our thanks for bringing peace to our son.  It was to be a gift for him, and I can no longer bear to look at it.  Come, my husband... let us go home.~
   END
 BUT_ONLY_IF_IT_CHANGES
+
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~ibdbrd02.bam~ BEGIN
+  COPY ~k0_iskp/bam/ibdbrd02.bam~ ~override~
+END
+
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~cbdbrd02.bam~ BEGIN
+  COPY ~k0_iskp/bam/cbdbrd02.bam~ ~override~
+END

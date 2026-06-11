@@ -27,3 +27,7 @@ COPY_EXISTING ~valyg11.cre~ ~override~
   REPLACE_CRE_ITEM ~bdclck03~ #0 #0 #0 ~IDENTIFIED~ ~CLOAK~
 COPY_EXISTING ~valyg12.cre~ ~override~
   REPLACE_CRE_ITEM ~bdclck03~ #0 #0 #0 ~IDENTIFIED~ ~CLOAK~
+
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~ibdclk03.bam~ BEGIN
+  COPY ~k0_iskp/bam/ibdclk03.bam~ ~override~
+END

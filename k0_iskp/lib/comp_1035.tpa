@@ -45,3 +45,7 @@ COPY_EXISTING ~ar1403.are~ ~override~
       fj_structure_type = itm
   END
 BUT_ONLY
+
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~ibdshl02.bam~ BEGIN
+  COPY ~k0_iskp/bam/ibdshl02.bam~ ~override~
+END

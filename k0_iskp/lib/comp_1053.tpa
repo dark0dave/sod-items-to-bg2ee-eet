@@ -33,3 +33,7 @@ COPY_EXISTING ~mazzy11.cre~ ~override~
   REPLACE_CRE_ITEM ~bdchan06~ #0 #0 #0 ~IDENTIFIED~ ~ARMOR~
 COPY_EXISTING ~mazzy12.cre~ ~override~
   REPLACE_CRE_ITEM ~bdchan06~ #0 #0 #0 ~IDENTIFIED~ ~ARMOR~
+
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~ibdchn06.bam~ BEGIN
+  COPY ~k0_iskp/bam/ibdchn06.bam~ ~override~
+END

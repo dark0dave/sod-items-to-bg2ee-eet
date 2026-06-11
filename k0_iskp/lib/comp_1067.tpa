@@ -41,3 +41,11 @@ THEN
 END
 >>>>>>>>
 EXTEND_BOTTOM ~dorn.bcs~ ~.../inlined/k0dorn.baf~
+
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~ibdplt03.bam~ BEGIN
+  COPY ~k0_iskp/bam/ibdplt03.bam~ ~override~
+END
+
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~cbdplt03.bam~ BEGIN
+  COPY ~k0_iskp/bam/cbdplt03.bam~ ~override~
+END

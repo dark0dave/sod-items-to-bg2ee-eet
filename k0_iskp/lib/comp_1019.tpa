@@ -44,3 +44,7 @@ Weight: 1 */
 END
 COPY_EXISTING ~sppain.cre~ ~override~
   ADD_CRE_ITEM ~bddagg01~ #0 #0 #0 ~NONE~ ~WEAPON~ EQUIP
+
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~ibddag01.bam~ BEGIN
+  COPY ~k0_iskp/bam/ibddag01.bam~ ~override~
+END

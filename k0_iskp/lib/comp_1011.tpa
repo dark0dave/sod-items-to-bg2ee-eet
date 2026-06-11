@@ -18,3 +18,11 @@ Weight: 2 */
 END
 COPY_EXISTING ~uhrang01.cre~ ~override~
   ADD_CRE_ITEM ~bdbrac05~ #0 #0 #0 ~NONE~ ~GLOVES~
+
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~ibdbrc05.bam~ BEGIN
+  COPY ~k0_iskp/bam/ibdbrc05.bam~ ~override~
+END
+
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~cbdbrc05.bam~ BEGIN
+  COPY ~k0_iskp/bam/cbdbrc05.bam~ ~override~
+END

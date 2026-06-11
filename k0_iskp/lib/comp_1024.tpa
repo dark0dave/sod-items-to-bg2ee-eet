@@ -25,3 +25,11 @@ COPY_EXISTING ~ar0602.are~ ~override~
       fj_structure_type = itm
   END
 BUT_ONLY
+
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~ibdkeyr.bam~ BEGIN
+  COPY ~k0_iskp/bam/ibdkeyr.bam~ ~override~
+END
+
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~cbdkeyr.bam~ BEGIN
+  COPY ~k0_iskp/bam/cbdkeyr.bam~ ~override~
+END

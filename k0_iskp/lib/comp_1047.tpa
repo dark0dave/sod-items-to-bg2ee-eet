@@ -35,3 +35,7 @@ Requires:
 Weight: 8 */
 END
 COMPILE ~k0_iskp/dlg/k0bzglor.d~  // Blazing Glory +3
+
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~iblun34.bam~ BEGIN
+  COPY ~k0_iskp/bam/iblun34.bam~ ~override~
+END

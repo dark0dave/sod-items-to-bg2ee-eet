@@ -24,3 +24,11 @@ COPY_EXISTING ~rasaad11.cre~ ~override~
   REPLACE_CRE_ITEM ~bdbrac01~ #0 #0 #0 ~IDENTIFIED~ ~WEAPON~ EQUIP
 COPY_EXISTING ~rasaad13.cre~ ~override~
   REPLACE_CRE_ITEM ~bdbrac01~ #0 #0 #0 ~IDENTIFIED~ ~WEAPON~ EQUIP
+
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdbrac01.bam~ BEGIN
+  COPY ~k0_iskp/bam/bdbrac01.bam~ ~override~
+END
+
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdcbrc01.bam~ BEGIN
+  COPY ~k0_iskp/bam/bdcbrc01.bam~ ~override~
+END

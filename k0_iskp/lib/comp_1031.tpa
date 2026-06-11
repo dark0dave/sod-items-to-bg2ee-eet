@@ -37,3 +37,11 @@ Weight: 3 */
   COPY ~k0_iskp/spl/bdsw1h08.spl~ ~override~
 END
 COMPILE ~k0_iskp/dlg/k0trgen.d~  // Dervish Crescent +2
+
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdisw108.bam~ BEGIN
+  COPY ~k0_iskp/bam/bdisw108.bam~ ~override~
+END
+
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bddsw116.bam~ BEGIN
+  COPY ~k0_iskp/bam/bddsw116.bam~ ~override~
+END

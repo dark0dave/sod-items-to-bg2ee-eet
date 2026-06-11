@@ -34,3 +34,7 @@ Weight: 2 */
 END
 COPY_EXISTING ~shop04.sto~ ~override~  // Enge's Shop
   ADD_STORE_ITEM ~bdbrac02~ #0 #0 #0 ~IDENTIFIED~ #1
+
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~ibdbrc02.bam~ BEGIN
+  COPY ~k0_iskp/bam/ibdbrc02.bam~ ~override~
+END

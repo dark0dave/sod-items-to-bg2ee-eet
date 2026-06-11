@@ -28,3 +28,7 @@ Weight: 6 */
 END
 COPY_EXISTING ~tdr10a.cre~ ~override~
   ADD_CRE_ITEM ~bdshld04~ #0 #0 #0 ~none~ ~shield~ EQUIP
+
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdishd04.bam~ BEGIN
+  COPY ~k0_iskp/bam/bdishd04.bam~ ~override~
+END

@@ -27,3 +27,11 @@ COPY_EXISTING ~nalia11.cre~ ~override~
   ADD_CRE_ITEM ~bdioun01~ #0 #0 #0 ~IDENTIFIED~ ~HELMET~
 COPY_EXISTING ~nalia13.cre~ ~override~
   ADD_CRE_ITEM ~bdioun01~ #0 #0 #0 ~IDENTIFIED~ ~HELMET~
+
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdioun01.bam~ BEGIN
+  COPY ~k0_iskp/bam/bdioun01.bam~ ~override~
+END
+
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdcion01.bam~ BEGIN
+  COPY ~k0_iskp/bam/bdcion01.bam~ ~override~
+END

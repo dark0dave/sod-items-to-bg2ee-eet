@@ -71,3 +71,7 @@ COPY_EXISTING ~tooltip.2da~ ~override~
 BUT_ONLY
 COPY_EXISTING ~neera8.cre~ ~override~
   REPLACE_CRE_ITEM ~bdamul01~ #0 #0 #0 ~IDENTIFIED~ ~AMULET~  // Amulet of Whispers
+
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~cmiscb1.bam~ BEGIN
+  COPY ~k0_iskp/bam/cmiscb1.bam~ ~override~
+END

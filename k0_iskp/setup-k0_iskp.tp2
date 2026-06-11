@@ -1,7 +1,7 @@
 BACKUP ~weidu_external/k0_iskp/backup~
 SUPPORT ~https://github.com/dark0dave/sod-items-to-bg2ee-eet/discussions~
 AUTO_EVAL_STRINGS
-VERSION ~v4.0.0.RC6~
+VERSION ~v4.0.0.RC7~
 README ~k0_iskp/readme.md~ ASK_EVERY_COMPONENT
 
 AUTO_TRA ~k0_iskp/lang/%s~

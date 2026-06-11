@@ -25,3 +25,11 @@ THEN
 END
 >>>>>>>>
 EXTEND_BOTTOM ~ar1400.bcs~ ~.../inlined/k0ar1400.baf~
+
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdmisc34.bam~ BEGIN
+  COPY ~k0_iskp/bam/bdmisc34.bam~ ~override~
+END
+
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdcmis34.bam~ BEGIN
+  COPY ~k0_iskp/bam/bdcmis34.bam~ ~override~
+END

@@ -36,3 +36,7 @@ Weight: 12 */
 END
 COPY_EXISTING ~kaypal01.cre~ ~override~
   REPLACE_CRE_ITEM ~bdhalb01~ #0 #0 #0 ~NONE~ ~WEAPON~ EQUIP
+
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~ibdhlb01.bam~ BEGIN
+  COPY ~k0_iskp/bam/ibdhlb01.bam~ ~override~
+END

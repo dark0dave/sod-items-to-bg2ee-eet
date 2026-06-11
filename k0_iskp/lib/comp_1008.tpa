@@ -19,3 +19,11 @@ Weight: 1 */
 END
 COPY_EXISTING ~firkra02.cre~ ~override~
   ADD_CRE_ITEM ~bdhelm01~ #0 #0 #0 ~NONE~ ~INV~
+
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdhelm01.bam~ BEGIN
+  COPY ~k0_iskp/bam/bdhelm01.bam~ ~override~
+END
+
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdchlm01.bam~ BEGIN
+  COPY ~k0_iskp/bam/bdchlm01.bam~ ~override~
+END

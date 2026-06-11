@@ -34,3 +34,7 @@ Weight: 2 */
 END
 COPY_EXISTING ~trmer02.sto~ ~override~  // Caravan Merchant
   ADD_STORE_ITEM ~bdbow05~ #0 #0 #0 ~IDENTIFIED~ #1
+
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~ibdbow05.bam~ BEGIN
+  COPY ~k0_iskp/bam/ibdbow05.bam~ ~override~
+END

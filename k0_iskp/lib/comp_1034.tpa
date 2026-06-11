@@ -33,3 +33,11 @@ Requires:
 Weight: 1 */
   COPY ~k0_iskp/spl/bddagg05.spl~ ~override~
 END
+
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~ibddag05.bam~ BEGIN
+  COPY ~k0_iskp/bam/ibddag05.bam~ ~override~
+END
+
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~cmisc4u.bam~ BEGIN
+  COPY ~k0_iskp/bam/cmisc4u.bam~ ~override~
+END

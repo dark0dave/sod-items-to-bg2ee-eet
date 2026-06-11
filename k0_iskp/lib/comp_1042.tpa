@@ -29,3 +29,11 @@ COPY_EXISTING ~jan11.cre~ ~override~
   ADD_CRE_ITEM ~bdamul08~ #0 #0 #0 ~IDENTIFIED~ ~AMULET~
 COPY_EXISTING ~jan12.cre~ ~override~
   ADD_CRE_ITEM ~bdamul08~ #0 #0 #0 ~IDENTIFIED~ ~AMULET~
+
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdamul08.bam~ BEGIN
+  COPY ~k0_iskp/bam/bdamul08.bam~ ~override~
+END
+
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdcaml08.bam~ BEGIN
+  COPY ~k0_iskp/bam/bdcaml08.bam~ ~override~
+END

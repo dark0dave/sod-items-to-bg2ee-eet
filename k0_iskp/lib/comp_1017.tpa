@@ -33,3 +33,11 @@ COMPILE ~k0_iskp/baf/k0pooky.baf~  // new race script to allow pooky to use the 
 COPY_EXISTING ~sevpat03.cre~ ~override~
   ADD_CRE_ITEM ~bdbrd04~ #2 #0 #0 ~NONE~ ~QITEM1~  // Screaming bagpipes
   WRITE_ASCII 0x258 dtkpooky
+
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~ibdbrd04.bam~ BEGIN
+  COPY ~k0_iskp/bam/ibdbrd04.bam~ ~override~
+END
+
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~cbdbrd04.bam~ BEGIN
+  COPY ~k0_iskp/bam/cbdbrd04.bam~ ~override~
+END

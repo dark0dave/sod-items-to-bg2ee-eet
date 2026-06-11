@@ -42,3 +42,7 @@ Weight: 4 */
 END
 COPY_EXISTING ~ohhdrago.cre~ ~override~
   REPLACE_CRE_ITEM ~bdsw1h01~ #0 #0 #0 ~NONE~ ~WEAPON~ EQUIP
+
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~ibds1h01.bam~ BEGIN
+  COPY ~k0_iskp/bam/ibds1h01.bam~ ~override~
+END

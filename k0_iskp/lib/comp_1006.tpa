@@ -25,3 +25,7 @@ Requires:
 
 Weight: 25 */
 END
+
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~ibdplt04.bam~ BEGIN
+  COPY ~k0_iskp/bam/ibdplt04.bam~ ~override~
+END

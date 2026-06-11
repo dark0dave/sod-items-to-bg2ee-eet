@@ -17,3 +17,11 @@ Equipped abilities:
 Weight: 1 */
 END
 COMPILE ~k0_iskp/dlg/k0raeli.d~  // Reed of Echoes
+
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdmisc10.bam~ BEGIN
+  COPY ~k0_iskp/bam/bdmisc10.bam~ ~override~
+END
+
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdcmis10.bam~ BEGIN
+  COPY ~k0_iskp/bam/bdcmis10.bam~ ~override~
+END

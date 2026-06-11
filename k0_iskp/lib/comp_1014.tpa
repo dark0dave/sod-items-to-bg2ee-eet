@@ -34,3 +34,7 @@ Weight: 3 */
 END
 COPY_EXISTING ~cohrvale.cre~ ~override~
   REPLACE_CRE_ITEM ~bdblun07~ #0 #0 #0 ~NONE~ ~WEAPON~ EQUIP
+
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~ibdbln07.bam~ BEGIN
+  COPY ~k0_iskp/bam/ibdbln07.bam~ ~override~
+END

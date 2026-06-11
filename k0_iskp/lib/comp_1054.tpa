@@ -86,3 +86,7 @@ COPY_EXISTING ~ohdboll.cre~ ~override~
   REPLACE_CRE_ITEM ~bdclck02~ #0 #0 #0 ~IDENTIFIED~ ~CLOAK~
 COPY_EXISTING ~ohdfirej.cre~ ~override~
   REPLACE_CRE_ITEM ~bdclck02~ #0 #0 #0 ~IDENTIFIED~ ~CLOAK~
+
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~ibdclk02.bam~ BEGIN
+  COPY ~k0_iskp/bam/ibdclk02.bam~ ~override~
+END

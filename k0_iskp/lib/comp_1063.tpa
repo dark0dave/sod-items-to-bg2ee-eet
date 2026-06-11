@@ -33,3 +33,11 @@ THEN
 END
 >>>>>>>>
 EXTEND_BOTTOM ~yoshimo.bcs~ ~.../inlined/k0yoshi.baf~
+
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~ibdion02.bam~ BEGIN
+  COPY ~k0_iskp/bam/ibdion02.bam~ ~override~
+END
+
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~cbdion02.bam~ BEGIN
+  COPY ~k0_iskp/bam/cbdion02.bam~ ~override~
+END

@@ -47,8 +47,24 @@ function uniqueDesignated() {
   done
 }
 
+function appendBamDescription() {
+  for file in $(find . -type f -iname "*comp_20*.tpa" ); do
+    item=$(grep -E "COPY.*k0_iskp/itm/.*itm" "${file}" | awk -F "/" '{print $3}' | awk -F "~" '{print $1}')
+    [[ ! -f "k0_iskp/itm/${item}" ]] && continue;
+    bam=$(hexdump -s 88 -n 8 -C "k0_iskp/itm/${item}" | head -1 | awk -F "|" '{print $2}'| sed "s/\.//g" | tr '[:upper:]' '[:lower:]')
+    if [[ -f "k0_iskp/bam/${bam}.bam" ]] then
+      cat <<EOF >> "${file}"
+
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~${bam}.bam~ BEGIN
+  COPY ~k0_iskp/bam/${bam}.bam~ ~override~
+END
+EOF
+    fi
+  done
+}
+
 function checkForBam() {
-  for file in $(find . -type f -iname "*.itm" | sort | uniq ); do
+  for file in $(find . -type f -iname "*.itm" ); do
     inv=$(hexdump -s 58 -n 8 -C "${file}"  | head -1 | awk -F "|" '{print $2}'| sed "s/\.//g" | tr '[:upper:]' '[:lower:]');
     desc=$(hexdump -s 88 -n 8 -C "${file}" | head -1 | awk -F "|" '{print $2}' | sed "s/\.//g" | tr '[:upper:]' '[:lower:]');
     [[ -z "${inv}" ]] && continue;

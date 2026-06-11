@@ -51,3 +51,7 @@ APPEND UDSVIR05
 END
 >>>>>>>>
 COMPILE ~.../inlined/k0udsol.d~
+
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~ibdclk05.bam~ BEGIN
+  COPY ~k0_iskp/bam/ibdclk05.bam~ ~override~
+END

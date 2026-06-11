@@ -33,3 +33,7 @@ Weight: 12 */
 END
 COPY_EXISTING ~roger.sto~ ~override~  // Roger the Fence
   ADD_STORE_ITEM ~bdblun05~ #0 #0 #0 ~IDENTIFIED~ #1
+
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~ibdbln05.bam~ BEGIN
+  COPY ~k0_iskp/bam/ibdbln05.bam~ ~override~
+END

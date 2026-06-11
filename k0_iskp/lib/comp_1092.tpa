@@ -50,3 +50,7 @@ END
 COPY_EXISTING ~pirsea01.cre~ ~override~
   REMOVE_CRE_ITEM ~LEAT01~
   REPLACE_CRE_ITEM ~bdleat01~ #0 #0 #0 ~NONE~ ~ARMOR~ EQUIP
+
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~ibdlet01.bam~ BEGIN
+  COPY ~k0_iskp/bam/ibdlet01.bam~ ~override~
+END

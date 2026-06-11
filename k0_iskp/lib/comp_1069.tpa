@@ -34,3 +34,7 @@ Weight: 0 */
 END
 COPY_EXISTING ~ribald.sto~ ~override~  // Ribald
   ADD_STORE_ITEM ~bdslng01~ #1 #0 #0 ~IDENTIFIED~ #1
+
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~ibdsln01.bam~ BEGIN
+  COPY ~k0_iskp/bam/ibdsln01.bam~ ~override~
+END

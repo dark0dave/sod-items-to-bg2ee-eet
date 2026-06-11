@@ -28,3 +28,7 @@ Weight: 6 */
   COPY ~k0_iskp/eff/bdshld03.eff~ ~override~
 END
 COMPILE ~k0_iskp/dlg/k0scsai.d~  // Shield of Egons +2
+
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~ibdshl03.bam~ BEGIN
+  COPY ~k0_iskp/bam/ibdshl03.bam~ ~override~
+END

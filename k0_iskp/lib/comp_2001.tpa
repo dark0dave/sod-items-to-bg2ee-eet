@@ -22,3 +22,11 @@ COPY_EXISTING ~spsamar.cre~ ~override~
   ADD_CRE_ITEM ~bdsilk01~ #0 #0 #0 ~IDENTIFIED~ ~INV~
 COPY_EXISTING ~spphil.cre~ ~override~
   ADD_CRE_ITEM ~bdsilk01~ #0 #0 #0 ~IDENTIFIED~ ~INV~
+
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdsilk01.bam~ BEGIN
+  COPY ~k0_iskp/bam/bdsilk01.bam~ ~override~
+END
+
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdcslk01.bam~ BEGIN
+  COPY ~k0_iskp/bam/bdcslk01.bam~ ~override~
+END

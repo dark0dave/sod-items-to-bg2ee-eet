@@ -24,3 +24,7 @@ COPY_EXISTING ~aerie10.cre~ ~override~
   REPLACE_CRE_ITEM ~bdrobe04~ #0 #0 #0 ~IDENTIFIED~ ~ARMOR~
 COPY_EXISTING ~aerie11.cre~ ~override~
   REPLACE_CRE_ITEM ~bdrobe04~ #0 #0 #0 ~IDENTIFIED~ ~ARMOR~
+
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~ibdrob04.bam~ BEGIN
+  COPY ~k0_iskp/bam/ibdrob04.bam~ ~override~
+END

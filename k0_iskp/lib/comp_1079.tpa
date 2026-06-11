@@ -31,3 +31,11 @@ EXTEND_BOTTOM ~ar0602.bcs~ ~.../inlined/k0ar0602.baf~
 COPY_EXISTING ~ar0602.are~ ~override~
   WRITE_ASCII AREA_SCRIPT ~ar0602~ #8
 BUT_ONLY
+
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~imiscag.bam~ BEGIN
+  COPY ~k0_iskp/bam/imiscag.bam~ ~override~
+END
+
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~cmiscag.bam~ BEGIN
+  COPY ~k0_iskp/bam/cmiscag.bam~ ~override~
+END

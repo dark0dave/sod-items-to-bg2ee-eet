@@ -57,3 +57,11 @@ EXTEND_BOTTOM ~vaelasa.bcs~ ~.../inlined/k0vaela.baf~  // allows vaelasa to use 
 ACTION_IF FILE_EXISTS_IN_GAME ~vaelasa.dlg~ BEGIN
   COMPILE ~k0_iskp/dlg/k0vaela.d~  // update vaelasa's dialogue to give FBQ as reward for returning acorns, if it's in her inventory
 END
+
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~ibdbrd01.bam~ BEGIN
+  COPY ~k0_iskp/bam/ibdbrd01.bam~ ~override~
+END
+
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~cbdbrd01.bam~ BEGIN
+  COPY ~k0_iskp/bam/cbdbrd01.bam~ ~override~
+END

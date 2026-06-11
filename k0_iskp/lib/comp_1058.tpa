@@ -55,3 +55,7 @@ EXTEND_BOTTOM ~ar0712.bcs~ ~.../inlined/k0ar0712.baf~
 COPY_EXISTING ~ar0712.are~ ~override~
   WRITE_ASCII AREA_SCRIPT ~ar0712~ #8
 BUT_ONLY
+
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~ibdham06.bam~ BEGIN
+  COPY ~k0_iskp/bam/ibdham06.bam~ ~override~
+END

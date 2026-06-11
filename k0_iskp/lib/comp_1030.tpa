@@ -20,3 +20,7 @@ Weight: 0 */
 END
 COPY_EXISTING ~ddguard7.cre~ ~override~
   ADD_CRE_ITEM ~bdring10~ #0 #0 #0 ~NONE~ ~INV~
+
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~ibdrng10.bam~ BEGIN
+  COPY ~k0_iskp/bam/ibdrng10.bam~ ~override~
+END

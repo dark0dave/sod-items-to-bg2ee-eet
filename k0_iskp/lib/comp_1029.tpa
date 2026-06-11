@@ -34,3 +34,7 @@ Weight: 5 */
 END
 COPY_EXISTING ~maevar.cre~ ~override~
   REPLACE_CRE_ITEM ~bdleat07~ #0 #0 #0 ~NONE~ ~ARMOR~
+
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~ibdlet07.bam~ BEGIN
+  COPY ~k0_iskp/bam/ibdlet07.bam~ ~override~
+END

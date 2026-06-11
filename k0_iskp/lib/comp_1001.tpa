@@ -43,3 +43,7 @@ Weight: 9 */
 END
 COPY_EXISTING ~anomen10.cre~ ~override~
   REPLACE_CRE_ITEM ~bdblun04~ #0 #0 #0 ~IDENTIFIED~ ~WEAPON~ EQUIP
+
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~ibdbln04.bam~ BEGIN
+  COPY ~k0_iskp/bam/ibdbln04.bam~ ~override~
+END

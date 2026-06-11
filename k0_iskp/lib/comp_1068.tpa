@@ -43,3 +43,7 @@ EXTEND_BOTTOM ~ar0300.bcs~ ~.../inlined/k0ar0300.baf~
 COPY_EXISTING ~ar0300.are~ ~override~
   WRITE_ASCII AREA_SCRIPT ~ar0300~ #8
 BUT_ONLY
+
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~ibdrob01.bam~ BEGIN
+  COPY ~k0_iskp/bam/ibdrob01.bam~ ~override~
+END

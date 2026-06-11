@@ -21,3 +21,7 @@ Weight: 2 */
 END
 COPY_EXISTING ~tazok.cre~ ~override~
   ADD_CRE_ITEM ~bdbelt04~ #0 #0 #0 ~none~ ~belt~ EQUIP
+
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~ibdblt04.bam~ BEGIN
+  COPY ~k0_iskp/bam/ibdblt04.bam~ ~override~
+END

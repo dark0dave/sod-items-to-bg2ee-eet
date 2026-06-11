@@ -43,3 +43,7 @@ Weight: 3 */
 END
 COPY_EXISTING ~bshop02.sto~ ~override~
   ADD_STORE_ITEM ~bdsw1h25~ #1 #0 #0 ~IDENTIFIED~ #1
+
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~ibds1h25.bam~ BEGIN
+  COPY ~k0_iskp/bam/ibds1h25.bam~ ~override~
+END

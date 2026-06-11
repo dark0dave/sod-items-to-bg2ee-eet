@@ -45,3 +45,7 @@ Weight: 12 */
 END
 COPY_EXISTING ~bernard5.sto~ ~override~  // Bernard
   ADD_STORE_ITEM ~bdsw2h02~ #0 #0 #0 ~IDENTIFIED~ #1
+
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~ibds2h02.bam~ BEGIN
+  COPY ~k0_iskp/bam/ibds2h02.bam~ ~override~
+END

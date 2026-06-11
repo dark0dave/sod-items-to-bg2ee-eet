@@ -198,3 +198,7 @@ Alveus Malcanter */
 END
 COPY_EXISTING ~lyros.cre~ ~override~
   REPLACE_CRE_ITEM ~bdrobe01~ #0 #0 #0 ~IDENTIFIED~ ~ARMOR~
+
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdclck06.bam~ BEGIN
+  COPY ~k0_iskp/bam/bdclck06.bam~ ~override~
+END

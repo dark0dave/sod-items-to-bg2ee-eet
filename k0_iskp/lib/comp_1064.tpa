@@ -38,3 +38,7 @@ THEN
 END
 >>>>>>>>
 EXTEND_BOTTOM ~ar2000.bcs~ ~.../inlined/k0ar2000.baf~
+
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~ibdlet03.bam~ BEGIN
+  COPY ~k0_iskp/bam/ibdlet03.bam~ ~override~
+END

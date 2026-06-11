@@ -27,3 +27,7 @@ COPY_EXISTING ~haer13.cre~ ~override~
   ADD_CRE_ITEM ~bdbelt01~ #0 #0 #0 ~NONE~ ~BELT~
 COPY_EXISTING ~haer15.cre~ ~override~
   ADD_CRE_ITEM ~bdbelt01~ #0 #0 #0 ~NONE~ ~BELT~
+
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdibelt1.bam~ BEGIN
+  COPY ~k0_iskp/bam/bdibelt1.bam~ ~override~
+END

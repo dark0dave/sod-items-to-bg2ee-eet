@@ -65,3 +65,7 @@ COPY_EXISTING ~sarbar01.sto~ ~override~  // The Tankard Tree
   ADD_STORE_ITEM ~bdarow01~ #1 #0 #0 ~IDENTIFIED~ #5
 COPY_EXISTING ~roger.sto~ ~override~  // Roger the Fence
   ADD_STORE_ITEM ~bdarow01~ #1 #0 #0 ~IDENTIFIED~ #5
+
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~ibdaro01.bam~ BEGIN
+  COPY ~k0_iskp/bam/ibdaro01.bam~ ~override~
+END

@@ -35,3 +35,7 @@ Weight: 3 */
 END
 COPY_EXISTING ~gall.cre~ ~override~
   REPLACE_CRE_ITEM ~bdbow04~ #0 #0 #0 ~NONE~ ~WEAPON~ EQUIP TWOHANDED
+
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~ibdbow04.bam~ BEGIN
+  COPY ~k0_iskp/bam/ibdbow04.bam~ ~override~
+END

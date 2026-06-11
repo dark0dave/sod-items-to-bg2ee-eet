@@ -51,3 +51,7 @@ COPY_EXISTING ~bdhelm04.itm~ ~override~
       parameter1       = 0
   END  // changing color index - parameter 2 = location parameter 1 = color index number
 BUT_ONLY IF_EXISTS
+
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~ibdhel04.bam~ BEGIN
+  COPY ~k0_iskp/bam/ibdhel04.bam~ ~override~
+END

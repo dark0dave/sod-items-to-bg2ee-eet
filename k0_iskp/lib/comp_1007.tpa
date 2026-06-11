@@ -21,3 +21,7 @@ Weight: 1 */
 END
 COPY_EXISTING ~bmthief.sto~ ~override~  // Black Market Thief
   ADD_STORE_ITEM ~bdboot01~ #0 #0 #0 ~IDENTIFIED~ #1
+
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~ibdbot01.bam~ BEGIN
+  COPY ~k0_iskp/bam/ibdbot01.bam~ ~override~
+END

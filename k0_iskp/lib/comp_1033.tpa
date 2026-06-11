@@ -15,3 +15,11 @@ Weight: 0 */
 END
 COPY_EXISTING ~wmart2.sto~ ~override~
 	ADD_STORE_ITEM ~bdhelm12~ #0 #0 #0 ~IDENTIFIED~ #1
+
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~ibdhel12.bam~ BEGIN
+  COPY ~k0_iskp/bam/ibdhel12.bam~ ~override~
+END
+
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~cbdhel12.bam~ BEGIN
+  COPY ~k0_iskp/bam/cbdhel12.bam~ ~override~
+END

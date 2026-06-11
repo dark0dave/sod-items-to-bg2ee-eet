@@ -27,3 +27,11 @@ Weight: 30 */
 END
 COPY_EXISTING ~kproen01.cre~ ~override~
   REPLACE_CRE_ITEM ~bdplat01~ #0 #0 #0 ~NONE~ ~ARMOR~
+
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~ibdplt01.bam~ BEGIN
+  COPY ~k0_iskp/bam/ibdplt01.bam~ ~override~
+END
+
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~cbdplt01.bam~ BEGIN
+  COPY ~k0_iskp/bam/cbdplt01.bam~ ~override~
+END

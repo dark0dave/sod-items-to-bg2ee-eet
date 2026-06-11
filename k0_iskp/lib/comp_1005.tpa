@@ -50,3 +50,7 @@ THEN
 END
 >>>>>>>>
 EXTEND_BOTTOM ~ar1402~ ~.../inlined/k0ar1402.baf~
+
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~ibds1h02.bam~ BEGIN
+  COPY ~k0_iskp/bam/ibds1h02.bam~ ~override~
+END
