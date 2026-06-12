@@ -1,0 +1,44 @@
+// Shining Bolt
+
+ACTION_IF !FILE_CONTAINS_EVALUATED(~spell.ids~ ~INNATE_SHINING_BOLT~) BEGIN
+
+  ADD_SPELL ~k0_iskp/spl/bdcaela4.spl~ 4 1 INNATE_SHINING_BOLT
+LPF ALTER_SPELL_HEADER INT_VAR projectile = EVAL "%dtkshblt%" END
+SPRINT current_spell_res "%DEST_RES%"
+SAY NAME1 @3025 /* Shining Bolt */
+SAY NAME2 @3025 /* Shining Bolt */
+SAY UNIDENTIFIED_DESC @3026 /* Shining Bolt
+(Invocation/Evocation)
+
+Level: 1
+Range: 60 ft.
+Duration: Instant
+Casting Time: 1
+Area of Effect: 1 creature
+Saving Throw: None
+
+This ability allows Anomen to hurl a bolt of divine energy at an enemy once per day, dealing them 5d6 points of magic damage. Undead creatures and fiends are particularly susceptible to the bolt's effects, suffering double damage when they are struck. The target's Magic Resistance, if any, does not affect this ability. */
+SAY DESC @3026 /* Shining Bolt
+(Invocation/Evocation)
+
+Level: 1
+Range: 60 ft.
+Duration: Instant
+Casting Time: 1
+Area of Effect: 1 creature
+Saving Throw: None
+
+This ability allows Anomen to hurl a bolt of divine energy at an enemy once per day, dealing them 5d6 points of magic damage. Undead creatures and fiends are particularly susceptible to the bolt's effects, suffering double damage when they are struck. The target's Magic Resistance, if any, does not affect this ability. */
+END
+COPY_EXISTING
+  ~spin678.spl~ ~override~  // Adds spell to reward given to Anomen for completing quest
+  LPF ADD_SPELL_EFFECT
+    INT_VAR
+      opcode       = 147
+      target       = 1
+      timing       = 1
+      probability1 = 100
+    STR_VAR
+      resource = EVAL ~%current_spell_res%~
+  END
+BUT_ONLY
