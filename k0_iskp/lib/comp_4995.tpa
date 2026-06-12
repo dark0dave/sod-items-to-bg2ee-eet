@@ -1,0 +1,6 @@
+// All Sod spells
+
+INCLUDE ~k0_iskp/lib/comp_4000.tpa~
+INCLUDE ~k0_iskp/lib/comp_4001.tpa~
+INCLUDE ~k0_iskp/lib/comp_4002.tpa~
+INCLUDE ~k0_iskp/lib/comp_4003.tpa~

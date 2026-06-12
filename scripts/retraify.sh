@@ -6,6 +6,7 @@ retraify() {
   sed -i 's/ \/\*.*\*\///g' "${1}"
   weidu --nogame --traify-comment --traify-old-tra "${2}" --traify "${1}"
   mv "${1::-4}.tra" "${2}"
+  chmod 644 "${1}"
 }
 
 main() {

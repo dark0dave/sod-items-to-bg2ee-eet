@@ -1,0 +1,176 @@
+// Faerie Fire
+
+ACTION_IF !FILE_CONTAINS_EVALUATED(~spell.ids~ ~CLERIC_FAERIE_FIRE~) BEGIN
+
+  LAF dtk_new_portrait_icon
+    INT_VAR
+      string = RESOLVE_STR_REF(@5066 /* Faerie Fire */)
+    STR_VAR
+      bam_file = dtkfaerp
+    RET
+      icon
+  END
+  ADD_SPELL ~k0_iskp/spl/dtkfaeri.spl~ 1 1 CLERIC_FAERIE_FIRE
+LPF ALTER_SPELL_HEADER INT_VAR target = 4 projectile = EVAL "%dtkfaeri%" STR_VAR icon = dtkfaerb END
+SPRINT current_spell_res "%DEST_RES%"
+SAY NAME1 @3023 /* Faerie Fire */
+SAY NAME2 @3023 /* Faerie Fire */
+SAY UNIDENTIFIED_DESC @3024 /* Faerie Fire
+(Alteration)
+
+Level: 1
+Sphere: Weather
+Range: Sight
+Duration: 4 rounds/level
+Casting Time: 4
+Area of Effect: 10-ft. radius
+Saving Throw: None
+
+This spell outlines one or more creatures with a pale violet glow, making positions and movements easily visible. Outlined creatures are easier to strike, giving them an Armor Class penalty of -2. */
+SAY DESC @3024 /* Faerie Fire
+(Alteration)
+
+Level: 1
+Sphere: Weather
+Range: Sight
+Duration: 4 rounds/level
+Casting Time: 4
+Area of Effect: 10-ft. radius
+Saving Throw: None
+
+This spell outlines one or more creatures with a pale violet glow, making positions and movements easily visible. Outlined creatures are easier to strike, giving them an Armor Class penalty of -2. */
+WRITE_ASCII 0x3a dtkfaerc
+LPF ALTER_EFFECT INT_VAR match_opcode = 142 parameter2 = icon END
+LPF ALTER_EFFECT INT_VAR match_opcode = 139 parameter1 = RESOLVE_STR_REF(@3023 /* Faerie Fire */) END
+LPF ALTER_EFFECT INT_VAR match_opcode = 206 STR_VAR resource = EVAL ~%current_spell_res%~ END
+LPF DELETE_EFFECT INT_VAR match_opcode = 215 END
+END
+
+COPY ~k0_iskp/itm/blankpr.itm~ ~override/dtkfaeri.itm~
+  SAY NAME2 @3023 /* Faerie Fire */
+  SAY DESC @3024 /* Faerie Fire
+(Alteration)
+
+Level: 1
+Sphere: Weather
+Range: Sight
+Duration: 4 rounds/level
+Casting Time: 4
+Area of Effect: 10-ft. radius
+Saving Throw: None
+
+This spell outlines one or more creatures with a pale violet glow, making positions and movements easily visible. Outlined creatures are easier to strike, giving them an Armor Class penalty of -2. */
+  LPF dtk_scroll
+    INT_VAR
+      opcode     = 148
+      target_hdr = 4
+      range      = 30
+      price      = 375
+    STR_VAR
+      spell = EVAL ~%current_spell_res%~
+  END
+  LPF ALTER_EFFECT
+    INT_VAR
+      match_opcode = 148
+      target       = 1
+  END
+
+ACTION_IF GAME_IS ~eet~ BEGIN  // Modifies existing scroll and spell for EET games
+  LAF dtk_new_portrait_icon
+    INT_VAR
+      string = RESOLVE_STR_REF(@5066 /* Faerie Fire */)
+    STR_VAR
+      bam_file = dtkfaerp
+    RET
+      icon
+  END
+  ADD_SPELL ~k0_iskp/spl/dtkfaeri.spl~ 1 2 CLERIC_FAERIE_FIRE  // adding to different level to clear spell.ids reference - fixes priest spell table so they can use
+  ADD_SPELL ~k0_iskp/spl/dtkfaeri.spl~ 1 1 CLERIC_FAERIE_FIRE  // adding second time to restore correct level
+LPF ALTER_SPELL_HEADER INT_VAR target = 4 projectile = EVAL "%dtkfaeri%" STR_VAR icon = dtkfaerb END
+SPRINT current_spell_res "%DEST_RES%"
+SAY NAME1 @3023 /* Faerie Fire */
+SAY NAME2 @3023 /* Faerie Fire */
+SAY UNIDENTIFIED_DESC @3024 /* Faerie Fire
+(Alteration)
+
+Level: 1
+Sphere: Weather
+Range: Sight
+Duration: 4 rounds/level
+Casting Time: 4
+Area of Effect: 10-ft. radius
+Saving Throw: None
+
+This spell outlines one or more creatures with a pale violet glow, making positions and movements easily visible. Outlined creatures are easier to strike, giving them an Armor Class penalty of -2. */
+SAY DESC @3024 /* Faerie Fire
+(Alteration)
+
+Level: 1
+Sphere: Weather
+Range: Sight
+Duration: 4 rounds/level
+Casting Time: 4
+Area of Effect: 10-ft. radius
+Saving Throw: None
+
+This spell outlines one or more creatures with a pale violet glow, making positions and movements easily visible. Outlined creatures are easier to strike, giving them an Armor Class penalty of -2. */
+WRITE_ASCII 0x3a dtkfaerc
+LPF ALTER_EFFECT INT_VAR match_opcode = 142 parameter2 = icon END
+LPF ALTER_EFFECT INT_VAR match_opcode = 139 parameter1 = RESOLVE_STR_REF(@3023 /* Faerie Fire */) END
+LPF ALTER_EFFECT INT_VAR match_opcode = 206 STR_VAR resource = EVAL ~%current_spell_res%~ END
+LPF DELETE_EFFECT INT_VAR match_opcode = 215 END
+  COPY_EXISTING ~bdscrl1b.itm~ ~override~
+    WRITE_ASCII 0x3a dtkfaera
+    LPF ALTER_ITEM_HEADER
+      INT_VAR
+        header = 1
+        target = 4
+      STR_VAR
+        icon = dtkfaera
+    END
+    LPF ALTER_EFFECT
+      INT_VAR
+        match_opcode = 146
+        opcode       = 148
+        target       = 1
+        range        = 30
+      STR_VAR
+        resource = EVAL ~%current_spell_res%~
+    END
+END
+
+ACTION_IF GAME_IS ~eet~ BEGIN  // placing scrolls for EET games
+  COPY_EXISTING ~highhedg.sto~ ~override~  // High Hedge
+    ADD_STORE_ITEM ~bdscrl1b.itm~ #0 #0 #0 ~IDENTIFIED~ #2
+  COPY_EXISTING ~sto0703.sto~ ~override~  // Sorcerous Sundries
+    ADD_STORE_ITEM ~bdscrl1b.itm~ #0 #0 #0 ~IDENTIFIED~ #2
+  COPY_EXISTING ~bdsorcsc.sto~ ~override~  // Sorcerous Sundries - SoD
+    ADD_STORE_ITEM ~bdscrl1b.itm~ #0 #0 #0 ~IDENTIFIED~ #2
+  COPY_EXISTING ~scrolls.sto~ ~override~  // Lady Yuth
+    ADD_STORE_ITEM ~bdscrl1b.itm~ #0 #0 #0 ~IDENTIFIED~ #2
+  COPY_EXISTING ~ohbmolza.sto~ ~override~  // Molzahn of Tymora
+    ADD_STORE_ITEM ~bdscrl1b.itm~ #0 #0 #0 ~IDENTIFIED~ #2
+  COPY_EXISTING ~ohnprie1.sto~ ~override~  // Molzahn of Tymora
+    ADD_STORE_ITEM ~bdscrl1b.itm~ #0 #0 #0 ~IDENTIFIED~ #2
+  COPY_EXISTING ~ohnscrme.sto~ ~override~  // Merchant
+    ADD_STORE_ITEM ~bdscrl1b.itm~ #0 #0 #0 ~IDENTIFIED~ #2
+  COPY_EXISTING ~bpding01.sto~ ~override~  // Dinguer the Mad
+    ADD_STORE_ITEM ~bdscrl1a.itm~ #0 #0 #0 ~IDENTIFIED~ #2
+  COPY_EXISTING ~bdpolvi.sto~ ~override~  // Crusader Priest Polvi
+    ADD_STORE_ITEM ~bdscrl1a.itm~ #0 #0 #0 ~IDENTIFIED~ #2
+  COPY_EXISTING ~sahpr1.sto~ ~override~  // Temple of Sekloha
+    ADD_STORE_ITEM ~bdscrl1a.itm~ #0 #0 #0 ~IDENTIFIED~ #2
+END
+
+ACTION_IF GAME_IS ~bg2ee~ BEGIN  // placing scrolls for BG2EE games
+  COPY_EXISTING ~scrolls.sto~ ~override~  // Lady Yuth
+    ADD_STORE_ITEM ~dtkfaeri.itm~ #0 #0 #0 ~IDENTIFIED~ #2
+  COPY_EXISTING ~ohbmolza.sto~ ~override~  // Molzahn of Tymora
+    ADD_STORE_ITEM ~dtkfaeri.itm~ #0 #0 #0 ~IDENTIFIED~ #2
+  COPY_EXISTING ~ohnprie1.sto~ ~override~  // Molzahn of Tymora
+    ADD_STORE_ITEM ~dtkfaeri.itm~ #0 #0 #0 ~IDENTIFIED~ #2
+  COPY_EXISTING ~ohnscrme.sto~ ~override~  // Merchant
+    ADD_STORE_ITEM ~dtkfaeri.itm~ #0 #0 #0 ~IDENTIFIED~ #2
+  COPY_EXISTING ~sahpr1.sto~ ~override~  // Temple of Sekloha
+    ADD_STORE_ITEM ~dtkfaeri.itm~ #0 #0 #0 ~IDENTIFIED~ #2
+END

@@ -1,0 +1,241 @@
+// Darkness 15' Radius
+
+ACTION_IF !FILE_CONTAINS_EVALUATED(~spell.ids~ ~WIZARD_DARKNESS_15_FOOT~) BEGIN
+
+  ADD_SPELL ~k0_iskp/spl/dtkdarkn.spl~ 2 2 WIZARD_DARKNESS_15_FOOT
+LPF ALTER_SPELL_HEADER INT_VAR projectile = EVAL "%dtkdarkn%" END
+SPRINT current_spell_res "%DEST_RES%"
+SAY NAME1 @3021 /* Darkness, 15' Radius */
+SAY NAME2 @3021 /* Darkness, 15' Radius */
+SAY UNIDENTIFIED_DESC @3022 /* Darkness, 15' Radius
+(Alteration)
+
+Level: 2
+Range: 30 ft.
+Duration: 1 turn
+Casting Time: 2
+Area of Effect: 15-ft. radius
+Saving Throw: None
+
+This spell causes total, impenetrable darkness. Neither normal nor magical light works in the area of effect. All vision (including infravision) is severely limited; anyone hostile caught in the area of effect is for all practical purposes blinded as per the 1st-level wizard spell. Creatures that leave the area covered by darkness will have their vision restored after 1 round. */
+SAY DESC @3022 /* Darkness, 15' Radius
+(Alteration)
+
+Level: 2
+Range: 30 ft.
+Duration: 1 turn
+Casting Time: 2
+Area of Effect: 15-ft. radius
+Saving Throw: None
+
+This spell causes total, impenetrable darkness. Neither normal nor magical light works in the area of effect. All vision (including infravision) is severely limited; anyone hostile caught in the area of effect is for all practical purposes blinded as per the 1st-level wizard spell. Creatures that leave the area covered by darkness will have their vision restored after 1 round. */
+LPF ALTER_EFFECT INT_VAR match_opcode = 318 STR_VAR resource = EVAL ~%current_spell_res%~ END
+  COPY
+    ~k0_iskp/spl/dtkdarkn.spl~ ~override~  // second copy for item use, prevents problems, allows variances
+    LPF ALTER_SPELL_HEADER
+      INT_VAR
+        projectile = EVAL "%dtkdarkn%"
+    END
+    SAY NAME1 @3021 /* Darkness, 15' Radius */
+    SAY NAME2 @3021 /* Darkness, 15' Radius */
+    SAY UNIDENTIFIED_DESC @3022 /* Darkness, 15' Radius
+(Alteration)
+
+Level: 2
+Range: 30 ft.
+Duration: 1 turn
+Casting Time: 2
+Area of Effect: 15-ft. radius
+Saving Throw: None
+
+This spell causes total, impenetrable darkness. Neither normal nor magical light works in the area of effect. All vision (including infravision) is severely limited; anyone hostile caught in the area of effect is for all practical purposes blinded as per the 1st-level wizard spell. Creatures that leave the area covered by darkness will have their vision restored after 1 round. */
+    SAY DESC @3022 /* Darkness, 15' Radius
+(Alteration)
+
+Level: 2
+Range: 30 ft.
+Duration: 1 turn
+Casting Time: 2
+Area of Effect: 15-ft. radius
+Saving Throw: None
+
+This spell causes total, impenetrable darkness. Neither normal nor magical light works in the area of effect. All vision (including infravision) is severely limited; anyone hostile caught in the area of effect is for all practical purposes blinded as per the 1st-level wizard spell. Creatures that leave the area covered by darkness will have their vision restored after 1 round. */
+    LPF ALTER_EFFECT
+      INT_VAR
+        match_opcode = 318
+      STR_VAR
+        resource = dtkdarkn
+    END
+END
+
+COPY ~k0_iskp/itm/blank.itm~ ~override/dtkdarkn.itm~
+  SAY NAME2 @3021 /* Darkness, 15' Radius */
+  SAY DESC @3022 /* Darkness, 15' Radius
+(Alteration)
+
+Level: 2
+Range: 30 ft.
+Duration: 1 turn
+Casting Time: 2
+Area of Effect: 15-ft. radius
+Saving Throw: None
+
+This spell causes total, impenetrable darkness. Neither normal nor magical light works in the area of effect. All vision (including infravision) is severely limited; anyone hostile caught in the area of effect is for all practical purposes blinded as per the 1st-level wizard spell. Creatures that leave the area covered by darkness will have their vision restored after 1 round. */
+  LPF dtk_scroll
+    INT_VAR
+      opcode     = 148
+      unusable1  = BIT4
+      target_hdr = 4
+      range      = 30
+      price      = 450
+    STR_VAR
+      spell = EVAL ~%current_spell_res%~
+  END
+  LPF ALTER_EFFECT
+    INT_VAR
+      match_opcode = 148
+      target       = 1
+  END
+
+ACTION_IF GAME_IS ~eet~ BEGIN  // Modifies existing for EET games
+  ADD_SPELL ~sod2bg2_iu/spl/dtkdarkn.spl~ 2 3 WIZARD_DARKNESS_15_FOOT  // adding first as different level to remove existing - this fixes spell for sorc spell progression
+  ADD_SPELL ~sod2bg2_iu/spl/dtkdarkn.spl~ 2 2 WIZARD_DARKNESS_15_FOOT  // adding second time - removes previous and restores correct level and allows sorc to learn
+LPF ALTER_SPELL_HEADER INT_VAR projectile = EVAL "%dtkdarkn%" END
+SPRINT current_spell_res "%DEST_RES%"
+SAY NAME1 @3021 /* Darkness, 15' Radius */
+SAY NAME2 @3021 /* Darkness, 15' Radius */
+SAY UNIDENTIFIED_DESC @3022 /* Darkness, 15' Radius
+(Alteration)
+
+Level: 2
+Range: 30 ft.
+Duration: 1 turn
+Casting Time: 2
+Area of Effect: 15-ft. radius
+Saving Throw: None
+
+This spell causes total, impenetrable darkness. Neither normal nor magical light works in the area of effect. All vision (including infravision) is severely limited; anyone hostile caught in the area of effect is for all practical purposes blinded as per the 1st-level wizard spell. Creatures that leave the area covered by darkness will have their vision restored after 1 round. */
+SAY DESC @3022 /* Darkness, 15' Radius
+(Alteration)
+
+Level: 2
+Range: 30 ft.
+Duration: 1 turn
+Casting Time: 2
+Area of Effect: 15-ft. radius
+Saving Throw: None
+
+This spell causes total, impenetrable darkness. Neither normal nor magical light works in the area of effect. All vision (including infravision) is severely limited; anyone hostile caught in the area of effect is for all practical purposes blinded as per the 1st-level wizard spell. Creatures that leave the area covered by darkness will have their vision restored after 1 round. */
+LPF ALTER_EFFECT INT_VAR match_opcode = 318 STR_VAR resource = EVAL ~%current_spell_res%~ END
+  COPY
+    ~k0_iskp/spl/dtkdarkn.spl~ ~override~  // second copy for item use, prevents problems, allows variances
+    LPF ALTER_SPELL_HEADER
+      INT_VAR
+        projectile = EVAL "%dtkdarkn%"
+    END
+    SAY NAME1 @3021 /* Darkness, 15' Radius */
+    SAY NAME2 @3021 /* Darkness, 15' Radius */
+    SAY UNIDENTIFIED_DESC @3022 /* Darkness, 15' Radius
+(Alteration)
+
+Level: 2
+Range: 30 ft.
+Duration: 1 turn
+Casting Time: 2
+Area of Effect: 15-ft. radius
+Saving Throw: None
+
+This spell causes total, impenetrable darkness. Neither normal nor magical light works in the area of effect. All vision (including infravision) is severely limited; anyone hostile caught in the area of effect is for all practical purposes blinded as per the 1st-level wizard spell. Creatures that leave the area covered by darkness will have their vision restored after 1 round. */
+    SAY DESC @3022 /* Darkness, 15' Radius
+(Alteration)
+
+Level: 2
+Range: 30 ft.
+Duration: 1 turn
+Casting Time: 2
+Area of Effect: 15-ft. radius
+Saving Throw: None
+
+This spell causes total, impenetrable darkness. Neither normal nor magical light works in the area of effect. All vision (including infravision) is severely limited; anyone hostile caught in the area of effect is for all practical purposes blinded as per the 1st-level wizard spell. Creatures that leave the area covered by darkness will have their vision restored after 1 round. */
+    LPF ALTER_EFFECT
+      INT_VAR
+        match_opcode = 318
+      STR_VAR
+        resource = dtkdarkn
+    END
+  COPY_EXISTING ~bdscrl2a.itm~ ~override~
+    WRITE_ASCII 0x3a dtkdarka
+    LPF ALTER_ITEM_HEADER
+      INT_VAR
+        header = 1
+        target = 4
+      STR_VAR
+        icon = dtkdarka
+    END
+    LPF ALTER_ITEM_HEADER
+      INT_VAR
+        header = 2
+      STR_VAR
+        icon = dtkdarka
+    END
+    LPF ALTER_EFFECT
+      INT_VAR
+        match_opcode = 146
+        opcode       = 148
+        target       = 1
+      STR_VAR
+        resource = EVAL ~%current_spell_res%~
+    END
+    LPF ALTER_EFFECT
+      INT_VAR
+        match_opcode = 147
+      STR_VAR
+        resource = EVAL ~%current_spell_res%~
+    END
+END
+
+ACTION_IF GAME_IS ~eet~ BEGIN  // placing scrolls for EET games
+  COPY_EXISTING ~highhedg.sto~ ~override~  // High Hedge
+    ADD_STORE_ITEM ~bdscrl2a.itm~ #0 #0 #0 ~IDENTIFIED~ #2
+  COPY_EXISTING ~sto0703.sto~ ~override~  // Sorcerous Sundries
+    ADD_STORE_ITEM ~bdscrl2a.itm~ #0 #0 #0 ~IDENTIFIED~ #2
+  COPY_EXISTING ~bdsorcsc.sto~ ~override~  // Sorcerous Sundries - SoD
+    ADD_STORE_ITEM ~bdscrl2a.itm~ #0 #0 #0 ~IDENTIFIED~ #2
+  COPY_EXISTING ~scrolls.sto~ ~override~  // Lady Yuth
+    ADD_STORE_ITEM ~bdscrl2a.itm~ #0 #0 #0 ~IDENTIFIED~ #2
+  COPY_EXISTING ~ohbmhsm.sto~ ~override~  // Book Merchant
+    ADD_STORE_ITEM ~bdscrl2a.itm~ #0 #0 #0 ~IDENTIFIED~ #2
+  COPY_EXISTING ~ohnscrme.sto~ ~override~  // Merchant
+    ADD_STORE_ITEM ~bdscrl2a.itm~ #0 #0 #0 ~IDENTIFIED~ #2
+  COPY_EXISTING ~bpding01.sto~ ~override~  // Dinguer the Mad
+    ADD_STORE_ITEM ~bdscrl1a.itm~ #0 #0 #0 ~IDENTIFIED~ #2
+  EXTEND_BOTTOM ~ar0602.bcs~ ~sod2bg2_iu/scripts/ar0602c.baf~  // Add scoll to bookshelf
+  EXTEND_BOTTOM ~ar1303.bcs~ ~sod2bg2_iu/scripts/ar1303a.baf~  // Add scoll to chest
+  COPY_EXISTING ~baeloth.cre~ ~override~
+    ADD_CRE_ITEM ~bdscrl2a~ #0 #0 #0 ~NONE~ ~INV~  // add to inventory
+  COPY_EXISTING ~tranzi.cre~ ~override~
+    ADD_CRE_ITEM ~bdscrl2a~ #0 #0 #0 ~NONE~ ~INV~  // add to inventory
+  COPY_EXISTING ~jayes.sto~ ~override~  // Jayes
+    ADD_STORE_ITEM ~bdscrl1a.itm~ #0 #0 #0 ~IDENTIFIED~ #1
+  COPY_EXISTING ~suelf10.sto~ ~override~  // Temple of Rillifane
+    ADD_STORE_ITEM ~bdscrl1a.itm~ #0 #0 #0 ~IDENTIFIED~ #2
+  COPY_EXISTING ~bernard.sto~ ~override~  // Copper Coronet
+    ADD_STORE_ITEM ~bdscrl1a.itm~ #0 #0 #0 ~IDENTIFIED~ #1
+END
+
+ACTION_IF GAME_IS ~bg2ee~ BEGIN  // placing scrolls for BG2EE games
+  COPY_EXISTING ~scrolls.sto~ ~override~  // Lady Yuth
+    ADD_STORE_ITEM ~dtkdarkn.itm~ #0 #0 #0 ~IDENTIFIED~ #2
+  COPY_EXISTING ~ohbmhsm.sto~ ~override~  // Book Merchant
+    ADD_STORE_ITEM ~dtkdarkn.itm~ #0 #0 #0 ~IDENTIFIED~ #2
+  COPY_EXISTING ~ohnscrme.sto~ ~override~  // Merchant
+    ADD_STORE_ITEM ~dtkdarkn.itm~ #0 #0 #0 ~IDENTIFIED~ #2
+  COPY_EXISTING ~jayes.sto~ ~override~  // Jayes
+    ADD_STORE_ITEM ~dtkdarkn.itm~ #0 #0 #0 ~IDENTIFIED~ #1
+  COPY_EXISTING ~suelf10.sto~ ~override~  // Temple of Rillifane
+    ADD_STORE_ITEM ~dtkdarkn.itm~ #0 #0 #0 ~IDENTIFIED~ #1
+  EXTEND_BOTTOM ~ar0602.bcs~ ~sod2bg2_iu/scripts/ar0602d.baf~  // Add scoll to bookshelf
+  EXTEND_BOTTOM ~ar1303.bcs~ ~sod2bg2_iu/scripts/ar1303b.baf~  // Add scoll to chest
+  COPY_EXISTING ~bernard.sto~ ~override~  // Copper Coronet
+    ADD_STORE_ITEM ~bdscrl1a.itm~ #0 #0 #0 ~IDENTIFIED~ #1
+END

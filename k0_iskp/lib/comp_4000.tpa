@@ -1,0 +1,164 @@
+// Dancing Lights
+
+ACTION_IF !FILE_CONTAINS_EVALUATED(~spell.ids~ ~WIZARD_DANCING_LIGHTS~) BEGIN
+  ADD_SPELL ~k0_iskp/spl/dtkdance.spl~ 2 1 WIZARD_DANCING_LIGHTS
+SPRINT current_spell_res "%DEST_RES%"
+SAY NAME1 @3019 /* Dancing Lights */
+SAY NAME2 @3019 /* Dancing Lights */
+SAY UNIDENTIFIED_DESC @3020 /* Dancing Lights
+(Alteration)
+
+Level: 1
+Range: Sight
+Duration: 2 rds./level
+Casting Time: 1
+Area of Effect: Special
+Saving Throw: None
+
+This spell creates up to four glowing spheres of light (such as evidenced by will-o-wisps) or one faintly glowing, vaguely humanoid shape, somewhat similar to a fire elemental. The dancing lights move randomly without concentration upon such movement by the wizard. Although the lights cause no physical harm, they can distract enemies until either their duration expires or dispersed by weapon or magic. */
+SAY DESC @3020 /* Dancing Lights
+(Alteration)
+
+Level: 1
+Range: Sight
+Duration: 2 rds./level
+Casting Time: 1
+Area of Effect: Special
+Saving Throw: None
+
+This spell creates up to four glowing spheres of light (such as evidenced by will-o-wisps) or one faintly glowing, vaguely humanoid shape, somewhat similar to a fire elemental. The dancing lights move randomly without concentration upon such movement by the wizard. Although the lights cause no physical harm, they can distract enemies until either their duration expires or dispersed by weapon or magic. */
+WRITE_ASCII 0x3a dtkdancc
+LPF ALTER_SPELL_HEADER INT_VAR header = 0 STR_VAR icon = dtkdancb END
+END
+
+COPY ~k0_iskp/itm/blank.itm~ ~override/dtkdance.itm~
+  SAY NAME2 @3019 /* Dancing Lights */
+  SAY DESC @3020 /* Dancing Lights
+(Alteration)
+
+Level: 1
+Range: Sight
+Duration: 2 rds./level
+Casting Time: 1
+Area of Effect: Special
+Saving Throw: None
+
+This spell creates up to four glowing spheres of light (such as evidenced by will-o-wisps) or one faintly glowing, vaguely humanoid shape, somewhat similar to a fire elemental. The dancing lights move randomly without concentration upon such movement by the wizard. Although the lights cause no physical harm, they can distract enemies until either their duration expires or dispersed by weapon or magic. */
+  LPF dtk_scroll
+    INT_VAR
+      opcode     = 148
+      unusable1  = BIT4
+      target_hdr = 4
+      range      = 30
+      price      = 350
+    STR_VAR
+      spell = EVAL ~%current_spell_res%~
+  END
+  LPF ALTER_EFFECT
+    INT_VAR
+      match_opcode = 148
+      target       = 1
+  END
+
+COMPILE ~k0_iskp/baf/bddanc01.baf~  // Adding creature script required for spell
+
+ACTION_IF GAME_IS ~eet~ BEGIN  // modifies existing scroll and spell for EET games
+  ADD_SPELL ~k0_iskp/spl/dtkdance.spl~ 2 2 WIZARD_DANCING_LIGHTS  // adding first as different level to remove existing - this fixes spell for sorc spell progression
+  ADD_SPELL ~k0_iskp/spl/dtkdance.spl~ 2 1 WIZARD_DANCING_LIGHTS  // adding second time - removes previous and restores correct level and allows sorc to learn
+SPRINT current_spell_res "%DEST_RES%"
+SAY NAME1 @3019 /* Dancing Lights */
+SAY NAME2 @3019 /* Dancing Lights */
+SAY UNIDENTIFIED_DESC @3020 /* Dancing Lights
+(Alteration)
+
+Level: 1
+Range: Sight
+Duration: 2 rds./level
+Casting Time: 1
+Area of Effect: Special
+Saving Throw: None
+
+This spell creates up to four glowing spheres of light (such as evidenced by will-o-wisps) or one faintly glowing, vaguely humanoid shape, somewhat similar to a fire elemental. The dancing lights move randomly without concentration upon such movement by the wizard. Although the lights cause no physical harm, they can distract enemies until either their duration expires or dispersed by weapon or magic. */
+SAY DESC @3020 /* Dancing Lights
+(Alteration)
+
+Level: 1
+Range: Sight
+Duration: 2 rds./level
+Casting Time: 1
+Area of Effect: Special
+Saving Throw: None
+
+This spell creates up to four glowing spheres of light (such as evidenced by will-o-wisps) or one faintly glowing, vaguely humanoid shape, somewhat similar to a fire elemental. The dancing lights move randomly without concentration upon such movement by the wizard. Although the lights cause no physical harm, they can distract enemies until either their duration expires or dispersed by weapon or magic. */
+WRITE_ASCII 0x3a dtkdancc
+LPF ALTER_SPELL_HEADER INT_VAR header = 0 STR_VAR icon = dtkdancb END
+  COPY_EXISTING ~bdscrl1a.itm~ ~override~
+    WRITE_ASCII 0x3a dtkdanca
+    LPF ALTER_ITEM_HEADER
+      INT_VAR
+        header = 1
+        target = 4
+      STR_VAR
+        icon = dtkdanca
+    END
+    LPF ALTER_EFFECT
+      INT_VAR
+        match_opcode = 146
+        opcode       = 148
+        target       = 1
+      STR_VAR
+        resource = EVAL ~%current_spell_res%~
+    END
+    LPF ALTER_EFFECT
+      INT_VAR
+        match_opcode = 147
+      STR_VAR
+        resource = EVAL ~%current_spell_res%~
+    END
+END
+
+ACTION_IF GAME_IS ~eet~ BEGIN  // placing scrolls for EET games
+  COPY_EXISTING ~highhedg.sto~ ~override~  // High Hedge
+    ADD_STORE_ITEM ~bdscrl1a.itm~ #0 #0 #0 ~IDENTIFIED~ #2
+  COPY_EXISTING ~sto0703.sto~ ~override~  // Sorcerous Sundries
+    ADD_STORE_ITEM ~bdscrl1a.itm~ #0 #0 #0 ~IDENTIFIED~ #2
+  COPY_EXISTING ~bdsorcsc.sto~ ~override~  // Sorcerous Sundries - SoD
+    ADD_STORE_ITEM ~bdscrl1a.itm~ #0 #0 #0 ~IDENTIFIED~ #2
+  COPY_EXISTING ~scrolls.sto~ ~override~  // Lady Yuth
+    ADD_STORE_ITEM ~bdscrl1a.itm~ #0 #0 #0 ~IDENTIFIED~ #2
+  COPY_EXISTING ~ohbmhsm.sto~ ~override~  // Book Merchant
+    ADD_STORE_ITEM ~bdscrl1a.itm~ #0 #0 #0 ~IDENTIFIED~ #2
+  COPY_EXISTING ~ohnscrme.sto~ ~override~  // Merchant
+    ADD_STORE_ITEM ~bdscrl1a.itm~ #0 #0 #0 ~IDENTIFIED~ #2
+  COPY_EXISTING ~bpding01.sto~ ~override~  // Dinguer the Mad
+    ADD_STORE_ITEM ~bdscrl1a.itm~ #0 #0 #0 ~IDENTIFIED~ #2
+  EXTEND_BOTTOM ~ar0602.bcs~ ~sod2bg2_iu/scripts/ar0602a.baf~  // Add scoll to bookshelf
+  EXTEND_BOTTOM ~ar5405.bcs~ ~sod2bg2_iu/scripts/ar5405a.baf~  // Add scoll to treasure chest
+  EXTEND_BOTTOM ~ar1301.bcs~ ~sod2bg2_iu/scripts/ar1301a.baf~  // Add scoll to treasure chest
+  COPY_EXISTING ~baeloth.cre~ ~override~
+    ADD_CRE_ITEM ~bdscrl1a~ #0 #0 #0 ~NONE~ ~INV~  // add to inventory
+  COPY_EXISTING ~jayes.sto~ ~override~  // Jayes
+    ADD_STORE_ITEM ~bdscrl1a.itm~ #0 #0 #0 ~IDENTIFIED~ #1
+  COPY_EXISTING ~suelf10.sto~ ~override~  // Temple of Rillifane
+    ADD_STORE_ITEM ~bdscrl1a.itm~ #0 #0 #0 ~IDENTIFIED~ #2
+  COPY_EXISTING ~bernard.sto~ ~override~  // Copper Coronet
+    ADD_STORE_ITEM ~bdscrl1a.itm~ #0 #0 #0 ~IDENTIFIED~ #1
+END
+
+ACTION_IF GAME_IS ~bg2ee~ BEGIN  // placing scrolls for BG2EE games
+  COPY_EXISTING ~scrolls.sto~ ~override~  // Lady Yuth
+    ADD_STORE_ITEM ~dtkdance.itm~ #0 #0 #0 ~IDENTIFIED~ #2
+  COPY_EXISTING ~ohbmhsm.sto~ ~override~  // Book Merchant
+    ADD_STORE_ITEM ~dtkdance.itm~ #0 #0 #0 ~IDENTIFIED~ #2
+  COPY_EXISTING ~ohnscrme.sto~ ~override~  // Merchant
+    ADD_STORE_ITEM ~dtkdance.itm~ #0 #0 #0 ~IDENTIFIED~ #2
+  COPY_EXISTING ~jayes.sto~ ~override~  // Jayes
+    ADD_STORE_ITEM ~dtkdance.itm~ #0 #0 #0 ~IDENTIFIED~ #1
+  COPY_EXISTING ~suelf10.sto~ ~override~  // Temple of Rillifane
+    ADD_STORE_ITEM ~dtkdance.itm~ #0 #0 #0 ~IDENTIFIED~ #2
+  EXTEND_BOTTOM ~ar0602.bcs~ ~sod2bg2_iu/scripts/ar0602b.baf~  // Add scoll to bookshelf
+  EXTEND_BOTTOM ~ar5405.bcs~ ~sod2bg2_iu/scripts/ar5405b.baf~  // Add scoll to treasure chest
+  EXTEND_BOTTOM ~ar1301.bcs~ ~sod2bg2_iu/scripts/ar1301b.baf~  // Add scoll to chest
+  COPY_EXISTING ~bernard.sto~ ~override~  // Copper Coronet
+    ADD_STORE_ITEM ~dtkdance.itm~ #0 #0 #0 ~IDENTIFIED~ #1
+END
