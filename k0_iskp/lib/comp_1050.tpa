@@ -1,12 +1,29 @@
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdbrac01.itm~ BEGIN
   COPY ~k0_iskp/itm/bdbrac01.itm~ ~override~
-    SAY NAME1 @20101 /* Bracers */
-    SAY NAME2 @20275 /* Bracers of the Shuttered Lid */
-    SAY UNIDENTIFIED_DESC @20102 /* Bracers are thick bands of metal or leather that are strapped, belted, or tied to a character's forearm. Generally, the magic that is instilled in bracers is good only during combat, since most bracers help protect the wearer from injury or improve their chances to strike an opponent. Exceptions do exist, though such specialized items are rare at best.
+    SAY NAME1 @20101  /* Bracers */
+    SAY NAME2 @20275  /* Bracers of the Shuttered Lid */
+    SAY UNIDENTIFIED_DESC @20102  /* Bracers are thick bands of metal or leather that are strapped, belted, or tied to a character's forearm. Generally, the magic that is instilled in bracers is good only during combat, since most bracers help protect the wearer from injury or improve their chances to strike an opponent. Exceptions do exist, though such specialized items are rare at best.
 
 STATISTICS:
 
 Weight: 2 */
+    SAY IDENTIFIED_DESC ~Rumor tells that a remote sect of monks, living in deep caverns beneath the Spine of the World, learned to fight in absolute darkness. The sound of their enemy's movement and breathing were enough for them to accurately target their blows. These bracers put their enemy on an even footing.
+
+STATISTICS:
+
+Equipped abilities:
+– THAC0: +2 (unarmed attacks)
+– Immunity to blindness
+
+Combat abilities:
+– On a critical hit, the target is blinded for 2 rounds (no save)
+
+Weight: 2~
+    LPF ALTER_EFFECT
+      INT_VAR
+        match_opcode = 206
+        parameter1   = RESOLVE_STR_REF(@40017 /* Blinded */)
+    END
   COPY ~k0_iskp/spl/bdbrac01.spl~ ~override~
     LPF ALTER_EFFECT
       INT_VAR
@@ -15,15 +32,15 @@ Weight: 2 */
     END
 END
 COPY_EXISTING ~rasaad8.cre~ ~override~
-  REPLACE_CRE_ITEM ~bdbrac01~ #0 #0 #0 ~IDENTIFIED~ ~WEAPON~ EQUIP
+  REPLACE_CRE_ITEM ~bdbrac01~ #0 #0 #0 ~IDENTIFIED~ ~GLOVES~ EQUIP
 COPY_EXISTING ~rasaad9.cre~ ~override~
-  REPLACE_CRE_ITEM ~bdbrac01~ #0 #0 #0 ~IDENTIFIED~ ~WEAPON~ EQUIP
+  REPLACE_CRE_ITEM ~bdbrac01~ #0 #0 #0 ~IDENTIFIED~ ~GLOVES~ EQUIP
 COPY_EXISTING ~rasaad10.cre~ ~override~
-  REPLACE_CRE_ITEM ~bdbrac01~ #0 #0 #0 ~IDENTIFIED~ ~WEAPON~ EQUIP
+  REPLACE_CRE_ITEM ~bdbrac01~ #0 #0 #0 ~IDENTIFIED~ ~GLOVES~ EQUIP
 COPY_EXISTING ~rasaad11.cre~ ~override~
-  REPLACE_CRE_ITEM ~bdbrac01~ #0 #0 #0 ~IDENTIFIED~ ~WEAPON~ EQUIP
+  REPLACE_CRE_ITEM ~bdbrac01~ #0 #0 #0 ~IDENTIFIED~ ~GLOVES~ EQUIP
 COPY_EXISTING ~rasaad13.cre~ ~override~
-  REPLACE_CRE_ITEM ~bdbrac01~ #0 #0 #0 ~IDENTIFIED~ ~WEAPON~ EQUIP
+  REPLACE_CRE_ITEM ~bdbrac01~ #0 #0 #0 ~IDENTIFIED~ ~GLOVES~ EQUIP
 
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdbrac01.bam~ BEGIN
   COPY ~k0_iskp/bam/bdbrac01.bam~ ~override~
