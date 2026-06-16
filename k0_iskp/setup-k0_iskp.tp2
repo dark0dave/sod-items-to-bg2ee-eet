@@ -1245,7 +1245,7 @@ INCLUDE ~k0_iskp/lib/comp_4000.tpa~
 BEGIN @100159 /* darkness_15 */
 DESIGNATED 4001
 GROUP @100156 /* SoD Spells */
-LABEL ~ Darkness 15' Spell~
+LABEL ~Darkness 15' Spell~
 REQUIRE_PREDICATE GAME_IS ~bgee bg2ee eet iwdee~ @100157 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate Enhanced Editions, Icewind Dale Enhanced Edition and Baldur's Gate Trilogy */
 REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~4995~ @100158 /* Can not be installed along side all spell component */
 REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
