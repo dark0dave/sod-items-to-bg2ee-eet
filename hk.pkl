@@ -21,6 +21,7 @@ local local_hooks = new Mapping<String, Step> {
     fix = "codespell -cw {{files}} --config .codespellrc"
   }
   ["check-ie"] {
+    glob = List(".*bam",".*baf",".*cre",".*d","*itm",".*spl",".*sto",".*wav",".*vvc")
     check = "scripts/check-ie.sh"
   }
   ["git-check"] {
