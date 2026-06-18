@@ -124,11 +124,11 @@ END
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~1axe05.pro~ BEGIN
   ADD_PROJECTILE ~k0_iskp/pro/1axe05.pro~
 END
-ACTION_IF NOT FILE_EXISTS_IN_GAME ~cax1h09.bam~ BEGIN
-  COPY ~k0_iskp/bam/cax1h09.bam~ ~override~
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~k0rhyted.bam~ BEGIN
+  COPY ~k0_iskp/bam/k0rhyted.bam~ ~override~
 END
-ACTION_IF NOT FILE_EXISTS_IN_GAME ~iax1h06.bam~ BEGIN
-  COPY ~k0_iskp/bam/iax1h06.bam~ ~override~
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~k0rhytei.bam~ BEGIN
+  COPY ~k0_iskp/bam/k0rhytei.bam~ ~override~
 END
 OUTER_SET ability1 = RESOLVE_STR_REF(@50005 /* Thrown */)
 OUTER_SET ability1 = RESOLVE_STR_REF(@50006 /* Melee */)
