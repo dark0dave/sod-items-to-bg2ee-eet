@@ -15,8 +15,12 @@ Charge abilities:
 – Identify three times per day
 
 Weight: 1 */
+  ACTION_IF FILE_EXISTS_IN_GAME ~itemspec.2da~ BEGIN
+    APPEND ~itemspec.2da~ ~BDMIRR01 1~ BUT_ONLY
+    COPY_EXISTING ~itemspec.2da~ ~override~
+      PRETTY_PRINT_2DA
+  END
 END
-APPEND ~itemspec.2da~ ~bdmirr01 1~ BUT_ONLY
 <<<<<<<< .../inlined/k0ar0602.baf
 IF
   Global("K0_ITEMS_BDMIRR01","GLOBAL",0)
