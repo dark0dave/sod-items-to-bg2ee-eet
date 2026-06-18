@@ -332,7 +332,7 @@ Safana, Forest of Tethyr
 Table by Jailkeep Golem in Irenicus' dungeon
 
 ### Sword of Troll Decapitation +1
-Bernard, Coppoer Coronet, Slums District
+Bernard, Copper Coronet, Slums District
 
 ### Sword of Ruin +2
 Chest, Guarded Compound, Temple District
@@ -351,6 +351,9 @@ Barrel, Valygar's Cabin, Umar Hills
 
 ### Sword of Ruin (1075)
 2nd Floor, Saerk's House
+
+### Rhyte's Last Arrow (1078)
+Tarnor the Hatchetman, Sewers, Temple District
 
 ### Bloodied Guardian (1084)
 Maferan, 1st Floor, Guarded Compound, Temple District
