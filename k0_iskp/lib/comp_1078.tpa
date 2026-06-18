@@ -1,3 +1,4 @@
+// Rhyte's Last Arrow
 ACTION_IF GAME_IS ~bg2ee~ BEGIN
   COPY ~k0_iskp/itm/k0rhytea.itm~ ~override~
     SAY NAME1 @20024 /* Throwing Axe */
@@ -120,6 +121,15 @@ Weight: 3 */
         parameter1   = RESOLVE_STR_REF(@40010 /* THAC0 Modification */)
     END
 END
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~1axe05.pro~ BEGIN
+  ADD_PROJECTILE ~k0_iskp/pro/1axe05.pro~
+END
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~cax1h09.bam~ BEGIN
+  COPY ~k0_iskp/bam/cax1h09.bam~ ~override~
+END
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~iax1h06.bam~ BEGIN
+  COPY ~k0_iskp/bam/iax1h06.bam~ ~override~
+END
 OUTER_SET ability1 = RESOLVE_STR_REF(@50005 /* Thrown */)
 OUTER_SET ability1 = RESOLVE_STR_REF(@50006 /* Melee */)
 APPEND ~tooltip.2da~ ~k0rhytea  %ability1%  %ability2%  -1~ BUT_ONLY
@@ -134,8 +144,8 @@ THEN
   RESPONSE #100
     SetInterrupt(FALSE)
     SetGlobal("K0_ITEMS_BDRHYTE","GLOBAL",1)
-    TakeItemReplace("k0rhytea","AX1H08","TARNOR")  // Rhyte's Last Arrow +2/Hangard's Axe +2
-    ActionOverride("TARNOR",XEquipItem("k0rhytea",Myself,SLOT_WEAPON0,EQUIP))  // Rhyte's Last Arrow +2
+    TakeItemReplace("k0rhytea","AX1H08","TARNOR")
+    ActionOverride("TARNOR",XEquipItem("k0rhytea",Myself,SLOT_WEAPON0,EQUIP))
     SetInterrupt(FALSE)
 END
 >>>>>>>>
