@@ -1,13 +1,13 @@
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdmirr01.itm~ BEGIN
   COPY ~k0_iskp/itm/bdmirr01.itm~ ~override~
-    SAY NAME1 @20345 /* Hand Mirror */
-    SAY NAME2 @20347 /* Gentrus's Hand Mirror */
-    SAY UNIDENTIFIED_DESC @20346 /* A simple gilt hand mirror.
+    SAY NAME1 @20345  /* Hand Mirror */
+    SAY NAME2 @20347  /* Gentrus's Hand Mirror */
+    SAY UNIDENTIFIED_DESC @20346  /* A simple gilt hand mirror.
 
 STATISTICS:
 
 Weight: 1 */
-    SAY DESC @20348 /* The town of Soubar has earned its reputation as a lawless and dangerous place. The rampant brigandry in the area means a great many stolen goods are funneled through Soubar's back rooms and inns. One of the town's residents, the halfling Gentrus, crafted this mirror to help him divine the true nature of items he wished to buy. After a close call with a wererat, Gentrus decided to leave Soubar for the safety of Baldur's Gate, joining a caravan traveling north. The halfling died on the road during a bandit attack, but the caravan's survivors drove off the bandits. They ensured Gentrus's body and possessions made it to his relatives.
+    SAY DESC @20348  /* The town of Soubar has earned its reputation as a lawless and dangerous place. The rampant brigandry in the area means a great many stolen goods are funneled through Soubar's back rooms and inns. One of the town's residents, the halfling Gentrus, crafted this mirror to help him divine the true nature of items he wished to buy. After a close call with a wererat, Gentrus decided to leave Soubar for the safety of Baldur's Gate, joining a caravan traveling north. The halfling died on the road during a bandit attack, but the caravan's survivors drove off the bandits. They ensured Gentrus's body and possessions made it to his relatives.
 
 STATISTICS:
 
@@ -16,6 +16,7 @@ Charge abilities:
 
 Weight: 1 */
 END
+APPEND ~itemspec.2da~ ~bdmirr01 1~ BUT_ONLY
 <<<<<<<< .../inlined/k0ar0602.baf
 IF
   Global("K0_ITEMS_BDMIRR01","GLOBAL",0)
