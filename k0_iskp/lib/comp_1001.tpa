@@ -1,5 +1,4 @@
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdblun04.itm~ BEGIN
-  COPY ~k0_iskp/bam/ibdbln04.bam~ ~override~
   COPY ~k0_iskp/itm/bdblun04.itm~ ~override~
     SAY NAME1 @20035 /* Morning Star */
     SAY NAME2 @20143 /* Martyr's Morningstar +2 */

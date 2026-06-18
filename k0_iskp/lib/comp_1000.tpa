@@ -1,5 +1,4 @@
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdsw1h21.itm~ BEGIN
-  COPY ~k0_iskp/bam/ibds1h21.bam~ ~override~
   COPY ~k0_iskp/itm/bdsw1h21.itm~ ~override~
     SAY NAME1 @20002 /* Short Sword */
     SAY NAME2 @20141 /* Vexation +2 */

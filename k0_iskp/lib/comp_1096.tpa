@@ -1,0 +1,229 @@
+// Potion of Persuasiveness
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~potn60.itm~ BEGIN
+  COPY ~k0_iskp/itm/potn60.itm~ ~override~
+    SAY NAME1 @20119  /* Potion */
+    SAY NAME2 @100168  /* Potion of Persuasiveness */
+    SAY UNIDENTIFIED_DESC @20120  /* Potions are typically found in ceramic, crystal, glass, or metal flasks or vials. Flasks or other containers generally contain enough fluid to provide one person with one complete dose to achieve the effects of the potion.
+
+STATISTICS:
+
+Weight: 1 */
+    SAY DESC @100169  /* Very much as the name implies, this potion will increase the Charisma of the imbiber by 4 points, up to a maximum of 25. The effect will last the full duration, which is 3 hours, or until dispelled.
+
+STATISTICS:
+
+Charisma: +4 (non-cumulative)
+Duration: 3 hours
+
+Weight: 1 */
+END
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~ibdptn60.bam~ BEGIN
+  COPY ~k0_iskp/bam/ibdptn60.bam~ ~override~
+END
+// Borrowed from https://github.com/szaumoor/ZS_Consumables/blob/main/ZS_Consumables/libs/scripts/potions/fragments/zs_incl_potions_stores.tph
+ACTION_IF GAME_IS "bg2ee" OR GAME_IS "eet" BEGIN
+
+  ACTION_IF FILE_EXISTS_IN_GAME ~ppstor01.sto~ BEGIN  // Storekeep Brynnlaw
+    COPY_EXISTING ~ppstor01.sto~ ~override~
+      LPF ADD_STORE_ITEM_EX
+        INT_VAR
+          stack = 3
+        STR_VAR
+          item_name = ~potn60~
+      END
+    BUT_ONLY
+  END
+
+  ACTION_IF FILE_EXISTS_IN_GAME ~trmer02.sto~ BEGIN  // Merchant Trademeet
+    COPY_EXISTING ~trmer02.sto~ ~override~
+      LPF ADD_STORE_ITEM_EX
+        INT_VAR
+          stack = 3
+        STR_VAR
+          item_name = ~potn60~
+      END
+    BUT_ONLY
+  END
+
+  ACTION_IF FILE_EXISTS_IN_GAME ~murcrag.sto~ BEGIN  // Mrs Cragmoon
+    COPY_EXISTING ~murcrag.sto~ ~override~
+      LPF ADD_STORE_ITEM_EX
+        INT_VAR
+          stack = 3
+        STR_VAR
+          item_name = ~potn60~
+      END
+    BUT_ONLY
+  END
+
+  ACTION_IF FILE_EXISTS_IN_GAME ~bernard.sto~ BEGIN  // Copper Coronet Bernard
+    COPY_EXISTING
+      ~bernard.sto~ ~override~
+      ~bernard2.sto~ ~override~
+      ~bernard3.sto~ ~override~
+      ~bernard4.sto~ ~override~
+      ~bernard5.sto~ ~override~
+      ~bernard6.sto~ ~override~
+      ~hendak.sto~ ~override~
+      ~lehtinan.sto~ ~override~
+      LPF ADD_STORE_ITEM_EX
+        INT_VAR
+          stack = 1
+        STR_VAR
+          item_name = ~potn60~
+      END
+    BUT_ONLY
+  END
+
+  ACTION_IF FILE_EXISTS_IN_GAME ~trgeni01.sto~ BEGIN  // Trademeet Genie
+    COPY_EXISTING
+      ~trgeni01.sto~ ~override~
+      ~trcar04.sto~ ~override~
+      LPF ADD_STORE_ITEM_EX
+        INT_VAR
+          stack = 10
+        STR_VAR
+          item_name = ~potn60~
+      END
+    BUT_ONLY
+  END
+
+  ACTION_IF FILE_EXISTS_IN_GAME ~ribald.sto~ BEGIN  // Ribald's Shop
+    COPY_EXISTING ~ribald.sto~ ~override~
+      LPF ADD_STORE_ITEM_EX
+        INT_VAR
+          stack = 5
+        STR_VAR
+          item_name = ~potn60~
+      END
+    BUT_ONLY
+  END
+
+  ACTION_IF FILE_EXISTS_IN_GAME ~udduer02.sto~ BEGIN  // Duergar Merchant (When Encountered As A Drow)
+    COPY_EXISTING ~udduer02.sto~ ~override~
+      LPF ADD_STORE_ITEM_EX
+        INT_VAR
+          stack = 5
+        STR_VAR
+          item_name = ~potn60~
+      END
+    BUT_ONLY
+  END
+
+  ACTION_IF FILE_EXISTS_IN_GAME ~bmthief.sto~ BEGIN  // Black Market Thief
+    COPY_EXISTING ~bmthief.sto~ ~override~
+      LPF ADD_STORE_ITEM_EX
+        INT_VAR
+          stack = 2
+        STR_VAR
+          item_name = ~potn60~
+      END
+    BUT_ONLY
+  END
+
+  ACTION_IF FILE_EXISTS_IN_GAME ~uddrow24.sto~ BEGIN  // Drow Vendor
+    COPY_EXISTING ~uddrow24.sto~ ~override~
+      LPF ADD_STORE_ITEM_EX
+        INT_VAR
+          stack = 8
+        STR_VAR
+          item_name = ~potn60~
+      END
+    BUT_ONLY
+  END
+
+  ACTION_IF FILE_EXISTS_IN_GAME ~amsmug01.sto~ BEGIN  // Amekthran Smugglers
+    COPY_EXISTING
+      ~amsmug01.sto~ ~override~
+      ~amsmug02.sto~ ~override~
+      LPF ADD_STORE_ITEM_EX
+        INT_VAR
+          stack = 5
+        STR_VAR
+          item_name = ~potn60~
+      END
+    BUT_ONLY
+  END
+
+  ACTION_IF FILE_EXISTS_IN_GAME ~25spell.sto~ BEGIN  // Arcana Archives
+    COPY_EXISTING
+      ~25spell.sto~ ~override~
+      ~25spell2.sto~ ~override~
+      LPF ADD_STORE_ITEM_EX
+        INT_VAR
+          stack = 24
+        STR_VAR
+          item_name = ~potn60~
+      END
+    BUT_ONLY
+  END
+
+  ACTION_IF FILE_EXISTS_IN_GAME ~ohnpotme.sto~ BEGIN  // Potion Merchant (Neera's Quest)
+    COPY_EXISTING ~ohnpotme.sto~ ~override~
+      LPF ADD_STORE_ITEM_EX
+        INT_VAR
+          stack = 6
+        STR_VAR
+          item_name = ~potn60~
+      END
+    BUT_ONLY
+  END
+
+  ACTION_IF FILE_EXISTS_IN_GAME ~garlena.sto~ BEGIN  // Garlena (Watcher's Keep)
+    COPY_EXISTING ~garlena.sto~ ~override~
+      LPF ADD_STORE_ITEM_EX
+        INT_VAR
+          stack = 10
+        STR_VAR
+          item_name = ~potn60~
+      END
+    BUT_ONLY
+  END
+
+  ACTION_IF FILE_EXISTS_IN_GAME ~shop04.sto~ BEGIN  // Enge (Waukeen's Promenade)
+    COPY_EXISTING ~shop04.sto~ ~override~
+      LPF ADD_STORE_ITEM_EX
+        INT_VAR
+          stack = 3
+        STR_VAR
+          item_name = ~potn60~
+      END
+    BUT_ONLY
+  END
+END
+ACTION_IF GAME_IS "iwdee" BEGIN
+  ACTION_IF FILE_EXISTS_IN_GAME ~kuork0.sto~ BEGIN
+    COPY_EXISTING ~kuork0.sto~ ~override~
+      LPF ADD_STORE_ITEM_EX
+        INT_VAR
+          stack = 20
+        STR_VAR
+          item_name = ~potn60~
+      END
+    BUT_ONLY
+  END
+
+  ACTION_IF FILE_EXISTS_IN_GAME ~bandoth.sto~ BEGIN
+    COPY_EXISTING
+      ~bandoth.sto~ ~override~
+      ~edion.sto~ ~override~
+      LPF ADD_STORE_ITEM_EX
+        INT_VAR
+          stack = 14
+        STR_VAR
+          item_name = ~potn60~
+      END
+    BUT_ONLY
+  END
+
+  ACTION_IF FILE_EXISTS_IN_GAME ~ldd_nym.sto~ BEGIN
+    COPY_EXISTING ~ldd_nym.sto~ ~override~
+      LPF ADD_STORE_ITEM_EX
+        INT_VAR
+          stack = 7
+        STR_VAR
+          item_name = ~potn60~
+      END
+    BUT_ONLY
+  END
+END
