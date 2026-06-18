@@ -1,7 +1,7 @@
 BACKUP ~weidu_external/k0_iskp/backup~
 SUPPORT ~https://github.com/dark0dave/sod-items-to-bg2ee-eet/discussions~
 AUTO_EVAL_STRINGS
-VERSION ~v4.0.0.RC8~
+VERSION @100165 /* v4.0.0.RC8 */
 README ~k0_iskp/readme.md~ ASK_EVERY_COMPONENT
 
 AUTO_TRA ~k0_iskp/lang/%s~
@@ -983,6 +983,15 @@ REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with 
 
 INCLUDE ~k0_iskp/lib/comp_1095.tpa~
 
+BEGIN @100166 /* potion_of_persuasiveness */
+DESIGNATED 1095
+GROUP @10003 /* Items */
+LABEL ~Potion of Persuasiveness~
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~1999~ @100145 /* Can not be installed along side all items */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
+REQUIRE_PREDICATE GAME_IS ~bg2ee eet iwdee~ @100167 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2, Icewind Dale and Baldur's Gate Trilogy */
+INCLUDE ~k0_iskp/lib/comp_1096.tpa~
+
 BEGIN @100143 /* all_items */
 DESIGNATED 1999
 GROUP @100115 /* All */
@@ -1236,7 +1245,7 @@ BEGIN @100155 /* dancing_lights */
 DESIGNATED 4000
 GROUP @100156 /* SoD Spells */
 LABEL ~Dancing Lights Spell~
-REQUIRE_PREDICATE GAME_IS ~bgee bg2ee eet iwdee~ @100157 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate Enhanced Editions, Icewind Dale Enhanced Edition and Baldur's Gate Trilogy */
+REQUIRE_PREDICATE GAME_IS ~bgee bg2ee eet iwdee~ @100157 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 1 and 2, Icewind Dale Enhanced Edition and Baldur's Gate Trilogy */
 REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~4995~ @100158 /* Can not be installed along side all spell component */
 REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 
@@ -1246,7 +1255,7 @@ BEGIN @100159 /* darkness_15 */
 DESIGNATED 4001
 GROUP @100156 /* SoD Spells */
 LABEL ~Darkness 15' Spell~
-REQUIRE_PREDICATE GAME_IS ~bgee bg2ee eet iwdee~ @100157 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate Enhanced Editions, Icewind Dale Enhanced Edition and Baldur's Gate Trilogy */
+REQUIRE_PREDICATE GAME_IS ~bgee bg2ee eet iwdee~ @100157 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 1 and 2, Icewind Dale Enhanced Edition and Baldur's Gate Trilogy */
 REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~4995~ @100158 /* Can not be installed along side all spell component */
 REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 
@@ -1256,7 +1265,7 @@ BEGIN @100160 /* faerie_fire */
 DESIGNATED 4002
 GROUP @100156 /* SoD Spells */
 LABEL ~Faerie Fire Spell~
-REQUIRE_PREDICATE GAME_IS ~bgee bg2ee eet iwdee~ @100157 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate Enhanced Editions, Icewind Dale Enhanced Edition and Baldur's Gate Trilogy */
+REQUIRE_PREDICATE GAME_IS ~bgee bg2ee eet iwdee~ @100157 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 1 and 2, Icewind Dale Enhanced Edition and Baldur's Gate Trilogy */
 REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~4995~ @100158 /* Can not be installed along side all spell component */
 REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 
@@ -1266,7 +1275,7 @@ BEGIN @100161 /* shining_bolt */
 DESIGNATED 4003
 GROUP @100156 /* SoD Spells */
 LABEL ~Shining Bolt Spell~
-REQUIRE_PREDICATE GAME_IS ~bgee bg2ee eet iwdee~ @100157 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate Enhanced Editions, Icewind Dale Enhanced Edition and Baldur's Gate Trilogy */
+REQUIRE_PREDICATE GAME_IS ~bgee bg2ee eet iwdee~ @100157 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 1 and 2, Icewind Dale Enhanced Edition and Baldur's Gate Trilogy */
 REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~4995~ @100158 /* Can not be installed along side all spell component */
 REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 
@@ -1277,7 +1286,7 @@ BEGIN @100162 /* sod_all_spells */
 DESIGNATED 4995
 GROUP @100156 /* SoD Spells */
 LABEL ~SoD all spells~
-REQUIRE_PREDICATE GAME_IS ~bgee bg2ee eet iwdee~ @100157 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate Enhanced Editions, Icewind Dale Enhanced Edition and Baldur's Gate Trilogy */
+REQUIRE_PREDICATE GAME_IS ~bgee bg2ee eet iwdee~ @100157 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 1 and 2, Icewind Dale Enhanced Edition and Baldur's Gate Trilogy */
 REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 
 INCLUDE ~k0_iskp/lib/comp_4995.tpa~

@@ -11,6 +11,8 @@ This mod, currently in Beta, is a complete re-write and re-imagining of my Siege
 
 Sod Items to BG2EE/EET offers much better modularity, which allows for finer granularity of the player's choice of which components they can install and use, and as an added bonus, will also have better compatibility with other mods.
 
+Ideally all files from [SoD](https://baldursgate.fandom.com/wiki/New_items_in_Baldur%27s_Gate:_Siege_of_Dragonspear) are added.
+
 ## A note about ownership
 
 Please see the g3 forum, [here](https://www.gibberlings3.net/forums/topic/41281-sod-to-bg2-item-upgrade-mod-any-modders-interested-in-taking-over-this-one-from-me/).
@@ -364,6 +366,9 @@ Ribald, Adventurer's Mart, Waukeen's Promenade
 
 ### The Gift (1091)
 2nd Floor, Irenicus's Dungeon
+
+### Potion of Persuasiveness (1096)
+Various Potion Sellers
 
 ## Unplaced Items
 
