@@ -55,7 +55,7 @@ Sorcerous Amon, Den of Seven Vales in Waukeen's Promenade
 ### Backwhacker +2
 Cohrvale, Slums
 
-### Bow of the Banshee +2
+### Bow of the Banshee (1015)
 Gallchobhair, Temple Distric sewers
 
 ### Nimblefinger Gloves
@@ -262,7 +262,7 @@ Bollard Firejaw, Radiant Heart Building, Temple District, Dorn's quest
 ### Crommus' Capelet
 Valygar's starting equipment
 
-### Festering Spear +1
+### Festering Spear (1056)
 Barrel near Planar Sphere entrance, Slums
 
 ### Dread Hammer +2
@@ -301,7 +301,7 @@ Fierce Grizzly Bear, Umar Hills
 ### Daeros' Full Plate +1
 Lord Roenall, D'Arnise Keep, stronghold quest
 
-### Spellbreaker +2
+### Spell Breaker
 Lord Roenall, D'Arnise Keep, stronghold quest
 
 ### Bloody Bone Plate +2
@@ -349,6 +349,10 @@ Solaufein, Underdark, given to you if you accept his fake eggs to replace Phaere
 ### Secret Revealed
 Barrel, Valygar's Cabin, Umar Hills
 
+### Helm of Equus (1061)
+Garren Windspear, Windspear Hills, reward for rescuing his child
+https://baldursgate.fandom.com/wiki/Helm_of_Equus
+
 ### Sword of Ruin (1075)
 2nd Floor, Saerk's House
 
@@ -385,3 +389,45 @@ todo
 todo
 ### Echo of the Fiend (1038)
 todo
+
+
+## Missing
+
+### Gemblade
+https://baldursgate.fandom.com/wiki/Gemblade
+
+### Dagger of Troll Fighting
+https://baldursgate.fandom.com/wiki/Dagger_of_Troll-fighting
+
+### Cold Fury
+https://baldursgate.fandom.com/wiki/Cold_Fury
+
+### Corinth's Bow
+https://baldursgate.fandom.com/wiki/Corinth%27s_Bow
+
+### Brevin's Quaterstaff
+https://baldursgate.fandom.com/wiki/Brevin%27s_Quarterstaff
+
+### Bartleby's Wakizashi
+https://baldursgate.fandom.com/wiki/Bartleby%27s_Wakizashi
+
+### Herdrin's Short Sword
+https://baldursgate.fandom.com/wiki/Herdrin%27s_Short_Sword
+
+### Ophyllis's Short Sword
+https://baldursgate.fandom.com/wiki/Ophyllis%27s_Short_Sword
+
+### Fleshripper
+https://baldursgate.fandom.com/wiki/Fleshripper
+
+### Ostentatious Boots
+https://baldursgate.fandom.com/wiki/Ostentatious_Boots
+
+### Cloak of the Beluir Watch
+https://baldursgate.fandom.com/wiki/Cloak_of_the_Beluir_Watch
+
+### Cloak of the Strange Beast
+https://baldursgate.fandom.com/wiki/Cloak_of_the_Strange_Beast
+
+### Ring of the Tiny Fiend
+https://baldursgate.fandom.com/wiki/Ring_of_the_Tiny_Fiend

@@ -1,8 +1,10 @@
+// Helm of Equus
+
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdhelm07.itm~ BEGIN
   COPY ~k0_iskp/itm/bdhelm07.itm~ ~override~
-    SAY NAME1 @20083 /* Helmet */
-    SAY NAME2 @20297 /* Helm of Equus */
-    SAY UNIDENTIFIED_DESC @20084 /* This class of decorative helmet, made of reinforced leather or metal, covers the face and head. Eye slits and breathing holes come highly recommended.
+    SAY NAME1 @20083  /* Helmet */
+    SAY NAME2 @20297  /* Helm of Equus */
+    SAY UNIDENTIFIED_DESC @20084  /* This class of decorative helmet, made of reinforced leather or metal, covers the face and head. Eye slits and breathing holes come highly recommended.
 
 STATISTICS:
 
@@ -10,7 +12,7 @@ Equipped abilities:
 – Protects against critical hits
 
 Weight: 2 */
-    SAY DESC @20298 /* This finely crafted helm, with intricate gold designs set in black metal and attractive horse hair plumage, lends its wearer an air of authority and gravitas. This effect is only mildly impaired by the distinct odor of horse manure that lingers in the air around it.
+    SAY DESC @20298  /* This finely crafted helm, with intricate gold designs set in black metal and attractive horse hair plumage, lends its wearer an air of authority and gravitas. This effect is only mildly impaired by the distinct odor of horse manure that lingers in the air around it.
 
 STATISTICS:
 
@@ -20,17 +22,12 @@ Equipped abilities:
 
 Weight: 2 */
 END
-<<<<<<<< .../inlined/k0ar1200.baf
-IF
-    Global("K0_ITEMS_BDHELM07","GLOBAL",0)
-THEN
-    RESPONSE #100
-        SetInterrupt(FALSE)
-        SetGlobal("K0_ITEMS_BDHELM07","GLOBAL",1)
-        ActionOverride("PALKNI04",CreateItem("bdhelm07",0,0,0)) // Helm of Equus
-        ActionOverride("PALKNI04",XEquipItem("bdhelm07",Myself,SLOT_HELMET,EQUIP))  // Helm of Equus
-        SetInterrupt(FALSE)
-        Continue()
+ACTION_IF FILE_EXISTS_IN_GAME ~garren.dlg~ BEGIN  // Helm of Equus
+  COPY_EXISTING ~garren.dlg~ ~override~
+    DECOMPILE_AND_PATCH BEGIN
+      REPLACE_TEXTUALLY ~AddXPObject(Player6,44500)~ ~AddXPObject(Player6,44500) GiveItemCreate("bdhelm07",LastTalkedToBy,0,0,0)~
+      REPLACE_TEXTUALLY ~#34365~ ~@8002~
+      REPLACE_TEXTUALLY ~#34366~ ~@8003~
+    END
+  BUT_ONLY_IF_IT_CHANGES
 END
->>>>>>>>
-EXTEND_BOTTOM ~ar1200.bcs~ ~.../inlined/k0ar1200.baf~
