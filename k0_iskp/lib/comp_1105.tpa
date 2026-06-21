@@ -1,0 +1,26 @@
+// Cloak of the Strange Beast
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdloincl.itm~ BEGIN
+  COPY ~k0_iskp/itm/bdloincl.itm~ ~override~
+    SAY NAME1 @20107 /* Cloak */
+    SAY NAME2 @100188 /* Cloak of the Strange Beast */
+    SAY UNIDENTIFIED_DESC @20108 /* The cloak can be made in every possible shape with just about every type of fabric. The most common forms are a circular piece of fabric with a hole in the center for the head, and fabric draped from neck, connected by a chain, brooch, cord, or pins.
+
+STATISTICS:
+
+Weight: 3 */
+    SAY DESC @100189 /* This thick pelt can be worn as a cloak by human-sized creatures, or a loincloth by larger creatures. The beast that contributed its hide for this item is a mystery, but long slashes in skin indicate it was stabbed to death with sharp objects. Despite its enchanted nature, the hide still attracts fleas and retains the sweat and odors of its wearer.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +1
+– Charisma: -1
+
+Weight: 3 */
+END
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~cclck27.bam~ BEGIN
+  COPY ~k0_iskp/bam/cclck27.bam~ ~override~
+END
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~ibdloinc.bam~ BEGIN
+  COPY ~k0_iskp/bam/ibdloinc.bam~ ~override~
+END

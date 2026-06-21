@@ -3896,3 +3896,29 @@ Requires:
  4 Strength
 
 Weight: 2~
+@100188 = ~Cloak of the Strange Beast~
+@100189 = ~This thick pelt can be worn as a cloak by human-sized creatures, or a loincloth by larger creatures. The beast that contributed its hide for this item is a mystery, but long slashes in skin indicate it was stabbed to death with sharp objects. Despite its enchanted nature, the hide still attracts fleas and retains the sweat and odors of its wearer.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +1
+– Charisma: -1
+
+Weight: 3~
+@100190 = ~Ring of the Tiny Fiend~
+@100191 = ~Every elemental plane has its own native creatures, the lowest of which are the mephits. These imp-like creatures appear composed of whatever element dominates their home plane. They are remarkably clever for such unintelligent creatures and can often be found serving as wizard familiars. This ornate gold ring displays four chips of precious stone—emerald, ruby, sapphire, and diamond—surrounding a grinning mephit's face.
+
+STATISTICS:
+
+Equipped abilities:
+– Fire Resistance: +10%
+– Cold Resistance: +10%
+– Electricity Resistance: +10%
+– Acid Resistance: +10%
+
+Charge abilities:
+– Summon 1d4 mephits once per day
+  Duration: 1 turn
+
+Weight: 0~

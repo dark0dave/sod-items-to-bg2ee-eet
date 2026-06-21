@@ -397,14 +397,22 @@ I am open to suggestions as to where these should be placed.
 ### Acid-Etched Dagger (1034)
 placement todo
 
+https://baldursgate.fandom.com/wiki/Acid-Etched_Dagger
+
 ### Rhino Beatle Plate (1006)
 placement todo
+
+https://baldursgate.fandom.com/wiki/Rhino_Beetle_Plate
 
 ### Guardian Devil (1036)
 placement todo
 
+https://baldursgate.fandom.com/wiki/The_Guardian_Devil
+
 ### Echo of the Fiend (1038)
 placement todo
+
+https://baldursgate.fandom.com/wiki/Echo_of_the_Fiend
 
 ### Ostentatious Boots (1097)
 placement todo
@@ -437,7 +445,7 @@ placement todo
 https://baldursgate.fandom.com/wiki/Bartleby%27s_Wakizashi
 
 ### Herdrin's Short Sword (1103)
-
+placement todo
 
 https://baldursgate.fandom.com/wiki/Herdrin%27s_Short_Sword
 
@@ -446,13 +454,13 @@ placement todo
 
 https://baldursgate.fandom.com/wiki/Ophyllis%27s_Short_Sword
 
-## Missing
-
-### Cloak of the Strange Beast
+### Cloak of the Strange Beast (1105)
+placement todo
 
 https://baldursgate.fandom.com/wiki/Cloak_of_the_Strange_Beast
 
-### Ring of the Tiny Fiend
+### Ring of the Tiny Fiend (1106)
+placement todo
 
 https://baldursgate.fandom.com/wiki/Ring_of_the_Tiny_Fiend
 

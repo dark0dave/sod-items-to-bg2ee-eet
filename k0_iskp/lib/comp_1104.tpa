@@ -1,20 +1,9 @@
 // Ophyllis's Short Sword
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdsw1h20.itm~ BEGIN
   COPY ~k0_iskp/itm/bdsw1h20.itm~ ~override~
-    SAY NAME1 @20002  /* Short Sword */  /* Short Sword */
+    SAY NAME1 @20002  /* Short Sword */
     SAY NAME2 @100186  /* Ophyllis's Short Sword +2 */
     SAY UNIDENTIFIED_DESC @20003  /* The short sword is the first type of sword to come into existence. In the simplest of terms, a short sword can be considered a dagger with a blade so long that it can no longer be called a dagger. The term short sword does not exist in sword classifications. However, it has come to be used to describe a double-edged blade about two feet in length. The sword tip is usually pointed, ideal for thrusting.
-
-STATISTICS:
-
-Damage: 1d6 (piercing)
-Speed Factor: 3
-Proficiency Type: Short Sword
-Type: One-handed
-Requires:
- 5 Strength
-
-Weight: 3 */  /* The short sword is the first type of sword to come into existence. In the simplest of terms, a short sword can be considered a dagger with a blade so long that it can no longer be called a dagger. The term short sword does not exist in sword classifications. However, it has come to be used to describe a double-edged blade about two feet in length. The sword tip is usually pointed, ideal for thrusting.
 
 STATISTICS:
 

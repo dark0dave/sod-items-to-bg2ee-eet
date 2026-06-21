@@ -1,0 +1,32 @@
+// Ring of the Tiny Fiend
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdring01.itm~ BEGIN
+  COPY ~k0_iskp/itm/bdring01.itm~ ~override~
+    SAY NAME1 @20105 /* Ring */
+    SAY NAME2 @100190 /* Ring of the Tiny Fiend */
+    SAY UNIDENTIFIED_DESC @20106 /* A ring is a small band of precious metal that is used as jewelry. Some rare rings have had enchantments placed upon them that confer various magical abilities. These rings are highly sought after, especially by those of the adventuring profession.
+
+STATISTICS:
+
+Weight: 0 */
+    SAY DESC @100191 /* Every elemental plane has its own native creatures, the lowest of which are the mephits. These imp-like creatures appear composed of whatever element dominates their home plane. They are remarkably clever for such unintelligent creatures and can often be found serving as wizard familiars. This ornate gold ring displays four chips of precious stone—emerald, ruby, sapphire, and diamond—surrounding a grinning mephit's face.
+
+STATISTICS:
+
+Equipped abilities:
+– Fire Resistance: +10%
+– Cold Resistance: +10%
+– Electricity Resistance: +10%
+– Acid Resistance: +10%
+
+Charge abilities:
+– Summon 1d4 mephits once per day
+  Duration: 1 turn
+
+Weight: 0 */
+END
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~cring24.bam~ BEGIN
+  COPY ~k0_iskp/bam/cring24.bam~ ~override~
+END
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~ibdrng01.bam~ BEGIN
+  COPY ~k0_iskp/bam/ibdrng01.bam~ ~override~
+END
