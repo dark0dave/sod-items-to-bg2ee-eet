@@ -3859,3 +3859,20 @@ Requires:
  5 Strength
 
 Weight: 2~
+@100184 = ~Herdrin's Short Sword +2~
+@100185 = ~The short sword wielded by one-time caravan guard Herdrin, who died in defense of Bridgefort. The sword is of a simple and solid design, a utilitarian blade with a wolf's head carved on the pommel. Herdrin's sword strikes swiftly and keenly and serves its wielder well.
+
+STATISTICS:
+
+Combat abilities:
+– Critical Hit Chance: +10% (this weapon)
+
+THAC0: +2
+Damage: 1d6+2 (piercing)
+Speed Factor: 1
+Proficiency Type: Short Sword
+Type: One-handed
+Requires:
+ 4 Strength
+
+Weight: 2~

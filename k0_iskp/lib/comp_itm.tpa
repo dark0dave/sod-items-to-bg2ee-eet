@@ -1,0 +1,14 @@
+//
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~~ BEGIN
+  COPY ~k0_iskp/itm/~ ~override~
+    SAY NAME1 ~~
+    SAY NAME2 ~~
+    SAY UNIDENTIFIED_DESC ~~
+    SAY DESC ~~
+END
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~~ BEGIN
+  COPY ~k0_iskp/bam/~ ~override~
+END
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~~ BEGIN
+  COPY ~k0_iskp/bam/~ ~override~
+END
