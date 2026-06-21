@@ -1,0 +1,54 @@
+// Ophyllis's Short Sword
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdsw1h20.itm~ BEGIN
+  COPY ~k0_iskp/itm/bdsw1h20.itm~ ~override~
+    SAY NAME1 @20002  /* Short Sword */  /* Short Sword */
+    SAY NAME2 @100186  /* Ophyllis's Short Sword +2 */
+    SAY UNIDENTIFIED_DESC @20003  /* The short sword is the first type of sword to come into existence. In the simplest of terms, a short sword can be considered a dagger with a blade so long that it can no longer be called a dagger. The term short sword does not exist in sword classifications. However, it has come to be used to describe a double-edged blade about two feet in length. The sword tip is usually pointed, ideal for thrusting.
+
+STATISTICS:
+
+Damage: 1d6 (piercing)
+Speed Factor: 3
+Proficiency Type: Short Sword
+Type: One-handed
+Requires:
+ 5 Strength
+
+Weight: 3 */  /* The short sword is the first type of sword to come into existence. In the simplest of terms, a short sword can be considered a dagger with a blade so long that it can no longer be called a dagger. The term short sword does not exist in sword classifications. However, it has come to be used to describe a double-edged blade about two feet in length. The sword tip is usually pointed, ideal for thrusting.
+
+STATISTICS:
+
+Damage: 1d6 (piercing)
+Speed Factor: 3
+Proficiency Type: Short Sword
+Type: One-handed
+Requires:
+ 5 Strength
+
+Weight: 3 */
+    SAY DESC @100187  /* This much-used but still razor-sharp blade was found in the chest of Ophyllis, a treasurer of the Ducal Palace in Baldur's Gate. While his position ensured that Ophyllis possessed many chests, he only used one to house his lungs, and it was in this particular chest the sword was placed. Ophyllis died an agonized, painful death, but not before he gave the sword to a <PRO_MANWOMAN> to whom he owed a deep personal debt. His mournful voice can still be heard by those who wield the blade.
+
+Equipped abilities:
+– Immunity to Command, Greater Command, and Power Word (any)
+
+Combat abilities:
+– 20% chance per hit of casting Deafness on the target
+
+STATISTICS:
+
+THAC0: +2
+Damage: 1d6+2 (piercing)
+Speed Factor: 1
+Proficiency Type: Short Sword
+Type: One-handed
+Requires:
+ 4 Strength
+
+Weight: 2 */
+END
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~csw1h09.bam~ BEGIN
+  COPY ~k0_iskp/bam/csw1h09.bam~ ~override~
+END
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~isw1h74.bam~ BEGIN
+  COPY ~k0_iskp/bam/isw1h74.bam~ ~override~
+END

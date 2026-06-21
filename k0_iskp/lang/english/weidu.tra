@@ -3876,3 +3876,23 @@ Requires:
  4 Strength
 
 Weight: 2~
+@100186 = ~Ophyllis's Short Sword +2~
+@100187 = ~This much-used but still razor-sharp blade was found in the chest of Ophyllis, a treasurer of the Ducal Palace in Baldur's Gate. While his position ensured that Ophyllis possessed many chests, he only used one to house his lungs, and it was in this particular chest the sword was placed. Ophyllis died an agonized, painful death, but not before he gave the sword to a <PRO_MANWOMAN> to whom he owed a deep personal debt. His mournful voice can still be heard by those who wield the blade.
+
+Equipped abilities:
+– Immunity to Command, Greater Command, and Power Word (any)
+
+Combat abilities:
+– 20% chance per hit of casting Deafness on the target
+
+STATISTICS:
+
+THAC0: +2
+Damage: 1d6+2 (piercing)
+Speed Factor: 1
+Proficiency Type: Short Sword
+Type: One-handed
+Requires:
+ 4 Strength
+
+Weight: 2~

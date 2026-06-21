@@ -437,15 +437,16 @@ placement todo
 https://baldursgate.fandom.com/wiki/Bartleby%27s_Wakizashi
 
 ### Herdrin's Short Sword (1103)
-placement todo
+
 
 https://baldursgate.fandom.com/wiki/Herdrin%27s_Short_Sword
 
-## Missing
-
-### Ophyllis's Short Sword
+### Ophyllis's Short Sword (1104)
+placement todo
 
 https://baldursgate.fandom.com/wiki/Ophyllis%27s_Short_Sword
+
+## Missing
 
 ### Cloak of the Strange Beast
 
