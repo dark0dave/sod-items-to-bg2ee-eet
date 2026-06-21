@@ -1,21 +1,21 @@
 // Ostentatious Boots
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdboot02.itm~ BEGIN
   COPY ~k0_iskp/itm/bdboot02.itm~ ~override~
-    SAY NAME1 ~Boots~
-    SAY NAME2 ~Ostentatious Boots~
-    SAY UNIDENTIFIED_DESC ~Boots are normally handmade by cobblers. Common boots are made by using a form, but good boots are designed for the foot of an individual.
+    SAY NAME1 @20111 /* Boots */
+    SAY NAME2 @100170 /* Ostentatious Boots */
+    SAY UNIDENTIFIED_DESC @20112 /* Boots are normally handmade by cobblers. Common boots are made by using a form, but good boots are designed for the foot of an individual.
 
 STATISTICS:
 
-Weight: 4~
-    SAY DESC ~These iridescent scaled boots gleam with a hundred shades of color. On a trade voyage across the Alamber Sea, a ship passed by a pitched battle between sahuagin marauders and a colony of merfolk. The ship's bard leaned over the rail and played a rousing ballad of courage. Bolstered, the merfolk overcame and drove off the vicious sahuagin. One of the mermaids swam up to the ship and handed the bard a glittering shed mermaid tail, telling him that any item fashioned from the scales would gain a valuable enchantment. The bard had the tail made into a pair of boots that have been passed on to his descendants, though their flashy nature makes the wearer quite memorable.
+Weight: 4 */
+    SAY DESC @100171 /* These iridescent scaled boots gleam with a hundred shades of color. On a trade voyage across the Alamber Sea, a ship passed by a pitched battle between sahuagin marauders and a colony of merfolk. The ship's bard leaned over the rail and played a rousing ballad of courage. Bolstered, the merfolk overcame and drove off the vicious sahuagin. One of the mermaids swam up to the ship and handed the bard a glittering shed mermaid tail, telling him that any item fashioned from the scales would gain a valuable enchantment. The bard had the tail made into a pair of boots that have been passed on to his descendants, though their flashy nature makes the wearer quite memorable.
 
 STATISTICS:
 
 Equipped abilities:
 – Charisma: +1
 
-Weight: 4~
+Weight: 4 */
 END
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~cboot07.bam~ BEGIN
   COPY ~k0_iskp/bam/cboot07.bam~ ~override~

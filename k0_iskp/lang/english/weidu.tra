@@ -3746,3 +3746,33 @@ Charisma: +4 (non-cumulative)
 Duration: 3 hours
 
 Weight: 1~
+@100170 = ~Ostentatious Boots~
+@100171 = ~These iridescent scaled boots gleam with a hundred shades of color. On a trade voyage across the Alamber Sea, a ship passed by a pitched battle between sahuagin marauders and a colony of merfolk. The ship's bard leaned over the rail and played a rousing ballad of courage. Bolstered, the merfolk overcame and drove off the vicious sahuagin. One of the mermaids swam up to the ship and handed the bard a glittering shed mermaid tail, telling him that any item fashioned from the scales would gain a valuable enchantment. The bard had the tail made into a pair of boots that have been passed on to his descendants, though their flashy nature makes the wearer quite memorable.
+
+STATISTICS:
+
+Equipped abilities:
+– Charisma: +1
+
+Weight: 4~
+@100172 = ~Fleshripper +2~
+@100173 = ~Despite this short bow's intimidating name, it carries no gruesome history. Kitsana, an elven ranger, designed this bow for her own use and could fire it with astonishing rapidity. One night at camp Kitsana's party each took a turn trying to master the unusually thin bowstring and uniquely curved grip of the weapon. None shot as poorly as the fighter, a braggart named Tirrel, who not only missed his target by a foot but who snapped the bowstring down the length of his forearm and tore off a strip of skin. Kitsana and her party faded into obscurity decades ago but her bow still circulates.
+
+STATISTICS:
+
+Combat abilities:
+– 5% chance per hit of hasting the wielder for 4 rounds
+
+Equipped abilities:
+– Movement Speed: +2
+
+THAC0: +2
+Damage: +2
+Speed Factor: 4
+Proficiency Type: Shortbow
+Type: Two-handed
+Requires:
+ 3 Strength
+16 Dexterity
+
+Weight: 1~

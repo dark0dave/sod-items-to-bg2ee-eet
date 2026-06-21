@@ -1,9 +1,9 @@
 // Fleshripper
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdbow03.itm~ BEGIN
   COPY ~k0_iskp/itm/bdbow03.itm~ ~override~
-    SAY NAME1 ~Shortbow~
-    SAY NAME2 ~Fleshripper +2~
-    SAY UNIDENTIFIED_DESC ~Shortbows were the first bows to be developed, although they were not called such. This is more of a default term that refers to anything which is not a longbow. Shortbow staves are about five feet long on the average. As the years passed, attempts were made to increase bow ranges. Bows were either given longer staves or flexibility was increased with no change to the length. The former resulted in what is now called the longbow.
+    SAY NAME1 @20051 /* Shortbow */
+    SAY NAME2 @100172 /* Fleshripper +2 */
+    SAY UNIDENTIFIED_DESC @20052 /* Shortbows were the first bows to be developed, although they were not called such. This is more of a default term that refers to anything which is not a longbow. Shortbow staves are about five feet long on the average. As the years passed, attempts were made to increase bow ranges. Bows were either given longer staves or flexibility was increased with no change to the length. The former resulted in what is now called the longbow.
 
 STATISTICS:
 
@@ -13,8 +13,8 @@ Type: Two-handed
 Requires:
  6 Strength
 
-Weight: 2~
-    SAY DESC ~Despite this short bow's intimidating name, it carries no gruesome history. Kitsana, an elven ranger, designed this bow for her own use and could fire it with astonishing rapidity. One night at camp Kitsana's party each took a turn trying to master the unusually thin bowstring and uniquely curved grip of the weapon. None shot as poorly as the fighter, a braggart named Tirrel, who not only missed his target by a foot but who snapped the bowstring down the length of his forearm and tore off a strip of skin. Kitsana and her party faded into obscurity decades ago but her bow still circulates.
+Weight: 2 */
+    SAY DESC @100173 /* Despite this short bow's intimidating name, it carries no gruesome history. Kitsana, an elven ranger, designed this bow for her own use and could fire it with astonishing rapidity. One night at camp Kitsana's party each took a turn trying to master the unusually thin bowstring and uniquely curved grip of the weapon. None shot as poorly as the fighter, a braggart named Tirrel, who not only missed his target by a foot but who snapped the bowstring down the length of his forearm and tore off a strip of skin. Kitsana and her party faded into obscurity decades ago but her bow still circulates.
 
 STATISTICS:
 
@@ -33,7 +33,7 @@ Requires:
  3 Strength
 16 Dexterity
 
-Weight: 1~
+Weight: 1 */
 END
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~cbow14.bam~ BEGIN
   COPY ~k0_iskp/bam/cbow14.bam~ ~override~
