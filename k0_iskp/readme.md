@@ -406,6 +406,10 @@ https://baldursgate.fandom.com/wiki/Ostentatious_Boots
 todo
 https://baldursgate.fandom.com/wiki/Fleshripper
 
+### Cloak of the Beluir Watch (1099)
+todo
+https://baldursgate.fandom.com/wiki/Cloak_of_the_Beluir_Watch
+
 ## Missing
 
 ### Gemblade
@@ -428,10 +432,6 @@ https://baldursgate.fandom.com/wiki/Herdrin%27s_Short_Sword
 
 ### Ophyllis's Short Sword
 https://baldursgate.fandom.com/wiki/Ophyllis%27s_Short_Sword
-
-
-### Cloak of the Beluir Watch
-https://baldursgate.fandom.com/wiki/Cloak_of_the_Beluir_Watch
 
 ### Cloak of the Strange Beast
 https://baldursgate.fandom.com/wiki/Cloak_of_the_Strange_Beast

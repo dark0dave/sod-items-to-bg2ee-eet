@@ -1,0 +1,26 @@
+// Cloak of the Beluir Watch
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdclck04.itm~ BEGIN
+  COPY ~k0_iskp/itm/bdclck04.itm~ ~override~
+    SAY NAME1 @20107 /* Cloak */
+    SAY NAME2 @100174 /* Cloak of the Beluir Watch */
+    SAY UNIDENTIFIED_DESC @20108 /* The cloak can be made in every possible shape with just about every type of fabric. The most common forms are a circular piece of fabric with a hole in the center for the head, and fabric draped from neck, connected by a chain, brooch, cord, or pins.
+
+STATISTICS:
+
+Weight: 3 */
+    SAY DESC @100175 /* Beluir is the capital city in the halfling kingdom of Luiren, and many brave halflings show their loyalty to their home by serving in the city watch. Like any large city, Beluir has its share of crime, and city guards must show alertness and courage every day they serve. While some halflings serve only a few years before moving on to other jobs or out of the city, many become lifelong members of the watch. This cloak is a reward for five years of service and bears an inscripion in Luiren on the clasp. The inscription reads, "Lead By Example," one of the tenets of the halfling god Yondalla.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +2 vs. giant humanoids
+– Hit Points: +5 (halflings)
+
+Weight: 3 */
+END
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~cclck01.bam~ BEGIN
+  COPY ~k0_iskp/bam/cclck01.bam~ ~override~
+END
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~ibdclk04.bam~ BEGIN
+  COPY ~k0_iskp/bam/ibdclk04.bam~ ~override~
+END

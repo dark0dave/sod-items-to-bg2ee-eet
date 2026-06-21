@@ -3776,3 +3776,13 @@ Requires:
 16 Dexterity
 
 Weight: 1~
+@100174 = ~Cloak of the Beluir Watch~
+@100175 = ~Beluir is the capital city in the halfling kingdom of Luiren, and many brave halflings show their loyalty to their home by serving in the city watch. Like any large city, Beluir has its share of crime, and city guards must show alertness and courage every day they serve. While some halflings serve only a few years before moving on to other jobs or out of the city, many become lifelong members of the watch. This cloak is a reward for five years of service and bears an inscripion in Luiren on the clasp. The inscription reads, "Lead By Example," one of the tenets of the halfling god Yondalla.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +2 vs. giant humanoids
+– Hit Points: +5 (halflings)
+
+Weight: 3~
