@@ -35,8 +35,8 @@ Requires:
 
 Weight: 4 */
 END
-ACTION_IF NOT FILE_EXISTS_IN_GAME ~pcstaf18.bam~ BEGIN
-  COPY ~k0_iskp/bam/pcstaf18.bam~ ~override~
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~cstaf18.bam~ BEGIN
+  COPY ~k0_iskp/bam/cstaf18.bam~ ~override~
 END
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~istaf24.bam~ BEGIN
   COPY ~k0_iskp/bam/istaf24.bam~ ~override~
