@@ -1,0 +1,43 @@
+// Brevin's Quarterstaff
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdstaf01.itm~ BEGIN
+  COPY ~k0_iskp/itm/bdstaf01.itm~ ~override~
+    SAY NAME1 @20039 /* Quarterstaff */
+    SAY NAME2 @100180 /* Brevin's Quarterstaff +1 */
+    SAY UNIDENTIFIED_DESC @20040 /* The simplest and humblest of staff weapons, the quarterstaff is a length of wood ranging six to nine feet in length. High-quality quarterstaves are made of stout oak and are shod with metal at both ends. The quarterstaff must be wielded with both hands.
+
+STATISTICS:
+
+Damage: 1d6 (crushing)
+Speed Factor: 4
+Proficiency Type: Quarterstaff
+Type: Two-handed
+Requires:
+ 5 Strength
+
+Weight: 4 */
+    SAY DESC @100181 /* The soldier Brevin brought this quarterstaff from home when he first left to make his fortune. Once he earned enough money to purchase a better weapon, the quarterstaff wound up in a weapons supply in Candlekeep. At some point it was retrieved and enchanted, switching owners several times along the way.
+
+STATISTICS:
+
+Equipped abilities:
+– Lore: +10
+
+Charge abilities:
+– Friends once per day
+
+THAC0: +1
+Damage: 1d6+1 (crushing)
+Speed Factor: 3
+Proficiency Type: Quarterstaff
+Type: Two-handed
+Requires:
+ 5 Strength
+
+Weight: 4 */
+END
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~pcstaf18.bam~ BEGIN
+  COPY ~k0_iskp/bam/pcstaf18.bam~ ~override~
+END
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~istaf24.bam~ BEGIN
+  COPY ~k0_iskp/bam/istaf24.bam~ ~override~
+END

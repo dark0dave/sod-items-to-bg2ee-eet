@@ -360,6 +360,10 @@ https://baldursgate.fandom.com/wiki/Spell_Breaker
 ### Rhyte's Last Arrow (1078)
 Tarnor the Hatchetman, Sewers, Temple District
 
+### Cold Fury (1083)
+Ribald, Adventurer's Mart, Waukeen's Promenade
+https://baldursgate.fandom.com/wiki/Cold_Fury
+
 ### Bloodied Guardian (1084)
 Maferan, 1st Floor, Guarded Compound, Temple District
 
@@ -387,43 +391,38 @@ Various Potion Sellers
 I am open to suggestions as to where these should be placed.
 
 ### Acid-Etched Dagger (1034)
-todo
+placement todo
 
 ### Rhino Beatle Plate (1006)
-todo
+placement todo
 
 ### Guardian Devil (1036)
-todo
+placement todo
 
 ### Echo of the Fiend (1038)
-todo
+placement todo
 
 ### Ostentatious Boots (1097)
-todo
+placement todo
 https://baldursgate.fandom.com/wiki/Ostentatious_Boots
 
 ### Fleshripper (1098)
-todo
+placement todo
 https://baldursgate.fandom.com/wiki/Fleshripper
 
 ### Cloak of the Beluir Watch (1099)
-todo
+placement todo
 https://baldursgate.fandom.com/wiki/Cloak_of_the_Beluir_Watch
 
 ### Gemblade (1100)
-todo
+placement todo
 https://baldursgate.fandom.com/wiki/Gemblade
 
-## Missing
-
-### Dagger of Troll Fighting
-https://baldursgate.fandom.com/wiki/Dagger_of_Troll-fighting
-
-### Cold Fury
-https://baldursgate.fandom.com/wiki/Cold_Fury
-
-### Brevin's Quaterstaff
+### Brevin's Quaterstaff (1101)
+placement todo
 https://baldursgate.fandom.com/wiki/Brevin%27s_Quarterstaff
+
+## Missing
 
 ### Bartleby's Wakizashi
 https://baldursgate.fandom.com/wiki/Bartleby%27s_Wakizashi
@@ -439,3 +438,9 @@ https://baldursgate.fandom.com/wiki/Cloak_of_the_Strange_Beast
 
 ### Ring of the Tiny Fiend
 https://baldursgate.fandom.com/wiki/Ring_of_the_Tiny_Fiend
+
+### Ignored
+
+### Dagger of Troll Fighting
+Seems to be missing bams and not sold or dropped by anyone
+https://baldursgate.fandom.com/wiki/Dagger_of_Troll-fighting

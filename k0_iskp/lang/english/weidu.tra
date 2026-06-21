@@ -3822,3 +3822,23 @@ Requires:
  3 Strength
 
 Weight: 1~
+@100180 = ~Brevin's Quarterstaff +1~
+@100181 = ~The soldier Brevin brought this quarterstaff from home when he first left to make his fortune. Once he earned enough money to purchase a better weapon, the quarterstaff wound up in a weapons supply in Candlekeep. At some point it was retrieved and enchanted, switching owners several times along the way.
+
+STATISTICS:
+
+Equipped abilities:
+– Lore: +10
+
+Charge abilities:
+– Friends once per day
+
+THAC0: +1
+Damage: 1d6+1 (crushing)
+Speed Factor: 3
+Proficiency Type: Quarterstaff
+Type: Two-handed
+Requires:
+ 5 Strength
+
+Weight: 4~

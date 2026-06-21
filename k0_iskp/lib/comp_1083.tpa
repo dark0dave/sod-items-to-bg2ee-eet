@@ -1,3 +1,4 @@
+// Cold Fury
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdhalb03.itm~ BEGIN
   COPY ~k0_iskp/itm/bdhalb03.itm~ ~override~
     SAY NAME1 @20047 /* Halberd */
