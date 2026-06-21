@@ -1,0 +1,40 @@
+// Bartleby's Wakizashi
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdsw1h04.itm~ BEGIN
+  COPY ~k0_iskp/itm/bdsw1h04.itm~ ~override~
+    SAY NAME1 @20010 /* Wakizashi */
+    SAY NAME2 @100182 /* Bartleby's Wakizashi +1 */
+    SAY UNIDENTIFIED_DESC @20011 /* The wakizashi, or companion sword, is extremely important to samurai. It is worn at all times, even indoors, and is near the samurai when he sleeps at night. As finely made as the katana, the wakizashi, a shorter sword with a length between twelve and twenty-four inches, is a dangerous weapon in the hands of a skilled user.
+
+STATISTICS:
+
+Damage: 1d8 (piercing)
+Speed Factor: 3
+Proficiency Type: Scimitar/Wakizashi/Ninjatō
+Type: One-handed
+Requires:
+ 5 Strength
+
+Weight: 3 */
+    SAY DESC @100183 /* This wakizashi is finely made, but gaudy false gems have been glued on to its hilt. The weapon was procured by Bartleby, a local thug whose obsession with the continent of Kara-Tur has made him one of the most obnoxious mercenaries in the local taverns. He rambles for hours on how different the foreign culture is to that of the Sword Coast and prides himself on being a "city samurai," a title that is as offensive as it is undeserved.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +2 vs. slashing attacks (Kensai)
+
+THAC0: +1
+Damage: 1d8+1 (piercing)
+Speed Factor: 2
+Proficiency Type: Scimitar/Wakizashi/Ninjatō
+Type: One-handed
+Requires:
+ 5 Strength
+
+Weight: 2 */
+END
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~csw1h47.bam~ BEGIN
+  COPY ~k0_iskp/bam/csw1h47.bam~ ~override~
+END
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~ibds1h04.bam~ BEGIN
+  COPY ~k0_iskp/bam/ibds1h04.bam~ ~override~
+END

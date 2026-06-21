@@ -3842,3 +3842,20 @@ Requires:
  5 Strength
 
 Weight: 4~
+@100182 = ~Bartleby's Wakizashi +1~
+@100183 = ~This wakizashi is finely made, but gaudy false gems have been glued on to its hilt. The weapon was procured by Bartleby, a local thug whose obsession with the continent of Kara-Tur has made him one of the most obnoxious mercenaries in the local taverns. He rambles for hours on how different the foreign culture is to that of the Sword Coast and prides himself on being a "city samurai," a title that is as offensive as it is undeserved.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +2 vs. slashing attacks (Kensai)
+
+THAC0: +1
+Damage: 1d8+1 (piercing)
+Speed Factor: 2
+Proficiency Type: Scimitar/Wakizashi/Ninjatō
+Type: One-handed
+Requires:
+ 5 Strength
+
+Weight: 2~

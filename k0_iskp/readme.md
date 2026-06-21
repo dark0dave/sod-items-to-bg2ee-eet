@@ -422,10 +422,11 @@ https://baldursgate.fandom.com/wiki/Gemblade
 placement todo
 https://baldursgate.fandom.com/wiki/Brevin%27s_Quarterstaff
 
-## Missing
-
-### Bartleby's Wakizashi
+### Bartleby's Wakizashi (1102)
+placement todo
 https://baldursgate.fandom.com/wiki/Bartleby%27s_Wakizashi
+
+## Missing
 
 ### Herdrin's Short Sword
 https://baldursgate.fandom.com/wiki/Herdrin%27s_Short_Sword
