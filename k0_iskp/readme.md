@@ -410,10 +410,11 @@ https://baldursgate.fandom.com/wiki/Fleshripper
 todo
 https://baldursgate.fandom.com/wiki/Cloak_of_the_Beluir_Watch
 
-## Missing
-
-### Gemblade
+### Gemblade (1100)
+todo
 https://baldursgate.fandom.com/wiki/Gemblade
+
+## Missing
 
 ### Dagger of Troll Fighting
 https://baldursgate.fandom.com/wiki/Dagger_of_Troll-fighting

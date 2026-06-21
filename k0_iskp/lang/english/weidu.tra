@@ -3786,3 +3786,39 @@ Equipped abilities:
 – Hit Points: +5 (halflings)
 
 Weight: 3~
+@100176 = ~Gemblade +1~
+@100177 = ~A halfling named Tinny originally owned this bejeweled dagger. A thief on the streets of Saerloon, Tinny always scraped to make ends meet. Sick of being poor, he prayed to Brandobaris every night for a month, begging the god to help him become the richest thief in Saerloon.
+
+Finally, one night Tinny stabbed his mark in a mugging gone wrong and was shocked to see a gem fall out of the victim's wound. Tinny eagerly grabbed the gem, rejoicing in his newfound wealth. Stories of Tinny's good fortune spread quickly. A few days later, he was found stabbed to death in his bed, his dagger gone.
+
+STATISTICS:
+
+Combat abilities:
+– 20% chance per hit that a random gem will be generated in the wielder's inventory
+
+THAC0: +1
+Damage: 1d4+1 (piercing)
+Speed Factor: 0
+Proficiency Type: Dagger
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 1~
+@100178 = ~Gemblade +2~
+@100179 = ~The original Gemblade produced brilliant jewels when it struck. Now the weapon has used up its ability to create these valuable stones. Instead it has developed a new ability and increases the owner's intelligence so long as it is carried.
+
+STATISTICS:
+
+Equipped abilities:
+– Intelligence: +1
+
+THAC0: +2
+Damage: 1d4+2 (piercing)
+Speed Factor: 0
+Proficiency Type: Dagger
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 1~
