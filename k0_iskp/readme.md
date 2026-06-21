@@ -388,15 +388,23 @@ I am open to suggestions as to where these should be placed.
 
 ### Acid-Etched Dagger (1034)
 todo
+
 ### Rhino Beatle Plate (1006)
 todo
+
 ### Guardian Devil (1036)
 todo
+
 ### Echo of the Fiend (1038)
 todo
+
 ### Ostentatious Boots (1097)
 todo
 https://baldursgate.fandom.com/wiki/Ostentatious_Boots
+
+### Fleshripper (1098)
+todo
+https://baldursgate.fandom.com/wiki/Fleshripper
 
 ## Missing
 
@@ -421,8 +429,6 @@ https://baldursgate.fandom.com/wiki/Herdrin%27s_Short_Sword
 ### Ophyllis's Short Sword
 https://baldursgate.fandom.com/wiki/Ophyllis%27s_Short_Sword
 
-### Fleshripper
-https://baldursgate.fandom.com/wiki/Fleshripper
 
 ### Cloak of the Beluir Watch
 https://baldursgate.fandom.com/wiki/Cloak_of_the_Beluir_Watch
