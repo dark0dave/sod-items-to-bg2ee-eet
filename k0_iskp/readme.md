@@ -301,9 +301,6 @@ Fierce Grizzly Bear, Umar Hills
 ### Daeros' Full Plate +1
 Lord Roenall, D'Arnise Keep, stronghold quest
 
-### Spell Breaker
-Lord Roenall, D'Arnise Keep, stronghold quest
-
 ### Bloody Bone Plate +2
 Dorn's starting equipment
 
@@ -353,6 +350,10 @@ Barrel, Valygar's Cabin, Umar Hills
 Garren Windspear, Windspear Hills, reward for rescuing his child
 https://baldursgate.fandom.com/wiki/Helm_of_Equus
 
+### Spell Breaker (1072)
+Lord Roenall, D'Arnise Keep, stronghold quest
+https://baldursgate.fandom.com/wiki/Spell_Breaker
+
 ### Sword of Ruin (1075)
 2nd Floor, Saerk's House
 
@@ -361,6 +362,10 @@ Tarnor the Hatchetman, Sewers, Temple District
 
 ### Bloodied Guardian (1084)
 Maferan, 1st Floor, Guarded Compound, Temple District
+
+### Corinth's Bow (1087)
+Storekeep in front of Estate of Saerk Farrahd, Athkatla's Bridge District
+https://baldursgate.fandom.com/wiki/Corinth%27s_Bow
 
 ### Wand of Water Elemental Summoning (1088)
 In the cart next to the gnome, The Wild Forest
@@ -389,7 +394,9 @@ todo
 todo
 ### Echo of the Fiend (1038)
 todo
-
+### Ostentatious Boots (1097)
+todo
+https://baldursgate.fandom.com/wiki/Ostentatious_Boots
 
 ## Missing
 
@@ -401,9 +408,6 @@ https://baldursgate.fandom.com/wiki/Dagger_of_Troll-fighting
 
 ### Cold Fury
 https://baldursgate.fandom.com/wiki/Cold_Fury
-
-### Corinth's Bow
-https://baldursgate.fandom.com/wiki/Corinth%27s_Bow
 
 ### Brevin's Quaterstaff
 https://baldursgate.fandom.com/wiki/Brevin%27s_Quarterstaff
@@ -419,9 +423,6 @@ https://baldursgate.fandom.com/wiki/Ophyllis%27s_Short_Sword
 
 ### Fleshripper
 https://baldursgate.fandom.com/wiki/Fleshripper
-
-### Ostentatious Boots
-https://baldursgate.fandom.com/wiki/Ostentatious_Boots
 
 ### Cloak of the Beluir Watch
 https://baldursgate.fandom.com/wiki/Cloak_of_the_Beluir_Watch

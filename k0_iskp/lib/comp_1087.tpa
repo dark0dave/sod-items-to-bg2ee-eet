@@ -1,3 +1,4 @@
+// Corinth's Bow
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdbow02.itm~ BEGIN
   COPY ~k0_iskp/itm/bdbow02.itm~ ~override~
     SAY NAME1 @20055 /* Composite Longbow */
@@ -36,5 +37,15 @@ Requires:
 Weight: 8 */
   COPY ~k0_iskp/spl/bdbow02.spl~ ~override~
 END
-COPY_EXISTING ~bshop02.sto~ ~override~
-  ADD_STORE_ITEM ~bdbow02~ #1 #0 #0 ~IDENTIFIED~ #1
+ACTION_IF GAME_IS "bg2ee" OR GAME_IS "eet" BEGIN
+  ACTION_IF FILE_EXISTS_IN_GAME ~bshop02.sto~ BEGIN  // Storekeep Bridge District
+    COPY_EXISTING ~bshop02.sto~ ~override~
+      LPF ADD_STORE_ITEM_EX
+        INT_VAR
+          stack = 1
+        STR_VAR
+          item_name = ~bdbow02~
+      END
+    BUT_ONLY
+  END
+END
