@@ -1074,6 +1074,7 @@ REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~3102~ @100148 /
 REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
+INCLUDE ~k0_iskp/lib/comp_3000.tpa~
 INCLUDE ~k0_iskp/lib/comp_3001.tpa~
 
 BEGIN @100130 /* voidhammer */
@@ -1086,6 +1087,7 @@ REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~3102~ @100148 /
 REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
+INCLUDE ~k0_iskp/lib/comp_3000.tpa~
 INCLUDE ~k0_iskp/lib/comp_3002.tpa~
 
 BEGIN @100131 /* robe_of_red_flames */
@@ -1098,6 +1100,7 @@ REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~3102~ @100148 /
 REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
+INCLUDE ~k0_iskp/lib/comp_3000.tpa~
 INCLUDE ~k0_iskp/lib/comp_3003.tpa~
 
 BEGIN @100132 /* belt_skillful_blade */
@@ -1110,6 +1113,7 @@ REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~3102~ @100148 /
 REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
+INCLUDE ~k0_iskp/lib/comp_3000.tpa~
 INCLUDE ~k0_iskp/lib/comp_3004.tpa~
 
 BEGIN @100133 /* archers_eyes */
@@ -1122,6 +1126,7 @@ REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~3102~ @100148 /
 REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
+INCLUDE ~k0_iskp/lib/comp_3000.tpa~
 INCLUDE ~k0_iskp/lib/comp_3005.tpa~
 
 BEGIN @100134 /* helm_of_dumathoin */
@@ -1134,6 +1139,7 @@ REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~3102~ @100148 /
 REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
+INCLUDE ~k0_iskp/lib/comp_3000.tpa~
 INCLUDE ~k0_iskp/lib/comp_3006.tpa~
 
 BEGIN @100135 /* bard_hat */
@@ -1146,6 +1152,7 @@ REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~3102~ @100148 /
 REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
+INCLUDE ~k0_iskp/lib/comp_3000.tpa~
 INCLUDE ~k0_iskp/lib/comp_3007.tpa~
 
 BEGIN @100136 /* biter */
@@ -1158,6 +1165,7 @@ REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~3102~ @100148 /
 REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
+INCLUDE ~k0_iskp/lib/comp_3000.tpa~
 INCLUDE ~k0_iskp/lib/comp_3008.tpa~
 
 BEGIN @100137 /* tangled_strings */
@@ -1170,6 +1178,7 @@ REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~3102~ @100148 /
 REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
+INCLUDE ~k0_iskp/lib/comp_3000.tpa~
 INCLUDE ~k0_iskp/lib/comp_3009.tpa~
 
 BEGIN @100138 /* buckler_fist */
@@ -1182,6 +1191,7 @@ REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~3102~ @100148 /
 REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
+INCLUDE ~k0_iskp/lib/comp_3000.tpa~
 INCLUDE ~k0_iskp/lib/comp_3010.tpa~
 
 BEGIN @100139 /* dragon_blade */
@@ -1194,6 +1204,7 @@ REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~3102~ @100148 /
 REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
+INCLUDE ~k0_iskp/lib/comp_3000.tpa~
 INCLUDE ~k0_iskp/lib/comp_3011.tpa~
 
 BEGIN @100140 /* all_imports_voidsword */
