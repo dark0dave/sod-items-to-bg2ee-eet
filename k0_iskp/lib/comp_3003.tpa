@@ -4,7 +4,6 @@ IF
   Global("K0_IMPORT_ITEMS_ROBE_OF_RED_FLAMES","GLOBAL",0)
 THEN
   RESPONSE #100
-    SetGlobal("BD_HAVE_SOD","GLOBAL",1)  // Core variable needed for all items to import
     SetGlobal("BD_SOD_IMPORT_03","GLOBAL",1)  // Robe of Red Flames
     SetGlobal("K0_IMPORT_ITEMS_ROBE_OF_RED_FLAMES","GLOBAL",1)
 END
