@@ -8,4 +8,4 @@ THEN
     SetGlobal("K0_IMPORT_ITEMS_HAVE_SOD","GLOBAL",1)
 END
 >>>>>>>>
-EXTEND_BOTTOM ~baldur.bcs~ ~.../inlined/k0baldur.baf~ BUT_ONLY
+EXTEND_BOTTOM ~baldur.bcs~ ~.../inlined/k0baldur.baf~
