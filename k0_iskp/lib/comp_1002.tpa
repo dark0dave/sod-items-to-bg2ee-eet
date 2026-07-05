@@ -22,6 +22,12 @@ Launcher: Crossbow
 
 Weight: 0 */
 END
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~ibdblt01.bam~ BEGIN
+  COPY ~k0_iskp/bam/ibdblt01.bam~ ~override~
+END
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~cbolt01.bam~ BEGIN
+  COPY ~k0_iskp/bam/cbolt01.bam~ ~override~
+END
 // Bolt of Ice +1
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdbolt02.itm~ BEGIN
   COPY ~k0_iskp/itm/bdbolt02.itm~ ~override~
@@ -46,6 +52,12 @@ Launcher: Crossbow
 
 Weight: 0 */
 END
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdiblt02.bam~ BEGIN
+  COPY ~k0_iskp/bam/bdiblt02.bam~ ~override~
+END
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~cbolt02.bam~ BEGIN
+  COPY ~k0_iskp/bam/cbolt02.bam~ ~override~
+END
 // Bullet of Fire +1
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bull07.itm~ BEGIN
   COPY ~k0_iskp/itm/bull07.itm~ ~override~
@@ -68,6 +80,12 @@ Damage type: Missile
 Launcher: Sling
 
 Weight: 0 */
+END
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~ibull01.bam~ BEGIN
+  COPY ~k0_iskp/bam/ibull01.bam~ ~override~
+END
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~cbull01.bam~ BEGIN
+  COPY ~k0_iskp/bam/cbull01.bam~ ~override~
 END
 // Bullet of Ice +1
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bull08.itm~ BEGIN
