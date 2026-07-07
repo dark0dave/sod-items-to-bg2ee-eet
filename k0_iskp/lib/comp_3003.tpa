@@ -1,11 +1,13 @@
 // Robe of Red Flames
 <<<<<<<< .../inlined/k0baldur.baf
 IF
-  Global("K0_IMPORT_ITEMS_ROBE_OF_RED_FLAMES","GLOBAL",0)
+  Global("K0_II_ROBE_OF_RED_FLAMES","GLOBAL",0)
+  Global("BD_SOD_IMPORT_03","GLOBAL",0)
+  Global("BD_HAVE_SOD","GLOBAL",1)
 THEN
   RESPONSE #100
-    SetGlobal("BD_SOD_IMPORT_03","GLOBAL",1)  // Robe of Red Flames
-    SetGlobal("K0_IMPORT_ITEMS_ROBE_OF_RED_FLAMES","GLOBAL",1)
+    SetGlobal("BD_SOD_IMPORT_03","GLOBAL",1)
+    SetGlobal("K0_II_ROBE_OF_RED_FLAMES","GLOBAL",1)
 END
 >>>>>>>>
 EXTEND_BOTTOM ~baldur.bcs~ ~.../inlined/k0baldur.baf~

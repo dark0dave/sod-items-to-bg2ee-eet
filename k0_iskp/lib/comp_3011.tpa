@@ -1,11 +1,13 @@
 // Dragon Blade +3
 <<<<<<<< .../inlined/k0baldur.baf
 IF
-  Global("K0_IMPORT_ITEMS_DRAGON_BLADE","GLOBAL",0)
+  Global("K0_II_DRAGON_BLADE","GLOBAL",0)
+  Global("BD_SOD_IMPORT_11","GLOBAL",0)
+  Global("BD_HAVE_SOD","GLOBAL",1)
 THEN
   RESPONSE #100
-    SetGlobal("BD_SOD_IMPORT_11","GLOBAL",1)  // Dragon Blade +3
-    SetGlobal("K0_IMPORT_ITEMS_DRAGON_BLADE","GLOBAL",1)
+    SetGlobal("BD_SOD_IMPORT_11","GLOBAL",1)
+    SetGlobal("K0_II_DRAGON_BLADE","GLOBAL",1)
 END
 >>>>>>>>
 EXTEND_BOTTOM ~baldur.bcs~ ~.../inlined/k0baldur.baf~

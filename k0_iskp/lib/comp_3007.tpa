@@ -2,15 +2,18 @@
 // Bard Hat
 <<<<<<<< .../inlined/k0baldur.baf
 IF
-  Global("K0_IMPORT_ITEMS_BARD_HAT","GLOBAL",0)
+  Global("K0_II_BARD_HAT","GLOBAL",0)
+  Global("BD_SOD_IMPORT_07","GLOBAL",0)
+  Global("BD_HAVE_SOD","GLOBAL",1)
 THEN
   RESPONSE #100
-    SetGlobal("BD_SOD_IMPORT_07","GLOBAL",1)  // Bard Hat
-    SetGlobal("K0_IMPORT_ITEMS_BARD_HAT","GLOBAL",1)
+    SetGlobal("BD_SOD_IMPORT_07","GLOBAL",1)
+    SetGlobal("K0_II_BARD_HAT","GLOBAL",1)
 END
 >>>>>>>>
 EXTEND_BOTTOM ~baldur.bcs~ ~.../inlined/k0baldur.baf~
+// Fixing bag of holding bug
 ACTION_IF FILE_EXISTS_IN_GAME ~bdhelm11.itm~ BEGIN
-  COPY_EXISTING ~bdhelm11.itm~ ~override~	//Fixing bag of holding bug
+  COPY_EXISTING ~bdhelm11.itm~ ~override~
     WRITE_SHORT 0x1c 7
 END
