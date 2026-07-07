@@ -40,12 +40,7 @@ END
 ACTION_IF GAME_IS "bg2ee" OR GAME_IS "eet" BEGIN
   ACTION_IF FILE_EXISTS_IN_GAME ~bshop02.sto~ BEGIN  // Storekeep Bridge District
     COPY_EXISTING ~bshop02.sto~ ~override~
-      LPF ADD_STORE_ITEM_EX
-        INT_VAR
-          stack = 1
-        STR_VAR
-          item_name = ~bdbow02~
-      END
+      ADD_STORE_ITEM ~bdbow02~ AFTER ~bow03~ #0 #0 #0 ~IDENTIFIED~ #1  // Bolt of Fire +1
     BUT_ONLY
   END
 END
