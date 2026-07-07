@@ -21,7 +21,7 @@ ACTION_IF NOT FILE_EXISTS_IN_GAME ~ibdptn60.bam~ BEGIN
   COPY ~k0_iskp/bam/ibdptn60.bam~ ~override~
 END
 // Borrowed from https://github.com/szaumoor/ZS_Consumables/blob/main/ZS_Consumables/libs/scripts/potions/fragments/zs_incl_potions_stores.tph
-ACTION_IF GAME_IS "bg2ee" OR GAME_IS "eet" BEGIN
+ACTION_IF (GAME_IS ~tob bgt bg2ee eet~) BEGIN
 
   ACTION_IF FILE_EXISTS_IN_GAME ~ppstor01.sto~ BEGIN  // Storekeep Brynnlaw
     COPY_EXISTING ~ppstor01.sto~ ~override~
