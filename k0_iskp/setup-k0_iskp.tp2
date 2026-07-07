@@ -49,7 +49,7 @@ GROUP @10003 /* Items */
 LABEL ~Missiles~
 REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~1999~ @100145 /* Can not be installed along side all items */
 REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
-REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
+REQUIRE_PREDICATE GAME_IS ~bg2ee eet iwdee~ @100167 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2, Icewind Dale and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_1002.tpa~
 

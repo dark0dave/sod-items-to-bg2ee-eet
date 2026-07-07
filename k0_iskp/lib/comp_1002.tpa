@@ -317,7 +317,7 @@ ACTION_IF (GAME_IS ~tob bgt bg2ee eet~) BEGIN
   END
 
   ACTION_IF FILE_EXISTS_IN_GAME ~bshop02.sto~ BEGIN
-    COPY_EXISTING ~bshop02.sto~ ~override~ // Storekeep Bridge  District
+    COPY_EXISTING ~bshop02.sto~ ~override~ // Storekeep Bridge District
       ADD_STORE_ITEM ~bdbolt01~ AFTER ~bolt01~ #1 #0 #0 ~IDENTIFIED~ #120  // Bolt of Fire +1
       ADD_STORE_ITEM ~bdbolt02~ AFTER ~bolt01~ #1 #0 #0 ~IDENTIFIED~ #120  // Bolt of Ice +1
       ADD_STORE_ITEM ~bull07~ AFTER ~bull01~ #1 #0 #0 ~IDENTIFIED~ #120  // Bullet of Fire +1
@@ -327,4 +327,37 @@ ACTION_IF (GAME_IS ~tob bgt bg2ee eet~) BEGIN
   END
 
 END
-// TODO: Add IWD compat
+
+ACTION_IF GAME_IS "iwdee" BEGIN
+
+  ACTION_IF FILE_EXISTS_IN_GAME ~kuork0.sto~ BEGIN
+    COPY_EXISTING ~kuork0.sto~ ~override~ // Orrick
+      ADD_STORE_ITEM ~bdbolt01~ AFTER ~bolt01~ #1 #0 #0 ~IDENTIFIED~ #120  // Bolt of Fire +1
+      ADD_STORE_ITEM ~bdbolt02~ AFTER ~bolt01~ #1 #0 #0 ~IDENTIFIED~ #120  // Bolt of Ice +1
+      ADD_STORE_ITEM ~bull07~ AFTER ~bull01~ #1 #0 #0 ~IDENTIFIED~ #120  // Bullet of Fire +1
+      ADD_STORE_ITEM ~bull08~ AFTER ~bull01~ #1 #0 #0 ~IDENTIFIED~ #120  // Bullet of Ice +1
+      ADD_STORE_ITEM ~bull09~ AFTER ~bull01~ #1 #0 #0 ~IDENTIFIED~ #120  // Bullet of Electricity +1
+    BUT_ONLY
+  END
+
+  ACTION_IF FILE_EXISTS_IN_GAME ~kuork2.sto~ BEGIN
+    COPY_EXISTING ~kuork2.sto~ ~override~ // Orrick
+      ADD_STORE_ITEM ~bdbolt01~ AFTER ~bolt01~ #1 #0 #0 ~IDENTIFIED~ #120  // Bolt of Fire +1
+      ADD_STORE_ITEM ~bdbolt02~ AFTER ~bolt01~ #1 #0 #0 ~IDENTIFIED~ #120  // Bolt of Ice +1
+      ADD_STORE_ITEM ~bull07~ AFTER ~bull01~ #1 #0 #0 ~IDENTIFIED~ #120  // Bullet of Fire +1
+      ADD_STORE_ITEM ~bull08~ AFTER ~bull01~ #1 #0 #0 ~IDENTIFIED~ #120  // Bullet of Ice +1
+      ADD_STORE_ITEM ~bull09~ AFTER ~bull01~ #1 #0 #0 ~IDENTIFIED~ #120  // Bullet of Electricity +1
+    BUT_ONLY
+  END
+
+  ACTION_IF FILE_EXISTS_IN_GAME ~kuork3.sto~ BEGIN
+    COPY_EXISTING ~kuork3.sto~ ~override~ // Orrick
+      ADD_STORE_ITEM ~bdbolt01~ AFTER ~bolt01~ #1 #0 #0 ~IDENTIFIED~ #120  // Bolt of Fire +1
+      ADD_STORE_ITEM ~bdbolt02~ AFTER ~bolt01~ #1 #0 #0 ~IDENTIFIED~ #120  // Bolt of Ice +1
+      ADD_STORE_ITEM ~bull07~ AFTER ~bull01~ #1 #0 #0 ~IDENTIFIED~ #120  // Bullet of Fire +1
+      ADD_STORE_ITEM ~bull08~ AFTER ~bull01~ #1 #0 #0 ~IDENTIFIED~ #120  // Bullet of Ice +1
+      ADD_STORE_ITEM ~bull09~ AFTER ~bull01~ #1 #0 #0 ~IDENTIFIED~ #120  // Bullet of Electricity +1
+    BUT_ONLY
+  END
+
+END
