@@ -1,3 +1,4 @@
+// Myconid Pod
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdmisc08.itm~ BEGIN
   COPY ~k0_iskp/itm/bdmisc08.itm~ ~override~
     SAY NAME1 @20379 /* Myconid Pod */
@@ -102,6 +103,12 @@ ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdmycsp1.spl~ BEGIN  // Ring required for CRE
         match_opcode = 139
         parameter1   = RESOLVE_STR_REF(@40022 /* Confused */)
     END
+END
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdmisc08.bam~ BEGIN
+  COPY ~k0_iskp/bam/bdmisc08.bam~ ~override~
+END
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdcmis08.bam~ BEGIN
+  COPY ~k0_iskp/bam/bdcmis08.bam~ ~override~
 END
 <<<<<<<< .../inlined/k0ar0418.baf
 IF
