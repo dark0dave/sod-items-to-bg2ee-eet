@@ -956,7 +956,7 @@ INCLUDE ~k0_iskp/lib/comp_1092.tpa~
 BEGIN @100108 /* myconid_bloom_sac */
 DESIGNATED 1093
 GROUP @10003 /* Items */
-LABEL ~myconid bloom-sac~
+LABEL ~Add Myconid Bloom-sac~
 REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~1999~ @100145 /* Can not be installed along side all items */
 REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
@@ -966,7 +966,7 @@ INCLUDE ~k0_iskp/lib/comp_1093.tpa~
 BEGIN @100109 /* bullet_of_darkness */
 DESIGNATED 1094
 GROUP @10003 /* Items */
-LABEL ~Bullet of Darkness~
+LABEL ~Add Bullet of Darkness~
 REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~1999~ @100145 /* Can not be installed along side all items */
 REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
@@ -976,7 +976,7 @@ INCLUDE ~k0_iskp/lib/comp_1094.tpa~
 BEGIN @100153 /* green_dragonscale_armour */
 DESIGNATED 1095
 GROUP @10003 /* Items */
-LABEL ~Green Dragonscale Armor~
+LABEL ~Add Green Dragonscale Armor~
 REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~1999~ @100145 /* Can not be installed along side all items */
 REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
@@ -986,7 +986,7 @@ INCLUDE ~k0_iskp/lib/comp_1095.tpa~
 BEGIN @100166 /* potion_of_persuasiveness */
 DESIGNATED 1095
 GROUP @10003 /* Items */
-LABEL ~Potion of Persuasiveness~
+LABEL ~Add Potions of Persuasiveness~
 REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~1999~ @100145 /* Can not be installed along side all items */
 REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet iwdee~ @100167 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2, Icewind Dale and Baldur's Gate Trilogy */
@@ -1060,6 +1060,9 @@ REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~3100~ @100148 /
 REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~3101~ @100148 /* Can not be installed along side any all imports */
 REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~3102~ @100148 /* Can not be installed along side any all imports */
 REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~cdtweaks/setup-cdtweaks.tp2~ ~3530~ @100195 /* Can not be installed along side cdtweaks sod import */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~cdtweaks/setup-cdtweaks.tp2~ ~3531~ @100195 /* Can not be installed along side cdtweaks sod import */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~sod2bg2_iu.tp2~ 0 @100196 /* Can not be installed along side old version of this mod */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_3000.tpa~
@@ -1072,6 +1075,9 @@ REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~3100~ @100148 /
 REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~3101~ @100148 /* Can not be installed along side any all imports */
 REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~3102~ @100148 /* Can not be installed along side any all imports */
 REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~cdtweaks/setup-cdtweaks.tp2~ ~3530~ @100195 /* Can not be installed along side cdtweaks sod import */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~cdtweaks/setup-cdtweaks.tp2~ ~3531~ @100195 /* Can not be installed along side cdtweaks sod import */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~sod2bg2_iu.tp2~ 0 @100196 /* Can not be installed along side old version of this mod */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_3000.tpa~
@@ -1085,6 +1091,9 @@ REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~3100~ @100148 /
 REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~3101~ @100148 /* Can not be installed along side any all imports */
 REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~3102~ @100148 /* Can not be installed along side any all imports */
 REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~cdtweaks/setup-cdtweaks.tp2~ ~3530~ @100195 /* Can not be installed along side cdtweaks sod import */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~cdtweaks/setup-cdtweaks.tp2~ ~3531~ @100195 /* Can not be installed along side cdtweaks sod import */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~sod2bg2_iu.tp2~ 0 @100196 /* Can not be installed along side old version of this mod */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_3000.tpa~
@@ -1098,6 +1107,9 @@ REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~3100~ @100148 /
 REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~3101~ @100148 /* Can not be installed along side any all imports */
 REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~3102~ @100148 /* Can not be installed along side any all imports */
 REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~cdtweaks/setup-cdtweaks.tp2~ ~3530~ @100195 /* Can not be installed along side cdtweaks sod import */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~cdtweaks/setup-cdtweaks.tp2~ ~3531~ @100195 /* Can not be installed along side cdtweaks sod import */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~sod2bg2_iu.tp2~ 0 @100196 /* Can not be installed along side old version of this mod */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_3000.tpa~
@@ -1111,6 +1123,9 @@ REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~3100~ @100148 /
 REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~3101~ @100148 /* Can not be installed along side any all imports */
 REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~3102~ @100148 /* Can not be installed along side any all imports */
 REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~cdtweaks/setup-cdtweaks.tp2~ ~3530~ @100195 /* Can not be installed along side cdtweaks sod import */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~cdtweaks/setup-cdtweaks.tp2~ ~3531~ @100195 /* Can not be installed along side cdtweaks sod import */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~sod2bg2_iu.tp2~ 0 @100196 /* Can not be installed along side old version of this mod */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_3000.tpa~
@@ -1124,6 +1139,9 @@ REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~3100~ @100148 /
 REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~3101~ @100148 /* Can not be installed along side any all imports */
 REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~3102~ @100148 /* Can not be installed along side any all imports */
 REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~cdtweaks/setup-cdtweaks.tp2~ ~3530~ @100195 /* Can not be installed along side cdtweaks sod import */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~cdtweaks/setup-cdtweaks.tp2~ ~3531~ @100195 /* Can not be installed along side cdtweaks sod import */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~sod2bg2_iu.tp2~ 0 @100196 /* Can not be installed along side old version of this mod */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_3000.tpa~
@@ -1137,6 +1155,9 @@ REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~3100~ @100148 /
 REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~3101~ @100148 /* Can not be installed along side any all imports */
 REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~3102~ @100148 /* Can not be installed along side any all imports */
 REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~cdtweaks/setup-cdtweaks.tp2~ ~3530~ @100195 /* Can not be installed along side cdtweaks sod import */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~cdtweaks/setup-cdtweaks.tp2~ ~3531~ @100195 /* Can not be installed along side cdtweaks sod import */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~sod2bg2_iu.tp2~ 0 @100196 /* Can not be installed along side old version of this mod */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_3000.tpa~
@@ -1150,6 +1171,9 @@ REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~3100~ @100148 /
 REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~3101~ @100148 /* Can not be installed along side any all imports */
 REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~3102~ @100148 /* Can not be installed along side any all imports */
 REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~cdtweaks/setup-cdtweaks.tp2~ ~3530~ @100195 /* Can not be installed along side cdtweaks sod import */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~cdtweaks/setup-cdtweaks.tp2~ ~3531~ @100195 /* Can not be installed along side cdtweaks sod import */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~sod2bg2_iu.tp2~ 0 @100196 /* Can not be installed along side old version of this mod */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_3000.tpa~
@@ -1163,6 +1187,9 @@ REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~3100~ @100148 /
 REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~3101~ @100148 /* Can not be installed along side any all imports */
 REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~3102~ @100148 /* Can not be installed along side any all imports */
 REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~cdtweaks/setup-cdtweaks.tp2~ ~3530~ @100195 /* Can not be installed along side cdtweaks sod import */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~cdtweaks/setup-cdtweaks.tp2~ ~3531~ @100195 /* Can not be installed along side cdtweaks sod import */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~sod2bg2_iu.tp2~ 0 @100196 /* Can not be installed along side old version of this mod */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_3000.tpa~
@@ -1176,6 +1203,9 @@ REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~3100~ @100148 /
 REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~3101~ @100148 /* Can not be installed along side any all imports */
 REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~3102~ @100148 /* Can not be installed along side any all imports */
 REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~cdtweaks/setup-cdtweaks.tp2~ ~3530~ @100195 /* Can not be installed along side cdtweaks sod import */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~cdtweaks/setup-cdtweaks.tp2~ ~3531~ @100195 /* Can not be installed along side cdtweaks sod import */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~sod2bg2_iu.tp2~ 0 @100196 /* Can not be installed along side old version of this mod */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_3000.tpa~
@@ -1189,6 +1219,9 @@ REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~3100~ @100148 /
 REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~3101~ @100148 /* Can not be installed along side any all imports */
 REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~3102~ @100148 /* Can not be installed along side any all imports */
 REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~cdtweaks/setup-cdtweaks.tp2~ ~3530~ @100195 /* Can not be installed along side cdtweaks sod import */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~cdtweaks/setup-cdtweaks.tp2~ ~3531~ @100195 /* Can not be installed along side cdtweaks sod import */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~sod2bg2_iu.tp2~ 0 @100196 /* Can not be installed along side old version of this mod */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_3000.tpa~
@@ -1202,6 +1235,9 @@ REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~3100~ @100148 /
 REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~3101~ @100148 /* Can not be installed along side any all imports */
 REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~3102~ @100148 /* Can not be installed along side any all imports */
 REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~cdtweaks/setup-cdtweaks.tp2~ ~3530~ @100195 /* Can not be installed along side cdtweaks sod import */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~cdtweaks/setup-cdtweaks.tp2~ ~3531~ @100195 /* Can not be installed along side cdtweaks sod import */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~sod2bg2_iu.tp2~ 0 @100196 /* Can not be installed along side old version of this mod */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_3000.tpa~
@@ -1214,6 +1250,9 @@ LABEL ~All Imports Voidsword Choice~
 REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~3101~ @100148 /* Can not be installed along side any all imports */
 REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~3102~ @100148 /* Can not be installed along side any all imports */
 REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~cdtweaks/setup-cdtweaks.tp2~ ~3530~ @100195 /* Can not be installed along side cdtweaks sod import */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~cdtweaks/setup-cdtweaks.tp2~ ~3531~ @100195 /* Can not be installed along side cdtweaks sod import */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~sod2bg2_iu.tp2~ 0 @100196 /* Can not be installed along side old version of this mod */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_3100.tpa~
@@ -1225,6 +1264,9 @@ LABEL ~All Imports Voidhammer Choice~
 REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~3100~ @100148 /* Can not be installed along side any all imports */
 REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~3102~ @100148 /* Can not be installed along side any all imports */
 REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~cdtweaks/setup-cdtweaks.tp2~ ~3530~ @100195 /* Can not be installed along side cdtweaks sod import */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~cdtweaks/setup-cdtweaks.tp2~ ~3531~ @100195 /* Can not be installed along side cdtweaks sod import */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~sod2bg2_iu.tp2~ 0 @100196 /* Can not be installed along side old version of this mod */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_3101.tpa~
@@ -1236,6 +1278,9 @@ LABEL ~All Imports Random Voidsword or Voidhammer~
 REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~3100~ @100148 /* Can not be installed along side any all imports */
 REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~3101~ @100148 /* Can not be installed along side any all imports */
 REQUIRE_PREDICATE !MOD_IS_INSTALLED ~k0_iskp/setup-k0_iskp.tp2~ ~10000~ @100146 /* Can not be installed along side all components component */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~cdtweaks/setup-cdtweaks.tp2~ ~3530~ @100195 /* Can not be installed along side cdtweaks sod import */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~cdtweaks/setup-cdtweaks.tp2~ ~3531~ @100195 /* Can not be installed along side cdtweaks sod import */
+REQUIRE_PREDICATE !MOD_IS_INSTALLED ~sod2bg2_iu.tp2~ 0 @100196 /* Can not be installed along side old version of this mod */
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10001 /* This mod is not compatible with this game, it's components are only compatible with the enhanced editions of Baldur's Gate 2 and Baldur's Gate Trilogy */
 
 INCLUDE ~k0_iskp/lib/comp_3102.tpa~

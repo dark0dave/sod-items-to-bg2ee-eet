@@ -10,7 +10,7 @@ THEN
     SetGlobal("K0_II_HELM_OF_DUMATHOIN","GLOBAL",1)
 END
 >>>>>>>>
-EXTEND_BOTTOM ~baldur.bcs~ ~.../inlined/k0baldur.baf~
+EXTEND_BOTTOM ~ar0602.bcs~ ~.../inlined/k0baldur.baf~
 COPY_EXISTING ~bdhelm09.itm~ ~override~	//Fixing description image for Helmet of Dumathoin
   WRITE_ASCII 0x58 dtkhdum1
 END

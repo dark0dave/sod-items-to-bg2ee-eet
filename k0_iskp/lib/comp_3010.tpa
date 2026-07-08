@@ -10,4 +10,4 @@ THEN
     SetGlobal("K0_II_BUCKLER_OF_THE_FIST","GLOBAL",1)
 END
 >>>>>>>>
-EXTEND_BOTTOM ~baldur.bcs~ ~.../inlined/k0baldur.baf~
+EXTEND_BOTTOM ~ar0602.bcs~ ~.../inlined/k0baldur.baf~
