@@ -79,7 +79,7 @@ Pai'Na, Lower Tombs in Graveyard District
 ### Storm Pike +2
 Anarg, Bridge District (Fallen Paladins quest)
 
-### Trollblood Ioun Stone
+### Trollblood Ioun Stone (1021)
 Nalia's starting equipment
 
 ### Green Dragon Scales
