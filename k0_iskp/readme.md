@@ -286,9 +286,6 @@ Raelis Shai, Bridge District, reward for rescuing her troup from the planar pris
 ### Circlet of the Cynosure
 Lea'liyl, Abyssal Layer, Planar Sphere, Slums
 
-### Blood Red Ioun Stone
-Yoshimo's starting equipment
-
 ### Raconteur's Regalia
 Khan Zahraa, Genie's tent, Trademeet
 
@@ -350,6 +347,9 @@ Barrel, Valygar's Cabin, Umar Hills
 Garren Windspear, Windspear Hills, reward for rescuing his child
 
 https://baldursgate.fandom.com/wiki/Helm_of_Equus
+
+### Blood Red Ioun Stone (1063)
+Yoshimo's starting equipment
 
 ### Spell Breaker (1072)
 Lord Roenall, D'Arnise Keep, stronghold quest

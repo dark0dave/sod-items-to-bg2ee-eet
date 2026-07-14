@@ -17,6 +17,7 @@ Equipped abilities:
 
 Weight: 0 */
     WRITE_SHORT 0x42 0  // Setting lore value to 0 to prevent need to identify
+    WRITE_SHORT 0x1c 7  // Make it a helm so it can go into the bag of holding
 END
 <<<<<<<< .../inlined/k0yoshi.baf
 IF
