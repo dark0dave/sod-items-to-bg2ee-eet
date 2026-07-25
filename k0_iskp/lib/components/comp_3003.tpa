@@ -1,4 +1,5 @@
 // Robe of Red Flames
+INCLUDE ~k0_iskp/lib/components/comp_3000.tpa~
 <<<<<<<< .../inlined/k0baldur.baf
 IF
   Global("K0_II_ROBE_OF_RED_FLAMES","GLOBAL",0)

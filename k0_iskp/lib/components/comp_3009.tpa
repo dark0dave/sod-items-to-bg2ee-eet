@@ -1,4 +1,5 @@
 // Tangled Strings
+INCLUDE ~k0_iskp/lib/components/comp_3000.tpa~
 <<<<<<<< .../inlined/k0baldur.baf
 IF
   Global("K0_II_TANGLED_STRINGS","GLOBAL",0)

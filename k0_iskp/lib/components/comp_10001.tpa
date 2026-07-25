@@ -1,0 +1,7 @@
+// All
+
+// SoD Spells
+INCLUDE ~k0_iskp/lib/components/comp_4995.tpa~
+
+// Items
+INCLUDE ~k0_iskp/lib/components/comp_10000.tpa~
