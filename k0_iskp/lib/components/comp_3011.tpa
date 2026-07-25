@@ -1,4 +1,5 @@
 // Dragon Blade +3
+INCLUDE ~k0_iskp/lib/components/comp_3000.tpa~
 <<<<<<<< .../inlined/k0baldur.baf
 IF
   Global("K0_II_DRAGON_BLADE","GLOBAL",0)

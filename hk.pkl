@@ -1,5 +1,5 @@
-amends "package://github.com/jdx/hk/releases/download/v1.44.2/hk@1.44.2#/Config.pkl"
-import "package://github.com/jdx/hk/releases/download/v1.44.2/hk@1.44.2#/Builtins.pkl"
+amends "package://github.com/jdx/hk/releases/download/v1.51.0/hk@1.51.0#/Config.pkl"
+import "package://github.com/jdx/hk/releases/download/v1.51.0/hk@1.51.0#/Builtins.pkl"
 
 local message = new Mapping<String, Step> {
   ["check-conventional-commit"] = Builtins.check_conventional_commit
@@ -9,6 +9,7 @@ local builtins = new Mapping<String, Step> {
   ["check-case-conflict"] = Builtins.check_case_conflict
   ["check-merge-conflict"] = Builtins.check_merge_conflict
   ["end-of-file-fixer"] = Builtins.newlines
+  ["nix-fmt"] = Builtins.nix_fmt
   ["trailing-whitespace"] = Builtins.trailing_whitespace
   ["yamlfmt"] = Builtins.yamlfmt
 }
@@ -32,12 +33,12 @@ local local_hooks = new Mapping<String, Step> {
     glob = List(".*.d",".*.tp2",".*.tpa",".*.tpp")
     check = "scripts/check-weidu.sh {{files}}"
   }
+  ["weidu-list"] {
+    check = "weidu --nogame --list-components */*tp2 0 | grep K0_ISKP/SETUP-K0_ISKP"
+  }
   ["no-uppercase-check"] {
     check = "test $(find k0_iskp -type f -name '*[[:upper:]]*' | wc -l) -eq 0"
     fix = "scripts/fix-case.sh"
-  }
-  ["nix fmt"] {
-    fix = "nixfmt flake.nix"
   }
 }
 

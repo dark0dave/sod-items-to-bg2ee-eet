@@ -1,15 +1,11 @@
 {
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable-small";
-    hk = {
-      url = "github:jdx/hk/v1.44.2";
-    };
   };
   outputs =
     {
       self,
       nixpkgs,
-      hk,
     }:
     let
       systems = [
@@ -33,13 +29,10 @@
               nativeBuildInputs = [
                 codespell
                 git
-                hk.packages.${system}.default
+                hk
                 nixfmt
                 weidu
                 yamlfmt
-              ];
-              buildInputs = [
-                openssl
               ];
               env.HK_PKL_BACKEND = "pklr";
             };

@@ -1,4 +1,5 @@
 // Archer's Eyes
+INCLUDE ~k0_iskp/lib/components/comp_3000.tpa~
 <<<<<<<< .../inlined/k0baldur.baf
 IF
   Global("K0_II_ARCHER_EYES","GLOBAL",0)

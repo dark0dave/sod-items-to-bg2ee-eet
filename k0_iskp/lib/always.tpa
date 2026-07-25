@@ -1,0 +1,2 @@
+INCLUDE ~%MOD_FOLDER%/lib/functions.tpa~
+INCLUDE ~%MOD_FOLDER%/lib/components/comp_%COMPONENT_NUMBER%.tpa~

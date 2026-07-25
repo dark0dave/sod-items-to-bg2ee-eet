@@ -17,8 +17,8 @@ jobs:
           cache: true
           mise_toml: |
             [tools]
-            hk = "1.44.2"
+            hk = "1.51.0"
+            [env]
+            HK_PKL_BACKEND = "pklr"
       - run: |
-          export HK_PKL_BACKEND=pklr
-          export HK_FIX=0
-          hk run pre-commit --all -j 10 --why
+          env HK_FIX=0 hk run --check pre-commit --all -j 10 --no-fail-fast --why
